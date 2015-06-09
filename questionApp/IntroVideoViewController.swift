@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import MediaPlayer
-
-var moviePlayer : MPMoviePlayerController?
+import AVKit
+import AVFoundation
 
 class IntroVideoViewController: UIViewController {
   
@@ -17,8 +16,6 @@ class IntroVideoViewController: UIViewController {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
-    
-    playVideo()
   }
   
   override func didReceiveMemoryWarning() {
@@ -26,20 +23,14 @@ class IntroVideoViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  func playVideo() {
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    let destination = segue.destinationViewController as!
+				AVPlayerViewController
+     let path = NSBundle.mainBundle().pathForResource("crawl", ofType: "mp4")
+     let url = NSURL.fileURLWithPath(path!)
+    // let url = NSURL(string: "crawl.mp4")
     
-    // optional binding technique
-    if let
-      path = NSBundle.mainBundle().pathForResource("crawl", ofType:"mp4"),
-      url = NSURL(fileURLWithPath: path),
-      moviePlayer = MPMoviePlayerController(contentURL: url) {
-        moviePlayer.view.frame = self.view.bounds
-        moviePlayer.prepareToPlay()
-        moviePlayer.scalingMode = .AspectFill
-        self.view.addSubview(moviePlayer.view)
-    } else {
-      debugPrintln("Ops, something wrong when playing video.m4v")
-    }
+    destination.player = AVPlayer(URL: url)
   }
   
   

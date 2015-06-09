@@ -106,7 +106,6 @@
 		829F54E71B26995800ABE77C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				829F550F1B26BB1B00ABE77C /* crawl.mp4 */,
 				829F550E1B26BAF600ABE77C /* videos */,
 				829F54E81B26995800ABE77C /* Info.plist */,
 			);
@@ -133,6 +132,7 @@
 		829F550E1B26BAF600ABE77C /* videos */ = {
 			isa = PBXGroup;
 			children = (
+				829F550F1B26BB1B00ABE77C /* crawl.mp4 */,
 			);
 			name = videos;
 			sourceTree = "<group>";
