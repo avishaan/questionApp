@@ -92,18 +92,6 @@
                                     <rect key="frame" x="62" y="426" width="196" height="36"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHb-wG-o81">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="playIntroButton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="21" y="207" width="278" height="153"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="uUT-q1-mjw" kind="show" id="12f-Dr-gSI"/>
-                                </connections>
-                            </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyW-5T-amz">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -113,6 +101,18 @@
                                     <segue destination="uUT-q1-mjw" kind="embed" id="TUl-sE-eCJ"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHb-wG-o81">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="playIntroButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="207" width="278" height="153"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onPreviewButtonTap:" destination="VjN-jI-kwu" eventType="touchUpInside" id="oDd-vP-NPD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -120,8 +120,8 @@
                                 <exclude reference="gAv-SL-Coq"/>
                                 <exclude reference="qGO-hy-Iar"/>
                                 <exclude reference="Le2-cc-0HR"/>
-                                <exclude reference="JHb-wG-o81"/>
                                 <exclude reference="pyW-5T-amz"/>
+                                <exclude reference="JHb-wG-o81"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -129,14 +129,15 @@
                                 <include reference="gAv-SL-Coq"/>
                                 <include reference="qGO-hy-Iar"/>
                                 <include reference="Le2-cc-0HR"/>
-                                <include reference="JHb-wG-o81"/>
                                 <include reference="pyW-5T-amz"/>
+                                <include reference="JHb-wG-o81"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="player" destination="pyW-5T-amz" id="0z0-ex-vK7"/>
+                        <outlet property="previewButton" destination="JHb-wG-o81" id="Pe7-9k-fEc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S6y-2P-OIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,7 +159,4 @@
         <image name="playIntroButton" width="544" height="301"/>
         <image name="startButton" width="353" height="67"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="TUl-sE-eCJ"/>
-    </inferredMetricsTieBreakers>
 </document>
