@@ -12,6 +12,7 @@
 		82401C231B28219A008202EA /* OmnesSem.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82401C221B28219A008202EA /* OmnesSem.ttf */; };
 		82401C251B283246008202EA /* BNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C241B283246008202EA /* BNTextField.swift */; };
 		82401C271B283590008202EA /* OmnesMed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82401C261B283590008202EA /* OmnesMed.ttf */; };
+		82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C281B28399F008202EA /* ProfileSetupViewController.swift */; };
 		829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54E91B26995800ABE77C /* AppDelegate.swift */; };
 		829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */; };
 		829F54EF1B26995800ABE77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EE1B26995800ABE77C /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		82401C221B28219A008202EA /* OmnesSem.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OmnesSem.ttf; sourceTree = "<group>"; };
 		82401C241B283246008202EA /* BNTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNTextField.swift; sourceTree = "<group>"; };
 		82401C261B283590008202EA /* OmnesMed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OmnesMed.ttf; sourceTree = "<group>"; };
+		82401C281B28399F008202EA /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829F54E91B26995800ABE77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				829F54E91B26995800ABE77C /* AppDelegate.swift */,
 				829F54EE1B26995800ABE77C /* ViewController.swift */,
+				82401C281B28399F008202EA /* ProfileSetupViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
@@ -257,6 +260,7 @@
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,
 				829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */,
+				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
