@@ -8,7 +8,7 @@
 
 import UIKit
 
-let omnesFont = UIFont(name: "OmnesSem.ttf", size: 30)
+let omnesFont = UIFont(name: "Omnes", size: 30)
 
 class UIButtonNext: UIButton {
 
@@ -16,7 +16,7 @@ class UIButtonNext: UIButton {
       self.setTitle("save profile", forState: UIControlState.Normal)
       self.titleLabel!.font = omnesFont
       // self.setImage(UIImage(named: "startButton"), forState: UIControlState.Normal)
-      // self.setBackgroundImage(UIImage(named: "startButton"), forState: UIControlState.Normal)
+      self.setBackgroundImage(UIImage(named: "baseButton"), forState: UIControlState.Normal)
     }
 
 }
