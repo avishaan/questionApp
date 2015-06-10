@@ -207,6 +207,14 @@
                                     <rect key="frame" x="25" y="167" width="271" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZGY-8E-zT1" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="259" width="271" height="30"/>
+                                </variation>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Baby's name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4RV-76-Pw0" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -227,6 +235,14 @@
                                     <rect key="frame" x="219" y="209" width="77" height="29"/>
                                 </variation>
                             </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QkO-j8-g42" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="306" width="271" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -234,8 +250,10 @@
                                 <exclude reference="Duu-cm-TR7"/>
                                 <exclude reference="86S-pI-6Ql"/>
                                 <exclude reference="304-aL-ian"/>
+                                <exclude reference="ZGY-8E-zT1"/>
                                 <exclude reference="4RV-76-Pw0"/>
                                 <exclude reference="S2E-Sh-ToX"/>
+                                <exclude reference="QkO-j8-g42"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -243,8 +261,10 @@
                                 <include reference="Duu-cm-TR7"/>
                                 <include reference="86S-pI-6Ql"/>
                                 <include reference="304-aL-ian"/>
+                                <include reference="ZGY-8E-zT1"/>
                                 <include reference="4RV-76-Pw0"/>
                                 <include reference="S2E-Sh-ToX"/>
+                                <include reference="QkO-j8-g42"/>
                             </mask>
                         </variation>
                     </view>
