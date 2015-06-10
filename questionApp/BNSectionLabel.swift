@@ -11,10 +11,12 @@ import UIKit
 class BNSectionLabel: UILabel {
 
     override func drawRect(rect: CGRect) {
-      self.font = UIFont(name: "Omnes-Medium", size: 30)
-      self.text = "Test"
+      self.font = UIFont(name: kOmnesFontMedium, size: 29)
+      self.textAlignment = .Center
+      //self.text = "Test"
       //self.font = omnesFontMed
       self.textColor = UIColor.whiteColor()
+      // make the actual drawings
       super.drawRect(rect)
     }
 
