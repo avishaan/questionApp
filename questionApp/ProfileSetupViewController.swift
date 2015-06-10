@@ -17,10 +17,10 @@ class ProfileSetupViewController: UIViewController {
     
     // Do any additional setup after loading the view.
     // set font on segmented controller
-    var attr = NSDictionary(object: UIFont(name: "Omnes-Medium", size: 13)!, forKey: NSFontAttributeName)
+    var attr = NSDictionary(object: UIFont(name: "Omnes-Medium", size: 14)!, forKey: NSFontAttributeName)
     genderControl.setTitleTextAttributes(attr as [NSObject : AnyObject], forState: .Normal)
     // give a little bit of tint
-    genderControl.tintColor = UIColor.grayColor()
+    genderControl.tintColor = orange
     // TODO: change color based on which gender is picked
   }
   

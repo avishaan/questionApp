@@ -8,9 +8,6 @@
 
 import UIKit
 
-let omnesFontBold = UIFont(name: "Omnes-Semibold", size: 20)
-let orange = UIColor(red: 243/255, green: 108/255, blue: 43/255, alpha: 1.0)
-
 class UIButtonNext: UIButton {
 
     override func drawRect(rect: CGRect) {
