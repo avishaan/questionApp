@@ -14,7 +14,6 @@ let omnesFontMed = UIFont(name: "Omnes-Medium", size: 17)
   
     override func drawRect(rect: CGRect) {
       self.layer.cornerRadius = 5.0
-      self.placeholder = "Your name"
       self.borderStyle = UITextBorderStyle.RoundedRect
       self.layer.borderColor = UIColor.grayColor().CGColor
       self.layer.borderWidth = 2.0
