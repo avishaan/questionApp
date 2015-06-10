@@ -12,10 +12,10 @@ import AVFoundation
 
 class IntroVideoViewController: UIViewController {
   
+  @IBOutlet weak var player: UIView!
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
   }
   
   override func didReceiveMemoryWarning() {
@@ -29,8 +29,13 @@ class IntroVideoViewController: UIViewController {
      let path = NSBundle.mainBundle().pathForResource("crawl", ofType: "mp4")
      let url = NSURL.fileURLWithPath(path!)
     // let url = NSURL(string: "crawl.mp4")
+    destination.showsPlaybackControls = false
+    destination.hidesBottomBarWhenPushed = true
+    destination.videoGravity = AVLayerVideoGravityResizeAspectFill
     
     destination.player = AVPlayer(URL: url)
+    // we start off paused, then we will play once the button is hit
+    destination.player.pause()
   }
   
   
