@@ -1,5 +1,5 @@
 //
-//  BNSectionLabel.swift
+//  UILabelTest.swift
 //  questionApp
 //
 //  Created by Brown Magic on 6/10/15.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class BNSectionLabel: UILabel {
+class UILabelTest: UILabel {
 
     override func drawRect(rect: CGRect) {
-      self.font = UIFont(name: "Omnes-Medium", size: 30)
-      self.text = "Test"
-      //self.font = omnesFontMed
+        // Drawing code
       self.textColor = UIColor.whiteColor()
-      super.drawRect(rect)
+      self.text = "Test"
     }
 
 }

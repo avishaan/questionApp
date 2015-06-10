@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FYu-vj-N2f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,7 +24,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxQ-Hz-meq" customClass="UIButtonNext" customModule="questionApp" customModuleProvider="target">
@@ -60,6 +61,24 @@
                                     <rect key="frame" x="60" y="512" width="188" height="30"/>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelTest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaZ-jF-gr9" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="66" width="74" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-iG-sMP" customClass="UILabelTest" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="38" y="189" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -68,6 +87,8 @@
                                 <exclude reference="QVD-TX-11Y"/>
                                 <exclude reference="UNZ-9r-vgB"/>
                                 <exclude reference="mrG-ZR-s3z"/>
+                                <exclude reference="SaZ-jF-gr9"/>
+                                <exclude reference="ezE-iG-sMP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -76,6 +97,8 @@
                                 <include reference="QVD-TX-11Y"/>
                                 <include reference="UNZ-9r-vgB"/>
                                 <include reference="mrG-ZR-s3z"/>
+                                <include reference="SaZ-jF-gr9"/>
+                                <include reference="ezE-iG-sMP"/>
                             </mask>
                         </variation>
                     </view>
@@ -188,6 +211,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kt3-R0-PJx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VOq-dk-v84">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundThickBottom" translatesAutoresizingMaskIntoConstraints="NO" id="Duu-cm-TR7">
@@ -367,21 +391,21 @@
                                 <exclude reference="Hix-W2-QRM"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="XvF-Hc-SKN"/>
+                                <exclude reference="Y53-aT-hwN"/>
+                                <exclude reference="k1O-gv-San"/>
+                                <exclude reference="lF0-Sd-4m0"/>
                                 <exclude reference="0cX-CU-bfK"/>
                                 <exclude reference="U2D-4K-vtR"/>
                                 <exclude reference="bCT-0l-c5z"/>
                                 <exclude reference="itg-0Y-pcf"/>
                                 <exclude reference="tHa-Bw-aT2"/>
                                 <exclude reference="xob-sE-SS2"/>
-                                <exclude reference="XvF-Hc-SKN"/>
-                                <exclude reference="Y53-aT-hwN"/>
-                                <exclude reference="k1O-gv-San"/>
-                                <exclude reference="lF0-Sd-4m0"/>
-                                <exclude reference="Bap-KV-nVR"/>
-                                <exclude reference="S9G-x0-kVc"/>
                                 <exclude reference="Qzy-lX-IeY"/>
                                 <exclude reference="xB6-io-1Y2"/>
                                 <exclude reference="zpJ-DF-um8"/>
+                                <exclude reference="Bap-KV-nVR"/>
+                                <exclude reference="S9G-x0-kVc"/>
                                 <exclude reference="R8x-6Q-bfm"/>
                                 <exclude reference="c4q-Ni-YRp"/>
                             </mask>
@@ -401,21 +425,21 @@
                                 <include reference="Hix-W2-QRM"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="XvF-Hc-SKN"/>
+                                <include reference="Y53-aT-hwN"/>
+                                <include reference="k1O-gv-San"/>
+                                <include reference="lF0-Sd-4m0"/>
                                 <include reference="0cX-CU-bfK"/>
                                 <include reference="U2D-4K-vtR"/>
                                 <include reference="bCT-0l-c5z"/>
                                 <include reference="itg-0Y-pcf"/>
                                 <include reference="tHa-Bw-aT2"/>
                                 <include reference="xob-sE-SS2"/>
-                                <include reference="XvF-Hc-SKN"/>
-                                <include reference="Y53-aT-hwN"/>
-                                <include reference="k1O-gv-San"/>
-                                <include reference="lF0-Sd-4m0"/>
-                                <include reference="Bap-KV-nVR"/>
-                                <include reference="S9G-x0-kVc"/>
                                 <include reference="Qzy-lX-IeY"/>
                                 <include reference="xB6-io-1Y2"/>
                                 <include reference="zpJ-DF-um8"/>
+                                <include reference="Bap-KV-nVR"/>
+                                <include reference="S9G-x0-kVc"/>
                                 <include reference="R8x-6Q-bfm"/>
                                 <include reference="c4q-Ni-YRp"/>
                             </mask>
