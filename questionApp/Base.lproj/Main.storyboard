@@ -128,7 +128,7 @@
                                     <rect key="frame" x="21" y="207" width="278" height="153"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="uUT-q1-mjw" kind="embed" id="TUl-sE-eCJ"/>
+                                    <segue destination="uUT-q1-mjw" kind="embed" identifier="introVideoSegue" id="TUl-sE-eCJ"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHb-wG-o81">

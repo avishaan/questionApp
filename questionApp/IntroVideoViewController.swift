@@ -28,21 +28,24 @@ class IntroVideoViewController: UIViewController {
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // set the playerVC as out destination
-    playerVC = segue.destinationViewController as!
-				AVPlayerViewController
-     let path = NSBundle.mainBundle().pathForResource("crawl", ofType: "mp4")
-     let url = NSURL.fileURLWithPath(path!)
-    // let url = NSURL(string: "crawl.mp4") // for remote locations
+    if segue.identifier == "introVideoSegue" {
+      // set the playerVC as out destination
+      playerVC = segue.destinationViewController as!
+      AVPlayerViewController
+      let path = NSBundle.mainBundle().pathForResource("crawl", ofType: "mp4")
+      let url = NSURL.fileURLWithPath(path!)
+      // let url = NSURL(string: "crawl.mp4") // for remote locations
+      
+      // hide player controls
+      playerVC.showsPlaybackControls = false
+      playerVC.hidesBottomBarWhenPushed = true
+      playerVC.videoGravity = AVLayerVideoGravityResizeAspectFill
+      
+      playerVC.player = AVPlayer(URL: url)
+      // we start off paused, then we will play once the button is hit
+      playerVC.player.pause()
+    }
     
-    // hide player controls
-    playerVC.showsPlaybackControls = false
-    playerVC.hidesBottomBarWhenPushed = true
-    playerVC.videoGravity = AVLayerVideoGravityResizeAspectFill
-    
-    playerVC.player = AVPlayer(URL: url)
-    // we start off paused, then we will play once the button is hit
-    playerVC.player.pause()
   }
   @IBAction func onPreviewButtonTap(sender: AnyObject) {
     // we know the sender is a button, cast accordingly
