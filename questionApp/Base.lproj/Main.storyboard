@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FYu-vj-N2f">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="OmnesSem.ttf">
@@ -193,78 +194,198 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86S-pI-6Ql" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GJS-YT-Gq9"/>
+                                    <constraint firstAttribute="width" constant="271" id="sNG-zv-4g1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="25" y="121" width="271" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GJS-YT-Gq9"/>
+                                        <exclude reference="sNG-zv-4g1"/>
+                                    </mask>
                                 </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="304-aL-ian" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="25" y="167" width="271" height="30"/>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GJS-YT-Gq9"/>
+                                        <include reference="sNG-zv-4g1"/>
+                                    </mask>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZGY-8E-zT1" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ox9-rh-Ugy"/>
+                                    <constraint firstAttribute="width" constant="271" id="XGF-Eb-i80"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="25" y="259" width="271" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ox9-rh-Ugy"/>
+                                        <exclude reference="XGF-Eb-i80"/>
+                                    </mask>
                                 </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ox9-rh-Ugy"/>
+                                        <include reference="XGF-Eb-i80"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QkO-j8-g42" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Baby's name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4RV-76-Pw0" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="aTs-NB-a6R"/>
+                                    <constraint firstAttribute="height" constant="30" id="aea-qP-U3v"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="25" y="210" width="177" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aTs-NB-a6R"/>
+                                        <exclude reference="aea-qP-U3v"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="aTs-NB-a6R"/>
+                                        <include reference="aea-qP-U3v"/>
+                                    </mask>
                                 </variation>
                             </textField>
                             <segmentedControl opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S2E-Sh-ToX">
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="0.82999999999999996" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="k2O-cX-UhP"/>
+                                    <constraint firstAttribute="height" constant="28" id="sVi-ra-hII"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Boy"/>
                                     <segment title="Girl"/>
                                 </segments>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="219" y="209" width="77" height="29"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="k2O-cX-UhP"/>
+                                        <exclude reference="sVi-ra-hII"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="k2O-cX-UhP"/>
+                                        <include reference="sVi-ra-hII"/>
+                                    </mask>
                                 </variation>
                             </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QkO-j8-g42" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="LoF-an-R6s">
+                                <rect key="frame" x="-160" y="-81" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="455623260.509381">
+                                    <!--2015-06-10 10:01:00 +0000-->
+                                </date>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="344" width="320" height="162"/>
+                                </variation>
+                            </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="304-aL-ian" customClass="BNTextField" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="25" y="306" width="271" height="30"/>
-                                </variation>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="86S-pI-6Ql" secondAttribute="trailing" constant="8" id="0cX-CU-bfK"/>
+                            <constraint firstItem="ZGY-8E-zT1" firstAttribute="leading" secondItem="4RV-76-Pw0" secondAttribute="leading" id="Bap-KV-nVR"/>
+                            <constraint firstItem="kt3-R0-PJx" firstAttribute="top" secondItem="86S-pI-6Ql" secondAttribute="bottom" constant="421" id="CZE-mm-MRS"/>
+                            <constraint firstItem="86S-pI-6Ql" firstAttribute="top" secondItem="TKa-wv-bRG" secondAttribute="bottom" constant="97" id="Qlm-Mf-ac6"/>
+                            <constraint firstItem="QkO-j8-g42" firstAttribute="top" secondItem="ZGY-8E-zT1" secondAttribute="bottom" constant="17" id="Qzy-lX-IeY"/>
+                            <constraint firstItem="S2E-Sh-ToX" firstAttribute="centerX" secondItem="304-aL-ian" secondAttribute="centerX" constant="97" id="R8x-6Q-bfm"/>
+                            <constraint firstItem="ZGY-8E-zT1" firstAttribute="top" secondItem="4RV-76-Pw0" secondAttribute="bottom" constant="19" id="S9G-x0-kVc"/>
+                            <constraint firstItem="86S-pI-6Ql" firstAttribute="height" secondItem="304-aL-ian" secondAttribute="height" id="U2D-4K-vtR"/>
+                            <constraint firstAttribute="centerY" secondItem="86S-pI-6Ql" secondAttribute="centerY" constant="152" id="Utq-A0-bqi"/>
+                            <constraint firstItem="304-aL-ian" firstAttribute="top" secondItem="86S-pI-6Ql" secondAttribute="bottom" constant="16" id="XvF-Hc-SKN"/>
+                            <constraint firstItem="4RV-76-Pw0" firstAttribute="leading" secondItem="304-aL-ian" secondAttribute="leading" id="Y53-aT-hwN"/>
+                            <constraint firstItem="86S-pI-6Ql" firstAttribute="width" secondItem="304-aL-ian" secondAttribute="width" id="bCT-0l-c5z"/>
+                            <constraint firstItem="S2E-Sh-ToX" firstAttribute="top" secondItem="4RV-76-Pw0" secondAttribute="top" constant="-1" id="c4q-Ni-YRp"/>
+                            <constraint firstItem="86S-pI-6Ql" firstAttribute="centerX" secondItem="304-aL-ian" secondAttribute="centerX" id="itg-0Y-pcf"/>
+                            <constraint firstItem="4RV-76-Pw0" firstAttribute="height" secondItem="304-aL-ian" secondAttribute="height" id="k1O-gv-San"/>
+                            <constraint firstItem="4RV-76-Pw0" firstAttribute="top" secondItem="304-aL-ian" secondAttribute="bottom" constant="17" id="lF0-Sd-4m0"/>
+                            <constraint firstItem="86S-pI-6Ql" firstAttribute="leading" secondItem="VOq-dk-v84" secondAttribute="leadingMargin" constant="9" id="tHa-Bw-aT2"/>
+                            <constraint firstItem="QkO-j8-g42" firstAttribute="centerX" secondItem="ZGY-8E-zT1" secondAttribute="centerX" id="xB6-io-1Y2"/>
+                            <constraint firstItem="QkO-j8-g42" firstAttribute="width" secondItem="ZGY-8E-zT1" secondAttribute="width" id="zpJ-DF-um8"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Duu-cm-TR7"/>
                                 <exclude reference="86S-pI-6Ql"/>
-                                <exclude reference="304-aL-ian"/>
                                 <exclude reference="ZGY-8E-zT1"/>
+                                <exclude reference="QkO-j8-g42"/>
                                 <exclude reference="4RV-76-Pw0"/>
                                 <exclude reference="S2E-Sh-ToX"/>
-                                <exclude reference="QkO-j8-g42"/>
+                                <exclude reference="LoF-an-R6s"/>
+                                <exclude reference="304-aL-ian"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0cX-CU-bfK"/>
+                                <exclude reference="Qlm-Mf-ac6"/>
+                                <exclude reference="U2D-4K-vtR"/>
+                                <exclude reference="Utq-A0-bqi"/>
+                                <exclude reference="bCT-0l-c5z"/>
+                                <exclude reference="itg-0Y-pcf"/>
+                                <exclude reference="tHa-Bw-aT2"/>
+                                <exclude reference="XvF-Hc-SKN"/>
+                                <exclude reference="Y53-aT-hwN"/>
+                                <exclude reference="k1O-gv-San"/>
+                                <exclude reference="lF0-Sd-4m0"/>
+                                <exclude reference="Bap-KV-nVR"/>
+                                <exclude reference="S9G-x0-kVc"/>
+                                <exclude reference="R8x-6Q-bfm"/>
+                                <exclude reference="c4q-Ni-YRp"/>
+                                <exclude reference="Qzy-lX-IeY"/>
+                                <exclude reference="xB6-io-1Y2"/>
+                                <exclude reference="zpJ-DF-um8"/>
+                                <exclude reference="CZE-mm-MRS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Duu-cm-TR7"/>
                                 <include reference="86S-pI-6Ql"/>
-                                <include reference="304-aL-ian"/>
                                 <include reference="ZGY-8E-zT1"/>
+                                <include reference="QkO-j8-g42"/>
                                 <include reference="4RV-76-Pw0"/>
                                 <include reference="S2E-Sh-ToX"/>
-                                <include reference="QkO-j8-g42"/>
+                                <include reference="LoF-an-R6s"/>
+                                <include reference="304-aL-ian"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0cX-CU-bfK"/>
+                                <include reference="Qlm-Mf-ac6"/>
+                                <include reference="U2D-4K-vtR"/>
+                                <include reference="Utq-A0-bqi"/>
+                                <include reference="bCT-0l-c5z"/>
+                                <include reference="itg-0Y-pcf"/>
+                                <include reference="tHa-Bw-aT2"/>
+                                <include reference="XvF-Hc-SKN"/>
+                                <include reference="Y53-aT-hwN"/>
+                                <include reference="k1O-gv-San"/>
+                                <include reference="lF0-Sd-4m0"/>
+                                <include reference="Bap-KV-nVR"/>
+                                <include reference="S9G-x0-kVc"/>
+                                <include reference="R8x-6Q-bfm"/>
+                                <include reference="c4q-Ni-YRp"/>
+                                <include reference="Qzy-lX-IeY"/>
+                                <include reference="xB6-io-1Y2"/>
+                                <include reference="zpJ-DF-um8"/>
+                                <include reference="CZE-mm-MRS"/>
                             </mask>
                         </variation>
                     </view>
