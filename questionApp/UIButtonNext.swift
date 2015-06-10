@@ -10,12 +10,16 @@ import UIKit
 
 class UIButtonNext: UIButton {
 
+  let background = UIImage(named: "baseButton")
+  
     override func drawRect(rect: CGRect) {
       self.setTitle("save profile", forState: UIControlState.Normal)
       self.titleLabel!.font = omnesFontBold
       self.setTitleColor(orange, forState: UIControlState.Normal)
       // self.setImage(UIImage(named: "startButton"), forState: UIControlState.Normal)
-      self.setBackgroundImage(UIImage(named: "baseButton"), forState: UIControlState.Normal)
+      self.setBackgroundImage(background, forState: UIControlState.Normal)
+      //self.frame = CGRect(x: 0, y: 0, width: background!.size.width, height: background!.size.height)
+      self.frame = CGRect(x: 0, y: 0, width: 311, height: 67)
     }
 
 }
