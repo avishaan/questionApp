@@ -17,7 +17,6 @@ class UIButtonNext: UIButton {
       self.setTitle("save profile", forState: UIControlState.Normal)
       self.titleLabel!.font = omnesFont
       self.setTitleColor(orange, forState: UIControlState.Normal)
-      //self.titleLabel!.textColor = UIColor(red: 243.0/255.0, green: 108.0/255.0, blue: 43.0/255.0, alpha: 1.0)
       // self.setImage(UIImage(named: "startButton"), forState: UIControlState.Normal)
       self.setBackgroundImage(UIImage(named: "baseButton"), forState: UIControlState.Normal)
     }
