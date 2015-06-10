@@ -16,6 +16,15 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    //check all fonts
+    for family in UIFont.familyNames() {
+      println(family)
+      for name in UIFont.fontNamesForFamilyName(family as! String) {
+        println(name)
+      }
+    }
   }
 
   override func didReceiveMemoryWarning() {

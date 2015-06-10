@@ -39,6 +39,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>OmnesSem.ttf</string>
+		<string>OmnesMed.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
