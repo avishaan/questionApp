@@ -13,7 +13,7 @@ class UIButtonNext: UIButton {
   let background = UIImage(named: "baseButton")
   
     override func drawRect(rect: CGRect) {
-      self.setTitle("save profile", forState: UIControlState.Normal)
+      //self.setTitle("save profile", forState: UIControlState.Normal)
       self.titleLabel!.font = omnesFontBold
       self.setTitleColor(orange, forState: UIControlState.Normal)
       // self.setImage(UIImage(named: "startButton"), forState: UIControlState.Normal)
