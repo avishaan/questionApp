@@ -12,13 +12,24 @@ class SavedProfileViewController: UIViewController {
   
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var emailLabel: UILabel!
+  @IBOutlet weak var babyNameLabel: UILabel!
+  @IBOutlet weak var babyDOBLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
-    
-    var attrLabel = [
+    setLabel(nameLabel, keyText: "Name: ", valueText: "Molly Smith")
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  func setLabel(label:UILabel, keyText:String, valueText:String){
+    // label is the uiLabel, keyText is first part of text, valueText is second part
+    var attrKey = [
       NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 19)!,
       NSForegroundColorAttributeName: kGrey
     ]
@@ -26,25 +37,14 @@ class SavedProfileViewController: UIViewController {
       NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 19)!, NSForegroundColorAttributeName: kBlue]
     var myString = "Name: "
     var myString2 = "Molly Smith"
-    var combinedString = myString + myString2
-    var myMutableString = NSMutableAttributedString(string: combinedString, attributes: attrLabel)
-    var range = combinedString.rangeOfString(myString2)
-    //Add more attributes here
-//    myMutableString.addAttributes(attrValue, range: combinedString.rangeOfString(myString2))
-//    myMutableString.addAttributes(attrValue as AnyObject, range: range)
-    myMutableString.addAttributes(attrValue, range: NSMakeRange(count(myString), count(myString2)))
-//    myMutableString.addAttribute(NSFontAttributeName, value: UIFont(name: kOmnesFontMedium, size: 20)!, range: NSMakeRange(count(myString), count(myString2)))
-//    myMutableString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(count(myString), count(myString2)))
-//    myMutableString.addAttribute(attrValue, range: combinedString.rangeOfString(myString2))
+    // full label text
+    var fullText = keyText + valueText
+    var fullTextMutableString = NSMutableAttributedString(string: fullText, attributes: attrKey)
     
+    // don't use range of string incase someone repeats a string
+    fullTextMutableString.addAttributes(attrValue, range: NSMakeRange(count(keyText), count(valueText)))
     //Apply to the label
-    emailLabel.attributedText = myMutableString
-    
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+    label.attributedText = fullTextMutableString
   }
   
   
