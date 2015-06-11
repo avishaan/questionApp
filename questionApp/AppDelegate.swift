@@ -14,6 +14,9 @@ let omnesFontMed = UIFont(name: "Omnes-Medium", size: 17)
 let kOmnesFontSemiBold = "Omnes-Semibold"
 let kOmnesFontMedium = "Omnes-Medium"
 let orange = UIColor(red: 243/255, green: 108/255, blue: 43/255, alpha: 1.0)
+let kOrange = UIColor(red: 243/255, green: 108/255, blue: 43/255, alpha: 1.0)
+let kBlue = UIColor(red: 2/255, green: 126/255, blue: 188/255, alpha: 1.0)
+let kGrey = UIColor(red: 99/255, green: 89/255, blue: 91/255, alpha: 1.0)
 
 
 @UIApplicationMain
