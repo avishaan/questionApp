@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FYu-vj-N2f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l1L-HK-LFa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -11,6 +11,7 @@
             <string>Omnes-Medium</string>
         </mutableArray>
         <mutableArray key="OmnesSem.ttf">
+            <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
         </mutableArray>
     </customFonts>
@@ -457,10 +458,10 @@
             </objects>
             <point key="canvasLocation" x="907.5" y="1182"/>
         </scene>
-        <!--View Controller-->
+        <!--Saved Profile View Controller-->
         <scene sceneID="Eqc-Jb-chv">
             <objects>
-                <viewController id="l1L-HK-LFa" sceneMemberID="viewController">
+                <viewController id="l1L-HK-LFa" customClass="SavedProfileViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aLD-IC-r9l"/>
                         <viewControllerLayoutGuide type="bottom" id="I9e-uZ-I5Q"/>
@@ -483,34 +484,12 @@
                                     <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF3-MD-aMF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Molly Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF3-MD-aMF">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Name:">
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="18" name="Omnes-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="17" name="Omnes-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Molly Smith">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0078431377187371254" green="0.50196081399917603" blue="0.73725491762161255" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="Omnes-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <rect key="frame" x="69" y="103" width="183" height="21"/>
                                 </variation>
                             </label>
@@ -605,7 +584,11 @@
                             <mask key="subviews">
                                 <exclude reference="SYu-Ef-Ind"/>
                                 <exclude reference="1Rp-L5-G1k"/>
+                                <exclude reference="GF3-MD-aMF"/>
+                                <exclude reference="kVH-mU-f9a"/>
                                 <exclude reference="gcG-De-BGG"/>
+                                <exclude reference="aWX-Ce-xdI"/>
+                                <exclude reference="bQI-Ia-3qB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -621,6 +604,9 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="GF3-MD-aMF" id="lce-U3-UT9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwq-P3-B4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
