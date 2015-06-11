@@ -25,6 +25,7 @@
 		829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */; };
 		829F55101B26BB1B00ABE77C /* crawl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 829F550F1B26BB1B00ABE77C /* crawl.mp4 */; };
 		829F55121B26C2EF00ABE77C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829F55111B26C2EF00ABE77C /* MediaPlayer.framework */; };
+		82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVideoViewController.swift; sourceTree = "<group>"; };
 		829F550F1B26BB1B00ABE77C /* crawl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = crawl.mp4; sourceTree = "<group>"; };
 		829F55111B26C2EF00ABE77C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				829F54E91B26995800ABE77C /* AppDelegate.swift */,
 				829F54EE1B26995800ABE77C /* ViewController.swift */,
 				82401C281B28399F008202EA /* ProfileSetupViewController.swift */,
+				82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
