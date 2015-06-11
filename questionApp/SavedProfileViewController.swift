@@ -77,8 +77,31 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
         return
       })
     }
+  }
+  
+  // MARK: - UIImagePickerControllerDelegate Functions
+  func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+    // work with the media here
+    // check the media type is an image
+    let mediaType = info[UIImagePickerControllerMediaType] as! String
+    if mediaType == kUTTypeImage as! String {
+      // media is an image
+      // get the unedited version, different for edited version
+      let origImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+      // not sure if the edited image exists when no edit occured
+      let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage
+      
+      // replace our image in the imageView
+      babyImageView.image = origImage
+      
+    }
+    self.dismissViewControllerAnimated(true, completion: nil)
     
     
+  }
+  
+  func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+    self.dismissViewControllerAnimated(true, completion: nil)
   }
   
   /*
