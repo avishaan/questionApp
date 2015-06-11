@@ -42,6 +42,7 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
     babyImageView.clipsToBounds = true
     babyImageView.layer.borderWidth = 7.0
     babyImageView.layer.borderColor = kBlue.CGColor
+    
   }
   
   override func didReceiveMemoryWarning() {

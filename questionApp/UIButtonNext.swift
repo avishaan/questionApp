@@ -19,7 +19,9 @@ class UIButtonNext: UIButton {
       // self.setImage(UIImage(named: "startButton"), forState: UIControlState.Normal)
       self.setBackgroundImage(background, forState: UIControlState.Normal)
       //self.frame = CGRect(x: 0, y: 0, width: background!.size.width, height: background!.size.height)
-      self.frame = CGRect(x: 0, y: 0, width: 311, height: 67)
+      //self.frame.size = CGSizeMake(311, 67)
+      //self.frame = CGRect(x: 0, y: 0, width: 311, height: 67)
+      //super.drawRect(rect)
     }
 
 }
