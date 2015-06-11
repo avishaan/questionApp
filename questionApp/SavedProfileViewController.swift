@@ -20,6 +20,9 @@ class SavedProfileViewController: UIViewController {
     
     // Do any additional setup after loading the view.
     setLabel(nameLabel, keyText: "Name: ", valueText: "Molly Smith")
+    setLabel(emailLabel, keyText: "Email: ", valueText: "mollys@gmail.com")
+    setLabel(babyNameLabel, keyText: "Baby's name: ", valueText: "Lucas")
+    setLabel(babyDOBLabel, keyText: "Baby's birthdate: ", valueText: "08/11/2014")
   }
   
   override func didReceiveMemoryWarning() {
@@ -35,8 +38,6 @@ class SavedProfileViewController: UIViewController {
     ]
     var attrValue = [
       NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 19)!, NSForegroundColorAttributeName: kBlue]
-    var myString = "Name: "
-    var myString2 = "Molly Smith"
     // full label text
     var fullText = keyText + valueText
     var fullTextMutableString = NSMutableAttributedString(string: fullText, attributes: attrKey)
