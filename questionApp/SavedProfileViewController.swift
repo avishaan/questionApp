@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class SavedProfileViewController: UIViewController {
+class SavedProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var emailLabel: UILabel!
@@ -60,9 +61,24 @@ class SavedProfileViewController: UIViewController {
     label.attributedText = fullTextMutableString
   }
   
-  // MARK: - Listen to taps on baby's face
+  // MARK: - Listen to taps on baby's face then open photo library
   func onImageTap(){
-    println("TEST")
+    // when image is tapped, go ahead and open up the photo library view
+    println("Image tapped")
+    if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary){
+      let imagePicker = UIImagePickerController()
+      
+      imagePicker.delegate = self
+      imagePicker.sourceType = .PhotoLibrary
+      imagePicker.mediaTypes = [kUTTypeImage]
+      imagePicker.allowsEditing = false
+      
+      self.presentViewController(imagePicker, animated: true, completion: { () -> Void in
+        return
+      })
+    }
+    
+    
   }
   
   /*
