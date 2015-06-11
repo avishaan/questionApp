@@ -36,6 +36,12 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
     babyImageView.addGestureRecognizer(imageListener)
     // user interaction must be enabled in order to listen for events
     babyImageView.userInteractionEnabled = true
+    
+    // setup image as a circle
+    babyImageView.layer.cornerRadius = babyImageView.frame.size.width/3
+    babyImageView.clipsToBounds = true
+    babyImageView.layer.borderWidth = 7.0
+    babyImageView.layer.borderColor = kBlue.CGColor
   }
   
   override func didReceiveMemoryWarning() {
@@ -64,7 +70,6 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
   // MARK: - Listen to taps on baby's face then open photo library
   func onImageTap(){
     // when image is tapped, go ahead and open up the photo library view
-    println("Image tapped")
     if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary){
       let imagePicker = UIImagePickerController()
       
