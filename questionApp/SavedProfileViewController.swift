@@ -14,6 +14,7 @@ class SavedProfileViewController: UIViewController {
   @IBOutlet weak var emailLabel: UILabel!
   @IBOutlet weak var babyNameLabel: UILabel!
   @IBOutlet weak var babyDOBLabel: UILabel!
+  @IBOutlet weak var babyImageView: UIImageView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,6 +24,16 @@ class SavedProfileViewController: UIViewController {
     setLabel(emailLabel, keyText: "Email: ", valueText: "mollys@gmail.com")
     setLabel(babyNameLabel, keyText: "Baby's name: ", valueText: "Lucas")
     setLabel(babyDOBLabel, keyText: "Baby's birthdate: ", valueText: "08/11/2014")
+    
+    
+    // connect image to listen for a tap
+    var imageListener = UITapGestureRecognizer(target: self, action: "onImageTap")
+    // define taps for the listener
+    imageListener.numberOfTapsRequired = 1
+    imageListener.numberOfTouchesRequired = 1
+    // attach listener to image
+    babyImageView.addGestureRecognizer(imageListener)
+    babyImageView.userInteractionEnabled = true
   }
   
   override func didReceiveMemoryWarning() {
@@ -48,6 +59,10 @@ class SavedProfileViewController: UIViewController {
     label.attributedText = fullTextMutableString
   }
   
+  // MARK: - Listen to taps on baby's face
+  func onImageTap(){
+    println("TEST")
+  }
   
   /*
   // MARK: - Navigation

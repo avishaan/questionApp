@@ -466,6 +466,7 @@
                         <viewControllerLayoutGuide type="bottom" id="I9e-uZ-I5Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fe1-9j-pgg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundThickBottom" translatesAutoresizingMaskIntoConstraints="NO" id="SYu-Ef-Ind">
@@ -501,12 +502,6 @@
                                     <rect key="frame" x="29" y="379" width="262" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-De-BGG">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="22" y="201" width="277" height="148"/>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baby birthdate: 4/5/11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qS-yg-3om">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -525,6 +520,15 @@
                                     <rect key="frame" x="12" y="151" width="297" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-De-BGG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                </accessibility>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="83" y="202" width="154" height="148"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -533,9 +537,9 @@
                                 <exclude reference="1Rp-L5-G1k"/>
                                 <exclude reference="SPM-h2-FNz"/>
                                 <exclude reference="MMW-TE-Hrg"/>
-                                <exclude reference="gcG-De-BGG"/>
                                 <exclude reference="6qS-yg-3om"/>
                                 <exclude reference="cwu-71-RL9"/>
+                                <exclude reference="gcG-De-BGG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -544,15 +548,16 @@
                                 <include reference="1Rp-L5-G1k"/>
                                 <include reference="SPM-h2-FNz"/>
                                 <include reference="MMW-TE-Hrg"/>
-                                <include reference="gcG-De-BGG"/>
                                 <include reference="6qS-yg-3om"/>
                                 <include reference="cwu-71-RL9"/>
+                                <include reference="gcG-De-BGG"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="babyDOBLabel" destination="6qS-yg-3om" id="nuz-YL-oNi"/>
+                        <outlet property="babyImageView" destination="gcG-De-BGG" id="BrI-j0-sJ4"/>
                         <outlet property="babyNameLabel" destination="MMW-TE-Hrg" id="TGx-D7-LlH"/>
                         <outlet property="emailLabel" destination="cwu-71-RL9" id="yRa-NO-TQe"/>
                         <outlet property="nameLabel" destination="SPM-h2-FNz" id="j2O-nl-dMz"/>
