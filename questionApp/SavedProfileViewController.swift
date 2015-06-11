@@ -33,6 +33,7 @@ class SavedProfileViewController: UIViewController {
     imageListener.numberOfTouchesRequired = 1
     // attach listener to image
     babyImageView.addGestureRecognizer(imageListener)
+    // user interaction must be enabled in order to listen for events
     babyImageView.userInteractionEnabled = true
   }
   
