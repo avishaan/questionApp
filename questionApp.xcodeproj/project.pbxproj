@@ -15,6 +15,7 @@
 		82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C281B28399F008202EA /* ProfileSetupViewController.swift */; };
 		82401C2D1B2843C8008202EA /* BNSectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C2C1B2843C8008202EA /* BNSectionLabel.swift */; };
 		82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C2E1B285CF1008202EA /* UILabelTest.swift */; };
+		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
 		829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54E91B26995800ABE77C /* AppDelegate.swift */; };
 		829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */; };
 		829F54EF1B26995800ABE77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EE1B26995800ABE77C /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		82401C281B28399F008202EA /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
 		82401C2C1B2843C8008202EA /* BNSectionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNSectionLabel.swift; sourceTree = "<group>"; };
 		82401C2E1B285CF1008202EA /* UILabelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelTest.swift; sourceTree = "<group>"; };
+		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829F54E91B26995800ABE77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				829F54EE1B26995800ABE77C /* ViewController.swift */,
 				82401C281B28399F008202EA /* ProfileSetupViewController.swift */,
 				82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */,
+				8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
@@ -273,6 +276,7 @@
 				829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */,
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */,
+				8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */,
 				82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
