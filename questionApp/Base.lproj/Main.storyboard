@@ -595,18 +595,21 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 </variation>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eai-HB-rxq">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQh-VF-bQh">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1gc-0S-NlN"/>
-                                    <barButtonItem title="Item" id="bX2-ep-lrY"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pA3-Lr-KGH"/>
-                                    <barButtonItem title="Item" id="HcU-WQ-eqa"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3tC-Cy-EHo"/>
-                                    <barButtonItem title="Item" id="p9M-hy-M4m"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XNs-Ii-zow"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gZZ-Ll-jCh"/>
+                                    <barButtonItem image="eggIcon" style="plain" id="fWR-FG-9Pb">
+                                        <color key="tintColor" red="0.67403496364860727" green="0.89307475684616533" blue="0.92625473484848486" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TcH-Ak-xTo"/>
+                                    <barButtonItem style="plain" systemItem="bookmarks" id="TT3-Xt-yoa"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5rR-Gw-GKV"/>
+                                    <barButtonItem systemItem="organize" id="W0G-3a-lg0"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DkJ-0U-6iZ"/>
                                 </items>
-                                <color key="barTintColor" red="1" green="1" blue="1" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 </variation>
@@ -616,13 +619,13 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="UdP-Gq-ZVg"/>
-                                <exclude reference="eai-HB-rxq"/>
+                                <exclude reference="yQh-VF-bQh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="UdP-Gq-ZVg"/>
-                                <include reference="eai-HB-rxq"/>
+                                <include reference="yQh-VF-bQh"/>
                             </mask>
                         </variation>
                     </view>
@@ -645,6 +648,7 @@
         <image name="babyPicture" width="384" height="384"/>
         <image name="background" width="640" height="1136"/>
         <image name="backgroundThickBottom" width="320" height="568"/>
+        <image name="eggIcon" width="25" height="25"/>
         <image name="logo" width="567" height="164"/>
         <image name="playIntroButton" width="544" height="301"/>
         <image name="startButton" width="353" height="67"/>
