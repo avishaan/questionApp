@@ -520,15 +520,6 @@
                                     <rect key="frame" x="12" y="151" width="297" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-De-BGG">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
-                                </accessibility>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="83" y="195" width="164" height="164"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkm-ga-89O" customClass="UIButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Continue">
@@ -538,6 +529,15 @@
                                     <rect key="frame" x="82" y="516" width="156" height="34"/>
                                 </variation>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-De-BGG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                </accessibility>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="78" y="195" width="164" height="164"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -548,8 +548,8 @@
                                 <exclude reference="MMW-TE-Hrg"/>
                                 <exclude reference="6qS-yg-3om"/>
                                 <exclude reference="cwu-71-RL9"/>
-                                <exclude reference="gcG-De-BGG"/>
                                 <exclude reference="rkm-ga-89O"/>
+                                <exclude reference="gcG-De-BGG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -560,8 +560,8 @@
                                 <include reference="MMW-TE-Hrg"/>
                                 <include reference="6qS-yg-3om"/>
                                 <include reference="cwu-71-RL9"/>
-                                <include reference="gcG-De-BGG"/>
                                 <include reference="rkm-ga-89O"/>
+                                <include reference="gcG-De-BGG"/>
                             </mask>
                         </variation>
                     </view>
@@ -587,6 +587,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JDl-hG-YKO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wOv-vX-FCn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="UdP-Gq-ZVg">
@@ -604,9 +605,13 @@
                                         <color key="tintColor" red="0.67403496364860727" green="0.89307475684616533" blue="0.92625473484848486" alpha="1" colorSpace="calibratedRGB"/>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="TcH-Ak-xTo"/>
-                                    <barButtonItem style="plain" systemItem="bookmarks" id="TT3-Xt-yoa"/>
+                                    <barButtonItem image="iconMenu" style="plain" id="TT3-Xt-yoa">
+                                        <color key="tintColor" red="0.67403496360000004" green="0.89307475680000004" blue="0.92625473479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="5rR-Gw-GKV"/>
-                                    <barButtonItem systemItem="organize" id="W0G-3a-lg0"/>
+                                    <barButtonItem image="gearIcon" id="W0G-3a-lg0">
+                                        <color key="tintColor" red="0.67403496360000004" green="0.89307475680000004" blue="0.92625473479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="DkJ-0U-6iZ"/>
                                 </items>
                                 <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
@@ -614,18 +619,29 @@
                                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 </variation>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my milestones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnf-a8-LKa" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="UdP-Gq-ZVg"/>
                                 <exclude reference="yQh-VF-bQh"/>
+                                <exclude reference="pnf-a8-LKa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="UdP-Gq-ZVg"/>
                                 <include reference="yQh-VF-bQh"/>
+                                <include reference="pnf-a8-LKa"/>
                             </mask>
                         </variation>
                     </view>
@@ -649,6 +665,8 @@
         <image name="background" width="640" height="1136"/>
         <image name="backgroundThickBottom" width="320" height="568"/>
         <image name="eggIcon" width="25" height="25"/>
+        <image name="gearIcon" width="27" height="27"/>
+        <image name="iconMenu" width="30" height="30"/>
         <image name="logo" width="567" height="164"/>
         <image name="playIntroButton" width="544" height="301"/>
         <image name="startButton" width="353" height="67"/>
