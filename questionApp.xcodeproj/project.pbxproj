@@ -27,6 +27,7 @@
 		829F55101B26BB1B00ABE77C /* crawl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 829F550F1B26BB1B00ABE77C /* crawl.mp4 */; };
 		829F55121B26C2EF00ABE77C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829F55111B26C2EF00ABE77C /* MediaPlayer.framework */; };
 		82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */; };
+		82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		829F550F1B26BB1B00ABE77C /* crawl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = crawl.mp4; sourceTree = "<group>"; };
 		829F55111B26C2EF00ABE77C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedProfileViewController.swift; sourceTree = "<group>"; };
+		82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */,
 				8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
+				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
 				82401C2C1B2843C8008202EA /* BNSectionLabel.swift */,
@@ -276,6 +279,7 @@
 				829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */,
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */,
+				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
 				8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */,
 				82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */,
 			);

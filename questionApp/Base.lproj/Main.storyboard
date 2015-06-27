@@ -627,30 +627,6 @@
                                     <rect key="frame" x="4" y="274" width="290" height="36"/>
                                 </variation>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.0" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQh-VF-bQh">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.12" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gZZ-Ll-jCh"/>
-                                    <barButtonItem image="eggIcon" style="plain" id="fWR-FG-9Pb">
-                                        <color key="tintColor" red="0.67403496364860727" green="0.89307475684616533" blue="0.92625473484848486" alpha="1" colorSpace="calibratedRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TcH-Ak-xTo"/>
-                                    <barButtonItem image="iconMenu" style="plain" id="TT3-Xt-yoa">
-                                        <color key="tintColor" red="0.67403496360000004" green="0.89307475680000004" blue="0.92625473479999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5rR-Gw-GKV"/>
-                                    <barButtonItem image="gearIcon" id="W0G-3a-lg0">
-                                        <color key="tintColor" red="0.67403496360000004" green="0.89307475680000004" blue="0.92625473479999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DkJ-0U-6iZ"/>
-                                </items>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                </variation>
-                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OS-vZ-Ora">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="26"/>
@@ -769,6 +745,21 @@
                                     <rect key="frame" x="222" y="372" width="82" height="115"/>
                                 </variation>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000000000000016" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUi-tx-XUJ" customClass="BNToolbar" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sFs-sz-KGl"/>
+                                    <barButtonItem image="eggIcon" id="bnd-e0-WrG"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sy3-Nt-Dr8"/>
+                                    <barButtonItem image="iconMenu" id="4ka-vA-fTB"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="iWS-aL-kaY"/>
+                                    <barButtonItem image="gearIcon" id="PbB-8z-nk8"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aPm-zS-65d"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                </variation>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -777,7 +768,6 @@
                                 <exclude reference="pnf-a8-LKa"/>
                                 <exclude reference="OGf-nh-dEj"/>
                                 <exclude reference="MyB-mh-ivs"/>
-                                <exclude reference="yQh-VF-bQh"/>
                                 <exclude reference="5OS-vZ-Ora"/>
                                 <exclude reference="isQ-4j-iaX"/>
                                 <exclude reference="Itk-jO-Xm6"/>
@@ -792,6 +782,7 @@
                                 <exclude reference="wHr-2J-jT6"/>
                                 <exclude reference="aqk-Ek-xa0"/>
                                 <exclude reference="HMe-Ac-0jt"/>
+                                <exclude reference="NUi-tx-XUJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -800,7 +791,6 @@
                                 <include reference="pnf-a8-LKa"/>
                                 <include reference="OGf-nh-dEj"/>
                                 <include reference="MyB-mh-ivs"/>
-                                <include reference="yQh-VF-bQh"/>
                                 <include reference="5OS-vZ-Ora"/>
                                 <include reference="isQ-4j-iaX"/>
                                 <include reference="Itk-jO-Xm6"/>
@@ -815,6 +805,7 @@
                                 <include reference="wHr-2J-jT6"/>
                                 <include reference="aqk-Ek-xa0"/>
                                 <include reference="HMe-Ac-0jt"/>
+                                <include reference="NUi-tx-XUJ"/>
                             </mask>
                         </variation>
                     </view>
