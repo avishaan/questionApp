@@ -17,9 +17,9 @@ class MilestonesViewController: UIViewController {
     
     // Do any additional setup after loading the view.
     // setup image as a circle
-    babyImageView.layer.cornerRadius = babyImageView.frame.size.width/2
+    babyImageView.layer.cornerRadius = babyImageView.frame.size.width/5
     babyImageView.clipsToBounds = true
-    babyImageView.layer.borderWidth = 5.0
+    babyImageView.layer.borderWidth = 4.0
     babyImageView.layer.borderColor = kBlue.CGColor
     
   }
