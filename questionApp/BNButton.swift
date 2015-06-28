@@ -19,6 +19,9 @@ class BNButton: UIButton {
     self.titleLabel?.font = UIFont(name: kOmnesFontMedium, size: 20)
     self.setTitleColor(kGrey, forState: .Normal)
     
+    // TODO: set icon alignment inline with label instead of a separate UIImage
+    
+    
     super.drawRect(rect)
     
   }
