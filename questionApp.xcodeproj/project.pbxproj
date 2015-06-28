@@ -28,6 +28,8 @@
 		829F55121B26C2EF00ABE77C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829F55111B26C2EF00ABE77C /* MediaPlayer.framework */; };
 		82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */; };
 		82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */; };
+		82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E881B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift */; };
+		82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		829F55111B26C2EF00ABE77C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedProfileViewController.swift; sourceTree = "<group>"; };
 		82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbar.swift; sourceTree = "<group>"; };
+		82F78E881B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryMotorMilestoneViewController.swift; sourceTree = "<group>"; };
+		82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +122,12 @@
 				8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
 				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
+				82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
 				82401C2C1B2843C8008202EA /* BNSectionLabel.swift */,
 				829F54F01B26995800ABE77C /* Main.storyboard */,
+				82F78E881B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift */,
 				82401C2E1B285CF1008202EA /* UILabelTest.swift */,
 				829F54F31B26995800ABE77C /* Images.xcassets */,
 				829F54F51B26995800ABE77C /* LaunchScreen.xib */,
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */,
+				82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
@@ -279,6 +286,7 @@
 				829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */,
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */,
+				82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
 				8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */,
 				82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */,
