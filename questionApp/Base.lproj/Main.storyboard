@@ -953,13 +953,13 @@
                                     <rect key="frame" x="49" y="256" width="24" height="24"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BNPupilResponseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="P39-63-w9h">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BNHearingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="P39-63-w9h">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="49" y="332" width="24" height="24"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BNPupilResponseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-zM-xZB">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BNStandingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-zM-xZB">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="49" y="407" width="24" height="24"/>
@@ -1017,10 +1017,12 @@
     </scenes>
     <resources>
         <image name="BNCrossingEyesIcon" width="24" height="24"/>
+        <image name="BNHearingIcon" width="24" height="24"/>
         <image name="BNLanguageCoginitiveProgress" width="82" height="115"/>
         <image name="BNPupilResponseIcon" width="24" height="24"/>
         <image name="BNSensoryMotorProgress" width="82" height="115"/>
         <image name="BNSocialEmotionalProgress" width="82" height="115"/>
+        <image name="BNStandingIcon" width="24" height="24"/>
         <image name="BNTwoPartLabel" width="311" height="39"/>
         <image name="babyPicture" width="384" height="384"/>
         <image name="background" width="640" height="1136"/>
