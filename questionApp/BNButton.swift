@@ -16,6 +16,8 @@ class BNButton: UIButton {
     // Drawing code
     self.layer.cornerRadius = 7
     self.clipsToBounds = true
+    self.titleLabel?.font = UIFont(name: kOmnesFontMedium, size: 20)
+    self.setTitleColor(kGrey, forState: .Normal)
     
     super.drawRect(rect)
     
