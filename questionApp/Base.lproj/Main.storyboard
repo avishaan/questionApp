@@ -723,7 +723,7 @@
                                     <accessibilityTraits key="traits" none="YES" button="YES"/>
                                 </accessibility>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="108" width="101" height="101"/>
+                                    <rect key="frame" x="16" y="100" width="101" height="101"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BNSensoryMotorProgress" translatesAutoresizingMaskIntoConstraints="NO" id="wHr-2J-jT6">
