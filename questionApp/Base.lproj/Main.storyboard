@@ -25,6 +25,7 @@
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -884,7 +885,19 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="107" y="456" width="106" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="9CL-vI-WhP" kind="show" id="V3Q-7r-5kc"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Sensory and Motor Development?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf1-lU-Nwu">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="98" width="281" height="53"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -892,6 +905,7 @@
                                 <exclude reference="Hfy-Og-rlv"/>
                                 <exclude reference="GMR-gq-ZZZ"/>
                                 <exclude reference="aAO-ib-2hs"/>
+                                <exclude reference="uf1-lU-Nwu"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -899,6 +913,7 @@
                                 <include reference="Hfy-Og-rlv"/>
                                 <include reference="GMR-gq-ZZZ"/>
                                 <include reference="aAO-ib-2hs"/>
+                                <include reference="uf1-lU-Nwu"/>
                             </mask>
                         </variation>
                     </view>
