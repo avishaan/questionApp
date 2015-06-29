@@ -15,6 +15,7 @@
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
         </mutableArray>
         <mutableArray key="OmnesSem.ttf">
             <string>Omnes-Semibold</string>
@@ -1478,6 +1479,93 @@
                                     <rect key="frame" x="35" y="87" width="251" height="53"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pupilResponseIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="UTR-uX-Sge">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="143" width="320" height="140"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YId-Mp-Xeg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="279" width="281" height="91"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7q-eZ-KK1">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="is full and happy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="72" y="359" width="177" height="36"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIU-fd-lmE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  has a dry diaper">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="72" y="408" width="177" height="36"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ey-Yt-KA6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="• ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" is well rested">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="72" y="383" width="177" height="36"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -1486,6 +1574,11 @@
                                 <exclude reference="kuZ-ak-fby"/>
                                 <exclude reference="3VO-7N-uyW"/>
                                 <exclude reference="EXx-fb-4Az"/>
+                                <exclude reference="UTR-uX-Sge"/>
+                                <exclude reference="YId-Mp-Xeg"/>
+                                <exclude reference="V7q-eZ-KK1"/>
+                                <exclude reference="VIU-fd-lmE"/>
+                                <exclude reference="8Ey-Yt-KA6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1494,6 +1587,11 @@
                                 <include reference="kuZ-ak-fby"/>
                                 <include reference="3VO-7N-uyW"/>
                                 <include reference="EXx-fb-4Az"/>
+                                <include reference="UTR-uX-Sge"/>
+                                <include reference="YId-Mp-Xeg"/>
+                                <include reference="V7q-eZ-KK1"/>
+                                <include reference="VIU-fd-lmE"/>
+                                <include reference="8Ey-Yt-KA6"/>
                             </mask>
                         </variation>
                     </view>
@@ -1501,7 +1599,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Dt-LQ-jfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6051" y="1189"/>
+            <point key="canvasLocation" x="6051" y="1182"/>
         </scene>
         <!--AV Player View Controller-->
         <scene sceneID="b2g-lr-SBc">
@@ -1538,6 +1636,7 @@
         <image name="logo" width="567" height="164"/>
         <image name="playIntroButton" width="544" height="301"/>
         <image name="pupilResponseBaby" width="319" height="119"/>
+        <image name="pupilResponseIsBabyReady" width="320" height="120"/>
         <image name="pupilResponseTestVideoPreview" width="319" height="203"/>
         <image name="pupilResponseWhatWillYouNeed" width="319" height="119"/>
         <image name="sensoryMotorTestVideoPreview" width="318" height="192"/>
