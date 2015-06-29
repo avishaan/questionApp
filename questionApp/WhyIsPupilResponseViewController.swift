@@ -20,7 +20,13 @@ class WhyIsPupilResponseViewController: UIViewController {
     let string = "Your baby's pupils should expand and contract in varying light levels. Lack of pupil response can indicate issues with the eyes or nerves connecting eyes to brain."
     var attributedString = NSMutableAttributedString(string: string)
     
-    let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)]
+    let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
+    let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
+    
+    attributedString.addAttributes(firstAttributes, range: NSMakeRange(0, 70))
+    attributedString.addAttributes(secondAttributes, range: NSMakeRange(70, 93))
+    
+    pupilResponseDescriptionLabel.attributedText = attributedString
     
   }
   

@@ -1189,7 +1189,6 @@
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                     <rect key="frame" x="14" y="274" width="293" height="183"/>
                                 </variation>
                             </label>
