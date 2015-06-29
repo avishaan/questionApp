@@ -1797,11 +1797,42 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNX-3c-gkL" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Both pupils constricted.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="137" y="132" width="46" height="30"/>
+                                    <rect key="frame" x="28" y="150" width="265" height="58"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-bz-Lx1" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Neither pupil constricted.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="228" width="265" height="58"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFz-Mo-jjV" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Right pupil constricted.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="306" width="265" height="58"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9Z-Q6-PC9" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Left pupil constricted.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="385" width="265" height="58"/>
                                 </variation>
                             </button>
                         </subviews>
@@ -1812,6 +1843,9 @@
                                 <exclude reference="knT-83-lxr"/>
                                 <exclude reference="ATj-gN-t0p"/>
                                 <exclude reference="VNX-3c-gkL"/>
+                                <exclude reference="mGo-bz-Lx1"/>
+                                <exclude reference="jFz-Mo-jjV"/>
+                                <exclude reference="I9Z-Q6-PC9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1820,6 +1854,9 @@
                                 <include reference="knT-83-lxr"/>
                                 <include reference="ATj-gN-t0p"/>
                                 <include reference="VNX-3c-gkL"/>
+                                <include reference="mGo-bz-Lx1"/>
+                                <include reference="jFz-Mo-jjV"/>
+                                <include reference="I9Z-Q6-PC9"/>
                             </mask>
                         </variation>
                     </view>
