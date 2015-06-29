@@ -17,6 +17,7 @@ class BNButton: UIButton {
     self.layer.cornerRadius = 7
     self.clipsToBounds = true
     self.titleLabel?.font = UIFont(name: kOmnesFontMedium, size: 20)
+    self.backgroundColor = UIColor.whiteColor()
     self.setTitleColor(kGrey, forState: .Normal)
     
     // TODO: set icon alignment inline with label instead of a separate UIImage

@@ -30,6 +30,8 @@
 		82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */; };
 		82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E881B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift */; };
 		82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */; };
+		82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */; };
+		82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbar.swift; sourceTree = "<group>"; };
 		82F78E881B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryMotorMilestoneViewController.swift; sourceTree = "<group>"; };
 		82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButton.swift; sourceTree = "<group>"; };
+		82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryMotorIntroViewController.swift; sourceTree = "<group>"; };
+		82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButtonNext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +122,13 @@
 				829F54E91B26995800ABE77C /* AppDelegate.swift */,
 				829F54EE1B26995800ABE77C /* ViewController.swift */,
 				82401C281B28399F008202EA /* ProfileSetupViewController.swift */,
+				82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */,
 				82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */,
 				8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
 				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
 				82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */,
+				82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
 				82401C2C1B2843C8008202EA /* BNSectionLabel.swift */,
@@ -284,10 +290,12 @@
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,
 				82401C2D1B2843C8008202EA /* BNSectionLabel.swift in Sources */,
 				829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */,
+				82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */,
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */,
 				82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
+				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
 				8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */,
 				82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */,
 			);

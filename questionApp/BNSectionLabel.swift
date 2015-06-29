@@ -37,7 +37,7 @@ class BNSectionLabel: UILabel {
 //      
 //      //self.text = "Test"
 //      //self.font = omnesFontMed
-      self.font = UIFont(name: kOmnesFontMedium, size: 29)
+      self.font = UIFont(name: kOmnesFontMedium, size: 26)
       self.textAlignment = .Center
       self.textColor = UIColor.whiteColor()
       // make the actual drawings
