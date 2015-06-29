@@ -763,6 +763,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="372" width="82" height="115"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="BQd-Im-7hS" kind="show" id="stG-R7-05I"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BNLanguageCoginitiveProgress" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-Ek-xa0">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
