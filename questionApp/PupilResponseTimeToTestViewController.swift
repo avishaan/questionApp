@@ -10,10 +10,13 @@ import UIKit
 
 class PupilResponseTimeToTestViewController: UIViewController {
   
+  @IBOutlet weak var labelBackground: UILabel!
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
+    labelBackground.layer.cornerRadius = 7
+    labelBackground.layer.masksToBounds = true
   }
   
   override func didReceiveMemoryWarning() {
