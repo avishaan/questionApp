@@ -1935,7 +1935,7 @@
                                     <rect key="frame" x="99" y="290" width="122" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="l1L-HK-LFa" kind="show" id="r6M-2i-hJG"/>
+                                    <segue destination="vqP-SJ-U0l" kind="show" id="OVj-2n-SsR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2009,6 +2009,6 @@
         <image name="startButton" width="353" height="67"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="r6M-2i-hJG"/>
+        <segue reference="OVj-2n-SsR"/>
     </inferredMetricsTieBreakers>
 </document>
