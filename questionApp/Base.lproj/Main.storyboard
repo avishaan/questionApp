@@ -21,8 +21,11 @@
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
         </mutableArray>
         <mutableArray key="OmnesSem.ttf">
+            <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
@@ -1820,6 +1823,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="28" y="228" width="265" height="58"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="d8m-pO-qgZ" kind="show" id="9G6-MF-bb1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFz-Mo-jjV" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -1830,6 +1836,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="28" y="306" width="265" height="58"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="d8m-pO-qgZ" kind="show" id="Nke-0N-een"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9Z-Q6-PC9" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -1840,6 +1849,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="28" y="385" width="265" height="58"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="d8m-pO-qgZ" kind="show" id="bXU-UG-Zw5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1965,7 +1977,110 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZH-tE-NVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8088" y="1198"/>
+            <point key="canvasLocation" x="8077.5" y="1009"/>
+        </scene>
+        <!--Pupil Response Bad Outcome View Controller-->
+        <scene sceneID="kkX-6s-hEN">
+            <objects>
+                <viewController id="d8m-pO-qgZ" customClass="PupilResponseBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tHU-Dx-nf8"/>
+                        <viewControllerLayoutGuide type="bottom" id="qaA-Ah-aNi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHe-ZP-8yf">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8vR-11-0nu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pupil response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRE-0Q-gr6" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pupil's didn't constrict?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwq-67-MnD">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="84" width="251" height="53"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZb-gG-vkk" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="99" y="451" width="122" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="vqP-SJ-U0l" kind="show" id="Csn-V1-Agc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcR-kj-VrU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="63" y="390" width="194" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-iS-ZDJ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="133" width="240" height="128"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure repeated tests are consistent and please share your results with your pediatrician." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-5E-doS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="255" width="257" height="117"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8vR-11-0nu"/>
+                                <exclude reference="oRE-0Q-gr6"/>
+                                <exclude reference="nwq-67-MnD"/>
+                                <exclude reference="BZb-gG-vkk"/>
+                                <exclude reference="jcR-kj-VrU"/>
+                                <exclude reference="QQ4-iS-ZDJ"/>
+                                <exclude reference="gdn-5E-doS"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8vR-11-0nu"/>
+                                <include reference="oRE-0Q-gr6"/>
+                                <include reference="nwq-67-MnD"/>
+                                <include reference="BZb-gG-vkk"/>
+                                <include reference="jcR-kj-VrU"/>
+                                <include reference="QQ4-iS-ZDJ"/>
+                                <include reference="gdn-5E-doS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHJ-69-D5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8724" y="1203"/>
         </scene>
         <!--AV Player View Controller-->
         <scene sceneID="b2g-lr-SBc">
@@ -2009,6 +2124,7 @@
         <image name="startButton" width="353" height="67"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OVj-2n-SsR"/>
+        <segue reference="bXU-UG-Zw5"/>
+        <segue reference="Csn-V1-Agc"/>
     </inferredMetricsTieBreakers>
 </document>
