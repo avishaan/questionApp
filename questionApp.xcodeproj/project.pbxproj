@@ -32,6 +32,7 @@
 		82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */; };
 		82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */; };
 		82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */; };
+		82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButton.swift; sourceTree = "<group>"; };
 		82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryMotorIntroViewController.swift; sourceTree = "<group>"; };
 		82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButtonNext.swift; sourceTree = "<group>"; };
+		82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsPupilResponseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				82401C281B28399F008202EA /* ProfileSetupViewController.swift */,
 				82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */,
 				82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */,
+				82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */,
 				8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
 				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */,
 				82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */,
 				82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,

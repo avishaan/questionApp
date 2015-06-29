@@ -22,7 +22,6 @@ class BNButton: UIButton {
     
     // TODO: set icon alignment inline with label instead of a separate UIImage
     
-    
     super.drawRect(rect)
     
   }

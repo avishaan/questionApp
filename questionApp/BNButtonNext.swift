@@ -16,6 +16,7 @@ class BNButtonNext: BNButton {
     // Drawing code
     super.drawRect(rect)
     self.setTitleColor(kOrange, forState: .Normal)
+    self.titleLabel?.font = UIFont(name: kOmnesFontSemiBold, size: 20)
     
   }
   
