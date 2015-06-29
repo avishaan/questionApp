@@ -16,6 +16,7 @@
 		82401C2D1B2843C8008202EA /* BNSectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C2C1B2843C8008202EA /* BNSectionLabel.swift */; };
 		82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C2E1B285CF1008202EA /* UILabelTest.swift */; };
 		824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */; };
+		824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */; };
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
 		829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54E91B26995800ABE77C /* AppDelegate.swift */; };
 		829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */; };
@@ -60,6 +61,7 @@
 		82401C2C1B2843C8008202EA /* BNSectionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNSectionLabel.swift; sourceTree = "<group>"; };
 		82401C2E1B285CF1008202EA /* UILabelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelTest.swift; sourceTree = "<group>"; };
 		824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
+		824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseGoodOutcomeViewController.swift; sourceTree = "<group>"; };
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */,
 				82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */,
 				82D1415A1B41289F0048434F /* PupilResponseTimeToTestViewController.swift */,
+				824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */,
 				824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */,
 				82E42ABB1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift */,
 				82E42AB71B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift */,
@@ -325,6 +328,7 @@
 				82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */,
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */,
+				824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */,
 				82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
