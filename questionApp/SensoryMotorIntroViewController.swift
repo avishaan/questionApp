@@ -7,29 +7,55 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class SensoryMotorIntroViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  @IBOutlet weak var previewButton: UIButton!
+  @IBOutlet weak var player: UIView!
+  
+  var playerVC:AVPlayerViewController!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "tutorialVideoSegue" {
+      // set the playerVC as out destination
+      playerVC = segue.destinationViewController as!
+      AVPlayerViewController
+      let path = NSBundle.mainBundle().pathForResource("crawl", ofType: "mp4")
+      let url = NSURL.fileURLWithPath(path!)
+      // let url = NSURL(string: "crawl.mp4") // for remote locations
+      
+      // hide player controls
+      playerVC.showsPlaybackControls = false
+      playerVC.hidesBottomBarWhenPushed = true
+      playerVC.videoGravity = AVLayerVideoGravityResizeAspectFill
+      
+      playerVC.player = AVPlayer(URL: url)
+      // we start off paused, then we will play once the button is hit
+      playerVC.player.pause()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  }
+  @IBAction func onPreviewButtonTap(sender: AnyObject) {
+    // we know the sender is a button, cast accordingly
+    var button = sender as! UIButton
+    // hide this button
+    button.hidden = true
+    // play the video
+    playerVC.player.play()
+    
+  }
+  
 
 }

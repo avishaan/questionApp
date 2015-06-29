@@ -867,6 +867,28 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 </variation>
                             </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbC-b4-1q1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="169" width="278" height="153"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="6B8-5S-84E" kind="embed" identifier="tutorialVideoSegue" id="2Kf-im-h3M"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-cE-rJL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="sensoryMotorTestVideoPreview">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="169" width="278" height="153"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onPreviewButtonTap:" destination="VjN-jI-kwu" eventType="touchUpInside" id="I1o-f0-cxO"/>
+                                    <action selector="onPreviewButtonTap:" destination="BQd-Im-7hS" eventType="touchUpInside" id="O78-Z6-MrO"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sensory &amp; motor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMR-gq-ZZZ" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -903,6 +925,8 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Hfy-Og-rlv"/>
+                                <exclude reference="RbC-b4-1q1"/>
+                                <exclude reference="OXw-cE-rJL"/>
                                 <exclude reference="GMR-gq-ZZZ"/>
                                 <exclude reference="aAO-ib-2hs"/>
                                 <exclude reference="uf1-lU-Nwu"/>
@@ -911,6 +935,8 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Hfy-Og-rlv"/>
+                                <include reference="RbC-b4-1q1"/>
+                                <include reference="OXw-cE-rJL"/>
                                 <include reference="GMR-gq-ZZZ"/>
                                 <include reference="aAO-ib-2hs"/>
                                 <include reference="uf1-lU-Nwu"/>
@@ -918,10 +944,24 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="player" destination="RbC-b4-1q1" id="XJE-Io-tMX"/>
+                        <outlet property="previewButton" destination="OXw-cE-rJL" id="7yj-Qv-NPC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJp-po-lLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2761.5" y="1189"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="1i4-3i-BpL">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="6B8-5S-84E" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XdT-pX-Eiu"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nx9-1y-ghZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2761.5" y="1659.5"/>
         </scene>
         <!--Sensory Motor Milestone View Controller-->
         <scene sceneID="1iI-7V-8mO">
@@ -1112,6 +1152,7 @@
         <image name="iconMenu" width="30" height="30"/>
         <image name="logo" width="567" height="164"/>
         <image name="playIntroButton" width="544" height="301"/>
+        <image name="sensoryMotorTestVideoPreview" width="318" height="192"/>
         <image name="startButton" width="353" height="67"/>
     </resources>
 </document>
