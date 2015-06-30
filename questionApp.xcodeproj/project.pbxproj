@@ -26,11 +26,11 @@
 		829F54EF1B26995800ABE77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EE1B26995800ABE77C /* ViewController.swift */; };
 		829F54F21B26995800ABE77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829F54F01B26995800ABE77C /* Main.storyboard */; };
 		829F54F41B26995800ABE77C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829F54F31B26995800ABE77C /* Images.xcassets */; };
-		829F54F71B26995800ABE77C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829F54F51B26995800ABE77C /* LaunchScreen.xib */; };
 		829F55031B26995800ABE77C /* questionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F55021B26995800ABE77C /* questionAppTests.swift */; };
 		829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */; };
 		829F55101B26BB1B00ABE77C /* crawl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 829F550F1B26BB1B00ABE77C /* crawl.mp4 */; };
 		829F55121B26C2EF00ABE77C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829F55111B26C2EF00ABE77C /* MediaPlayer.framework */; };
+		82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C49BF91B424934002998C2 /* LaunchScreen.xcassets */; };
 		82D1415B1B41289F0048434F /* PupilResponseTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1415A1B41289F0048434F /* PupilResponseTimeToTestViewController.swift */; };
 		82E42AB81B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42AB71B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift */; };
 		82E42ABA1B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */; };
@@ -76,13 +76,13 @@
 		829F54EE1B26995800ABE77C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		829F54F11B26995800ABE77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		829F54F31B26995800ABE77C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		829F54F61B26995800ABE77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		829F54FC1B26995800ABE77C /* questionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = questionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F55011B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829F55021B26995800ABE77C /* questionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionAppTests.swift; sourceTree = "<group>"; };
 		829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVideoViewController.swift; sourceTree = "<group>"; };
 		829F550F1B26BB1B00ABE77C /* crawl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = crawl.mp4; sourceTree = "<group>"; };
 		829F55111B26C2EF00ABE77C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		82C49BF91B424934002998C2 /* LaunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchScreen.xcassets; sourceTree = "<group>"; };
 		82D1415A1B41289F0048434F /* PupilResponseTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseTimeToTestViewController.swift; sourceTree = "<group>"; };
 		82E42AB71B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseTestOverviewViewController.swift; sourceTree = "<group>"; };
 		82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				82F78E881B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift */,
 				82401C2E1B285CF1008202EA /* UILabelTest.swift */,
 				829F54F31B26995800ABE77C /* Images.xcassets */,
-				829F54F51B26995800ABE77C /* LaunchScreen.xib */,
+				82C49BF91B424934002998C2 /* LaunchScreen.xcassets */,
 				829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */,
 				829F54E71B26995800ABE77C /* Supporting Files */,
 			);
@@ -299,10 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				829F54F21B26995800ABE77C /* Main.storyboard in Resources */,
+				82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */,
 				8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */,
 				824565271B41FFB2003320A9 /* IntroVideo.mov in Resources */,
 				829F55101B26BB1B00ABE77C /* crawl.mp4 in Resources */,
-				829F54F71B26995800ABE77C /* LaunchScreen.xib in Resources */,
 				829F54F41B26995800ABE77C /* Images.xcassets in Resources */,
 				82401C271B283590008202EA /* OmnesMed.ttf in Resources */,
 				82401C231B28219A008202EA /* OmnesSem.ttf in Resources */,
@@ -375,14 +375,6 @@
 				829F54F11B26995800ABE77C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		829F54F51B26995800ABE77C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				829F54F61B26995800ABE77C /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -475,9 +467,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = questionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -489,9 +483,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = questionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

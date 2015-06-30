@@ -27,8 +27,6 @@
 		<string>OmnesSem.ttf</string>
 		<string>OmnesMed.ttf</string>
 	</array>
-	<key>UILaunchStoryboardName</key>
-	<string>Main</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

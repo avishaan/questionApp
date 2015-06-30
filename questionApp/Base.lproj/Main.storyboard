@@ -1781,6 +1781,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Sd4-Kd-lTa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="N0l-J1-9wZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="G8p-iV-s6U">
@@ -1899,6 +1900,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vot-NJ-uGc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cGK-gs-oH6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3Ez-CA-jjB">
@@ -1994,6 +1996,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qaA-Ah-aNi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dHe-ZP-8yf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8vR-11-0nu">
@@ -2102,6 +2105,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fdA-ug-trp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XaV-bd-kqT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Zsj-MZ-A7W">
