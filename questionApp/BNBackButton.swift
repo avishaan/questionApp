@@ -28,8 +28,13 @@ class BNBackButton: UIButton {
     self.tintColor = UIColor(red: 169, green: 235, blue: 255, alpha: 0.8)
     
     // add touch event for dismissing the VC
-//    self.addTarget(self, action: "onButtonTap", forControlEvents: UIControlEvents.TouchUpInside)
+    self.addTarget(self, action: "onButtonTap:", forControlEvents: UIControlEvents.TouchUpInside)
     
+  }
+  
+  func onButtonTap(sender: UIButton!){
+    println("button tapped")
+//    sender.superview?.backgroundColor = UIColor.blackColor()
   }
   
 
