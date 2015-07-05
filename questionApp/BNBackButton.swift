@@ -27,6 +27,9 @@ class BNBackButton: UIButton {
     self.setImage(UIImage(named: "backIcon"), forState: .Normal)
     self.tintColor = UIColor(red: 169, green: 235, blue: 255, alpha: 0.8)
     
+    // add touch event for dismissing the VC
+    self.addTarget(self, action: "onButtonTap", forControlEvents: UIControlEvents.TouchUpInside)
+    
   }
   
 

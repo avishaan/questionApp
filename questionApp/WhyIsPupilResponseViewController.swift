@@ -32,7 +32,7 @@ class WhyIsPupilResponseViewController: UIViewController {
     
     // if no view controller to dismiss, don't show back button
     if (self.presentingViewController == nil) {
-      backButton.hidden = true
+//      backButton.hidden = true
     }
     
   }
