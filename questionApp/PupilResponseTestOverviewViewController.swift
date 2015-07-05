@@ -56,5 +56,8 @@ class PupilResponseTestOverviewViewController: UIViewController {
     // play the video
     playerVC.player.play()
   }
+  @IBAction func onBackButtonTap(sender: AnyObject) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
   
 }

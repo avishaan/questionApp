@@ -34,6 +34,8 @@ class BNBackButton: UIButton {
   
   func onButtonTap(sender: UIButton!){
     println("button tapped")
+    // this will get the view controller from the first time the button was instantiated
+//    sender.superview?.window?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
 //    sender.superview?.backgroundColor = UIColor.blackColor()
   }
   

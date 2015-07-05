@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class ViewController: BNUIViewController {
 
   @IBOutlet weak var subView: UIView!
   
