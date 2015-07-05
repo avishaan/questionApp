@@ -11,6 +11,7 @@ import UIKit
 class WhyIsPupilResponseViewController: UIViewController {
   
   @IBOutlet weak var pupilResponseDescriptionLabel: UILabel!
+  @IBOutlet weak var backButton: BNBackButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -28,6 +29,11 @@ class WhyIsPupilResponseViewController: UIViewController {
     attributedString.addAttributes(secondAttributes, range: NSMakeRange(70, 93))
     
     pupilResponseDescriptionLabel.attributedText = attributedString
+    
+    // if no view controller to dismiss, don't show back button
+    if (self.presentingViewController == nil) {
+      backButton.hidden = true
+    }
     
   }
   

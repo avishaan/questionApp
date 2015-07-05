@@ -22,9 +22,12 @@ class BNBackButton: UIButton {
     super.init(coder: aDecoder)
     
     self.setTitle("", forState: .Normal)
-    self.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+    self.imageView?.contentMode = UIViewContentMode.Center
+//    self.setBackgroundImage(UIImage(named: "backIcon"), forState: .Normal)
     self.setImage(UIImage(named: "backIcon"), forState: .Normal)
-    self.tintColor = UIColor(red: <#CGFloat#>, green: <#CGFloat#>, blue: <#CGFloat#>, alpha: <#CGFloat#>)
+    self.tintColor = UIColor(red: 169, green: 235, blue: 255, alpha: 0.8)
+    
   }
+  
 
 }
