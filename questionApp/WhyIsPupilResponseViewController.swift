@@ -11,6 +11,7 @@ import UIKit
 class WhyIsPupilResponseViewController: UIViewController {
   
   @IBOutlet weak var pupilResponseDescriptionLabel: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -45,5 +46,9 @@ class WhyIsPupilResponseViewController: UIViewController {
   // Pass the selected object to the new view controller.
   }
   */
+  @IBAction func onBackTap(sender: AnyObject) {
+    dismissViewControllerAnimated(true, completion: nil)
+  }
+  
   
 }
