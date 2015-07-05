@@ -31,5 +31,8 @@ class PupilResponseIsBabyReadyViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  @IBAction func onBackButtonTap(sender: AnyObject) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
 
 }

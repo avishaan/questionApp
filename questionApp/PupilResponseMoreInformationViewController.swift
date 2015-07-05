@@ -1,14 +1,14 @@
 //
-//  PupilResponseGoodOutcomeViewController.swift
+//  PupilResponseMoreInformationViewController.swift
 //  questionApp
 //
-//  Created by Brown Magic on 6/29/15.
+//  Created by Brown Magic on 7/5/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class PupilResponseGoodOutcomeViewController: UIViewController {
+class PupilResponseMoreInformationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1652,6 +1652,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="bHr-N8-sgf" eventType="touchUpInside" id="31Q-4t-U72"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1803,6 +1806,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="4" y="24" width="35" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="qyd-pd-tJW" eventType="touchUpInside" id="IUb-sA-RX7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1850,10 +1856,10 @@
             </objects>
             <point key="canvasLocation" x="6748.5" y="1189"/>
         </scene>
-        <!--View Controller-->
+        <!--Pupil Response What Did You See View Controller-->
         <scene sceneID="ZRb-xm-NnL">
             <objects>
-                <viewController id="CiN-dK-CsQ" sceneMemberID="viewController">
+                <viewController id="CiN-dK-CsQ" customClass="PupilResponseWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SXl-Ku-yKE"/>
                         <viewControllerLayoutGuide type="bottom" id="Sd4-Kd-lTa"/>
@@ -1946,6 +1952,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="CiN-dK-CsQ" eventType="touchUpInside" id="A62-Pf-2Xr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2055,6 +2064,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="v6C-Jk-zE1" eventType="touchUpInside" id="f8u-FO-KgF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2173,6 +2185,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="d8m-pO-qgZ" eventType="touchUpInside" id="FRe-Pe-8eh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2207,10 +2222,10 @@
             </objects>
             <point key="canvasLocation" x="8724" y="1203"/>
         </scene>
-        <!--View Controller-->
+        <!--Pupil Response More Information View Controller-->
         <scene sceneID="teD-7X-qN4">
             <objects>
-                <viewController id="FSS-5L-5fO" sceneMemberID="viewController">
+                <viewController id="FSS-5L-5fO" customClass="PupilResponseMoreInformationViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dHI-Ua-AgC"/>
                         <viewControllerLayoutGuide type="bottom" id="fdA-ug-trp"/>
@@ -2283,6 +2298,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="FSS-5L-5fO" eventType="touchUpInside" id="4AA-oA-d4Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
