@@ -49,6 +49,8 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
     babyImageView.layer.borderWidth = 7.0
     babyImageView.layer.borderColor = kBlue.CGColor
     
+    // replace image in baby view from NSUserDefaults
+    babyImageView.image = parent.image
   }
   
   override func didReceiveMemoryWarning() {
@@ -105,6 +107,8 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
       
       // replace our image in the imageView
       babyImageView.image = origImage
+      // save the image
+      parent.storeImage(origImage)
       
     }
     self.dismissViewControllerAnimated(true, completion: nil)
