@@ -12,6 +12,7 @@ class MilestonesViewController: UIViewController {
   
   @IBOutlet weak var babyImageView: UIImageView!
   @IBOutlet weak var ageLabel: UILabel!
+  @IBOutlet weak var babyNameLabel: UILabel!
   
   var parent = Parent()
   
@@ -25,6 +26,8 @@ class MilestonesViewController: UIViewController {
     babyImageView.layer.borderWidth = 4.0
     babyImageView.layer.borderColor = kBlue.CGColor
     
+    // calculations for getting age in weeks
+    
     let secondsDifference = parent.babyBirthday?.timeIntervalSinceNow
     let weekDifference = abs(secondsDifference!/60/60/24/7)
     
@@ -34,6 +37,9 @@ class MilestonesViewController: UIViewController {
     let ageAsString = weeksFormattedString! + " weeks"
     
     ageLabel.text = ageAsString
+    
+    // update baby name
+    babyNameLabel.text = parent.babyName
     
   }
   

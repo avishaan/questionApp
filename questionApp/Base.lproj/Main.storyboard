@@ -678,7 +678,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="142" y="114" width="130" height="21"/>
+                                    <rect key="frame" x="142" y="114" width="155" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="milestones completed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-4j-iaX">
@@ -886,6 +886,7 @@
                     <connections>
                         <outlet property="ageLabel" destination="huQ-Bt-ZRK" id="znc-a0-HJd"/>
                         <outlet property="babyImageView" destination="VGV-xx-uWa" id="KtZ-yT-yWm"/>
+                        <outlet property="babyNameLabel" destination="5OS-vZ-Ora" id="0yX-VX-lqe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwr-71-9iG" userLabel="First Responder" sceneMemberID="firstResponder"/>
