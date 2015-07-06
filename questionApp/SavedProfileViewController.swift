@@ -17,11 +17,13 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
   @IBOutlet weak var babyDOBLabel: UILabel!
   @IBOutlet weak var babyImageView: UIImageView!
   
+  var parent = Parent()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
-    setLabel(nameLabel, keyText: "Name: ", valueText: "Molly Smith")
+    setLabel(nameLabel, keyText: "Name: ", valueText: parent.fullName)
     setLabel(emailLabel, keyText: "Email: ", valueText: "mollys@gmail.com")
     setLabel(babyNameLabel, keyText: "Baby's name: ", valueText: "Lucas")
     setLabel(babyDOBLabel, keyText: "Baby's birthdate: ", valueText: "08/11/2014")
