@@ -1052,7 +1052,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="jSb-0C-yhK"/>
-                                    <barButtonItem image="eggIcon" id="GTw-GP-2SN"/>
+                                    <barButtonItem image="eggIcon" id="GTw-GP-2SN">
+                                        <connections>
+                                            <segue destination="vqP-SJ-U0l" kind="show" id="hJN-An-zuc"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9Zp-HV-P05"/>
                                     <barButtonItem image="menuIcon" id="9WG-Zi-O0T"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="cpq-CO-iH8"/>
@@ -2392,7 +2396,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="l69-DX-nDO"/>
-        <segue reference="tN8-4m-JPM"/>
+        <segue reference="hJN-An-zuc"/>
         <segue reference="bXU-UG-Zw5"/>
     </inferredMetricsTieBreakers>
 </document>
