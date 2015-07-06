@@ -23,8 +23,8 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
-    setLabel(nameLabel, keyText: "Name: ", valueText: parent.fullName)
-    setLabel(emailLabel, keyText: "Email: ", valueText: "mollys@gmail.com")
+    setLabel(nameLabel, keyText: "Name: ", valueText: parent.fullName!)
+    setLabel(emailLabel, keyText: "Email: ", valueText: parent.email!)
     setLabel(babyNameLabel, keyText: "Baby's name: ", valueText: "Lucas")
     setLabel(babyDOBLabel, keyText: "Baby's birthdate: ", valueText: "08/11/2014")
     
