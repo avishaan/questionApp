@@ -13,6 +13,8 @@ class ProfileSetupViewController: UIViewController {
   @IBOutlet weak var genderControl: UISegmentedControl!
   @IBOutlet weak var nameField: BNTextField!
   @IBOutlet weak var emailField: BNTextField!
+  @IBOutlet weak var babyNameField: BNTextField!
+  @IBOutlet weak var babyBirthdayDate: UIDatePicker!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -47,6 +49,8 @@ class ProfileSetupViewController: UIViewController {
     // get the information from the different fields
     person.fullName = nameField.text
     person.email = emailField.text
+    person.babyName = babyNameField.text
+    person.babyBirthday = babyBirthdayDate.date
     
     person.storeInfo()
     
