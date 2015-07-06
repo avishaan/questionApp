@@ -21,5 +21,9 @@ class BNToolbar: UIToolbar {
     super.drawRect(rect)
     
   }
-  
+//  
+//  required init(coder aDecoder: NSCoder) {
+//    super.init(coder: aDecoder)
+//  }
+//  
 }

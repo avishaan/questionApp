@@ -40,6 +40,7 @@
 		82E42ABA1B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */; };
 		82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42ABB1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift */; };
 		82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */; };
+		82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F694051B4B189B00E01B6F /* BNToolbarViewController.swift */; };
 		82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */; };
 		82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E881B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift */; };
 		82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */; };
@@ -96,6 +97,7 @@
 		82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
 		82E42ABB1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseIsBabyReadyViewController.swift; sourceTree = "<group>"; };
 		82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedProfileViewController.swift; sourceTree = "<group>"; };
+		82F694051B4B189B00E01B6F /* BNToolbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbarViewController.swift; sourceTree = "<group>"; };
 		82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbar.swift; sourceTree = "<group>"; };
 		82F78E881B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryMotorMilestoneViewController.swift; sourceTree = "<group>"; };
 		82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButton.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
 				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
+				82F694051B4B189B00E01B6F /* BNToolbarViewController.swift */,
 				82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */,
 				82D641E71B4908590013D5FB /* BNBackButton.swift */,
 				82D641E91B49DA900013D5FB /* BNUIViewController.swift */,
@@ -366,6 +369,7 @@
 				824565251B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift in Sources */,
 				824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */,
 				82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */,
+				82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
 				82D641E81B4908590013D5FB /* BNBackButton.swift in Sources */,
