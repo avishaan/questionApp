@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PupilResponseTimeToTestViewController: UIViewController {
   
@@ -64,5 +65,19 @@ class PupilResponseTimeToTestViewController: UIViewController {
   // Pass the selected object to the new view controller.
   }
   */
+  @IBAction func onFlashlightButtonTap(sender: BNButtonNext) {
+    let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+    // does the iPhone have a flashlight?
+    if (device != nil && device.hasTorch) {
+      device.lockForConfiguration(nil)
+      // check if flashlight is on for toggle
+      if (device.torchMode == AVCaptureTorchMode.On) {
+        device.torchMode = AVCaptureTorchMode.Off
+      } else {
+        device.setTorchModeOnWithLevel(1.0, error: nil)
+      }
+      device.unlockForConfiguration()
+    }
+  }
   
 }
