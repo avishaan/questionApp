@@ -767,7 +767,7 @@
                                     <rect key="frame" x="226" y="167" width="71" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-xx-uWa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-xx-uWa">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES"/>
