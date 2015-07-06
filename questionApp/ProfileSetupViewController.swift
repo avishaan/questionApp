@@ -26,11 +26,22 @@ class ProfileSetupViewController: UIViewController {
     // give a little bit of tint
     genderControl.tintColor = orange
     // TODO: change color based on which gender is picked
+    
+    // hide keyboard when typing return
+    
+    
+    
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    // use this to hide keyboard when tapping outside thetext field
+    view.endEditing(true)
+    super.touchesBegan(touches, withEvent: event)
   }
   
   

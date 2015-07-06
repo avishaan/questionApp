@@ -30,15 +30,18 @@ class MilestonesViewController: UIViewController {
     
     // calculations for getting age in weeks
     
-    let secondsDifference = parent.babyBirthday?.timeIntervalSinceNow
-    let weekDifference = abs(secondsDifference!/60/60/24/7)
+    if (parent.babyBirthday != nil){
+      let secondsDifference = parent.babyBirthday?.timeIntervalSinceNow
+      let weekDifference = abs(secondsDifference!/60/60/24/7)
+      
+      var weekFormatter = NSNumberFormatter()
+      weekFormatter.maximumFractionDigits = 0
+      let weeksFormattedString = weekFormatter.stringFromNumber(weekDifference)
+      let ageAsString = weeksFormattedString! + " weeks"
+      
+      ageLabel.text = ageAsString
     
-    var weekFormatter = NSNumberFormatter()
-    weekFormatter.maximumFractionDigits = 0
-    let weeksFormattedString = weekFormatter.stringFromNumber(weekDifference)
-    let ageAsString = weeksFormattedString! + " weeks"
-    
-    ageLabel.text = ageAsString
+    }
     
     // update baby name
     babyNameLabel.text = parent.babyName
