@@ -26,6 +26,8 @@ class MilestonesViewController: UIViewController {
     babyImageView.layer.borderWidth = 4.0
     babyImageView.layer.borderColor = kBlue.CGColor
     
+    babyImageView.image = parent.image
+    
     // calculations for getting age in weeks
     
     let secondsDifference = parent.babyBirthday?.timeIntervalSinceNow
