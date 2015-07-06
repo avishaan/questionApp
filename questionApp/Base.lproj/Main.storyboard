@@ -741,7 +741,7 @@
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="142" y="167" width="73" height="21"/>
+                                    <rect key="frame" x="142" y="167" width="82" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 weeks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huQ-Bt-ZRK">
@@ -759,7 +759,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="219" y="167" width="71" height="21"/>
+                                    <rect key="frame" x="226" y="167" width="71" height="21"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-xx-uWa">
@@ -884,6 +884,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="ageLabel" destination="huQ-Bt-ZRK" id="znc-a0-HJd"/>
                         <outlet property="babyImageView" destination="VGV-xx-uWa" id="KtZ-yT-yWm"/>
                     </connections>
                 </viewController>
@@ -2381,8 +2382,8 @@
         <image name="startButton" width="353" height="67"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V3Q-7r-5kc"/>
-        <segue reference="bXU-UG-Zw5"/>
+        <segue reference="l69-DX-nDO"/>
         <segue reference="tN8-4m-JPM"/>
+        <segue reference="bXU-UG-Zw5"/>
     </inferredMetricsTieBreakers>
 </document>

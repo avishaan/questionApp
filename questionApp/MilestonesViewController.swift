@@ -11,6 +11,9 @@ import UIKit
 class MilestonesViewController: UIViewController {
   
   @IBOutlet weak var babyImageView: UIImageView!
+  @IBOutlet weak var ageLabel: UILabel!
+  
+  var parent = Parent()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,6 +24,16 @@ class MilestonesViewController: UIViewController {
     babyImageView.clipsToBounds = true
     babyImageView.layer.borderWidth = 4.0
     babyImageView.layer.borderColor = kBlue.CGColor
+    
+    let secondsDifference = parent.babyBirthday?.timeIntervalSinceNow
+    let weekDifference = abs(secondsDifference!/60/60/24/7)
+    
+    var weekFormatter = NSNumberFormatter()
+    weekFormatter.maximumFractionDigits = 0
+    let weeksFormattedString = weekFormatter.stringFromNumber(weekDifference)
+    let ageAsString = weeksFormattedString! + " weeks"
+    
+    ageLabel.text = ageAsString
     
   }
   
