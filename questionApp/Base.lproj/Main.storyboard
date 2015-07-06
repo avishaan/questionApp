@@ -1099,7 +1099,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="jSb-0C-yhK"/>
                                     <barButtonItem image="eggIcon" id="GTw-GP-2SN"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9Zp-HV-P05"/>
-                                    <barButtonItem image="iconMenu" id="9WG-Zi-O0T"/>
+                                    <barButtonItem image="menuIcon" id="9WG-Zi-O0T"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="cpq-CO-iH8"/>
                                     <barButtonItem image="gearIcon" id="EZS-X2-IIa"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="sU0-IG-gw4"/>
@@ -2420,8 +2420,7 @@
         <image name="background" width="640" height="1136"/>
         <image name="backgroundThickBottom" width="320" height="568"/>
         <image name="eggIcon" width="32" height="38"/>
-        <image name="gearIcon" width="27" height="27"/>
-        <image name="iconMenu" width="30" height="30"/>
+        <image name="gearIcon" width="22" height="22"/>
         <image name="logo" width="567" height="164"/>
         <image name="menuIcon" width="25" height="18"/>
         <image name="playIntroButton" width="544" height="301"/>
