@@ -11,6 +11,8 @@ import UIKit
 class ProfileSetupViewController: UIViewController {
   
   @IBOutlet weak var genderControl: UISegmentedControl!
+  @IBOutlet weak var nameField: BNTextField!
+  @IBOutlet weak var emailField: BNTextField!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -40,6 +42,17 @@ class ProfileSetupViewController: UIViewController {
   }
   */
   
+  @IBAction func onSaveProfileButtonTap(sender: AnyObject) {
+    let person:Parent = Parent()
+    // get the information from the different fields
+    person.fullName = nameField.text
+    person.email = emailField.text
+    
+    person.storeInfo()
+    
+    
+    
+  }
   
   
 }

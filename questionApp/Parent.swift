@@ -9,19 +9,19 @@
 import Foundation
 
 class Parent {
-  var firstName: String?
-  var lastName: String?
+  var fullName: String?
+  var email: String?
   let store = NSUserDefaults.standardUserDefaults()
   
   init() {
     // first get info from the defaults incase they already exist
-    self.firstName = store.objectForKey("firstName") as? String
-    self.lastName = store.objectForKey("lastName") as? String
+    self.fullName = store.objectForKey("fullName") as? String
+    self.email = store.objectForKey("email") as? String
   }
   
-  func saveInfo() {
-    store.setObject(self.firstName, forKey: "firstName")
-    store.setObject(self.lastName, forKey: "lastName")
+  func storeInfo() {
+    store.setObject(self.fullName, forKey: "fullName")
+    store.setObject(self.email, forKey: "email")
   }
   
 }

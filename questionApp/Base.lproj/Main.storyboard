@@ -393,6 +393,7 @@
                                     <rect key="frame" x="82" y="516" width="156" height="33.5"/>
                                 </variation>
                                 <connections>
+                                    <action selector="onSaveProfileButtonTap:" destination="FYu-vj-N2f" eventType="touchUpInside" id="hpa-I5-Ded"/>
                                     <segue destination="l1L-HK-LFa" kind="show" id="f4K-l7-wfG"/>
                                 </connections>
                             </button>
@@ -497,7 +498,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="emailField" destination="304-aL-ian" id="cEI-8M-XCd"/>
                         <outlet property="genderControl" destination="S2E-Sh-ToX" id="pUR-ZY-GP5"/>
+                        <outlet property="nameField" destination="86S-pI-6Ql" id="xqu-dq-IJ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfa-cx-vcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
