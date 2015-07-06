@@ -16,8 +16,8 @@ class BNToolbar: UIToolbar {
     // Drawing code
     self.setBackgroundImage(UIImage(), forToolbarPosition: .Any, barMetrics: .Default)
     self.setShadowImage(UIImage(), forToolbarPosition: .Any)
-//    self.tintColor = UIColor.whiteColor()
-    self.tintColor = kBlue
+    self.tintColor = UIColor.whiteColor()
+//    self.tintColor = kBlue
     // self.barTintColor = kOrange
     super.drawRect(rect)
     
