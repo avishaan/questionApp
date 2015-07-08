@@ -57,6 +57,7 @@
 		9EABF29C1B4DCF35002FDA2C /* FallingToyWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF29B1B4DCF35002FDA2C /* FallingToyWhatDidYouSeeViewController.swift */; };
 		9EABF29E1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF29D1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift */; };
 		9EABF2A01B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF29F1B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift */; };
+		9EABF2A21B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF2A11B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift */; };
 		9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */; };
 		9EAEB5DE1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */; };
 /* End PBXBuildFile section */
@@ -126,6 +127,7 @@
 		9EABF29B1B4DCF35002FDA2C /* FallingToyWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
 		9EABF29D1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyGoodOutcomeViewController.swift; sourceTree = "<group>"; };
 		9EABF29F1B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyBadOutcomeViewController.swift; sourceTree = "<group>"; };
+		9EABF2A11B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNAuxiliaryButtonNext.swift; sourceTree = "<group>"; };
 		9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCognitiveMilestoneViewController.swift; sourceTree = "<group>"; };
 		9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCognitiveIntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +200,7 @@
 				82C49BF91B424934002998C2 /* LaunchScreen.xcassets */,
 				829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */,
 				829F54E71B26995800ABE77C /* Supporting Files */,
+				9EABF2A11B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift */,
 			);
 			path = questionApp;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */,
+				9EABF2A21B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift in Sources */,
 				82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */,
 				82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */,
 				82D641EC1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift in Sources */,
