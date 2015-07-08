@@ -1,8 +1,8 @@
 //
-//  LanguageCognitiveIntroViewController.swift
+//  FallingToyTestOverviewViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/7/15.
+//  Created by john bateman on 7/8/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,24 +10,25 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class LanguageCognitiveIntroViewController: UIViewController {
+class FallingToyTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
-    @IBOutlet weak var player: UIView!
     
     var playerVC:AVPlayerViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "LanguageCognitiveTutorialVideoSegue" {
+        if segue.identifier == "fallingToyEmbeddedVideoSegue" {
             // set the playerVC as the destination
             playerVC = segue.destinationViewController as! AVPlayerViewController
             let path = NSBundle.mainBundle().pathForResource("FallingToy", ofType: "mp4")
@@ -58,10 +59,13 @@ class LanguageCognitiveIntroViewController: UIViewController {
     }
     
     @IBAction func onPreviewButtonTap(button: UIButton) {
-        // hide this button
+        // hide button
         button.hidden = true
-        
         // play the video
         playerVC.player.play()
+    }
+
+    @IBAction func onBackTap(sender: BNBackButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
