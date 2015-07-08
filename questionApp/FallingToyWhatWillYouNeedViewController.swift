@@ -12,12 +12,15 @@ class FallingToyWhatWillYouNeedViewController: UIViewController {
 
     @IBOutlet weak var testPreparationLabel: UILabel!
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // set up attributes for both part of pupil response description label
         let string = "You'll need a small, soft, colorful toy. No hard toys - they make a sound on impact and may influence your results."
-        println("string length = \(count(string))")
         var attributedString = NSMutableAttributedString(string: string)
         
         let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
@@ -38,5 +41,14 @@ class FallingToyWhatWillYouNeedViewController: UIViewController {
 
     @IBAction func onBackButtonTap(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func onNextStepButtonTap(sender: AnyObject) {
+        let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
+        if dontShowIsBabyReadyVC == true {
+            performSegueWithIdentifier("fallingToyTimeToTestSegueID", sender: self)
+        } else {
+            performSegueWithIdentifier("isBabyReadySegueID", sender: self)
+        }
     }
 }

@@ -52,6 +52,7 @@
 		9EABF2921B4D8A35002FDA2C /* Swift.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9EABF2911B4D8A35002FDA2C /* Swift.gitignore */; };
 		9EABF2941B4D8CD4002FDA2C /* FallingToyTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF2931B4D8CD4002FDA2C /* FallingToyTestOverviewViewController.swift */; };
 		9EABF2961B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF2951B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift */; };
+		9EABF2981B4DB4F5002FDA2C /* FallingToyIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF2971B4DB4F5002FDA2C /* FallingToyIsBabyReadyViewController.swift */; };
 		9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */; };
 		9EAEB5DE1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */; };
 /* End PBXBuildFile section */
@@ -116,6 +117,7 @@
 		9EABF2911B4D8A35002FDA2C /* Swift.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift.gitignore; sourceTree = "<group>"; };
 		9EABF2931B4D8CD4002FDA2C /* FallingToyTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyTestOverviewViewController.swift; sourceTree = "<group>"; };
 		9EABF2951B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
+		9EABF2971B4DB4F5002FDA2C /* FallingToyIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyIsBabyReadyViewController.swift; sourceTree = "<group>"; };
 		9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCognitiveMilestoneViewController.swift; sourceTree = "<group>"; };
 		9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCognitiveIntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +267,7 @@
 				9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */,
 				9EABF2931B4D8CD4002FDA2C /* FallingToyTestOverviewViewController.swift */,
 				9EABF2951B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift */,
+				9EABF2971B4DB4F5002FDA2C /* FallingToyIsBabyReadyViewController.swift */,
 			);
 			name = LanaguageAndCognitive;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */,
 				82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */,
 				82E42AB81B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift in Sources */,
+				9EABF2981B4DB4F5002FDA2C /* FallingToyIsBabyReadyViewController.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
 				9EABF2961B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift in Sources */,
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
