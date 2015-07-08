@@ -47,6 +47,7 @@
 		82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */; };
 		82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */; };
 		82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */; };
+		9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */; };
 		9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */; };
 		9EAEB5DE1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */; };
 /* End PBXBuildFile section */
@@ -106,6 +107,7 @@
 		82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryMotorIntroViewController.swift; sourceTree = "<group>"; };
 		82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButtonNext.swift; sourceTree = "<group>"; };
 		82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsPupilResponseViewController.swift; sourceTree = "<group>"; };
+		9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsObjectPermanenceViewController.swift; sourceTree = "<group>"; };
 		9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCognitiveMilestoneViewController.swift; sourceTree = "<group>"; };
 		9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCognitiveIntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +252,7 @@
 			children = (
 				9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */,
 				9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */,
+				9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */,
 			);
 			name = LanaguageAndCognitive;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
+				9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */,
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,
 				82D641F01B49F9D50013D5FB /* Parent.swift in Sources */,
 				9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */,
