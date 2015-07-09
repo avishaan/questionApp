@@ -13,7 +13,7 @@ import MessageUI
 struct EmailConstants {
     static var recipient = ""
     static var subject = "Falling Toy Test Reminder"
-    static var body = "babynoggin reminds you to try the Falling Toy test again in 2-4 weeks."
+    static var body = "babynoggin reminds you to try the falling toy test again in 2-4 weeks."
     static var emailBodyFormatted = "babynoggin reminds you to try the %@ test again in 2-4 weeks."
     static var composerErrorTitle = "Unable to send the email"
     static var composerErrorMessage = "The device is not configured to send email. Please check that an e-mail account is configured in settings and retry."
@@ -22,16 +22,26 @@ struct EmailConstants {
 struct MessageConstants {
     static var recipient = ""
     static var subject = "Falling Toy Test Reminder"
-    static var body = "babynoggin reminds you to try the Falling Toy test again in 2-4 weeks."
+    static var body = "babynoggin reminds you to try the falling toy test again in 2-4 weeks."
     static var messageBodyFormatted = "babynoggin reminds you to try the %@ test again in 2-4 weeks."
     static var composerErrorTitle = "Unable to send the message"
     static var composerErrorMessage = "The device is not configured to send text messages. Please check settings and retry."
+}
+
+struct ReminderConstants {
+    static var subject = "babynoggin Test Reminder"
+    static var body = "It's time to retry the falling toy test."
+    static var reminderBodyFormatted = "It's time to retry the %@ test."
+    static var composerErrorTitle = "Error"
+    static var composerErrorMessage = "Unable to schedule the reminder."
+    static var interval: Double = 5 // TODO: change to the following 2 week interval for beta release: 14 * 24 * 60 * 60 = 1209600
 }
 
 class ActivityReminderViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
 
     // The object that invokes this controller should set testName to something similar to "Falling Toy" to identify the test. It will be used in the subject and body of the reminder email.
     var testName: String? = nil
+    // TODO: setup testName from falling toy test flow
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -163,6 +173,36 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
     // MARK: local notification
     
     @IBAction func onInAppNotificationTap(sender: AnyObject) {
+        var localNotification = UILocalNotification()
+        
+        // configure the title
+        localNotification.alertTitle = "babynoggin Test Reminder"
+        
+        // configure body
+        if let testName = self.testName {
+            var bodyString = String(format: ReminderConstants.reminderBodyFormatted, testName)
+            localNotification.alertBody = bodyString
+        } else {
+            localNotification.alertBody = ReminderConstants.body
+        }
+        
+        // add a badge
+        localNotification.applicationIconBadgeNumber = 1
+        
+        // TODO: specify the test in the userInfo property so the app knows which test to display when it is launched.
+        
+        // ask user for permission to display notifications
+        let registerUserNotificationSettings = UIApplication.instancesRespondToSelector("registerUserNotificationSettings:")
+        if registerUserNotificationSettings {
+            var types: UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Sound | UIUserNotificationType.Badge
+            UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: types, categories: nil))
+        }
+        
+        // schedule the notification
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: ReminderConstants.interval)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        
+        // TODO: add code to handle notification if app is running
     }
 
 
