@@ -58,6 +58,7 @@
 		9EABF29E1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF29D1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift */; };
 		9EABF2A01B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF29F1B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift */; };
 		9EABF2A21B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF2A11B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift */; };
+		9EABF2A41B4DF40F002FDA2C /* ActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF2A31B4DF40F002FDA2C /* ActivityReminderViewController.swift */; };
 		9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */; };
 		9EAEB5DE1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		9EABF29D1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyGoodOutcomeViewController.swift; sourceTree = "<group>"; };
 		9EABF29F1B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyBadOutcomeViewController.swift; sourceTree = "<group>"; };
 		9EABF2A11B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNAuxiliaryButtonNext.swift; sourceTree = "<group>"; };
+		9EABF2A31B4DF40F002FDA2C /* ActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityReminderViewController.swift; sourceTree = "<group>"; };
 		9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCognitiveMilestoneViewController.swift; sourceTree = "<group>"; };
 		9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCognitiveIntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +203,7 @@
 				829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */,
 				829F54E71B26995800ABE77C /* Supporting Files */,
 				9EABF2A11B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift */,
+				9EABF2A31B4DF40F002FDA2C /* ActivityReminderViewController.swift */,
 			);
 			path = questionApp;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
+				9EABF2A41B4DF40F002FDA2C /* ActivityReminderViewController.swift in Sources */,
 				9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */,
 				9EABF29C1B4DCF35002FDA2C /* FallingToyWhatDidYouSeeViewController.swift in Sources */,
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,

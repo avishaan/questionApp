@@ -32,10 +32,8 @@
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
-            <string>Omnes-Medium</string>
         </mutableArray>
         <mutableArray key="OmnesSem.ttf">
-            <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
@@ -2324,6 +2322,9 @@ Try again in 2-4 weeks.</string>
                                 <state key="normal" title="remind me!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="g9k-pA-tN0" kind="presentation" id="ley-Ow-uL2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2334,10 +2335,10 @@ Try again in 2-4 weeks.</string>
             </objects>
             <point key="canvasLocation" x="8724" y="2148"/>
         </scene>
-        <!--Pupil Response More Information View Controller-->
+        <!--Activity Reminder View Controller-->
         <scene sceneID="JvQ-AO-3dC">
             <objects>
-                <viewController id="g9k-pA-tN0" customClass="PupilResponseMoreInformationViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="g9k-pA-tN0" customClass="ActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kjw-Lo-JfG"/>
                         <viewControllerLayoutGuide type="bottom" id="lb7-ub-ug9"/>
@@ -2349,29 +2350,16 @@ Try again in 2-4 weeks.</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8ik-mf-MKT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pupil response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME1-7A-z7c" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="falling toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME1-7A-z7c" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What does this mean?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SW-FP-D8q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity Reminder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SW-FP-D8q">
                                 <rect key="frame" x="35" y="82" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-Ho-FdC">
-                                <rect key="frame" x="28" y="155" width="265" height="154"/>
-                                <string key="text">Pupil reaction is an initial indicator of overall brain function. Lack of response could be due to issues with the eyes or nerves connecting the eyes to the brain</string>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
-                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please check with your pediatrician." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loa-2f-TPJ">
-                                <rect key="frame" x="18" y="333" width="284" height="58"/>
-                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="21"/>
-                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7i-QU-S51" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
@@ -2381,14 +2369,38 @@ Try again in 2-4 weeks.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69P-1z-Dzf" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="143" width="251" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  text message" image="BNPupilResponseIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYo-MR-zrP" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="222" width="251" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  email" image="BNPupilResponseIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AG-g2-hjY" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onBackButtonTap:" destination="g9k-pA-tN0" eventType="touchUpInside" id="sca-qM-kFm"/>
+                                    <action selector="onBackButtonTap:" destination="g9k-pA-tN0" eventType="touchUpInside" id="pKV-A1-1z4"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpE-8O-yMw" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="301" width="251" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  In-app notification" image="BNPupilResponseIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
