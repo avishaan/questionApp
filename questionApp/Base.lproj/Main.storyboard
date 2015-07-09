@@ -2368,6 +2368,9 @@ Try again in 2-4 weeks.</string>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vqP-SJ-U0l" kind="presentation" id="XdJ-vh-pIC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69P-1z-Dzf" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="35" y="143" width="251" height="54"/>
@@ -2376,14 +2379,20 @@ Try again in 2-4 weeks.</string>
                                 <state key="normal" title="  text message" image="BNPupilResponseIcon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTextMessageButtonTap:" destination="g9k-pA-tN0" eventType="touchUpInside" id="R02-5m-1Tf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYo-MR-zrP" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="35" y="222" width="251" height="52"/>
+                                <rect key="frame" x="35" y="223" width="251" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="  email" image="BNPupilResponseIcon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onEmailButtonTap:" destination="g9k-pA-tN0" eventType="touchUpInside" id="9nR-HJ-vlN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AG-g2-hjY" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="9" y="24" width="35" height="30"/>
@@ -2401,6 +2410,9 @@ Try again in 2-4 weeks.</string>
                                 <state key="normal" title="  In-app notification" image="BNPupilResponseIcon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onInAppNotificationTap:" destination="g9k-pA-tN0" eventType="touchUpInside" id="bOe-yn-mpq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2440,7 +2452,7 @@ Try again in 2-4 weeks.</string>
     <inferredMetricsTieBreakers>
         <segue reference="V3Q-7r-5kc"/>
         <segue reference="Nke-0N-een"/>
-        <segue reference="4eJ-BT-Iur"/>
+        <segue reference="XdJ-vh-pIC"/>
         <segue reference="OZR-PC-mDf"/>
         <segue reference="b14-b1-AiE"/>
     </inferredMetricsTieBreakers>
