@@ -1607,7 +1607,7 @@
                             </containerView>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4w-wa-QPV">
                                 <rect key="frame" x="21" y="169" width="278" height="153"/>
-                                <state key="normal" image="sensoryMotorTestVideoPreview">
+                                <state key="normal" image="whatIsLanguageAndCognitive">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1697,7 +1697,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseBaby" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fallingToyWhyObjectPermanence" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
                                 <rect key="frame" x="0.0" y="154" width="320" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyb-jD-KTj">
@@ -1849,7 +1849,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseWhatWillYouNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fallingToyWhatWillYouNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
                                 <rect key="frame" x="-5" y="113" width="329" height="201"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You'll need a small, soft, colorful toy. No hard toys - they make a sound on impact and may influence your results." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zg-1V-sJx">
@@ -2295,7 +2295,7 @@
                                     <segue destination="vqP-SJ-U0l" kind="presentation" id="4eJ-BT-Iur"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseDevelopmentTimeline" translatesAutoresizingMaskIntoConstraints="NO" id="xDj-bm-9Sx">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fallingToyBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="xDj-bm-9Sx">
                                 <rect key="frame" x="0.0" y="133" width="320" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-LE-NYr">
@@ -2376,7 +2376,7 @@ Try again in 2-4 weeks.</string>
                                 <rect key="frame" x="35" y="143" width="251" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="  text message" image="BNPupilResponseIcon">
+                                <state key="normal" title="  text message" image="selectedRadioButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -2387,7 +2387,7 @@ Try again in 2-4 weeks.</string>
                                 <rect key="frame" x="35" y="223" width="251" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="  email" image="BNPupilResponseIcon">
+                                <state key="normal" title="  email" image="unselectedRadioButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -2407,7 +2407,7 @@ Try again in 2-4 weeks.</string>
                                 <rect key="frame" x="35" y="301" width="251" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="  In-app notification" image="BNPupilResponseIcon">
+                                <state key="normal" title="  notification" image="unselectedRadioButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -2418,6 +2418,11 @@ Try again in 2-4 weeks.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailButton" destination="CYo-MR-zrP" id="03S-5O-u0h"/>
+                        <outlet property="notificationButton" destination="UpE-8O-yMw" id="Dxj-WA-hqW"/>
+                        <outlet property="textMessageButton" destination="69P-1z-Dzf" id="oTQ-ck-3y7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77z-0D-Gea" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2437,6 +2442,9 @@ Try again in 2-4 weeks.</string>
         <image name="background" width="640" height="1136"/>
         <image name="backgroundThickBottom" width="320" height="568"/>
         <image name="eggIcon" width="32" height="38"/>
+        <image name="fallingToyBadOutcome" width="273" height="108"/>
+        <image name="fallingToyWhatWillYouNeed" width="320" height="120"/>
+        <image name="fallingToyWhyObjectPermanence" width="320" height="120"/>
         <image name="gearIcon" width="22" height="22"/>
         <image name="logo" width="567" height="164"/>
         <image name="menuIcon" width="25" height="18"/>
@@ -2446,14 +2454,17 @@ Try again in 2-4 weeks.</string>
         <image name="pupilResponseIsBabyReady" width="320" height="120"/>
         <image name="pupilResponseTestVideoPreview" width="319" height="203"/>
         <image name="pupilResponseWhatWillYouNeed" width="319" height="119"/>
+        <image name="selectedRadioButton" width="20" height="20"/>
         <image name="sensoryMotorTestVideoPreview" width="318" height="192"/>
         <image name="startButton" width="353" height="67"/>
+        <image name="unselectedRadioButton" width="20" height="20"/>
+        <image name="whatIsLanguageAndCognitive" width="320" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="V3Q-7r-5kc"/>
         <segue reference="Nke-0N-een"/>
         <segue reference="XdJ-vh-pIC"/>
         <segue reference="OZR-PC-mDf"/>
-        <segue reference="b14-b1-AiE"/>
+        <segue reference="nvI-rc-mJx"/>
     </inferredMetricsTieBreakers>
 </document>
