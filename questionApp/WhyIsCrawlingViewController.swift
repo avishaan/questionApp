@@ -22,7 +22,7 @@ class WhyIsCrawlingViewController: UIViewController {
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
-        println("string length = \(count(string))")
+        
         attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 35))
         attributedString.addAttributes(boldAttributes, range: NSMakeRange(35, 30))
         attributedString.addAttributes(standardAttributes, range: NSMakeRange(65, 77))
