@@ -67,6 +67,8 @@
 		9EF313781B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF313771B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift */; };
 		9EF3137A1B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF313791B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift */; };
 		9EF3137C1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3137B1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift */; };
+		9EF3137E1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3137D1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift */; };
+		9EF313801B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +146,8 @@
 		9EF313771B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
 		9EF313791B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlIsBabyReadyViewController.swift; sourceTree = "<group>"; };
 		9EF3137B1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlTimeToTestViewController.swift; sourceTree = "<group>"; };
+		9EF3137D1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlWhatDidYouseeViewController.swift; sourceTree = "<group>"; };
+		9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlGoodOutcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +316,8 @@
 				9EF313771B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift */,
 				9EF313791B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift */,
 				9EF3137B1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift */,
+				9EF3137D1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift */,
+				9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */,
 			);
 			name = LetsCrawl;
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF3137E1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift in Sources */,
 				9EF313721B50554F0094DAC7 /* WhyIsCrawlingViewController.swift in Sources */,
 				824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */,
 				9EABF2A21B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift in Sources */,
@@ -465,6 +472,7 @@
 				824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */,
 				82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */,
 				9EF3137A1B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift in Sources */,
+				9EF313801B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift in Sources */,
 				82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
