@@ -42,9 +42,9 @@ class LetsCrawlWhatWillYouNeedViewController: UIViewController {
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
-            //performSegueWithIdentifier("fallingToyTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("letsCrawlTimeToTestSegueID", sender: self)
         } else {
-            //performSegueWithIdentifier("isBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("letsCrawlIsBabyReadySegueID", sender: self)
         }
     }
 

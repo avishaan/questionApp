@@ -48,7 +48,7 @@ class FallingToyWhatWillYouNeedViewController: UIViewController {
         if dontShowIsBabyReadyVC == true {
             performSegueWithIdentifier("fallingToyTimeToTestSegueID", sender: self)
         } else {
-            performSegueWithIdentifier("isBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("fallingToyIsBabyReadySegueID", sender: self)
         }
     }
 }
