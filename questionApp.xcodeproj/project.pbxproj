@@ -69,6 +69,7 @@
 		9EF3137C1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3137B1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift */; };
 		9EF3137E1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3137D1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift */; };
 		9EF313801B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */; };
+		9EF313821B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF313811B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 		9EF3137B1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlTimeToTestViewController.swift; sourceTree = "<group>"; };
 		9EF3137D1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlWhatDidYouseeViewController.swift; sourceTree = "<group>"; };
 		9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlGoodOutcomeViewController.swift; sourceTree = "<group>"; };
+		9EF313811B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlBadOutcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +320,7 @@
 				9EF3137B1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift */,
 				9EF3137D1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift */,
 				9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */,
+				9EF313811B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift */,
 			);
 			name = LetsCrawl;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				9EF313781B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
 				9EABF2961B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift in Sources */,
+				9EF313821B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift in Sources */,
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
