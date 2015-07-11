@@ -21,6 +21,13 @@ class LetsCrawlBadOutcomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "letsCrawlToActivityReminderSegue" {
+            let controller = segue.destinationViewController as! ActivityReminderViewController
+            controller.testName = TestNames.letsCrawl
+        }
+    }
+    
     @IBAction func onBackButtonTap(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }

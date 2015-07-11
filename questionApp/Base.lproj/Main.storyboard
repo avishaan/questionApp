@@ -2345,7 +2345,7 @@ Try again in 2-4 weeks.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g9k-pA-tN0" kind="presentation" id="ley-Ow-uL2"/>
+                                    <segue destination="g9k-pA-tN0" kind="presentation" identifier="fallingToyToActivityReminderSegue" id="ley-Ow-uL2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3270,7 +3270,7 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g9k-pA-tN0" kind="presentation" id="30t-RS-Jp6"/>
+                                    <segue destination="g9k-pA-tN0" kind="presentation" identifier="letsCrawlToActivityReminderSegue" id="30t-RS-Jp6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3321,10 +3321,10 @@ Try again in 6-8 weeks.</string>
     <inferredMetricsTieBreakers>
         <segue reference="j7l-Po-XYD"/>
         <segue reference="nvI-rc-mJx"/>
-        <segue reference="Nke-0N-een"/>
+        <segue reference="ley-Ow-uL2"/>
+        <segue reference="XdJ-vh-pIC"/>
         <segue reference="l69-DX-nDO"/>
-        <segue reference="MXX-qq-YAy"/>
+        <segue reference="Nke-0N-een"/>
         <segue reference="QOE-4e-qxc"/>
-        <segue reference="30t-RS-Jp6"/>
     </inferredMetricsTieBreakers>
 </document>

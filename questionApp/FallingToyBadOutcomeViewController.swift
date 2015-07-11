@@ -21,6 +21,12 @@ class FallingToyBadOutcomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "fallingToyToActivityReminderSegue" {
+            let controller = segue.destinationViewController as! ActivityReminderViewController
+            controller.testName = TestNames.fallingToy
+        }
+    }
 
     @IBAction func onBackButtonTap(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
