@@ -21,6 +21,16 @@ class FallingToyTestOverviewViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        enableVideoReplay()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -50,6 +60,10 @@ class FallingToyTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
+        else if segue.identifier == "fallingToyWhatWillYouNeedSegueID" {
+            //playerVC.player.pause()
+            println("pause video here")
+        }
     }
     
     func enableVideoReplay() {
@@ -66,6 +80,7 @@ class FallingToyTestOverviewViewController: UIViewController {
     }
 
     @IBAction func onBackTap(sender: BNBackButton) {
+        playerVC.player.pause()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

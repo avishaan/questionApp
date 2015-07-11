@@ -19,6 +19,16 @@ class LetsCrawlTestOverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        enableVideoReplay()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+        super.viewWillDisappear(animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -48,6 +58,9 @@ class LetsCrawlTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
+        else if segue.identifier == "letsCrawlWhatWillYouNeedSegueID" {
+            playerVC.player.pause()
+        }
     }
 
     func enableVideoReplay() {
@@ -64,6 +77,7 @@ class LetsCrawlTestOverviewViewController: UIViewController {
     }
     
     @IBAction func onBackTap(sender: BNBackButton) {
+        playerVC.player.pause()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

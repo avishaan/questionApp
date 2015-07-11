@@ -20,7 +20,7 @@ class FallingToyWhatWillYouNeedViewController: UIViewController {
         super.viewDidLoad()
         
         // set up attributes for both part of pupil response description label
-        let string = "All you'll need is a soft floor both you and your baby can sit and crawl on."
+        let string = "You'll need a small, soft, colorful toy. No hard toys - they make a sound on impact and may influence your results."
         var attributedString = NSMutableAttributedString(string: string)
         
         let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
