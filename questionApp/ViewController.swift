@@ -41,7 +41,26 @@ class ViewController: BNUIViewController {
   }
   
   func setChart(dataPoints: [String], values: [Double]) {
+    // customize chart before setting data
     barChartView.noDataText = "No data to show you"
+    barChartView.drawGridBackgroundEnabled = false
+    barChartView.drawBordersEnabled = false
+    barChartView.descriptionText = ""
+    barChartView.legend.enabled = false
+    barChartView.xAxis.enabled = false
+    
+    barChartView.autoScaleMinMaxEnabled = false
+    
+    var leftYAxis = barChartView.leftAxis
+    leftYAxis.enabled = false
+    var rightYAxis = barChartView.rightAxis
+    rightYAxis.drawAxisLineEnabled = false
+//    rightYAxis.axisMaximum = 40
+    rightYAxis.customAxisMin = 10
+    rightYAxis.customAxisMax = 40
+//    rightYAxis.axisMinimum = 10
+    
+    // data should be set after customizing chart
     var dataEntries: [BarChartDataEntry] = []
     
     for i in 0..<dataPoints.count {
@@ -53,9 +72,8 @@ class ViewController: BNUIViewController {
     let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
     barChartView.data = chartData
     
-    barChartView.descriptionText = ""
-    barChartView.legend.enabled = false
-    barChartView.xAxis.enabled = false
+    barChartView.notifyDataSetChanged()
+    
   }
   
 
