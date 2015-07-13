@@ -142,7 +142,7 @@
                                     <segue destination="lHu-3k-w9J" kind="embed" id="LEe-k4-n2i"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tG8-BL-nkx" customClass="HorizontalBarChartView" customModule="Charts">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tG8-BL-nkx" customClass="CombinedChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -164,7 +164,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="barChartView" destination="tG8-BL-nkx" id="5Mg-HP-yyJ"/>
+                        <outlet property="chartView" destination="tG8-BL-nkx" id="2q9-0C-J1o"/>
                         <outlet property="subView" destination="QVD-TX-11Y" id="2XF-jI-YeH"/>
                     </connections>
                 </viewController>
