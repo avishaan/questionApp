@@ -59,6 +59,11 @@ class ViewController: BNUIViewController {
     rightYAxis.customAxisMin = 10
     rightYAxis.customAxisMax = 40
 //    rightYAxis.axisMinimum = 10
+    // formatter
+    var formatter:NSNumberFormatter = NSNumberFormatter()
+    formatter.maximumFractionDigits = 1
+    formatter.positiveSuffix = " months"
+    rightYAxis.valueFormatter = formatter
     
     // data should be set after customizing chart
     var dataEntries: [BarChartDataEntry] = []
