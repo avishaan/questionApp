@@ -58,6 +58,7 @@ class ViewController: BNUIViewController {
 //    rightYAxis.axisMaximum = 40
     rightYAxis.customAxisMin = 10
     rightYAxis.customAxisMax = 40
+    rightYAxis.labelCount = 2
 //    rightYAxis.axisMinimum = 10
     // formatter
     var formatter:NSNumberFormatter = NSNumberFormatter()
