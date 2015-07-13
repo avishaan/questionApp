@@ -13,7 +13,7 @@ import Charts
 class ViewController: BNUIViewController {
 
   @IBOutlet weak var subView: UIView!
-  @IBOutlet weak var barChartView: BarChartView!
+  @IBOutlet weak var barChartView: HorizontalBarChartView!
   
   var months: [String]?
   
@@ -21,8 +21,8 @@ class ViewController: BNUIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+    months = ["Jan"]
+    let unitsSold = [8.0]
     
     setChart(months!, values: unitsSold)
     
@@ -53,6 +53,9 @@ class ViewController: BNUIViewController {
     let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
     barChartView.data = chartData
     
+    barChartView.descriptionText = ""
+    barChartView.legend.enabled = false
+    barChartView.xAxis.enabled = false
   }
   
 

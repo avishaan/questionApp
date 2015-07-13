@@ -146,7 +146,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="152" width="288" height="286"/>
+                                    <rect key="frame" x="16" y="152" width="288" height="133"/>
                                 </variation>
                             </view>
                         </subviews>
@@ -164,7 +164,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="barChartView" destination="tG8-BL-nkx" id="Wl6-DN-WQ8"/>
+                        <outlet property="barChartView" destination="tG8-BL-nkx" id="5Mg-HP-yyJ"/>
                         <outlet property="subView" destination="QVD-TX-11Y" id="2XF-jI-YeH"/>
                     </connections>
                 </viewController>
