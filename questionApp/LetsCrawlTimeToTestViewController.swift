@@ -1,8 +1,8 @@
 //
-//  FallingToyTimeToTestViewController.swift
+//  LetsCrawlTimeToTestViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/8/15.
+//  Created by john bateman on 7/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,18 +10,18 @@ import UIKit
 import AVFoundation
 
 
-class FallingToyTimeToTestViewController: UIViewController {
-
-    let orangeAtrributes = [NSForegroundColorAttributeName: kOrange, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
+class LetsCrawlTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     
     @IBOutlet weak var step2Label: UILabel!
     @IBOutlet weak var step3Label: UILabel!
     @IBOutlet weak var step4Label: UILabel!
-    
+
     @IBOutlet weak var labelBackground: UILabel!
-    
+
+    let orangeAtrributes = [NSForegroundColorAttributeName: kOrange, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,10 +42,9 @@ class FallingToyTimeToTestViewController: UIViewController {
         step3AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step3Label.attributedText = step3AttributedString
         
-        var step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
-        step4AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
-        step4Label.attributedText = step4AttributedString
-
+//        var step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
+//        step4AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+//        step4Label.attributedText = step4AttributedString
     }
 
     override func didReceiveMemoryWarning() {

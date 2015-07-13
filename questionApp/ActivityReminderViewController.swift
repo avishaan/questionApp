@@ -10,40 +10,52 @@ import Foundation
 import UIKit
 import MessageUI
 
+// The following structs contain strings that can be presented to the user in a reminder...
+
+struct TestNames {
+    static var pupilResponse = "pupil response"
+    static var letsCrawl = "let's crawl"
+    static var fallingToy = "falling toy"
+}
+
 struct EmailConstants {
     static var recipient = ""
-    static var subject = "Falling Toy Test Reminder"
-    static var body = "babynoggin reminds you to try the falling toy test again in 2-4 weeks."
+    static var subject = "babynoggin Test Reminder"
+    static var body = "babynoggin reminds you to try the test again in 2-4 weeks."
     static var emailBodyFormatted = "babynoggin reminds you to try the %@ test again in 2-4 weeks."
     static var composerErrorTitle = "Unable to send the email"
     static var composerErrorMessage = "The device is not configured to send email. Please check that an e-mail account is configured in settings and retry."
+    static var button = "OK"
+    static var testReminder = "test reminder"
 }
 
 struct MessageConstants {
     static var recipient = ""
-    static var subject = "Falling Toy Test Reminder"
-    static var body = "babynoggin reminds you to try the falling toy test again in 2-4 weeks."
+    static var subject = "babynoggin Test Reminder"
+    static var body = "babynoggin reminds you to try the test again in 2-4 weeks."
     static var messageBodyFormatted = "babynoggin reminds you to try the %@ test again in 2-4 weeks."
     static var composerErrorTitle = "Unable to send the message"
     static var composerErrorMessage = "The device is not configured to send text messages. Please check settings and retry."
+    static var button = "OK"
+    static var testReminder = "test reminder"
 }
 
-struct ReminderConstants {
+struct NotificationConstants {
     static var subject = "babynoggin Test Reminder"
-    static var body = "It's time to retry the falling toy test."
+    static var body = "It's time to retry the test."
     static var reminderBodyFormatted = "It's time to retry the %@ test."
     static var composerErrorTitle = "Error"
     static var composerErrorMessage = "Unable to schedule the reminder."
-    static var interval: Double = 5 // TODO: change to the following 2 week interval for beta release: 14 * 24 * 60 * 60 = 1209600
+    static var interval: Double = 5 // TODO: Currently set to 5 seconds to support testing. Must change to the following 2 week interval for beta release: 14 * 24 * 60 * 60 = 1209600
     static var confirmedTitle = "All set!"
-    static var confirmedMessage = "A notification has been scheduled when it is time to try this test again in 2 weeks"
+    static var confirmedMessage = "A notification has been scheduled when it is time to try the %@ test again in 2 weeks"
+    static var button = "OK"
 }
 
 class ActivityReminderViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
-
-    // The object that invokes this controller should set testName to something similar to "Falling Toy" to identify the test. It will be used in the subject and body of the reminder email.
+    
+    // The object that invokes this controller should set testName to a TestNames member to identify the test. (See the TestNames struct at the top of this file.) This testName will be used in the Reminder presented to the user.
     var testName: String? = nil
-    // TODO: setup testName from falling toy test flow
     
     
     @IBOutlet weak var textMessageButton: BNButton!
@@ -52,6 +64,12 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // initialize all button graphics to the unchecked state
+        let deselectedImage = UIImage(named: "unselectedRadioButton") as UIImage!
+        emailButton.setImage(deselectedImage, forState: .Normal)
+        textMessageButton.setImage(deselectedImage, forState: .Normal)
+        notificationButton.setImage(deselectedImage, forState: .Normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,11 +87,12 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
     
     @IBAction func onTextMessageButtonTap(sender: AnyObject) {
         
-        updateButtonImage(sender)
+        //updateButtonImage(sender) // enable if radio button behavior is desired and remove emailButton.setImage(selectedImage, forState: .Normal)
         
         if MFMessageComposeViewController.canSendText() {
             if let messageComposeViewController = setupMessageComposeController() {
                 self.presentViewController(messageComposeViewController, animated: true, completion: nil)
+                textMessageButton.setImage(UIImage(named: "selectedRadioButton") as UIImage!, forState: .Normal)
             } else {
                 presentMessageErrorAlert()
             }
@@ -97,7 +116,7 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
             if let testName = self.testName {
                 // subject
                 if MFMessageComposeViewController.canSendSubject() {
-                    messageComposeViewController.subject = testName + " test reminder"
+                    messageComposeViewController.subject = testName + " " + MessageConstants.testReminder
                 }
                 // body
                 var bodyString = String(format: MessageConstants.messageBodyFormatted, testName)
@@ -116,7 +135,7 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
     }
 
     func presentMessageErrorAlert() {
-        let alert = UIAlertView(title: MessageConstants.composerErrorTitle, message: MessageConstants.composerErrorMessage, delegate: self, cancelButtonTitle: "OK")
+        let alert = UIAlertView(title: MessageConstants.composerErrorTitle, message: MessageConstants.composerErrorMessage, delegate: self, cancelButtonTitle: MessageConstants.button)
         alert.show()
     }
     
@@ -132,13 +151,14 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
         if MFMailComposeViewController.canSendMail() {
             if let mailComposeViewController = setupMailComposeController() {
                 self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+                emailButton.setImage(UIImage(named: "selectedRadioButton") as UIImage!, forState: .Normal)
             } else {
                 presentMailErrorAlert()
             }
         } else {
             presentMailErrorAlert()
         }
-        updateButtonImage(sender)
+        //updateButtonImage(sender)
     }
     
     func setupMailComposeController() -> MFMailComposeViewController? {
@@ -157,7 +177,7 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
             
             // configure message subject and body
             if let testName = self.testName {
-                mailComposeViewController.setSubject(testName + " test reminder")
+                mailComposeViewController.setSubject(testName + " " + EmailConstants.testReminder)
                 var bodyString = String(format: EmailConstants.emailBodyFormatted, testName)
                 mailComposeViewController.setMessageBody(bodyString, isHTML: false)
             } else {
@@ -170,7 +190,7 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
     }
     
     func presentMailErrorAlert() {
-        let alert = UIAlertView(title: EmailConstants.composerErrorTitle, message: EmailConstants.composerErrorMessage, delegate: self, cancelButtonTitle: "OK")
+        let alert = UIAlertView(title: EmailConstants.composerErrorTitle, message: EmailConstants.composerErrorMessage, delegate: self, cancelButtonTitle: EmailConstants.button)
         alert.show()
     }
     
@@ -185,17 +205,17 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
     @IBAction func onInAppNotificationTap(sender: AnyObject) {
         var localNotification = UILocalNotification()
         
-        updateButtonImage(sender)
+        //updateButtonImage(sender)
         
         // configure the title
-        localNotification.alertTitle = "babynoggin Test Reminder"
+        localNotification.alertTitle = NotificationConstants.subject
         
         // configure body
         if let testName = self.testName {
-            var bodyString = String(format: ReminderConstants.reminderBodyFormatted, testName)
+            var bodyString = String(format: NotificationConstants.reminderBodyFormatted, testName)
             localNotification.alertBody = bodyString
         } else {
-            localNotification.alertBody = ReminderConstants.body
+            localNotification.alertBody = NotificationConstants.body
         }
         
         // add a badge
@@ -211,24 +231,32 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
         }
         
         // schedule the notification
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: ReminderConstants.interval)
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: NotificationConstants.interval)
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
         
         // TODO: add code to handle notification if app is running
         
         presentConfirmationAlert()
+        
+        notificationButton.setImage(UIImage(named: "selectedRadioButton") as UIImage!, forState: .Normal)
     }
 
     func presentConfirmationAlert() {
-        let alert = UIAlertView(title: ReminderConstants.confirmedTitle, message: ReminderConstants.confirmedMessage, delegate: self, cancelButtonTitle: "OK")
+        var messageString: String = ""
+        if let testName = testName {
+            messageString = String(format: NotificationConstants.confirmedMessage, testName)
+        } else {
+            messageString = String(format: NotificationConstants.confirmedMessage, "")
+        }
+        let alert = UIAlertView(title: NotificationConstants.confirmedTitle, message: messageString, delegate: self, cancelButtonTitle: NotificationConstants.button)
         alert.show()
     }
 
-    // Helper function: Sets state of radio button images.
+    // Helper function: Sets state of radio button images. Implements radio button behavior for the graphic on the ActivityReminder buttons.
     func updateButtonImage(selectedButton: AnyObject) {
         let button = selectedButton as? UIButton
         let selectedImage = UIImage(named: "selectedRadioButton") as UIImage!
-        let deselectedImage = UIImage(named: "unselectedRadioButton")  as UIImage!
+        let deselectedImage = UIImage(named: "unselectedRadioButton") as UIImage!
         
         if button == emailButton {
             emailButton.setImage(selectedImage, forState: .Normal)

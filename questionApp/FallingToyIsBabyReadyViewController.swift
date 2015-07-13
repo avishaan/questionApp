@@ -36,11 +36,11 @@ class FallingToyIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("fallingToyTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("fallingToyIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("fallingToyTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("fallingToyIsBabyReadyToTimeToTestSegueID", sender: self)
     }
 }
