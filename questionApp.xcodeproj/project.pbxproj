@@ -22,6 +22,8 @@
 		824565271B41FFB2003320A9 /* IntroVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 824565261B41FFB2003320A9 /* IntroVideo.mov */; };
 		8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 824565291B420294003320A9 /* PupilResponse.mp4 */; };
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
+		8278694B1B54141B0001F932 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; };
+		8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54E91B26995800ABE77C /* AppDelegate.swift */; };
 		829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */; };
 		829F54EF1B26995800ABE77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EE1B26995800ABE77C /* ViewController.swift */; };
@@ -65,6 +67,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		827869491B5413E60001F932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 827869451B5413E60001F932 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		8278694D1B54141B0001F932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 827869451B5413E60001F932 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
 		829F54FD1B26995800ABE77C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 829F54DC1B26995800ABE77C /* Project object */;
@@ -73,6 +89,20 @@
 			remoteInfo = questionApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8278694F1B54141C0001F932 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		82169C381B535DAA00F8786F /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
@@ -90,6 +120,7 @@
 		824565261B41FFB2003320A9 /* IntroVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IntroVideo.mov; sourceTree = "<group>"; };
 		824565291B420294003320A9 /* PupilResponse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PupilResponse.mp4; sourceTree = "<group>"; };
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
+		827869451B5413E60001F932 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "resources/libs/ios-charts/Charts/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829F54E91B26995800ABE77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8278694B1B54141B0001F932 /* Charts.framework in Frameworks */,
 				82338C851B26E6830067898E /* AVKit.framework in Frameworks */,
 				829F55121B26C2EF00ABE77C /* MediaPlayer.framework in Frameworks */,
 			);
@@ -156,6 +188,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		827869441B5413D20001F932 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				827869451B5413E60001F932 /* Charts.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		827869461B5413E60001F932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8278694A1B5413E60001F932 /* Charts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		829F54DB1B26995800ABE77C = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +261,7 @@
 		829F54E71B26995800ABE77C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				827869441B5413D20001F932 /* Libraries */,
 				82401C261B283590008202EA /* OmnesMed.ttf */,
 				82169C381B535DAA00F8786F /* FontAwesome.otf */,
 				82401C221B28219A008202EA /* OmnesSem.ttf */,
@@ -303,10 +352,12 @@
 				829F54E01B26995800ABE77C /* Sources */,
 				829F54E11B26995800ABE77C /* Frameworks */,
 				829F54E21B26995800ABE77C /* Resources */,
+				8278694F1B54141C0001F932 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8278694E1B54141B0001F932 /* PBXTargetDependency */,
 			);
 			name = questionApp;
 			productName = questionApp;
@@ -362,6 +413,12 @@
 			mainGroup = 829F54DB1B26995800ABE77C;
 			productRefGroup = 829F54E51B26995800ABE77C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 827869461B5413E60001F932 /* Products */;
+					ProjectRef = 827869451B5413E60001F932 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				829F54E31B26995800ABE77C /* questionApp */,
@@ -369,6 +426,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8278694A1B5413E60001F932 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 827869491B5413E60001F932 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		829F54E21B26995800ABE77C /* Resources */ = {
@@ -458,6 +525,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8278694E1B54141B0001F932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 8278694D1B54141B0001F932 /* PBXContainerItemProxy */;
+		};
 		829F54FE1B26995800ABE77C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 829F54E31B26995800ABE77C /* questionApp */;
