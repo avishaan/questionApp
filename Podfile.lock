@@ -1,0 +1,10 @@
+PODS:
+  - ios-charts (0.0.1)
+
+DEPENDENCIES:
+  - ios-charts
+
+SPEC CHECKSUMS:
+  ios-charts: 9fe9e64632a8480b940e1ac66e73dd18d5358a83
+
+COCOAPODS: 0.37.2
