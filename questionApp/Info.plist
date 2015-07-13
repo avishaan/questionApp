@@ -26,6 +26,7 @@
 	<array>
 		<string>OmnesSem.ttf</string>
 		<string>OmnesMed.ttf</string>
+		<string>FontAwesome.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
