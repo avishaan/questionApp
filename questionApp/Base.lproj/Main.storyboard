@@ -405,7 +405,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="192" y="310" width="34" height="34"/>
+                                    <rect key="frame" x="183" y="304" width="34" height="34"/>
                                 </variation>
                             </label>
                         </subviews>
