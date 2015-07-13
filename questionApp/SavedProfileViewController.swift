@@ -44,7 +44,7 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
     babyImageView.userInteractionEnabled = true
     
     // setup image as a circle
-    babyImageView.layer.cornerRadius = babyImageView.frame.size.width/3
+    babyImageView.layer.cornerRadius = babyImageView.frame.size.width/2
     babyImageView.clipsToBounds = true
     babyImageView.layer.borderWidth = 7.0
     babyImageView.layer.borderColor = kBlue.CGColor
