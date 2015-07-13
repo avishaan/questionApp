@@ -342,11 +342,11 @@
 				TargetAttributes = {
 					829F54E31B26995800ABE77C = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = N8E59W855E;
+						DevelopmentTeam = K8F9N5XRP2;
 					};
 					829F54FB1B26995800ABE77C = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 4FP2V369XG;
+						DevelopmentTeam = K8F9N5XRP2;
 						TestTargetID = 829F54E31B26995800ABE77C;
 					};
 				};
