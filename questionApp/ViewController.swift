@@ -69,13 +69,16 @@ class ViewController: BNUIViewController {
     }
     
     let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "Units Sold")
+    chartDataSet.drawValuesEnabled = false
     let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
     barChartView.data = chartData
-    
     barChartView.notifyDataSetChanged()
     
   }
   
+  func monthlyAxisFormatter() {
+    
+  }
 
 }
 
