@@ -1220,6 +1220,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onNextButtonTap:" destination="qyd-pd-tJW" eventType="touchUpInside" id="V9Z-ng-X7V"/>
                                     <segue destination="CiN-dK-CsQ" kind="presentation" id="etu-Qe-DLh"/>
                                 </connections>
                             </button>
