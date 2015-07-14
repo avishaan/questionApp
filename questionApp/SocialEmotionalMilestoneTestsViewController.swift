@@ -25,4 +25,9 @@ class SocialEmotionalMilestoneTestsViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func onPointFollowingButtonTap(sender: AnyObject) {
+        var storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
+        var controller: WhyIsPointFollowingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPointFollowingStoryboardID") as! WhyIsPointFollowingViewController
+        self.presentViewController(controller, animated: true, completion: nil);
+    }
 }

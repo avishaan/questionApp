@@ -30,191 +30,13 @@
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
-            <string>Omnes-Semibold</string>
-            <string>Omnes-Semibold</string>
-            <string>Omnes-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Social Emotional Milestone Tests View Controller-->
-        <scene sceneID="Aol-C7-cMx">
-            <objects>
-                <viewController storyboardIdentifier="SocialAndEmotionalMilestoneTestsStoryboardID" id="DF5-Zg-qbg" customClass="SocialEmotionalMilestoneTestsViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hkM-o3-aYi"/>
-                        <viewControllerLayoutGuide type="bottom" id="3O7-Fm-YbI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7Y6-Jh-biM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QPs-Vk-0zu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Development Milestone Tests" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW0-9P-cB8">
-                                <rect key="frame" x="73" y="89" width="174" height="53"/>
-                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
-                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="social &amp; emotional" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68Z-GK-cgZ" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="52" y="20" width="216" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFV-Rp-GbM" customClass="BNToolbar" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ooe-sf-XBT"/>
-                                    <barButtonItem image="eggIcon" id="HhJ-tS-jBu">
-                                        <connections>
-                                            <action selector="onMilestonesBarButtonItem:" destination="DF5-Zg-qbg" id="Nso-m6-mpH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cH7-DY-pjo"/>
-                                    <barButtonItem image="menuIcon" id="ch6-Qi-Wcz"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="b9h-HN-o5L"/>
-                                    <barButtonItem image="gearIcon" id="x9b-j9-URv"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nEP-57-Ip1"/>
-                                </items>
-                            </toolbar>
-                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq7-aK-iGu" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="162" width="250" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="point following">
-                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="JXR-iK-Laf" kind="presentation" id="XvC-sb-ylX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkI-cT-bIA" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="238" width="250" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="self recognition">
-                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-aM-YF2" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="33" y="312" width="250" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="social smiling">
-                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNPupilResponseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="U3b-yy-r0p">
-                                <rect key="frame" x="49" y="180" width="24" height="24"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNCrossingEyesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-r3-qxs">
-                                <rect key="frame" x="49" y="256" width="24" height="24"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNHearingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-HV-L8J">
-                                <rect key="frame" x="49" y="332" width="24" height="24"/>
-                            </imageView>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFE-ey-SMZ" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="33" y="389" width="250" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="expression mimic">
-                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1C-xx-tfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2739" y="1900"/>
-        </scene>
-        <!--Social Emotional Intro View Controller-->
-        <scene sceneID="bWS-br-Pqr">
-            <objects>
-                <viewController id="Aqb-yA-nGX" customClass="SocialEmotionalIntroViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="V9b-bK-fbA"/>
-                        <viewControllerLayoutGuide type="bottom" id="ej3-Qe-sb0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Y6d-ga-y4w">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2Tx-bO-GPt">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRe-a3-xIB">
-                                <rect key="frame" x="21" y="169" width="278" height="153"/>
-                                <connections>
-                                    <segue destination="3Lw-bo-DHV" kind="embed" identifier="SocialEmotionalTutorialVideoSegue" id="8SH-j3-cxG"/>
-                                </connections>
-                            </containerView>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4w-wa-QPV">
-                                <rect key="frame" x="21" y="169" width="278" height="153"/>
-                                <state key="normal" image="whatIsLanguageAndCognitive">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onPreviewButtonTap:" destination="Aqb-yA-nGX" eventType="touchUpInside" id="TgP-3z-aYB"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="social &amp; emotional" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-61-YQY" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="52" y="20" width="216" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is Social and Emotional Development?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiU-6W-qT0">
-                                <rect key="frame" x="20" y="98" width="281" height="53"/>
-                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
-                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBr-xU-9wy" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="79" y="457" width="163" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="social &amp; emotional tests">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="DF5-Zg-qbg" kind="presentation" id="nvI-rc-mJx"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="player" destination="dRe-a3-xIB" id="Wj9-4m-hrs"/>
-                        <outlet property="previewButton" destination="B4w-wa-QPV" id="cVD-an-KNP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ylZ-Rp-Sbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2221" y="1900"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="1Uv-9x-E83">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="3Lw-bo-DHV" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="uqo-ho-lfc"/>
-                </avPlayerViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uNp-ci-Vgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2221" y="2383.5"/>
-        </scene>
         <!--Why Is Point Following View Controller-->
         <scene sceneID="FZT-MC-ARd">
             <objects>
-                <viewController id="JXR-iK-Laf" customClass="WhyIsPointFollowingViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyIsPointFollowingStoryboardID" id="JXR-iK-Laf" customClass="WhyIsPointFollowingViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KF9-fb-PL4"/>
                         <viewControllerLayoutGuide type="bottom" id="EBG-MU-1Ya"/>
@@ -248,7 +70,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fallingToyWhyObjectPermanence" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsPointFollowing" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
                                 <rect key="frame" x="0.0" y="154" width="320" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyb-jD-KTj">
@@ -320,7 +142,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkH-Nq-ncP">
                                 <rect key="frame" x="-2" y="142" width="398" height="203"/>
-                                <state key="normal" title="previewButton" image="pupilResponseTestVideoPreview">
+                                <state key="normal" title="previewButton" image="PointFollowingTestVideoPreview">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -399,7 +221,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fallingToyWhatWillYouNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PointFollowingWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
                                 <rect key="frame" x="-5" y="113" width="329" height="201"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can use any object that will attract and hold your baby's attention." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zg-1V-sJx">
@@ -598,6 +420,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onNextButtonTap:" destination="ud9-GU-zU4" eventType="touchUpInside" id="ii8-xc-MgK"/>
                                     <segue destination="j4R-It-zho" kind="presentation" id="kfk-gB-zbt"/>
                                 </connections>
                             </button>
@@ -855,7 +678,7 @@ developing on schedule.</string>
                                     <action selector="onHomeButtonTap:" destination="Ffs-lR-bUX" eventType="touchUpInside" id="exF-17-dMu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fallingToyBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="xDj-bm-9Sx">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PointFollowingBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="xDj-bm-9Sx">
                                 <rect key="frame" x="0.0" y="133" width="320" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-LE-NYr">
@@ -998,103 +821,6 @@ Try again in 4-6 weeks.</string>
             </objects>
             <point key="canvasLocation" x="8745" y="1900"/>
         </scene>
-        <!--Social Emotional Milestone Tests View Controller-->
-        <scene sceneID="VdR-2G-VgY">
-            <objects>
-                <viewController id="6e6-Eu-dOn" customClass="SocialEmotionalMilestoneTestsViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RRB-hK-ve2"/>
-                        <viewControllerLayoutGuide type="bottom" id="ISv-BV-knP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xct-9b-CFq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="y3f-Gs-RKg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Development Milestone Tests" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69v-ER-jyc">
-                                <rect key="frame" x="73" y="89" width="174" height="53"/>
-                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
-                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="point following" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRV-xZ-LEA" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="52" y="20" width="216" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVA-jU-vqh" customClass="BNToolbar" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="J5h-cl-YXX"/>
-                                    <barButtonItem image="eggIcon" id="8xm-FL-glS">
-                                        <connections>
-                                            <action selector="onMilestonesBarButtonItem:" destination="6e6-Eu-dOn" id="Gpo-tH-f0I"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Wpm-Je-dvp"/>
-                                    <barButtonItem image="menuIcon" id="oGf-Wp-Zln"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Cd5-yZ-njS"/>
-                                    <barButtonItem image="gearIcon" id="3g7-dH-BvH"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ciy-Fq-oao"/>
-                                </items>
-                            </toolbar>
-                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSE-iC-6r5" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="162" width="250" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="point following">
-                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4S-cR-Lyd" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="238" width="250" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="self recognition">
-                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-JA-eQK" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="33" y="312" width="250" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="social smiling">
-                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNPupilResponseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8zU-Ff-x4j">
-                                <rect key="frame" x="49" y="180" width="24" height="24"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNCrossingEyesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2Z8-EW-kaL">
-                                <rect key="frame" x="49" y="256" width="24" height="24"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNHearingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Vgg-UG-5UO">
-                                <rect key="frame" x="49" y="332" width="24" height="24"/>
-                            </imageView>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hv6-NS-wha" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="33" y="388" width="250" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="expression mimic">
-                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bd9-Jw-eag" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2739" y="1900"/>
-        </scene>
         <!--Point Following More Info View Controller-->
         <scene sceneID="50G-jk-ZHv">
             <objects>
@@ -1164,23 +890,16 @@ Try again in 4-6 weeks.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="BNCrossingEyesIcon" width="24" height="24"/>
-        <image name="BNHearingIcon" width="24" height="24"/>
-        <image name="BNPupilResponseIcon" width="24" height="24"/>
+        <image name="PointFollowingBadOutcome" width="273" height="108"/>
+        <image name="PointFollowingTestVideoPreview" width="319" height="203"/>
+        <image name="PointFollowingWhatNeed" width="319" height="119"/>
+        <image name="WhyIsPointFollowing" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
-        <image name="eggIcon" width="32" height="38"/>
-        <image name="fallingToyBadOutcome" width="273" height="108"/>
-        <image name="fallingToyWhatWillYouNeed" width="320" height="120"/>
-        <image name="fallingToyWhyObjectPermanence" width="320" height="120"/>
-        <image name="gearIcon" width="22" height="22"/>
-        <image name="menuIcon" width="25" height="18"/>
         <image name="pupilResponseIsBabyReady" width="320" height="120"/>
-        <image name="pupilResponseTestVideoPreview" width="319" height="203"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>
-        <image name="whatIsLanguageAndCognitive" width="320" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OZR-PC-mDf"/>
+        <segue reference="j7l-Po-XYD"/>
     </inferredMetricsTieBreakers>
 </document>

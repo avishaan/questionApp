@@ -22,6 +22,8 @@ class LetsCrawlTimeToTestViewController: UIViewController {
 
     let orangeAtrributes = [NSForegroundColorAttributeName: kOrange, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
 
+    let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,9 +40,8 @@ class LetsCrawlTimeToTestViewController: UIViewController {
     }
     
     @IBAction func onFlashlightButtonTap(sender: BNButtonNext) {
-        let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         // does the iPhone have a flashlight?
-        if (device != nil && device.hasTorch) {
+        if (isFlashlightAvailable()) {
             device.lockForConfiguration(nil)
             // check if flashlight is on for toggle
             if (device.torchMode == AVCaptureTorchMode.On) {
@@ -51,8 +52,34 @@ class LetsCrawlTimeToTestViewController: UIViewController {
             device.unlockForConfiguration()
         }
     }
+
+    func turnOffLightWithLock() {
+        // does the iPhone have a flashlight?
+        if (isFlashlightAvailable()) {
+            //check if light is even on first
+            if (device.torchMode == AVCaptureTorchMode.On) {
+                // if on, turn off
+                device.lockForConfiguration(nil)
+                device.torchMode = AVCaptureTorchMode.Off
+                device.unlockForConfiguration()
+            }
+        }
+    }
+    
+    func isFlashlightAvailable() -> Bool {
+        if (device != nil && device.hasTorch) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    @IBAction func onNextButtonTap(sender: BNButtonNext) {
+        turnOffLightWithLock()
+    }
     
     @IBAction func onBackButtonTap(sender: AnyObject) {
+        turnOffLightWithLock()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     

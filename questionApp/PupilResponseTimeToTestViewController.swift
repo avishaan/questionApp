@@ -80,6 +80,7 @@ class PupilResponseTimeToTestViewController: UIViewController {
       device.unlockForConfiguration()
     }
   }
+    
   @IBAction func onNextButtonTap(sender: BNButtonNext) {
     turnOffLightWithLock()
   }
