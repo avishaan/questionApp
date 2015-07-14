@@ -64,4 +64,9 @@ class MilestonesViewController: UIViewController {
   }
   */
   
+    @IBAction func socialEmotionalButtonTap(sender: AnyObject) {
+        var storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
+        var controller: SocialEmotionalMilestoneTestsViewController = storyboard.instantiateViewControllerWithIdentifier("SocialAndEmotionalMilestoneTestsStoryboardID") as! SocialEmotionalMilestoneTestsViewController
+        self.presentViewController(controller, animated: true, completion: nil);
+    }
 }

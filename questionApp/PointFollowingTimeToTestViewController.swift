@@ -1,34 +1,32 @@
 //
-//  LetsCrawlTimeToTestViewController.swift
+//  PointFollowingTimeToTestViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/10/15.
+//  Created by john bateman on 7/13/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-
-class LetsCrawlTimeToTestViewController: UIViewController {
+class PointFollowingTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     
     @IBOutlet weak var step2Label: UILabel!
     @IBOutlet weak var step3Label: UILabel!
     @IBOutlet weak var step4Label: UILabel!
-
+    @IBOutlet weak var step5Label: UILabel!
+    
     @IBOutlet weak var labelBackground: UILabel!
-
+    
     let orangeAtrributes = [NSForegroundColorAttributeName: kOrange, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // setup rounded corners on label
         labelBackground.layer.cornerRadius = 7
         labelBackground.layer.masksToBounds = true
-        
         applyTextAttributesToLabel()
     }
 
@@ -72,8 +70,13 @@ class LetsCrawlTimeToTestViewController: UIViewController {
         step3AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step3Label.attributedText = step3AttributedString
         
-        //        var step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
-        //        step4AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
-        //        step4Label.attributedText = step4AttributedString
+        var step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
+        step4AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+        step4Label.attributedText = step4AttributedString
+        
+        var step5AttributedString = NSMutableAttributedString(string: step5Label.text!)
+        step5AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+        step3Label.attributedText = step5AttributedString
     }
+
 }
