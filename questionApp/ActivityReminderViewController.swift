@@ -18,6 +18,7 @@ struct TestNames {
     static var fallingToy = "falling toy"
     static var pointFollowing = "point following"
     static var crossingEyes = "crossing eyes"
+    static var hearing = "hearing"
 }
 
 struct TestReminderInterval {
@@ -25,6 +26,8 @@ struct TestReminderInterval {
     static var letsCrawlInterval = "6-8"
     static var fallingToyInterval = "2-4"
     static var pointFollowingInterval = "4-6"
+    static var crossingEyesInterval = "4-6"
+    static var hearingInterval = "4-6"
 }
 
 struct EmailConstants {

@@ -26,4 +26,9 @@ class SensoryMotorMilestoneViewController: UIViewController {
         var controller: WhyIsCrossingEyesViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsCrossingEyesStoryboardID") as! WhyIsCrossingEyesViewController
         self.presentViewController(controller, animated: true, completion: nil);
     }
+    @IBAction func onHearingButtonTap(sender: AnyObject) {
+        var storyboard = UIStoryboard (name: "Hearing", bundle: nil)
+        var controller: WhyIsHearingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsHearingStoryboardID") as! WhyIsHearingViewController
+        self.presentViewController(controller, animated: true, completion: nil);
+    }
 }

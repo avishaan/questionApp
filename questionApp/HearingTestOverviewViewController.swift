@@ -1,8 +1,8 @@
 //
-//  PointFollowingTestOverviewViewController.swift
+//  HearingTestOverviewViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by john bateman on 7/15/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,15 +10,13 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class PointFollowingTestOverviewViewController: UIViewController {
+class HearingTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -30,17 +28,18 @@ class PointFollowingTestOverviewViewController: UIViewController {
         NSNotificationCenter.defaultCenter().removeObserver(self)
         super.viewWillDisappear(animated)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "pointFollowingEmbeddedVideoSegue" {
+        if segue.identifier == "hearingEmbeddedVideoSegue" {
             // set the playerVC as the destination
             playerVC = segue.destinationViewController as! AVPlayerViewController
-            let path = NSBundle.mainBundle().pathForResource("PointFollowing", ofType: "mp4")
+            let path = NSBundle.mainBundle().pathForResource("Hearing", ofType: "mp4")
             let url = NSURL.fileURLWithPath(path!)
             // let url = NSURL(string: "crawl.mp4") // for remote locations
             
@@ -59,11 +58,11 @@ class PointFollowingTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "pointFollowingWhatWillYouNeedSegueID" {
+        else if segue.identifier == "hearingWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }
-
+    
     func enableVideoReplay() {
         playerVC.player.seekToTime(kCMTimeZero)
         // show button

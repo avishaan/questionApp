@@ -87,6 +87,19 @@
 		9EE7EB221B55A6A800C73CA3 /* CrossingEyesMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB211B55A6A800C73CA3 /* CrossingEyesMoreInfoViewController.swift */; };
 		9EE7EB241B55CE8E00C73CA3 /* CrossingEyes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EE7EB231B55CE8E00C73CA3 /* CrossingEyes.mp4 */; };
 		9EE7EB261B55D20E00C73CA3 /* CrossingEyesActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB251B55D20E00C73CA3 /* CrossingEyesActivityReminderViewController.swift */; };
+		9EE7EB291B56A78700C73CA3 /* WhyIsHearingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB281B56A78700C73CA3 /* WhyIsHearingViewController.swift */; };
+		9EE7EB2B1B56A7A300C73CA3 /* HearingTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB2A1B56A7A300C73CA3 /* HearingTestOverviewViewController.swift */; };
+		9EE7EB2D1B56A7B900C73CA3 /* HearingWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB2C1B56A7B900C73CA3 /* HearingWhatWillYouNeedViewController.swift */; };
+		9EE7EB2F1B56A7CE00C73CA3 /* HearingIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB2E1B56A7CE00C73CA3 /* HearingIsBabyReadyViewController.swift */; };
+		9EE7EB311B56A7E300C73CA3 /* HearingTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB301B56A7E300C73CA3 /* HearingTimeToTestViewController.swift */; };
+		9EE7EB331B56A7F900C73CA3 /* HearingWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB321B56A7F900C73CA3 /* HearingWhatDidYouSeeViewController.swift */; };
+		9EE7EB351B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB341B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift */; };
+		9EE7EB371B56A81600C73CA3 /* HearingBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB361B56A81600C73CA3 /* HearingBadOutcomeViewController.swift */; };
+		9EE7EB391B56A83100C73CA3 /* HearingMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB381B56A83100C73CA3 /* HearingMoreInfoViewController.swift */; };
+		9EE7EB3B1B56A86F00C73CA3 /* HearingActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE7EB3A1B56A86F00C73CA3 /* HearingActivityReminderViewController.swift */; };
+		9EE7EB3D1B56A88A00C73CA3 /* Hearing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE7EB3C1B56A88A00C73CA3 /* Hearing.storyboard */; };
+		9EE7EB3F1B56AF5500C73CA3 /* Hearing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EE7EB3E1B56AF5500C73CA3 /* Hearing.mp4 */; };
+		9EE7EB411B56C86A00C73CA3 /* PointFollowing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EE7EB401B56C86A00C73CA3 /* PointFollowing.mp4 */; };
 		9EF313721B50554F0094DAC7 /* WhyIsCrawlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF313711B50554F0094DAC7 /* WhyIsCrawlingViewController.swift */; };
 		9EF313741B5062930094DAC7 /* LetsCrawlTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF313731B5062930094DAC7 /* LetsCrawlTestOverviewViewController.swift */; };
 		9EF313761B5066470094DAC7 /* LetsCrawl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EF313751B5066470094DAC7 /* LetsCrawl.mp4 */; };
@@ -193,6 +206,19 @@
 		9EE7EB211B55A6A800C73CA3 /* CrossingEyesMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossingEyesMoreInfoViewController.swift; sourceTree = "<group>"; };
 		9EE7EB231B55CE8E00C73CA3 /* CrossingEyes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CrossingEyes.mp4; sourceTree = "<group>"; };
 		9EE7EB251B55D20E00C73CA3 /* CrossingEyesActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossingEyesActivityReminderViewController.swift; sourceTree = "<group>"; };
+		9EE7EB281B56A78700C73CA3 /* WhyIsHearingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsHearingViewController.swift; sourceTree = "<group>"; };
+		9EE7EB2A1B56A7A300C73CA3 /* HearingTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingTestOverviewViewController.swift; sourceTree = "<group>"; };
+		9EE7EB2C1B56A7B900C73CA3 /* HearingWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
+		9EE7EB2E1B56A7CE00C73CA3 /* HearingIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingIsBabyReadyViewController.swift; sourceTree = "<group>"; };
+		9EE7EB301B56A7E300C73CA3 /* HearingTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingTimeToTestViewController.swift; sourceTree = "<group>"; };
+		9EE7EB321B56A7F900C73CA3 /* HearingWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
+		9EE7EB341B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingGoodOutcomeViewController.swift; sourceTree = "<group>"; };
+		9EE7EB361B56A81600C73CA3 /* HearingBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingBadOutcomeViewController.swift; sourceTree = "<group>"; };
+		9EE7EB381B56A83100C73CA3 /* HearingMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingMoreInfoViewController.swift; sourceTree = "<group>"; };
+		9EE7EB3A1B56A86F00C73CA3 /* HearingActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HearingActivityReminderViewController.swift; sourceTree = "<group>"; };
+		9EE7EB3C1B56A88A00C73CA3 /* Hearing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hearing.storyboard; sourceTree = "<group>"; };
+		9EE7EB3E1B56AF5500C73CA3 /* Hearing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hearing.mp4; sourceTree = "<group>"; };
+		9EE7EB401B56C86A00C73CA3 /* PointFollowing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PointFollowing.mp4; sourceTree = "<group>"; };
 		9EF313711B50554F0094DAC7 /* WhyIsCrawlingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsCrawlingViewController.swift; sourceTree = "<group>"; };
 		9EF313731B5062930094DAC7 /* LetsCrawlTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlTestOverviewViewController.swift; sourceTree = "<group>"; };
 		9EF313751B5066470094DAC7 /* LetsCrawl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LetsCrawl.mp4; sourceTree = "<group>"; };
@@ -313,6 +339,8 @@
 		829F550E1B26BAF600ABE77C /* videos */ = {
 			isa = PBXGroup;
 			children = (
+				9EE7EB401B56C86A00C73CA3 /* PointFollowing.mp4 */,
+				9EE7EB3E1B56AF5500C73CA3 /* Hearing.mp4 */,
 				9EE7EB231B55CE8E00C73CA3 /* CrossingEyes.mp4 */,
 				9EF313751B5066470094DAC7 /* LetsCrawl.mp4 */,
 				9EABF28F1B4D87E8002FDA2C /* FallingToy.mp4 */,
@@ -334,6 +362,7 @@
 		82E42ABD1B4118FE00BAE21B /* SensoryAndMotor */ = {
 			isa = PBXGroup;
 			children = (
+				9EE7EB271B56A6A800C73CA3 /* Hearing */,
 				9EE7EB0E1B55A0ED00C73CA3 /* CrossingEyes */,
 				9EC424041B5465DC0037C0E9 /* PupilResponse */,
 				9EF313701B5054C30094DAC7 /* LetsCrawl */,
@@ -426,6 +455,24 @@
 				9EE7EB251B55D20E00C73CA3 /* CrossingEyesActivityReminderViewController.swift */,
 			);
 			name = CrossingEyes;
+			sourceTree = "<group>";
+		};
+		9EE7EB271B56A6A800C73CA3 /* Hearing */ = {
+			isa = PBXGroup;
+			children = (
+				9EE7EB3C1B56A88A00C73CA3 /* Hearing.storyboard */,
+				9EE7EB281B56A78700C73CA3 /* WhyIsHearingViewController.swift */,
+				9EE7EB2A1B56A7A300C73CA3 /* HearingTestOverviewViewController.swift */,
+				9EE7EB2C1B56A7B900C73CA3 /* HearingWhatWillYouNeedViewController.swift */,
+				9EE7EB2E1B56A7CE00C73CA3 /* HearingIsBabyReadyViewController.swift */,
+				9EE7EB301B56A7E300C73CA3 /* HearingTimeToTestViewController.swift */,
+				9EE7EB321B56A7F900C73CA3 /* HearingWhatDidYouSeeViewController.swift */,
+				9EE7EB341B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift */,
+				9EE7EB361B56A81600C73CA3 /* HearingBadOutcomeViewController.swift */,
+				9EE7EB381B56A83100C73CA3 /* HearingMoreInfoViewController.swift */,
+				9EE7EB3A1B56A86F00C73CA3 /* HearingActivityReminderViewController.swift */,
+			);
+			name = Hearing;
 			sourceTree = "<group>";
 		};
 		9EF313701B5054C30094DAC7 /* LetsCrawl */ = {
@@ -526,16 +573,19 @@
 			files = (
 				9EE7EB241B55CE8E00C73CA3 /* CrossingEyes.mp4 in Resources */,
 				9EABF2921B4D8A35002FDA2C /* Swift.gitignore in Resources */,
+				9EE7EB411B56C86A00C73CA3 /* PointFollowing.mp4 in Resources */,
 				9EC4240D1B5469C30037C0E9 /* PointFollowing.storyboard in Resources */,
 				82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */,
 				829F54F21B26995800ABE77C /* Main.storyboard in Resources */,
 				82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */,
 				8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */,
+				9EE7EB3D1B56A88A00C73CA3 /* Hearing.storyboard in Resources */,
 				824565271B41FFB2003320A9 /* IntroVideo.mov in Resources */,
 				9EF313761B5066470094DAC7 /* LetsCrawl.mp4 in Resources */,
 				829F55101B26BB1B00ABE77C /* crawl.mp4 in Resources */,
 				829F54F41B26995800ABE77C /* Images.xcassets in Resources */,
 				9EABF2901B4D87E8002FDA2C /* FallingToy.mp4 in Resources */,
+				9EE7EB3F1B56AF5500C73CA3 /* Hearing.mp4 in Resources */,
 				82401C271B283590008202EA /* OmnesMed.ttf in Resources */,
 				9EE7EB101B55A1CB00C73CA3 /* CrossingEyes.storyboard in Resources */,
 				82401C231B28219A008202EA /* OmnesSem.ttf in Resources */,
@@ -557,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF3137E1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift in Sources */,
+				9EE7EB2F1B56A7CE00C73CA3 /* HearingIsBabyReadyViewController.swift in Sources */,
 				9EF313721B50554F0094DAC7 /* WhyIsCrawlingViewController.swift in Sources */,
 				824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */,
 				9EABF2A21B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift in Sources */,
@@ -570,15 +621,18 @@
 				82E42AB81B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift in Sources */,
 				9EE7EB161B55A61800C73CA3 /* CrossingEyesWhatWillYouNeedViewController.swift in Sources */,
 				9EABF2981B4DB4F5002FDA2C /* FallingToyIsBabyReadyViewController.swift in Sources */,
+				9EE7EB371B56A81600C73CA3 /* HearingBadOutcomeViewController.swift in Sources */,
 				9EF313781B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB141B55A5FE00C73CA3 /* CrossingEyesTestOverviewViewController.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
 				9EABF2961B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift in Sources */,
+				9EE7EB2B1B56A7A300C73CA3 /* HearingTestOverviewViewController.swift in Sources */,
 				9EE7EB261B55D20E00C73CA3 /* CrossingEyesActivityReminderViewController.swift in Sources */,
 				9EF313821B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift in Sources */,
 				9EC424121B5481730037C0E9 /* PointFollowingTestOverviewViewController.swift in Sources */,
 				9EC4241A1B54821A0037C0E9 /* PointFollowingWhatDidYouSeeViewController.swift in Sources */,
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
+				9EE7EB391B56A83100C73CA3 /* HearingMoreInfoViewController.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
 				9EE7EB121B55A5D400C73CA3 /* WhyIsCrossingEyesViewController.swift in Sources */,
 				9EC4241E1B5482940037C0E9 /* PointFollowingBadOutcomeViewController.swift in Sources */,
@@ -588,6 +642,7 @@
 				9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */,
 				9EABF29C1B4DCF35002FDA2C /* FallingToyWhatDidYouSeeViewController.swift in Sources */,
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,
+				9EE7EB291B56A78700C73CA3 /* WhyIsHearingViewController.swift in Sources */,
 				82D641F01B49F9D50013D5FB /* Parent.swift in Sources */,
 				9EABF29A1B4DCA08002FDA2C /* FallingToyTimeToTestViewController.swift in Sources */,
 				9EE7EB201B55A68B00C73CA3 /* CrossingEyesBadOutcomeViewController.swift in Sources */,
@@ -600,6 +655,7 @@
 				82E42ABA1B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift in Sources */,
 				82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */,
 				9EAEB5DE1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift in Sources */,
+				9EE7EB311B56A7E300C73CA3 /* HearingTimeToTestViewController.swift in Sources */,
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				9EC4241C1B54824A0037C0E9 /* PointFollowingGoodOutcomeViewController.swift in Sources */,
 				9EE7EB1E1B55A67B00C73CA3 /* CrossingEyesGoodOutcomeViewController.swift in Sources */,
@@ -615,10 +671,13 @@
 				82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
+				9EE7EB351B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift in Sources */,
 				9EABF2941B4D8CD4002FDA2C /* FallingToyTestOverviewViewController.swift in Sources */,
 				82D641E81B4908590013D5FB /* BNBackButton.swift in Sources */,
+				9EE7EB2D1B56A7B900C73CA3 /* HearingWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB1A1B55A64D00C73CA3 /* CrossingEyesTimeToTestViewController.swift in Sources */,
 				8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */,
+				9EE7EB3B1B56A86F00C73CA3 /* HearingActivityReminderViewController.swift in Sources */,
 				9EE7EB1C1B55A66600C73CA3 /* CrossingEyesWhatDidYouSeeViewController.swift in Sources */,
 				9EE7EB221B55A6A800C73CA3 /* CrossingEyesMoreInfoViewController.swift in Sources */,
 				9EE7EB181B55A63500C73CA3 /* CrossingEyesIsBabyReadyViewController.swift in Sources */,
@@ -627,6 +686,7 @@
 				9EC424141B5481990037C0E9 /* PointFollowingWhatWillYouNeedViewController.swift in Sources */,
 				9EC424281B54CC210037C0E9 /* pointFollowingActivityReminderViewController.swift in Sources */,
 				9EC424161B5481CC0037C0E9 /* PointFollowingIsBabyReadyViewController.swift in Sources */,
+				9EE7EB331B56A7F900C73CA3 /* HearingWhatDidYouSeeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
