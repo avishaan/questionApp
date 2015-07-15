@@ -21,15 +21,9 @@ class SensoryMotorMilestoneViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onCrossingEyesButtonTap(sender: AnyObject) {
+        var storyboard = UIStoryboard (name: "CrossingEyes", bundle: nil)
+        var controller: WhyIsCrossingEyesViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsCrossingEyesStoryboardID") as! WhyIsCrossingEyesViewController
+        self.presentViewController(controller, animated: true, completion: nil);
     }
-    */
-
 }

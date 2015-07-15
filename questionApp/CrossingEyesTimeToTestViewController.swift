@@ -1,22 +1,21 @@
 //
-//  PointFollowingTimeToTestViewController.swift
+//  CrossingEyesTimeToTestViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by john bateman on 7/14/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class PointFollowingTimeToTestViewController: UIViewController {
+class CrossingEyesTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     
     @IBOutlet weak var step2Label: UILabel!
     @IBOutlet weak var step3Label: UILabel!
     @IBOutlet weak var step4Label: UILabel!
-    @IBOutlet weak var step5Label: UILabel!
     
     @IBOutlet weak var labelBackground: UILabel!
     
@@ -26,9 +25,11 @@ class PointFollowingTimeToTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // setup rounded corners on label
         labelBackground.layer.cornerRadius = 7
         labelBackground.layer.masksToBounds = true
+        
         applyTextAttributesToLabel()
     }
 
@@ -71,11 +72,11 @@ class PointFollowingTimeToTestViewController: UIViewController {
             return false
         }
     }
-    
+
     @IBAction func onNextButtonTap(sender: BNButtonNext) {
         turnOffLightWithLock()
     }
-
+    
     @IBAction func onBackButtonTap(sender: AnyObject) {
         turnOffLightWithLock()
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -100,10 +101,5 @@ class PointFollowingTimeToTestViewController: UIViewController {
         var step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
         step4AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step4Label.attributedText = step4AttributedString
-        
-        var step5AttributedString = NSMutableAttributedString(string: step5Label.text!)
-        step5AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
-        step5Label.attributedText = step5AttributedString
     }
-
 }
