@@ -70,7 +70,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsPointFollowing" translatesAutoresizingMaskIntoConstraints="NO" id="IRJ-Bw-qI2">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsCrossingEyes" translatesAutoresizingMaskIntoConstraints="NO" id="IRJ-Bw-qI2">
                                 <rect key="frame" x="0.0" y="154" width="320" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby needs to cross his eyes to be able to focus on and track close objects." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PF-pg-m7u">
@@ -220,7 +220,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PointFollowingWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="PtE-T6-v4e">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossingEyesWhatWillYouNeed" translatesAutoresizingMaskIntoConstraints="NO" id="PtE-T6-v4e">
                                 <rect key="frame" x="-5" y="113" width="329" height="201"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You'll need a small toy or other object that will attract and hold baby's attention." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2o-Lh-xJm">
@@ -684,7 +684,7 @@
                                     <action selector="onHomeButtonTap:" destination="9HV-8q-7V8" eventType="touchUpInside" id="b24-Na-NtV"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PointFollowingBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="0Oa-Mh-nUr">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CrossingEyesBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="0Oa-Mh-nUr">
                                 <rect key="frame" x="0.0" y="133" width="320" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not to worry. Sometimes practicing using a squeaky toy will help. Try this, then perform the test again in 2 weeks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZt-aq-lne">
@@ -908,10 +908,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PointFollowingBadOutcome" width="273" height="108"/>
+        <image name="CrossingEyesBadOutcome" width="273" height="108"/>
+        <image name="CrossingEyesWhatWillYouNeed" width="320" height="120"/>
         <image name="PointFollowingTestVideoPreview" width="319" height="203"/>
-        <image name="PointFollowingWhatNeed" width="319" height="119"/>
-        <image name="WhyIsPointFollowing" width="320" height="120"/>
+        <image name="WhyIsCrossingEyes" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="pupilResponseIsBabyReady" width="320" height="120"/>
         <image name="selectedRadioButton" width="20" height="20"/>
