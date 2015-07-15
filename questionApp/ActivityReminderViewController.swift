@@ -17,6 +17,7 @@ struct TestNames {
     static var letsCrawl = "let's crawl"
     static var fallingToy = "falling toy"
     static var pointFollowing = "point following"
+    static var crossingEyes = "crossing eyes"
 }
 
 struct TestReminderInterval {
