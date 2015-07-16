@@ -92,14 +92,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-16" y="74" width="156" height="30"/>
+                                    <rect key="frame" x="0.0" y="49" width="156" height="30"/>
                                 </variation>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVD-TX-11Y">
                                 <rect key="frame" x="88" y="260" width="168" height="121"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="76" y="301" width="168" height="92"/>
+                                    <rect key="frame" x="76" y="400" width="168" height="92"/>
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LabelTest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaZ-jF-gr9" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
@@ -117,7 +117,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="123" width="42" height="21"/>
+                                    <rect key="frame" x="23" y="45" width="42" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckh-uj-S3A" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
@@ -133,7 +133,7 @@
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="121" y="86" width="183" height="30"/>
+                                    <rect key="frame" x="121" y="45" width="183" height="30"/>
                                 </variation>
                             </textField>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r28-c1-bdF">
@@ -146,7 +146,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="152" width="288" height="133"/>
+                                    <rect key="frame" x="16" y="96" width="288" height="133"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-gq-3LK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="237" width="288" height="142"/>
                                 </variation>
                             </view>
                         </subviews>
@@ -154,11 +161,13 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="tG8-BL-nkx"/>
+                                <exclude reference="Ifu-gq-3LK"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="tG8-BL-nkx"/>
+                                <include reference="Ifu-gq-3LK"/>
                             </mask>
                         </variation>
                     </view>
