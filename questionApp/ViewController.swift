@@ -14,8 +14,10 @@ class ViewController: BNUIViewController {
 
   @IBOutlet weak var subView: UIView!
   @IBOutlet weak var barChartView: HorizontalBarChartView!
+  @IBOutlet weak var rangeChart: BNTestRangeChartView!
   
   var months: [String]?
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,6 +27,7 @@ class ViewController: BNUIViewController {
     let unitsSold = [8.0]
     
     setChart(months!, values: unitsSold)
+    rangeChart.config(startMonth: 0, endMonth: 12, currentAge: 9, babyName: "Baby Name")
     
     //check all fonts
     for family in UIFont.familyNames() {

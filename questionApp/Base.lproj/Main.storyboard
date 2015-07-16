@@ -149,11 +149,11 @@
                                     <rect key="frame" x="16" y="96" width="288" height="133"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-gq-3LK">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-gq-3LK" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="237" width="288" height="142"/>
+                                    <rect key="frame" x="16" y="237" width="288" height="155"/>
                                 </variation>
                             </view>
                         </subviews>
@@ -173,7 +173,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="barChartView" destination="tG8-BL-nkx" id="5Mg-HP-yyJ"/>
+                        <outlet property="barChartView" destination="tG8-BL-nkx" id="s8G-Eb-I8x"/>
+                        <outlet property="rangeChart" destination="Ifu-gq-3LK" id="klg-lK-ypp"/>
                         <outlet property="subView" destination="QVD-TX-11Y" id="2XF-jI-YeH"/>
                     </connections>
                 </viewController>

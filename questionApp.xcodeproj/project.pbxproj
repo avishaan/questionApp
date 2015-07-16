@@ -40,6 +40,7 @@
 		82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D641E91B49DA900013D5FB /* BNUIViewController.swift */; };
 		82D641EC1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D641EB1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift */; };
 		82D641F01B49F9D50013D5FB /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D641EF1B49F9D50013D5FB /* Parent.swift */; };
+		82DD954B1B5776600017D93C /* BNTestRangeChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DD954A1B5776600017D93C /* BNTestRangeChartView.swift */; };
 		82E42AB81B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42AB71B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift */; };
 		82E42ABA1B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */; };
 		82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42ABB1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift */; };
@@ -142,6 +143,7 @@
 		82D641E91B49DA900013D5FB /* BNUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNUIViewController.swift; sourceTree = "<group>"; };
 		82D641EB1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseMoreInformationViewController.swift; sourceTree = "<group>"; };
 		82D641EF1B49F9D50013D5FB /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		82DD954A1B5776600017D93C /* BNTestRangeChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNTestRangeChartView.swift; sourceTree = "<group>"; };
 		82E42AB71B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseTestOverviewViewController.swift; sourceTree = "<group>"; };
 		82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
 		82E42ABB1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseIsBabyReadyViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				829F54EE1B26995800ABE77C /* ViewController.swift */,
 				82401C281B28399F008202EA /* ProfileSetupViewController.swift */,
 				82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */,
+				82DD954A1B5776600017D93C /* BNTestRangeChartView.swift */,
 				8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */,
 				829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */,
 				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
@@ -488,6 +491,7 @@
 				9EABF2961B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift in Sources */,
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
+				82DD954B1B5776600017D93C /* BNTestRangeChartView.swift in Sources */,
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
 				9EABF2A41B4DF40F002FDA2C /* ActivityReminderViewController.swift in Sources */,
 				9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */,
