@@ -71,10 +71,11 @@ class ViewController: BNUIViewController {
     rightYAxis.valueFormatter = formatter
     
     // fonts
-    rightYAxis.labelFont = UIFont(name: kOmnesFontMedium, size: 10)!
+    rightYAxis.labelFont = UIFont(name: kOmnesFontMedium, size: 15)!
     
     // set limit lines
     var babyAgeLimitLine = ChartLimitLine(limit: 9.0, label: "Your Baby")
+    babyAgeLimitLine.valueFont = UIFont(name: kOmnesFontMedium, size: 15)!
     rightYAxis.addLimitLine(babyAgeLimitLine)
     
     // data should be set after customizing chart
