@@ -70,6 +70,9 @@ class ViewController: BNUIViewController {
     formatter.positiveSuffix = " mo."
     rightYAxis.valueFormatter = formatter
     
+    // fonts
+    rightYAxis.labelFont = UIFont(name: kOmnesFontMedium, size: 10)!
+    
     // set limit lines
     var babyAgeLimitLine = ChartLimitLine(limit: 9.0, label: "Your Baby")
     rightYAxis.addLimitLine(babyAgeLimitLine)
