@@ -15,7 +15,7 @@ class BNSectionLabel: UILabel {
       self.layer.frame = CGRect(
         x: 53,
         y: 20,
-        width: 215,
+        width: 215, // 215
         height: 38
       )
 //      self.bounds = CGRect(
@@ -37,7 +37,7 @@ class BNSectionLabel: UILabel {
 //      
 //      //self.text = "Test"
 //      //self.font = omnesFontMed
-      self.font = UIFont(name: kOmnesFontMedium, size: 26)
+      self.font = UIFont(name: kOmnesFontMedium, size: 23) // needed to reduce from 26 to fit "attention at distance" & "language & cognitive"
       self.textAlignment = .Center
       self.textColor = UIColor.whiteColor()
       // make the actual drawings

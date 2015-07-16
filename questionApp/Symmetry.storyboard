@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OmnesMed.ttf">
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+        </mutableArray>
+        <mutableArray key="OmnesSem.ttf">
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Why Is Symmetry View Controller-->
+        <scene sceneID="3QN-ht-BgI">
+            <objects>
+                <viewController storyboardIdentifier="WhyIsSymmetryStoryboardID" id="Har-d7-BT7" customClass="WhyIsSymmetryViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DZO-Tx-5e2"/>
+                        <viewControllerLayoutGuide type="bottom" id="cjB-pD-Qnj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WJx-ea-9Ev">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Dwz-K0-MHv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fq-Pw-ZX3" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="470" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="next step">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X1F-0G-vu1" kind="presentation" id="e56-we-alJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A4-yO-VgF" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is maintaining symmetry important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfX-oa-P7Z">
+                                <rect key="frame" x="32" y="90" width="257" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsSymmetry" translatesAutoresizingMaskIntoConstraints="NO" id="qRB-U8-dpM">
+                                <rect key="frame" x="0.0" y="154" width="320" height="120"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFS-Wv-4KR">
+                                <rect key="frame" x="14" y="274" width="293" height="183"/>
+                                <string key="text">Your baby should lie symmetrically on her stomach. Inability to do so may be an early indicator of spinal issues or increased risk for autism.</string>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbN-ud-eJt" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="Har-d7-BT7" eventType="touchUpInside" id="gHC-oQ-f5J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="DFS-Wv-4KR" id="vyF-qZ-oiu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rst-4e-fgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="844"/>
+        </scene>
+        <!--Symmetry Test Overview View Controller-->
+        <scene sceneID="rYz-Hi-ZJD">
+            <objects>
+                <viewController id="X1F-0G-vu1" customClass="SymmetryTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PiO-Ww-Iyi"/>
+                        <viewControllerLayoutGuide type="bottom" id="m2U-pO-Ova"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V5h-zk-iIj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xGy-DI-dzZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8y-fC-DGI">
+                                <rect key="frame" x="0.0" y="142" width="320" height="203"/>
+                                <connections>
+                                    <segue destination="YGN-cR-MpC" kind="embed" identifier="symmetryEmbeddedVideoSegue" id="JdO-Vw-mj6"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TV7-D2-WYu" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="472" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="next step">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TxU-1h-gBp" kind="presentation" identifier="symmetryWhatWillYouNeedSegueID" id="dgK-zK-ZMX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="832-hV-EGU">
+                                <rect key="frame" x="35" y="81" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ6-ly-ecR">
+                                <rect key="frame" x="-2" y="142" width="398" height="203"/>
+                                <state key="normal" title="previewButton" image="SymmetryTestOverview">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPreviewButtonTap:" destination="X1F-0G-vu1" eventType="touchUpInside" id="CP7-l1-RNv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVF-yM-CIF" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqS-oI-050" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackTap:" destination="X1F-0G-vu1" eventType="touchUpInside" id="mli-Kf-7lG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="previewButton" destination="VZ6-ly-ecR" id="CK9-6r-VwL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bga-Dn-gA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="844"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="gzz-wz-QKI">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="YGN-cR-MpC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUJ-m2-bLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="1325.5"/>
+        </scene>
+        <!--Symmetry What Will You Need View Controller-->
+        <scene sceneID="Vrj-S9-3Vd">
+            <objects>
+                <viewController id="TxU-1h-gBp" customClass="SymmetryWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YpI-iZ-Rsv"/>
+                        <viewControllerLayoutGuide type="bottom" id="juy-EF-v8N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eqn-JN-k6b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SKt-qM-8N3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhw-Wk-zFr" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTd-yY-LNN" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="472" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="next step">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNextStepButtonTap:" destination="TxU-1h-gBp" eventType="touchUpInside" id="0LH-v6-bOh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What will you need?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-m6-onB">
+                                <rect key="frame" x="35" y="90" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-wP-IX2">
+                                <rect key="frame" x="-5" y="113" width="329" height="201"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All you'll need is a firm surface baby can comfortably lie on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nb-Fg-L6O">
+                                <rect key="frame" x="37" y="281" width="245" height="183"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDJ-MY-dAw" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="TxU-1h-gBp" eventType="touchUpInside" id="6Wz-eQ-VZw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="testPreparationLabel" destination="3Nb-Fg-L6O" id="Xlm-6a-r0r"/>
+                        <segue destination="tJC-9l-iVZ" kind="presentation" identifier="symmetryIsBabyReadySegueID" id="4jO-Fj-HOG"/>
+                        <segue destination="mE5-uu-8yx" kind="presentation" identifier="symmetryTimeToTestSegueID" id="ifc-3K-Wlf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNo-hF-lDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="844"/>
+        </scene>
+        <!--Symmetry Is Baby Ready View Controller-->
+        <scene sceneID="QtB-hI-7ju">
+            <objects>
+                <viewController id="tJC-9l-iVZ" customClass="SymmetryIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dy0-Gt-0y6"/>
+                        <viewControllerLayoutGuide type="bottom" id="pT0-vv-Tj4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1vr-RR-mRT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jxv-Q9-jxb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGy-fm-0Ps" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbN-RG-Tyy" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="182" y="468" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="next step">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNextStepButtonTap:" destination="tJC-9l-iVZ" eventType="touchUpInside" id="Rry-t7-S79"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is baby ready?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asa-le-yT5">
+                                <rect key="frame" x="35" y="87" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-os-rt9">
+                                <rect key="frame" x="0.0" y="143" width="320" height="140"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCl-95-FJn">
+                                <rect key="frame" x="20" y="279" width="281" height="91"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9l-ds-Z7i">
+                                <rect key="frame" x="72" y="359" width="177" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="is full and happy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu6-v3-qms">
+                                <rect key="frame" x="72" y="408" width="177" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  has a dry diaper">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLp-fu-2Xf">
+                                <rect key="frame" x="72" y="383" width="177" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="• ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" is well rested">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7G-gW-whF" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="tJC-9l-iVZ" eventType="touchUpInside" id="1Rb-fr-FqZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdW-Le-vwj" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="468" width="158" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="don't show again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="tJC-9l-iVZ" eventType="touchUpInside" id="22j-7y-3bI"/>
+                                    <action selector="onDontShowAgainButtonTap:" destination="tJC-9l-iVZ" eventType="touchUpInside" id="620-4K-bhA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="mE5-uu-8yx" kind="presentation" identifier="symmetryIsBabyReadyToTimeToTestSegueID" id="hso-3l-62Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hy1-oS-yqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018" y="1192"/>
+        </scene>
+        <!--Symmetry Time To Test View Controller-->
+        <scene sceneID="Vdf-5C-sHm">
+            <objects>
+                <viewController id="mE5-uu-8yx" customClass="SymmetryTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fe8-yj-nHz"/>
+                        <viewControllerLayoutGuide type="bottom" id="GtY-vO-U25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pzt-cq-EYo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="c7U-GB-HHw">
+                                <rect key="frame" x="0.0" y="-6" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfZ-ph-4eJ" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="47" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0r-Wh-sJK" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="168" y="465" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="next step">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNextButtonTap:" destination="mE5-uu-8yx" eventType="touchUpInside" id="ToP-Ih-Vjg"/>
+                                    <segue destination="5Jm-JB-CMH" kind="presentation" id="gyn-vX-EBL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU8-dQ-RcR">
+                                <rect key="frame" x="30" y="144" width="260" height="254"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.  Is baby lying symmetrically with both right and left arms extending out from body?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqq-ed-6yu">
+                                <rect key="frame" x="52" y="238" width="222" height="153"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhF-Ll-9mC" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="30" y="465" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="flashlight">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onFlashlightButtonTap:" destination="mE5-uu-8yx" eventType="touchUpInside" id="Cxj-9j-enC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdi-qD-5Ph" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="4" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="mE5-uu-8yx" eventType="touchUpInside" id="Fel-Cw-cV3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time to test!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1g-ac-bhD">
+                                <rect key="frame" x="35" y="83" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.  Place baby on her stomach on a firm surface." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-3E-M5K">
+                                <rect key="frame" x="52" y="157" width="228" height="97"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="labelBackground" destination="fU8-dQ-RcR" id="pk5-FE-YWo"/>
+                        <outlet property="step1Label" destination="F8S-3E-M5K" id="INY-fa-lRg"/>
+                        <outlet property="step2Label" destination="Bqq-ed-6yu" id="Ea9-nx-7tI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJ4-1Z-639" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2723" y="844"/>
+        </scene>
+        <!--Symmetry What Did You See View Controller-->
+        <scene sceneID="dMQ-Z7-0o9">
+            <objects>
+                <viewController id="5Jm-JB-CMH" customClass="SymmetryWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ISa-fk-J5J"/>
+                        <viewControllerLayoutGuide type="bottom" id="1CZ-Xl-fDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cuz-Jr-cjd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JeM-fV-E9m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-Jh-Huc" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What did you see?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42I-bX-CpC">
+                                <rect key="frame" x="35" y="79" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="s2E-E3-hxy" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="28" y="125" width="265" height="58"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                                <state key="normal" title="Baby is lying symmetrically, like a butterfly.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JFJ-yr-llR" kind="presentation" id="PuL-sC-pTb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLe-Tm-Hye" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="5Jm-JB-CMH" eventType="touchUpInside" id="mZl-PO-fUT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="exx-sx-CXf" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="28" y="203" width="265" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                                <state key="normal" title="Baby is not symmetrical. One arm is extended out but not the other.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="r46-hF-ajK" kind="presentation" id="qph-IX-GuE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf0-gt-0vb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3407" y="844"/>
+        </scene>
+        <!--Symmetry Good Outcome View Controller-->
+        <scene sceneID="ddL-W6-w6n">
+            <objects>
+                <viewController id="JFJ-yr-llR" customClass="SymmetryGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c1u-8B-oVr"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ye-2T-54V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7if-qI-BYc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gUc-G4-CL6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-py-c4i" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good job!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-vK-Jcb">
+                                <rect key="frame" x="35" y="85" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby can maintain spinal symmetry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgQ-7L-R7r">
+                                <rect key="frame" x="27" y="135" width="267" height="115"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No need to repeat this test." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkV-u2-CJZ">
+                                <rect key="frame" x="67" y="258" width="187" height="46"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNJ-H3-6OU" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="327" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHomeButtonTap:" destination="JFJ-yr-llR" eventType="touchUpInside" id="gum-RM-w3R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDc-ez-Cbr" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="JFJ-yr-llR" eventType="touchUpInside" id="pRy-gS-gXK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXw-EZ-Gsx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4046" y="418"/>
+        </scene>
+        <!--Symmetry Bad Outcome View Controller-->
+        <scene sceneID="oo4-to-fFf">
+            <objects>
+                <viewController id="r46-hF-ajK" customClass="SymmetryBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xT2-dK-Wqg"/>
+                        <viewControllerLayoutGuide type="bottom" id="715-p8-Bb3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oy1-xZ-ZYJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3bx-4q-Qyo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atF-Wd-sFt" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not symmetrical?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayg-TB-c2G">
+                                <rect key="frame" x="35" y="84" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moP-aH-M2v" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="182" y="452" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHomeButtonTap:" destination="r46-hF-ajK" eventType="touchUpInside" id="YHx-lP-WJ2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="baK-nM-Vlw">
+                                <rect key="frame" x="0.0" y="133" width="320" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not to worry! All babies develop at the different rates. Try again tomorrow." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed1-Ol-Z5j">
+                                <rect key="frame" x="32" y="255" width="257" height="117"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6W-cr-F7Z" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="r46-hF-ajK" eventType="touchUpInside" id="Lfq-qY-sxq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXA-RZ-J3F" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="452" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="remind me!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CGL-m4-lXi" kind="presentation" identifier="symmetryToActivityReminderSegue" id="y2q-gl-o4Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSs-vE-slX" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="380" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="more info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6zV-sh-MqW" kind="presentation" id="AcV-2K-mCc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="Ed1-Ol-Z5j" id="HGC-iZ-XdQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHg-XI-WMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4699" y="844"/>
+        </scene>
+        <!--Symmetry Activity Reminder View Controller-->
+        <scene sceneID="a7L-qs-HIi">
+            <objects>
+                <viewController id="CGL-m4-lXi" customClass="SymmetryActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KOI-lO-7km"/>
+                        <viewControllerLayoutGuide type="bottom" id="oUw-A1-Dfy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eVN-q1-EXd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1JU-fq-e4R">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvc-Oj-xRC" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity Reminder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca1-PD-xa9">
+                                <rect key="frame" x="35" y="82" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUW-f3-S5p" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="452" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHomeButtonTap:" destination="CGL-m4-lXi" eventType="touchUpInside" id="ubp-GA-aDs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CZ-SJ-zEd" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="143" width="251" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  text message" image="selectedRadioButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTextMessageButtonTap:" destination="CGL-m4-lXi" eventType="touchUpInside" id="QSj-Zj-2Vu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLN-fj-FBN" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="223" width="251" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  email" image="unselectedRadioButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onEmailButtonTap:" destination="CGL-m4-lXi" eventType="touchUpInside" id="BUo-YK-56V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoA-qs-3sf" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="CGL-m4-lXi" eventType="touchUpInside" id="I1u-d8-1eZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-Ny-y9z" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="301" width="251" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  notification" image="unselectedRadioButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onInAppNotificationTap:" destination="CGL-m4-lXi" eventType="touchUpInside" id="che-c7-Otf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailButton" destination="GLN-fj-FBN" id="wjd-BH-LB9"/>
+                        <outlet property="notificationButton" destination="bHi-Ny-y9z" id="wg2-7C-GQJ"/>
+                        <outlet property="textMessageButton" destination="8CZ-SJ-zEd" id="TDN-6v-LG6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="341-5B-rdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5282" y="844"/>
+        </scene>
+        <!--Symmetry More Info View Controller-->
+        <scene sceneID="svG-Ln-M4S">
+            <objects>
+                <viewController id="6zV-sh-MqW" customClass="SymmetryMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8IE-n3-i5Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="LH4-HK-mWq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hSh-CE-Nus">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FHT-FD-SdD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncK-mS-D7D" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What does this mean?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVZ-Dq-XJF">
+                                <rect key="frame" x="35" y="85" width="251" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzc-kA-t1m">
+                                <rect key="frame" x="27" y="127" width="267" height="187"/>
+                                <string key="text">Symmetry is controlled by the motor part of the brain. Consistent weakness in half of baby's body may be an early indication of muscular issues or, occasionally, autism.</string>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If baby cannot achieve symmetry after 12 months, please check with your pediatrician during your next well-child visit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="120-Ku-bxg">
+                                <rect key="frame" x="35" y="312" width="251" height="154"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa9-dG-gDl" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="474" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onHomeButtonTap:" destination="6zV-sh-MqW" eventType="touchUpInside" id="PLU-pe-GD1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U14-no-YgI" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="24" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="6zV-sh-MqW" eventType="touchUpInside" id="QKs-rq-H3m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYc-2T-46c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5282" y="1535"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SymmetryBadOutcome" width="273" height="108"/>
+        <image name="SymmetryIsBabyReady" width="320" height="120"/>
+        <image name="SymmetryTestOverview" width="320" height="203"/>
+        <image name="SymmetryWhatNeed" width="320" height="120"/>
+        <image name="WhyIsSymmetry" width="320" height="120"/>
+        <image name="background" width="640" height="1136"/>
+        <image name="selectedRadioButton" width="20" height="20"/>
+        <image name="unselectedRadioButton" width="20" height="20"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ifc-3K-Wlf"/>
+    </inferredMetricsTieBreakers>
+</document>

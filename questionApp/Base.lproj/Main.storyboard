@@ -692,7 +692,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Development Milestone Tests" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAP-Gm-Zvx">
-                                <rect key="frame" x="73" y="89" width="174" height="53"/>
+                                <rect key="frame" x="73" y="81" width="174" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -720,7 +720,7 @@
                                 </items>
                             </toolbar>
                             <button opaque="NO" alpha="0.69999999999999973" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpu-oJ-TUY" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="162" width="250" height="60"/>
+                                <rect key="frame" x="35" y="142" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="pupil response">
@@ -732,7 +732,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.70000000000000007" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja7-MK-lqi" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="238" width="250" height="60"/>
+                                <rect key="frame" x="35" y="216" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="crossing eyes">
@@ -744,7 +744,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.70000000000000007" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r59-Rx-0hf" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="314" width="250" height="60"/>
+                                <rect key="frame" x="35" y="290" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="hearing">
@@ -756,7 +756,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.70000000000000007" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEf-L1-hm9" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="32" y="389" width="250" height="60"/>
+                                <rect key="frame" x="35" y="364" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="let's crawl">
@@ -768,17 +768,32 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNPupilResponseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wSO-iV-I8g">
-                                <rect key="frame" x="49" y="180" width="24" height="24"/>
+                                <rect key="frame" x="52" y="160" width="24" height="24"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNCrossingEyesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="CIx-1F-EUJ">
-                                <rect key="frame" x="49" y="256" width="24" height="24"/>
+                                <rect key="frame" x="52" y="234" width="24" height="24"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNHearingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="P39-63-w9h">
-                                <rect key="frame" x="49" y="332" width="24" height="24"/>
+                                <rect key="frame" x="52" y="308" width="24" height="24"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNStandingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-zM-xZB">
-                                <rect key="frame" x="49" y="407" width="24" height="24"/>
+                                <rect key="frame" x="52" y="382" width="24" height="24"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="symmetry" translatesAutoresizingMaskIntoConstraints="NO" id="zMC-dR-0qU">
+                                <rect key="frame" x="52" y="456" width="24" height="24"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTm-z8-eLC" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="438" width="250" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="symmetry">
+                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSymmetryButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="cMh-QZ-har"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -3623,17 +3638,18 @@ Try again in 6-8 weeks.</string>
         <image name="sensoryMotorTestVideoPreview" width="318" height="192"/>
         <image name="smile" width="24" height="24"/>
         <image name="startButton" width="353" height="67"/>
+        <image name="symmetry" width="24" height="24"/>
         <image name="unselectedRadioButton" width="20" height="20"/>
         <image name="whatIsLanguageAndCognitive" width="320" height="192"/>
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="l69-DX-nDO"/>
-        <segue reference="hJN-An-zuc"/>
         <segue reference="b14-b1-AiE"/>
-        <segue reference="j7l-Po-XYD"/>
-        <segue reference="rnh-PO-BrS"/>
-        <segue reference="30t-RS-Jp6"/>
+        <segue reference="hJN-An-zuc"/>
+        <segue reference="l69-DX-nDO"/>
         <segue reference="Nke-0N-een"/>
+        <segue reference="QOE-4e-qxc"/>
+        <segue reference="30t-RS-Jp6"/>
+        <segue reference="j7l-Po-XYD"/>
     </inferredMetricsTieBreakers>
 </document>
