@@ -56,14 +56,18 @@ class ViewController: BNUIViewController {
     var rightYAxis = barChartView.rightAxis
     rightYAxis.drawAxisLineEnabled = false
 //    rightYAxis.axisMaximum = 40
-    rightYAxis.customAxisMin = 10
-    rightYAxis.customAxisMax = 40
+    rightYAxis.customAxisMin = 0
+    rightYAxis.customAxisMax = 16
     rightYAxis.labelCount = 2
+    leftYAxis.spaceBottom = 0.2
+    rightYAxis.spaceBottom = 0.2
+    leftYAxis.spaceTop = 0.2
+    rightYAxis.spaceTop = 0.2
 //    rightYAxis.axisMinimum = 10
     // formatter
     var formatter:NSNumberFormatter = NSNumberFormatter()
     formatter.maximumFractionDigits = 1
-    formatter.positiveSuffix = " months"
+    formatter.positiveSuffix = " mo."
     rightYAxis.valueFormatter = formatter
     
     // data should be set after customizing chart
@@ -78,6 +82,9 @@ class ViewController: BNUIViewController {
     chartDataSet.drawValuesEnabled = false
     let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
     barChartView.data = chartData
+    
+    barChartView.setExtraOffsets(left: 20, top: 0, right: 20, bottom: 0)
+    
     barChartView.notifyDataSetChanged()
     
   }
