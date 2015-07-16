@@ -71,13 +71,15 @@ class ViewController: BNUIViewController {
     rightYAxis.valueFormatter = formatter
     
     // fonts
-    rightYAxis.labelFont = UIFont(name: kOmnesFontMedium, size: 15)!
+    rightYAxis.labelFont = UIFont(name: kOmnesFontMedium, size: 17)!
+    rightYAxis.labelTextColor = kGrey
     
     // set limit lines
     var babyAgeLimitLine = ChartLimitLine(limit: 9.0, label: "Your Baby")
-    babyAgeLimitLine.valueFont = UIFont(name: kOmnesFontMedium, size: 15)!
+    babyAgeLimitLine.valueFont = UIFont(name: kOmnesFontSemiBold, size: 16)!
+    babyAgeLimitLine.valueTextColor = kOrange
     babyAgeLimitLine.lineColor = kOrange
-    babyAgeLimitLine.lineWidth = 10.0
+    babyAgeLimitLine.lineWidth = 5.0
     babyAgeLimitLine.lineDashLengths = [12]
     rightYAxis.addLimitLine(babyAgeLimitLine)
     
@@ -94,7 +96,7 @@ class ViewController: BNUIViewController {
     let chartData = BarChartData(xVals: months, dataSet: chartDataSet)
     barChartView.data = chartData
     
-    barChartView.setExtraOffsets(left: 20, top: 0, right: 20, bottom: 0)
+    barChartView.setExtraOffsets(left: 30, top: 0, right: 30, bottom: 0)
     
     barChartView.notifyDataSetChanged()
     
