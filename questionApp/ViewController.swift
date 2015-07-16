@@ -70,6 +70,10 @@ class ViewController: BNUIViewController {
     formatter.positiveSuffix = " mo."
     rightYAxis.valueFormatter = formatter
     
+    // set limit lines
+    var babyAgeLimitLine = ChartLimitLine(limit: 9.0, label: "Your Baby")
+    rightYAxis.addLimitLine(babyAgeLimitLine)
+    
     // data should be set after customizing chart
     var dataEntries: [BarChartDataEntry] = []
     
