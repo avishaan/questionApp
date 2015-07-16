@@ -19,6 +19,8 @@ struct TestNames {
     static var pointFollowing = "point following"
     static var crossingEyes = "crossing eyes"
     static var hearing = "hearing"
+    static var attentionAtDistance = "attention at distance"
+    static var symmetry = "symmetry"
 }
 
 struct TestReminderInterval {

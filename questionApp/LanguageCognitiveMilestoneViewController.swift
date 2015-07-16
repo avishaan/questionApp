@@ -31,4 +31,11 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
     @IBAction func onMilestonesBarButtonItem(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func attentionAtADistanceButtonTap(sender: AnyObject) {
+        var storyboard = UIStoryboard (name: "AttentionAtDistance", bundle: nil)
+        var controller: WhyIsAttentionAtDistanceViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsAttentionAtDistanceStoryboardID") as! WhyIsAttentionAtDistanceViewController
+        self.presentViewController(controller, animated: true, completion: nil);
+
+    }
 }

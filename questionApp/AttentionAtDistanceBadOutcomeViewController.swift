@@ -1,5 +1,5 @@
 //
-//  HearingBadOutcomeViewController.swift
+//  AttentionAtDistanceBadOutcomeViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/15/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HearingBadOutcomeViewController: UIViewController {
+class AttentionAtDistanceBadOutcomeViewController: UIViewController {
 
     @IBOutlet weak var infoLabel: UILabel!
     
@@ -27,11 +27,11 @@ class HearingBadOutcomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "hearingToActivityReminderSegue" {
+        if segue.identifier == "AADToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNames.hearing
+            controller.testName = TestNames.attentionAtDistance
         }
     }
     
@@ -45,17 +45,16 @@ class HearingBadOutcomeViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Don't worry! Not all babies develop at the same rate. Try a louder sound this time, or a high-pitched squeaky toy."
+        let string = "Not to worry! Not all babies develop at the same rate. Try and be sure baby is rested, fed, and alert."
         
         var attributedString = NSMutableAttributedString(string: string)
         
         let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 53))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(54, 60))
+        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 54))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(55, 46)) //115
         
         infoLabel.attributedText = attributedString
     }
-
 }
