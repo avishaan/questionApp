@@ -7,32 +7,37 @@
 //
 
 import UIKit
+import Charts
 
 class PupilResponseBadOutcomeViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  @IBOutlet weak var rangeChartView: BNTestRangeChartView!
+  
+  var parent = Parent()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // Do any additional setup after loading the view.
+    rangeChartView.config(startMonth: 0, endMonth: 12, currentAge: parent.ageInMonths, babyName: parent.babyName!)
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  /*
+  // MARK: - Navigation
+  
+  // In a storyboard-based application, you will often want to do a little preparation before navigation
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+  // Get the new view controller using segue.destinationViewController.
+  // Pass the selected object to the new view controller.
+  }
+  */
   @IBAction func onBackButtonTap(sender: AnyObject) {
     self.dismissViewControllerAnimated(true, completion: nil)
   }
-
+  
 }
