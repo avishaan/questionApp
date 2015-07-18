@@ -1597,41 +1597,41 @@
                                     <rect key="frame" x="24" y="158" width="273" height="94"/>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="71z-ng-2L3">
-                                <rect key="frame" x="77" y="371" width="167" height="30"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="15"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Pupil Response Age Range: ">
-                                            <attributes>
-                                                <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Omnes-Medium"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="Birth">
-                                            <attributes>
-                                                <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Omnes-Medium"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-5I-fbt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pupil Response Age Range: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Birth">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="129" width="273" height="30"/>
+                                    <rect key="frame" x="56" y="133" width="225" height="21"/>
                                 </variation>
-                            </button>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="TvI-Ss-Uo7"/>
-                                <exclude reference="71z-ng-2L3"/>
+                                <exclude reference="L5v-5I-fbt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="TvI-Ss-Uo7"/>
-                                <include reference="71z-ng-2L3"/>
+                                <include reference="L5v-5I-fbt"/>
                             </mask>
                         </variation>
                     </view>
@@ -3723,9 +3723,9 @@ Try again in 6-8 weeks.</string>
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Nke-0N-een"/>
         <segue reference="l69-DX-nDO"/>
         <segue reference="Csn-V1-Agc"/>
-        <segue reference="Nke-0N-een"/>
         <segue reference="b14-b1-AiE"/>
         <segue reference="j7l-Po-XYD"/>
         <segue reference="QOE-4e-qxc"/>
