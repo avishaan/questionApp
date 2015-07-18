@@ -1564,9 +1564,6 @@
                                     <segue destination="vqP-SJ-U0l" kind="presentation" id="Csn-V1-Agc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseDevelopmentTimeline" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-iS-ZDJ">
-                                <rect key="frame" x="0.0" y="133" width="320" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make sure repeated tests are consistent and please share your results with your pediatrician." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-5E-doS">
                                 <rect key="frame" x="32" y="255" width="257" height="117"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
@@ -1597,19 +1594,44 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="24" y="173" width="273" height="79"/>
+                                    <rect key="frame" x="24" y="158" width="273" height="94"/>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="71z-ng-2L3">
+                                <rect key="frame" x="77" y="371" width="167" height="30"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="15"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Pupil Response Age Range: ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Birth">
+                                            <attributes>
+                                                <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="129" width="273" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="TvI-Ss-Uo7"/>
+                                <exclude reference="71z-ng-2L3"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="TvI-Ss-Uo7"/>
+                                <include reference="71z-ng-2L3"/>
                             </mask>
                         </variation>
                     </view>
@@ -3687,7 +3709,6 @@ Try again in 6-8 weeks.</string>
         <image name="menuIcon" width="25" height="18"/>
         <image name="playIntroButton" width="544" height="301"/>
         <image name="pupilResponseBaby" width="319" height="119"/>
-        <image name="pupilResponseDevelopmentTimeline" width="273" height="108"/>
         <image name="pupilResponseIsBabyReady" width="320" height="120"/>
         <image name="pupilResponseTestVideoPreview" width="319" height="203"/>
         <image name="pupilResponseWhatWillYouNeed" width="319" height="119"/>
