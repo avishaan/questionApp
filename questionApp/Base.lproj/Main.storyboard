@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VjN-jI-kwu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VjN-jI-kwu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1564,9 +1564,6 @@
                                     <segue destination="vqP-SJ-U0l" kind="presentation" id="Csn-V1-Agc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseDevelopmentTimeline" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-iS-ZDJ">
-                                <rect key="frame" x="0.0" y="133" width="320" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make sure repeated tests are consistent and please share your results with your pediatrician." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-5E-doS">
                                 <rect key="frame" x="32" y="255" width="257" height="117"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
@@ -1593,14 +1590,60 @@
                                     <action selector="onBackButtonTap:" destination="d8m-pO-qgZ" eventType="touchUpInside" id="FRe-Pe-8eh"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TvI-Ss-Uo7" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="158" width="273" height="94"/>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-5I-fbt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pupil Response Age Range: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Birth">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="48" y="129" width="225" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="TvI-Ss-Uo7"/>
+                                <exclude reference="L5v-5I-fbt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="TvI-Ss-Uo7"/>
+                                <include reference="L5v-5I-fbt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="rangeChartLabel" destination="L5v-5I-fbt" id="whq-ym-zOd"/>
+                        <outlet property="rangeChartView" destination="TvI-Ss-Uo7" id="459-Bg-giO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHJ-69-D5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8724" y="1202.9999999999998"/>
+            <point key="canvasLocation" x="8724" y="1202"/>
         </scene>
         <!--Pupil Response More Information View Controller-->
         <scene sceneID="teD-7X-qN4">
@@ -3667,7 +3710,6 @@ Try again in 6-8 weeks.</string>
         <image name="menuIcon" width="25" height="18"/>
         <image name="playIntroButton" width="544" height="301"/>
         <image name="pupilResponseBaby" width="319" height="119"/>
-        <image name="pupilResponseDevelopmentTimeline" width="273" height="108"/>
         <image name="pupilResponseIsBabyReady" width="320" height="120"/>
         <image name="pupilResponseTestVideoPreview" width="319" height="203"/>
         <image name="pupilResponseWhatWillYouNeed" width="319" height="119"/>
@@ -3682,12 +3724,12 @@ Try again in 6-8 weeks.</string>
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b14-b1-AiE"/>
-        <segue reference="hJN-An-zuc"/>
-        <segue reference="l69-DX-nDO"/>
-        <segue reference="Nke-0N-een"/>
         <segue reference="QOE-4e-qxc"/>
-        <segue reference="30t-RS-Jp6"/>
+        <segue reference="l69-DX-nDO"/>
+        <segue reference="OVj-2n-SsR"/>
+        <segue reference="Nke-0N-een"/>
+        <segue reference="b14-b1-AiE"/>
         <segue reference="j7l-Po-XYD"/>
+        <segue reference="30t-RS-Jp6"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -22,10 +22,8 @@ class BNTestRangeChartView: HorizontalBarChartView {
     super.init(coder: aDecoder)
   }
   
-  func config(#startMonth: Double, endMonth: Double, currentAge: Double, babyName: String) {
+  func config(#startMonth: Double, endMonth: Double, successAgeInMonths: Double, babyAgeInMonths: Double, babyName: String) {
     println("test")
-    var dataPoints = ["Jan"]
-    var values = [currentAge]
     
     // customize chart before setting data
     self.noDataText = "No data to show you"
@@ -45,10 +43,14 @@ class BNTestRangeChartView: HorizontalBarChartView {
     rightYAxis.customAxisMin = startMonth
     rightYAxis.customAxisMax = endMonth
     rightYAxis.labelCount = 2
-    leftYAxis.spaceBottom = 0.2
     rightYAxis.spaceBottom = 0.2
-    leftYAxis.spaceTop = 0.2
     rightYAxis.spaceTop = 0.2
+    
+    // make sure the left axis matches the right
+    leftYAxis.customAxisMin = rightYAxis.customAxisMin
+    leftYAxis.customAxisMax = rightYAxis.customAxisMax
+    leftYAxis.spaceBottom = rightYAxis.spaceBottom
+    leftYAxis.spaceTop = rightYAxis.spaceTop
 //    rightYAxis.axisMinimum = 10
     // formatter
     var formatter:NSNumberFormatter = NSNumberFormatter()
@@ -61,7 +63,7 @@ class BNTestRangeChartView: HorizontalBarChartView {
     rightYAxis.labelTextColor = kGrey
     
     // set limit lines
-    var babyAgeLimitLine = ChartLimitLine(limit: 9.0, label: babyName)
+    var babyAgeLimitLine = ChartLimitLine(limit: babyAgeInMonths, label: babyName)
     babyAgeLimitLine.valueFont = UIFont(name: kOmnesFontSemiBold, size: 16)!
     babyAgeLimitLine.valueTextColor = kOrange
     babyAgeLimitLine.lineColor = kOrange
@@ -71,6 +73,9 @@ class BNTestRangeChartView: HorizontalBarChartView {
     
     // data should be set after customizing chart
     var dataEntries: [BarChartDataEntry] = []
+    
+    var dataPoints = ["Jan"]
+    var values = [successAgeInMonths]
     
     for i in 0..<dataPoints.count {
       let dataEntry = BarChartDataEntry(value: values[i], xIndex: i)

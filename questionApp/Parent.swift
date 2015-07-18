@@ -10,14 +10,6 @@ import Foundation
 import UIKit
 
 class Parent {
-  var fullName: String?
-  var email: String?
-  var babyName: String?
-  var babyGender: String?
-  var babyBirthday: NSDate?
-  var imagePathRelative: String?
-  var image: UIImage?
-  
   let kFullName = "FullName"
   let kEmail = "Email"
   let kBabyName = "BabyName"
@@ -26,6 +18,27 @@ class Parent {
   let kImagePathRelative = "ImagePathRelative"
   
   let store = NSUserDefaults.standardUserDefaults()
+  
+  var fullName: String?
+  var email: String?
+  var babyName: String?
+  var babyGender: String?
+  var babyBirthday: NSDate?
+  var imagePathRelative: String?
+  var image: UIImage?
+  
+  var ageInWeeks: Double {
+    get {
+      let secondsDifference = self.babyBirthday?.timeIntervalSinceNow
+      let weekDifference = abs(secondsDifference!/60/60/24/7)
+      return weekDifference
+    }
+  }
+  var ageInMonths: Double {
+    get {
+      return self.ageInWeeks/4
+      }
+  }
   
   init() {
     // first get info from the defaults incase they already exist
