@@ -18,7 +18,7 @@ class PupilResponseBadOutcomeViewController: UIViewController {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
-    rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 0.1, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+    rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 0.2, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
   }
   
   override func didReceiveMemoryWarning() {
