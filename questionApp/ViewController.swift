@@ -27,7 +27,7 @@ class ViewController: BNUIViewController {
     let unitsSold = [8.0]
     
     setChart(months!, values: unitsSold)
-    rangeChart.config(startMonth: 0, endMonth: 12, currentAge: 9, babyName: "Baby Name")
+    rangeChart.config(startMonth: 0, endMonth: 12, successAgeInMonths: 1, babyAgeInMonths: 8, babyName: "BabyNameGoesHere")
     
     //check all fonts
     for family in UIFont.familyNames() {
