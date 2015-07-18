@@ -11,6 +11,7 @@ import Charts
 
 class PupilResponseBadOutcomeViewController: UIViewController {
   @IBOutlet weak var rangeChartView: BNTestRangeChartView!
+  @IBOutlet weak var rangeChartLabel: UILabel!
   
   var parent = Parent()
   
@@ -19,6 +20,16 @@ class PupilResponseBadOutcomeViewController: UIViewController {
     
     // Do any additional setup after loading the view.
     rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 0.2, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+    
+    // font can't be set directly in storyboard for attributed string, set the label font here
+    // make label's set attr string to a mutable so we can add attributes on
+    var attrString:NSMutableAttributedString = NSMutableAttributedString(attributedString: rangeChartLabel.attributedText)
+    
+    // add font attribute
+    attrString.addAttribute(NSFontAttributeName, value: UIFont(name: kOmnesFontSemiBold, size: 15)!, range: NSMakeRange(0, attrString.length))
+    rangeChartLabel.attributedText = attrString
+    
+    
   }
   
   override func didReceiveMemoryWarning() {

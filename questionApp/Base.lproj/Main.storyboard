@@ -1637,6 +1637,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="rangeChartLabel" destination="L5v-5I-fbt" id="whq-ym-zOd"/>
                         <outlet property="rangeChartView" destination="TvI-Ss-Uo7" id="459-Bg-giO"/>
                     </connections>
                 </viewController>
