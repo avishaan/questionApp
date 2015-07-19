@@ -19,9 +19,6 @@ class SymmetryBadOutcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let string = "Not to worry! All babies develop at the different rates. Try again tomorrow."
-        applyTextAttributesToLabel(string, indexAtStartOfBold:57, countOfBoldCharacters:19)
-        
         initializeViewFromTestHistory()
     }
     
@@ -52,8 +49,6 @@ class SymmetryBadOutcomeViewController: UIViewController {
     
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel(string: String, indexAtStartOfBold index: Int, countOfBoldCharacters count: Int) {
-        
-        //let string = "Not to worry! All babies develop at the different rates. Try again tomorrow."
         
         var attributedString = NSMutableAttributedString(string: string)
         
