@@ -2565,7 +2565,7 @@ Try again in 2-4 weeks.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77z-0D-Gea" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9313" y="3364"/>
+            <point key="canvasLocation" x="9618" y="2948"/>
         </scene>
         <!--Language Cognitive Milestone View Controller-->
         <scene sceneID="VdR-2G-VgY">
@@ -3710,12 +3710,12 @@ Try again in 6-8 weeks.</string>
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="b14-b1-AiE"/>
+        <segue reference="XdJ-vh-pIC"/>
+        <segue reference="30t-RS-Jp6"/>
         <segue reference="QOE-4e-qxc"/>
         <segue reference="l69-DX-nDO"/>
-        <segue reference="OVj-2n-SsR"/>
         <segue reference="Nke-0N-een"/>
-        <segue reference="b14-b1-AiE"/>
         <segue reference="j7l-Po-XYD"/>
-        <segue reference="30t-RS-Jp6"/>
     </inferredMetricsTieBreakers>
 </document>
