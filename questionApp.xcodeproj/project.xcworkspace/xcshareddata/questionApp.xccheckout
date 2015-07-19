@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E1CBD91B-1971-49B9-B218-9E06A5C7C224</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>questionApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A</key>
 		<string>https://github.com/codeHatcher/questionApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>questionApp.xcodeproj/project.xcworkspace</string>
+	<string>questionApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A</key>

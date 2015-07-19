@@ -514,7 +514,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JFJ-yr-llR" kind="presentation" id="PuL-sC-pTb"/>
+                                    <segue destination="JFJ-yr-llR" kind="presentation" identifier="symmetryGoodOutcomeSegueID" id="PuL-sC-pTb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLe-Tm-Hye" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
@@ -534,7 +534,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="r46-hF-ajK" kind="presentation" id="qph-IX-GuE"/>
+                                    <segue destination="r46-hF-ajK" kind="presentation" identifier="symmetryBadOutcomeSegueID" id="qph-IX-GuE"/>
                                 </connections>
                             </button>
                         </subviews>
