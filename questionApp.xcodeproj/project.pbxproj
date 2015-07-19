@@ -19,11 +19,11 @@
 		824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */; };
 		824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */; };
 		824565251B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565241B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift */; };
-		824565271B41FFB2003320A9 /* IntroVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 824565261B41FFB2003320A9 /* IntroVideo.mov */; };
 		8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 824565291B420294003320A9 /* PupilResponse.mp4 */; };
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
 		8278694B1B54141B0001F932 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; };
 		8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8296BFAC1B5B3E31007E842B /* IntroVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8296BFAB1B5B3E31007E842B /* IntroVideo.m4v */; };
 		829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54E91B26995800ABE77C /* AppDelegate.swift */; };
 		829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */; };
 		829F54EF1B26995800ABE77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EE1B26995800ABE77C /* ViewController.swift */; };
@@ -190,10 +190,10 @@
 		824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
 		824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseGoodOutcomeViewController.swift; sourceTree = "<group>"; };
 		824565241B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseBadOutcomeViewController.swift; sourceTree = "<group>"; };
-		824565261B41FFB2003320A9 /* IntroVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IntroVideo.mov; sourceTree = "<group>"; };
 		824565291B420294003320A9 /* PupilResponse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PupilResponse.mp4; sourceTree = "<group>"; };
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		827869451B5413E60001F932 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "resources/libs/ios-charts/Charts/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		8296BFAB1B5B3E31007E842B /* IntroVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideo.m4v; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829F54E91B26995800ABE77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -377,10 +377,6 @@
 				82E42ABD1B4118FE00BAE21B /* SensoryAndMotor */,
 				9EAEB5DA1B4CA68500159730 /* LanaguageAndCognitive */,
 				829F54E91B26995800ABE77C /* AppDelegate.swift */,
-				8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */,
-				829F54EE1B26995800ABE77C /* ViewController.swift */,
-				82401C281B28399F008202EA /* ProfileSetupViewController.swift */,
-				82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */,
 				82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */,
 				82BA147C1B54167B00B18A21 /* ChartViewController.swift */,
 				829F54EE1B26995800ABE77C /* ViewController.swift */,
@@ -452,9 +448,9 @@
 				9EE7EB3E1B56AF5500C73CA3 /* Hearing.mp4 */,
 				9EE7EB231B55CE8E00C73CA3 /* CrossingEyes.mp4 */,
 				9EF313751B5066470094DAC7 /* LetsCrawl.mp4 */,
+				8296BFAB1B5B3E31007E842B /* IntroVideo.m4v */,
 				9EABF28F1B4D87E8002FDA2C /* FallingToy.mp4 */,
 				824565291B420294003320A9 /* PupilResponse.mp4 */,
-				824565261B41FFB2003320A9 /* IntroVideo.mov */,
 				829F550F1B26BB1B00ABE77C /* crawl.mp4 */,
 			);
 			name = videos;
@@ -743,11 +739,11 @@
 				82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */,
 				829F54F21B26995800ABE77C /* Main.storyboard in Resources */,
 				9EE7EB431B56D8D500C73CA3 /* Symmetry.mp4 in Resources */,
+				8296BFAC1B5B3E31007E842B /* IntroVideo.m4v in Resources */,
 				82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */,
 				9ED51BB71B580A1F0000C5E6 /* Symmetry.storyboard in Resources */,
 				8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */,
 				9EE7EB3D1B56A88A00C73CA3 /* Hearing.storyboard in Resources */,
-				824565271B41FFB2003320A9 /* IntroVideo.mov in Resources */,
 				9EF313761B5066470094DAC7 /* LetsCrawl.mp4 in Resources */,
 				829F55101B26BB1B00ABE77C /* crawl.mp4 in Resources */,
 				829F54F41B26995800ABE77C /* Images.xcassets in Resources */,
