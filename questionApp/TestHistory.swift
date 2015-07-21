@@ -47,7 +47,7 @@ class TestHistory: NSObject, NSCoding {
         if let date = dictionary[Keys.mostRecentTestDate] as? NSDate {
             mostRecentTestDate = date
         }
-        if let result = dictionary[Keys.mostRecentTestDate] as? Bool {
+        if let result = dictionary[Keys.mostRecentTestResult] as? Bool {
             mostRecentTestResult = result
         }
         if let failed = dictionary[Keys.countOfFailedTests] as? Int {
