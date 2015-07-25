@@ -30,10 +30,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Why Is Symmetry View Controller-->
+        <!--Why Is Self Recognition Controller-->
         <scene sceneID="3QN-ht-BgI">
             <objects>
-                <viewController storyboardIdentifier="WhyIsSymmetryStoryboardID" id="Har-d7-BT7" customClass="WhyIsSymmetryViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyIsSymmetryStoryboardID" id="Har-d7-BT7" customClass="WhyIsSelfRecognitionController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DZO-Tx-5e2"/>
                         <viewControllerLayoutGuide type="bottom" id="cjB-pD-Qnj"/>
@@ -55,24 +55,18 @@
                                     <segue destination="X1F-0G-vu1" kind="presentation" id="e56-we-alJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A4-yO-VgF" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self recognition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A4-yO-VgF" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is maintaining symmetry important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfX-oa-P7Z">
-                                <rect key="frame" x="32" y="90" width="257" height="53"/>
-                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
-                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsSymmetry" translatesAutoresizingMaskIntoConstraints="NO" id="qRB-U8-dpM">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsSelfRecognition" translatesAutoresizingMaskIntoConstraints="NO" id="qRB-U8-dpM">
                                 <rect key="frame" x="0.0" y="154" width="320" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFS-Wv-4KR">
                                 <rect key="frame" x="14" y="274" width="293" height="183"/>
-                                <string key="text">Your baby should lie symmetrically on her stomach. Inability to do so may be an early indicator of spinal issues or increased risk for autism.</string>
+                                <string key="text">This test assesses your baby’s ability to recognize her own reflection. This is one step in your baby’s development of visual recognition that begins with being able to identify a parent’s face.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -86,6 +80,12 @@
                                     <action selector="onBackButtonTap:" destination="Har-d7-BT7" eventType="touchUpInside" id="gHC-oQ-f5J"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Self Recognition important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfX-oa-P7Z">
+                                <rect key="frame" x="16" y="88" width="288" height="53"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="-16" y="844"/>
         </scene>
-        <!--Symmetry Test Overview View Controller-->
+        <!--Self Recognition Test Overview View Controller-->
         <scene sceneID="rYz-Hi-ZJD">
             <objects>
-                <viewController id="X1F-0G-vu1" customClass="SymmetryTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X1F-0G-vu1" customClass="SelfRecognitionTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PiO-Ww-Iyi"/>
                         <viewControllerLayoutGuide type="bottom" id="m2U-pO-Ova"/>
@@ -128,7 +128,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TxU-1h-gBp" kind="presentation" identifier="symmetryWhatWillYouNeedSegueID" id="dgK-zK-ZMX"/>
+                                    <segue destination="TxU-1h-gBp" kind="presentation" identifier="selfRecognitionWhatWillYouNeedSegueID" id="dgK-zK-ZMX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="832-hV-EGU">
@@ -146,7 +146,7 @@
                                     <action selector="onPreviewButtonTap:" destination="X1F-0G-vu1" eventType="touchUpInside" id="CP7-l1-RNv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVF-yM-CIF" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self recognition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVF-yM-CIF" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="665" y="1325.5"/>
         </scene>
-        <!--Symmetry What Will You Need View Controller-->
+        <!--Self Recognition What Will You Need View Controller-->
         <scene sceneID="Vrj-S9-3Vd">
             <objects>
-                <viewController id="TxU-1h-gBp" customClass="SymmetryWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TxU-1h-gBp" customClass="SelfRecognitionWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YpI-iZ-Rsv"/>
                         <viewControllerLayoutGuide type="bottom" id="juy-EF-v8N"/>
@@ -196,7 +196,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SKt-qM-8N3">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhw-Wk-zFr" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self recognition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhw-Wk-zFr" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -218,10 +218,10 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-wP-IX2">
-                                <rect key="frame" x="-5" y="113" width="329" height="201"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SelfRecognitionWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-wP-IX2">
+                                <rect key="frame" x="-5" y="116" width="329" height="201"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All you'll need is a firm surface baby can comfortably lie on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nb-Fg-L6O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You’ll need a mirror — one mounted on the wall should be easier and less distracting than a hand-held one. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nb-Fg-L6O">
                                 <rect key="frame" x="37" y="281" width="245" height="183"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -242,7 +242,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="testPreparationLabel" destination="3Nb-Fg-L6O" id="Xlm-6a-r0r"/>
-                        <segue destination="tJC-9l-iVZ" kind="presentation" identifier="symmetryIsBabyReadySegueID" id="4jO-Fj-HOG"/>
+                        <segue destination="tJC-9l-iVZ" kind="presentation" identifier="selfRecognitionIsBabyReadySegueID" id="4jO-Fj-HOG"/>
                         <segue destination="mE5-uu-8yx" kind="presentation" identifier="symmetryTimeToTestSegueID" id="ifc-3K-Wlf"/>
                     </connections>
                 </viewController>
@@ -250,10 +250,10 @@
             </objects>
             <point key="canvasLocation" x="1316" y="844"/>
         </scene>
-        <!--Symmetry Is Baby Ready View Controller-->
+        <!--Self Recognition Is Baby Ready View Controller-->
         <scene sceneID="QtB-hI-7ju">
             <objects>
-                <viewController id="tJC-9l-iVZ" customClass="SymmetryIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tJC-9l-iVZ" customClass="SelfRecognitionIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dy0-Gt-0y6"/>
                         <viewControllerLayoutGuide type="bottom" id="pT0-vv-Tj4"/>
@@ -265,7 +265,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jxv-Q9-jxb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGy-fm-0Ps" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self recognition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGy-fm-0Ps" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -389,10 +389,10 @@
             </objects>
             <point key="canvasLocation" x="2018" y="1192"/>
         </scene>
-        <!--Symmetry Time To Test View Controller-->
+        <!--Self Recognition Time To Test View Controller-->
         <scene sceneID="Vdf-5C-sHm">
             <objects>
-                <viewController id="mE5-uu-8yx" customClass="SymmetryTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mE5-uu-8yx" customClass="SelfRecognitionTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fe8-yj-nHz"/>
                         <viewControllerLayoutGuide type="bottom" id="GtY-vO-U25"/>
@@ -479,10 +479,10 @@
             </objects>
             <point key="canvasLocation" x="2723" y="844"/>
         </scene>
-        <!--Symmetry What Did You See View Controller-->
+        <!--Self Recognition What Did You See View Controller-->
         <scene sceneID="dMQ-Z7-0o9">
             <objects>
-                <viewController id="5Jm-JB-CMH" customClass="SymmetryWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Jm-JB-CMH" customClass="SelfRecognitionWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ISa-fk-J5J"/>
                         <viewControllerLayoutGuide type="bottom" id="1CZ-Xl-fDu"/>
@@ -494,7 +494,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JeM-fV-E9m">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-Jh-Huc" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self recognition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-Jh-Huc" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -507,10 +507,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="s2E-E3-hxy" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="125" width="265" height="58"/>
+                                <rect key="frame" x="28" y="125" width="265" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
-                                <state key="normal" title="Baby is lying symmetrically, like a butterfly.">
+                                <state key="normal" title="Baby looked at, engaged with, or otherwise interacted with her reflection.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -527,10 +527,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="exx-sx-CXf" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="203" width="265" height="80"/>
+                                <rect key="frame" x="28" y="221" width="265" height="62"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
-                                <state key="normal" title="Baby is not symmetrical. One arm is extended out but not the other.">
+                                <state key="normal" title="Baby consistently did not respond to reflection.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -546,10 +546,10 @@
             </objects>
             <point key="canvasLocation" x="3407" y="844"/>
         </scene>
-        <!--Symmetry Good Outcome View Controller-->
+        <!--Self Recognition Good Outcome View Controller-->
         <scene sceneID="ddL-W6-w6n">
             <objects>
-                <viewController id="JFJ-yr-llR" customClass="SymmetryGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JFJ-yr-llR" customClass="SelfRecognitionGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c1u-8B-oVr"/>
                         <viewControllerLayoutGuide type="bottom" id="7Ye-2T-54V"/>
@@ -561,20 +561,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gUc-G4-CL6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-py-c4i" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self recognition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-py-c4i" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good job!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-vK-Jcb">
-                                <rect key="frame" x="35" y="85" width="251" height="53"/>
+                                <rect key="frame" x="35" y="109" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby can maintain spinal symmetry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgQ-7L-R7r">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgQ-7L-R7r">
                                 <rect key="frame" x="27" y="135" width="267" height="115"/>
+                                <string key="text">Your baby has developed the ability to recognize herself in a mirror.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -613,10 +614,10 @@
             </objects>
             <point key="canvasLocation" x="4046" y="418"/>
         </scene>
-        <!--Symmetry Bad Outcome View Controller-->
+        <!--Self Recognition Bad Outcome View Controller-->
         <scene sceneID="oo4-to-fFf">
             <objects>
-                <viewController id="r46-hF-ajK" customClass="SymmetryBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r46-hF-ajK" customClass="SelfRecognitionBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xT2-dK-Wqg"/>
                         <viewControllerLayoutGuide type="bottom" id="715-p8-Bb3"/>
@@ -628,13 +629,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3bx-4q-Qyo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atF-Wd-sFt" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self recognition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atF-Wd-sFt" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not symmetrical?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayg-TB-c2G">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No self recognition?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayg-TB-c2G">
                                 <rect key="frame" x="35" y="84" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -701,10 +702,10 @@
             </objects>
             <point key="canvasLocation" x="4699" y="844"/>
         </scene>
-        <!--Symmetry Activity Reminder View Controller-->
+        <!--Self Recognition Activity Reminder View Controller-->
         <scene sceneID="a7L-qs-HIi">
             <objects>
-                <viewController id="CGL-m4-lXi" customClass="SymmetryActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CGL-m4-lXi" customClass="SelfRecognitionActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KOI-lO-7km"/>
                         <viewControllerLayoutGuide type="bottom" id="oUw-A1-Dfy"/>
@@ -794,10 +795,10 @@
             </objects>
             <point key="canvasLocation" x="5282" y="844"/>
         </scene>
-        <!--Symmetry More Info View Controller-->
+        <!--Self Recognition More Info View Controller-->
         <scene sceneID="svG-Ln-M4S">
             <objects>
-                <viewController id="6zV-sh-MqW" customClass="SymmetryMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6zV-sh-MqW" customClass="SelfRecognitionMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8IE-n3-i5Q"/>
                         <viewControllerLayoutGuide type="bottom" id="LH4-HK-mWq"/>
@@ -864,11 +865,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SelfRecognitionWhatNeed" width="320" height="120"/>
         <image name="SymmetryBadOutcome" width="273" height="108"/>
         <image name="SymmetryIsBabyReady" width="320" height="120"/>
         <image name="SymmetryTestOverview" width="320" height="203"/>
-        <image name="SymmetryWhatNeed" width="320" height="120"/>
-        <image name="WhyIsSymmetry" width="320" height="120"/>
+        <image name="WhyIsSelfRecognition" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>

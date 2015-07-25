@@ -1,14 +1,14 @@
 //
-//  SymmetryActivityReminderViewController.swift
+//  SelfRecognitionActivityReminderViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/16/15.
+//  Created by Daniel Hsu on 7/24/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SymmetryActivityReminderViewController: ActivityReminderViewController {
+class SelfRecognitionActivityReminderViewController: ActivityReminderViewController {
 
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)
