@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209965861B63101C00B93C5D /* SelfRecognition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209965851B63101C00B93C5D /* SelfRecognition.storyboard */; };
+		209965881B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965871B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift */; };
+		2099658A1B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965891B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift */; };
+		2099658C1B6310BB00B93C5D /* SelfRecognitionWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099658B1B6310BB00B93C5D /* SelfRecognitionWhatWillYouNeedViewController.swift */; };
+		2099658E1B6310D300B93C5D /* SelfRecognitionIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099658D1B6310D300B93C5D /* SelfRecognitionIsBabyReadyViewController.swift */; };
+		209965901B6310F400B93C5D /* SelfRecognitionTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099658F1B6310F400B93C5D /* SelfRecognitionTimeToTestViewController.swift */; };
+		209965921B63111200B93C5D /* SelfRecognitionWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965911B63111200B93C5D /* SelfRecognitionWhatDidYouSeeViewController.swift */; };
+		209965941B63113A00B93C5D /* SelfRecognitionGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965931B63113A00B93C5D /* SelfRecognitionGoodOutcomeViewController.swift */; };
+		209965961B6311DC00B93C5D /* SelfRecognitionBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965951B6311DC00B93C5D /* SelfRecognitionBadOutcomeViewController.swift */; };
+		209965981B6311FE00B93C5D /* SelfRecognitionMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965971B6311FE00B93C5D /* SelfRecognitionMoreInfoViewController.swift */; };
+		2099659A1B63121B00B93C5D /* SelfRecognitionActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965991B63121B00B93C5D /* SelfRecognitionActivityReminderViewController.swift */; };
 		82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82169C381B535DAA00F8786F /* FontAwesome.otf */; };
 		82338C851B26E6830067898E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82338C841B26E6830067898E /* AVKit.framework */; };
 		82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C201B2818D4008202EA /* UIButtonNext.swift */; };
@@ -180,6 +191,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		209965851B63101C00B93C5D /* SelfRecognition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelfRecognition.storyboard; sourceTree = "<group>"; };
+		209965871B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsSelfRecognitionViewController.swift; sourceTree = "<group>"; };
+		209965891B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionTestOverviewViewController.swift; sourceTree = "<group>"; };
+		2099658B1B6310BB00B93C5D /* SelfRecognitionWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
+		2099658D1B6310D300B93C5D /* SelfRecognitionIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionIsBabyReadyViewController.swift; sourceTree = "<group>"; };
+		2099658F1B6310F400B93C5D /* SelfRecognitionTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionTimeToTestViewController.swift; sourceTree = "<group>"; };
+		209965911B63111200B93C5D /* SelfRecognitionWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
+		209965931B63113A00B93C5D /* SelfRecognitionGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionGoodOutcomeViewController.swift; sourceTree = "<group>"; };
+		209965951B6311DC00B93C5D /* SelfRecognitionBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionBadOutcomeViewController.swift; sourceTree = "<group>"; };
+		209965971B6311FE00B93C5D /* SelfRecognitionMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionMoreInfoViewController.swift; sourceTree = "<group>"; };
+		209965991B63121B00B93C5D /* SelfRecognitionActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionActivityReminderViewController.swift; sourceTree = "<group>"; };
 		82169C381B535DAA00F8786F /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		82338C841B26E6830067898E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		82401C201B2818D4008202EA /* UIButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonNext.swift; sourceTree = "<group>"; };
@@ -338,6 +360,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2078F06F1B63026D0046316F /* SelfRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				209965851B63101C00B93C5D /* SelfRecognition.storyboard */,
+				209965871B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift */,
+				209965891B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift */,
+				2099658B1B6310BB00B93C5D /* SelfRecognitionWhatWillYouNeedViewController.swift */,
+				2099658D1B6310D300B93C5D /* SelfRecognitionIsBabyReadyViewController.swift */,
+				2099658F1B6310F400B93C5D /* SelfRecognitionTimeToTestViewController.swift */,
+				209965911B63111200B93C5D /* SelfRecognitionWhatDidYouSeeViewController.swift */,
+				209965931B63113A00B93C5D /* SelfRecognitionGoodOutcomeViewController.swift */,
+				209965951B6311DC00B93C5D /* SelfRecognitionBadOutcomeViewController.swift */,
+				209965971B6311FE00B93C5D /* SelfRecognitionMoreInfoViewController.swift */,
+				209965991B63121B00B93C5D /* SelfRecognitionActivityReminderViewController.swift */,
+			);
+			name = SelfRecognition;
+			sourceTree = "<group>";
+		};
 		827869441B5413D20001F932 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +513,7 @@
 		82E42ABD1B4118FE00BAE21B /* SensoryAndMotor */ = {
 			isa = PBXGroup;
 			children = (
+				2078F06F1B63026D0046316F /* SelfRecognition */,
 				9EE7EB461B56D96800C73CA3 /* Symmetry */,
 				9EE7EB271B56A6A800C73CA3 /* Hearing */,
 				9EE7EB0E1B55A0ED00C73CA3 /* CrossingEyes */,
@@ -690,6 +731,7 @@
 				TargetAttributes = {
 					829F54E31B26995800ABE77C = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = J4VYN3B6QR;
 					};
 					829F54FB1B26995800ABE77C = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -739,6 +781,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EE7EB241B55CE8E00C73CA3 /* CrossingEyes.mp4 in Resources */,
+				209965861B63101C00B93C5D /* SelfRecognition.storyboard in Resources */,
 				9EABF2921B4D8A35002FDA2C /* Swift.gitignore in Resources */,
 				9EE7EB411B56C86A00C73CA3 /* PointFollowing.mp4 in Resources */,
 				9EC4240D1B5469C30037C0E9 /* PointFollowing.storyboard in Resources */,
@@ -785,6 +828,7 @@
 				9EABF2A21B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift in Sources */,
 				82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */,
 				82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */,
+				209965921B63111200B93C5D /* SelfRecognitionWhatDidYouSeeViewController.swift in Sources */,
 				82D641EC1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift in Sources */,
 				82D1415B1B41289F0048434F /* PupilResponseTimeToTestViewController.swift in Sources */,
 				82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */,
@@ -800,8 +844,10 @@
 				9EE7EB551B56DE2700C73CA3 /* AttentionAtDistanceWhatDidYouSeeViewController.swift in Sources */,
 				9EF313781B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB141B55A5FE00C73CA3 /* CrossingEyesTestOverviewViewController.swift in Sources */,
+				209965941B63113A00B93C5D /* SelfRecognitionGoodOutcomeViewController.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
 				9EABF2961B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift in Sources */,
+				209965881B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift in Sources */,
 				9EE7EB2B1B56A7A300C73CA3 /* HearingTestOverviewViewController.swift in Sources */,
 				9EE7EB261B55D20E00C73CA3 /* CrossingEyesActivityReminderViewController.swift in Sources */,
 				9EF313821B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift in Sources */,
@@ -821,6 +867,7 @@
 				9EABF2A41B4DF40F002FDA2C /* ActivityReminderViewController.swift in Sources */,
 				9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */,
 				9EABF29C1B4DCF35002FDA2C /* FallingToyWhatDidYouSeeViewController.swift in Sources */,
+				209965981B6311FE00B93C5D /* SelfRecognitionMoreInfoViewController.swift in Sources */,
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,
 				9EE7EB291B56A78700C73CA3 /* WhyIsHearingViewController.swift in Sources */,
 				82D641F01B49F9D50013D5FB /* Parent.swift in Sources */,
@@ -833,6 +880,8 @@
 				9EE7EB5B1B56DE5200C73CA3 /* AttentionAtDistanceMoreInfoViewController.swift in Sources */,
 				9ED51BCD1B583B020000C5E6 /* TestHistory.swift in Sources */,
 				9EC424101B5481450037C0E9 /* WhyIsPointFollowingViewController.swift in Sources */,
+				2099658E1B6310D300B93C5D /* SelfRecognitionIsBabyReadyViewController.swift in Sources */,
+				2099659A1B63121B00B93C5D /* SelfRecognitionActivityReminderViewController.swift in Sources */,
 				9EF313741B5062930094DAC7 /* LetsCrawlTestOverviewViewController.swift in Sources */,
 				829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */,
 				82E42ABA1B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift in Sources */,
@@ -854,10 +903,12 @@
 				9EC424201B5484200037C0E9 /* PointFollowingMoreInfoViewController.swift in Sources */,
 				824565251B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift in Sources */,
 				824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */,
+				2099658A1B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift in Sources */,
 				9EC424181B5481FD0037C0E9 /* PointFollowingTimeToTestViewController.swift in Sources */,
 				82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */,
 				9EF3137A1B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift in Sources */,
 				9EF313801B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift in Sources */,
+				209965901B6310F400B93C5D /* SelfRecognitionTimeToTestViewController.swift in Sources */,
 				9EC424241B548CE90037C0E9 /* SocialEmotionalIntroViewController.swift in Sources */,
 				9EE7EB4B1B56DD8A00C73CA3 /* AttentionAtDistanceTestOverviewViewController.swift in Sources */,
 				82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */,
@@ -867,6 +918,7 @@
 				9EE7EB351B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift in Sources */,
 				9EABF2941B4D8CD4002FDA2C /* FallingToyTestOverviewViewController.swift in Sources */,
 				82D641E81B4908590013D5FB /* BNBackButton.swift in Sources */,
+				2099658C1B6310BB00B93C5D /* SelfRecognitionWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB2D1B56A7B900C73CA3 /* HearingWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB1A1B55A64D00C73CA3 /* CrossingEyesTimeToTestViewController.swift in Sources */,
 				8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */,
@@ -881,6 +933,7 @@
 				9EC424141B5481990037C0E9 /* PointFollowingWhatWillYouNeedViewController.swift in Sources */,
 				9EC424281B54CC210037C0E9 /* pointFollowingActivityReminderViewController.swift in Sources */,
 				9EC424161B5481CC0037C0E9 /* PointFollowingIsBabyReadyViewController.swift in Sources */,
+				209965961B6311DC00B93C5D /* SelfRecognitionBadOutcomeViewController.swift in Sources */,
 				9EE7EB331B56A7F900C73CA3 /* HearingWhatDidYouSeeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -945,6 +998,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -990,6 +1044,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
