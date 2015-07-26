@@ -1,14 +1,14 @@
 //
-//  SymmetryGoodOutcomeViewController.swift
+//  SelfRecognitionGoodOutcomeViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/16/15.
+//  Created by Daniel Hsu on 7/24/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SymmetryGoodOutcomeViewController: UIViewController {
+class SelfRecognitionGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

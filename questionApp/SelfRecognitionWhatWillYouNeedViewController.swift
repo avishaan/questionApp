@@ -1,14 +1,14 @@
 //
-//  SymmetryWhatWillYouNeedViewController.swift
+//  SelfRecognitionWhatWillYouNeedViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/16/15.
+//  Created by Daniel Hsu on 7/24/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SymmetryWhatWillYouNeedViewController: UIViewController {
+class SelfRecognitionWhatWillYouNeedViewController: UIViewController {
     
     @IBOutlet weak var testPreparationLabel: UILabel!
     
@@ -25,9 +25,9 @@ class SymmetryWhatWillYouNeedViewController: UIViewController {
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
-            performSegueWithIdentifier("symmetryTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("selfRecognitionTimeToTestSegueID", sender: self)
         } else {
-            performSegueWithIdentifier("symmetryIsBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("selfRecognitionIsBabyReadySegueID", sender: self)
         }
     }
     
@@ -38,7 +38,7 @@ class SymmetryWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "All you'll need is a firm surface baby can comfortably lie on."
+        let string = "You’ll need a mirror — one mounted on the wall should be easier and less distracting than a hand-held one."
         
         var attributedString = NSMutableAttributedString(string: string)
         

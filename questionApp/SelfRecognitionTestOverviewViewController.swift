@@ -1,8 +1,8 @@
 //
-//  SymmetryTestOverviewViewController.swift
+//  SelfRecognitionTestOverviewViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/16/15.
+//  Created by Daniel Hsu on 7/24/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class SymmetryTestOverviewViewController: UIViewController {
+class SelfRecognitionTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -58,7 +58,7 @@ class SymmetryTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "symmetryWhatWillYouNeedSegueID" {
+        else if segue.identifier == "selfRecognitionWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }

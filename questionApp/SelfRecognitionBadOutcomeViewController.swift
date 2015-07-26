@@ -1,14 +1,14 @@
 //
-//  SymmetryBadOutcomeViewController.swift
+//  SelfRecognitionBadOutcomeViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/16/15.
+//  Created by Daniel Hsu on 7/24/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SymmetryBadOutcomeViewController: UIViewController {
+class SelfRecognitionBadOutcomeViewController: UIViewController {
 
     /** A history of previous test outcomes. This property should be set by the source view controller. */
     var histories = TestHistories()
@@ -32,7 +32,7 @@ class SymmetryBadOutcomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "symmetryToActivityReminderSegue" {
+        if segue.identifier == "selfRecognitionToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC

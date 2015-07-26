@@ -1,14 +1,14 @@
 //
-//  WhyIsSymmetryViewController.swift
+//  WhyIsSelfRecognitionController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/16/15.
+//  Created by Daniel Hsu on 7/24/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class WhyIsSymmetryViewController: UIViewController {
+class WhyIsSelfRecognitionController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -29,7 +29,7 @@ class WhyIsSymmetryViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Your baby should lie symmetrically on her stomach. Inability to do so may be an early indicator of spinal issues or increased risk for autism."
+        let string = "This test assesses your baby’s ability to recognize her own reflection. This is one step in your baby’s development of visual recognition that begins with being able to identify a parent’s face."
         
         var attributedString = NSMutableAttributedString(string: string)
         
