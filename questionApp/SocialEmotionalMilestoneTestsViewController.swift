@@ -9,25 +9,30 @@
 import UIKit
 
 class SocialEmotionalMilestoneTestsViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    @IBAction func onMilestonesBarButtonItem(sender: UIBarButtonItem) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-
-    @IBAction func onPointFollowingButtonTap(sender: AnyObject) {
-        var storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
-        var controller: WhyIsPointFollowingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPointFollowingStoryboardID") as! WhyIsPointFollowingViewController
-        self.presentViewController(controller, animated: true, completion: nil);
-    }
+    // Do any additional setup after loading the view.
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  @IBAction func onMilestonesBarButtonItem(sender: UIBarButtonItem) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  @IBAction func onSelfRecognitionButtonTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "SelfRecognition", bundle: nil)
+    var controller: WhyIsSelfRecognitionController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSelfRecognitionStoryboardID") as! WhyIsSelfRecognitionController
+    self.presentViewController(controller, animated: true, completion: nil);
+  }
+  @IBAction func onPointFollowingButtonTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
+    var controller: WhyIsPointFollowingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPointFollowingStoryboardID") as! WhyIsPointFollowingViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+  }
 }
