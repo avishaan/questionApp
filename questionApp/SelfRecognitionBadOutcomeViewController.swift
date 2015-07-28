@@ -65,7 +65,7 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
         @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = histories.failedTestsCount(testName: TestHistories.TestNames.symmetry)
+        let failed = histories.failedTestsCount(testName: TestHistories.TestNames.selfRecognition)
         
         if failed <= 1 {
             // update infoLabel
