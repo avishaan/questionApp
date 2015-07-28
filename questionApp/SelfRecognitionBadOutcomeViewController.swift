@@ -36,7 +36,7 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNames.symmetry
+            controller.testName = TestNames.selfrecognition
         }
     }
     
@@ -65,41 +65,41 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
         @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = histories.failedTestsCount(testName: TestHistories.TestNames.symmetry)
+        let failed = histories.failedTestsCount(testName: TestHistories.TestNames.selfRecognition)
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry! All babies develop at the different rates. Try again tomorrow."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:57, countOfBoldCharacters:19)
+            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "Still not symmetrical?"
+            questionLabel.text = "No self recognition?"
             
             // update infoLabel
-            let string = "Your baby may not have the motor skills to extend her arms or legs yet. Try again next month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:72, countOfBoldCharacters:21)
+            let string = "Did baby make noises, smile at her reflection, or suddenly become unhappy? This means she’s on her way to recognizing her reflection. Practice by playing peekaboo or showing baby photos of herself, then try the test again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:135, countOfBoldCharacters:100)
             
         } else if failed == 3 {
             // update questionLabel
-            questionLabel.text = "Still not symmetrical?"
+            questionLabel.text = "No self recognition?"
             
             // update infoLabel
             let string = "Since your baby is under 12 months, she still has time to develop those muscles. If you're concerned, check with your pediatrician."
             applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:50)
         } else if failed >= 4 {
             // update questionLabel
-            questionLabel.text = "Still not symmetrical?"
+            questionLabel.text = "No self recognition?"
             
             // update infoLabel
-            let string = "Are baby's limbs consistently weaker on one side? If yes, please check with your pediatrician during your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:50, countOfBoldCharacters:78)
+            let string = "Most babies develop self recognition by age two or three. If your baby consistenty shows no reaction beyond age two, talk to your pediatricion at your next well-child visit."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:58, countOfBoldCharacters:116)
         } else {
             // update questionLabel
-            questionLabel.text = "Not symmetrical?"
+            questionLabel.text = "No self recognition?"
             
             // update infoLabel
-            let string = "Not to worry! All babies develop at the different rates. Try again tomorrow."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:57, countOfBoldCharacters:19)
+            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
         }
     }
 }

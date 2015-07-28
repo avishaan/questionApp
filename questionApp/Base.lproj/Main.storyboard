@@ -3620,7 +3620,7 @@ Try again in 6-8 weeks.</string>
                                     <action selector="onPointFollowingButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="7xH-Jf-jHE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW5-Af-Oh6" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.68999999999999995" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW5-Af-Oh6" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="32" y="238" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -3628,6 +3628,9 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSelfRecognitionButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="ViR-G6-eKL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mb-wv-cdl" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="33" y="312" width="250" height="60"/>
