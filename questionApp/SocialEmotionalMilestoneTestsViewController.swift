@@ -24,7 +24,7 @@ class SocialEmotionalMilestoneTestsViewController: UIViewController {
   @IBAction func onMilestonesBarButtonItem(sender: UIBarButtonItem) {
     self.dismissViewControllerAnimated(true, completion: nil)
   }
-  
+    
   @IBAction func onSelfRecognitionButtonTap(sender: AnyObject) {
     var storyboard = UIStoryboard (name: "SelfRecognition", bundle: nil)
     var controller: WhyIsSelfRecognitionController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSelfRecognitionStoryboardID") as! WhyIsSelfRecognitionController
@@ -35,4 +35,11 @@ class SocialEmotionalMilestoneTestsViewController: UIViewController {
     var controller: WhyIsPointFollowingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPointFollowingStoryboardID") as! WhyIsPointFollowingViewController
     self.presentViewController(controller, animated: true, completion: nil);
   }
+
+  @IBAction func onSocialSmilingButtonTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "SocialSmiling", bundle: nil)
+    var controller: WhyIsPointFollowingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSocialSmilingStoryboardID") as! WhyIsPointFollowingViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+  }
+   
 }

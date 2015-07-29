@@ -1,19 +1,17 @@
 //
-//  PointFollowingGoodOutcomeViewController.swift
+//  SocialSmilingGoodOutcomeViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by Daniel Hsu on 7/28/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class PointFollowingGoodOutcomeViewController: UIViewController {
+class SocialSmilingGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

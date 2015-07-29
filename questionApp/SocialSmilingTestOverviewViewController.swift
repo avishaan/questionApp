@@ -1,8 +1,8 @@
 //
-//  PointFollowingTestOverviewViewController.swift
+//  SocialSmilingTestOverviewViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by Daniel Hsu on 7/28/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class PointFollowingTestOverviewViewController: UIViewController {
+class SocialSmilingTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
