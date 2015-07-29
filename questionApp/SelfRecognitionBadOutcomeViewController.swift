@@ -11,7 +11,9 @@ import UIKit
 class SelfRecognitionBadOutcomeViewController: UIViewController {
 
     /** A history of previous test outcomes. This property should be set by the source view controller. */
-    var histories = TestHistories()
+//    var histories = TestHistories()
+  
+  var test:Test?
     
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -66,8 +68,8 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
         @param testName (in) Name of the test. Must be of Test.TestNames.
     */
     func initializeViewFromTestHistory() {
-        let failed = histories.failedTestsCount(testName: Test.TestNames.selfRecognition)
-        
+        let failed = test?.failedTestsCount()
+      
         if failed <= 1 {
             // update infoLabel
             let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
