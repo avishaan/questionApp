@@ -76,6 +76,17 @@
 		82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */; };
 		9E923CAF1B68257D00F2B0A7 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CAE1B68257D00F2B0A7 /* Test.swift */; };
 		9E923CB11B683E8600F2B0A7 /* TestProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */; };
+		9E923CB81B69513E00F2B0A7 /* ExpressionMimic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E923CB71B69513E00F2B0A7 /* ExpressionMimic.storyboard */; };
+		9E923CBA1B69515C00F2B0A7 /* WhyIsExpressionMimicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CB91B69515C00F2B0A7 /* WhyIsExpressionMimicViewController.swift */; };
+		9E923CBC1B69517500F2B0A7 /* ExpressionMimicTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CBB1B69517500F2B0A7 /* ExpressionMimicTestOverviewViewController.swift */; };
+		9E923CBE1B69518C00F2B0A7 /* ExpressionMimicWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CBD1B69518C00F2B0A7 /* ExpressionMimicWhatWillYouNeedViewController.swift */; };
+		9E923CC01B6951A600F2B0A7 /* ExpressionMimicIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CBF1B6951A600F2B0A7 /* ExpressionMimicIsBabyReadyViewController.swift */; };
+		9E923CC21B6951BD00F2B0A7 /* ExpressionMimicTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CC11B6951BD00F2B0A7 /* ExpressionMimicTimeToTestViewController.swift */; };
+		9E923CC41B6951D300F2B0A7 /* ExpressionMimicWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CC31B6951D300F2B0A7 /* ExpressionMimicWhatDidYouSeeViewController.swift */; };
+		9E923CC61B6951E900F2B0A7 /* ExpressionMimicGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CC51B6951E800F2B0A7 /* ExpressionMimicGoodOutcomeViewController.swift */; };
+		9E923CC81B6951F900F2B0A7 /* ExpressionMimicBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CC71B6951F900F2B0A7 /* ExpressionMimicBadOutcomeViewController.swift */; };
+		9E923CCA1B69521800F2B0A7 /* ExpressionMimicmoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CC91B69521800F2B0A7 /* ExpressionMimicmoreInfoViewController.swift */; };
+		9E923CCC1B69523500F2B0A7 /* ExpressionMimicAcitivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CCB1B69523500F2B0A7 /* ExpressionMimicAcitivityReminderViewController.swift */; };
 		9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */; };
 		9EABF2901B4D87E8002FDA2C /* FallingToy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EABF28F1B4D87E8002FDA2C /* FallingToy.mp4 */; };
 		9EABF2921B4D8A35002FDA2C /* Swift.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9EABF2911B4D8A35002FDA2C /* Swift.gitignore */; };
@@ -276,6 +287,17 @@
 		82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsPupilResponseViewController.swift; sourceTree = "<group>"; };
 		9E923CAE1B68257D00F2B0A7 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProfiles.swift; sourceTree = "<group>"; };
+		9E923CB71B69513E00F2B0A7 /* ExpressionMimic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpressionMimic.storyboard; sourceTree = "<group>"; };
+		9E923CB91B69515C00F2B0A7 /* WhyIsExpressionMimicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsExpressionMimicViewController.swift; sourceTree = "<group>"; };
+		9E923CBB1B69517500F2B0A7 /* ExpressionMimicTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicTestOverviewViewController.swift; sourceTree = "<group>"; };
+		9E923CBD1B69518C00F2B0A7 /* ExpressionMimicWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
+		9E923CBF1B6951A600F2B0A7 /* ExpressionMimicIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicIsBabyReadyViewController.swift; sourceTree = "<group>"; };
+		9E923CC11B6951BD00F2B0A7 /* ExpressionMimicTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicTimeToTestViewController.swift; sourceTree = "<group>"; };
+		9E923CC31B6951D300F2B0A7 /* ExpressionMimicWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
+		9E923CC51B6951E800F2B0A7 /* ExpressionMimicGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicGoodOutcomeViewController.swift; sourceTree = "<group>"; };
+		9E923CC71B6951F900F2B0A7 /* ExpressionMimicBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicBadOutcomeViewController.swift; sourceTree = "<group>"; };
+		9E923CC91B69521800F2B0A7 /* ExpressionMimicmoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicmoreInfoViewController.swift; sourceTree = "<group>"; };
+		9E923CCB1B69523500F2B0A7 /* ExpressionMimicAcitivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionMimicAcitivityReminderViewController.swift; sourceTree = "<group>"; };
 		9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsObjectPermanenceViewController.swift; sourceTree = "<group>"; };
 		9EABF28F1B4D87E8002FDA2C /* FallingToy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingToy.mp4; sourceTree = "<group>"; };
 		9EABF2911B4D8A35002FDA2C /* Swift.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift.gitignore; sourceTree = "<group>"; };
@@ -569,6 +591,24 @@
 			name = SensoryAndMotor;
 			sourceTree = "<group>";
 		};
+		9E923CB61B69511000F2B0A7 /* ExpressionMimic */ = {
+			isa = PBXGroup;
+			children = (
+				9E923CB71B69513E00F2B0A7 /* ExpressionMimic.storyboard */,
+				9E923CB91B69515C00F2B0A7 /* WhyIsExpressionMimicViewController.swift */,
+				9E923CBB1B69517500F2B0A7 /* ExpressionMimicTestOverviewViewController.swift */,
+				9E923CBD1B69518C00F2B0A7 /* ExpressionMimicWhatWillYouNeedViewController.swift */,
+				9E923CBF1B6951A600F2B0A7 /* ExpressionMimicIsBabyReadyViewController.swift */,
+				9E923CC11B6951BD00F2B0A7 /* ExpressionMimicTimeToTestViewController.swift */,
+				9E923CC31B6951D300F2B0A7 /* ExpressionMimicWhatDidYouSeeViewController.swift */,
+				9E923CC51B6951E800F2B0A7 /* ExpressionMimicGoodOutcomeViewController.swift */,
+				9E923CC71B6951F900F2B0A7 /* ExpressionMimicBadOutcomeViewController.swift */,
+				9E923CC91B69521800F2B0A7 /* ExpressionMimicmoreInfoViewController.swift */,
+				9E923CCB1B69523500F2B0A7 /* ExpressionMimicAcitivityReminderViewController.swift */,
+			);
+			name = ExpressionMimic;
+			sourceTree = "<group>";
+		};
 		9EAEB5DA1B4CA68500159730 /* LanaguageAndCognitive */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +639,7 @@
 		9EC424051B5466B90037C0E9 /* SocialAndEmotional */ = {
 			isa = PBXGroup;
 			children = (
+				9E923CB61B69511000F2B0A7 /* ExpressionMimic */,
 				2099659E1B68591800B93C5D /* SocialSmiling */,
 				9EC424061B5466CD0037C0E9 /* PointFollowing */,
 				9EC424211B548CB30037C0E9 /* SocialEmotionalMilestoneTestsViewController.swift */,
@@ -838,6 +879,7 @@
 				9EE7EB431B56D8D500C73CA3 /* Symmetry.mp4 in Resources */,
 				8296BFAC1B5B3E31007E842B /* IntroVideo.m4v in Resources */,
 				82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */,
+				9E923CB81B69513E00F2B0A7 /* ExpressionMimic.storyboard in Resources */,
 				9ED51BB71B580A1F0000C5E6 /* Symmetry.storyboard in Resources */,
 				8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */,
 				9EE7EB3D1B56A88A00C73CA3 /* Hearing.storyboard in Resources */,
@@ -871,16 +913,19 @@
 				9EF3137E1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift in Sources */,
 				9EE7EB2F1B56A7CE00C73CA3 /* HearingIsBabyReadyViewController.swift in Sources */,
 				9ED51C0A1B5C22C70000C5E6 /* TestHistories.swift in Sources */,
+				9E923CCA1B69521800F2B0A7 /* ExpressionMimicmoreInfoViewController.swift in Sources */,
 				9EF313721B50554F0094DAC7 /* WhyIsCrawlingViewController.swift in Sources */,
 				824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */,
 				9EABF2A21B4DE6A3002FDA2C /* BNAuxiliaryButtonNext.swift in Sources */,
 				82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */,
 				82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */,
+				9E923CBC1B69517500F2B0A7 /* ExpressionMimicTestOverviewViewController.swift in Sources */,
 				209965B31B685AD000B93C5D /* SocialSmilingMoreInfoViewController.swift in Sources */,
 				209965921B63111200B93C5D /* SelfRecognitionWhatDidYouSeeViewController.swift in Sources */,
 				82D641EC1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift in Sources */,
 				82D1415B1B41289F0048434F /* PupilResponseTimeToTestViewController.swift in Sources */,
 				82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */,
+				9E923CC01B6951A600F2B0A7 /* ExpressionMimicIsBabyReadyViewController.swift in Sources */,
 				9EABF2A01B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift in Sources */,
 				9EE7EB531B56DE1900C73CA3 /* AttentionAtDistanceTimeToTestViewController.swift in Sources */,
 				82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */,
@@ -910,6 +955,7 @@
 				209965AF1B685A6D00B93C5D /* SocialSmilingGoodOutcomeViewController.swift in Sources */,
 				9EE7EB121B55A5D400C73CA3 /* WhyIsCrossingEyesViewController.swift in Sources */,
 				9E923CAF1B68257D00F2B0A7 /* Test.swift in Sources */,
+				9E923CC21B6951BD00F2B0A7 /* ExpressionMimicTimeToTestViewController.swift in Sources */,
 				9EC4241E1B5482940037C0E9 /* PointFollowingBadOutcomeViewController.swift in Sources */,
 				82DD954B1B5776600017D93C /* BNTestRangeChartView.swift in Sources */,
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
@@ -928,6 +974,7 @@
 				9EABF29A1B4DCA08002FDA2C /* FallingToyTimeToTestViewController.swift in Sources */,
 				9EE7EB201B55A68B00C73CA3 /* CrossingEyesBadOutcomeViewController.swift in Sources */,
 				9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */,
+				9E923CC81B6951F900F2B0A7 /* ExpressionMimicBadOutcomeViewController.swift in Sources */,
 				82401C2D1B2843C8008202EA /* BNSectionLabel.swift in Sources */,
 				9EABF29E1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift in Sources */,
 				9EE7EB5B1B56DE5200C73CA3 /* AttentionAtDistanceMoreInfoViewController.swift in Sources */,
@@ -939,6 +986,7 @@
 				829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */,
 				82E42ABA1B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift in Sources */,
 				82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */,
+				9E923CBE1B69518C00F2B0A7 /* ExpressionMimicWhatWillYouNeedViewController.swift in Sources */,
 				9EAEB5DE1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift in Sources */,
 				9EE7EB311B56A7E300C73CA3 /* HearingTimeToTestViewController.swift in Sources */,
 				209965A51B6859BB00B93C5D /* SocialSmilingTestOverviewViewController.swift in Sources */,
@@ -947,12 +995,15 @@
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				9EE7EB571B56DE3600C73CA3 /* AttentionAtDistanceGoodOutcomeViewController.swift in Sources */,
 				9ED51BC11B5813830000C5E6 /* SymmetryTimeToTestViewController.swift in Sources */,
+				9E923CCC1B69523500F2B0A7 /* ExpressionMimicAcitivityReminderViewController.swift in Sources */,
+				9E923CC41B6951D300F2B0A7 /* ExpressionMimicWhatDidYouSeeViewController.swift in Sources */,
 				9ED51BCB1B5813DE0000C5E6 /* SymmetryActivityReminderViewController.swift in Sources */,
 				9EE7EB4D1B56DDB800C73CA3 /* WhyIsAttentionAtDistanceViewController.swift in Sources */,
 				9EC4241C1B54824A0037C0E9 /* PointFollowingGoodOutcomeViewController.swift in Sources */,
 				9ED51BC71B5813BB0000C5E6 /* SymmetryBadOutcomeViewController.swift in Sources */,
 				9ED51BBF1B5813720000C5E6 /* SymmetryIsBabyReadyViewController.swift in Sources */,
 				209965A91B6859EE00B93C5D /* SocialSmilingIsBabyReadyViewController.swift in Sources */,
+				9E923CBA1B69515C00F2B0A7 /* WhyIsExpressionMimicViewController.swift in Sources */,
 				9EE7EB1E1B55A67B00C73CA3 /* CrossingEyesGoodOutcomeViewController.swift in Sources */,
 				829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */,
 				9EC424201B5484200037C0E9 /* PointFollowingMoreInfoViewController.swift in Sources */,
@@ -986,6 +1037,7 @@
 				9EE7EB221B55A6A800C73CA3 /* CrossingEyesMoreInfoViewController.swift in Sources */,
 				9EE7EB181B55A63500C73CA3 /* CrossingEyesIsBabyReadyViewController.swift in Sources */,
 				9EC424221B548CB30037C0E9 /* SocialEmotionalMilestoneTestsViewController.swift in Sources */,
+				9E923CC61B6951E900F2B0A7 /* ExpressionMimicGoodOutcomeViewController.swift in Sources */,
 				82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */,
 				9ED51BB91B58132A0000C5E6 /* WhyIsSymmetryViewController.swift in Sources */,
 				9EC424141B5481990037C0E9 /* PointFollowingWhatWillYouNeedViewController.swift in Sources */,
