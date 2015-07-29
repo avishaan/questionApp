@@ -39,6 +39,9 @@ class Parent {
       return self.ageInWeeks/4
       }
   }
+	
+	/* TestProfiles: A collection of test histories for each baby profile, where a baby profile is identified by a name: String. */
+	var testProfiles = TestProfiles()
   
   init() {
     // first get info from the defaults incase they already exist
@@ -57,7 +60,12 @@ class Parent {
       // here is your saved image:
       self.image = UIImage(data: oldImageData!)
     }
-    
+		
+		// Get test profiles from disk store.
+    getProfiles()
+		
+		// Create a new test profile for the current baby
+		addProfile(self.babyName)
   }
   
   func storeInfo() {
@@ -66,6 +74,9 @@ class Parent {
     store.setObject(self.babyName, forKey: kBabyName)
     store.setObject(self.babyGender, forKey: kBabyGender)
     store.setObject(self.babyBirthday, forKey: kBabyBirthday)
+		
+		// Save the test profiles to disk store.
+		saveProfiles()
   }
   
   func storeImage(image: UIImage) {
@@ -86,5 +97,46 @@ class Parent {
     
     return fullPath
   }
-  
+	
+	// MARK: Test Profiles helper functions
+	
+	/* 
+	@brief Initialize this object's collection of profiles from the store on disk.
+	*/
+	func getProfiles() {
+		testProfiles.initProfilesFromPersistentStore()
+	}
+	
+	/*
+	@brief Write all profiles from this object's collection to the store on disk.
+	*/
+	func saveProfiles() {
+		testProfiles.save()
+	}
+
+	/*
+	@brief Create a new profile in memory and add it to this object's collection of profiles.
+	@discussion Creates profile by concatenating the parent's full name with the specified babyName.
+	*/
+	func addProfile(baby: String?) {
+		if let parentName = self.fullName, let babyName = baby {
+			let profileName = testProfiles.makeProfileName(parentName: parentName, babyName: babyName)
+			testProfiles.addProfile(name: profileName)
+		}
+	}
+	
+	/*
+	@brief Return the current profile name.
+	@discussion The format of the profile name is "<parent_name>.<current_baby_name>".
+	@return The profile name if self.fullName and self.babyName are not nil, else returns the empty string.
+	TODO: When the Parent class is updated to support multiple baby profiles and the notion of the current baby profile, then the body of this function will need to be updated to return a profile name constructed with teh current baby name.
+	*/
+	func getCurrentProfileName() -> String {
+		if let parentName = self.fullName, let babyName = self.babyName {
+			let profileName = testProfiles.makeProfileName(parentName: parentName, babyName: babyName)
+			return profileName
+		} else {
+			return String("")
+		}
+	}
 }

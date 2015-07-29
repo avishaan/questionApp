@@ -26,7 +26,7 @@ class SymmetryTimeToTestViewController: UIViewController {
         labelBackground.layer.cornerRadius = 7
         labelBackground.layer.masksToBounds = true
         
-        applyTextAttributesToLabel()
+        //TODO - reenable ... applyTextAttributesToLabel()
     }
     
     override func didReceiveMemoryWarning() {

@@ -12,19 +12,23 @@ import MessageUI
 
 // The following structs contain strings that can be presented to the user in a reminder...
 
-struct TestNames {
+struct TestNamesPresentable {
     static var pupilResponse = "pupil response"
-    static var letsCrawl = "let's crawl"
     static var fallingToy = "falling toy"
+    static var letsCrawl = "let's crawl"
     static var pointFollowing = "point following"
-    static var crossingEyes = "crossing eyes"
     static var hearing = "hearing"
+    static var crossingEyes = "crossing eyes"
     static var attentionAtDistance = "attention at distance"
     static var symmetry = "symmetry"
+    static var partiallyCoveredToy = "partially covered toy"
     static var selfrecognition = "self recognition"
+    static var socialSmiling: String = "social smiling"
+    static var expressionMimic: String = "expression mimic"
+    // TODO: if new tests are added to the app, add them here.
 }
 
-struct TestReminderInterval {
+struct TestReminderInterval { // TODO: review
     static var pupilResponseInterval = "4-6"
     static var letsCrawlInterval = "6-8"
     static var fallingToyInterval = "2-4"
@@ -69,7 +73,7 @@ struct NotificationConstants {
 
 class ActivityReminderViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
     
-    /* The object that invokes this controller should set testName to a TestNames member to identify the test. (See the TestNames struct at the top of this file.) This testName will be used in the Reminder presented to the user. */
+    /* The object that invokes this controller should set testName to a TestNamesPresentable member to identify the test. (See the TestNames struct at the top of this file.) This testName will be used in the Reminder presented to the user. */
     var testName: String? = nil
     
     /* The object that invokes this controller should set testReminderInterval to a TestReminderInterval member to identify the appropriate amount of time to wait before re-administering the test. (See the TestReminderInterval struct at the top of this file.) This testReminderInterval will be used in the Reminder presented to the user. */

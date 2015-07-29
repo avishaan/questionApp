@@ -10,11 +10,25 @@ import UIKit
 
 class SymmetryWhatDidYouSeeViewController: UIViewController {
 
-    var histories = TestHistories()
+    var parent = Parent()
+    var profiles = TestProfiles()
+    var test = Test()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        histories.initHistoriesFromPersistentStore()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Ensure current information for parent by reloading.
+        parent = Parent()
+        
+        // Ensure current information for test profiles by reloading.
+        profiles.initProfilesFromPersistentStore()
+        
+        // Get the test information.
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.symmetry)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,18 +41,18 @@ class SymmetryWhatDidYouSeeViewController: UIViewController {
         if segue.identifier == "symmetryGoodOutcomeSegueID" {
             
             // Record the successful symmetry test result and save it to the persistent store on disk.
-            histories.addTestResult(testName: TestHistories.TestNames.symmetry, testResult: true)
-            histories.save()
+            test.addTestResult(testResult: true)
+            profiles.save()
         
         } else if segue.identifier == "symmetryBadOutcomeSegueID" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
-            histories.addTestResult(testName: TestHistories.TestNames.symmetry, testResult: false)
-            histories.save()
+            test.addTestResult(testResult: false)
+            profiles.save()
             
             // Pass the test results history to the destination VC.
             let controller = segue.destinationViewController as! SymmetryBadOutcomeViewController
-            controller.histories = histories
+            controller.test = self.test
         }
     }
     

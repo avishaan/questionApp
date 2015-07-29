@@ -11,7 +11,10 @@ import UIKit
 class SymmetryBadOutcomeViewController: UIViewController {
 
     /** A history of previous test outcomes. This property should be set by the source view controller. */
-    var histories = TestHistories()
+//    var histories = TestHistories()
+    
+    /** A Test containing the updated test history. This property should be set by the source view controller. */
+    var test = Test()
     
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -36,7 +39,7 @@ class SymmetryBadOutcomeViewController: UIViewController {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNames.symmetry
+            controller.testName = TestNamesPresentable.symmetry
         }
     }
     
@@ -65,7 +68,7 @@ class SymmetryBadOutcomeViewController: UIViewController {
         @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = histories.failedTestsCount(testName: TestHistories.TestNames.symmetry)
+        let failed = test.failedTestsCount()
         
         if failed <= 1 {
             // update infoLabel

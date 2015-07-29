@@ -14,7 +14,7 @@ import Foundation
 
 class TestHistory: NSObject, NSCoding {
     
-    // Keys used for NSKeyeArchiver, NSKeyedUnarchiver, and the convenince initializer.
+    // Keys used for NSKeyeArchiver, NSKeyedUnarchiver, and the convenience initializer.
     struct Keys {
         static let mostRecentTestDate: String = "mostRecentTestDate"
         static let mostRecentTestResult: String = "mostRecentTestResult"
@@ -59,13 +59,12 @@ class TestHistory: NSObject, NSCoding {
         if let total = dictionary[Keys.countOfFailedTests] as? Int {
             countOfCompletedTests = total
         }
-        
-        //        mostRecentTestDate = dictionary[Keys.mostRecentTestDate] as! NSDate
-        //        mostRecentTestResult = dictionary[Keys.mostRecentTestResult] as! Bool
-        //        countOfFailedTests = dictionary[Keys.countOfFailedTests] as! Int
-        //        countOfSuccessfulTests = dictionary[Keys.countOfSuccessfulTests] as! Int
-        //        countOfCompletedTests = dictionary[Keys.countOfCompletedTests] as! Int
     }
+    
+    func print() {
+        println("date: \(mostRecentTestDate),  result: \(mostRecentTestResult), failed: \(countOfFailedTests), successful: \(countOfSuccessfulTests), completed: \(countOfCompletedTests)")
+    }
+    
     
     // MARK: NSCoding
     
@@ -98,6 +97,10 @@ class TestHistory: NSObject, NSCoding {
         countOfCompletedTests = Int(decoder.decodeIntForKey(Keys.countOfCompletedTests))
     }
     
+    /*!
+    @brief Write instance properties to the persistent store.
+    @param encoder (in) The NSUnarchiver object identifying the persistent store to which to wirte the property values.
+    */
     func encodeWithCoder(encoder: NSCoder) {
         encoder.encodeObject(mostRecentTestDate, forKey: Keys.mostRecentTestDate)
         encoder.encodeBool(mostRecentTestResult, forKey: Keys.mostRecentTestResult)
