@@ -1,14 +1,14 @@
 //
-//  PointFollowingWhatWillYouNeedViewController.swift
+//  SocialSmilingWhatWillYouNeedViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by Daniel Hsu on 7/28/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class PointFollowingWhatWillYouNeedViewController: UIViewController {
+class SocialSmilingWhatWillYouNeedViewController: UIViewController {
 
     @IBOutlet weak var testPreparationLabel: UILabel!
     
@@ -25,9 +25,9 @@ class PointFollowingWhatWillYouNeedViewController: UIViewController {
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
-            performSegueWithIdentifier("pointFollowingTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("socialSmilingTimeToTestSegueID", sender: self)
         } else {
-            performSegueWithIdentifier("pointFollowingIsBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("socialSmilingIsBabyReadySegueID", sender: self)
         }
     }
     
@@ -38,7 +38,7 @@ class PointFollowingWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "You can use any object that will attract and hold your baby's attention."
+        let string = "You’ll need your baby. That’s it!"
 
         var attributedString = NSMutableAttributedString(string: string)
         

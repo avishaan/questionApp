@@ -1,14 +1,14 @@
 //
-//  pointFollowingActivityReminderViewController.swift
+//  SocialSmilingActivityReminderViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by Daniel Hsu on 7/28/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class pointFollowingActivityReminderViewController: ActivityReminderViewController {
+class SocialSmilingActivityReminderViewController: ActivityReminderViewController {
    
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)

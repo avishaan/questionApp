@@ -22,6 +22,7 @@ struct TestNames {
     static var attentionAtDistance = "attention at distance"
     static var symmetry = "symmetry"
     static var selfrecognition = "self recognition"
+    static var socialsmiling = "social smiling"
 }
 
 struct TestReminderInterval {

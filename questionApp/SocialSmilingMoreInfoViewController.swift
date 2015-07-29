@@ -1,14 +1,14 @@
 //
-//  PointFollowingMoreInfoViewController.swift
+//  SocialSmilingMoreInfoViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by Daniel Hsu on 7/28/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class PointFollowingMoreInfoViewController: UIViewController {
+class SocialSmilingMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

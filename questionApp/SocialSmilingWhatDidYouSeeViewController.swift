@@ -1,14 +1,14 @@
 //
-//  PointFollowingWhatDidYouSeeViewController.swift
+//  SocialSmilingWhatDidYouSeeViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by daniel hsu on 7/28/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class PointFollowingWhatDidYouSeeViewController: UIViewController {
+class SocialSmilingWhatDidYouSeeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

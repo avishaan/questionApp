@@ -1,5 +1,5 @@
 //
-//  PointFollowingIsBabyReadyViewController.swift
+//  SocialSmilingIsBabyReadyViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/13/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PointFollowingIsBabyReadyViewController: UIViewController {
+class SocialSmilingIsBabyReadyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +27,12 @@ class PointFollowingIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("pointFollowingIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("socialSmilingIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("pointFollowingIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("socialSmilingIsBabyReadyToTimeToTestSegueID", sender: self)
     }
 
 }

@@ -1,14 +1,14 @@
 //
-//  WhyIsPointFollowingViewController.swift
+//  WhyIsSocialSmilingViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by Daniel Hsu on 7/28/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class WhyIsPointFollowingViewController: UIViewController {
+class WhyIsSocialSmilingViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -29,18 +29,16 @@ class WhyIsPointFollowingViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Your baby's ability to follow a pointing finger depends on his understanding of social cues. Joint Attention is crucial for language development and social interaction."
+        let string = "This test assesses your baby’s responses to social cues, and expression of pleasure. Lack of social smiling can indicate attachment issues or just poor eyesight."
         
         var attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 78))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(79, 12))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(91, 31))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(123, 21))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(144, 24))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 30))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(30, 25))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(55, 106))
         
         descriptionLabel.attributedText = attributedString
     }
