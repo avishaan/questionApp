@@ -28,7 +28,7 @@ class PointFollowingBadOutcomeViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "pointFollowingToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
-            controller.testName = TestNames.pointFollowing
+            controller.testName = TestNamesPresentable.pointFollowing
         }
     }
 

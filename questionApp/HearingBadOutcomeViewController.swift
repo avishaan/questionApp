@@ -31,7 +31,7 @@ class HearingBadOutcomeViewController: UIViewController {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNames.hearing
+            controller.testName = TestNamesPresentable.hearing
         }
     }
     

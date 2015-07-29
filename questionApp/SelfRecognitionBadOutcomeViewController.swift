@@ -36,7 +36,7 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNames.selfrecognition
+            controller.testName = TestNamesPresentable.selfrecognition
         }
     }
     
@@ -63,9 +63,10 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
     
     /*!
         @brief Initialize the text in the view based on the number of failed tests.
+        @param testName (in) Name of the test. Must be of Test.TestNames.
     */
     func initializeViewFromTestHistory() {
-        let failed = histories.failedTestsCount(testName: TestHistories.TestNames.selfRecognition)
+        let failed = histories.failedTestsCount(testName: Test.TestNames.selfRecognition)
         
         if failed <= 1 {
             // update infoLabel

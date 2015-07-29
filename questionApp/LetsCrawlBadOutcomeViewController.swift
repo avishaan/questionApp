@@ -24,7 +24,7 @@ class LetsCrawlBadOutcomeViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "letsCrawlToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
-            controller.testName = TestNames.letsCrawl
+            controller.testName = TestNamesPresentable.letsCrawl
         }
     }
     

@@ -27,13 +27,13 @@ class SelfRecognitionWhatDidYouSeeViewController: UIViewController {
         if segue.identifier == "selfRecognitionGoodOutcomeSegueID" {
             
             // Record the successful self recognition test result and save it to the persistent store on disk.
-            histories.addTestResult(testName: TestHistories.TestNames.symmetry, testResult: true)
+            histories.addTestResult(testName: Test.TestNames.symmetry, testResult: true)
             histories.save()
         
         } else if segue.identifier == "selfRecognitionBadOutcomeSegueID" {
             
             // Record the failed self recognition test result and save it to the persistent store on disk.
-            histories.addTestResult(testName: TestHistories.TestNames.symmetry, testResult: false)
+            histories.addTestResult(testName: Test.TestNames.symmetry, testResult: false)
             histories.save()
             
             // Pass the test results history to the destination VC.

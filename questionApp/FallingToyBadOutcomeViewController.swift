@@ -24,7 +24,7 @@ class FallingToyBadOutcomeViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "fallingToyToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
-            controller.testName = TestNames.fallingToy
+            controller.testName = TestNamesPresentable.fallingToy
         }
     }
 

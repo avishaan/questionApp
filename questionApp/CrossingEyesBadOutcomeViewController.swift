@@ -31,7 +31,7 @@ class CrossingEyesBadOutcomeViewController: UIViewController {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNames.crossingEyes
+            controller.testName = TestNamesPresentable.crossingEyes
         }
     }
     
