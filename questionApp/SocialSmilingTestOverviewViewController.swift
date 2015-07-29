@@ -59,7 +59,7 @@ class SocialSmilingTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "pointFollowingWhatWillYouNeedSegueID" {
+        else if segue.identifier == "socialSmilingWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }

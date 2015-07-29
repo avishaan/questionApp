@@ -47,8 +47,6 @@ class SocialSmilingWhatWillYouNeedViewController: UIViewController {
         let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
         attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 33))
-        attributedString.addAttributes(firstAttributes, range: NSMakeRange(32, 17))
-        attributedString.addAttributes(secondAttributes, range: NSMakeRange(49, 23))
         
         testPreparationLabel.attributedText = attributedString
     }

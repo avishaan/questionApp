@@ -25,9 +25,8 @@ class SocialSmilingMoreInfoViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
-    @IBAction func onHomeButtonTap(sender: AnyObject) {
-        var storyboard = UIStoryboard (name: "Main", bundle: nil)
-        var controller: MilestonesViewController = storyboard.instantiateViewControllerWithIdentifier("MilestonesVCStoryboardID") as! MilestonesViewController
-        self.presentViewController(controller, animated: true, completion: nil);
+    @IBAction func onCloseButtonTap(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
+
 }

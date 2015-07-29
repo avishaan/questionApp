@@ -77,7 +77,7 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
             
             // update infoLabel
             let string = "Try this: get baby's attention by making a sound. You may also show baby a toy while talking and smiling. Does baby smile? If not, try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:123, countOfBoldCharacters:30)
+            applyTextAttributesToLabel(string, indexAtStartOfBold:122, countOfBoldCharacters:29)
             
         } else if failed == 3 {
             // update questionLabel
@@ -85,7 +85,7 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
             
             // update infoLabel
             let string = "Perform this test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:72, countOfBoldCharacters:52)
+            applyTextAttributesToLabel(string, indexAtStartOfBold:72, countOfBoldCharacters:48)
         } else {
             // update questionLabel
             questionLabel.text = "Not social smiling?"

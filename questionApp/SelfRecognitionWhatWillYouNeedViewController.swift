@@ -43,12 +43,8 @@ class SelfRecognitionWhatWillYouNeedViewController: UIViewController {
         var attributedString = NSMutableAttributedString(string: string)
         
         let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
-        let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
-        let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 20))
-        attributedString.addAttributes(firstAttributes, range: NSMakeRange(21, 12))
-        attributedString.addAttributes(secondAttributes, range: NSMakeRange(33, 29))
+        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 33))
         
         testPreparationLabel.attributedText = attributedString
     }
