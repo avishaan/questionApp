@@ -10,11 +10,25 @@ import UIKit
 
 class SelfRecognitionWhatDidYouSeeViewController: UIViewController {
 
-    var histories = TestHistories()
+    var parent = Parent()
+    var profiles = TestProfiles()
+    var test = Test()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        histories.initHistoriesFromPersistentStore()
+      
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Ensure current information for parent by reloading.
+        parent = Parent()
+        
+        // Ensure current information for test profiles by reloading.
+        profiles.initProfilesFromPersistentStore()
+        
+        // Get the test information.
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.symmetry)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,19 +40,19 @@ class SelfRecognitionWhatDidYouSeeViewController: UIViewController {
         
         if segue.identifier == "selfRecognitionGoodOutcomeSegueID" {
             
-            // Record the successful self recognition test result and save it to the persistent store on disk.
-            histories.addTestResult(testName: Test.TestNames.symmetry, testResult: true)
-            histories.save()
+            // Record the successful symmetry test result and save it to the persistent store on disk.
+            test.addTestResult(testResult: true)
+            profiles.save()
         
         } else if segue.identifier == "selfRecognitionBadOutcomeSegueID" {
             
-            // Record the failed self recognition test result and save it to the persistent store on disk.
-            histories.addTestResult(testName: Test.TestNames.symmetry, testResult: false)
-            histories.save()
-            
+            // Record the failed symmetry test result and save it to the persistent store on disk.
+            test.addTestResult(testResult: false)
+            profiles.save()
+          
             // Pass the test results history to the destination VC.
             let controller = segue.destinationViewController as! SelfRecognitionBadOutcomeViewController
-            controller.histories = histories
+            controller.test = self.test
         }
     }
     
