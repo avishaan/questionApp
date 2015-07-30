@@ -38,4 +38,9 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
         self.presentViewController(controller, animated: true, completion: nil);
 
     }
+    @IBAction func partiallyCoveredToyButtonTap(sender: AnyObject) {
+        var storyboard = UIStoryboard (name: "PartiallyCoveredToy", bundle: nil)
+        var controller: WhyIsPartiallyCoveredToyViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPartiallyCoveredToyStoryboardID") as! WhyIsPartiallyCoveredToyViewController
+        self.presentViewController(controller, animated: true, completion: nil);
+    }
 }

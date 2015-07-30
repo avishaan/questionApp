@@ -1,14 +1,14 @@
 //
-//  SocialSmilingIsBabyReadyViewController.swift
+//  PartiallyCoveredToyIsBabyReadyViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/13/15.
+//  Created by Daniel Hsu on 7/30/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SocialSmilingIsBabyReadyViewController: UIViewController {
+class PartiallyCoveredToyIsBabyReadyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +27,12 @@ class SocialSmilingIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("socialSmilingIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("partiallyCoveredToyIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("socialSmilingIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("partiallyCoveredToyIsBabyReadyToTimeToTestSegueID", sender: self)
     }
 
 }

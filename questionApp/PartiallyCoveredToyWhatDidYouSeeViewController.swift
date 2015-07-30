@@ -1,5 +1,5 @@
 //
-//  SocialSmilingWhatDidYouSeeViewController.swift
+//  PartiallyCoveredToyWhatDidYouSeeViewController.swift
 //  questionApp
 //
 //  Created by daniel hsu on 7/28/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SocialSmilingWhatDidYouSeeViewController: UIViewController {
+class PartiallyCoveredToyWhatDidYouSeeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

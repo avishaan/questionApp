@@ -1,8 +1,8 @@
 //
-//  SocialSmilingTestOverviewViewController.swift
+//  PartiallyCoveredToyTestOverviewViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/28/15.
+//  Created by Daniel Hsu on 7/30/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class SocialSmilingTestOverviewViewController: UIViewController {
+class PartiallyCoveredToyTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -59,7 +59,7 @@ class SocialSmilingTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "socialSmilingWhatWillYouNeedSegueID" {
+        else if segue.identifier == "partiallyCoveredToyWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }

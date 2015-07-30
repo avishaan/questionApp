@@ -1,14 +1,14 @@
 //
-//  SocialSmilingMoreInfoViewController.swift
+//  PartiallyCoveredToyMoreInfoViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/28/15.
+//  Created by Daniel Hsu on 7/30/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SocialSmilingMoreInfoViewController: UIViewController {
+class PartiallyCoveredToyMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,14 +1,14 @@
 //
-//  SocialSmilingGoodOutcomeViewController.swift
+//  PartiallyCoveredToyGoodOutcomeViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/28/15.
+//  Created by Daniel Hsu on 7/30/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SocialSmilingGoodOutcomeViewController: UIViewController {
+class PartiallyCoveredToyGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

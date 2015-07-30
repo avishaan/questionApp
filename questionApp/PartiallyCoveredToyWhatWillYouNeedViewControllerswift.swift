@@ -1,14 +1,14 @@
 //
-//  SocialSmilingWhatWillYouNeedViewController.swift
+//  PartiallyCoveredToyWhatWillYouNeedViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/28/15.
+//  Created by Daniel Hsu on 7/30/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SocialSmilingWhatWillYouNeedViewController: UIViewController {
+class PartiallyCoveredToyWhatWillYouNeedViewController: UIViewController {
 
     @IBOutlet weak var testPreparationLabel: UILabel!
     
@@ -25,9 +25,9 @@ class SocialSmilingWhatWillYouNeedViewController: UIViewController {
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
-            performSegueWithIdentifier("socialSmilingTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("partiallyCoveredToyTimeToTestSegueID", sender: self)
         } else {
-            performSegueWithIdentifier("socialSmilingIsBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("partiallyCoveredToyIsBabyReadySegueID", sender: self)
         }
     }
     
@@ -38,7 +38,7 @@ class SocialSmilingWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "You’ll need your baby. That’s it!"
+        let string = "Any small, colorful toy will do, plus a cloth large enough to cover the toy."
 
         var attributedString = NSMutableAttributedString(string: string)
         
@@ -46,7 +46,7 @@ class SocialSmilingWhatWillYouNeedViewController: UIViewController {
         let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 33))
+        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 76))
         
         testPreparationLabel.attributedText = attributedString
     }

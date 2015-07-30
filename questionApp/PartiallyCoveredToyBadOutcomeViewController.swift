@@ -1,14 +1,14 @@
 //
-//  SocialSmilingBadOutcomeViewController.swift
+//  PartiallyCoveredToyBadOutcomeViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/28/15.
+//  Created by Daniel Hsu on 7/30/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SocialSmilingBadOutcomeViewController: UIViewController {
+class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
   
     /** A Test containing the updated test history. This property should be set by the source view controller. */
   var test:Test?
@@ -32,11 +32,11 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "socialSmilingToActivityReminderSegue" {
+        if segue.identifier == "partiallyCoveredToyToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.socialsmiling
+            controller.testName = TestNamesPresentable.partiallyCoveredToy
         }
     }
     
@@ -69,29 +69,29 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in 2 weeks."
+            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
             applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "Not social smiling?"
+            questionLabel.text = "Baby doesn't reach?"
             
             // update infoLabel
-            let string = "Try this: get baby's attention by making a sound. You may also show baby a toy while talking and smiling. Does baby smile? If not, try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:122, countOfBoldCharacters:29)
+            let string = "Try the test again using baby’s favorite toy and with more of the toy showing. If he still doesn’t react, try the test again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:78, countOfBoldCharacters:58)
             
         } else if failed == 3 {
             // update questionLabel
-            questionLabel.text = "Not social smiling?"
+            questionLabel.text = "Baby doesn't reach?"
             
             // update infoLabel
-            let string = "Perform this test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:72, countOfBoldCharacters:48)
+            let string = "Inability to recognize Object Permanence after 12 months may indicate visual and/or cognitive issues. If baby consistently shows no reaction beyond 12 months, talk to your pediatrician at your next well-child visit."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:101, countOfBoldCharacters:114)
         } else {
             // update questionLabel
-            questionLabel.text = "Not social smiling?"
+            questionLabel.text = "Baby doesn't reach?"
             
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in 2 weeks."
+            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
             applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
         }
     }
