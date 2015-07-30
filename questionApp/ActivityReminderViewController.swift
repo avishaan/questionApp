@@ -24,7 +24,7 @@ struct TestNamesPresentable {
     static var partiallyCoveredToy = "partially covered toy"
     static var selfrecognition = "self recognition"
     static var socialsmiling = "social smiling"
-    static var expressionMimic: String = "expression mimic"
+    static var facialMimic = "facial mimic"
     // TODO: if new tests are added to the app, add them here.
 }
 

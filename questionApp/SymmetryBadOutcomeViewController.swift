@@ -10,11 +10,8 @@ import UIKit
 
 class SymmetryBadOutcomeViewController: UIViewController {
 
-    /** A history of previous test outcomes. This property should be set by the source view controller. */
-//    var histories = TestHistories()
-    
     /** A Test containing the updated test history. This property should be set by the source view controller. */
-    var test = Test()
+    var test: Test!
     
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!

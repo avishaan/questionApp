@@ -667,7 +667,9 @@ c2UgcmVhY3QuA
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-LE-NYr">
                                 <rect key="frame" x="32" y="255" width="257" height="117"/>
-                                <string key="text">Not to worry. Lucas is a bit too young for this skill.Try again in 2 weeks.</string>
+                                <string key="text">Not to worry. Lucas is a bit 
+too young for this skill.
+Try again in 2 weeks.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

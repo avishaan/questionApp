@@ -1,17 +1,17 @@
 //
-//  SocialSmilingBadOutcomeViewController.swift
+//  FacialMimicBadOutcomeViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/28/15.
+//  Created by john bateman on 7/29/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SocialSmilingBadOutcomeViewController: UIViewController {
-    
-    /** A history of previous test outcomes. This property should be set by the source view controller. */
-    var histories = TestHistories()
+class FacialMimicBadOutcomeViewController: UIViewController {
+
+    /** A Test containing the updated test history. This property should be set by the source view controller. */
+    var test: Test!
     
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -32,11 +32,12 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "socialSmilingToActivityReminderSegue" {
+        
+        if segue.identifier == "FacialMimicToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.socialsmiling
+            controller.testName = TestNamesPresentable.facialMimic
         }
     }
     
@@ -65,34 +66,35 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
     @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = histories.failedTestsCount(testName: Test.TestNames.selfRecognition)
+        let failed = test.failedTestsCount()
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Not to worry! Your baby is a bit too young for this skill. Try again in 2 weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:59, countOfBoldCharacters:21)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "Not social smiling?"
+            questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Try this: get baby's attention by making a sound. You may also show baby a toy while talking and smiling. Does baby smile? If not, try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:123, countOfBoldCharacters:30)
+            let string = "Try this: with a neutral facial expression, make eye contact with baby. Now change to an emmotional expression (happy, afraid, etc.). Does baby look at you? Does she mimic your expression? If not, try again in 2 weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:189, countOfBoldCharacters:29)
             
-        } else if failed == 3 {
+        } else if failed >= 3 {
             // update questionLabel
-            questionLabel.text = "Not social smiling?"
+            questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Perform this test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:72, countOfBoldCharacters:52)
+            let string = "Do the test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:67, countOfBoldCharacters:50)
         } else {
             // update questionLabel
-            questionLabel.text = "Not social smiling?"
+            questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Not to worry! Your  baby is a bit too young for this skill. Try again in 2 weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:59, countOfBoldCharacters:21)
         }
     }
+
 }

@@ -13,6 +13,7 @@
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
         </mutableArray>
         <mutableArray key="OmnesSem.ttf">
             <string>Omnes-Semibold</string>
@@ -30,10 +31,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Why Is Expression Mimic View Controller-->
+        <!--Why Is Facial Mimic View Controller-->
         <scene sceneID="AYd-Fk-ZSI">
             <objects>
-                <viewController storyboardIdentifier="WhyIsSymmetryStoryboardID" id="r3E-bx-dsa" customClass="WhyIsExpressionMimicViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyIsFacialMimicStoryboardID" id="r3E-bx-dsa" customClass="WhyIsFacialMimicViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MdC-1s-Dx8"/>
                         <viewControllerLayoutGuide type="bottom" id="dzn-hD-ChP"/>
@@ -55,13 +56,13 @@
                                     <segue destination="zNp-dx-Ok5" kind="presentation" id="ffS-iF-1o4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRW-Ef-JGk" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRW-Ef-JGk" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is maintaining symmetry important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xiz-oo-yUN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Facial Mimicry important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xiz-oo-yUN">
                                 <rect key="frame" x="32" y="90" width="257" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,7 +73,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDi-9U-0Li">
                                 <rect key="frame" x="14" y="274" width="293" height="183"/>
-                                <string key="text">Your baby should lie symmetrically on her stomach. Inability to do so may be an early indicator of spinal issues or increased risk for autism.</string>
+                                <string key="text">Facial mimicry, or empathetic response, is normal in infants. Babies who do not mimic facial expressions are more likely to be autistic or even psychopathic.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -100,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="-16" y="844"/>
         </scene>
-        <!--Expression Mimic Test Overview View Controller-->
+        <!--Facial Mimic Test Overview View Controller-->
         <scene sceneID="Lln-ZB-L3s">
             <objects>
-                <viewController id="zNp-dx-Ok5" customClass="ExpressionMimicTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zNp-dx-Ok5" customClass="FacialMimicTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rPr-NX-BBG"/>
                         <viewControllerLayoutGuide type="bottom" id="QxM-3V-Cdy"/>
@@ -118,7 +119,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIi-XY-1J9">
                                 <rect key="frame" x="0.0" y="142" width="320" height="203"/>
                                 <connections>
-                                    <segue destination="eV0-7O-0Az" kind="embed" identifier="symmetryEmbeddedVideoSegue" id="CUA-Bb-mIh"/>
+                                    <segue destination="eV0-7O-0Az" kind="embed" identifier="FacialMimicEmbeddedVideoSegue" id="CUA-Bb-mIh"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwB-id-c3t" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
@@ -128,7 +129,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RHK-ze-jw6" kind="presentation" identifier="ExpressionMimicWhatWillYouNeedSegueID" id="vbx-7W-1Bu"/>
+                                    <segue destination="RHK-ze-jw6" kind="presentation" identifier="FacialMimicWhatWillYouNeedSegueID" id="vbx-7W-1Bu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P47-aL-XuZ">
@@ -146,7 +147,7 @@
                                     <action selector="onPreviewButtonTap:" destination="zNp-dx-Ok5" eventType="touchUpInside" id="WTC-0q-tM0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-CQ-qHh" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-CQ-qHh" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="665" y="1325.5"/>
         </scene>
-        <!--Expression Mimic What Will You Need View Controller-->
+        <!--Facial Mimic What Will You Need View Controller-->
         <scene sceneID="KtT-L8-Y9P">
             <objects>
-                <viewController id="RHK-ze-jw6" customClass="ExpressionMimicWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RHK-ze-jw6" customClass="FacialMimicWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LEO-m3-ZvI"/>
                         <viewControllerLayoutGuide type="bottom" id="dKJ-7J-2Zh"/>
@@ -196,7 +197,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="0pW-5j-r0K">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ism-Ir-USR" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ism-Ir-USR" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -221,8 +222,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="qLG-id-co6">
                                 <rect key="frame" x="-5" y="113" width="329" height="201"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All you'll need is a firm surface baby can comfortably lie on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rth-Dk-hiN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rth-Dk-hiN">
                                 <rect key="frame" x="37" y="281" width="245" height="183"/>
+                                <string key="text">You'll need your baby. 
+That's it!</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -242,18 +245,18 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="testPreparationLabel" destination="Rth-Dk-hiN" id="Vx7-QC-x1a"/>
-                        <segue destination="Utl-et-GFR" kind="presentation" identifier="ExpressionMimicIsBabyReadySegueID" id="7rn-7G-FF3"/>
-                        <segue destination="Mrj-td-MT8" kind="presentation" identifier="ExpressionMimicTimeToTestSegueID" id="AuD-tK-KX1"/>
+                        <segue destination="Utl-et-GFR" kind="presentation" identifier="FacialMimicIsBabyReadySegueID" id="7rn-7G-FF3"/>
+                        <segue destination="Mrj-td-MT8" kind="presentation" identifier="FacialMimicTimeToTestSegueID" id="AuD-tK-KX1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fay-kC-ihH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1316" y="844"/>
         </scene>
-        <!--Expression Mimic Is Baby Ready View Controller-->
+        <!--Facial Mimic Is Baby Ready View Controller-->
         <scene sceneID="4fa-Uv-EQb">
             <objects>
-                <viewController id="Utl-et-GFR" customClass="ExpressionMimicIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Utl-et-GFR" customClass="FacialMimicIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8g3-Rf-6L8"/>
                         <viewControllerLayoutGuide type="bottom" id="Ked-DA-tuQ"/>
@@ -265,7 +268,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MTP-gj-TuN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEz-TI-4Yb" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEz-TI-4Yb" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -382,17 +385,17 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="Mrj-td-MT8" kind="presentation" identifier="ExpressionMimicIsBabyReadyToTimeToTestSegueID" id="Owi-9a-DpQ"/>
+                        <segue destination="Mrj-td-MT8" kind="presentation" identifier="FacialMimicIsBabyReadyToTimeToTestSegueID" id="Owi-9a-DpQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQt-3t-iHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2018" y="1192"/>
         </scene>
-        <!--Expression Mimic Time To Test View Controller-->
+        <!--Facial Mimic Time To Test View Controller-->
         <scene sceneID="oRd-21-nhG">
             <objects>
-                <viewController id="Mrj-td-MT8" customClass="ExpressionMimicTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mrj-td-MT8" customClass="FacialMimicTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kwy-f2-olG"/>
                         <viewControllerLayoutGuide type="bottom" id="Bpf-a0-1mP"/>
@@ -404,7 +407,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ijc-G0-A1k">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQf-Bb-A1J" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQf-Bb-A1J" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="47" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -428,8 +431,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.  Is baby lying symmetrically with both right and left arms extending out from body?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-Ed-uUH">
-                                <rect key="frame" x="52" y="238" width="222" height="153"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.  Hold your baby up, with her face about 10&quot; from your face." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shG-Uv-Qbm">
+                                <rect key="frame" x="52" y="152" width="228" height="82"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.  Attract baby's attention and stick out your tongue." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-Ed-uUH">
+                                <rect key="frame" x="52" y="238" width="222" height="82"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.  Does baby react? How does she react?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-Cb-X2g">
+                                <rect key="frame" x="52" y="315" width="222" height="82"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -459,12 +474,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.  Place baby on her stomach on a firm surface." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shG-Uv-Qbm">
-                                <rect key="frame" x="52" y="157" width="228" height="97"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
-                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -473,16 +482,17 @@
                         <outlet property="labelBackground" destination="Ijr-0M-Zc9" id="hYa-2V-faB"/>
                         <outlet property="step1Label" destination="shG-Uv-Qbm" id="G3J-Fd-h7m"/>
                         <outlet property="step2Label" destination="3ge-Ed-uUH" id="F1t-gN-Hqw"/>
+                        <outlet property="step3Label" destination="GYm-Cb-X2g" id="py2-23-Z3D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFd-Qv-kcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2723" y="844"/>
         </scene>
-        <!--Expression Mimic What Did You See View Controller-->
+        <!--Facial Mimic What Did You See View Controller-->
         <scene sceneID="Ivs-kE-WEO">
             <objects>
-                <viewController id="Jxb-N3-0Ba" customClass="ExpressionMimicWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jxb-N3-0Ba" customClass="FacialMimicWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DDl-ng-1oc"/>
                         <viewControllerLayoutGuide type="bottom" id="IXy-pR-NJE"/>
@@ -494,7 +504,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BZs-uA-SvC">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cs-UK-5rR" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cs-UK-5rR" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -507,14 +517,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="r50-yS-2wV" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="125" width="265" height="58"/>
+                                <rect key="frame" x="28" y="125" width="265" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
-                                <state key="normal" title="Baby is lying symmetrically, like a butterfly.">
+                                <state key="normal" title="Baby makes eye contact and mimics facial expression.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FGW-sv-gHh" kind="presentation" identifier="ExpressionMimicGoodOutcomeSegueID" id="I2T-ha-FJT"/>
+                                    <segue destination="FGW-sv-gHh" kind="presentation" identifier="FacialMimicGoodOutcomeSegueID" id="I2T-ha-FJT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-eX-aUN" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
@@ -527,14 +537,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FfC-0F-tEc" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="203" width="265" height="80"/>
+                                <rect key="frame" x="28" y="219" width="265" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
-                                <state key="normal" title="Baby is not symmetrical. One arm is extended out but not the other.">
+                                <state key="normal" title="Baby is consistently unaffected by facial expressions.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ci1-e4-WVg" kind="presentation" identifier="ExpressionMimicBadOutcomeSegueID" id="VEg-gX-e0v"/>
+                                    <segue destination="ci1-e4-WVg" kind="presentation" identifier="FacialMimicBadOutcomeSegueID" id="VEg-gX-e0v"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -546,10 +556,10 @@
             </objects>
             <point key="canvasLocation" x="3407" y="844"/>
         </scene>
-        <!--Expression Mimic Good Outcome View Controller-->
+        <!--Facial Mimic Good Outcome View Controller-->
         <scene sceneID="2hr-Q1-obq">
             <objects>
-                <viewController id="FGW-sv-gHh" customClass="ExpressionMimicGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FGW-sv-gHh" customClass="FacialMimicGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Zv-Mc-j3U"/>
                         <viewControllerLayoutGuide type="bottom" id="Xnn-DS-D89"/>
@@ -561,7 +571,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-oi-RI6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h11-eL-rdz" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h11-eL-rdz" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -573,7 +583,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby can maintain spinal symmetry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB5-9M-L5X">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby mimics expressions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB5-9M-L5X">
                                 <rect key="frame" x="27" y="135" width="267" height="115"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -613,10 +623,10 @@
             </objects>
             <point key="canvasLocation" x="4046" y="418"/>
         </scene>
-        <!--Expression Mimic Bad Outcome View Controller-->
+        <!--Facial Mimic Bad Outcome View Controller-->
         <scene sceneID="bWj-5V-Hba">
             <objects>
-                <viewController id="ci1-e4-WVg" customClass="ExpressionMimicBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ci1-e4-WVg" customClass="FacialMimicBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2CH-2a-osU"/>
                         <viewControllerLayoutGuide type="bottom" id="DvI-fg-e4A"/>
@@ -628,13 +638,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1pA-MW-Mv0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNt-7i-K4G" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNt-7i-K4G" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not symmetrical?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWd-zb-Ojo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not mimicking expression?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWd-zb-Ojo">
                                 <rect key="frame" x="35" y="84" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -653,7 +663,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="bXb-xb-22F">
                                 <rect key="frame" x="0.0" y="133" width="320" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not to worry! All babies develop at the different rates. Try again tomorrow." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLB-fg-LjC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not to worry! Your baby is a bit too young for this skill. Try again in 2 weeks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLB-fg-LjC">
                                 <rect key="frame" x="32" y="255" width="257" height="137"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -675,7 +685,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RO0-aC-8Q5" kind="presentation" identifier="ExpressionMimicToActivityReminderSegue" id="NCC-b6-FCq"/>
+                                    <segue destination="RO0-aC-8Q5" kind="presentation" identifier="FacialMimicToActivityReminderSegue" id="NCC-b6-FCq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cks-9n-o3P" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
@@ -701,10 +711,10 @@
             </objects>
             <point key="canvasLocation" x="4699" y="844"/>
         </scene>
-        <!--Expression Mimic Activity Reminder View Controller-->
+        <!--Facial Mimic Activity Reminder View Controller-->
         <scene sceneID="tFd-aS-90a">
             <objects>
-                <viewController id="RO0-aC-8Q5" customClass="ExpressionMimicActivityReminderViewController" sceneMemberID="viewController">
+                <viewController id="RO0-aC-8Q5" customClass="FacialMimicActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iCU-WZ-A2d"/>
                         <viewControllerLayoutGuide type="bottom" id="jHy-bc-A64"/>
@@ -716,7 +726,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hTS-qJ-ujx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoU-lq-sjd" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoU-lq-sjd" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -794,10 +804,10 @@
             </objects>
             <point key="canvasLocation" x="5282" y="844"/>
         </scene>
-        <!--Expression Mimic More Info View Controller-->
+        <!--Facial Mimic More Info View Controller-->
         <scene sceneID="FHP-hT-QdV">
             <objects>
-                <viewController id="TwI-ju-e0i" customClass="ExpressionMimicMoreInfoViewController" sceneMemberID="viewController">
+                <viewController id="TwI-ju-e0i" customClass="FacialMimicMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BMO-o4-Rny"/>
                         <viewControllerLayoutGuide type="bottom" id="JzN-Dj-nmL"/>
@@ -809,7 +819,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ULa-IG-dlv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="expression mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmq-CA-8EX" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmq-CA-8EX" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -823,12 +833,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2C-22-5FF">
                                 <rect key="frame" x="27" y="127" width="267" height="187"/>
-                                <string key="text">Symmetry is controlled by the motor part of the brain. Consistent weakness in half of baby's body may be an early indication of muscular issues or, occasionally, autism.</string>
+                                <string key="text">Facial imitation by age two indicates a higher level of social and cognitive  processing. Inability to mimic can indicate facial muscular issues or lack of social understanding.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If baby cannot achieve symmetry after 12 months, please check with your pediatrician during your next well-child visit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-q4-Wwz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If inability persists past 18 months, mention it to your pediatrician during your next weel-baby visit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-q4-Wwz">
                                 <rect key="frame" x="35" y="312" width="251" height="154"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -874,6 +884,6 @@
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Owi-9a-DpQ"/>
+        <segue reference="AuD-tK-KX1"/>
     </inferredMetricsTieBreakers>
 </document>
