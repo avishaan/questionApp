@@ -68,7 +68,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsSymmetry" translatesAutoresizingMaskIntoConstraints="NO" id="0J1-zh-yTw">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsFacialMimic" translatesAutoresizingMaskIntoConstraints="NO" id="0J1-zh-yTw">
                                 <rect key="frame" x="0.0" y="154" width="320" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDi-9U-0Li">
@@ -219,7 +219,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="qLG-id-co6">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacialMimicWhatWillYouNeed" translatesAutoresizingMaskIntoConstraints="NO" id="qLG-id-co6">
                                 <rect key="frame" x="-5" y="113" width="329" height="201"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rth-Dk-hiN">
@@ -291,7 +291,7 @@ That's it!</string>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="K0Q-gO-HuE">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacialMimicIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="K0Q-gO-HuE">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTR-C1-LqJ">
@@ -303,7 +303,14 @@ That's it!</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ao2-e1-FMs">
                                 <rect key="frame" x="72" y="359" width="177" height="36"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="•  ">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="40" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="22" name="Omnes-Medium"/>
@@ -326,7 +333,7 @@ That's it!</string>
                                     <fragment content="•">
                                         <attributes>
                                             <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <font key="NSFont" size="40" name="Omnes-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -343,7 +350,14 @@ That's it!</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QW-Y4-jkL">
                                 <rect key="frame" x="72" y="383" width="177" height="36"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="• ">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="40" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="22" name="Omnes-Medium"/>
@@ -385,6 +399,9 @@ That's it!</string>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bulletedLabel1" destination="Ao2-e1-FMs" id="wai-ID-I8C"/>
+                        <outlet property="bulletedLabel2" destination="6QW-Y4-jkL" id="u49-DG-k5C"/>
+                        <outlet property="bulletedLabel3" destination="u2E-e6-LpQ" id="enj-sq-Vuf"/>
                         <segue destination="Mrj-td-MT8" kind="presentation" identifier="FacialMimicIsBabyReadyToTimeToTestSegueID" id="Owi-9a-DpQ"/>
                     </connections>
                 </viewController>
@@ -660,7 +677,7 @@ That's it!</string>
                                     <action selector="onHomeButtonTap:" destination="ci1-e4-WVg" eventType="touchUpInside" id="sbh-ge-aBO"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SymmetryBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="bXb-xb-22F">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacialMimicBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="bXb-xb-22F">
                                 <rect key="frame" x="0.0" y="133" width="320" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not to worry! Your baby is a bit too young for this skill. Try again in 2 weeks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLB-fg-LjC">
@@ -874,16 +891,16 @@ That's it!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="SymmetryBadOutcome" width="273" height="108"/>
-        <image name="SymmetryIsBabyReady" width="320" height="120"/>
+        <image name="FacialMimicBadOutcome" width="273" height="108"/>
+        <image name="FacialMimicIsBabyReady" width="320" height="120"/>
+        <image name="FacialMimicWhatWillYouNeed" width="320" height="120"/>
         <image name="SymmetryTestOverview" width="320" height="203"/>
-        <image name="SymmetryWhatNeed" width="320" height="120"/>
-        <image name="WhyIsSymmetry" width="320" height="120"/>
+        <image name="WhyIsFacialMimic" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AuD-tK-KX1"/>
+        <segue reference="Owi-9a-DpQ"/>
     </inferredMetricsTieBreakers>
 </document>
