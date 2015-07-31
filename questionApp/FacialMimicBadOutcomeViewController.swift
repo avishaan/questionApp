@@ -1,18 +1,18 @@
 //
-//  SymmetryBadOutcomeViewController.swift
+//  FacialMimicBadOutcomeViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/16/15.
+//  Created by john bateman on 7/29/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class SymmetryBadOutcomeViewController: UIViewController {
+class FacialMimicBadOutcomeViewController: UIViewController {
 
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test: Test!
-
+    
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -32,11 +32,12 @@ class SymmetryBadOutcomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "symmetryToActivityReminderSegue" {
+        
+        if segue.identifier == "FacialMimicToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.symmetry
+            controller.testName = TestNamesPresentable.facialMimic
         }
     }
     
@@ -62,44 +63,38 @@ class SymmetryBadOutcomeViewController: UIViewController {
     }
     
     /*!
-        @brief Initialize the text in the view based on the number of failed tests.
+    @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = test?.failedTestsCount()
+        let failed = test.failedTestsCount()
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry! All babies develop at the different rates. Try again tomorrow."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:57, countOfBoldCharacters:19)
+            let string = "Not to worry! Your baby is a bit too young for this skill. Try again in 2 weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:59, countOfBoldCharacters:21)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "Still not symmetrical?"
+            questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Your baby may not have the motor skills to extend her arms or legs yet. Try again next month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:72, countOfBoldCharacters:21)
+            let string = "Try this: with a neutral facial expression, make eye contact with baby. Now change to an emmotional expression (happy, afraid, etc.). Does baby look at you? Does she mimic your expression? If not, try again in 2 weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:189, countOfBoldCharacters:29)
             
-        } else if failed == 3 {
+        } else if failed >= 3 {
             // update questionLabel
-            questionLabel.text = "Still not symmetrical?"
+            questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Since your baby is under 12 months, she still has time to develop those muscles. If you're concerned, check with your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:50)
-        } else if failed >= 4 {
-            // update questionLabel
-            questionLabel.text = "Still not symmetrical?"
-            
-            // update infoLabel
-            let string = "Are baby's limbs consistently weaker on one side? If yes, please check with your pediatrician during your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:50, countOfBoldCharacters:78)
+            let string = "Do the test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:67, countOfBoldCharacters:50)
         } else {
             // update questionLabel
-            questionLabel.text = "Not symmetrical?"
+            questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Not to worry! All babies develop at the different rates. Try again tomorrow."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:57, countOfBoldCharacters:19)
+            let string = "Not to worry! Your  baby is a bit too young for this skill. Try again in 2 weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:59, countOfBoldCharacters:21)
         }
     }
+
 }

@@ -33,7 +33,7 @@ class Test: NSObject, NSCoding {
         static var partiallyCoveredToy : String = "partially covered toy"
         static var selfRecognition : String = "self recognition"
         static var socialSmiling: String = "social smiling"
-        static var expressionMimic: String = "expression mimic"
+        static var FacialMimic: String = "facial mimic"
         // TODO: add additional var as new tests are added to the app
     }
     

@@ -1,18 +1,19 @@
 //
-//  SymmetryTimeToTestViewController.swift
+//  FacialMimicTimeToTestViewController.swift
 //  questionApp
 //
-//  Created by john bateman on 7/16/15.
+//  Created by john bateman on 7/29/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class SymmetryTimeToTestViewController: UIViewController {
+class FacialMimicTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     @IBOutlet weak var step2Label: UILabel!
+    @IBOutlet weak var step3Label: UILabel!
     @IBOutlet weak var labelBackground: UILabel!
     
     let orangeAtrributes = [NSForegroundColorAttributeName: kOrange, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
@@ -89,5 +90,9 @@ class SymmetryTimeToTestViewController: UIViewController {
         var step2AttributedString = NSMutableAttributedString(string: step2Label.text!)
         step2AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step2Label.attributedText = step2AttributedString
+        
+        var step3AttributedString = NSMutableAttributedString(string: step3Label.text!)
+        step3AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+        step3Label.attributedText = step3AttributedString
     }
 }

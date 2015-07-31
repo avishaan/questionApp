@@ -63,7 +63,7 @@ class TestHistories : NSObject, NSCoding {
 //        static var partiallyCoveredToy : String = "partially covered toy"
 //        static var selfRecognition : String = "self recognition"
 //        static var socialSmiling: String = "social smiling"
-//        static var expressionMimic: String = "expression mimic"
+//        static var FacialMimic: String = "facial mimic"
 //    }
     
     /** Computed property for the path to the file where the data is persisted. */
@@ -95,7 +95,7 @@ class TestHistories : NSObject, NSCoding {
             Test.TestNames.partiallyCoveredToy : Test.TestNames.partiallyCoveredToy,
             Test.TestNames.selfRecognition : Test.TestNames.selfRecognition,
             Test.TestNames.socialSmiling : Test.TestNames.socialSmiling,
-            Test.TestNames.expressionMimic : Test.TestNames.expressionMimic
+            Test.TestNames.FacialMimic : Test.TestNames.FacialMimic
             // TODO: if new tests are added to the app, add them here.
         ]
         

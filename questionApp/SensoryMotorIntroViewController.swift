@@ -32,7 +32,7 @@ class SensoryMotorIntroViewController: UIViewController {
       // set the playerVC as out destination
       playerVC = segue.destinationViewController as!
       AVPlayerViewController
-      let path = NSBundle.mainBundle().pathForResource("crawl", ofType: "mp4")
+      let path = NSBundle.mainBundle().pathForResource("LetsCrawl", ofType: "mp4")
       let url = NSURL.fileURLWithPath(path!)
       // let url = NSURL(string: "crawl.mp4") // for remote locations
       
