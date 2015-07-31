@@ -817,9 +817,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNStandingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-zM-xZB">
                                 <rect key="frame" x="52" y="382" width="24" height="24"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="symmetry" translatesAutoresizingMaskIntoConstraints="NO" id="zMC-dR-0qU">
-                                <rect key="frame" x="52" y="456" width="24" height="24"/>
-                            </imageView>
                             <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTm-z8-eLC" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="35" y="438" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -832,6 +829,9 @@
                                     <action selector="onSymmetryButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="cMh-QZ-har"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="symmetry" translatesAutoresizingMaskIntoConstraints="NO" id="zMC-dR-0qU">
+                                <rect key="frame" x="52" y="456" width="24" height="24"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -884,7 +884,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="nEP-57-Ip1"/>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq7-aK-iGu" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq7-aK-iGu" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="32" y="162" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -896,7 +896,7 @@
                                     <segue destination="JXR-iK-Laf" kind="presentation" id="XvC-sb-ylX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkI-cT-bIA" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkI-cT-bIA" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="32" y="238" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -908,7 +908,7 @@
                                     <action selector="attentionAtADistanceButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="062-Pe-cc0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-aM-YF2" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-aM-YF2" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="33" y="312" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1216,26 +1216,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIU-fd-lmE">
-                                <rect key="frame" x="72" y="408" width="177" height="36"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="•">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="  has a dry diaper">
-                                        <attributes>
-                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ey-Yt-KA6">
                                 <rect key="frame" x="72" y="383" width="177" height="36"/>
                                 <attributedString key="attributedText">
@@ -1247,6 +1227,26 @@
                                         </attributes>
                                     </fragment>
                                     <fragment content=" is well rested">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIU-fd-lmE">
+                                <rect key="frame" x="72" y="408" width="177" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  has a dry diaper">
                                         <attributes>
                                             <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="22" name="Omnes-Medium"/>
@@ -1269,6 +1269,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bulletedLabel1" destination="V7q-eZ-KK1" id="pIZ-ub-b2k"/>
+                        <outlet property="bulletedLabel2" destination="8Ey-Yt-KA6" id="Xbc-jp-XvM"/>
+                        <outlet property="bulletedLabel3" destination="VIU-fd-lmE" id="e39-G0-rH7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Dt-LQ-jfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2096,26 +2101,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr2-o1-W0M">
-                                <rect key="frame" x="72" y="408" width="177" height="36"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="•">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="  has a dry diaper">
-                                        <attributes>
-                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5M0-5t-hEs">
                                 <rect key="frame" x="72" y="383" width="177" height="36"/>
                                 <attributedString key="attributedText">
@@ -2127,6 +2112,26 @@
                                         </attributes>
                                     </fragment>
                                     <fragment content=" is well rested">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr2-o1-W0M">
+                                <rect key="frame" x="72" y="408" width="177" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  has a dry diaper">
                                         <attributes>
                                             <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="22" name="Omnes-Medium"/>
@@ -2161,6 +2166,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bulletedLabel1" destination="jRY-0f-8pV" id="jA9-8h-d2U"/>
+                        <outlet property="bulletedLabel2" destination="5M0-5t-hEs" id="xgC-Un-IAS"/>
+                        <outlet property="bulletedLabel3" destination="wr2-o1-W0M" id="b1s-VP-ieb"/>
                         <outlet property="dontShowAgainButton" destination="Qnm-8E-9Jx" id="zQM-rk-9nl"/>
                         <segue destination="ud9-GU-zU4" kind="presentation" identifier="fallingToyIsBabyReadyToTimeToTestSegueID" id="OZR-PC-mDf"/>
                     </connections>
@@ -3025,26 +3033,6 @@ Try again in 2-4 weeks.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynl-ZA-Kha">
-                                <rect key="frame" x="72" y="408" width="177" height="36"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="•">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="  has a dry diaper">
-                                        <attributes>
-                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BP-wB-fwi">
                                 <rect key="frame" x="72" y="383" width="177" height="36"/>
                                 <attributedString key="attributedText">
@@ -3056,6 +3044,26 @@ Try again in 2-4 weeks.</string>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" is well rested">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynl-ZA-Kha">
+                                <rect key="frame" x="72" y="408" width="177" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901959999995" green="0.42352941179999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  has a dry diaper">
                                         <attributes>
                                             <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="22" name="Omnes-Medium"/>
@@ -3090,6 +3098,9 @@ Try again in 2-4 weeks.</string>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bulletedLabel1" destination="yZw-g9-0m5" id="vex-bu-rWE"/>
+                        <outlet property="bulletedLabel2" destination="3BP-wB-fwi" id="Scb-C1-AoY"/>
+                        <outlet property="bulletedLabel3" destination="Ynl-ZA-Kha" id="NWI-EI-kNh"/>
                         <segue destination="M3V-pE-xSE" kind="presentation" identifier="letsCrawlIsBabyReadyToTimeToTestSegueID" id="rnh-PO-BrS"/>
                     </connections>
                 </viewController>
@@ -3439,7 +3450,7 @@ Try again in 6-8 weeks.</string>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="M7g-UK-Zof"/>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqz-X1-W71" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqz-X1-W71" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="32" y="162" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -3448,7 +3459,7 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W88-nC-kH5" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W88-nC-kH5" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="32" y="238" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -3457,7 +3468,7 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoO-Vl-mkV" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoO-Vl-mkV" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="33" y="312" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -3475,7 +3486,7 @@ Try again in 6-8 weeks.</string>
                             <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNHearingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ij7-d7-6W3">
                                 <rect key="frame" x="49" y="332" width="24" height="24"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apc-V4-orL" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apc-V4-orL" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="33" y="389" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -3484,6 +3495,9 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacialMimic" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-QE-QgR">
+                                <rect key="frame" x="49" y="407" width="24" height="24"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -3690,6 +3704,7 @@ Try again in 6-8 weeks.</string>
         <image name="BNSocialEmotionalProgress" width="82" height="115"/>
         <image name="BNStandingIcon" width="24" height="24"/>
         <image name="BNTwoPartLabel" width="311" height="39"/>
+        <image name="FacialMimic" width="24" height="24"/>
         <image name="WhatIsSocialEmotional" width="320" height="192"/>
         <image name="babyPicture" width="384" height="384"/>
         <image name="background" width="640" height="1136"/>
@@ -3726,8 +3741,8 @@ Try again in 6-8 weeks.</string>
         <segue reference="l69-DX-nDO"/>
         <segue reference="hJN-An-zuc"/>
         <segue reference="b14-b1-AiE"/>
-        <segue reference="j7l-Po-XYD"/>
-        <segue reference="QOE-4e-qxc"/>
+        <segue reference="OZR-PC-mDf"/>
+        <segue reference="rnh-PO-BrS"/>
         <segue reference="30t-RS-Jp6"/>
     </inferredMetricsTieBreakers>
 </document>

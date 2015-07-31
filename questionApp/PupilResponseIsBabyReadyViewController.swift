@@ -10,29 +10,48 @@ import UIKit
 
 class PupilResponseIsBabyReadyViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	@IBOutlet weak var bulletedLabel1: UILabel!
+	@IBOutlet weak var bulletedLabel2: UILabel!
+	@IBOutlet weak var bulletedLabel3: UILabel!
 
-        // Do any additional setup after loading the view.
-    }
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		applyTextAttributesToLabels()
+	}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+	override func didReceiveMemoryWarning() {
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
 
-    /*
-    // MARK: - Navigation
+	@IBAction func onBackButtonTap(sender: AnyObject) {
+		self.dismissViewControllerAnimated(true, completion: nil)
+	}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-  @IBAction func onBackButtonTap(sender: AnyObject) {
-    self.dismissViewControllerAnimated(true, completion: nil)
-  }
-
+	// Helper function formats text attributes for substrings in labels.
+	func applyTextAttributesToLabels() {
+		
+		let orangeAtrributes = [NSForegroundColorAttributeName: kOrange, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
+		let greyAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
+		
+		// The first character of each label should be orange, the rest grey.
+		
+		// label 1
+		var attributedString1 = NSMutableAttributedString(string: bulletedLabel1.text!)
+		attributedString1.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+		attributedString1.addAttributes(greyAttributes, range: NSMakeRange(2, 18))
+		bulletedLabel1.attributedText = attributedString1
+		
+		// label 2
+		var attributedString2 = NSMutableAttributedString(string: bulletedLabel2.text!)
+		attributedString2.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+		attributedString2.addAttributes(greyAttributes, range: NSMakeRange(2, 15))
+		bulletedLabel2.attributedText = attributedString2
+		
+		// label 3
+		var attributedString3 = NSMutableAttributedString(string: bulletedLabel3.text!)
+		attributedString3.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+		attributedString3.addAttributes(greyAttributes, range: NSMakeRange(2, 17))
+		bulletedLabel3.attributedText = attributedString3
+	}
 }
