@@ -11,15 +11,27 @@ import UIKit
 class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
   
     /** A Test containing the updated test history. This property should be set by the source view controller. */
-  var test:Test?
+    var test : Test?
+    var parent = Parent()
   
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var rangeChartView: BNTestRangeChartView!
+    @IBOutlet weak var rangeChartLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initializeViewFromTestHistory()
+        rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 6, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+        
+        // font can't be set directly in storyboard for attributed string, set the label font here
+        // make label's set attr string to a mutable so we can add attributes on
+        var attrString:NSMutableAttributedString = NSMutableAttributedString(attributedString: rangeChartLabel.attributedText)
+        
+        // add font attribute
+        attrString.addAttribute(NSFontAttributeName, value: UIFont(name: kOmnesFontSemiBold, size: 13)!, range: NSMakeRange(0, attrString.length))
+        rangeChartLabel.attributedText = attrString
     }
     
     override func didReceiveMemoryWarning() {
