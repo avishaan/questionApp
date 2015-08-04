@@ -42,20 +42,21 @@ class PupilResponseBadOutcomeViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  
-  
-  /*
-  // MARK: - Navigation
-  
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-  // Get the new view controller using segue.destinationViewController.
-  // Pass the selected object to the new view controller.
-  }
-  */
+	
+
   @IBAction func onBackButtonTap(sender: AnyObject) {
     self.dismissViewControllerAnimated(true, completion: nil)
   }
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+		if segue.identifier == "PupilResponseToActivityReminderSegue" {
+			let controller = segue.destinationViewController as! ActivityReminderViewController
+			
+			// set the test name on the ActivityReminder VC
+			controller.testName = TestNamesPresentable.pupilResponse
+		}
+	}
 	
 	// Helper function formats text attributes for multiple substrings in label.
 	func applyTextAttributesToLabel(string: String, indexAtStartOfBold index: Int, countOfBoldCharacters count: Int) {
