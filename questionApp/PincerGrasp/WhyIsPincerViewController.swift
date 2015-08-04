@@ -37,8 +37,8 @@ class WhyIsPincerViewController: UIViewController {
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
         attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 58))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(59, 74))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(75, 136))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(59, 25))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(75, 60))
         
         descriptionLabel.attributedText = attributedString
     }

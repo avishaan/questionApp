@@ -38,7 +38,7 @@ class PincerWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "All you'll need is a firm surface baby can comfortably lie on."
+        let string = "You'll need a pencil or pen and a table top that a baby can sit in front of."
         
         var attributedString = NSMutableAttributedString(string: string)
         

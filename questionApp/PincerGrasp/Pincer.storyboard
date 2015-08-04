@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Har-d7-BT7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="OmnesMed.ttf">
+            <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
@@ -221,7 +222,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PincerWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-wP-IX2">
                                 <rect key="frame" x="-5" y="113" width="329" height="201"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All you'll need is a firm surface baby can comfortably lie on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nb-Fg-L6O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You'll need a pencil or pen and a table top that a baby can sit in front of." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nb-Fg-L6O">
                                 <rect key="frame" x="37" y="281" width="245" height="183"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -425,14 +426,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU8-dQ-RcR">
-                                <rect key="frame" x="30" y="144" width="260" height="254"/>
+                                <rect key="frame" x="30" y="144" width="260" height="291"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.  Is baby lying symmetrically with both right and left arms extending out from body?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqq-ed-6yu">
-                                <rect key="frame" x="52" y="238" width="222" height="153"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Make sure baby is aware of the object and encourage her to pick it up." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqq-ed-6yu">
+                                <rect key="frame" x="52" y="216" width="222" height="95"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -462,8 +463,14 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.  Place baby on her stomach on a firm surface." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-3E-M5K">
-                                <rect key="frame" x="52" y="157" width="228" height="97"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Place the pencil or pen on the table top." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-3E-M5K">
+                                <rect key="frame" x="52" y="157" width="228" height="58"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3. Does baby pick up the pen using her thumb and index finger?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV8-2F-0Ry">
+                                <rect key="frame" x="49" y="318" width="222" height="95"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -476,6 +483,7 @@
                         <outlet property="labelBackground" destination="fU8-dQ-RcR" id="pk5-FE-YWo"/>
                         <outlet property="step1Label" destination="F8S-3E-M5K" id="INY-fa-lRg"/>
                         <outlet property="step2Label" destination="Bqq-ed-6yu" id="Ea9-nx-7tI"/>
+                        <outlet property="step3Label" destination="EV8-2F-0Ry" id="hbL-b1-FLl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJ4-1Z-639" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -877,6 +885,6 @@
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hso-3l-62Y"/>
+        <segue reference="ifc-3K-Wlf"/>
     </inferredMetricsTieBreakers>
 </document>
