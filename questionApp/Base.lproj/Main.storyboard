@@ -1039,7 +1039,7 @@
                             <constraint firstItem="JAP-Gm-Zvx" firstAttribute="top" secondItem="QXp-R3-U2c" secondAttribute="bottom" constant="23" id="8lf-JG-flP"/>
                             <constraint firstItem="xWY-aj-5mq" firstAttribute="leading" secondItem="VTD-Pk-tw0" secondAttribute="leadingMargin" constant="-16" id="Ggv-NK-nIh"/>
                             <constraint firstItem="6eE-4Q-qUU" firstAttribute="top" secondItem="xWY-aj-5mq" secondAttribute="bottom" id="Iav-kS-FEc">
-                                <variation key="widthClass=compact" constant="100"/>
+                                <variation key="widthClass=compact" constant="44"/>
                             </constraint>
                             <constraint firstItem="xWY-aj-5mq" firstAttribute="leading" secondItem="VTD-Pk-tw0" secondAttribute="leadingMargin" constant="-16" id="KlD-4r-VYv"/>
                             <constraint firstItem="cnQ-MC-lmc" firstAttribute="trailing" secondItem="XdK-YZ-RUD" secondAttribute="trailing" id="Oe1-Lm-xcJ"/>
