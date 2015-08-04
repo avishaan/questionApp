@@ -10,11 +10,16 @@ import UIKit
 
 class CrossingEyesBadOutcomeViewController: UIViewController {
 
+    /** A Test containing the updated test history. This property should be set by the source view controller. */
+    var test: Test?
+    
     @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyTextAttributesToLabel()
+        // TODO - remove ... applyTextAttributesToLabel()
+        initializeViewFromTestHistory()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,19 +48,71 @@ class CrossingEyesBadOutcomeViewController: UIViewController {
     }
     
     // Helper function formats text attributes for multiple substrings in label.
-    func applyTextAttributesToLabel() {
-        
-        let string = "Not to worry. Sometimes practicing using a squeaky toy will help. Try this, then perform the test again in 2 weeks."
+//    func applyTextAttributesToLabel() {
+//        
+//        let string = "Not to worry. Sometimes practicing using a squeaky toy will help. Try this, then perform the test again in 2 weeks."
+//        
+//        var attributedString = NSMutableAttributedString(string: string)
+//        
+//        let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
+//        let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
+//        
+//        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 65))
+//        attributedString.addAttributes(boldAttributes, range: NSMakeRange(66, 49))
+//        
+//        infoLabel.attributedText = attributedString
+//    }
+    
+    // Helper function formats text attributes for multiple substrings in label.
+    func applyTextAttributesToLabel(string: String, indexAtStartOfBold index: Int, countOfBoldCharacters count: Int) {
         
         var attributedString = NSMutableAttributedString(string: string)
         
         let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 65))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(66, 49))
+        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, index > 0 ? index - 1 : index))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(index, count))
         
         infoLabel.attributedText = attributedString
+    }
+    
+    /*!
+    @brief Initialize the text in the view based on the number of failed tests.
+    */
+    func initializeViewFromTestHistory() {
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
+        
+        if failed <= 1 {
+            // update infoLabel
+            let string = "Not to worry! Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
+        } else if failed == 2 {
+            // update questionLabel
+            questionLabel.text = "Didn't cross his eyes?"
+            
+            // update infoLabel
+            let string = "Not to worry! Sometimes practicing using a squeaky toy will help. Try this, then perform the test again in 2 weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:66, countOfBoldCharacters:49)
+            
+        } else if failed >= 3 {
+            // update questionLabel
+            questionLabel.text = "Didn't cross his eyes?"
+            
+            // update infoLabel
+            let string = "Do the test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:67, countOfBoldCharacters:50)
+        } else {
+            // update questionLabel
+            questionLabel.text = "Didn't cross his eyes?"
+            
+            // update infoLabel
+            let string = "Not to worry! Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
+        }
     }
 
 }

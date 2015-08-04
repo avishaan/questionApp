@@ -28,7 +28,7 @@ class SelfRecognitionWhatDidYouSeeViewController: UIViewController {
         profiles.initProfilesFromPersistentStore()
         
         // Get the test information.
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.symmetry)
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.selfRecognition)
     }
 
     override func didReceiveMemoryWarning() {

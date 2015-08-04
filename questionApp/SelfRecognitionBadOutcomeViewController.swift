@@ -11,9 +11,7 @@ import UIKit
 class SelfRecognitionBadOutcomeViewController: UIViewController {
 
     /** A history of previous test outcomes. This property should be set by the source view controller. */
-//    var histories = TestHistories()
-  
-  var test:Test?
+    var test:Test?
     
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -68,19 +66,22 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
         @param testName (in) Name of the test. Must be of Test.TestNames.
     */
     func initializeViewFromTestHistory() {
-        let failed = test?.failedTestsCount()
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
       
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:21)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "No self recognition?"
             
             // update infoLabel
             let string = "Did baby make noises, smile at her reflection, or suddenly become unhappy? This means she’s on her way to recognizing her reflection. Practice by playing peekaboo or showing baby photos of herself, then try the test again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:135, countOfBoldCharacters:100)
+            applyTextAttributesToLabel(string, indexAtStartOfBold:134, countOfBoldCharacters:99)
             
         } else if failed == 3 {
             // update questionLabel
@@ -94,15 +95,15 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
             questionLabel.text = "No self recognition?"
             
             // update infoLabel
-            let string = "Most babies develop self recognition by age two or three. If your baby consistenty shows no reaction beyond age two, talk to your pediatricion at your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:58, countOfBoldCharacters:116)
+            let string = "Most babies develop self recognition by age two or three. If your baby consistenty shows no reaction beyond age two, talk to your pediatrician at your next well-child visit."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:58, countOfBoldCharacters:115)
         } else {
             // update questionLabel
             questionLabel.text = "No self recognition?"
             
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:21)
         }
     }
 }
