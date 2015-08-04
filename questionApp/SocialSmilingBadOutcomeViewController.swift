@@ -11,7 +11,7 @@ import UIKit
 class SocialSmilingBadOutcomeViewController: UIViewController {
   
     /** A Test containing the updated test history. This property should be set by the source view controller. */
-  var test:Test?
+    var test:Test?
   
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -65,7 +65,10 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
     @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = test?.failedTestsCount()
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
         
         if failed <= 1 {
             // update infoLabel
@@ -79,13 +82,13 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
             let string = "Try this: get baby's attention by making a sound. You may also show baby a toy while talking and smiling. Does baby smile? If not, try again in 2 weeks."
             applyTextAttributesToLabel(string, indexAtStartOfBold:122, countOfBoldCharacters:29)
             
-        } else if failed == 3 {
+        } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Not social smiling?"
             
             // update infoLabel
             let string = "Perform this test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:72, countOfBoldCharacters:48)
+            applyTextAttributesToLabel(string, indexAtStartOfBold:73, countOfBoldCharacters:50)
         } else {
             // update questionLabel
             questionLabel.text = "Not social smiling?"

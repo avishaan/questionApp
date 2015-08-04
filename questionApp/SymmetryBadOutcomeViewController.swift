@@ -11,7 +11,7 @@ import UIKit
 class SymmetryBadOutcomeViewController: UIViewController {
 
     /** A Test containing the updated test history. This property should be set by the source view controller. */
-    var test: Test!
+    var test: Test?
 
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -65,7 +65,10 @@ class SymmetryBadOutcomeViewController: UIViewController {
         @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = test?.failedTestsCount()
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
         
         if failed <= 1 {
             // update infoLabel

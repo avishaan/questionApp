@@ -77,7 +77,10 @@ class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
     @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = test?.failedTestsCount()
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
         
         if failed <= 1 {
             // update infoLabel
@@ -91,7 +94,7 @@ class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
             let string = "Try the test again using baby’s favorite toy and with more of the toy showing. If he still doesn’t react, try the test again in a month."
             applyTextAttributesToLabel(string, indexAtStartOfBold:78, countOfBoldCharacters:58)
             
-        } else if failed == 3 {
+        } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Baby doesn't reach?"
             

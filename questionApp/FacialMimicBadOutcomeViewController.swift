@@ -11,7 +11,7 @@ import UIKit
 class FacialMimicBadOutcomeViewController: UIViewController {
 
     /** A Test containing the updated test history. This property should be set by the source view controller. */
-    var test: Test!
+    var test: Test?
     
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -66,7 +66,10 @@ class FacialMimicBadOutcomeViewController: UIViewController {
     @brief Initialize the text in the view based on the number of failed tests.
     */
     func initializeViewFromTestHistory() {
-        let failed = test.failedTestsCount()
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
         
         if failed <= 1 {
             // update infoLabel
@@ -77,7 +80,7 @@ class FacialMimicBadOutcomeViewController: UIViewController {
             questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Try this: with a neutral facial expression, make eye contact with baby. Now change to an emmotional expression (happy, afraid, etc.). Does baby look at you? Does she mimic your expression? If not, try again in 2 weeks."
+            let string = "Try this: with a neutral facial expression, make eye contact with baby. Now change to an emmotional expression (happy, afraid, etc.). Does baby look at you? Does she mimic your expression?\nIf not, try again in 2 weeks."
             applyTextAttributesToLabel(string, indexAtStartOfBold:189, countOfBoldCharacters:29)
             
         } else if failed >= 3 {
