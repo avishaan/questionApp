@@ -29,16 +29,16 @@ class WhyIsPincerViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Your baby should lie symmetrically on her stomach. Inability to do so may be an early indicator of spinal issues or increased risk for autism."
+        let string = "Using the thumb and index finger together is an important fine motor skill. It's the first step toward holding crayon and using a spoon."
         
         var attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 54))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(55, 14))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(70, 105))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 58))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(59, 74))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(75, 136))
         
         descriptionLabel.attributedText = attributedString
     }

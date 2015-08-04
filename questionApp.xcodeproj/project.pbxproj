@@ -77,6 +77,7 @@
 		82E574751B707538006FA7B1 /* PincerTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5746A1B707538006FA7B1 /* PincerTestOverviewViewController.swift */; };
 		82E574761B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5746B1B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift */; };
 		82E574771B707538006FA7B1 /* WhyIsPincerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5746C1B707538006FA7B1 /* WhyIsPincerViewController.swift */; };
+		82E5747D1B70959E006FA7B1 /* Pincer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 82E5747C1B70959E006FA7B1 /* Pincer.mp4 */; };
 		82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */; };
 		82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F694051B4B189B00E01B6F /* BNToolbarViewController.swift */; };
 		82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */; };
@@ -310,6 +311,7 @@
 		82E5746A1B707538006FA7B1 /* PincerTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PincerTestOverviewViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		82E5746B1B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
 		82E5746C1B707538006FA7B1 /* WhyIsPincerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsPincerViewController.swift; sourceTree = "<group>"; };
+		82E5747C1B70959E006FA7B1 /* Pincer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pincer.mp4; path = PincerGrasp/Pincer.mp4; sourceTree = "<group>"; };
 		82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedProfileViewController.swift; sourceTree = "<group>"; };
 		82F694051B4B189B00E01B6F /* BNToolbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbarViewController.swift; sourceTree = "<group>"; };
 		82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbar.swift; sourceTree = "<group>"; };
@@ -576,6 +578,7 @@
 		829F550E1B26BAF600ABE77C /* videos */ = {
 			isa = PBXGroup;
 			children = (
+				82E5747C1B70959E006FA7B1 /* Pincer.mp4 */,
 				9EE7EB441B56D8E000C73CA3 /* AttentionAtDistance.mp4 */,
 				9EE7EB421B56D8D500C73CA3 /* Symmetry.mp4 */,
 				9EE7EB401B56C86A00C73CA3 /* PointFollowing.mp4 */,
@@ -969,6 +972,7 @@
 			files = (
 				9EE7EB241B55CE8E00C73CA3 /* CrossingEyes.mp4 in Resources */,
 				209965861B63101C00B93C5D /* SelfRecognition.storyboard in Resources */,
+				82E5747D1B70959E006FA7B1 /* Pincer.mp4 in Resources */,
 				9EABF2921B4D8A35002FDA2C /* Swift.gitignore in Resources */,
 				9EE7EB411B56C86A00C73CA3 /* PointFollowing.mp4 in Resources */,
 				82E5746D1B707538006FA7B1 /* Pincer.storyboard in Resources */,
