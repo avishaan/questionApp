@@ -875,7 +875,6 @@
                                                 </variation>
                                                 <connections>
                                                     <action selector="onPincerButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="21e-Sw-FSa"/>
-                                                    <action selector="onSymmetryButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="jng-pg-aAf"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="symmetry" translatesAutoresizingMaskIntoConstraints="NO" id="uYs-CW-Cxj">
