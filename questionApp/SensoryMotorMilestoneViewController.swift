@@ -38,4 +38,10 @@ class SensoryMotorMilestoneViewController: UIViewController {
         var controller: WhyIsSymmetryViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSymmetryStoryboardID") as! WhyIsSymmetryViewController
         self.presentViewController(controller, animated: true, completion: nil);
     }
+  @IBAction func onPincerButtonTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "Pincer", bundle: nil)
+    var controller: WhyIsPincerViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPincerStoryboardID") as! WhyIsPincerViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+  }
+  
 }

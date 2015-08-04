@@ -30,6 +30,7 @@ class Test: NSObject, NSCoding {
         static var crossingEyes: String = "crossing eyes"
         static var attentionAtDistance: String = "attention at distance"
         static var symmetry: String = "symmetry"
+        static var pincer: String = "pincer"
         static var partiallyCoveredToy : String = "partially covered toy"
         static var selfRecognition : String = "self recognition"
         static var socialSmiling: String = "social smiling"

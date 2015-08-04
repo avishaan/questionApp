@@ -1,5 +1,5 @@
 //
-//  SymmetryTimeToTestViewController.swift
+//  PincerTimeToTestViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SymmetryTimeToTestViewController: UIViewController {
+class PincerTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     @IBOutlet weak var step2Label: UILabel!

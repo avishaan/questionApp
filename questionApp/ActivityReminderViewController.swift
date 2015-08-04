@@ -21,6 +21,7 @@ struct TestNamesPresentable {
     static var crossingEyes = "crossing eyes"
     static var attentionAtDistance = "attention at distance"
     static var symmetry = "symmetry"
+    static var pincer = "pincer"
     static var partiallyCoveredToy = "partially covered toy"
     static var selfrecognition = "self recognition"
     static var socialsmiling = "social smiling"

@@ -1,5 +1,5 @@
 //
-//  SymmetryWhatDidYouSeeViewController.swift
+//  PincerWhatDidYouSeeViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymmetryWhatDidYouSeeViewController: UIViewController {
+class PincerWhatDidYouSeeViewController: UIViewController {
 
     var parent = Parent()
     var profiles = TestProfiles()
@@ -28,7 +28,7 @@ class SymmetryWhatDidYouSeeViewController: UIViewController {
         profiles.initProfilesFromPersistentStore()
         
         // Get the test information.
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.symmetry)
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.pincer)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,20 +38,20 @@ class SymmetryWhatDidYouSeeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "symmetryGoodOutcomeSegueID" {
+        if segue.identifier == "pincerGoodOutcomeSegueID" {
             
-            // Record the successful symmetry test result and save it to the persistent store on disk.
+            // Record the successful pincer test result and save it to the persistent store on disk.
             test.addTestResult(testResult: true)
             profiles.save()
         
-        } else if segue.identifier == "symmetryBadOutcomeSegueID" {
+        } else if segue.identifier == "pincerBadOutcomeSegueID" {
             
-            // Record the failed symmetry test result and save it to the persistent store on disk.
+            // Record the failed pincer test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)
             profiles.save()
             
             // Pass the test results history to the destination VC.
-            let controller = segue.destinationViewController as! SymmetryBadOutcomeViewController
+            let controller = segue.destinationViewController as! PincerBadOutcomeViewController
             controller.test = self.test
         }
     }

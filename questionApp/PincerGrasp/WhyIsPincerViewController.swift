@@ -1,5 +1,5 @@
 //
-//  WhyIsSymmetryViewController.swift
+//  WhyIsPincerViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WhyIsSymmetryViewController: UIViewController {
+class WhyIsPincerViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     

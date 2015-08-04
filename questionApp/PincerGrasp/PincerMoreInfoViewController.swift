@@ -1,5 +1,5 @@
 //
-//  SymmetryMoreInfoViewController.swift
+//  PincerMoreInfoViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymmetryMoreInfoViewController: UIViewController {
+class PincerMoreInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

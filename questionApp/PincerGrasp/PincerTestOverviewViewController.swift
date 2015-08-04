@@ -1,5 +1,5 @@
 //
-//  SymmetryTestOverviewViewController.swift
+//  PincerTestOverviewViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class SymmetryTestOverviewViewController: UIViewController {
+class PincerTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -36,10 +36,10 @@ class SymmetryTestOverviewViewController: UIViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "symmetryEmbeddedVideoSegue" {
+        if segue.identifier == "pincerEmbeddedVideoSegue" {
             // set the playerVC as the destination
             playerVC = segue.destinationViewController as! AVPlayerViewController
-            let path = NSBundle.mainBundle().pathForResource("Symmetry", ofType: "mp4")
+            let path = NSBundle.mainBundle().pathForResource("Pincer", ofType: "mp4")
             let url = NSURL.fileURLWithPath(path!)
             // let url = NSURL(string: "crawl.mp4") // for remote locations
             
@@ -58,7 +58,7 @@ class SymmetryTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "symmetryWhatWillYouNeedSegueID" {
+        else if segue.identifier == "pincerWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }
