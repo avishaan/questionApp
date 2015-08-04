@@ -66,6 +66,17 @@
 		82E42AB81B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42AB71B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift */; };
 		82E42ABA1B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */; };
 		82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E42ABB1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift */; };
+		82E5746D1B707538006FA7B1 /* Pincer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E574621B707538006FA7B1 /* Pincer.storyboard */; };
+		82E5746E1B707538006FA7B1 /* PincerBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E574631B707538006FA7B1 /* PincerBadOutcomeViewController.swift */; };
+		82E5746F1B707538006FA7B1 /* PincerIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E574641B707538006FA7B1 /* PincerIsBabyReadyViewController.swift */; };
+		82E574701B707538006FA7B1 /* PincerTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E574651B707538006FA7B1 /* PincerTimeToTestViewController.swift */; };
+		82E574711B707538006FA7B1 /* PincerWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E574661B707538006FA7B1 /* PincerWhatDidYouSeeViewController.swift */; };
+		82E574721B707538006FA7B1 /* PincerGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E574671B707538006FA7B1 /* PincerGoodOutcomeViewController.swift */; };
+		82E574731B707538006FA7B1 /* PincerActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E574681B707538006FA7B1 /* PincerActivityReminderViewController.swift */; };
+		82E574741B707538006FA7B1 /* PincerMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E574691B707538006FA7B1 /* PincerMoreInfoViewController.swift */; };
+		82E574751B707538006FA7B1 /* PincerTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5746A1B707538006FA7B1 /* PincerTestOverviewViewController.swift */; };
+		82E574761B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5746B1B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift */; };
+		82E574771B707538006FA7B1 /* WhyIsPincerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5746C1B707538006FA7B1 /* WhyIsPincerViewController.swift */; };
 		82E8B9661B29017D005E7BFE /* SavedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */; };
 		82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F694051B4B189B00E01B6F /* BNToolbarViewController.swift */; };
 		82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */; };
@@ -288,6 +299,17 @@
 		82E42AB71B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseTestOverviewViewController.swift; sourceTree = "<group>"; };
 		82E42AB91B4118E300BAE21B /* PupilResponseWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
 		82E42ABB1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = PupilResponseIsBabyReadyViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		82E574621B707538006FA7B1 /* Pincer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pincer.storyboard; sourceTree = "<group>"; };
+		82E574631B707538006FA7B1 /* PincerBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerBadOutcomeViewController.swift; sourceTree = "<group>"; };
+		82E574641B707538006FA7B1 /* PincerIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerIsBabyReadyViewController.swift; sourceTree = "<group>"; };
+		82E574651B707538006FA7B1 /* PincerTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerTimeToTestViewController.swift; sourceTree = "<group>"; };
+		82E574661B707538006FA7B1 /* PincerWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
+		82E574671B707538006FA7B1 /* PincerGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerGoodOutcomeViewController.swift; sourceTree = "<group>"; };
+		82E574681B707538006FA7B1 /* PincerActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerActivityReminderViewController.swift; sourceTree = "<group>"; };
+		82E574691B707538006FA7B1 /* PincerMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerMoreInfoViewController.swift; sourceTree = "<group>"; };
+		82E5746A1B707538006FA7B1 /* PincerTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerTestOverviewViewController.swift; sourceTree = "<group>"; };
+		82E5746B1B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PincerWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
+		82E5746C1B707538006FA7B1 /* WhyIsPincerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsPincerViewController.swift; sourceTree = "<group>"; };
 		82E8B9651B29017D005E7BFE /* SavedProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedProfileViewController.swift; sourceTree = "<group>"; };
 		82F694051B4B189B00E01B6F /* BNToolbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbarViewController.swift; sourceTree = "<group>"; };
 		82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNToolbar.swift; sourceTree = "<group>"; };
@@ -584,6 +606,7 @@
 		82E42ABD1B4118FE00BAE21B /* SensoryAndMotor */ = {
 			isa = PBXGroup;
 			children = (
+				82E574611B70724B006FA7B1 /* PincerGrasp */,
 				2078F06F1B63026D0046316F /* SelfRecognition */,
 				9EE7EB461B56D96800C73CA3 /* Symmetry */,
 				9EE7EB271B56A6A800C73CA3 /* Hearing */,
@@ -593,6 +616,25 @@
 			);
 			name = SensoryAndMotor;
 			sourceTree = "<group>";
+		};
+		82E574611B70724B006FA7B1 /* PincerGrasp */ = {
+			isa = PBXGroup;
+			children = (
+				82E574621B707538006FA7B1 /* Pincer.storyboard */,
+				82E574631B707538006FA7B1 /* PincerBadOutcomeViewController.swift */,
+				82E574641B707538006FA7B1 /* PincerIsBabyReadyViewController.swift */,
+				82E574651B707538006FA7B1 /* PincerTimeToTestViewController.swift */,
+				82E574661B707538006FA7B1 /* PincerWhatDidYouSeeViewController.swift */,
+				82E574671B707538006FA7B1 /* PincerGoodOutcomeViewController.swift */,
+				82E574681B707538006FA7B1 /* PincerActivityReminderViewController.swift */,
+				82E574691B707538006FA7B1 /* PincerMoreInfoViewController.swift */,
+				82E5746A1B707538006FA7B1 /* PincerTestOverviewViewController.swift */,
+				82E5746B1B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift */,
+				82E5746C1B707538006FA7B1 /* WhyIsPincerViewController.swift */,
+			);
+			name = PincerGrasp;
+			path = questionApp/PincerGrasp;
+			sourceTree = SOURCE_ROOT;
 		};
 		9E923CB61B69511000F2B0A7 /* FacialMimic */ = {
 			isa = PBXGroup;
@@ -929,6 +971,7 @@
 				209965861B63101C00B93C5D /* SelfRecognition.storyboard in Resources */,
 				9EABF2921B4D8A35002FDA2C /* Swift.gitignore in Resources */,
 				9EE7EB411B56C86A00C73CA3 /* PointFollowing.mp4 in Resources */,
+				82E5746D1B707538006FA7B1 /* Pincer.storyboard in Resources */,
 				9EC4240D1B5469C30037C0E9 /* PointFollowing.storyboard in Resources */,
 				209965A11B68597600B93C5D /* SocialSmiling.storyboard in Resources */,
 				82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */,
@@ -992,6 +1035,7 @@
 				82F78E8B1B3FB6FF006DBE9B /* BNButton.swift in Sources */,
 				9EE7EB511B56DE0800C73CA3 /* AttentionAtDistanceIsBabyReadyViewController.swift in Sources */,
 				82E42AB81B41113C00BAE21B /* PupilResponseTestOverviewViewController.swift in Sources */,
+				82E574761B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB161B55A61800C73CA3 /* CrossingEyesWhatWillYouNeedViewController.swift in Sources */,
 				209965A31B68599600B93C5D /* WhyIsSocialSmilingViewController.swift in Sources */,
 				9EE7EB5D1B56DE6E00C73CA3 /* AttentionAtDistanceActivityReminderViewController.swift in Sources */,
@@ -1002,8 +1046,10 @@
 				9EF313781B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift in Sources */,
 				9E934A671B6BBD790043F365 /* PartiallyCoveredToyWhatDidYouSeeViewController.swift in Sources */,
 				9EE7EB141B55A5FE00C73CA3 /* CrossingEyesTestOverviewViewController.swift in Sources */,
+				82E574771B707538006FA7B1 /* WhyIsPincerViewController.swift in Sources */,
 				9E934A621B6BBD790043F365 /* PartiallyCoveredToyGoodOutcomeViewController.swift in Sources */,
 				209965941B63113A00B93C5D /* SelfRecognitionGoodOutcomeViewController.swift in Sources */,
+				82E5746F1B707538006FA7B1 /* PincerIsBabyReadyViewController.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
 				9EABF2961B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift in Sources */,
 				209965881B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift in Sources */,
@@ -1016,6 +1062,7 @@
 				9EE7EB391B56A83100C73CA3 /* HearingMoreInfoViewController.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
 				209965AF1B685A6D00B93C5D /* SocialSmilingGoodOutcomeViewController.swift in Sources */,
+				82E574741B707538006FA7B1 /* PincerMoreInfoViewController.swift in Sources */,
 				9EE7EB121B55A5D400C73CA3 /* WhyIsCrossingEyesViewController.swift in Sources */,
 				9E934A641B6BBD790043F365 /* PartiallyCoveredToyMoreInfoViewController.swift in Sources */,
 				9E923CAF1B68257D00F2B0A7 /* Test.swift in Sources */,
@@ -1031,6 +1078,7 @@
 				9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */,
 				9EABF29C1B4DCF35002FDA2C /* FallingToyWhatDidYouSeeViewController.swift in Sources */,
 				209965981B6311FE00B93C5D /* SelfRecognitionMoreInfoViewController.swift in Sources */,
+				82E574721B707538006FA7B1 /* PincerGoodOutcomeViewController.swift in Sources */,
 				9E934A631B6BBD790043F365 /* PartiallyCoveredToyIsBabyReadyViewController.swift in Sources */,
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,
 				9EE7EB291B56A78700C73CA3 /* WhyIsHearingViewController.swift in Sources */,
@@ -1057,8 +1105,10 @@
 				209965A51B6859BB00B93C5D /* SocialSmilingTestOverviewViewController.swift in Sources */,
 				9ED51BC91B5813CC0000C5E6 /* SymmetryMoreInfoViewController.swift in Sources */,
 				82BA147D1B54167B00B18A21 /* ChartViewController.swift in Sources */,
+				82E574731B707538006FA7B1 /* PincerActivityReminderViewController.swift in Sources */,
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				9EE7EB571B56DE3600C73CA3 /* AttentionAtDistanceGoodOutcomeViewController.swift in Sources */,
+				82E574711B707538006FA7B1 /* PincerWhatDidYouSeeViewController.swift in Sources */,
 				9ED51BC11B5813830000C5E6 /* SymmetryTimeToTestViewController.swift in Sources */,
 				9E923CCC1B69523500F2B0A7 /* FacialMimicActivityReminderViewController.swift in Sources */,
 				9E923CC41B6951D300F2B0A7 /* FacialMimicWhatDidYouSeeViewController.swift in Sources */,
@@ -1077,6 +1127,7 @@
 				2099658A1B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift in Sources */,
 				9EC424181B5481FD0037C0E9 /* PointFollowingTimeToTestViewController.swift in Sources */,
 				82F78E891B3F78E5006DBE9B /* SensoryMotorMilestoneViewController.swift in Sources */,
+				82E574751B707538006FA7B1 /* PincerTestOverviewViewController.swift in Sources */,
 				9E934A651B6BBD790043F365 /* PartiallyCoveredToyTestOverviewViewController.swift in Sources */,
 				9EF3137A1B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift in Sources */,
 				209965B11B685A8D00B93C5D /* SocialSmilingBadOutcomeViewController.swift in Sources */,
@@ -1087,6 +1138,7 @@
 				82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
 				9ED51BC51B5813AF0000C5E6 /* SymmetryGoodOutcomeViewController.swift in Sources */,
+				82E574701B707538006FA7B1 /* PincerTimeToTestViewController.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
 				209965A71B6859D300B93C5D /* SocialSmilingWhatWillYouNeedViewControllerswift.swift in Sources */,
 				9EE7EB351B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift in Sources */,
@@ -1101,6 +1153,7 @@
 				9EE7EB1C1B55A66600C73CA3 /* CrossingEyesWhatDidYouSeeViewController.swift in Sources */,
 				9ED51BBB1B5813440000C5E6 /* SymmetryTestOverviewViewController.swift in Sources */,
 				9E934A611B6BBD790043F365 /* PartiallyCoveredToyBadOutcomeViewController.swift in Sources */,
+				82E5746E1B707538006FA7B1 /* PincerBadOutcomeViewController.swift in Sources */,
 				209965AB1B685A3A00B93C5D /* SocialSmilingTimeToTestViewController.swift in Sources */,
 				9EE7EB221B55A6A800C73CA3 /* CrossingEyesMoreInfoViewController.swift in Sources */,
 				9EE7EB181B55A63500C73CA3 /* CrossingEyesIsBabyReadyViewController.swift in Sources */,
