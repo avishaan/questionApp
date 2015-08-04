@@ -1,5 +1,5 @@
 //
-//  SymmetryActivityReminderViewController.swift
+//  PincerActivityReminderViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymmetryActivityReminderViewController: ActivityReminderViewController {
+class PincerActivityReminderViewController: ActivityReminderViewController {
 
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)

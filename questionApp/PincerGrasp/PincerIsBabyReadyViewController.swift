@@ -1,5 +1,5 @@
 //
-//  SymmetryIsBabyReadyViewController.swift
+//  PincerIsBabyReadyViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymmetryIsBabyReadyViewController: UIViewController {
+class PincerIsBabyReadyViewController: UIViewController {
 
     @IBOutlet weak var bulletedLabel1: UILabel!
     @IBOutlet weak var bulletedLabel2: UILabel!
@@ -29,12 +29,12 @@ class SymmetryIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("symmetryIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("pincerIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("symmetryIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("pincerIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     // Helper function formats text attributes for substrings in labels.

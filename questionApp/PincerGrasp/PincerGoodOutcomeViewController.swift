@@ -1,5 +1,5 @@
 //
-//  SymmetryGoodOutcomeViewController.swift
+//  PincerGoodOutcomeViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymmetryGoodOutcomeViewController: UIViewController {
+class PincerGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

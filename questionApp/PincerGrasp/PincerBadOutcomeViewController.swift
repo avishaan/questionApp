@@ -1,5 +1,5 @@
 //
-//  SymmetryBadOutcomeViewController.swift
+//  PincerBadOutcomeViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymmetryBadOutcomeViewController: UIViewController {
+class PincerBadOutcomeViewController: UIViewController {
 
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test: Test!
@@ -32,11 +32,11 @@ class SymmetryBadOutcomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "symmetryToActivityReminderSegue" {
+        if segue.identifier == "pincerToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.symmetry
+            controller.testName = TestNamesPresentable.pincer
         }
     }
     

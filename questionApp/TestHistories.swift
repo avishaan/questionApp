@@ -92,6 +92,7 @@ class TestHistories : NSObject, NSCoding {
             Test.TestNames.crossingEyes : Test.TestNames.crossingEyes,
             Test.TestNames.attentionAtDistance : Test.TestNames.attentionAtDistance,
             Test.TestNames.symmetry : Test.TestNames.symmetry,
+            Test.TestNames.pincer : Test.TestNames.pincer,
             Test.TestNames.partiallyCoveredToy : Test.TestNames.partiallyCoveredToy,
             Test.TestNames.selfRecognition : Test.TestNames.selfRecognition,
             Test.TestNames.socialSmiling : Test.TestNames.socialSmiling,

@@ -1,5 +1,5 @@
 //
-//  SymmetryWhatWillYouNeedViewController.swift
+//  PincerWhatWillYouNeedViewController.swift
 //  questionApp
 //
 //  Created by john bateman on 7/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SymmetryWhatWillYouNeedViewController: UIViewController {
+class PincerWhatWillYouNeedViewController: UIViewController {
     
     @IBOutlet weak var testPreparationLabel: UILabel!
     
@@ -25,9 +25,9 @@ class SymmetryWhatWillYouNeedViewController: UIViewController {
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
-            performSegueWithIdentifier("symmetryTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("pincerTimeToTestSegueID", sender: self)
         } else {
-            performSegueWithIdentifier("symmetryIsBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("pincerIsBabyReadySegueID", sender: self)
         }
     }
     
