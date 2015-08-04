@@ -1015,8 +1015,7 @@
                                         <exclude reference="liU-Rz-ulN"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="-2" width="320" height="570"/>
+                                <variation key="widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="dWO-V7-sjq"/>
                                     </mask>
