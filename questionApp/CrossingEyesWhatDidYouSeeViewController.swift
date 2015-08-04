@@ -40,7 +40,7 @@ class CrossingEyesWhatDidYouSeeViewController: UIViewController {
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "CrossingEyesBadOutcomeSegueID" {
+        } else if segue.identifier == "CrossingEyesBadOutcomeSegueID" || segue.identifier == "CrossingEyesBadOutcomeSegueID2" || segue.identifier == "CrossingEyesBadOutcomeSegueID3" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)

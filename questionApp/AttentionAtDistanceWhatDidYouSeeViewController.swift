@@ -40,7 +40,7 @@ class AttentionAtDistanceWhatDidYouSeeViewController: UIViewController {
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "AttentionAtDistanceBadOutcomeSegueID" {
+        } else if segue.identifier == "AttentionAtDistanceBadOutcomeSegueID" || segue.identifier == "AttentionAtDistanceBadOutcomeSegueID2"{
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)

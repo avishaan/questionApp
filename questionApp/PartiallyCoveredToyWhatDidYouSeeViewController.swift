@@ -40,7 +40,7 @@ class PartiallyCoveredToyWhatDidYouSeeViewController: UIViewController {
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "PartiallyCoveredToyBadOutcomeSegueID" {
+        } else if segue.identifier == "PartiallyCoveredToyBadOutcomeSegueID" || segue.identifier == "PartiallyCoveredToyBadOutcomeSegueID2" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)

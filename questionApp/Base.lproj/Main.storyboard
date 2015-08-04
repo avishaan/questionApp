@@ -1437,7 +1437,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="d8m-pO-qgZ" kind="presentation" identifier="PupilResponseBadOutcomeSegueID" id="Nke-0N-een"/>
+                                    <segue destination="d8m-pO-qgZ" kind="presentation" identifier="PupilResponseBadOutcomeSegueID2" id="Nke-0N-een"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9Z-Q6-PC9" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
@@ -1447,7 +1447,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="d8m-pO-qgZ" kind="presentation" identifier="PupilResponseBadOutcomeSegueID" id="bXU-UG-Zw5"/>
+                                    <segue destination="d8m-pO-qgZ" kind="presentation" identifier="PupilResponseBadOutcomeSegueID3" id="bXU-UG-Zw5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NER-Hl-a7v" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">

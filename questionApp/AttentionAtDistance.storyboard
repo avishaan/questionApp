@@ -541,7 +541,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZrB-CM-p8v" kind="presentation" identifier="AttentionAtDistanceBadOutcomeSegueID" id="PuM-bh-kRb"/>
+                                    <segue destination="ZrB-CM-p8v" kind="presentation" identifier="AttentionAtDistanceBadOutcomeSegueID2" id="PuM-bh-kRb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5kW-6p-L96" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
@@ -891,7 +891,7 @@
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="kNg-tO-Fym"/>
         <segue reference="eDb-aD-3G6"/>
-        <segue reference="PuM-bh-kRb"/>
     </inferredMetricsTieBreakers>
 </document>

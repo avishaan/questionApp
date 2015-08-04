@@ -40,7 +40,7 @@ class PupilResponseWhatDidYouSeeViewController: UIViewController {
 			test.addTestResult(testResult: true)
 			profiles.save()
 			
-		} else if segue.identifier == "PupilResponseBadOutcomeSegueID" {
+		} else if segue.identifier == "PupilResponseBadOutcomeSegueID" || segue.identifier == "PupilResponseBadOutcomeSegueID2" || segue.identifier == "PupilResponseBadOutcomeSegueID3" {
 			
 			// Record the failed symmetry test result and save it to the persistent store on disk.
 			test.addTestResult(testResult: false)
