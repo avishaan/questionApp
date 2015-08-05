@@ -13,8 +13,13 @@ class MilestonesViewController: UIViewController {
   @IBOutlet weak var babyImageView: UIImageView!
   @IBOutlet weak var ageLabel: UILabel!
   @IBOutlet weak var babyNameLabel: UILabel!
-  
+  @IBOutlet weak var sensoryAndMotorPieChartView: BNMilestonePieChartView!
+  @IBOutlet weak var languageAndCognitivePieChartView: BNMilestonePieChartView!
+  @IBOutlet weak var socialAndEmotionalPieChartView: BNMilestonePieChartView!
+  @IBOutlet weak var sensoryAndMotorLabel: UILabel!
   var parent = Parent()
+  @IBOutlet weak var languageAndCognitiveLabel: UILabel!
+  @IBOutlet weak var socialAndEmotionalLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -46,6 +51,12 @@ class MilestonesViewController: UIViewController {
     // update baby name
     babyNameLabel.text = parent.babyName
     
+    // update pie charts for each category
+    sensoryAndMotorPieChartView.config(["test","test","test","",""], values: [0.2,0.2,0.2,0.2,0.2])
+    languageAndCognitivePieChartView.config(["test","test",""], values: [0.33,0.33,0.33])
+    socialAndEmotionalPieChartView.config(["test","test","test",""], values: [0.25,0.25,0.25,0.25])
+    applyTextAttributesToLabels()
+    
   }
   
   override func didReceiveMemoryWarning() {
@@ -63,5 +74,27 @@ class MilestonesViewController: UIViewController {
   // Pass the selected object to the new view controller.
   }
   */
+  
+    // Helper function formats text attributes for substrings in labels.
+    func applyTextAttributesToLabels() {
+        
+        let blueAtrributes = [NSForegroundColorAttributeName: kBlue, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 13)!]
+        
+        // label 1
+        var attributedString1 = NSMutableAttributedString(string: sensoryAndMotorLabel.text!)
+        attributedString1.addAttributes(blueAtrributes, range: NSMakeRange(0, 15))
+        sensoryAndMotorLabel.attributedText = attributedString1
+        
+        // label 2
+        var attributedString2 = NSMutableAttributedString(string: languageAndCognitiveLabel.text!)
+        attributedString2.addAttributes(blueAtrributes, range: NSMakeRange(0, 21))
+        languageAndCognitiveLabel.attributedText = attributedString2
+        
+        // label 3
+        var attributedString3 = NSMutableAttributedString(string: socialAndEmotionalLabel.text!)
+        attributedString3.addAttributes(blueAtrributes, range: NSMakeRange(0, 34))
+        socialAndEmotionalLabel.attributedText = attributedString3
+    }
+
   
 }

@@ -29,6 +29,7 @@
 		209965B11B685A8D00B93C5D /* SocialSmilingBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965B01B685A8D00B93C5D /* SocialSmilingBadOutcomeViewController.swift */; };
 		209965B31B685AD000B93C5D /* SocialSmilingMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965B21B685AD000B93C5D /* SocialSmilingMoreInfoViewController.swift */; };
 		209965B51B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965B41B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift */; };
+		20DA0E6A1B7296B600B17C28 /* BNMilestonePieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E691B7296B600B17C28 /* BNMilestonePieChartView.swift */; };
 		82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82169C381B535DAA00F8786F /* FontAwesome.otf */; };
 		82338C851B26E6830067898E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82338C841B26E6830067898E /* AVKit.framework */; };
 		82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C201B2818D4008202EA /* UIButtonNext.swift */; };
@@ -260,6 +261,7 @@
 		209965B01B685A8D00B93C5D /* SocialSmilingBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialSmilingBadOutcomeViewController.swift; sourceTree = "<group>"; };
 		209965B21B685AD000B93C5D /* SocialSmilingMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialSmilingMoreInfoViewController.swift; sourceTree = "<group>"; };
 		209965B41B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialSmilingActivityReminderViewController.swift; sourceTree = "<group>"; };
+		20DA0E691B7296B600B17C28 /* BNMilestonePieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNMilestonePieChartView.swift; sourceTree = "<group>"; };
 		82169C381B535DAA00F8786F /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		82338C841B26E6830067898E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		82401C201B2818D4008202EA /* UIButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonNext.swift; sourceTree = "<group>"; };
@@ -688,6 +690,7 @@
 				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C2E1B285CF1008202EA /* UILabelTest.swift */,
+				20DA0E691B7296B600B17C28 /* BNMilestonePieChartView.swift */,
 			);
 			name = ViewClasses;
 			sourceTree = "<group>";
@@ -1160,6 +1163,7 @@
 				82E5746E1B707538006FA7B1 /* PincerBadOutcomeViewController.swift in Sources */,
 				209965AB1B685A3A00B93C5D /* SocialSmilingTimeToTestViewController.swift in Sources */,
 				9EE7EB221B55A6A800C73CA3 /* CrossingEyesMoreInfoViewController.swift in Sources */,
+				20DA0E6A1B7296B600B17C28 /* BNMilestonePieChartView.swift in Sources */,
 				9EE7EB181B55A63500C73CA3 /* CrossingEyesIsBabyReadyViewController.swift in Sources */,
 				9EC424221B548CB30037C0E9 /* SocialEmotionalMilestoneTestsViewController.swift in Sources */,
 				9E923CC61B6951E900F2B0A7 /* FacialMimicGoodOutcomeViewController.swift in Sources */,
