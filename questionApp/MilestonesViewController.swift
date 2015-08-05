@@ -87,12 +87,12 @@ class MilestonesViewController: UIViewController {
         
         // label 2
         var attributedString2 = NSMutableAttributedString(string: languageAndCognitiveLabel.text!)
-        attributedString2.addAttributes(blueAtrributes, range: NSMakeRange(0, 21))
+        attributedString2.addAttributes(blueAtrributes, range: NSMakeRange(0, 22))
         languageAndCognitiveLabel.attributedText = attributedString2
         
         // label 3
         var attributedString3 = NSMutableAttributedString(string: socialAndEmotionalLabel.text!)
-        attributedString3.addAttributes(blueAtrributes, range: NSMakeRange(0, 34))
+        attributedString3.addAttributes(blueAtrributes, range: NSMakeRange(0, 35))
         socialAndEmotionalLabel.attributedText = attributedString3
     }
 
