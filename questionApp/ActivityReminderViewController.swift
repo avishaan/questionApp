@@ -74,7 +74,7 @@ struct NotificationConstants {
 
 class ActivityReminderViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
     
-    /* The object that invokes this controller should set testName to a TestNamesPresentable member to identify the test. (See the TestNames struct at the top of this file.) This testName will be used in the Reminder presented to the user. */
+    /* The object that invokes this controller should set testName to a TestNamesPresentable member to identify the test. (See the TestNamesPresentable struct at the top of this file.) This testName will be used in the Reminder presented to the user. */
     var testName: String? = nil
     
     /* The object that invokes this controller should set testReminderInterval to a TestReminderInterval member to identify the appropriate amount of time to wait before re-administering the test. (See the TestReminderInterval struct at the top of this file.) This testReminderInterval will be used in the Reminder presented to the user. */

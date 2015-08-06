@@ -38,6 +38,26 @@ class Test: NSObject, NSCoding {
         // TODO: add additional var as new tests are added to the app
     }
     
+    static let SecondsInADay : Double = 24 * 60 * 60
+    
+    // Local Notification interval in seconds
+    struct NotificationInterval {
+        static var pupilResponse:       Double = 14 * Test.SecondsInADay
+        static var fallingToy:          Double = 14 * Test.SecondsInADay
+        static var letsCrawl:           Double = 14 * Test.SecondsInADay
+        static var pointFollowing:      Double = 14 * Test.SecondsInADay
+        static var hearing:             Double = 14 * Test.SecondsInADay
+        static var crossingEyes:        Double = 14 * Test.SecondsInADay
+        static var attentionAtDistance: Double = 14 * Test.SecondsInADay
+        static var symmetry:            Double = 14 * Test.SecondsInADay
+        static var pincer:              Double = 14 * Test.SecondsInADay
+        static var partiallyCoveredToy: Double = 14 * Test.SecondsInADay
+        static var selfRecognition :    Double = 14 * Test.SecondsInADay
+        static var socialSmiling:       Double = 14 * Test.SecondsInADay
+        static var facialMimic:         Double = 14 * Test.SecondsInADay
+        // TODO: add additional var as new tests are added to the app
+    }
+    
     /* Designated initializer: initialize the Test instance with default values. */
     override init() {
         super.init()

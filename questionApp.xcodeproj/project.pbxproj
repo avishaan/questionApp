@@ -87,6 +87,7 @@
 		82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */; };
 		82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */; };
 		82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */; };
+		9E5C765B1B72C04F00915E74 /* BNLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */; };
 		9E923CAF1B68257D00F2B0A7 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CAE1B68257D00F2B0A7 /* Test.swift */; };
 		9E923CB11B683E8600F2B0A7 /* TestProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */; };
 		9E923CB81B69513E00F2B0A7 /* FacialMimic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E923CB71B69513E00F2B0A7 /* FacialMimic.storyboard */; };
@@ -322,6 +323,7 @@
 		82F78E8C1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryMotorIntroViewController.swift; sourceTree = "<group>"; };
 		82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButtonNext.swift; sourceTree = "<group>"; };
 		82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsPupilResponseViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
+		9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = BNLocalNotification.swift; sourceTree = "<group>"; tabWidth = 2; };
 		9E923CAE1B68257D00F2B0A7 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Test.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProfiles.swift; sourceTree = "<group>"; };
 		9E923CB71B69513E00F2B0A7 /* FacialMimic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FacialMimic.storyboard; sourceTree = "<group>"; };
@@ -542,6 +544,7 @@
 				82C49BF91B424934002998C2 /* LaunchScreen.xcassets */,
 				829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */,
 				829F54E71B26995800ABE77C /* Supporting Files */,
+				9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */,
 			);
 			path = questionApp;
 			sourceTree = "<group>";
@@ -1143,6 +1146,7 @@
 				9EC424241B548CE90037C0E9 /* SocialEmotionalIntroViewController.swift in Sources */,
 				9EE7EB4B1B56DD8A00C73CA3 /* AttentionAtDistanceTestOverviewViewController.swift in Sources */,
 				82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */,
+				9E5C765B1B72C04F00915E74 /* BNLocalNotification.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
 				9ED51BC51B5813AF0000C5E6 /* SymmetryGoodOutcomeViewController.swift in Sources */,
 				82E574701B707538006FA7B1 /* PincerTimeToTestViewController.swift in Sources */,

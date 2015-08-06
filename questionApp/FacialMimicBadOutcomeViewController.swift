@@ -20,6 +20,10 @@ class FacialMimicBadOutcomeViewController: UIViewController {
         super.viewDidLoad()
         
         initializeViewFromTestHistory()
+        
+        // Schedule a test reminder as a local notification.
+        let localNotification = BNLocalNotification(nameOfTest: Test.TestNames.FacialMimic, secondsBeforeDisplayingReminder: Test.NotificationInterval.facialMimic)
+        localNotification.scheduleNotification(self)
     }
     
     override func didReceiveMemoryWarning() {
