@@ -30,6 +30,17 @@
 		209965B31B685AD000B93C5D /* SocialSmilingMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965B21B685AD000B93C5D /* SocialSmilingMoreInfoViewController.swift */; };
 		209965B51B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965B41B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift */; };
 		20DA0E6A1B7296B600B17C28 /* BNMilestonePieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E691B7296B600B17C28 /* BNMilestonePieChartView.swift */; };
+		20DA0E701B72E70D00B17C28 /* UnassistedSitting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DA0E6E1B72E70D00B17C28 /* UnassistedSitting.storyboard */; };
+		20DA0E721B72E72E00B17C28 /* WhyIsUnassistedSittingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E711B72E72E00B17C28 /* WhyIsUnassistedSittingViewController.swift */; };
+		20DA0E741B72E74C00B17C28 /* UnassistedSittingActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E731B72E74C00B17C28 /* UnassistedSittingActivityReminderViewController.swift */; };
+		20DA0E761B72E76F00B17C28 /* UnassistedSittingBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E751B72E76F00B17C28 /* UnassistedSittingBadOutcomeViewController.swift */; };
+		20DA0E781B72E7AD00B17C28 /* UnassistedSittingGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E771B72E7AD00B17C28 /* UnassistedSittingGoodOutcomeViewController.swift */; };
+		20DA0E7A1B72E7CC00B17C28 /* UnassistedSittingIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E791B72E7CC00B17C28 /* UnassistedSittingIsBabyReadyViewController.swift */; };
+		20DA0E7C1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E7B1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift */; };
+		20DA0E7E1B7318D000B17C28 /* UnassistedSittingTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E7D1B7318D000B17C28 /* UnassistedSittingTestOverviewViewController.swift */; };
+		20DA0E801B73191500B17C28 /* UnassistedSittingTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E7F1B73191500B17C28 /* UnassistedSittingTimeToTestViewController.swift */; };
+		20DA0E821B731B9000B17C28 /* UnassistedSittingWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E811B731B9000B17C28 /* UnassistedSittingWhatDidYouSeeViewController.swift */; };
+		20DA0E841B731BB400B17C28 /* UnassistedSittingWhatWillYouNeedViewControllerswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA0E831B731BB400B17C28 /* UnassistedSittingWhatWillYouNeedViewControllerswift.swift */; };
 		82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82169C381B535DAA00F8786F /* FontAwesome.otf */; };
 		82338C851B26E6830067898E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82338C841B26E6830067898E /* AVKit.framework */; };
 		82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C201B2818D4008202EA /* UIButtonNext.swift */; };
@@ -262,6 +273,17 @@
 		209965B21B685AD000B93C5D /* SocialSmilingMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialSmilingMoreInfoViewController.swift; sourceTree = "<group>"; };
 		209965B41B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialSmilingActivityReminderViewController.swift; sourceTree = "<group>"; };
 		20DA0E691B7296B600B17C28 /* BNMilestonePieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNMilestonePieChartView.swift; sourceTree = "<group>"; };
+		20DA0E6F1B72E70D00B17C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UnassistedSitting.storyboard; sourceTree = "<group>"; };
+		20DA0E711B72E72E00B17C28 /* WhyIsUnassistedSittingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsUnassistedSittingViewController.swift; sourceTree = "<group>"; };
+		20DA0E731B72E74C00B17C28 /* UnassistedSittingActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingActivityReminderViewController.swift; sourceTree = "<group>"; };
+		20DA0E751B72E76F00B17C28 /* UnassistedSittingBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingBadOutcomeViewController.swift; sourceTree = "<group>"; };
+		20DA0E771B72E7AD00B17C28 /* UnassistedSittingGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingGoodOutcomeViewController.swift; sourceTree = "<group>"; };
+		20DA0E791B72E7CC00B17C28 /* UnassistedSittingIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingIsBabyReadyViewController.swift; sourceTree = "<group>"; };
+		20DA0E7B1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingMoreInfoViewController.swift; sourceTree = "<group>"; };
+		20DA0E7D1B7318D000B17C28 /* UnassistedSittingTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingTestOverviewViewController.swift; sourceTree = "<group>"; };
+		20DA0E7F1B73191500B17C28 /* UnassistedSittingTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingTimeToTestViewController.swift; sourceTree = "<group>"; };
+		20DA0E811B731B9000B17C28 /* UnassistedSittingWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
+		20DA0E831B731BB400B17C28 /* UnassistedSittingWhatWillYouNeedViewControllerswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnassistedSittingWhatWillYouNeedViewControllerswift.swift; sourceTree = "<group>"; };
 		82169C381B535DAA00F8786F /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		82338C841B26E6830067898E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		82401C201B2818D4008202EA /* UIButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonNext.swift; sourceTree = "<group>"; };
@@ -492,6 +514,24 @@
 			name = SocialSmiling;
 			sourceTree = "<group>";
 		};
+		20DA0E6D1B72E6D400B17C28 /* UnassistedSitting */ = {
+			isa = PBXGroup;
+			children = (
+				20DA0E6E1B72E70D00B17C28 /* UnassistedSitting.storyboard */,
+				20DA0E711B72E72E00B17C28 /* WhyIsUnassistedSittingViewController.swift */,
+				20DA0E731B72E74C00B17C28 /* UnassistedSittingActivityReminderViewController.swift */,
+				20DA0E751B72E76F00B17C28 /* UnassistedSittingBadOutcomeViewController.swift */,
+				20DA0E771B72E7AD00B17C28 /* UnassistedSittingGoodOutcomeViewController.swift */,
+				20DA0E791B72E7CC00B17C28 /* UnassistedSittingIsBabyReadyViewController.swift */,
+				20DA0E7B1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift */,
+				20DA0E7D1B7318D000B17C28 /* UnassistedSittingTestOverviewViewController.swift */,
+				20DA0E7F1B73191500B17C28 /* UnassistedSittingTimeToTestViewController.swift */,
+				20DA0E811B731B9000B17C28 /* UnassistedSittingWhatDidYouSeeViewController.swift */,
+				20DA0E831B731BB400B17C28 /* UnassistedSittingWhatWillYouNeedViewControllerswift.swift */,
+			);
+			name = UnassistedSitting;
+			sourceTree = "<group>";
+		};
 		827869441B5413D20001F932 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +651,7 @@
 		82E42ABD1B4118FE00BAE21B /* SensoryAndMotor */ = {
 			isa = PBXGroup;
 			children = (
+				20DA0E6D1B72E6D400B17C28 /* UnassistedSitting */,
 				82E574611B70724B006FA7B1 /* PincerGrasp */,
 				2078F06F1B63026D0046316F /* SelfRecognition */,
 				9EE7EB461B56D96800C73CA3 /* Symmetry */,
@@ -987,6 +1028,7 @@
 				9E934A561B6BBD4B0043F365 /* PartiallyCoveredToy.storyboard in Resources */,
 				8296BFAC1B5B3E31007E842B /* IntroVideo.m4v in Resources */,
 				82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */,
+				20DA0E701B72E70D00B17C28 /* UnassistedSitting.storyboard in Resources */,
 				9E923CB81B69513E00F2B0A7 /* FacialMimic.storyboard in Resources */,
 				9ED51BB71B580A1F0000C5E6 /* Symmetry.storyboard in Resources */,
 				8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */,
@@ -1063,8 +1105,10 @@
 				9EE7EB2B1B56A7A300C73CA3 /* HearingTestOverviewViewController.swift in Sources */,
 				9EE7EB261B55D20E00C73CA3 /* CrossingEyesActivityReminderViewController.swift in Sources */,
 				9EF313821B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift in Sources */,
+				20DA0E7E1B7318D000B17C28 /* UnassistedSittingTestOverviewViewController.swift in Sources */,
 				9EC424121B5481730037C0E9 /* PointFollowingTestOverviewViewController.swift in Sources */,
 				9EC4241A1B54821A0037C0E9 /* PointFollowingWhatDidYouSeeViewController.swift in Sources */,
+				20DA0E7C1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift in Sources */,
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
 				9EE7EB391B56A83100C73CA3 /* HearingMoreInfoViewController.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
@@ -1072,6 +1116,7 @@
 				82E574741B707538006FA7B1 /* PincerMoreInfoViewController.swift in Sources */,
 				9EE7EB121B55A5D400C73CA3 /* WhyIsCrossingEyesViewController.swift in Sources */,
 				9E934A641B6BBD790043F365 /* PartiallyCoveredToyMoreInfoViewController.swift in Sources */,
+				20DA0E7A1B72E7CC00B17C28 /* UnassistedSittingIsBabyReadyViewController.swift in Sources */,
 				9E923CAF1B68257D00F2B0A7 /* Test.swift in Sources */,
 				9E923CC21B6951BD00F2B0A7 /* FacialMimicTimeToTestViewController.swift in Sources */,
 				9EC4241E1B5482940037C0E9 /* PointFollowingBadOutcomeViewController.swift in Sources */,
@@ -1089,8 +1134,10 @@
 				9E934A631B6BBD790043F365 /* PartiallyCoveredToyIsBabyReadyViewController.swift in Sources */,
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,
 				9EE7EB291B56A78700C73CA3 /* WhyIsHearingViewController.swift in Sources */,
+				20DA0E841B731BB400B17C28 /* UnassistedSittingWhatWillYouNeedViewControllerswift.swift in Sources */,
 				82D641F01B49F9D50013D5FB /* Parent.swift in Sources */,
 				9EE7EB591B56DE4300C73CA3 /* AttentionAtDistanceBadOutcomeViewController.swift in Sources */,
+				20DA0E801B73191500B17C28 /* UnassistedSittingTimeToTestViewController.swift in Sources */,
 				9EABF29A1B4DCA08002FDA2C /* FallingToyTimeToTestViewController.swift in Sources */,
 				9EE7EB201B55A68B00C73CA3 /* CrossingEyesBadOutcomeViewController.swift in Sources */,
 				9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */,
@@ -1121,6 +1168,7 @@
 				9E923CC41B6951D300F2B0A7 /* FacialMimicWhatDidYouSeeViewController.swift in Sources */,
 				9ED51BCB1B5813DE0000C5E6 /* SymmetryActivityReminderViewController.swift in Sources */,
 				9EE7EB4D1B56DDB800C73CA3 /* WhyIsAttentionAtDistanceViewController.swift in Sources */,
+				20DA0E821B731B9000B17C28 /* UnassistedSittingWhatDidYouSeeViewController.swift in Sources */,
 				9EC4241C1B54824A0037C0E9 /* PointFollowingGoodOutcomeViewController.swift in Sources */,
 				9ED51BC71B5813BB0000C5E6 /* SymmetryBadOutcomeViewController.swift in Sources */,
 				9ED51BBF1B5813720000C5E6 /* SymmetryIsBabyReadyViewController.swift in Sources */,
@@ -1137,6 +1185,7 @@
 				82E574751B707538006FA7B1 /* PincerTestOverviewViewController.swift in Sources */,
 				9E934A651B6BBD790043F365 /* PartiallyCoveredToyTestOverviewViewController.swift in Sources */,
 				9EF3137A1B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift in Sources */,
+				20DA0E741B72E74C00B17C28 /* UnassistedSittingActivityReminderViewController.swift in Sources */,
 				209965B11B685A8D00B93C5D /* SocialSmilingBadOutcomeViewController.swift in Sources */,
 				9EF313801B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift in Sources */,
 				209965901B6310F400B93C5D /* SelfRecognitionTimeToTestViewController.swift in Sources */,
@@ -1144,16 +1193,19 @@
 				9EE7EB4B1B56DD8A00C73CA3 /* AttentionAtDistanceTestOverviewViewController.swift in Sources */,
 				82F694061B4B189B00E01B6F /* BNToolbarViewController.swift in Sources */,
 				82F78E871B3E3CE0006DBE9B /* BNToolbar.swift in Sources */,
+				20DA0E761B72E76F00B17C28 /* UnassistedSittingBadOutcomeViewController.swift in Sources */,
 				9ED51BC51B5813AF0000C5E6 /* SymmetryGoodOutcomeViewController.swift in Sources */,
 				82E574701B707538006FA7B1 /* PincerTimeToTestViewController.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
 				209965A71B6859D300B93C5D /* SocialSmilingWhatWillYouNeedViewControllerswift.swift in Sources */,
 				9EE7EB351B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift in Sources */,
 				9EABF2941B4D8CD4002FDA2C /* FallingToyTestOverviewViewController.swift in Sources */,
+				20DA0E781B72E7AD00B17C28 /* UnassistedSittingGoodOutcomeViewController.swift in Sources */,
 				82D641E81B4908590013D5FB /* BNBackButton.swift in Sources */,
 				2099658C1B6310BB00B93C5D /* SelfRecognitionWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB2D1B56A7B900C73CA3 /* HearingWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB1A1B55A64D00C73CA3 /* CrossingEyesTimeToTestViewController.swift in Sources */,
+				20DA0E721B72E72E00B17C28 /* WhyIsUnassistedSittingViewController.swift in Sources */,
 				8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */,
 				9EE7EB3B1B56A86F00C73CA3 /* HearingActivityReminderViewController.swift in Sources */,
 				9E934A6A1B6BBD930043F365 /* WhyIsPartiallyCoveredToyViewController.swift in Sources */,
@@ -1209,6 +1261,14 @@
 				209965A01B68597600B93C5D /* Base */,
 			);
 			name = SocialSmiling.storyboard;
+			sourceTree = "<group>";
+		};
+		20DA0E6E1B72E70D00B17C28 /* UnassistedSitting.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20DA0E6F1B72E70D00B17C28 /* Base */,
+			);
+			name = UnassistedSitting.storyboard;
 			sourceTree = "<group>";
 		};
 		829F54F01B26995800ABE77C /* Main.storyboard */ = {
