@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyBadOutcomeViewController.swift
+//  UnassistedSittingBadOutcomeViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 7/30/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
+class UnassistedSittingBadOutcomeViewController: UIViewController {
   
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test : Test?
@@ -44,11 +44,11 @@ class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "partiallyCoveredToyToActivityReminderSegue" {
+        if segue.identifier == "unassistedSittingToActivityReminderSegue" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.partiallyCoveredToy
+            controller.testName = TestNamesPresentable.unassistedSitting
         }
     }
     
@@ -84,30 +84,30 @@ class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Not to worry. All babies develop at different rates. Try again in two weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "Baby doesn't reach?"
+            questionLabel.text = "Not sitting up?"
             
             // update infoLabel
-            let string = "Try the test again using baby’s favorite toy and with more of the toy showing. If he still doesn’t react, try the test again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:78, countOfBoldCharacters:58)
+            let string = "Help your baby get used to sitting by propping her up with a pillow on the couch. Try the test again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:31)
             
         } else if failed >= 3 {
             // update questionLabel
-            questionLabel.text = "Baby doesn't reach?"
+            questionLabel.text = "Not sitting up?"
             
             // update infoLabel
-            let string = "Inability to recognize Object Permanence after 12 months may indicate visual and/or cognitive issues. If baby consistently shows no reaction beyond 12 months, talk to your pediatrician at your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:101, countOfBoldCharacters:114)
+            let string = "If your baby goes past 18 months without being able to sit unassisted, this may indicate neuromuscular problems. Talk to your pediatrician at your next appointment. "
+            applyTextAttributesToLabel(string, indexAtStartOfBold:112, countOfBoldCharacters:52)
         } else {
             // update questionLabel
-            questionLabel.text = "Baby doesn't reach?"
+            questionLabel.text = "Not sitting up?"
             
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Not to worry. All babies develop at different rates. Try again in two weeks."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyIsBabyReadyViewController.swift
+//  UnassistedSittingIsBabyReadyViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 7/30/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PartiallyCoveredToyIsBabyReadyViewController: UIViewController {
+class UnassistedSittingIsBabyReadyViewController: UIViewController {
 
     @IBOutlet weak var bulletedLabel1: UILabel!
     @IBOutlet weak var bulletedLabel2: UILabel!
@@ -30,12 +30,12 @@ class PartiallyCoveredToyIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("partiallyCoveredToyIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("unassistedSittingIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("partiallyCoveredToyIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("unassistedSittingIsBabyReadyToTimeToTestSegueID", sender: self)
     }
 
     // Helper function formats text attributes for substrings in labels.

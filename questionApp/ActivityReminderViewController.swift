@@ -26,6 +26,7 @@ struct TestNamesPresentable {
     static var selfrecognition = "self recognition"
     static var socialsmiling = "social smiling"
     static var facialMimic = "facial mimic"
+    static var unassistedSitting = "unassisted sitting"
     // TODO: if new tests are added to the app, add them here.
 }
 
