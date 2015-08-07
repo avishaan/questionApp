@@ -66,7 +66,7 @@ class FacialMimicWhatDidYouSeeViewController: UIViewController {
             test.addTestResult(testResult: false)
             profiles.save()
             
-            let emptyString = ""
+            //let emptyString = ""
             //println("prepareForSegue() mid - failed test count: \(test.history.countOfFailedTests), total test count: \(test.history.countOfCompletedTests), profiles: \(profiles.testProfiles[emptyString]?.failedTestsCount(testName: Test.TestNames.FacialMimic))")
             printDebugInfo("prepareForSegue middle")
             

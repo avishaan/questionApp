@@ -14,12 +14,14 @@ Created on 8/5/15
 import UIKit
 import Foundation
 
+// TODO: remove RemindMe buttons from VCs
+
 class BNLocalNotification {
 
   struct NotificationConstants {
     static var subject = "babynoggin Test Reminder"
     static var body = "It's time to retry the test."
-    static var reminderBodyFormatted = "It's time to retry the %@ test."
+    static var reminderBodyFormatted = "It's time to retry the %@ test if your baby has not yet passed."
     static var composerErrorTitle = "Error"
     static var composerErrorMessage = "Unable to schedule the reminder."
     static var defaultInterval: Double = 5 // TODO: Currently set to 5 seconds to support testing. Must change to the following 2 week interval for beta release: 14 * 24 * 60 * 60 = 1209600
@@ -75,11 +77,13 @@ class BNLocalNotification {
     acquireNotificationPermission()
 
     // TODO: specify the test in the userInfo property so the app knows which test to display when it is launched.
-    let infoDictionary = [BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey : Test.TestNames.hearing] // TODO: test name
-    localNotification.userInfo = infoDictionary
-
+    if let testName = testName {
+      let infoDictionary = [BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey : testName]
+      localNotification.userInfo = infoDictionary
+    }
+    
     // schedule the notification
-    localNotification.fireDate = NSDate(timeIntervalSinceNow: 5 /*TODO: switch to this --> elapsedSecondsBeforePresentingReminder*/)
+    localNotification.fireDate = NSDate(timeIntervalSinceNow: 20 /*TODO: switch to this --> elapsedSecondsBeforePresentingReminder*/)
     UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     
     //presentConfirmationAlert()
@@ -245,5 +249,31 @@ class BNLocalNotification {
     
     // remove the local notification
     UIApplication.sharedApplication().cancelLocalNotification(localNotification)
+  }
+  
+  // TODO: call this function if the test was passed.
+  /*!
+  @brief Kill a local notification if the test was passed in the interim.
+  @discussion If the local notification was previously scheduled, this function will remove it by searching all local notifications for the proper userInfo key containing the test's name.
+  @param (in) testName - The name of the test whose local notification is to be deleted. Use a Test.TestNames value. (cannot be nil)
+  */
+  static func removeLocalNotification(testName: String) {
+    
+    var theApp:UIApplication = UIApplication.sharedApplication()
+    
+    // Iterate through all local notifications to find one containing testName in the userInfo and delete it.
+    for locNotif in theApp.scheduledLocalNotifications {
+      var notification = locNotif as! UILocalNotification
+      let notificationUserInfo = notification.userInfo! as! [String:AnyObject]
+      let notificationTestName = notificationUserInfo[BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey]! as! String
+      if notificationTestName == testName {
+                // TODO: add profile name to the userInfo and only delete if same profile name
+                //        in other words, the first child fails repeatedly, while the 2nd fails then passes. Only delete the notification belonging to the second child.
+        
+        // match! Cancel this local notification.
+        theApp.cancelLocalNotification(notification)
+        break
+      }
+    }
   }
 }
