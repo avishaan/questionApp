@@ -38,6 +38,23 @@ class Test: NSObject, NSCoding {
         // TODO: add additional var as new tests are added to the app
     }
     
+    struct TestNamesPresentable {
+        static var pupilResponse = "pupil response"
+        static var fallingToy = "falling toy"
+        static var letsCrawl = "let's crawl"
+        static var pointFollowing = "point following"
+        static var hearing = "hearing"
+        static var crossingEyes = "crossing eyes"
+        static var attentionAtDistance = "attention at distance"
+        static var symmetry = "symmetry"
+        static var pincer = "pincer"
+        static var partiallyCoveredToy = "partially covered toy"
+        static var selfrecognition = "self recognition"
+        static var socialsmiling = "social smiling"
+        static var facialMimic = "facial mimic"
+        // TODO: if new tests are added to the app, add them here.
+    }
+    
     static let SecondsInADay : Double = 24 * 60 * 60
     
     // Local Notification interval in seconds
@@ -55,6 +72,24 @@ class Test: NSObject, NSCoding {
         static var selfRecognition :    Double = 14 * Test.SecondsInADay
         static var socialSmiling:       Double = 14 * Test.SecondsInADay
         static var facialMimic:         Double = 14 * Test.SecondsInADay
+        // TODO: add additional var as new tests are added to the app
+    }
+    
+    // Local Notification trigger identifies the number of failed tests that trigger the scheduling of a local notification to reminder the user to run the test again.
+    struct LocalNotificationTrigger {
+        static var pupilResponse:       Int = 2
+        static var fallingToy:          Int = 2
+        static var letsCrawl:           Int = 2
+        static var pointFollowing:      Int = 2
+        static var hearing:             Int = 2
+        static var crossingEyes:        Int = 2
+        static var attentionAtDistance: Int = 2
+        static var symmetry:            Int = 2
+        static var pincer:              Int = 2
+        static var partiallyCoveredToy: Int = 2
+        static var selfRecognition :    Int = 2
+        static var socialSmiling:       Int = 2
+        static var facialMimic:         Int = 2
         // TODO: add additional var as new tests are added to the app
     }
     
