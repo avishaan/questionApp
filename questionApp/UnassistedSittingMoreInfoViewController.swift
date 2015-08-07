@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyMoreInfoViewController.swift
+//  UnassistedSittingMoreInfoViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 7/30/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PartiallyCoveredToyMoreInfoViewController: UIViewController {
+class UnassistedSittingMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

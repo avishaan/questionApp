@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyTimeToTestViewController.swift
+//  UnassistedSittingTimeToTestViewController.swift
 //  questionApp
 //
 //  Created by daniel hsu on 7/30/15.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class PartiallyCoveredToyTimeToTestViewController: UIViewController {
+class UnassistedSittingTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     @IBOutlet weak var step2Label: UILabel!

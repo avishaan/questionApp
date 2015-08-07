@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyTestOverviewViewController.swift
+//  UnassistedSittingTestOverviewViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 7/30/15.
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class PartiallyCoveredToyTestOverviewViewController: UIViewController {
+class UnassistedSittingTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -59,7 +59,7 @@ class PartiallyCoveredToyTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "partiallyCoveredToyWhatWillYouNeedSegueID" {
+        else if segue.identifier == "unassistedSittingWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }

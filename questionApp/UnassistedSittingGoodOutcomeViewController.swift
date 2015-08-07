@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyGoodOutcomeViewController.swift
+//  UnassistedSittingGoodOutcomeViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 7/30/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PartiallyCoveredToyGoodOutcomeViewController: UIViewController {
+class UnassistedSittingGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

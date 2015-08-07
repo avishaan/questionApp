@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyWhatDidYouSeeViewController.swift
+//  UnassistedSittingWhatDidYouSeeViewController.swift
 //  questionApp
 //
 //  Created by daniel hsu on 7/28/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PartiallyCoveredToyWhatDidYouSeeViewController: UIViewController {
+class UnassistedSittingWhatDidYouSeeViewController: UIViewController {
 
     var parent = Parent()
     var profiles = TestProfiles()
@@ -34,20 +34,20 @@ class PartiallyCoveredToyWhatDidYouSeeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "PartiallyCoveredToyGoodOutcomeSegueID" {
+        if segue.identifier == "UnassistedSittingGoodOutcomeSegueID" {
             
             // Record the successful symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "PartiallyCoveredToyBadOutcomeSegueID" || segue.identifier == "PartiallyCoveredToyBadOutcomeSegueID2" {
+        } else if segue.identifier == "UnassistedSittingBadOutcomeSegueID" || segue.identifier == "UnassistedSittingBadOutcomeSegueID2" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)
             profiles.save()
             
             // Pass the test results history to the destination VC.
-            let controller = segue.destinationViewController as! PartiallyCoveredToyBadOutcomeViewController
+            let controller = segue.destinationViewController as! UnassistedSittingBadOutcomeViewController
             controller.test = self.test
         }
     }

@@ -43,5 +43,9 @@ class SensoryMotorMilestoneViewController: UIViewController {
     var controller: WhyIsPincerViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPincerStoryboardID") as! WhyIsPincerViewController
     self.presentViewController(controller, animated: true, completion: nil);
   }
+    @IBAction func onUnassistedSittingButtonTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "UnassistedSitting", bundle: nil)
+    var controller: WhyIsUnassistedSittingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsUnassistedSittingStoryboardID") as! WhyIsUnassistedSittingViewController
+    self.presentViewController(controller, animated: true, completion: nil);    }
   
 }

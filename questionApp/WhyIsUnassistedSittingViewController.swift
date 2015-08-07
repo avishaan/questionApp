@@ -1,14 +1,14 @@
 //
-//  WhyIsPartiallyCoveredToyViewController.swift
+//  WhyIsUnassistedSittingViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/5/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class WhyIsPartiallyCoveredToyViewController: UIViewController {
+class WhyIsUnassistedSittingViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -29,16 +29,16 @@ class WhyIsPartiallyCoveredToyViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "This another test of your baby’s grasp of Object Permanence. Object Permanence is the understanding that an object partially hidden from view still exists and can be retrieved."
+        let string = "Between 4 and 8 months, your baby should be able to sit up without your help by propping herself up with her arms. This is an important gross motor skills milestone."
         
         var attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 41))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(41, 19))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(60, 116))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 7))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(7, 15))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(22, 143))
         
         descriptionLabel.attributedText = attributedString
     }

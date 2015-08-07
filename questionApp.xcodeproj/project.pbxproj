@@ -519,15 +519,15 @@
 			children = (
 				20DA0E6E1B72E70D00B17C28 /* UnassistedSitting.storyboard */,
 				20DA0E711B72E72E00B17C28 /* WhyIsUnassistedSittingViewController.swift */,
-				20DA0E731B72E74C00B17C28 /* UnassistedSittingActivityReminderViewController.swift */,
-				20DA0E751B72E76F00B17C28 /* UnassistedSittingBadOutcomeViewController.swift */,
-				20DA0E771B72E7AD00B17C28 /* UnassistedSittingGoodOutcomeViewController.swift */,
-				20DA0E791B72E7CC00B17C28 /* UnassistedSittingIsBabyReadyViewController.swift */,
-				20DA0E7B1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift */,
 				20DA0E7D1B7318D000B17C28 /* UnassistedSittingTestOverviewViewController.swift */,
+				20DA0E831B731BB400B17C28 /* UnassistedSittingWhatWillYouNeedViewControllerswift.swift */,
+				20DA0E791B72E7CC00B17C28 /* UnassistedSittingIsBabyReadyViewController.swift */,
 				20DA0E7F1B73191500B17C28 /* UnassistedSittingTimeToTestViewController.swift */,
 				20DA0E811B731B9000B17C28 /* UnassistedSittingWhatDidYouSeeViewController.swift */,
-				20DA0E831B731BB400B17C28 /* UnassistedSittingWhatWillYouNeedViewControllerswift.swift */,
+				20DA0E771B72E7AD00B17C28 /* UnassistedSittingGoodOutcomeViewController.swift */,
+				20DA0E751B72E76F00B17C28 /* UnassistedSittingBadOutcomeViewController.swift */,
+				20DA0E7B1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift */,
+				20DA0E731B72E74C00B17C28 /* UnassistedSittingActivityReminderViewController.swift */,
 			);
 			name = UnassistedSitting;
 			sourceTree = "<group>";
