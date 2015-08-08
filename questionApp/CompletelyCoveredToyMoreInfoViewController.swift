@@ -1,14 +1,14 @@
 //
-//  PartiallyCoveredToyMoreInfoViewController.swift
+//  CompletelyCoveredToyMoreInfoViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/7/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class PartiallyCoveredToyMoreInfoViewController: UIViewController {
+class CompletelyCoveredToyMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

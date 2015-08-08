@@ -1,15 +1,15 @@
 //
-//  PartiallyCoveredToyTimeToTestViewController.swift
+//  CompletelyCoveredToyTimeToTestViewController.swift
 //  questionApp
 //
-//  Created by daniel hsu on 7/30/15.
+//  Created by daniel hsu on 8/7/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class PartiallyCoveredToyTimeToTestViewController: UIViewController {
+class CompletelyCoveredToyTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     @IBOutlet weak var step2Label: UILabel!

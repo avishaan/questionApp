@@ -1,8 +1,8 @@
 //
-//  PartiallyCoveredToyTestOverviewViewController.swift
+//  CompletelyCoveredToyTestOverviewViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/7/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class PartiallyCoveredToyTestOverviewViewController: UIViewController {
+class CompletelyCoveredToyTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -59,7 +59,7 @@ class PartiallyCoveredToyTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "partiallyCoveredToyWhatWillYouNeedSegueID" {
+        else if segue.identifier == "completelyCoveredToyWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }

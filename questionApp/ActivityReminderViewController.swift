@@ -23,6 +23,7 @@ struct TestNamesPresentable {
     static var symmetry = "symmetry"
     static var pincer = "pincer"
     static var partiallyCoveredToy = "partially covered toy"
+    static var completelyCoveredToy = "completely covered toy"
     static var selfrecognition = "self recognition"
     static var socialsmiling = "social smiling"
     static var facialMimic = "facial mimic"

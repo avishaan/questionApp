@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyWhatWillYouNeedViewController.swift
+//  CompletelyCoveredToyWhatWillYouNeedViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 7/30/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PartiallyCoveredToyWhatWillYouNeedViewController: UIViewController {
+class CompletelyCoveredToyWhatWillYouNeedViewController: UIViewController {
 
     @IBOutlet weak var testPreparationLabel: UILabel!
     
@@ -25,9 +25,9 @@ class PartiallyCoveredToyWhatWillYouNeedViewController: UIViewController {
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
-            performSegueWithIdentifier("partiallyCoveredToyTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("completelyCoveredToyTimeToTestSegueID", sender: self)
         } else {
-            performSegueWithIdentifier("partiallyCoveredToyIsBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("completelyCoveredToyIsBabyReadySegueID", sender: self)
         }
     }
     

@@ -1,5 +1,5 @@
 //
-//  PartiallyCoveredToyActivityReminderViewController.swift
+//  CompletelyCoveredToyActivityReminderViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 7/30/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PartiallyCoveredToyActivityReminderViewController: ActivityReminderViewController {
+class CompletelyCoveredToyActivityReminderViewController: ActivityReminderViewController {
    
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)

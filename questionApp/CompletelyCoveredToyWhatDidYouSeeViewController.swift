@@ -1,14 +1,14 @@
 //
-//  PartiallyCoveredToyWhatDidYouSeeViewController.swift
+//  CompletelyCoveredToyWhatDidYouSeeViewController.swift
 //  questionApp
 //
-//  Created by daniel hsu on 7/28/15.
+//  Created by daniel hsu on 8/7/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class PartiallyCoveredToyWhatDidYouSeeViewController: UIViewController {
+class CompletelyCoveredToyWhatDidYouSeeViewController: UIViewController {
 
     var parent = Parent()
     var profiles = TestProfiles()
@@ -34,20 +34,20 @@ class PartiallyCoveredToyWhatDidYouSeeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "PartiallyCoveredToyGoodOutcomeSegueID" {
+        if segue.identifier == "CompletelyCoveredToyGoodOutcomeSegueID" {
             
             // Record the successful symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "PartiallyCoveredToyBadOutcomeSegueID" || segue.identifier == "PartiallyCoveredToyBadOutcomeSegueID2" {
+        } else if segue.identifier == "CompletelyCoveredToyBadOutcomeSegueID" || segue.identifier == "CompletelyCoveredToyBadOutcomeSegueID2" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)
             profiles.save()
             
             // Pass the test results history to the destination VC.
-            let controller = segue.destinationViewController as! PartiallyCoveredToyBadOutcomeViewController
+            let controller = segue.destinationViewController as! CompletelyCoveredToyBadOutcomeViewController
             controller.test = self.test
         }
     }
