@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205787071B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205787051B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard */; };
+		205787091B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205787081B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift */; };
+		2057870B1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057870A1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift */; };
+		2057870D1B75D422002A61B6 /* CompletelyCoveredToyBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057870C1B75D422002A61B6 /* CompletelyCoveredToyBadOutcomeViewController.swift */; };
+		2057870F1B75D446002A61B6 /* CompletelyCoveredToyGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057870E1B75D446002A61B6 /* CompletelyCoveredToyGoodOutcomeViewController.swift */; };
+		205787111B75D462002A61B6 /* CompletelyCoveredToyIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205787101B75D462002A61B6 /* CompletelyCoveredToyIsBabyReadyViewController.swift */; };
+		205787131B75D48A002A61B6 /* CompletelyCoveredToyMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205787121B75D48A002A61B6 /* CompletelyCoveredToyMoreInfoViewController.swift */; };
+		205787151B75D4A8002A61B6 /* CompletelyCoveredToyTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205787141B75D4A8002A61B6 /* CompletelyCoveredToyTestOverviewViewController.swift */; };
+		205787171B75D4C4002A61B6 /* CompletelyCoveredToyTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205787161B75D4C4002A61B6 /* CompletelyCoveredToyTimeToTestViewController.swift */; };
+		205787191B75D4E2002A61B6 /* CompletelyCoveredToyWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205787181B75D4E2002A61B6 /* CompletelyCoveredToyWhatDidYouSeeViewController.swift */; };
+		2057871B1B75D57B002A61B6 /* CompletelyCoveredToyWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057871A1B75D57B002A61B6 /* CompletelyCoveredToyWhatWillYouNeedViewController.swift */; };
 		209965861B63101C00B93C5D /* SelfRecognition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209965851B63101C00B93C5D /* SelfRecognition.storyboard */; };
 		209965881B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965871B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift */; };
 		2099658A1B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209965891B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift */; };
@@ -121,7 +132,7 @@
 		9E934A651B6BBD790043F365 /* PartiallyCoveredToyTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E934A5C1B6BBD790043F365 /* PartiallyCoveredToyTestOverviewViewController.swift */; };
 		9E934A661B6BBD790043F365 /* PartiallyCoveredToyTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E934A5D1B6BBD790043F365 /* PartiallyCoveredToyTimeToTestViewController.swift */; };
 		9E934A671B6BBD790043F365 /* PartiallyCoveredToyWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E934A5E1B6BBD790043F365 /* PartiallyCoveredToyWhatDidYouSeeViewController.swift */; };
-		9E934A681B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewControllerswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E934A5F1B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewControllerswift.swift */; };
+		9E934A681B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E934A5F1B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewController.swift */; };
 		9E934A6A1B6BBD930043F365 /* WhyIsPartiallyCoveredToyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E934A691B6BBD930043F365 /* WhyIsPartiallyCoveredToyViewController.swift */; };
 		9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */; };
 		9EABF2901B4D87E8002FDA2C /* FallingToy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9EABF28F1B4D87E8002FDA2C /* FallingToy.mp4 */; };
@@ -251,6 +262,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		205787061B75CD0C002A61B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CompletelyCoveredToy.storyboard; sourceTree = "<group>"; };
+		205787081B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsCompletelyCoveredToyViewController.swift; sourceTree = "<group>"; };
+		2057870A1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyActivityReminderViewController.swift; sourceTree = "<group>"; };
+		2057870C1B75D422002A61B6 /* CompletelyCoveredToyBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyBadOutcomeViewController.swift; sourceTree = "<group>"; };
+		2057870E1B75D446002A61B6 /* CompletelyCoveredToyGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyGoodOutcomeViewController.swift; sourceTree = "<group>"; };
+		205787101B75D462002A61B6 /* CompletelyCoveredToyIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyIsBabyReadyViewController.swift; sourceTree = "<group>"; };
+		205787121B75D48A002A61B6 /* CompletelyCoveredToyMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyMoreInfoViewController.swift; sourceTree = "<group>"; };
+		205787141B75D4A8002A61B6 /* CompletelyCoveredToyTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyTestOverviewViewController.swift; sourceTree = "<group>"; };
+		205787161B75D4C4002A61B6 /* CompletelyCoveredToyTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyTimeToTestViewController.swift; sourceTree = "<group>"; };
+		205787181B75D4E2002A61B6 /* CompletelyCoveredToyWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
+		2057871A1B75D57B002A61B6 /* CompletelyCoveredToyWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
 		209965851B63101C00B93C5D /* SelfRecognition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelfRecognition.storyboard; sourceTree = "<group>"; };
 		209965871B63105A00B93C5D /* WhyIsSelfRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsSelfRecognitionViewController.swift; sourceTree = "<group>"; };
 		209965891B63107F00B93C5D /* SelfRecognitionTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfRecognitionTestOverviewViewController.swift; sourceTree = "<group>"; };
@@ -368,7 +390,7 @@
 		9E934A5C1B6BBD790043F365 /* PartiallyCoveredToyTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiallyCoveredToyTestOverviewViewController.swift; sourceTree = "<group>"; };
 		9E934A5D1B6BBD790043F365 /* PartiallyCoveredToyTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiallyCoveredToyTimeToTestViewController.swift; sourceTree = "<group>"; };
 		9E934A5E1B6BBD790043F365 /* PartiallyCoveredToyWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiallyCoveredToyWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
-		9E934A5F1B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewControllerswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiallyCoveredToyWhatWillYouNeedViewControllerswift.swift; sourceTree = "<group>"; };
+		9E934A5F1B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartiallyCoveredToyWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
 		9E934A691B6BBD930043F365 /* WhyIsPartiallyCoveredToyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsPartiallyCoveredToyViewController.swift; sourceTree = "<group>"; };
 		9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsObjectPermanenceViewController.swift; sourceTree = "<group>"; };
 		9EABF28F1B4D87E8002FDA2C /* FallingToy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FallingToy.mp4; sourceTree = "<group>"; };
@@ -480,6 +502,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		205787041B75CCF6002A61B6 /* CompletelyCoveredToy */ = {
+			isa = PBXGroup;
+			children = (
+				205787051B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard */,
+				205787081B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift */,
+				205787141B75D4A8002A61B6 /* CompletelyCoveredToyTestOverviewViewController.swift */,
+				2057871A1B75D57B002A61B6 /* CompletelyCoveredToyWhatWillYouNeedViewController.swift */,
+				205787101B75D462002A61B6 /* CompletelyCoveredToyIsBabyReadyViewController.swift */,
+				205787161B75D4C4002A61B6 /* CompletelyCoveredToyTimeToTestViewController.swift */,
+				205787181B75D4E2002A61B6 /* CompletelyCoveredToyWhatDidYouSeeViewController.swift */,
+				2057870E1B75D446002A61B6 /* CompletelyCoveredToyGoodOutcomeViewController.swift */,
+				2057870C1B75D422002A61B6 /* CompletelyCoveredToyBadOutcomeViewController.swift */,
+				205787121B75D48A002A61B6 /* CompletelyCoveredToyMoreInfoViewController.swift */,
+				2057870A1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift */,
+			);
+			name = CompletelyCoveredToy;
+			sourceTree = "<group>";
+		};
 		2078F06F1B63026D0046316F /* SelfRecognition */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,7 +792,7 @@
 				9E934A5C1B6BBD790043F365 /* PartiallyCoveredToyTestOverviewViewController.swift */,
 				9E934A5D1B6BBD790043F365 /* PartiallyCoveredToyTimeToTestViewController.swift */,
 				9E934A5E1B6BBD790043F365 /* PartiallyCoveredToyWhatDidYouSeeViewController.swift */,
-				9E934A5F1B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewControllerswift.swift */,
+				9E934A5F1B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewController.swift */,
 			);
 			name = PartiallyCoveredToy;
 			sourceTree = "<group>";
@@ -760,6 +800,7 @@
 		9EAEB5DA1B4CA68500159730 /* LanaguageAndCognitive */ = {
 			isa = PBXGroup;
 			children = (
+				205787041B75CCF6002A61B6 /* CompletelyCoveredToy */,
 				9E934A531B6BBD210043F365 /* PartiallyCoveredToy */,
 				9EE7EB471B56D98900C73CA3 /* AttentionAtDistance */,
 				9EC4240E1B5474650037C0E9 /* FallingToy */,
@@ -1037,6 +1078,7 @@
 				8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */,
 				9EE7EB3D1B56A88A00C73CA3 /* Hearing.storyboard in Resources */,
 				9EF313761B5066470094DAC7 /* LetsCrawl.mp4 in Resources */,
+				205787071B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard in Resources */,
 				829F55101B26BB1B00ABE77C /* FacialMimic.mp4 in Resources */,
 				829F54F41B26995800ABE77C /* Images.xcassets in Resources */,
 				9EABF2901B4D87E8002FDA2C /* FallingToy.mp4 in Resources */,
@@ -1064,7 +1106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF3137E1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift in Sources */,
-				9E934A681B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewControllerswift.swift in Sources */,
+				9E934A681B6BBD790043F365 /* PartiallyCoveredToyWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB2F1B56A7CE00C73CA3 /* HearingIsBabyReadyViewController.swift in Sources */,
 				9ED51C0A1B5C22C70000C5E6 /* TestHistories.swift in Sources */,
 				9E923CCA1B69521800F2B0A7 /* FacialMimicMoreInfoViewController.swift in Sources */,
@@ -1079,6 +1121,7 @@
 				9E934A601B6BBD790043F365 /* PartiallyCoveredToyActivityReminderViewController.swift in Sources */,
 				82D641EC1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift in Sources */,
 				82D1415B1B41289F0048434F /* PupilResponseTimeToTestViewController.swift in Sources */,
+				205787131B75D48A002A61B6 /* CompletelyCoveredToyMoreInfoViewController.swift in Sources */,
 				82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */,
 				9E923CC01B6951A600F2B0A7 /* FacialMimicIsBabyReadyViewController.swift in Sources */,
 				9EABF2A01B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift in Sources */,
@@ -1094,12 +1137,14 @@
 				9EABF2981B4DB4F5002FDA2C /* FallingToyIsBabyReadyViewController.swift in Sources */,
 				9EE7EB371B56A81600C73CA3 /* HearingBadOutcomeViewController.swift in Sources */,
 				9EE7EB551B56DE2700C73CA3 /* AttentionAtDistanceWhatDidYouSeeViewController.swift in Sources */,
+				205787091B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift in Sources */,
 				209965B51B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift in Sources */,
 				9EF313781B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift in Sources */,
 				9E934A671B6BBD790043F365 /* PartiallyCoveredToyWhatDidYouSeeViewController.swift in Sources */,
 				9EE7EB141B55A5FE00C73CA3 /* CrossingEyesTestOverviewViewController.swift in Sources */,
 				82E574771B707538006FA7B1 /* WhyIsPincerViewController.swift in Sources */,
 				9E934A621B6BBD790043F365 /* PartiallyCoveredToyGoodOutcomeViewController.swift in Sources */,
+				205787151B75D4A8002A61B6 /* CompletelyCoveredToyTestOverviewViewController.swift in Sources */,
 				209965941B63113A00B93C5D /* SelfRecognitionGoodOutcomeViewController.swift in Sources */,
 				82E5746F1B707538006FA7B1 /* PincerIsBabyReadyViewController.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
@@ -1112,6 +1157,7 @@
 				9EC424121B5481730037C0E9 /* PointFollowingTestOverviewViewController.swift in Sources */,
 				9EC4241A1B54821A0037C0E9 /* PointFollowingWhatDidYouSeeViewController.swift in Sources */,
 				20DA0E7C1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift in Sources */,
+				205787111B75D462002A61B6 /* CompletelyCoveredToyIsBabyReadyViewController.swift in Sources */,
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
 				9EE7EB391B56A83100C73CA3 /* HearingMoreInfoViewController.swift in Sources */,
 				82401C251B283246008202EA /* BNTextField.swift in Sources */,
@@ -1127,6 +1173,9 @@
 				829F54EF1B26995800ABE77C /* ViewController.swift in Sources */,
 				9EE7EB4F1B56DDEF00C73CA3 /* AttentionAtDistanceWhatWillYouNeedViewController.swift in Sources */,
 				9ED51BBD1B58135D0000C5E6 /* SymmetryWhatWillYouNeedViewController.swift in Sources */,
+				205787191B75D4E2002A61B6 /* CompletelyCoveredToyWhatDidYouSeeViewController.swift in Sources */,
+				2057870D1B75D422002A61B6 /* CompletelyCoveredToyBadOutcomeViewController.swift in Sources */,
+				205787171B75D4C4002A61B6 /* CompletelyCoveredToyTimeToTestViewController.swift in Sources */,
 				9EF3137C1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift in Sources */,
 				9ED51BC31B58139F0000C5E6 /* SymmetryWhatDidYouSeeViewController.swift in Sources */,
 				9EABF2A41B4DF40F002FDA2C /* ActivityReminderViewController.swift in Sources */,
@@ -1144,6 +1193,7 @@
 				9EABF29A1B4DCA08002FDA2C /* FallingToyTimeToTestViewController.swift in Sources */,
 				9EE7EB201B55A68B00C73CA3 /* CrossingEyesBadOutcomeViewController.swift in Sources */,
 				9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */,
+				2057871B1B75D57B002A61B6 /* CompletelyCoveredToyWhatWillYouNeedViewController.swift in Sources */,
 				9E923CC81B6951F900F2B0A7 /* FacialMimicBadOutcomeViewController.swift in Sources */,
 				82401C2D1B2843C8008202EA /* BNSectionLabel.swift in Sources */,
 				9EABF29E1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift in Sources */,
@@ -1216,6 +1266,7 @@
 				9EE7EB1C1B55A66600C73CA3 /* CrossingEyesWhatDidYouSeeViewController.swift in Sources */,
 				9ED51BBB1B5813440000C5E6 /* SymmetryTestOverviewViewController.swift in Sources */,
 				9E934A611B6BBD790043F365 /* PartiallyCoveredToyBadOutcomeViewController.swift in Sources */,
+				2057870F1B75D446002A61B6 /* CompletelyCoveredToyGoodOutcomeViewController.swift in Sources */,
 				82E5746E1B707538006FA7B1 /* PincerBadOutcomeViewController.swift in Sources */,
 				209965AB1B685A3A00B93C5D /* SocialSmilingTimeToTestViewController.swift in Sources */,
 				9EE7EB221B55A6A800C73CA3 /* CrossingEyesMoreInfoViewController.swift in Sources */,
@@ -1226,6 +1277,7 @@
 				82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */,
 				9ED51BB91B58132A0000C5E6 /* WhyIsSymmetryViewController.swift in Sources */,
 				9EC424141B5481990037C0E9 /* PointFollowingWhatWillYouNeedViewController.swift in Sources */,
+				2057870B1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift in Sources */,
 				9EC424281B54CC210037C0E9 /* pointFollowingActivityReminderViewController.swift in Sources */,
 				9EC424161B5481CC0037C0E9 /* PointFollowingIsBabyReadyViewController.swift in Sources */,
 				209965961B6311DC00B93C5D /* SelfRecognitionBadOutcomeViewController.swift in Sources */,
@@ -1259,6 +1311,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		205787051B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				205787061B75CD0C002A61B6 /* Base */,
+			);
+			name = CompletelyCoveredToy.storyboard;
+			sourceTree = "<group>";
+		};
 		2099659F1B68597600B93C5D /* SocialSmiling.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
