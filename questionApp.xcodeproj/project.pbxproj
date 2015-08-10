@@ -657,7 +657,7 @@
 				9E923CD01B69A4EE00F2B0A7 /* OtherViewControllers */,
 				9EC424051B5466B90037C0E9 /* SocialAndEmotional */,
 				82E42ABD1B4118FE00BAE21B /* SensoryAndMotor */,
-				9EAEB5DA1B4CA68500159730 /* LanaguageAndCognitive */,
+				9EAEB5DA1B4CA68500159730 /* LanguageAndCognitive */,
 				82D641F11B49F9EE0013D5FB /* Models */,
 				829F54F01B26995800ABE77C /* Main.storyboard */,
 				829F54F31B26995800ABE77C /* Images.xcassets */,
@@ -838,7 +838,7 @@
 			name = PartiallyCoveredToy;
 			sourceTree = "<group>";
 		};
-		9EAEB5DA1B4CA68500159730 /* LanaguageAndCognitive */ = {
+		9EAEB5DA1B4CA68500159730 /* LanguageAndCognitive */ = {
 			isa = PBXGroup;
 			children = (
 				205787041B75CCF6002A61B6 /* CompletelyCoveredToy */,
@@ -848,7 +848,7 @@
 				9EAEB5DB1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift */,
 				9EAEB5DD1B4CAEEB00159730 /* LanguageCognitiveIntroViewController.swift */,
 			);
-			name = LanaguageAndCognitive;
+			name = LanguageAndCognitive;
 			sourceTree = "<group>";
 		};
 		9EC424041B5465DC0037C0E9 /* PupilResponse */ = {

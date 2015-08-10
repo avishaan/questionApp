@@ -1,14 +1,14 @@
 //
-//  UnassistedSittingBadOutcomeViewController.swift
+//  SittingAndReachingBadOutcomeViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/9/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class UnassistedSittingBadOutcomeViewController: UIViewController {
+class SittingAndReachingBadOutcomeViewController: UIViewController {
   
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test : Test?
@@ -48,7 +48,7 @@ class UnassistedSittingBadOutcomeViewController: UIViewController {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.unassistedSitting
+            controller.testName = TestNamesPresentable.sittingAndReaching
         }
     }
     
@@ -88,22 +88,22 @@ class UnassistedSittingBadOutcomeViewController: UIViewController {
             applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "Not sitting up?"
+            questionLabel.text = "Not sitting & reaching?"
             
             // update infoLabel
-            let string = "Help your baby get used to sitting by propping her up with a pillow on the couch. Try the test again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:31)
+            let string = "Try a smaller toy, and try placing it closer to baby to make it easier to reach. Try the test again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:80, countOfBoldCharacters:31)
             
         } else if failed >= 3 {
             // update questionLabel
-            questionLabel.text = "Not sitting up?"
+            questionLabel.text = "Not sitting & reaching?"
             
             // update infoLabel
-            let string = "If your baby goes past 18 months without being able to sit unassisted, this may indicate neuromuscular problems. Talk to your pediatrician at your next appointment. "
-            applyTextAttributesToLabel(string, indexAtStartOfBold:112, countOfBoldCharacters:52)
+            let string = "If your baby goes past 20 months without being able to sit & reach, this may indicate neuromuscular problems. Talk to your pediatrician at your next appointment."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:109, countOfBoldCharacters:52)
         } else {
             // update questionLabel
-            questionLabel.text = "Not sitting up?"
+            questionLabel.text = "Not sitting & reaching?"
             
             // update infoLabel
             let string = "Not to worry. All babies develop at different rates. Try again in two weeks."

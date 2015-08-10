@@ -38,14 +38,22 @@ class SensoryMotorMilestoneViewController: UIViewController {
     var controller: WhyIsSymmetryViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSymmetryStoryboardID") as! WhyIsSymmetryViewController
     self.presentViewController(controller, animated: true, completion: nil);
   }
+    
   @IBAction func onPincerButtonTap(sender: AnyObject) {
     var storyboard = UIStoryboard (name: "Pincer", bundle: nil)
     var controller: WhyIsPincerViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPincerStoryboardID") as! WhyIsPincerViewController
     self.presentViewController(controller, animated: true, completion: nil);
   }
-    @IBAction func onUnassistedSittingButtonTap(sender: AnyObject) {
+    
+  @IBAction func onUnassistedSittingButtonTap(sender: AnyObject) {
     var storyboard = UIStoryboard (name: "UnassistedSitting", bundle: nil)
     var controller: WhyIsUnassistedSittingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsUnassistedSittingStoryboardID") as! WhyIsUnassistedSittingViewController
-    self.presentViewController(controller, animated: true, completion: nil);    }
+    self.presentViewController(controller, animated: true, completion: nil);
+  }
   
+  @IBAction func onSittingAndReachingButtonTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "SittingAndReaching", bundle: nil)
+    var controller: WhyIsSittingAndReachingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSittingAndReachingStoryboardID") as! WhyIsSittingAndReachingViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+  }
 }

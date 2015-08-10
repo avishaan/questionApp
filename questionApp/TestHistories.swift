@@ -94,9 +94,12 @@ class TestHistories : NSObject, NSCoding {
             Test.TestNames.symmetry : Test.TestNames.symmetry,
             Test.TestNames.pincer : Test.TestNames.pincer,
             Test.TestNames.partiallyCoveredToy : Test.TestNames.partiallyCoveredToy,
+            Test.TestNames.completelyCoveredToy : Test.TestNames.completelyCoveredToy,
             Test.TestNames.selfRecognition : Test.TestNames.selfRecognition,
             Test.TestNames.socialSmiling : Test.TestNames.socialSmiling,
-            Test.TestNames.FacialMimic : Test.TestNames.FacialMimic
+            Test.TestNames.FacialMimic : Test.TestNames.FacialMimic,
+            Test.TestNames.unassistedSitting : Test.TestNames.unassistedSitting,
+            Test.TestNames.sittingAndReaching : Test.TestNames.sittingAndReaching
             // TODO: if new tests are added to the app, add them here.
         ]
         

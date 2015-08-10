@@ -31,10 +31,13 @@ class Test: NSObject, NSCoding {
         static var attentionAtDistance: String = "attention at distance"
         static var symmetry: String = "symmetry"
         static var pincer: String = "pincer"
+        static var completelyCoveredToy : String = "completely covered toy"
         static var partiallyCoveredToy : String = "partially covered toy"
         static var selfRecognition : String = "self recognition"
         static var socialSmiling: String = "social smiling"
         static var FacialMimic: String = "facial mimic"
+        static var unassistedSitting: String = "unassisted sitting"
+        static var sittingAndReaching: String = "sitting and reaching"
         // TODO: add additional var as new tests are added to the app
     }
     
@@ -55,6 +58,8 @@ class Test: NSObject, NSCoding {
         static var selfRecognition :    Double = 14 * Test.SecondsInADay
         static var socialSmiling:       Double = 14 * Test.SecondsInADay
         static var facialMimic:         Double = 14 * Test.SecondsInADay
+        static var unassistedSitting:   Double = 14 * Test.SecondsInADay
+        static var sittingAndReaching:  Double = 14 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
     }
     

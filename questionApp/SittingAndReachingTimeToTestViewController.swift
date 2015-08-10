@@ -1,19 +1,20 @@
 //
-//  UnassistedSittingTimeToTestViewController.swift
+//  SittingAndReachingTimeToTestViewController.swift
 //  questionApp
 //
-//  Created by daniel hsu on 7/30/15.
+//  Created by daniel hsu on 8/9/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class UnassistedSittingTimeToTestViewController: UIViewController {
+class SittingAndReachingTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     @IBOutlet weak var step2Label: UILabel!
     @IBOutlet weak var step3Label: UILabel!
+    @IBOutlet weak var step4Label: UILabel!
     
     @IBOutlet weak var labelBackground: UILabel!
     
@@ -55,6 +56,10 @@ class UnassistedSittingTimeToTestViewController: UIViewController {
         var step3AttributedString = NSMutableAttributedString(string: step3Label.text!)
         step3AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step3Label.attributedText = step3AttributedString
+        
+        var step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
+        step4AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+        step4Label.attributedText = step4AttributedString
     
     }
 

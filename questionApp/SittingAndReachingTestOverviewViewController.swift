@@ -1,8 +1,8 @@
 //
-//  UnassistedSittingTestOverviewViewController.swift
+//  SittingAndReachingTestOverviewViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/9/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class UnassistedSittingTestOverviewViewController: UIViewController {
+class SittingAndReachingTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -59,7 +59,7 @@ class UnassistedSittingTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "unassistedSittingWhatWillYouNeedSegueID" {
+        else if segue.identifier == "sittingAndReachingWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }

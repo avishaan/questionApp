@@ -1,14 +1,14 @@
 //
-//  UnassistedSittingWhatDidYouSeeViewController.swift
+//  SittingAndReachingWhatDidYouSeeViewController.swift
 //  questionApp
 //
-//  Created by daniel hsu on 7/28/15.
+//  Created by daniel hsu on 8/9/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class UnassistedSittingWhatDidYouSeeViewController: UIViewController {
+class SittingAndReachingWhatDidYouSeeViewController: UIViewController {
 
     var parent = Parent()
     var profiles = TestProfiles()
@@ -24,7 +24,7 @@ class UnassistedSittingWhatDidYouSeeViewController: UIViewController {
         profiles.initProfilesFromPersistentStore()
         
         // Get the test information.
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.partiallyCoveredToy)
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.sittingAndReaching)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,20 +34,20 @@ class UnassistedSittingWhatDidYouSeeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "UnassistedSittingGoodOutcomeSegueID" {
+        if segue.identifier == "SittingAndReachingGoodOutcomeSegueID" {
             
             // Record the successful symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "UnassistedSittingBadOutcomeSegueID" || segue.identifier == "UnassistedSittingBadOutcomeSegueID2" {
+        } else if segue.identifier == "SittingAndReachingBadOutcomeSegueID" || segue.identifier == "SittingAndReachingBadOutcomeSegueID2" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)
             profiles.save()
             
             // Pass the test results history to the destination VC.
-            let controller = segue.destinationViewController as! UnassistedSittingBadOutcomeViewController
+            let controller = segue.destinationViewController as! SittingAndReachingBadOutcomeViewController
             controller.test = self.test
         }
     }

@@ -14,6 +14,7 @@
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
         </mutableArray>
         <mutableArray key="OmnesSem.ttf">
             <string>Omnes-Semibold</string>
@@ -30,10 +31,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Why Is Unassisted Sitting View Controller-->
+        <!--Why Is Sitting And Reaching View Controller-->
         <scene sceneID="FZT-MC-ARd">
             <objects>
-                <viewController storyboardIdentifier="WhyIsUnassistedSittingStoryboardID" id="JXR-iK-Laf" customClass="WhyIsUnassistedSittingViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyIsSittingAndReachingStoryboardID" id="JXR-iK-Laf" customClass="WhyIsSittingAndReachingViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KF9-fb-PL4"/>
                         <viewControllerLayoutGuide type="bottom" id="EBG-MU-1Ya"/>
@@ -55,7 +56,7 @@
                                     <segue destination="AzZ-4Q-lSd" kind="presentation" id="pwg-qC-oO4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="unassisted sitting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWN-VU-p5X" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting &amp; reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWN-VU-p5X" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,12 +68,17 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsUnassistedSitting" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsSittingAndReaching" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
                                 <rect key="frame" x="0.0" y="154" width="320" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyb-jD-KTj">
                                 <rect key="frame" x="14" y="274" width="293" height="183"/>
-                                <string key="text">Between 4 and 8 months, your baby should be able to sit up without your help by propping herself up with her arms. This is an important gross motor skills milestone.</string>
+                                <string key="text" base64-UTF8="YES">
+QmV0d2VlbiA1IGFuZCAxMCBtb250aHMsIHlvdXIgYmFieSBzaG91bGQgYmUgYWJsZSB0byBzaXQgd2l0
+aG91dCBwcm9wcGluZyBoZXJzZWxmIHVwIHdpdGggaGVyIGFybXMgYW5kIHJlYWNoIGZvciBhIHRveSBv
+ciBvdGhlciBvYmplY3QuIANUaGlzIGlzIGFuIGltcG9ydGFudCBtaWxlc3RvbmUgb24gdGhlIHdheSB0
+byBzdGFuZGluZyBhbmQgd2Fsa2luZy4
+</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -100,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="3447" y="1900"/>
         </scene>
-        <!--Unassisted Sitting Test Overview View Controller-->
+        <!--Sitting And Reaching Test Overview View Controller-->
         <scene sceneID="kZ5-VU-Vw5">
             <objects>
-                <viewController id="AzZ-4Q-lSd" customClass="UnassistedSittingTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AzZ-4Q-lSd" customClass="SittingAndReachingTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="25M-dO-kwc"/>
                         <viewControllerLayoutGuide type="bottom" id="mZ0-n9-nke"/>
@@ -128,7 +134,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="f3o-wh-ptW" kind="presentation" identifier="unassistedSittingWhatWillYouNeedSegueID" id="YBa-a7-8Az"/>
+                                    <segue destination="f3o-wh-ptW" kind="presentation" identifier="sittingAndReachingWhatWillYouNeedSegueID" id="YBa-a7-8Az"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-aL-bAf">
@@ -146,7 +152,7 @@
                                     <action selector="onPreviewButtonTap:" destination="AzZ-4Q-lSd" eventType="touchUpInside" id="RaF-Ul-TYT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="unassisted sitting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8d-Yx-Uq4" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting &amp; reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8d-Yx-Uq4" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="4128" y="2381.5"/>
         </scene>
-        <!--Unassisted Sitting What Will You Need View Controller-->
+        <!--Sitting And Reaching What Will You Need View Controller-->
         <scene sceneID="kej-Yv-b6w">
             <objects>
-                <viewController id="f3o-wh-ptW" customClass="UnassistedSittingWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f3o-wh-ptW" customClass="SittingAndReachingWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o5a-vX-Eaf"/>
                         <viewControllerLayoutGuide type="bottom" id="SRY-iM-Abz"/>
@@ -218,11 +224,11 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UnassistedSittingWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SittingAndReachingWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
                                 <rect key="frame" x="-5" y="113" width="329" height="201"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All you’ll need is a firm surface baby can sit on comfortably. Make sure it’s soft enough in case baby topples over!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zg-1V-sJx">
-                                <rect key="frame" x="37" y="289" width="245" height="112"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You’ll need a small toy and  a firm surface baby can sit on comfortably. Make sure it’s soft enough in case baby topples over!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zg-1V-sJx">
+                                <rect key="frame" x="37" y="289" width="245" height="142"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -242,18 +248,18 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="testPreparationLabel" destination="0Zg-1V-sJx" id="Gzg-NM-Mdm"/>
-                        <segue destination="1lK-te-V33" kind="presentation" identifier="unassistedSittingIsBabyReadySegueID" id="rNy-xp-aaS"/>
-                        <segue destination="ud9-GU-zU4" kind="presentation" identifier="unassistedSittingTimeToTestSegueID" id="j7l-Po-XYD"/>
+                        <segue destination="1lK-te-V33" kind="presentation" identifier="sittingAndReachingIsBabyReadySegueID" id="rNy-xp-aaS"/>
+                        <segue destination="ud9-GU-zU4" kind="presentation" identifier="sittingAndReachingTimeToTestSegueID" id="j7l-Po-XYD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40R-rV-Xat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4779" y="1900"/>
         </scene>
-        <!--Unassisted Sitting Is Baby Ready View Controller-->
+        <!--Sitting And Reaching Is Baby Ready View Controller-->
         <scene sceneID="NnE-dh-bRK">
             <objects>
-                <viewController id="1lK-te-V33" customClass="UnassistedSittingIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1lK-te-V33" customClass="SittingAndReachingIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uoj-Ly-p74"/>
                         <viewControllerLayoutGuide type="bottom" id="Ap1-2i-T2i"/>
@@ -265,7 +271,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lZs-eR-Msj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="partially covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9a-Yl-ZuN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting and reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9a-Yl-ZuN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -288,7 +294,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UnassistedSittingIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="vRw-fx-9zO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SittingAndReachingIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="vRw-fx-9zO">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-g7-YqV">
@@ -385,17 +391,17 @@
                         <outlet property="bulletedLabel1" destination="jRY-0f-8pV" id="Zv5-DH-Lmj"/>
                         <outlet property="bulletedLabel2" destination="5M0-5t-hEs" id="lIq-vK-bse"/>
                         <outlet property="bulletedLabel3" destination="wr2-o1-W0M" id="Hgu-pZ-FJI"/>
-                        <segue destination="ud9-GU-zU4" kind="presentation" identifier="unassistedSittingIsBabyReadyToTimeToTestSegueID" id="OZR-PC-mDf"/>
+                        <segue destination="ud9-GU-zU4" kind="presentation" identifier="sittingAndReachingIsBabyReadyToTimeToTestSegueID" id="OZR-PC-mDf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nb5-v8-2jK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5481" y="2248"/>
         </scene>
-        <!--Unassisted Sitting Time To Test View Controller-->
+        <!--Sitting And Reaching Time To Test View Controller-->
         <scene sceneID="IOE-YX-ZGO">
             <objects>
-                <viewController id="ud9-GU-zU4" customClass="UnassistedSittingTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ud9-GU-zU4" customClass="SittingAndReachingTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kM3-AZ-wKi"/>
                         <viewControllerLayoutGuide type="bottom" id="5o7-PL-t1p"/>
@@ -407,7 +413,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8e4-K5-pA2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="unassisted sitting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j0-5d-jl2" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting and reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j0-5d-jl2" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="47" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -420,27 +426,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhh-eV-ew9">
-                                <rect key="frame" x="30" y="144" width="260" height="305"/>
+                                <rect key="frame" x="30" y="129" width="260" height="325"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.  Place baby in a sitting position, upright, with weight resting on bottom, legs, and hands." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwF-H5-fhn">
-                                <rect key="frame" x="52" y="157" width="222" height="121"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.  Place baby in a sitting position, upright, with weight resting on bottom and legs." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwF-H5-fhn">
+                                <rect key="frame" x="52" y="119" width="222" height="121"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.  Slowly and carefully take away your supporting hands." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK3-xj-PGh">
-                                <rect key="frame" x="52" y="282" width="222" height="69"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.  Attract baby’s attention with the toy by placing it in her hand." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK3-xj-PGh">
+                                <rect key="frame" x="52" y="214" width="222" height="94"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.  Is baby able to maintain a sitting posture on her own?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-fT-sq6">
-                                <rect key="frame" x="52" y="359" width="222" height="76"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.  Put the toy just in front of baby’s toes. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-fT-sq6">
+                                <rect key="frame" x="52" y="287" width="222" height="76"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -463,6 +469,12 @@
                                     <segue destination="j4R-It-zho" kind="presentation" id="kfk-gB-zbt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.  Does baby reach for the toy while holding sitting position using balance?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouC-y7-l6P">
+                                <rect key="frame" x="52" y="356" width="222" height="90"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -472,16 +484,17 @@
                         <outlet property="step1Label" destination="KwF-H5-fhn" id="ybF-vJ-MSB"/>
                         <outlet property="step2Label" destination="VK3-xj-PGh" id="zky-2x-hUc"/>
                         <outlet property="step3Label" destination="XGM-fT-sq6" id="mfd-XO-QUC"/>
+                        <outlet property="step4Label" destination="ouC-y7-l6P" id="4fV-4r-pXt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ypv-6s-Exi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6186" y="1900"/>
         </scene>
-        <!--Unassisted Sitting What Did You See View Controller-->
+        <!--Sitting And Reaching What Did You See View Controller-->
         <scene sceneID="ipC-xQ-2is">
             <objects>
-                <viewController id="j4R-It-zho" customClass="UnassistedSittingWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="j4R-It-zho" customClass="SittingAndReachingWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6sM-sg-VDH"/>
                         <viewControllerLayoutGuide type="bottom" id="XKB-gT-1eT"/>
@@ -493,7 +506,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="umw-yp-Kdm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="unassisted sitting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-Ff-64Z" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting and reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-Ff-64Z" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -505,17 +518,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-qa-ne5" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="126" width="265" height="89"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Baby was able to hold up head and maintain sitting position by using arms.">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eth-Fu-Wuv" kind="presentation" identifier="UnassistedSittingGoodOutcomeSegueID" id="U36-Xr-jaP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwv-sv-Lds" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 <state key="normal" title="Back">
@@ -526,14 +528,25 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4xx-Jd-3JY" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="229" width="265" height="65"/>
+                                <rect key="frame" x="28" y="229" width="265" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Baby did not maintain sitting position.">
+                                <state key="normal" title="Baby was unable to reach for object due to inability to sit without using arms as props.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ffs-lR-bUX" kind="presentation" identifier="UnassistedSittingBadOutcomeSegueID" id="ZPb-uS-S7c"/>
+                                    <segue destination="Ffs-lR-bUX" kind="presentation" identifier="SittingAndReachingBadOutcomeSegueID" id="ZPb-uS-S7c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-qa-ne5" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="28" y="134" width="265" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Baby was able to sit unassisted and reach for toy without tipping over.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eth-Fu-Wuv" kind="presentation" identifier="UnassistedSittingGoodOutcomeSegueID" id="U36-Xr-jaP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -545,10 +558,10 @@
             </objects>
             <point key="canvasLocation" x="6870" y="1900"/>
         </scene>
-        <!--Unassisted Sitting Good Outcome View Controller-->
+        <!--Sitting And Reaching Good Outcome View Controller-->
         <scene sceneID="vgL-cy-7if">
             <objects>
-                <viewController id="eth-Fu-Wuv" customClass="UnassistedSittingGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eth-Fu-Wuv" customClass="SittingAndReachingGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EUh-UK-GaY"/>
                         <viewControllerLayoutGuide type="bottom" id="0QN-5z-axh"/>
@@ -566,7 +579,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby is able to sit unassisted." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-4L-Xv0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby is able to sit unassisted and reach for toy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-4L-Xv0">
                                 <rect key="frame" x="27" y="135" width="267" height="115"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -597,7 +610,7 @@
                                     <action selector="onBackButtonTap:" destination="eth-Fu-Wuv" eventType="touchUpInside" id="wqs-Ie-Qq6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="unassisted sitting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRj-NZ-gtr" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting and reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRj-NZ-gtr" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -612,10 +625,10 @@
             </objects>
             <point key="canvasLocation" x="7515" y="1582"/>
         </scene>
-        <!--Unassisted Sitting Bad Outcome View Controller-->
+        <!--Sitting And Reaching Bad Outcome View Controller-->
         <scene sceneID="RVn-GP-9Ai">
             <objects>
-                <viewController id="Ffs-lR-bUX" customClass="UnassistedSittingBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ffs-lR-bUX" customClass="SittingAndReachingBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D30-6J-I8g"/>
                         <viewControllerLayoutGuide type="bottom" id="V0s-nc-Xru"/>
@@ -630,14 +643,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8M-D2-vqW">
                                 <rect key="frame" x="24" y="114" width="272" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Unassisted Sitting Age Range: ">
+                                    <fragment content="Sitting &amp; Reaching Age Range: ">
                                         <attributes>
                                             <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="Omnes-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="4-8 mo.">
+                                    <fragment content="5-10 mo.">
                                         <attributes>
                                             <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="Omnes-Medium"/>
@@ -650,7 +663,7 @@
                                     <rect key="frame" x="48" y="129" width="225" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="unassisted sitting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf6-cm-zCi" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting and reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf6-cm-zCi" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -702,7 +715,7 @@
                                     <segue destination="mOS-fZ-XdF" kind="presentation" id="lb8-xY-4C4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not sitting up?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlZ-2a-xSe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not sitting &amp; reaching?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlZ-2a-xSe">
                                 <rect key="frame" x="32" y="72" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -729,10 +742,10 @@
             </objects>
             <point key="canvasLocation" x="8162" y="1900"/>
         </scene>
-        <!--Unassisted Sitting Activity Reminder View Controller-->
+        <!--Sitting And Reaching Activity Reminder View Controller-->
         <scene sceneID="JvQ-AO-3dC">
             <objects>
-                <viewController id="g9k-pA-tN0" customClass="UnassistedSittingActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="g9k-pA-tN0" customClass="SittingAndReachingActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kjw-Lo-JfG"/>
                         <viewControllerLayoutGuide type="bottom" id="lb7-ub-ug9"/>
@@ -744,7 +757,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8ik-mf-MKT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="unassisted sitting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME1-7A-z7c" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting and reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME1-7A-z7c" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -822,10 +835,10 @@
             </objects>
             <point key="canvasLocation" x="8745" y="1900"/>
         </scene>
-        <!--Unassisted Sitting More Info View Controller-->
+        <!--Sitting And Reaching More Info View Controller-->
         <scene sceneID="50G-jk-ZHv">
             <objects>
-                <viewController id="mOS-fZ-XdF" customClass="UnassistedSittingMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mOS-fZ-XdF" customClass="SittingAndReachingMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d7p-k2-o5U"/>
                         <viewControllerLayoutGuide type="bottom" id="lG7-4n-2yL"/>
@@ -837,7 +850,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-Vh-ct4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="partially covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-Xs-fdN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sitting and reaching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-Xs-fdN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -871,11 +884,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssk-2q-3Ek">
                                 <rect key="frame" x="24" y="130" width="272" height="245"/>
                                 <string key="text" base64-UTF8="YES">
-U2l0dGluZyB1bmFzc2lzdGVkIGRlcGVuZHMgb24gbXVzY3VsYXIgZGV2ZWxvcG1lbnQgA2luIHRoZSBi
+U2l0dGluZyAmIHJlYWNoaW5nIGRlcGVuZHMgb24gbXVzY3VsYXIgZGV2ZWxvcG1lbnQgA2luIHRoZSBi
 YWNrLCB1cHBlciB0cnVuaywgA2FuZCBuZWNrLiBJdOKAmXMgYWxzbyBhIHNraWxsIHRoYXTigJlzIGNy
-dWNpYWwgdG8gY3Jhd2xpbmcsIHN0YW5kaW5nLCBhbmQgd2Fsa2luZy4gICAgICAgICAgICAgICAgICAg
-ICAgICAgICANSWYgYmFieSBjYW5ub3Qgc2l0IHVuYXNzaXN0ZWQgYWZ0ZXIgMTggbW9udGhzLCBwbGVh
-c2UgY2hlY2sgd2l0aCB5b3VyIHBlZGlhdHJpY2lhbiBhdCB5b3VyIG5leHQgYXBwb2ludG1lbnQuA
+dWNpYWwgdG8gY3Jhd2xpbmcsIHN0YW5kaW5nLCBhbmQgd2Fsa2luZy4NSWYgYmFieSBjYW5ub3Qgc2l0
+ICYgA3JlYWNoIGFmdGVyIDIwIG1vbnRocywgcGxlYXNlIGNoZWNrIHdpdGggeW91ciBwZWRpYXRyaWNp
+YW4gYXQgeW91ciBuZXh0IGFwcG9pbnRtZW50Lg
 </string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -893,9 +906,9 @@ c2UgY2hlY2sgd2l0aCB5b3VyIHBlZGlhdHJpY2lhbiBhdCB5b3VyIG5leHQgYXBwb2ludG1lbnQuA
     </scenes>
     <resources>
         <image name="PointFollowingTestVideoPreview" width="319" height="203"/>
-        <image name="UnassistedSittingIsBabyReady" width="320" height="120"/>
-        <image name="UnassistedSittingWhatNeed" width="320" height="120"/>
-        <image name="WhyIsUnassistedSitting" width="320" height="120"/>
+        <image name="SittingAndReachingIsBabyReady" width="320" height="120"/>
+        <image name="SittingAndReachingWhatNeed" width="320" height="120"/>
+        <image name="WhyIsSittingAndReaching" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>

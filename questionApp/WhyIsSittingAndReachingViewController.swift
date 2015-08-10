@@ -1,14 +1,14 @@
 //
-//  WhyIsUnassistedSittingViewController.swift
+//  WhyIsSittingAndReachingViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 8/5/15.
+//  Created by Daniel Hsu on 8/9/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class WhyIsUnassistedSittingViewController: UIViewController {
+class WhyIsSittingAndReachingViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -29,7 +29,7 @@ class WhyIsUnassistedSittingViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Between 4 and 8 months, your baby should be able to sit up without your help by propping herself up with her arms. This is an important gross motor skills milestone."
+        let string = "Between 5 and 10 months, your baby should be able to sit without propping herself up with her arms and reach for a toy or other object. This is an important milestone on the way to standing and walking."
         
         var attributedString = NSMutableAttributedString(string: string)
         
@@ -37,8 +37,10 @@ class WhyIsUnassistedSittingViewController: UIViewController {
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
         attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 7))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(7, 15))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(22, 143))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(7, 16))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(23, 158))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(180, 22))
+
         
         descriptionLabel.attributedText = attributedString
     }

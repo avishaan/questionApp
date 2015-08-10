@@ -1,14 +1,14 @@
 //
-//  UnassistedSittingMoreInfoViewController.swift
+//  SittingAndReachingMoreInfoViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/9/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class UnassistedSittingMoreInfoViewController: UIViewController {
+class SittingAndReachingMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

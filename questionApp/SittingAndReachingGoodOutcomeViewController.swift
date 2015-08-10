@@ -1,14 +1,14 @@
 //
-//  UnassistedSittingGoodOutcomeViewController.swift
+//  SittingAndReachingGoodOutcomeViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/9/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class UnassistedSittingGoodOutcomeViewController: UIViewController {
+class SittingAndReachingGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,14 +1,14 @@
 //
-//  UnassistedSittingIsBabyReadyViewController.swift
+//  SittingAndReachingIsBabyReadyViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/9/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class UnassistedSittingIsBabyReadyViewController: UIViewController {
+class SittingAndReachingIsBabyReadyViewController: UIViewController {
 
     @IBOutlet weak var bulletedLabel1: UILabel!
     @IBOutlet weak var bulletedLabel2: UILabel!
@@ -30,12 +30,12 @@ class UnassistedSittingIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("unassistedSittingIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("sittingAndReachingIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("unassistedSittingIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("sittingAndReachingIsBabyReadyToTimeToTestSegueID", sender: self)
     }
 
     // Helper function formats text attributes for substrings in labels.

@@ -24,7 +24,7 @@ class CompletelyCoveredToyWhatDidYouSeeViewController: UIViewController {
         profiles.initProfilesFromPersistentStore()
         
         // Get the test information.
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.partiallyCoveredToy)
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.completelyCoveredToy)
     }
 
     override func didReceiveMemoryWarning() {
