@@ -1,8 +1,8 @@
 //
-//  CompletelyCoveredToyTestOverviewViewController.swift
+//  PlasticJarTestOverviewViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 8/7/15.
+//  Created by Daniel Hsu on 8/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class CompletelyCoveredToyTestOverviewViewController: UIViewController {
+class PlasticJarTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -59,7 +59,7 @@ class CompletelyCoveredToyTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "completelyCoveredToyWhatWillYouNeedSegueID" {
+        else if segue.identifier == "plasticJarWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }

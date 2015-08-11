@@ -1,14 +1,14 @@
 //
-//  CompletelyCoveredToyBadOutcomeViewController.swift
+//  PlasticJarBadOutcomeViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 8/7/15.
+//  Created by Daniel Hsu on 8/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class CompletelyCoveredToyBadOutcomeViewController: UIViewController {
+class PlasticJarBadOutcomeViewController: UIViewController {
   
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test : Test?
@@ -48,7 +48,7 @@ class CompletelyCoveredToyBadOutcomeViewController: UIViewController {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.completelyCoveredToy
+            controller.testName = TestNamesPresentable.plasticJar
         }
     }
     
@@ -84,30 +84,30 @@ class CompletelyCoveredToyBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Don't worry! Your baby may be a bit young for this test. Try this test again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:56, countOfBoldCharacters:32)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "Didn't react?"
+            questionLabel.text = "Didn't respond?"
             
             // update infoLabel
-            let string = "Try the test again using baby’s favorite toy and with a little bit of the toy showing. If he still doesn’t react, try the test again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:86, countOfBoldCharacters:58)
+            let string = "Don't worry! Not all babies develop at the same rate. Try giving baby an interesting toy and ask 'May I have it back?'."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:53, countOfBoldCharacters:66)
             
         } else if failed >= 3 {
             // update questionLabel
-            questionLabel.text = "Didn't react?"
+            questionLabel.text = "Didn't respond?"
             
             // update infoLabel
-            let string = "Consistent failure of this test after 15 months may indicate visual and/or cognitive issues. If baby consistently shows no reaction beyond 15 months, talk to your pediatrician at your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:92, countOfBoldCharacters:114)
+            let string = "If baby continues to ignore your requests and does not make requests of her own, repeat and record test to show your pediatrician."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:80, countOfBoldCharacters:50)
         } else {
             // update questionLabel
-            questionLabel.text = "Didn't react?"
+            questionLabel.text = "Didn't respond?"
             
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Don't worry! Your baby may be a bit young for this test. Try this test again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:56, countOfBoldCharacters:32)
         }
     }
 }

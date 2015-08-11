@@ -1,5 +1,5 @@
 //
-//  CompletelyCoveredToyMoreInfoViewController.swift
+//  PlasticJarMoreInfoViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/7/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CompletelyCoveredToyMoreInfoViewController: UIViewController {
+class PlasticJarMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

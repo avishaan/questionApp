@@ -1,14 +1,14 @@
 //
-//  CompletelyCoveredToyWhatWillYouNeedViewController.swift
+//  PlasticJarWhatWillYouNeedViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 7/30/15.
+//  Created by Daniel Hsu on 8/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class CompletelyCoveredToyWhatWillYouNeedViewController: UIViewController {
+class PlasticJarWhatWillYouNeedViewController: UIViewController {
 
     @IBOutlet weak var testPreparationLabel: UILabel!
     
@@ -25,9 +25,9 @@ class CompletelyCoveredToyWhatWillYouNeedViewController: UIViewController {
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
-            performSegueWithIdentifier("completelyCoveredToyTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("plasticJarTimeToTestSegueID", sender: self)
         } else {
-            performSegueWithIdentifier("completelyCoveredToyIsBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("plasticJarIsBabyReadySegueID", sender: self)
         }
     }
     
@@ -38,7 +38,7 @@ class CompletelyCoveredToyWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Any small, colorful toy will do, plus a cloth large enough to cover the toy."
+        let string = "For this test, you’ll need a large plastic jar with a lid and two wind-up toys that will fit inside. "
 
         var attributedString = NSMutableAttributedString(string: string)
         
@@ -46,7 +46,9 @@ class CompletelyCoveredToyWhatWillYouNeedViewController: UIViewController {
         let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 76))
+        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 65))
+        attributedString.addAttributes(firstAttributes, range: NSMakeRange(65, 13))
+        attributedString.addAttributes(secondAttributes, range:NSMakeRange(78, 23))
         
         testPreparationLabel.attributedText = attributedString
     }

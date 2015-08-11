@@ -1,23 +1,25 @@
 //
-//  CompletelyCoveredToyTimeToTestViewController.swift
+//  PlasticJarTimeToTestViewController.swift
 //  questionApp
 //
-//  Created by daniel hsu on 8/7/15.
+//  Created by daniel hsu on 8/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class CompletelyCoveredToyTimeToTestViewController: UIViewController {
+class PlasticJarTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     @IBOutlet weak var step2Label: UILabel!
     @IBOutlet weak var step3Label: UILabel!
+    @IBOutlet weak var step4Label: UILabel!
+    @IBOutlet weak var step5Label: UILabel!
     
     @IBOutlet weak var labelBackground: UILabel!
     
-    let orangeAtrributes = [NSForegroundColorAttributeName: kOrange, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
+    let orangeAtrributes = [NSForegroundColorAttributeName: kOrange, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 16)!]
     
     let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
 
@@ -55,6 +57,14 @@ class CompletelyCoveredToyTimeToTestViewController: UIViewController {
         var step3AttributedString = NSMutableAttributedString(string: step3Label.text!)
         step3AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step3Label.attributedText = step3AttributedString
+        
+        var step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
+        step4AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+        step4Label.attributedText = step4AttributedString
+        
+        var step5AttributedString = NSMutableAttributedString(string: step5Label.text!)
+        step5AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
+        step5Label.attributedText = step5AttributedString
     
     }
 

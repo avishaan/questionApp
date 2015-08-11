@@ -533,7 +533,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ffs-lR-bUX" kind="presentation" identifier="PartiallyCoveredToyBadOutcomeSegueID" id="ZPb-uS-S7c"/>
+                                    <segue destination="Ffs-lR-bUX" kind="presentation" identifier="CompletelyCoveredToyBadOutcomeSegueID" id="ZPb-uS-S7c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nnb-GL-gye" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
@@ -915,7 +915,7 @@ dHMgbGF0ZXIgb24uA
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Uj-0q-zFC"/>
         <segue reference="j7l-Po-XYD"/>
+        <segue reference="ZPb-uS-S7c"/>
     </inferredMetricsTieBreakers>
 </document>

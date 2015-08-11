@@ -1,14 +1,14 @@
 //
-//  WhyIsCompletelyCoveredToyViewController.swift
+//  WhyIsPlasticJarViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 8/7/15.
+//  Created by Daniel Hsu on 8/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class WhyIsCompletelyCoveredToyViewController: UIViewController {
+class WhyIsPlasticJarViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -29,16 +29,17 @@ class WhyIsCompletelyCoveredToyViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "This is the final test of baby's grasp of Object Permanence. Object Permanence is the understanding that an object completely hidden from view still exists and can be retrieved."
+        let string = "This activity tests your baby’s ability to ask for things and respond to requests from others. This is another form of Joint Attention."
         
         var attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 41))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(41, 18))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(60, 117))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 42))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(42, 15))
+        attributedString.addAttributes(standardAttributes, range: NSMakeRange(57, 61))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(118, 17))
         
         descriptionLabel.attributedText = attributedString
     }

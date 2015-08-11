@@ -1,14 +1,14 @@
 //
-//  CompletelyCoveredToyWhatDidYouSeeViewController.swift
+//  PlasticJarWhatDidYouSeeViewController.swift
 //  questionApp
 //
-//  Created by daniel hsu on 8/7/15.
+//  Created by daniel hsu on 8/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class CompletelyCoveredToyWhatDidYouSeeViewController: UIViewController {
+class PlasticJarWhatDidYouSeeViewController: UIViewController {
 
     var parent = Parent()
     var profiles = TestProfiles()
@@ -24,7 +24,7 @@ class CompletelyCoveredToyWhatDidYouSeeViewController: UIViewController {
         profiles.initProfilesFromPersistentStore()
         
         // Get the test information.
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.completelyCoveredToy)
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.plasticJar)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,20 +34,20 @@ class CompletelyCoveredToyWhatDidYouSeeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "CompletelyCoveredToyGoodOutcomeSegueID" {
+        if segue.identifier == "PlasticJarGoodOutcomeSegueID" {
             
             // Record the successful symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "CompletelyCoveredToyBadOutcomeSegueID" || segue.identifier == "CompletelyCoveredToyBadOutcomeSegueID2" {
+        } else if segue.identifier == "PlasticJarBadOutcomeSegueID" || segue.identifier == "PlasticJarBadOutcomeSegueID2" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)
             profiles.save()
             
             // Pass the test results history to the destination VC.
-            let controller = segue.destinationViewController as! CompletelyCoveredToyBadOutcomeViewController
+            let controller = segue.destinationViewController as! PlasticJarBadOutcomeViewController
             controller.test = self.test
         }
     }

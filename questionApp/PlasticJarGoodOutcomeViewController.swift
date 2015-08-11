@@ -1,14 +1,14 @@
 //
-//  CompletelyCoveredToyGoodOutcomeViewController.swift
+//  PlasticJarGoodOutcomeViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 8/7/15.
+//  Created by Daniel Hsu on 8/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class CompletelyCoveredToyGoodOutcomeViewController: UIViewController {
+class PlasticJarGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

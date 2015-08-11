@@ -1,14 +1,14 @@
 //
-//  CompletelyCoveredToyIsBabyReadyViewController.swift
+//  PlasticJarIsBabyReadyViewController.swift
 //  questionApp
 //
-//  Created by Daniel Hsu on 8/7/15.
+//  Created by Daniel Hsu on 8/10/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class CompletelyCoveredToyIsBabyReadyViewController: UIViewController {
+class PlasticJarIsBabyReadyViewController: UIViewController {
 
     @IBOutlet weak var bulletedLabel1: UILabel!
     @IBOutlet weak var bulletedLabel2: UILabel!
@@ -30,12 +30,12 @@ class CompletelyCoveredToyIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("completelyCoveredToyIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("plasticJarIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("completelyCoveredToyIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("plasticJarIsBabyReadyToTimeToTestSegueID", sender: self)
     }
 
     // Helper function formats text attributes for substrings in labels.
