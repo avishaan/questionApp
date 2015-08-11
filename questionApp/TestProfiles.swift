@@ -91,70 +91,14 @@ class TestProfiles {
     @return true if successfully initialized from a previously persisted instance, else false if no previous instance existed.
     */
     func initProfilesFromPersistentStore() -> Bool {
-        //initHistories()
-        
-        // TODO: remove DEBUG does file exist?
-        
-        let fileManager = NSFileManager.defaultManager()
-        var isDir : ObjCBool = false
-        if fileManager.fileExistsAtPath(self.filePath, isDirectory:&isDir) {
-            if isDir {
-                // file exists and is a directory
-                println("\(self.filePath) exists and is a directory")
-            } else {
-                // file exists and is not a directory
-                println("\(self.filePath) exists and is not a directory")
-            }
-        } else {
-            // file does not exist
-            println("\(self.filePath) does NOT exist")
-        }
-        
-        // TODO: contents of file?
-        // TODO: try different string encoding values:  see https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html#//apple_ref/doc/constant_group/String_Encodings
-        
-        var error:NSError?
-        let string = String(contentsOfFile: self.filePath, encoding: NSASCIIStringEncoding /* NSUTF8StringEncoding */, error: &error)
-        if let theError = error {
-            print("\n\(theError.localizedDescription)")
-            if let thestring = string {
-                println("\n\(thestring)")
-            }
-        } else {
-            println("\n\(string)")
-        }
-        
-        
-        
         if let unarchivedTestProfiles = NSKeyedUnarchiver.unarchiveObjectWithFile(self.filePath) as? [String:TestHistories] /*[TestProfile]*/ {
             self.testProfiles = unarchivedTestProfiles
-            printProfiles()
+            //printProfiles()
             return true
         } else {
             return false
         }
     }
-    
-//    TODO: remove
-    /*
-    @brief Get a Test for the Parent object's current profile (identified by parent+child).
-    @discussion The test data is initialized from the store on disk.
-    @param A Parent object. (cannot be nil)
-    @param The name of the test. (cannot be nil)
-    @return Returns the requested Test object.
-    */
-//    func getTest(#parent: Parent, testName: String) -> test {
-//        // Get the name of the current profile from the Parent.
-//        let profileName = parent.getCurrentProfileName()
-//        
-//        // Get the test histories for the current profile.
-//        let histories = parent.testProfiles.getTestHistories(profileName: profileName)
-//        
-//        // Get the particular test we want from the test histories. (Test.history contains the test's history.)
-//        let test = histories.getTest(testName)
-//        
-//        return test
-//    }
 
     /*
     @brief Get a Test for the named profile and test.
@@ -191,7 +135,7 @@ class TestProfiles {
     func addProfile(#name: String) {
         if testProfiles[name] == nil {
             // testProfiles doesn't contain a key by that name yet so add it.
-            testProfiles[name] = TestHistories() // TODO - this wipes any existing TestHistories for the profile name
+            testProfiles[name] = TestHistories()
         }
     }
     

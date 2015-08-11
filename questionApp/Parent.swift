@@ -125,11 +125,6 @@ class Parent {
 	*/
 	func getProfiles() {
 		testProfiles.initProfilesFromPersistentStore()
-		
-		//TODO: debug
-		println("")
-		println("profiles:")
-		testProfiles.printProfiles()
 	}
 	
 	/*
@@ -140,11 +135,8 @@ class Parent {
 	}
 
 	/*
-	@brief Create a new profile in memory and add it to this object's collection of profiles.
+	@brief Create a new profile for baby in memory if one does not already exist.
 	@discussion Creates profile by concatenating the parent's full name with the specified babyName. 
-	WARNING: Any TestHistory data stored in the profile for the specified baby name will be overwritten.
-	If a profile does not exist for the profile name constructed using the baby's name, then creat a new one, else do nothing.
-	TODO - clean up above 2 lines of documentation.
 	*/
 	func addProfile(baby: String?) {
 		if let parentName = self.fullName, let babyName = baby {
@@ -157,7 +149,7 @@ class Parent {
 	@brief Return the current profile name.
 	@discussion The format of the profile name is "<parent_name>.<current_baby_name>".
 	@return The profile name if self.fullName and self.babyName are not nil, else returns the empty string.
-	TODO: When the Parent class is updated to support multiple baby profiles and the notion of the current baby profile, then the body of this function will need to be updated to return a profile name constructed with teh current baby name.
+	TODO: When the Parent class is updated to support multiple baby profiles and the notion of the current baby profile, then the body of this function will need to be updated to return a profile name constructed with the current baby name.
 	*/
 	func getCurrentProfileName() -> String {
 		if let parentName = self.fullName, let babyName = self.babyName {

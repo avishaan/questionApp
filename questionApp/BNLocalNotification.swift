@@ -68,15 +68,10 @@ class BNLocalNotification {
     // add a badge
     localNotification.applicationIconBadgeNumber = 1
     
-
-// TODO: get rid of this
-//    NSDictionary *infoDict = [NSDictionary dictionaryWithObject:item.eventName forKey:ToDoItemKey];
-//    localNotif.userInfo = infoDict;
-    
     // ask user for permission to display notifications
     acquireNotificationPermission()
 
-    // TODO: specify the test in the userInfo property so the app knows which test to display when it is launched.
+    // Specify the test in the userInfo property so the app knows which test to display when it is launched.
     if let testName = testName {
       let infoDictionary = [BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey : testName]
       localNotification.userInfo = infoDictionary
@@ -123,40 +118,6 @@ class BNLocalNotification {
       alert.show()
     }
   }
-  
-  
-
-//  static func parseLocalNotification(localNotification: UILocalNotification) {
-//    
-//    let testName = localNotification.userInfo![BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey] as! String
-//    handleNotificationSelection(testName)
-//    
-//    // remove the notification
-//    UIApplication.sharedApplication().cancelLocalNotification(localNotification)
-//  }
-  
-//    if true {
-//
-//    //if localNotification.userInfo!["UUID"] as! String == "bob" {
-//    
-////    let userinfo = localNotification.userInfo as NSDictionary
-////
-////    if let testName = userinfo?.valueForKey("bob") as? String {
-//    
-////    if let testName = userinfo[BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey] as? String {
-//      handleNotificationSelection(testName)
-//
-//    }
-//  }
-  
-//  static func parseLocalNotification(launchOptions: [NSObject: AnyObject]?) {
-//    if let options = launchOptions {
-//      if let testName = options[BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey] as? String {
-//        println("testName extracted from local notification = \(testName)")
-//        handleNotificationSelection(testName)
-//      }
-//    }
-//  }
   
   /*
   @brief Display the first view controller of the test identified in the notification.
@@ -251,9 +212,8 @@ class BNLocalNotification {
     UIApplication.sharedApplication().cancelLocalNotification(localNotification)
   }
   
-  // TODO: call this function if the test was passed.
   /*!
-  @brief Kill a local notification if the test was passed in the interim.
+  @brief Remove a local notification if the test was passed in the interim.
   @discussion If the local notification was previously scheduled, this function will remove it by searching all local notifications for the proper userInfo key containing the test's name.
   @param (in) testName - The name of the test whose local notification is to be deleted. Use a Test.TestNames value. (cannot be nil)
   */

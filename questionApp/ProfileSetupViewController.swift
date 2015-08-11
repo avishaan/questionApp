@@ -56,16 +56,10 @@ class ProfileSetupViewController: UIViewController {
   */
   
   @IBAction func onSaveProfileButtonTap(sender: AnyObject) {
-    // TODO: remove
-//    let person:Parent = Parent()
-    // get the information from the different fields
-//    person.fullName = nameField.text
-//    person.email = emailField.text
-//    person.babyName = babyNameField.text
-//    person.babyBirthday = babyBirthdayDate.date
-    
+    // Init a Parent object with data entered by the user
     let person:Parent = Parent(parentsFullName: nameField.text, parentsEmail: emailField.text, childsName: babyNameField.text, babyBirthdate: babyBirthdayDate.date)
     
+    // persist the Parent instance.
     person.storeInfo()
   }
   
