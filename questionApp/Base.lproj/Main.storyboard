@@ -865,7 +865,7 @@
                                                     <action selector="onUnassistedSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="Omf-za-rWr"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dix-6z-XkT" userLabel="unassisted sitting" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dix-6z-XkT" userLabel="unassisted sitting" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="35" y="254" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1017,6 +1017,9 @@
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="152" width="250" height="60"/>
+                                </variation>
                                 <connections>
                                     <segue destination="JXR-iK-Laf" kind="presentation" id="XvC-sb-ylX"/>
                                 </connections>
@@ -1029,6 +1032,9 @@
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="222" width="250" height="60"/>
+                                </variation>
                                 <connections>
                                     <action selector="attentionAtADistanceButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="062-Pe-cc0"/>
                                 </connections>
@@ -1041,18 +1047,30 @@
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="293" width="250" height="60"/>
+                                </variation>
                                 <connections>
                                     <action selector="partiallyCoveredToyButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="xgC-Nr-Imb"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNPupilResponseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="U3b-yy-r0p">
                                 <rect key="frame" x="49" y="180" width="24" height="24"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="170" width="24" height="24"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNCrossingEyesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-r3-qxs">
                                 <rect key="frame" x="49" y="256" width="24" height="24"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="240" width="24" height="24"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNHearingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-HV-L8J">
                                 <rect key="frame" x="49" y="332" width="24" height="24"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="313" width="24" height="24"/>
+                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqb-dl-5DX" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="33" y="312" width="250" height="60"/>
@@ -1063,10 +1081,25 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="32" y="385" width="250" height="60"/>
+                                    <rect key="frame" x="32" y="363" width="250" height="60"/>
                                 </variation>
                                 <connections>
                                     <action selector="completelyCoveredToyButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="ud1-Sb-oHv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sz-74-Q0e" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="33" y="312" width="250" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="ask and respond">
+                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="434" width="250" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="plasticJarButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="AJt-X5-Fzi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1074,11 +1107,13 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Oqb-dl-5DX"/>
+                                <exclude reference="5sz-74-Q0e"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Oqb-dl-5DX"/>
+                                <include reference="5sz-74-Q0e"/>
                             </mask>
                         </variation>
                     </view>

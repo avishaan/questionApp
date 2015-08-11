@@ -28,6 +28,8 @@ struct TestNamesPresentable {
     static var socialsmiling = "social smiling"
     static var facialMimic = "facial mimic"
     static var unassistedSitting = "unassisted sitting"
+    static var sittingAndReaching = "sitting and reaching"
+    static var plasticJar = "ask and respond"
     // TODO: if new tests are added to the app, add them here.
 }
 

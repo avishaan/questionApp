@@ -14,8 +14,11 @@
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
+            <string>Omnes-Medium</string>
         </mutableArray>
         <mutableArray key="OmnesSem.ttf">
+            <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
@@ -30,10 +33,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Why Is Completely Covered Toy View Controller-->
+        <!--Why Is Plastic Jar View Controller-->
         <scene sceneID="FZT-MC-ARd">
             <objects>
-                <viewController storyboardIdentifier="WhyIsCompletelyCoveredToyStoryboardID" id="JXR-iK-Laf" customClass="WhyIsCompletelyCoveredToyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyIsPlasticJarStoryboardID" id="JXR-iK-Laf" customClass="WhyIsPlasticJarViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KF9-fb-PL4"/>
                         <viewControllerLayoutGuide type="bottom" id="EBG-MU-1Ya"/>
@@ -55,24 +58,24 @@
                                     <segue destination="AzZ-4Q-lSd" kind="presentation" id="pwg-qC-oO4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWN-VU-p5X" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWN-VU-p5X" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is the Covered Toy test important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cw-uu-qnA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why test Joint Attention?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cw-uu-qnA">
                                 <rect key="frame" x="9" y="90" width="295" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsCompletelyCoveredToy" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsPlasticJar" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
                                 <rect key="frame" x="0.0" y="154" width="320" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyb-jD-KTj">
                                 <rect key="frame" x="14" y="274" width="293" height="183"/>
-                                <string key="text">This the final test of your baby’s grasp of Object Permanence. Object Permanence is the understanding that an object completely hidden from view still exists and can be retrieved.</string>
+                                <string key="text">This activity tests your baby’s ability to ask for things and respond to requests from others. This is another form of Joint Attention.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -100,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="3447" y="1900"/>
         </scene>
-        <!--Completely Covered Toy Test Overview View Controller-->
+        <!--Plastic Jar Test Overview View Controller-->
         <scene sceneID="kZ5-VU-Vw5">
             <objects>
-                <viewController id="AzZ-4Q-lSd" customClass="CompletelyCoveredToyTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AzZ-4Q-lSd" customClass="PlasticJarTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="25M-dO-kwc"/>
                         <viewControllerLayoutGuide type="bottom" id="mZ0-n9-nke"/>
@@ -128,7 +131,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="f3o-wh-ptW" kind="presentation" identifier="completelyCoveredToyWhatWillYouNeedSegueID" id="YBa-a7-8Az"/>
+                                    <segue destination="f3o-wh-ptW" kind="presentation" identifier="plasticJarWhatWillYouNeedSegueID" id="YBa-a7-8Az"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-aL-bAf">
@@ -146,7 +149,7 @@
                                     <action selector="onPreviewButtonTap:" destination="AzZ-4Q-lSd" eventType="touchUpInside" id="RaF-Ul-TYT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8d-Yx-Uq4" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8d-Yx-Uq4" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="4128" y="2381.5"/>
         </scene>
-        <!--Completely Covered Toy What Will You Need View Controller-->
+        <!--Plastic Jar What Will You Need View Controller-->
         <scene sceneID="kej-Yv-b6w">
             <objects>
-                <viewController id="f3o-wh-ptW" customClass="CompletelyCoveredToyWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f3o-wh-ptW" customClass="PlasticJarWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o5a-vX-Eaf"/>
                         <viewControllerLayoutGuide type="bottom" id="SRY-iM-Abz"/>
@@ -196,7 +199,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Zr1-87-Qwo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAR-sa-ThD" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAR-sa-ThD" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -218,10 +221,10 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CompletelyCoveredToyWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlasticJarWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
                                 <rect key="frame" x="-5" y="113" width="329" height="201"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Any small, colorful toy will do, plus a cloth large enough to cover the toy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zg-1V-sJx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For this test, you’ll need a large plastic jar with a lid and two wind-up toys that will fit inside. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zg-1V-sJx">
                                 <rect key="frame" x="37" y="281" width="245" height="112"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -242,18 +245,18 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="testPreparationLabel" destination="0Zg-1V-sJx" id="Gzg-NM-Mdm"/>
-                        <segue destination="1lK-te-V33" kind="presentation" identifier="completelyCoveredToyIsBabyReadySegueID" id="rNy-xp-aaS"/>
-                        <segue destination="ud9-GU-zU4" kind="presentation" identifier="completelyCoveredToyTimeToTestSegueID" id="j7l-Po-XYD"/>
+                        <segue destination="1lK-te-V33" kind="presentation" identifier="plasticJarIsBabyReadySegueID" id="rNy-xp-aaS"/>
+                        <segue destination="ud9-GU-zU4" kind="presentation" identifier="plasticJarTimeToTestSegueID" id="j7l-Po-XYD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40R-rV-Xat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4779" y="1900"/>
         </scene>
-        <!--Completely Covered Toy Is Baby Ready View Controller-->
+        <!--Plastic Jar Is Baby Ready View Controller-->
         <scene sceneID="NnE-dh-bRK">
             <objects>
-                <viewController id="1lK-te-V33" customClass="CompletelyCoveredToyIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1lK-te-V33" customClass="PlasticJarIsBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uoj-Ly-p74"/>
                         <viewControllerLayoutGuide type="bottom" id="Ap1-2i-T2i"/>
@@ -265,7 +268,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lZs-eR-Msj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9a-Yl-ZuN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9a-Yl-ZuN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -288,7 +291,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CompletelyCoveredToyIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="vRw-fx-9zO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PartiallyCoveredToyIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="vRw-fx-9zO">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-g7-YqV">
@@ -385,17 +388,17 @@
                         <outlet property="bulletedLabel1" destination="jRY-0f-8pV" id="Zv5-DH-Lmj"/>
                         <outlet property="bulletedLabel2" destination="5M0-5t-hEs" id="lIq-vK-bse"/>
                         <outlet property="bulletedLabel3" destination="wr2-o1-W0M" id="Hgu-pZ-FJI"/>
-                        <segue destination="ud9-GU-zU4" kind="presentation" identifier="completelyCoveredToyIsBabyReadyToTimeToTestSegueID" id="OZR-PC-mDf"/>
+                        <segue destination="ud9-GU-zU4" kind="presentation" identifier="plasticJarIsBabyReadyToTimeToTestSegueID" id="OZR-PC-mDf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nb5-v8-2jK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5481" y="2248"/>
         </scene>
-        <!--Completely Covered Toy Time To Test View Controller-->
+        <!--Plastic Jar Time To Test View Controller-->
         <scene sceneID="IOE-YX-ZGO">
             <objects>
-                <viewController id="ud9-GU-zU4" customClass="CompletelyCoveredToyTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ud9-GU-zU4" customClass="PlasticJarTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kM3-AZ-wKi"/>
                         <viewControllerLayoutGuide type="bottom" id="5o7-PL-t1p"/>
@@ -407,40 +410,46 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8e4-K5-pA2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j0-5d-jl2" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j0-5d-jl2" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="47" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time to test!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uct-6v-sQK">
-                                <rect key="frame" x="35" y="83" width="251" height="53"/>
+                                <rect key="frame" x="35" y="67" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhh-eV-ew9">
-                                <rect key="frame" x="30" y="144" width="260" height="235"/>
+                                <rect key="frame" x="30" y="115" width="260" height="352"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.  Attract baby's attention with the toy." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwF-H5-fhn">
-                                <rect key="frame" x="52" y="157" width="222" height="46"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.  Place two small wind-up toys in a jar and seal. Settle baby in front of table." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwF-H5-fhn">
+                                <rect key="frame" x="52" y="124" width="222" height="54"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="16"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.  Place the toy in front of baby and completely cover it with the cloth." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK3-xj-PGh">
-                                <rect key="frame" x="52" y="212" width="222" height="97"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.  Unscrew the lid and empty out the toys onto table in front of baby. Quickly remove the toys before baby can play with them." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK3-xj-PGh">
+                                <rect key="frame" x="52" y="174" width="222" height="97"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="16"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.  Does baby reach for the toy?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-fT-sq6">
-                                <rect key="frame" x="52" y="302" width="222" height="76"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.  Return toys to jar and seal tightly enough that baby will not be able to remove lid." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-fT-sq6">
+                                <rect key="frame" x="52" y="258" width="222" height="76"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="16"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.  Hand the jar to baby and wait 10 secs. or until baby gives back the jar." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7I-Fw-xae">
+                                <rect key="frame" x="52" y="317" width="222" height="76"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="16"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -454,7 +463,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uN-06-TUx" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="94" y="392" width="122" height="30"/>
+                                <rect key="frame" x="94" y="479" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -463,6 +472,12 @@
                                     <segue destination="j4R-It-zho" kind="presentation" id="kfk-gB-zbt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5.  Remove one toy from jar, put it on the table and start it. When it stops ask baby for the toy back." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z8-u3-094">
+                                <rect key="frame" x="52" y="386" width="222" height="76"/>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="16"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -472,16 +487,18 @@
                         <outlet property="step1Label" destination="KwF-H5-fhn" id="ybF-vJ-MSB"/>
                         <outlet property="step2Label" destination="VK3-xj-PGh" id="zky-2x-hUc"/>
                         <outlet property="step3Label" destination="XGM-fT-sq6" id="mfd-XO-QUC"/>
+                        <outlet property="step4Label" destination="V7I-Fw-xae" id="H6R-YG-Qj6"/>
+                        <outlet property="step5Label" destination="7Z8-u3-094" id="K5J-wD-S24"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ypv-6s-Exi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6186" y="1900"/>
         </scene>
-        <!--Completely Covered Toy What Did You See View Controller-->
+        <!--Plastic Jar What Did You See View Controller-->
         <scene sceneID="ipC-xQ-2is">
             <objects>
-                <viewController id="j4R-It-zho" customClass="CompletelyCoveredToyWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="j4R-It-zho" customClass="PlasticJarWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6sM-sg-VDH"/>
                         <viewControllerLayoutGuide type="bottom" id="XKB-gT-1eT"/>
@@ -493,7 +510,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="umw-yp-Kdm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-Ff-64Z" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-Ff-64Z" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -506,14 +523,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-qa-ne5" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="126" width="265" height="52"/>
+                                <rect key="frame" x="28" y="126" width="265" height="113"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Baby reached for toy.">
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Baby returned the jar to you, showing ability to request, ie “I want one of the toys”. Baby also gave toy back when asked.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eth-Fu-Wuv" kind="presentation" identifier="CompletelyCoveredToyGoodOutcomeSegueID" id="U36-Xr-jaP"/>
+                                    <segue destination="eth-Fu-Wuv" kind="presentation" identifier="PlasticJarGoodOutcomeSegueID" id="U36-Xr-jaP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwv-sv-Lds" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
@@ -526,25 +543,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4xx-Jd-3JY" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="196" width="265" height="52"/>
+                                <rect key="frame" x="28" y="255" width="265" height="59"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Baby had no reaction.">
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Baby didn’t return jar or toy or show interest.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ffs-lR-bUX" kind="presentation" identifier="CompletelyCoveredToyBadOutcomeSegueID" id="ZPb-uS-S7c"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nnb-GL-gye" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="265" width="265" height="52"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Baby looked elsewhere.">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Ffs-lR-bUX" kind="presentation" identifier="CompletelyCoveredToyBadOutcomeSegueID2" id="4Uj-0q-zFC"/>
+                                    <segue destination="Ffs-lR-bUX" kind="presentation" identifier="PlasticJarBadOutcomeSegueID" id="ZPb-uS-S7c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -556,10 +562,10 @@
             </objects>
             <point key="canvasLocation" x="6870" y="1900"/>
         </scene>
-        <!--Completely Covered Toy Good Outcome View Controller-->
+        <!--Plastic Jar Good Outcome View Controller-->
         <scene sceneID="vgL-cy-7if">
             <objects>
-                <viewController id="eth-Fu-Wuv" customClass="CompletelyCoveredToyGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eth-Fu-Wuv" customClass="PlasticJarGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EUh-UK-GaY"/>
                         <viewControllerLayoutGuide type="bottom" id="0QN-5z-axh"/>
@@ -577,7 +583,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby has developed the understanding of Object Permanence." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-4L-Xv0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby seems to understand requesting and responding to requests." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-4L-Xv0">
                                 <rect key="frame" x="27" y="135" width="267" height="115"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -608,7 +614,7 @@
                                     <action selector="onBackButtonTap:" destination="eth-Fu-Wuv" eventType="touchUpInside" id="wqs-Ie-Qq6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRj-NZ-gtr" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRj-NZ-gtr" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -623,10 +629,10 @@
             </objects>
             <point key="canvasLocation" x="7515" y="1582"/>
         </scene>
-        <!--Completely Covered Toy Bad Outcome View Controller-->
+        <!--Plastic Jar Bad Outcome View Controller-->
         <scene sceneID="RVn-GP-9Ai">
             <objects>
-                <viewController id="Ffs-lR-bUX" customClass="CompletelyCoveredToyBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ffs-lR-bUX" customClass="PlasticJarBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D30-6J-I8g"/>
                         <viewControllerLayoutGuide type="bottom" id="V0s-nc-Xru"/>
@@ -641,14 +647,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8M-D2-vqW">
                                 <rect key="frame" x="24" y="102" width="272" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Covered Toy Age Range: ">
+                                    <fragment content="Joint Attention Range: ">
                                         <attributes>
                                             <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="Omnes-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="6-15 mo.">
+                                    <fragment content="8-30 mo.">
                                         <attributes>
                                             <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="Omnes-Medium"/>
@@ -661,7 +667,7 @@
                                     <rect key="frame" x="48" y="129" width="225" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf6-cm-zCi" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf6-cm-zCi" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -700,7 +706,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g9k-pA-tN0" kind="presentation" identifier="partiallyCoveredToyToActivityReminderSegue" id="ley-Ow-uL2"/>
+                                    <segue destination="g9k-pA-tN0" kind="presentation" identifier="plasticJarToActivityReminderSegue" id="ley-Ow-uL2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Uo-zF-zEf" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
@@ -713,17 +719,14 @@
                                     <segue destination="mOS-fZ-XdF" kind="presentation" id="lb8-xY-4C4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Didn't react?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlZ-2a-xSe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Didn't respond?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlZ-2a-xSe">
                                 <rect key="frame" x="32" y="62" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-LE-NYr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't worry! Your baby may be a bit young for this test. Try this test again in a month." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-LE-NYr">
                                 <rect key="frame" x="16" y="232" width="288" height="204"/>
-                                <string key="text">Not to worry. Lucas is a bit 
-too young for this skill.
-Try again in a month.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -743,10 +746,10 @@ Try again in a month.</string>
             </objects>
             <point key="canvasLocation" x="8162" y="1900"/>
         </scene>
-        <!--Completely Covered Toy Activity Reminder View Controller-->
+        <!--Plastic Jar Activity Reminder View Controller-->
         <scene sceneID="JvQ-AO-3dC">
             <objects>
-                <viewController id="g9k-pA-tN0" customClass="CompletelyCoveredToyActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="g9k-pA-tN0" customClass="PlasticJarActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kjw-Lo-JfG"/>
                         <viewControllerLayoutGuide type="bottom" id="lb7-ub-ug9"/>
@@ -758,7 +761,7 @@ Try again in a month.</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8ik-mf-MKT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME1-7A-z7c" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME1-7A-z7c" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -836,10 +839,10 @@ Try again in a month.</string>
             </objects>
             <point key="canvasLocation" x="8745" y="1900"/>
         </scene>
-        <!--Completely Covered Toy More Info View Controller-->
+        <!--Plastic Jar More Info View Controller-->
         <scene sceneID="50G-jk-ZHv">
             <objects>
-                <viewController id="mOS-fZ-XdF" customClass="CompletelyCoveredToyMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mOS-fZ-XdF" customClass="PlasticJarMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d7p-k2-o5U"/>
                         <viewControllerLayoutGuide type="bottom" id="lG7-4n-2yL"/>
@@ -851,7 +854,7 @@ Try again in a month.</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-Vh-ct4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="covered toy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-Xs-fdN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ask &amp; respond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-Xs-fdN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -883,15 +886,15 @@ Try again in a month.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssk-2q-3Ek">
-                                <rect key="frame" x="24" y="130" width="272" height="245"/>
-                                <string key="text" base64-UTF8="YES">
-T2JqZWN0IFBlcm1hbmVuY2UgdGVzdHMgbWVhc3VyZSB3aGVuIGJhYnkgDWRldmVsb3BzIHRoZSBjb25j
-ZXB0IG9mIHRoZSB3b3JsZCBleGlzdGluZyBzZXBhcmF0ZWx5IGZyb20gdGhlaXIgb3duIHBvaW50IG9m
-IHZpZXcgb3IgZXhwZXJpZW5jZS4gWW91ciBiYWJ5IG5lZWRzIHRvIGhhdmUgdGhpcyBiYXNpYyB1bmRl
-cnN0YW5kaW5nIHRvIANkZXZlbG9wIG1vcmUgY29tcGxleCBtZW50YWwgbW9kZWxzIGFuZCADdGhvdWdo
-dHMgbGF0ZXIgb24uA
-</string>
+                                <rect key="frame" x="24" y="130" width="272" height="174"/>
+                                <string key="text">Typically, developing children are able to initate behavioral requests and engage with an adult. Persistent lack of joint attention ability past 30 months can be an early indicator for autism .</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If baby continues to fail the test, please check with your pediatrician." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyi-xd-nnx">
+                                <rect key="frame" x="24" y="251" width="272" height="174"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -906,16 +909,15 @@ dHMgbGF0ZXIgb24uA
         </scene>
     </scenes>
     <resources>
-        <image name="CompletelyCoveredToyIsBabyReady" width="320" height="120"/>
-        <image name="CompletelyCoveredToyWhatNeed" width="320" height="120"/>
+        <image name="PartiallyCoveredToyIsBabyReady" width="273" height="108"/>
+        <image name="PlasticJarWhatNeed" width="320" height="120"/>
         <image name="PointFollowingTestVideoPreview" width="319" height="203"/>
-        <image name="WhyIsCompletelyCoveredToy" width="320" height="120"/>
+        <image name="WhyIsPlasticJar" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="j7l-Po-XYD"/>
-        <segue reference="ZPb-uS-S7c"/>
     </inferredMetricsTieBreakers>
 </document>

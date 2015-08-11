@@ -99,7 +99,8 @@ class TestHistories : NSObject, NSCoding {
             Test.TestNames.socialSmiling : Test.TestNames.socialSmiling,
             Test.TestNames.FacialMimic : Test.TestNames.FacialMimic,
             Test.TestNames.unassistedSitting : Test.TestNames.unassistedSitting,
-            Test.TestNames.sittingAndReaching : Test.TestNames.sittingAndReaching
+            Test.TestNames.sittingAndReaching : Test.TestNames.sittingAndReaching,
+            Test.TestNames.plasticJar : Test.TestNames.plasticJar
             // TODO: if new tests are added to the app, add them here.
         ]
         

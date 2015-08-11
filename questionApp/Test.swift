@@ -38,6 +38,7 @@ class Test: NSObject, NSCoding {
         static var FacialMimic: String = "facial mimic"
         static var unassistedSitting: String = "unassisted sitting"
         static var sittingAndReaching: String = "sitting and reaching"
+        static var plasticJar: String = "ask and respond"
         // TODO: add additional var as new tests are added to the app
     }
     
@@ -77,6 +78,7 @@ class Test: NSObject, NSCoding {
         static var facialMimic:         Double = 14 * Test.SecondsInADay
         static var unassistedSitting:   Double = 14 * Test.SecondsInADay
         static var sittingAndReaching:  Double = 14 * Test.SecondsInADay
+        static var plasticJar:          Double = 14 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
     }
     
