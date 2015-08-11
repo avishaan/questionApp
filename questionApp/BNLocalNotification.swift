@@ -14,19 +14,23 @@ Created on 8/5/15
 import UIKit
 import Foundation
 
+// TODO: remove RemindMe buttons from VCs
+
 class BNLocalNotification {
 
   struct NotificationConstants {
     static var subject = "babynoggin Test Reminder"
     static var body = "It's time to retry the test."
-    static var reminderBodyFormatted = "It's time to retry the %@ test."
+    static var reminderBodyFormatted = "It's time to retry the %@ test if your baby has not yet passed."
     static var composerErrorTitle = "Error"
     static var composerErrorMessage = "Unable to schedule the reminder."
-    static var interval: Double = 5 // TODO: Currently set to 5 seconds to support testing. Must change to the following 2 week interval for beta release: 14 * 24 * 60 * 60 = 1209600
+    static var defaultInterval: Double = 5 // TODO: Currently set to 5 seconds to support testing. Must change to the following 2 week interval for beta release: 14 * 24 * 60 * 60 = 1209600
     static var confirmedTitle = "All set!"
     static var confirmedMessage = "A notification has been scheduled when it is time to try the %@ test again in 2 weeks"
     static var button = "OK"
   }
+  
+  static let LocalNotificationInfoDictionaryTestNameKey = "NotificationTestName"
   
   /* Set testName to a TestNamesPresentable member to identify the test. (See the TestNamesPresentable struct at the top of this file.) This testName will be used in the Reminder presented to the user.
   */
@@ -34,8 +38,7 @@ class BNLocalNotification {
   
   /* Set elapsedSecondsBeforePresentingReminder to identify the number of seconds from now that should elapse before the reminder is presented to the user.
   */
-  var elapsedSecondsBeforePresentingReminder: Double = NotificationConstants.interval // 2 weeks in seconds by default (production release)
-  
+  var elapsedSecondsBeforePresentingReminder: Double = NotificationConstants.defaultInterval // 2 weeks in seconds by default
   
   /*
   @brief This designated initializer initializes a BNLocalNotification instance with a test name and schedule interval.
@@ -65,13 +68,22 @@ class BNLocalNotification {
     // add a badge
     localNotification.applicationIconBadgeNumber = 1
     
-    // TODO: specify the test in the userInfo property so the app knows which test to display when it is launched.
+
+// TODO: get rid of this
+//    NSDictionary *infoDict = [NSDictionary dictionaryWithObject:item.eventName forKey:ToDoItemKey];
+//    localNotif.userInfo = infoDict;
     
     // ask user for permission to display notifications
     acquireNotificationPermission()
 
+    // TODO: specify the test in the userInfo property so the app knows which test to display when it is launched.
+    if let testName = testName {
+      let infoDictionary = [BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey : testName]
+      localNotification.userInfo = infoDictionary
+    }
+    
     // schedule the notification
-    localNotification.fireDate = NSDate(timeIntervalSinceNow: NotificationConstants.interval)
+    localNotification.fireDate = NSDate(timeIntervalSinceNow: 20 /*TODO: switch to this --> elapsedSecondsBeforePresentingReminder*/)
     UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     
     //presentConfirmationAlert()
@@ -112,68 +124,156 @@ class BNLocalNotification {
     }
   }
   
-  // TODO: add code to handle notification if app is running. call from AppDelegate when user clicks on notification.
+  
+
+//  static func parseLocalNotification(localNotification: UILocalNotification) {
+//    
+//    let testName = localNotification.userInfo![BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey] as! String
+//    handleNotificationSelection(testName)
+//    
+//    // remove the notification
+//    UIApplication.sharedApplication().cancelLocalNotification(localNotification)
+//  }
+  
+//    if true {
+//
+//    //if localNotification.userInfo!["UUID"] as! String == "bob" {
+//    
+////    let userinfo = localNotification.userInfo as NSDictionary
+////
+////    if let testName = userinfo?.valueForKey("bob") as? String {
+//    
+////    if let testName = userinfo[BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey] as? String {
+//      handleNotificationSelection(testName)
+//
+//    }
+//  }
+  
+//  static func parseLocalNotification(launchOptions: [NSObject: AnyObject]?) {
+//    if let options = launchOptions {
+//      if let testName = options[BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey] as? String {
+//        println("testName extracted from local notification = \(testName)")
+//        handleNotificationSelection(testName)
+//      }
+//    }
+//  }
+  
   /*
   @brief Display the first view controller of the test identified in the notification.
-  @param Identifies the test to launch.
+  @discussion It can legitimately be argued that a more pure separation of view and model would be to simply post an NSNotification here and leave it to any view controller having registered an observer for that NSNotification to take action upon receipt of the NSNotificatoin (by prompting the user or displaying the new view controller associated with the reminder local notification). However, I chose to walk the VC stack and present the view controller in this class function so that it was not necessary to register an NSNotification observer in a couple hunred view controllers. This looks like the correct tradeoff to me at this time.
+  @param (in) localNotification - The local notification selected by the end user. It contains a userInfo dictionary identifying the test to launch.
   */
-/* TODO - define function parameter and finish the funchtion.
-  func handleNotificationSelection(/* TODO: userInfo : TBDType */) {
+  static func handleLocalNotification(localNotification: UILocalNotification) {
     
-    // TODO: extract test from userInfo property and launch that test
+    let testName = localNotification.userInfo![BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey] as! String
     let testID = 0
-    
-    var storyboard = UIStoryboard (name: "Main", bundle: nil)
+    var storyboardID: String? = nil
     var controller : UIViewController? = nil
     
-    switch testID {
-    case :  // Pupil Response
-      storyboardID : String = "WhyIsPupilResponseStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsPupilResponseViewcontroller
-    case : // Falling Toy
-      storyboardID : String = "WhyIsObjectPermanenceStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsObjectPermanenceViewController
-    case : // Let's Crawl
-      storyboardID : String = "WhyIsCrawlingViewControllerStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsCrawlingViewController
-    case : // Point Following
-      storyboardID : String = "WhyIsPointFollowingStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsPointFollowingViewController
-    case : // Hearing
-      storyboardID : String = "WhyIsHearingStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsHearingViewController
-    case : // Crossing Eyes
-      storyboardID : String = "WhyIsCrossingEyesStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsCrossingEyesViewController
-    case : // Attention at Distance
-      storyboardID : String = "WhyIsAttentionAtDistanceStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsAttentionAtDistanceViewController
-    case : // Symmetry
-      storyboardID : String = "WhyIsSymmetryStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsSymmetryViewController
-    case : // Pincer
-      storyboardID : String = "WhyIsPincerStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsPincerViewController
-    case : // Partially Covered Toy
-      storyboardID : String = "WhyIsPartiallyCoveredToyStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsPartiallyCoveredToyViewController
-    case : // Self Recognition
-      storyboardID : String = "WhyIsSelfRecognitionStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsSelfRecognitionViewController
-    case : // Social Smiling
-      storyboardID : String = "WhyIsSocialSmilingStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsSocialSmilingViewController
-    case : // Facial Mimic
-      storyboardID : String = "WhyIsFacialMimicStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsFacialMimicViewController
-    default :
-      storyboardID : String = "WhyIsPupilResponseStoryboardID"
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! WhyIsPupilResponseViewcontroller
+    switch testName {
+    case Test.TestNames.pupilResponse:  // Pupil Response
+      storyboardID = "WhyIsPupilResponseStoryboardID"
+      var storyboard = UIStoryboard (name: "Main", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPupilResponseViewController
+    case Test.TestNames.fallingToy: // Falling Toy
+      storyboardID = "WhyIsObjectPermanenceStoryboardID"
+      var storyboard = UIStoryboard (name: "Main", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsObjectPermanenceViewController
+    case Test.TestNames.letsCrawl: // Let's Crawl
+      storyboardID = "WhyIsCrawlingViewControllerStoryboardID"
+      var storyboard = UIStoryboard (name: "Main", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsCrawlingViewController
+    case Test.TestNames.pointFollowing: // Point Following
+      storyboardID = "WhyIsPointFollowingStoryboardID"
+      var storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPointFollowingViewController
+    case Test.TestNames.hearing: // Hearing
+      storyboardID = "WhyIsHearingStoryboardID"
+      var storyboard = UIStoryboard (name: "Hearing", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsHearingViewController
+    case Test.TestNames.crossingEyes: // Crossing Eyes
+      storyboardID = "WhyIsCrossingEyesStoryboardID"
+      var storyboard = UIStoryboard (name: "CrossingEyes", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsCrossingEyesViewController
+    case Test.TestNames.attentionAtDistance: // Attention at Distance
+      storyboardID = "WhyIsAttentionAtDistanceStoryboardID"
+      var storyboard = UIStoryboard (name: "Main", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsAttentionAtDistanceViewController
+    case Test.TestNames.symmetry: // Symmetry
+      storyboardID = "WhyIsSymmetryStoryboardID"
+      var storyboard = UIStoryboard (name: "Symmetry", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSymmetryViewController
+    case Test.TestNames.pincer: // Pincer
+      storyboardID = "WhyIsPincerStoryboardID"
+      var storyboard = UIStoryboard (name: "Pincer", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPincerViewController
+    case Test.TestNames.partiallyCoveredToy: // Partially Covered Toy
+      storyboardID = "WhyIsPartiallyCoveredToyStoryboardID"
+      var storyboard = UIStoryboard (name: "PartiallyCoveredToy", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPartiallyCoveredToyViewController
+    case Test.TestNames.selfRecognition: // Self Recognition
+      storyboardID = "WhyIsSelfRecognitionStoryboardID"
+      var storyboard = UIStoryboard (name: "SelfRecognition", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSelfRecognitionController
+    case Test.TestNames.socialSmiling: // Social Smiling
+      storyboardID = "WhyIsSocialSmilingStoryboardID"
+      var storyboard = UIStoryboard (name: "SocialSmiling", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSocialSmilingViewController
+    case Test.TestNames.FacialMimic: // Facial Mimic
+      storyboardID = "WhyIsFacialMimicStoryboardID"
+      var storyboard = UIStoryboard (name: "FacialMimic", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsFacialMimicViewController
+    default: // TODO - probably best to bring up main screen in default case
+      storyboardID = "WhyIsPupilResponseStoryboardID"
+      var storyboard = UIStoryboard (name: "Main", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPupilResponseViewController
     }
     
-    dispatch_async(dispatch_get_main_queue()) {
-      self.presentViewController(controller, animated: true, completion: nil);
+    // Present the Why... view controller for the test associated with the local notification on top of the current topmost VC.
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    if let controller = controller {
+      if var topmostViewController = UIApplication.sharedApplication().keyWindow?.rootViewController {
+        // walk VC stack to find topmost VC
+        while let presentedViewController = topmostViewController.presentedViewController {
+          topmostViewController = presentedViewController
+        }
+        // present new VC
+        dispatch_async(dispatch_get_main_queue()) {
+          topmostViewController.presentViewController(controller, animated: true, completion: nil);
+        }
+      }
+    }
+    
+    // decrement the app's badge icon count
+    UIApplication.sharedApplication().applicationIconBadgeNumber -= 1
+    
+    // remove the local notification
+    UIApplication.sharedApplication().cancelLocalNotification(localNotification)
+  }
+  
+  // TODO: call this function if the test was passed.
+  /*!
+  @brief Kill a local notification if the test was passed in the interim.
+  @discussion If the local notification was previously scheduled, this function will remove it by searching all local notifications for the proper userInfo key containing the test's name.
+  @param (in) testName - The name of the test whose local notification is to be deleted. Use a Test.TestNames value. (cannot be nil)
+  */
+  static func removeLocalNotification(testName: String) {
+    
+    var theApp:UIApplication = UIApplication.sharedApplication()
+    
+    // Iterate through all local notifications to find one containing testName in the userInfo and delete it.
+    for locNotif in theApp.scheduledLocalNotifications {
+      var notification = locNotif as! UILocalNotification
+      let notificationUserInfo = notification.userInfo! as! [String:AnyObject]
+      let notificationTestName = notificationUserInfo[BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey]! as! String
+      if notificationTestName == testName {
+                // TODO: add profile name to the userInfo and only delete if same profile name
+                //        in other words, the first child fails repeatedly, while the 2nd fails then passes. Only delete the notification belonging to the second child.
+        
+        // match! Cancel this local notification.
+        theApp.cancelLocalNotification(notification)
+        break
+      }
     }
   }
-*/
 }

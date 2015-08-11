@@ -347,7 +347,7 @@
 		8296BFAB1B5B3E31007E842B /* IntroVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideo.m4v; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		829F54E91B26995800ABE77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		829F54E91B26995800ABE77C /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
 		829F54EC1B26995800ABE77C /* questionApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = questionApp.xcdatamodel; sourceTree = "<group>"; };
 		829F54EE1B26995800ABE77C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		829F54F11B26995800ABE77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -655,15 +655,16 @@
 			children = (
 				9E923CD11B6A9B5F00F2B0A7 /* ViewClasses */,
 				9E923CD01B69A4EE00F2B0A7 /* OtherViewControllers */,
-				9EC424051B5466B90037C0E9 /* SocialAndEmotional */,
 				82E42ABD1B4118FE00BAE21B /* SensoryAndMotor */,
-				9EAEB5DA1B4CA68500159730 /* LanguageAndCognitive */,
+				9EC424051B5466B90037C0E9 /* SocialAndEmotional */,
+				9EAEB5DA1B4CA68500159730 /* LanaguageAndCognitive */,
 				82D641F11B49F9EE0013D5FB /* Models */,
 				829F54F01B26995800ABE77C /* Main.storyboard */,
 				829F54F31B26995800ABE77C /* Images.xcassets */,
 				82C49BF91B424934002998C2 /* LaunchScreen.xcassets */,
 				829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */,
 				829F54E71B26995800ABE77C /* Supporting Files */,
+				829F54E91B26995800ABE77C /* AppDelegate.swift */,
 				9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */,
 			);
 			path = questionApp;
@@ -721,7 +722,6 @@
 		82D641F11B49F9EE0013D5FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				829F54E91B26995800ABE77C /* AppDelegate.swift */,
 				82D641EF1B49F9D50013D5FB /* Parent.swift */,
 				9ED51BCC1B583B020000C5E6 /* TestHistory.swift */,
 				9ED51C091B5C22C70000C5E6 /* TestHistories.swift */,
@@ -1050,7 +1050,6 @@
 				TargetAttributes = {
 					829F54E31B26995800ABE77C = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = J4VYN3B6QR;
 					};
 					829F54FB1B26995800ABE77C = {
 						CreatedOnToolsVersion = 6.3.1;

@@ -119,7 +119,7 @@ class TestHistories : NSObject, NSCoding {
         
         if let unarchivedTestHistories = NSKeyedUnarchiver.unarchiveObjectWithFile(self.filePath) as? [String: TestHistory] {
             self.histories = unarchivedTestHistories
-            printHistories()
+            // DEBUG: printHistories()
             return true
         } else {
             return false
