@@ -93,6 +93,39 @@ class TestProfiles {
     func initProfilesFromPersistentStore() -> Bool {
         //initHistories()
         
+        // TODO: remove DEBUG does file exist?
+        
+        let fileManager = NSFileManager.defaultManager()
+        var isDir : ObjCBool = false
+        if fileManager.fileExistsAtPath(self.filePath, isDirectory:&isDir) {
+            if isDir {
+                // file exists and is a directory
+                println("\(self.filePath) exists and is a directory")
+            } else {
+                // file exists and is not a directory
+                println("\(self.filePath) exists and is not a directory")
+            }
+        } else {
+            // file does not exist
+            println("\(self.filePath) does NOT exist")
+        }
+        
+        // TODO: contents of file?
+        // TODO: try different string encoding values:  see https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSString_Class/index.html#//apple_ref/doc/constant_group/String_Encodings
+        
+        var error:NSError?
+        let string = String(contentsOfFile: self.filePath, encoding: NSASCIIStringEncoding /* NSUTF8StringEncoding */, error: &error)
+        if let theError = error {
+            print("\n\(theError.localizedDescription)")
+            if let thestring = string {
+                println("\n\(thestring)")
+            }
+        } else {
+            println("\n\(string)")
+        }
+        
+        
+        
         if let unarchivedTestProfiles = NSKeyedUnarchiver.unarchiveObjectWithFile(self.filePath) as? [String:TestHistories] /*[TestProfile]*/ {
             self.testProfiles = unarchivedTestProfiles
             printProfiles()
@@ -151,9 +184,15 @@ class TestProfiles {
         return profileName
     }
     
-    // create a TestProfile and add it to the testProfiles collection
+    /*
+    @brief create a TestProfile and add it to the testProfiles collection
+    @discussion Creates a profile for name if it doesn't already exist. If it exists this function does nothing.
+    */
     func addProfile(#name: String) {
-        testProfiles[name] = TestHistories()
+        if testProfiles[name] == nil {
+            // testProfiles doesn't contain a key by that name yet so add it.
+            testProfiles[name] = TestHistories() // TODO - this wipes any existing TestHistories for the profile name
+        }
     }
     
     // remove the TestProfile of the given name from the testProfiles collection

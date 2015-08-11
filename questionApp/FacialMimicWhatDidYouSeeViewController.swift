@@ -12,13 +12,21 @@ class FacialMimicWhatDidYouSeeViewController: UIViewController {
 
     var parent = Parent()
     var profiles = TestProfiles()
-    var test = Test()
+    var test: Test! //var test = Test()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        test = Test()
         printDebugInfo("viewDidLoad")
 //        println("viewDidLoad() start - failed test count: \(test.history.countOfFailedTests), total test count: \(test.history.countOfCompletedTests)")
 //        println("Profile TestHistories for \(parent.getCurrentProfileName()): \(profiles.getTestHistories(profileName: parent.getCurrentProfileName()))" )
+        
+        // Test:
+        profiles.initProfilesFromPersistentStore()
+        println("")
+        println("profiles:")
+        profiles.printProfiles()
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -31,14 +39,18 @@ class FacialMimicWhatDidYouSeeViewController: UIViewController {
         parent = Parent()
         
         // Ensure current information for test profiles by reloading.
-        profiles.initProfilesFromPersistentStore()
+        profiles.initProfilesFromPersistentStore() // TODO: actually this is the culprit. Why are profiles empty when read back?
         
-        printDebugInfo("viewDidAppear middle")
+        printDebugInfo("viewWillAppear middle")
         
         // Get the test information.
-        //println("profile name: \(parent.getCurrentProfileName())")
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.FacialMimic)
-        printDebugInfo("viewDidAppear end")
+        //println("viewWillAppear profile name: \(parent.getCurrentProfileName())")
+        let profileName = parent.getCurrentProfileName()
+        let testName = Test.TestNames.FacialMimic
+        test = profiles.getTest(profileName, testName: testName) // todo: Suspect line
+        
+        printDebugInfo("viewWillAppear end")
+        
         //println("viewWillAppear() end - failed test count: \(test.history.countOfFailedTests), total test count: \(test.history.countOfCompletedTests)")
         //println("Profile TestHistories for \(parent.getCurrentProfileName()): \(profiles.getTestHistories(profileName: parent.getCurrentProfileName()))" )
     }
@@ -84,12 +96,28 @@ class FacialMimicWhatDidYouSeeViewController: UIViewController {
     }
     
     func printDebugInfo(codeLocation : String) {
+        println("")
         println("code location: \(codeLocation)")
-        println("profile name: \(parent.getCurrentProfileName())")
+
+        let profileName = parent.getCurrentProfileName() //profiles.makeProfileName(parentName: parent.fullName!, babyName: parent.babyName!)
+        println("profile name: \(profileName)")
+        
         println("failed test count: \(test.history.countOfFailedTests), total test count: \(test.history.countOfCompletedTests)")
-        println("profile: \(profiles.getTestHistories(profileName: profiles.makeProfileName(parentName: parent.fullName!, babyName: parent.babyName!)))")
+        
+        println("\(profileName)'s TestHistories: \(profiles.getTestHistories(profileName: profileName))")
+
+        // println("profile: \(profiles.getTestHistories(profileName: profiles.makeProfileName(parentName: parent.fullName!, babyName: parent.babyName!)))")
         //println("Profile TestHistories for \(parent.getCurrentProfileName()): \(profiles.getTestHistories(profileName: parent.getCurrentProfileName()))" )
 
+        println("parent: fullName: \(parent.fullName), babyName: \(parent.babyName)")
+        
+        let history = test.history
+        println("test.testHistory: completed: \(history.countOfCompletedTests), successful: \(history.countOfSuccessfulTests), failed: \(history.countOfFailedTests), most recent result: \(history.mostRecentTestResult)")
+        
+        // profile
+        println("")
+        println("profiles:")
+        profiles.printProfiles()
     }
 
 }
