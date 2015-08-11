@@ -48,7 +48,7 @@ class SittingAndReachingBadOutcomeViewController: UIViewController {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.sittingAndReaching
+            controller.testName = Test.TestNamesPresentable.sittingAndReaching
         }
     }
     

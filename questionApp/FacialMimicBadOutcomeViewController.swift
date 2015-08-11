@@ -22,7 +22,7 @@ class FacialMimicBadOutcomeViewController: UIViewController {
         initializeViewFromTestHistory()
         
         // Schedule a local notification, once, to remind the user to rerun this test.
-        scheduleReminderOnce() // <-- TODO: Is something about this call is causing the test history to be reset for facial mimic!
+        scheduleReminderOnce()
     }
     
     override func didReceiveMemoryWarning() {

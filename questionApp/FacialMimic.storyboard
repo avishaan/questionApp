@@ -662,13 +662,13 @@ That's it!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not mimicking expression?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWd-zb-Ojo">
-                                <rect key="frame" x="35" y="74" width="251" height="53"/>
+                                <rect key="frame" x="35" y="82" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX5-zP-uaX" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="182" y="481" width="122" height="30"/>
+                                <rect key="frame" x="182" y="475" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -678,10 +678,10 @@ That's it!</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacialMimicBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="bXb-xb-22F">
-                                <rect key="frame" x="0.0" y="117" width="320" height="128"/>
+                                <rect key="frame" x="0.0" y="132" width="320" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not to worry! Your baby is a bit too young for this skill. Try again in 2 weeks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLB-fg-LjC">
-                                <rect key="frame" x="16" y="235" width="288" height="206"/>
+                                <rect key="frame" x="16" y="255" width="288" height="206"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -695,18 +695,8 @@ That's it!</string>
                                     <action selector="onBackButtonTap:" destination="ci1-e4-WVg" eventType="touchUpInside" id="7qZ-gZ-c9a"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uig-QU-u8h" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="481" width="122" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="remind me!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RO0-aC-8Q5" kind="presentation" identifier="FacialMimicToActivityReminderSegue" id="NCC-b6-FCq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cks-9n-o3P" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="99" y="440" width="122" height="30"/>
+                                <rect key="frame" x="16" y="475" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="more info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

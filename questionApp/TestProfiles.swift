@@ -91,37 +91,14 @@ class TestProfiles {
     @return true if successfully initialized from a previously persisted instance, else false if no previous instance existed.
     */
     func initProfilesFromPersistentStore() -> Bool {
-        //initHistories()
-        
         if let unarchivedTestProfiles = NSKeyedUnarchiver.unarchiveObjectWithFile(self.filePath) as? [String:TestHistories] /*[TestProfile]*/ {
             self.testProfiles = unarchivedTestProfiles
-            printProfiles()
+            //printProfiles()
             return true
         } else {
             return false
         }
     }
-    
-//    TODO: remove
-    /*
-    @brief Get a Test for the Parent object's current profile (identified by parent+child).
-    @discussion The test data is initialized from the store on disk.
-    @param A Parent object. (cannot be nil)
-    @param The name of the test. (cannot be nil)
-    @return Returns the requested Test object.
-    */
-//    func getTest(#parent: Parent, testName: String) -> test {
-//        // Get the name of the current profile from the Parent.
-//        let profileName = parent.getCurrentProfileName()
-//        
-//        // Get the test histories for the current profile.
-//        let histories = parent.testProfiles.getTestHistories(profileName: profileName)
-//        
-//        // Get the particular test we want from the test histories. (Test.history contains the test's history.)
-//        let test = histories.getTest(testName)
-//        
-//        return test
-//    }
 
     /*
     @brief Get a Test for the named profile and test.
@@ -151,9 +128,15 @@ class TestProfiles {
         return profileName
     }
     
-    // create a TestProfile and add it to the testProfiles collection
+    /*
+    @brief create a TestProfile and add it to the testProfiles collection
+    @discussion Creates a profile for name if it doesn't already exist. If it exists this function does nothing.
+    */
     func addProfile(#name: String) {
-        testProfiles[name] = TestHistories()
+        if testProfiles[name] == nil {
+            // testProfiles doesn't contain a key by that name yet so add it.
+            testProfiles[name] = TestHistories()
+        }
     }
     
     // remove the TestProfile of the given name from the testProfiles collection

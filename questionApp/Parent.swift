@@ -62,12 +62,32 @@ class Parent {
     }
 		
 		// Get test profiles from disk store.
-    getProfiles()
-		
-		// Create a new test profile for the current baby
-		addProfile(self.babyName)
+		getProfiles()
   }
-  
+	
+	/*
+  @brief Convenience initializer. Use if initializing a Parent instance for a new child (so the test profile is created).
+	@discussion Initializes the instance from the persistent store using Init(). Creates a test profile for the baby if it does not yet exist.
+	@param (in) parentsFullName - name of the parent (Cannot be nil.)
+	@param (in) email - parent's email address (Cannot be nil.)
+	@param (in) childsName - name of the baby (Cannot be nil.)
+	@param (in) babyBirthdate - birth date of the child (Cannot be nil.)
+	*/
+	convenience init(parentsFullName: String, parentsEmail: String, childsName: String, babyBirthdate: NSDate) {
+		
+		// initialize instance from persistent stores
+		self.init()
+	
+		// save arguments
+		fullName = parentsFullName
+		email = parentsEmail
+		babyName = childsName
+		babyBirthday = babyBirthdate
+		
+		// Create a new test profile for the current baby if one does not already exist.
+		addProfile(babyName)
+	}
+	
   func storeInfo() {
     store.setObject(self.fullName, forKey: kFullName)
     store.setObject(self.email, forKey: kEmail)
@@ -115,8 +135,8 @@ class Parent {
 	}
 
 	/*
-	@brief Create a new profile in memory and add it to this object's collection of profiles.
-	@discussion Creates profile by concatenating the parent's full name with the specified babyName.
+	@brief Create a new profile for baby in memory if one does not already exist.
+	@discussion Creates profile by concatenating the parent's full name with the specified babyName. 
 	*/
 	func addProfile(baby: String?) {
 		if let parentName = self.fullName, let babyName = baby {
@@ -129,7 +149,7 @@ class Parent {
 	@brief Return the current profile name.
 	@discussion The format of the profile name is "<parent_name>.<current_baby_name>".
 	@return The profile name if self.fullName and self.babyName are not nil, else returns the empty string.
-	TODO: When the Parent class is updated to support multiple baby profiles and the notion of the current baby profile, then the body of this function will need to be updated to return a profile name constructed with teh current baby name.
+	TODO: When the Parent class is updated to support multiple baby profiles and the notion of the current baby profile, then the body of this function will need to be updated to return a profile name constructed with the current baby name.
 	*/
 	func getCurrentProfileName() -> String {
 		if let parentName = self.fullName, let babyName = self.babyName {

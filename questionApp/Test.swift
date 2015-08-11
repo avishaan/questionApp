@@ -56,6 +56,7 @@ class Test: NSObject, NSCoding {
         static var selfrecognition = "self recognition"
         static var socialsmiling = "social smiling"
         static var facialMimic = "facial mimic"
+        static var sittingAndReaching = "sitting and reaching"
         // TODO: if new tests are added to the app, add them here.
     }
     
