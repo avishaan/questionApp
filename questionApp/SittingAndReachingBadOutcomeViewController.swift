@@ -47,15 +47,16 @@ class SittingAndReachingBadOutcomeViewController: UIViewController {
     @IBAction func onBackButtonTap(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "unassistedSittingToActivityReminderSegue" {
-            let controller = segue.destinationViewController as! ActivityReminderViewController
-            
-            // set the test name on the ActivityReminder VC
-            controller.testName = Test.TestNamesPresentable.sittingAndReaching
-        }
-    }
+
+// NOTE: Replaced ActivityReminderViewController with automatic notification.
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "unassistedSittingToActivityReminderSegue" {
+//            let controller = segue.destinationViewController as! ActivityReminderViewController
+//            
+//            // set the test name on the ActivityReminder VC
+//            controller.testName = Test.TestNamesPresentable.sittingAndReaching
+//        }
+//    }
     
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)

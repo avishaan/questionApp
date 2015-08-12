@@ -34,16 +34,17 @@ class FacialMimicBadOutcomeViewController: UIViewController {
     @IBAction func onBackButtonTap(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if segue.identifier == "FacialMimicToActivityReminderSegue" {
-            let controller = segue.destinationViewController as! ActivityReminderViewController
-            
-            // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.facialMimic
-        }
-    }
+
+// NOTE: Replaced ActivityReminderViewController with automatic notification.
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//        if segue.identifier == "FacialMimicToActivityReminderSegue" {
+//            let controller = segue.destinationViewController as! ActivityReminderViewController
+//            
+//            // set the test name on the ActivityReminder VC
+//            controller.testName = TestNamesPresentable.facialMimic
+//        }
+//    }
     
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)

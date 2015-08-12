@@ -22,7 +22,12 @@ class UnassistedSittingBadOutcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()
+        
+        // Schedule a local notification, once, to remind the user to rerun this test.
+        scheduleReminderOnce()
+        
         rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 6, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
         
         // font can't be set directly in storyboard for attributed string, set the label font here
@@ -42,15 +47,16 @@ class UnassistedSittingBadOutcomeViewController: UIViewController {
     @IBAction func onBackButtonTap(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "unassistedSittingToActivityReminderSegue" {
-            let controller = segue.destinationViewController as! ActivityReminderViewController
-            
-            // set the test name on the ActivityReminder VC
-            controller.testName = TestNamesPresentable.unassistedSitting
-        }
-    }
+
+// NOTE: Replaced ActivityReminderViewController with automatic notification.
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "unassistedSittingToActivityReminderSegue" {
+//            let controller = segue.destinationViewController as! ActivityReminderViewController
+//            
+//            // set the test name on the ActivityReminder VC
+//            controller.testName = TestNamesPresentable.unassistedSitting
+//        }
+//    }
     
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)
@@ -108,6 +114,22 @@ class UnassistedSittingBadOutcomeViewController: UIViewController {
             // update infoLabel
             let string = "Not to worry. All babies develop at different rates. Try again in two weeks."
             applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
+        }
+    }
+    
+    /*!
+    @brief Schedule a local notification to remind the user to run the test again.
+    @discussion The local notification is scheduled once, based on the number of failed tests. The number of previous failed tests that triggers the notification for each specific test is stored in the Test.LocalNotificationTrigger struct.
+    */
+    func scheduleReminderOnce() {
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
+        
+        if failed == Test.LocalNotificationTrigger.unassistedSitting {
+            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.unassistedSitting, secondsBeforeDisplayingReminder: Test.NotificationInterval.unassistedSitting)
+            localNotification.scheduleNotification(self)
         }
     }
 }
