@@ -654,7 +654,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxD-dP-Zal" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="182" y="473" width="122" height="30"/>
+                                <rect key="frame" x="182" y="471" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -681,18 +681,8 @@
                                     <action selector="onBackButtonTap:" destination="1wE-bC-dqN" eventType="touchUpInside" id="ITg-qF-ZOw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5c-9P-Xgg" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="473" width="122" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="remind me!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="OI3-B2-Arz" kind="presentation" identifier="hearingToActivityReminderSegue" id="2gV-8o-pOt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbX-g4-82p" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="99" y="428" width="122" height="30"/>
+                                <rect key="frame" x="27" y="471" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="more info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

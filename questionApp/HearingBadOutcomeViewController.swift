@@ -18,8 +18,12 @@ class HearingBadOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //TODO - remove ... applyTextAttributesToLabel()
+        
+        // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()
+        
+        // Schedule a local notification, once, to remind the user to rerun this test.
+        scheduleReminderOnce()
     }
     
     override func didReceiveMemoryWarning() {
@@ -115,4 +119,19 @@ class HearingBadOutcomeViewController: UIViewController {
         }
     }
 
+    /*!
+    @brief Schedule a local notification to remind the user to run the test again.
+    @discussion The local notification is scheduled once, based on the number of failed tests. The number of previous failed tests that triggers the notification for each specific test is stored in the Test.LocalNotificationTrigger struct.
+    */
+    func scheduleReminderOnce() {
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
+        
+        if failed == Test.LocalNotificationTrigger.hearing {
+            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.hearing, secondsBeforeDisplayingReminder: Test.NotificationInterval.hearing)
+            localNotification.scheduleNotification(self)
+        }
+    }
 }
