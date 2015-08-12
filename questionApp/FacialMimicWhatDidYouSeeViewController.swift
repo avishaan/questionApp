@@ -29,7 +29,7 @@ class FacialMimicWhatDidYouSeeViewController: UIViewController {
         
         // Get the test information.
         let profileName = parent.getCurrentProfileName()
-        let testName = Test.TestNames.FacialMimic
+        let testName = Test.TestNames.facialMimic
         test = profiles.getTest(profileName, testName: testName)
     }
     

@@ -20,7 +20,7 @@ class Test: NSObject, NSCoding {
     /* Contains metadata describing the results of previous tests. */
     var history = TestHistory()
     
-    // Test names
+    // Test names used to identify tests programmatically.
     struct TestNames {
         static var pupilResponse: String = "pupil response"
         static var fallingToy: String = "falling toy"
@@ -35,13 +35,14 @@ class Test: NSObject, NSCoding {
         static var partiallyCoveredToy : String = "partially covered toy"
         static var selfRecognition : String = "self recognition"
         static var socialSmiling: String = "social smiling"
-        static var FacialMimic: String = "facial mimic"
+        static var facialMimic: String = "facial mimic"
         static var unassistedSitting: String = "unassisted sitting"
         static var sittingAndReaching: String = "sitting and reaching"
         static var plasticJar: String = "ask and respond"
         // TODO: add additional var as new tests are added to the app
     }
     
+    // Test names displayed to user in GUI.
     struct TestNamesPresentable {
         static var pupilResponse = "pupil response"
         static var fallingToy = "falling toy"
@@ -52,9 +53,10 @@ class Test: NSObject, NSCoding {
         static var attentionAtDistance = "attention at distance"
         static var symmetry = "symmetry"
         static var pincer = "pincer"
+        static var completelyCoveredToy = "completely covered toy"
         static var partiallyCoveredToy = "partially covered toy"
-        static var selfrecognition = "self recognition"
-        static var socialsmiling = "social smiling"
+        static var selfRecognition = "self recognition"
+        static var socialSmiling = "social smiling"
         static var facialMimic = "facial mimic"
         static var unassistedSitting = "unassisted sitting"
         static var sittingAndReaching = "sitting and reaching"
@@ -75,6 +77,7 @@ class Test: NSObject, NSCoding {
         static var attentionAtDistance: Double = 14 * Test.SecondsInADay
         static var symmetry:            Double = 14 * Test.SecondsInADay
         static var pincer:              Double = 14 * Test.SecondsInADay
+        static var completelyCoveredToy: Double = 14 * Test.SecondsInADay
         static var partiallyCoveredToy: Double = 14 * Test.SecondsInADay
         static var selfRecognition :    Double = 14 * Test.SecondsInADay
         static var socialSmiling:       Double = 14 * Test.SecondsInADay
@@ -96,6 +99,7 @@ class Test: NSObject, NSCoding {
         static var attentionAtDistance: Int = 2
         static var symmetry:            Int = 2
         static var pincer:              Int = 2
+        static var completelyCoveredToy: Int = 2
         static var partiallyCoveredToy: Int = 2
         static var selfRecognition:     Int = 2
         static var socialSmiling:       Int = 2
