@@ -211,6 +211,11 @@ class BNLocalNotification {
       var storyboard = UIStoryboard (name: "PlasticJar", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPlasticJarViewController
       
+    case Test.TestNamesPresentable.completelyCoveredToy: // Plastic Jar
+      storyboardID = "WhyIsCompletelyCoveredToyStoryboardID"
+      var storyboard = UIStoryboard (name: "CompletelyCoveredToy", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsCompletelyCoveredToyViewController
+      
     default: // Bring up the Milestones view controller in the default case
       storyboardID = "MilestonesVCStoryboardID"
       var storyboard = UIStoryboard (name: "Main", bundle: nil)
@@ -242,7 +247,7 @@ class BNLocalNotification {
   /*!
   @brief Remove a local notification if the test was passed in the interim.
   @discussion If the local notification was previously scheduled, this function will remove it by searching all local notifications for the proper userInfo key containing the test's name.
-  @param (in) testName - The name of the test whose local notification is to be deleted. Use a Test.TestNames value. (cannot be nil)
+  @param (in) testName - The name of the test whose local notification is to be deleted. Use a Test.TestNamesPresentable value. (cannot be nil)
   */
   static func removeLocalNotification(testName: String) {
     

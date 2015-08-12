@@ -14,7 +14,7 @@ class FacialMimicGoodOutcomeViewController: UIViewController {
         super.viewDidLoad()
         
         // If a reminder notification had previously been scheduled, remove it now that the test has been passed.
-        BNLocalNotification.removeLocalNotification(Test.TestNames.facialMimic)
+        BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.facialMimic)
     }
 
     override func didReceiveMemoryWarning() {
