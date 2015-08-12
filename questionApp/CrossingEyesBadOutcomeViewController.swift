@@ -18,8 +18,12 @@ class CrossingEyesBadOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO - remove ... applyTextAttributesToLabel()
+        
+        // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()
+        
+        // Schedule a local notification, once, to remind the user to rerun this test.
+        scheduleReminderOnce()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,22 +50,6 @@ class CrossingEyesBadOutcomeViewController: UIViewController {
         self.presentViewController(controller, animated: true, completion: nil);
         
     }
-    
-    // Helper function formats text attributes for multiple substrings in label.
-//    func applyTextAttributesToLabel() {
-//        
-//        let string = "Not to worry. Sometimes practicing using a squeaky toy will help. Try this, then perform the test again in 2 weeks."
-//        
-//        var attributedString = NSMutableAttributedString(string: string)
-//        
-//        let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
-//        let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
-//        
-//        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 65))
-//        attributedString.addAttributes(boldAttributes, range: NSMakeRange(66, 49))
-//        
-//        infoLabel.attributedText = attributedString
-//    }
     
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel(string: String, indexAtStartOfBold index: Int, countOfBoldCharacters count: Int) {
@@ -114,5 +102,20 @@ class CrossingEyesBadOutcomeViewController: UIViewController {
             applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
         }
     }
-
+    
+    /*!
+    @brief Schedule a local notification to remind the user to run the test again.
+    @discussion The local notification is scheduled once, based on the number of failed tests. The number of previous failed tests that triggers the notification for each specific test is stored in the Test.LocalNotificationTrigger struct.
+    */
+    func scheduleReminderOnce() {
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
+        
+        if failed == Test.LocalNotificationTrigger.crossingEyes {
+            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.crossingEyes, secondsBeforeDisplayingReminder: Test.NotificationInterval.crossingEyes)
+            localNotification.scheduleNotification(self)
+        }
+    }
 }
