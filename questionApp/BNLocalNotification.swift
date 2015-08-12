@@ -14,8 +14,6 @@ Created on 8/5/15
 import UIKit
 import Foundation
 
-// TODO: remove RemindMe buttons from VCs
-
 class BNLocalNotification {
 
   struct NotificationConstants {

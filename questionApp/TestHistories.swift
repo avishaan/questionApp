@@ -50,22 +50,6 @@ class TestHistories : NSObject, NSCoding {
     // The name of the file where the test history data is persisted
     let archiveFilename = "TestHistoryArchive"
     
-    // TODO: remove Test names - moved to Test class in Test.swift
-//    struct TestNames {
-//        static var pupilResponse: String = "pupil response"
-//        static var fallingToy: String = "falling toy"
-//        static var letsCrawl: String = "lets crawl"
-//        static var pointFollowing: String = "point following"
-//        static var hearing: String = "hearing"
-//        static var crossingEyes: String = "crossing eyes"
-//        static var attentionAtDistance: String = "attention at distance"
-//        static var symmetry: String = "symmetry"
-//        static var partiallyCoveredToy : String = "partially covered toy"
-//        static var selfRecognition : String = "self recognition"
-//        static var socialSmiling: String = "social smiling"
-//        static var FacialMimic: String = "facial mimic"
-//    }
-    
     /** Computed property for the path to the file where the data is persisted. */
     var filePath : String {
         let manager = NSFileManager.defaultManager()
