@@ -132,6 +132,8 @@
 		82F78E8F1B40BA70006DBE9B /* BNButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */; };
 		82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */; };
 		9E5C765B1B72C04F00915E74 /* BNLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */; };
+		9E66A8351B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8341B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift */; };
+		9E66A8371B7BA8F100855180 /* FallingToyMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8361B7BA8F100855180 /* FallingToyMoreInformationViewController.swift */; };
 		9E923CAF1B68257D00F2B0A7 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CAE1B68257D00F2B0A7 /* Test.swift */; };
 		9E923CB11B683E8600F2B0A7 /* TestProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */; };
 		9E923CB81B69513E00F2B0A7 /* FacialMimic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E923CB71B69513E00F2B0A7 /* FacialMimic.storyboard */; };
@@ -412,6 +414,8 @@
 		82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNButtonNext.swift; sourceTree = "<group>"; };
 		82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsPupilResponseViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = BNLocalNotification.swift; sourceTree = "<group>"; tabWidth = 2; };
+		9E66A8341B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlMoreInformationViewController.swift; sourceTree = "<group>"; };
+		9E66A8361B7BA8F100855180 /* FallingToyMoreInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyMoreInformationViewController.swift; sourceTree = "<group>"; };
 		9E923CAE1B68257D00F2B0A7 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Test.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProfiles.swift; sourceTree = "<group>"; };
 		9E923CB71B69513E00F2B0A7 /* FacialMimic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FacialMimic.storyboard; sourceTree = "<group>"; };
@@ -949,6 +953,7 @@
 				9EABF29D1B4DD3F4002FDA2C /* FallingToyGoodOutcomeViewController.swift */,
 				9EABF29F1B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift */,
 				9EABF28B1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift */,
+				9E66A8361B7BA8F100855180 /* FallingToyMoreInformationViewController.swift */,
 			);
 			name = FallingToy;
 			sourceTree = "<group>";
@@ -1036,6 +1041,7 @@
 				9EF3137D1B50C2830094DAC7 /* LetsCrawlWhatDidYouseeViewController.swift */,
 				9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */,
 				9EF313811B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift */,
+				9E66A8341B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift */,
 			);
 			name = LetsCrawl;
 			sourceTree = "<group>";
@@ -1228,6 +1234,7 @@
 				20E356431B77DFE8002F38C7 /* SittingAndReachingTimeToTestViewController.swift in Sources */,
 				209965B51B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift in Sources */,
 				9EF313781B507AA00094DAC7 /* LetsCrawlWhatWillYouNeedViewController.swift in Sources */,
+				9E66A8351B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift in Sources */,
 				9E934A671B6BBD790043F365 /* PartiallyCoveredToyWhatDidYouSeeViewController.swift in Sources */,
 				9EE7EB141B55A5FE00C73CA3 /* CrossingEyesTestOverviewViewController.swift in Sources */,
 				82E574771B707538006FA7B1 /* WhyIsPincerViewController.swift in Sources */,
@@ -1380,6 +1387,7 @@
 				9ED51BB91B58132A0000C5E6 /* WhyIsSymmetryViewController.swift in Sources */,
 				9EC424141B5481990037C0E9 /* PointFollowingWhatWillYouNeedViewController.swift in Sources */,
 				2057870B1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift in Sources */,
+				9E66A8371B7BA8F100855180 /* FallingToyMoreInformationViewController.swift in Sources */,
 				9EC424281B54CC210037C0E9 /* pointFollowingActivityReminderViewController.swift in Sources */,
 				9EC424161B5481CC0037C0E9 /* PointFollowingIsBabyReadyViewController.swift in Sources */,
 				209965961B6311DC00B93C5D /* SelfRecognitionBadOutcomeViewController.swift in Sources */,
