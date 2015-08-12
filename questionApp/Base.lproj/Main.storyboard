@@ -42,7 +42,6 @@
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
-            <string>Omnes-Medium</string>
         </mutableArray>
         <mutableArray key="OmnesSem.ttf">
             <string>Omnes-Semibold</string>
@@ -1763,17 +1762,6 @@
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8H-cY-67t">
-                                <rect key="frame" x="77" y="430" width="167" height="30"/>
-                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="19"/>
-                                <state key="normal" title="More information">
-                                    <color key="titleColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="FSS-5L-5fO" kind="presentation" id="dSh-oN-3oV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El9-2v-led" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 <state key="normal" title="Back">
@@ -1807,14 +1795,14 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hht-p9-lTb" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-dE-6QL" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="468" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="remind me!">
+                                <state key="normal" title="more info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g9k-pA-tN0" kind="presentation" identifier="PupilResponseToActivityReminderSegue" id="8GC-D1-b1Z"/>
+                                    <segue destination="FSS-5L-5fO" kind="presentation" id="0ek-bS-oeE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3914,12 +3902,12 @@ Try again in 6-8 weeks.</string>
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b14-b1-AiE"/>
-        <segue reference="hJN-An-zuc"/>
         <segue reference="l69-DX-nDO"/>
+        <segue reference="Csn-V1-Agc"/>
         <segue reference="bXU-UG-Zw5"/>
+        <segue reference="b14-b1-AiE"/>
         <segue reference="j7l-Po-XYD"/>
-        <segue reference="ley-Ow-uL2"/>
         <segue reference="rnh-PO-BrS"/>
+        <segue reference="30t-RS-Jp6"/>
     </inferredMetricsTieBreakers>
 </document>

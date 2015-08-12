@@ -35,9 +35,13 @@ class PupilResponseBadOutcomeViewController: UIViewController {
     attrString.addAttribute(NSFontAttributeName, value: UIFont(name: kOmnesFontSemiBold, size: 15)!, range: NSMakeRange(0, attrString.length))
     rangeChartLabel.attributedText = attrString
     
-    initializeViewFromTestHistory()
+		// Initialize text in the view based on the test history.
+		initializeViewFromTestHistory()
+		
+		// Schedule a local notification, once, to remind the user to rerun this test.
+		scheduleReminderOnce()
   }
-  
+	
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
@@ -47,16 +51,17 @@ class PupilResponseBadOutcomeViewController: UIViewController {
   @IBAction func onBackButtonTap(sender: AnyObject) {
     self.dismissViewControllerAnimated(true, completion: nil)
   }
-	
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		
-		if segue.identifier == "PupilResponseToActivityReminderSegue" {
-			let controller = segue.destinationViewController as! ActivityReminderViewController
-			
-			// set the test name on the ActivityReminder VC
-			controller.testName = TestNamesPresentable.pupilResponse
-		}
-	}
+
+// NOTE: replaced with remind me notification.
+//	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//		
+//		if segue.identifier == "PupilResponseToActivityReminderSegue" {
+//			let controller = segue.destinationViewController as! ActivityReminderViewController
+//			
+//			// set the test name on the ActivityReminder VC
+//			controller.testName = TestNamesPresentable.pupilResponse
+//		}
+//	}
 	
 	// Helper function formats text attributes for multiple substrings in label.
 	func applyTextAttributesToLabel(string: String, indexAtStartOfBold index: Int, countOfBoldCharacters count: Int) {
@@ -110,4 +115,19 @@ class PupilResponseBadOutcomeViewController: UIViewController {
 		}
 	}
 	
+	/*!
+	@brief Schedule a local notification to remind the user to run the test again.
+	@discussion The local notification is scheduled once, based on the number of failed tests. The number of previous failed tests that triggers the notification for each specific test is stored in the Test.LocalNotificationTrigger struct.
+	*/
+	func scheduleReminderOnce() {
+		var failed = 0
+		if let failedCount = test?.failedTestsCount() {
+			failed = failedCount
+		}
+		
+		if failed == Test.LocalNotificationTrigger.pupilResponse {
+			let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.pupilResponse, secondsBeforeDisplayingReminder: Test.NotificationInterval.pupilResponse)
+			localNotification.scheduleNotification(self)
+		}
+	}
 }
