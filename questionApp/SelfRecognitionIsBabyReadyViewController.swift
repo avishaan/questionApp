@@ -29,12 +29,12 @@ class SelfRecognitionIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("symmetryIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("selfRecognitionIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("symmetryIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("selfRecognitionIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     // Helper function formats text attributes for substrings in labels.
