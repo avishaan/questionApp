@@ -13,7 +13,8 @@ class AttentionAtDistanceGoodOutcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        // If a reminder notification had previously been scheduled, remove it now that the test has been passed.
+        BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.attentionAtDistance)
     }
     
     override func didReceiveMemoryWarning() {

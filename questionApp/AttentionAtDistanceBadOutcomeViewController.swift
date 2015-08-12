@@ -18,8 +18,12 @@ class AttentionAtDistanceBadOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //applyTextAttributesToLabel()
+        
+        // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()
+        
+        // Schedule a local notification, once, to remind the user to rerun this test.
+        scheduleReminderOnce()
     }
     
     override func didReceiveMemoryWarning() {
@@ -112,6 +116,22 @@ class AttentionAtDistanceBadOutcomeViewController: UIViewController {
             // update infoLabel
             let string = "Not to worry! Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
             applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
+        }
+    }
+    
+    /*!
+    @brief Schedule a local notification to remind the user to run the test again.
+    @discussion The local notification is scheduled once, based on the number of failed tests. The number of previous failed tests that triggers the notification for each specific test is stored in the Test.LocalNotificationTrigger struct.
+    */
+    func scheduleReminderOnce() {
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
+        
+        if failed == Test.LocalNotificationTrigger.attentionAtDistance {
+            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.attentionAtDistance, secondsBeforeDisplayingReminder: Test.NotificationInterval.attentionAtDistance)
+            localNotification.scheduleNotification(self)
         }
     }
 }

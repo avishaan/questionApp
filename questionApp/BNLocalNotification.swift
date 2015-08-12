@@ -163,7 +163,7 @@ class BNLocalNotification {
     
     case Test.TestNamesPresentable.attentionAtDistance: // Attention at Distance
       storyboardID = "WhyIsAttentionAtDistanceStoryboardID"
-      var storyboard = UIStoryboard (name: "Main", bundle: nil)
+      var storyboard = UIStoryboard (name: "AttentionAtDistance", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsAttentionAtDistanceViewController
     
     case Test.TestNamesPresentable.symmetry: // Symmetry
