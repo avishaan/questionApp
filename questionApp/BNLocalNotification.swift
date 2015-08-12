@@ -132,62 +132,91 @@ class BNLocalNotification {
     var controller : UIViewController? = nil
     
     switch testName {
+      
     case Test.TestNames.pupilResponse:  // Pupil Response
       storyboardID = "WhyIsPupilResponseStoryboardID"
       var storyboard = UIStoryboard (name: "Main", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPupilResponseViewController
+      
     case Test.TestNames.fallingToy: // Falling Toy
       storyboardID = "WhyIsObjectPermanenceStoryboardID"
       var storyboard = UIStoryboard (name: "Main", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsObjectPermanenceViewController
+    
     case Test.TestNames.letsCrawl: // Let's Crawl
       storyboardID = "WhyIsCrawlingViewControllerStoryboardID"
       var storyboard = UIStoryboard (name: "Main", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsCrawlingViewController
+    
     case Test.TestNames.pointFollowing: // Point Following
       storyboardID = "WhyIsPointFollowingStoryboardID"
       var storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPointFollowingViewController
+    
     case Test.TestNames.hearing: // Hearing
       storyboardID = "WhyIsHearingStoryboardID"
       var storyboard = UIStoryboard (name: "Hearing", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsHearingViewController
+    
     case Test.TestNames.crossingEyes: // Crossing Eyes
       storyboardID = "WhyIsCrossingEyesStoryboardID"
       var storyboard = UIStoryboard (name: "CrossingEyes", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsCrossingEyesViewController
+    
     case Test.TestNames.attentionAtDistance: // Attention at Distance
       storyboardID = "WhyIsAttentionAtDistanceStoryboardID"
       var storyboard = UIStoryboard (name: "Main", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsAttentionAtDistanceViewController
+    
     case Test.TestNames.symmetry: // Symmetry
       storyboardID = "WhyIsSymmetryStoryboardID"
       var storyboard = UIStoryboard (name: "Symmetry", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSymmetryViewController
+    
     case Test.TestNames.pincer: // Pincer
       storyboardID = "WhyIsPincerStoryboardID"
       var storyboard = UIStoryboard (name: "Pincer", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPincerViewController
+    
     case Test.TestNames.partiallyCoveredToy: // Partially Covered Toy
       storyboardID = "WhyIsPartiallyCoveredToyStoryboardID"
       var storyboard = UIStoryboard (name: "PartiallyCoveredToy", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPartiallyCoveredToyViewController
+    
     case Test.TestNames.selfRecognition: // Self Recognition
       storyboardID = "WhyIsSelfRecognitionStoryboardID"
       var storyboard = UIStoryboard (name: "SelfRecognition", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSelfRecognitionController
+    
     case Test.TestNames.socialSmiling: // Social Smiling
       storyboardID = "WhyIsSocialSmilingStoryboardID"
       var storyboard = UIStoryboard (name: "SocialSmiling", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSocialSmilingViewController
+    
     case Test.TestNames.FacialMimic: // Facial Mimic
       storyboardID = "WhyIsFacialMimicStoryboardID"
       var storyboard = UIStoryboard (name: "FacialMimic", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsFacialMimicViewController
-    default: // TODO - probably best to bring up main screen in default case
-      storyboardID = "WhyIsPupilResponseStoryboardID"
+      
+    case Test.TestNames.unassistedSitting: // Unassisted Sitting
+      storyboardID = "WhyIsUnassistedSittingStoryboardID"
+      var storyboard = UIStoryboard (name: "UnassistedSitting", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsUnassistedSittingViewController
+      
+    case Test.TestNames.sittingAndReaching: // Sitting And Reaching
+      storyboardID = "WhyIsSittingAndReachingStoryboardID"
+      var storyboard = UIStoryboard (name: "SittingAndReaching", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSittingAndReachingViewController
+
+    case Test.TestNames.plasticJar: // Plastic Jar
+      storyboardID = "WhyIsPlasticJarStoryboardID"
+      var storyboard = UIStoryboard (name: "PlasticJar", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPlasticJarViewController
+      
+    default: // Bring up the Milestones view controller in the default case
+      storyboardID = "MilestonesVCStoryboardID"
       var storyboard = UIStoryboard (name: "Main", bundle: nil)
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsPupilResponseViewController
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! MilestonesViewController
     }
     
     // Present the Why... view controller for the test associated with the local notification on top of the current topmost VC.

@@ -19,6 +19,7 @@ class FacialMimicBadOutcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()
         
         // Schedule a local notification, once, to remind the user to rerun this test.

@@ -697,7 +697,7 @@
 				9E923CD01B69A4EE00F2B0A7 /* OtherViewControllers */,
 				82E42ABD1B4118FE00BAE21B /* SensoryAndMotor */,
 				9EC424051B5466B90037C0E9 /* SocialAndEmotional */,
-				9EAEB5DA1B4CA68500159730 /* LanaguageAndCognitive */,
+				9EAEB5DA1B4CA68500159730 /* LanguageAndCognitive */,
 				82D641F11B49F9EE0013D5FB /* Models */,
 				829F54F01B26995800ABE77C /* Main.storyboard */,
 				829F54F31B26995800ABE77C /* Images.xcassets */,
@@ -705,7 +705,6 @@
 				829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */,
 				829F54E71B26995800ABE77C /* Supporting Files */,
 				829F54E91B26995800ABE77C /* AppDelegate.swift */,
-				9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */,
 			);
 			path = questionApp;
 			sourceTree = "<group>";
@@ -767,6 +766,7 @@
 				9ED51C091B5C22C70000C5E6 /* TestHistories.swift */,
 				9E923CAE1B68257D00F2B0A7 /* Test.swift */,
 				9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */,
+				9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";

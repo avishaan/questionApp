@@ -56,7 +56,9 @@ class Test: NSObject, NSCoding {
         static var selfrecognition = "self recognition"
         static var socialsmiling = "social smiling"
         static var facialMimic = "facial mimic"
+        static var unassistedSitting = "unassisted sitting"
         static var sittingAndReaching = "sitting and reaching"
+        static var plasticJar = "ask and respond"
         // TODO: if new tests are added to the app, add them here.
     }
     
@@ -95,9 +97,12 @@ class Test: NSObject, NSCoding {
         static var symmetry:            Int = 2
         static var pincer:              Int = 2
         static var partiallyCoveredToy: Int = 2
-        static var selfRecognition :    Int = 2
+        static var selfRecognition:     Int = 2
         static var socialSmiling:       Int = 2
         static var facialMimic:         Int = 2
+        static var unassistedSitting:   Int = 2
+        static var sittingAndReaching:  Int = 2
+        static var plasticJar:          Int = 2
         // TODO: add additional var as new tests are added to the app
     }
     

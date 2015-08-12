@@ -3914,10 +3914,10 @@ Try again in 6-8 weeks.</string>
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bXU-UG-Zw5"/>
-        <segue reference="l69-DX-nDO"/>
+        <segue reference="b14-b1-AiE"/>
         <segue reference="hJN-An-zuc"/>
-        <segue reference="nvI-rc-mJx"/>
+        <segue reference="l69-DX-nDO"/>
+        <segue reference="bXU-UG-Zw5"/>
         <segue reference="j7l-Po-XYD"/>
         <segue reference="ley-Ow-uL2"/>
         <segue reference="rnh-PO-BrS"/>
