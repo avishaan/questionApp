@@ -22,7 +22,12 @@ class PlasticJarBadOutcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()
+        
+        // Schedule a local notification, once, to remind the user to rerun this test.
+        scheduleReminderOnce()
+        
         rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 6, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
         
         // font can't be set directly in storyboard for attributed string, set the label font here
@@ -108,6 +113,22 @@ class PlasticJarBadOutcomeViewController: UIViewController {
             // update infoLabel
             let string = "Don't worry! Your baby may be a bit young for this test. Try this test again in a month."
             applyTextAttributesToLabel(string, indexAtStartOfBold:56, countOfBoldCharacters:32)
+        }
+    }
+    
+    /*!
+    @brief Schedule a local notification to remind the user to run the test again.
+    @discussion The local notification is scheduled once, based on the number of failed tests. The number of previous failed tests that triggers the notification for each specific test is stored in the Test.LocalNotificationTrigger struct.
+    */
+    func scheduleReminderOnce() {
+        var failed = 0
+        if let failedCount = test?.failedTestsCount() {
+            failed = failedCount
+        }
+        
+        if failed == Test.LocalNotificationTrigger.plasticJar {
+            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.plasticJar, secondsBeforeDisplayingReminder: Test.NotificationInterval.plasticJar)
+            localNotification.scheduleNotification(self)
         }
     }
 }
