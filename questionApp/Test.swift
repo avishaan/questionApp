@@ -66,25 +66,34 @@ class Test: NSObject, NSCoding {
     
     static let SecondsInADay : Double = 24 * 60 * 60
     
+    // TODO: Calculate notification intervals for each test dynamically based on baby's age and the information in this spreadsheet:  https://docs.google.com/spreadsheets/d/1AJwH6R7VfBu6IwsA88cyqpLWZf4Q75u2IkPQXbf_eqI/edit#gid=0
+    
     // Local Notification interval in seconds
     struct NotificationInterval {
-        static var pupilResponse:       Double = 14 * Test.SecondsInADay
-        static var fallingToy:          Double = 14 * Test.SecondsInADay
-        static var letsCrawl:           Double = 14 * Test.SecondsInADay
-        static var pointFollowing:      Double = 14 * Test.SecondsInADay
-        static var hearing:             Double = 14 * Test.SecondsInADay
-        static var crossingEyes:        Double = 14 * Test.SecondsInADay
-        static var attentionAtDistance: Double = 14 * Test.SecondsInADay
-        static var symmetry:            Double = 14 * Test.SecondsInADay
-        static var pincer:              Double = 14 * Test.SecondsInADay
+        static var pupilResponse:       Double =  2 * Test.SecondsInADay
+        static var fallingToy:          Double = 30 * Test.SecondsInADay
+        static var letsCrawl:           Double = 21 * Test.SecondsInADay
+        static var pointFollowing:      Double = 21 * Test.SecondsInADay
+        static var hearing:             Double =  2 * Test.SecondsInADay
+        static var crossingEyes:        Double =  7 * Test.SecondsInADay
+        static var attentionAtDistance: Double =  7 * Test.SecondsInADay
+        static var symmetry:            Double = 30 * Test.SecondsInADay
+        static var pincer:              Double = 30 * Test.SecondsInADay
         static var completelyCoveredToy: Double = 14 * Test.SecondsInADay
         static var partiallyCoveredToy: Double = 14 * Test.SecondsInADay
-        static var selfRecognition :    Double = 14 * Test.SecondsInADay
-        static var socialSmiling:       Double = 14 * Test.SecondsInADay
-        static var facialMimic:         Double = 14 * Test.SecondsInADay
-        static var unassistedSitting:   Double = 14 * Test.SecondsInADay
-        static var sittingAndReaching:  Double = 14 * Test.SecondsInADay
-        static var plasticJar:          Double = 14 * Test.SecondsInADay
+        static var selfRecognition :    Double = 30 * Test.SecondsInADay
+        static var socialSmiling:       Double =  7 * Test.SecondsInADay
+        static var facialMimic:         Double = 30 * Test.SecondsInADay
+        static var unassistedSitting:   Double = 30 * Test.SecondsInADay
+        static var sittingAndReaching:  Double = 30 * Test.SecondsInADay
+        static var plasticJar:          Double = 30 * Test.SecondsInADay
+        //static var commandWithGesture:  Double = 30 * Test.SecondsInADay
+        //static var bookPresentation:    Double = 30 * Test.SecondsInADay
+        //static var lateralTracking:          Double =  7 * Test.SecondsInADay
+        //static var stranger:                 Double = 21 * Test.SecondsInADay
+        //static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
+        //static var rollingOverBackToFront:   Double = 30 * Test.SecondsInADay
+        //static var rollingOverFrontToBack:   Double = 30 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
     }
     
