@@ -12,6 +12,9 @@ class UnassistedSittingGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // If a reminder notification had previously been scheduled, remove it now that the test has been passed.
+        BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.unassistedSitting)
     }
 
     override func didReceiveMemoryWarning() {
