@@ -38,8 +38,9 @@ class BNFacebook {
             parentViewController.presentViewController(composeController, animated:true, completion:nil)
         }
         else {
-            let messageString = "No Facebook account was found on this device. Please login using the Facebook app or the device Settings application."
-            let alert = UIAlertView(title: "No Facebook Account", message: messageString, delegate: parentViewController, cancelButtonTitle: "Ok")
+            let messageString = "No Facebook account was found on this device. You can login to Facebook using the Facebook app, or select Facebook in the device Settings application, then try Share again."
+            let alert = UIAlertView(title: "Facebook Account Required", message: messageString, delegate: parentViewController, cancelButtonTitle: "Ok")
+            alert.show()
         }
     }
 }
