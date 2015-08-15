@@ -713,7 +713,6 @@
 				829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */,
 				829F54E71B26995800ABE77C /* Supporting Files */,
 				829F54E91B26995800ABE77C /* AppDelegate.swift */,
-				9E66A8451B7EAAAA00855180 /* BNFacebook.swift */,
 			);
 			path = questionApp;
 			sourceTree = "<group>";
@@ -858,6 +857,8 @@
 				82D641E71B4908590013D5FB /* BNBackButton.swift */,
 				82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */,
 				82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */,
+				9E66A8451B7EAAAA00855180 /* BNFacebook.swift */,
+				9E66A8471B7EEBE500855180 /* BNFacebookButton.swift */,
 				82401C2C1B2843C8008202EA /* BNSectionLabel.swift */,
 				82DD954A1B5776600017D93C /* BNTestRangeChartView.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
@@ -865,7 +866,6 @@
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C2E1B285CF1008202EA /* UILabelTest.swift */,
 				20DA0E691B7296B600B17C28 /* BNMilestonePieChartView.swift */,
-				9E66A8471B7EEBE500855180 /* BNFacebookButton.swift */,
 			);
 			name = ViewClasses;
 			sourceTree = "<group>";

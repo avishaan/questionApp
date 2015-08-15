@@ -23,7 +23,7 @@ class BNFacebook {
             var composeController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             
             // set initial text
-            var text = String(format:"My baby just passed the %@ test!", Test.TestNamesPresentable.letsCrawl)
+            var text = String(format:"My baby just passed the %@ test!", testName)
             composeController.setInitialText(text)
             
             // set image

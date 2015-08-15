@@ -590,7 +590,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iea-kW-EYd" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="99" y="327" width="122" height="30"/>
+                                <rect key="frame" x="174" y="327" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -614,6 +614,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7y-9J-g7p" customClass="BNFacebookButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="327" width="122" height="29"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.25882352939999997" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Share" image="facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onFacebookButtonTap:" destination="eth-Fu-Wuv" eventType="touchUpInside" id="bcr-5b-6b9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -901,6 +915,7 @@ dHMgbGF0ZXIgb24uA
         <image name="PointFollowingTestVideoPreview" width="319" height="203"/>
         <image name="WhyIsPartiallyCoveredToy" width="273" height="108"/>
         <image name="background" width="640" height="1136"/>
+        <image name="facebook" width="29" height="29"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
