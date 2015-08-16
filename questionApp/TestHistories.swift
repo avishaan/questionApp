@@ -276,4 +276,40 @@ class TestHistories : NSObject, NSCoding {
     func encodeWithCoder(encoder: NSCoder) {
         encoder.encodeObject(self.histories, forKey: "testHistories")
     }
+    
+    
+    // MARK: Reminders
+    
+    func addObservers() {
+        // Add a notification observer for scheduled reminders.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onTestReminderScheduled:", name: testReminderScheduledNotificationKey, object: nil)
+        
+        //Add a notification observer for removed reminders.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onTestReminderRemoved:", name: testReminderRemovedNotificationKey, object: nil)
+    }
+    
+    func removeObservers() {
+        // Remove observer for the scheduled reminder notification.
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: testReminderScheduledNotificationKey, object: nil)
+        // Remove observer for the removed reminder notification.
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: testReminderRemovedNotificationKey, object: nil)
+    }
+    
+    // TODO: define constant for the "testName" key and replace in 3 files.
+    // TODO: test these functions...
+    func onTestReminderScheduled(notification: NSNotification) {
+        if let testName = notification.userInfo!["testName"] as? String {
+            if let testHistory = self.histories[testName]{
+                testHistory.reminderDate = NSDate()
+            }
+        }
+    }
+    
+    func onTestReminderRemoved(notification: NSNotification) {
+        if let testName = notification.userInfo!["testName"] as? String {
+            if let testHistory = self.histories[testName]{
+                testHistory.reminderDate = nil
+            }
+        }
+    }
 }

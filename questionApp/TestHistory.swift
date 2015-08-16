@@ -21,6 +21,8 @@ class TestHistory: NSObject, NSCoding {
         static let countOfFailedTests: String = "countOfFailedTests"
         static let countOfSuccessfulTests: String = "countOfSuccessfulTests"
         static let countOfCompletedTests: String = "countOfCompletedTests"
+        static let succeededTestDate: String = "succeededTestDate"
+        static let reminderDate: String = "reminderDate"
     }
     
     // MARK: Properties
@@ -29,9 +31,10 @@ class TestHistory: NSObject, NSCoding {
     var countOfFailedTests: Int = 0
     var countOfSuccessfulTests = 0
     var countOfCompletedTests = 0
+    var succeededTestDate: NSDate? = nil
+    var reminderDate: NSDate? = nil
     
     // Initializes object with default values
-    
     override init() {
         super.init()
     }
@@ -59,10 +62,16 @@ class TestHistory: NSObject, NSCoding {
         if let total = dictionary[Keys.countOfFailedTests] as? Int {
             countOfCompletedTests = total
         }
+        if let successDate = dictionary[Keys.succeededTestDate] as? NSDate {
+            succeededTestDate = successDate
+        }
+        if let reminder = dictionary[Keys.reminderDate] as? NSDate {
+            reminderDate = reminder
+        }
     }
     
     func print() {
-        println("date: \(mostRecentTestDate),  result: \(mostRecentTestResult), failed: \(countOfFailedTests), successful: \(countOfSuccessfulTests), completed: \(countOfCompletedTests)")
+        println("date: \(mostRecentTestDate),  result: \(mostRecentTestResult), failed: \(countOfFailedTests), successful: \(countOfSuccessfulTests), completed: \(countOfCompletedTests), succeeded date: \(succeededTestDate), reminder date: \(reminderDate)")
     }
     
     
@@ -86,7 +95,6 @@ class TestHistory: NSObject, NSCoding {
         } else {
             mostRecentTestDate = NSDate()
         }
-        // mostRecentTestDate = decoder.decodeObjectForKey(Keys.mostRecentTestDate) as! NSDate
         
         // returns false if key doesn't exist, which is the correct default value
         mostRecentTestResult = decoder.decodeBoolForKey(Keys.mostRecentTestResult)
@@ -95,6 +103,20 @@ class TestHistory: NSObject, NSCoding {
         countOfFailedTests = Int(decoder.decodeIntForKey(Keys.countOfFailedTests))
         countOfSuccessfulTests = Int(decoder.decodeIntForKey(Keys.countOfSuccessfulTests))
         countOfCompletedTests = Int(decoder.decodeIntForKey(Keys.countOfCompletedTests))
+        
+        // returns nil if key does not exist, or if value is nil
+        if let successDate = decoder.decodeObjectForKey(Keys.succeededTestDate) as? NSDate {
+            succeededTestDate = successDate
+        } else {
+            succeededTestDate = nil
+        }
+        
+        // returns nil if key does not exist, or if value is nil
+        if let reminder = decoder.decodeObjectForKey(Keys.reminderDate) as? NSDate {
+            reminderDate = reminder
+        } else {
+            reminderDate = nil
+        }
     }
     
     /*!
@@ -107,5 +129,7 @@ class TestHistory: NSObject, NSCoding {
         encoder.encodeInteger(countOfFailedTests, forKey: Keys.countOfFailedTests)
         encoder.encodeInteger(countOfSuccessfulTests, forKey: Keys.countOfSuccessfulTests)
         encoder.encodeInteger(countOfCompletedTests, forKey: Keys.countOfCompletedTests)
+        encoder.encodeObject(succeededTestDate, forKey: Keys.succeededTestDate)
+        encoder.encodeObject(reminderDate, forKey: Keys.succeededTestDate)
     }
 }

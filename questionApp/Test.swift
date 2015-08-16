@@ -24,7 +24,7 @@ class Test: NSObject, NSCoding {
     struct TestNames {
         static var pupilResponse: String = "pupil response"
         static var fallingToy: String = "falling toy"
-        static var letsCrawl: String = "lets crawl"
+        static var letsCrawl: String = "let's crawl"
         static var pointFollowing: String = "point following"
         static var hearing: String = "hearing"
         static var crossingEyes: String = "crossing eyes"
@@ -176,12 +176,14 @@ class Test: NSObject, NSCoding {
             history.mostRecentTestResult = result
             
             // update test date to current date/time
-            history.mostRecentTestDate = NSDate()
+            let testDate = NSDate()
+            history.mostRecentTestDate = testDate
             
             // update test counts
             history.countOfCompletedTests += 1
             if result == true {
                 history.countOfSuccessfulTests += 1
+                history.succeededTestDate = testDate
             } else {
                 history.countOfFailedTests += 1
             }
@@ -217,6 +219,15 @@ class Test: NSObject, NSCoding {
         } else {
             return false
         }
+    }
+    
+    /*
+    @brief Returns the most recent date when the test succeeded.
+    @discussion Call everSucceeded() to determine if the test has been successfully completed.
+    @return Date test succeeded, else returns nil if the test has never succeeded.
+    */
+    func getTestSucceededDate() -> NSDate? {
+        return history.succeededTestDate
     }
     
     /*
@@ -304,5 +315,4 @@ class Test: NSObject, NSCoding {
     func save() -> Bool {
         return NSKeyedArchiver.archiveRootObject(self.history, toFile: self.filePath)
     }
-    
 }

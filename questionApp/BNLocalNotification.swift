@@ -14,6 +14,12 @@ Created on 8/5/15
 import UIKit
 import Foundation
 
+/* A custom NSNotification that indicates that a test reminder has been scheduled. */
+let testReminderScheduledNotificationKey =  "com.qidza.testReminderScheduledNotificationKey"
+
+/* A custom NSNotification that indicates that a test reminder has been removed. */
+let testReminderRemovedNotificationKey =  "com.qidza.testReminderRemovedNotificationKey"
+
 class BNLocalNotification {
 
   struct NotificationConstants {
@@ -48,7 +54,7 @@ class BNLocalNotification {
     elapsedSecondsBeforePresentingReminder = secondsBeforeDisplayingReminder
   }
   
-  @IBAction func scheduleNotification(sender: AnyObject) {
+  func scheduleNotification(sender: AnyObject) {
     
     var localNotification = UILocalNotification()
     
@@ -80,6 +86,11 @@ class BNLocalNotification {
     UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     
     //presentConfirmationAlert()
+    
+    // Send a notification indicating that a reminder has been scheduled.
+    if let testName = testName {
+      postTestReminderScheduledNotification(testName)
+    }
   }
   
   /*
@@ -242,6 +253,9 @@ class BNLocalNotification {
     
     // remove the local notification
     UIApplication.sharedApplication().cancelLocalNotification(localNotification)
+    
+    // Send a notification indicating that a reminder has been removed.
+    BNLocalNotification.postTestReminderRemovedNotification(testName)
   }
   
   /*!
@@ -264,8 +278,33 @@ class BNLocalNotification {
         
         // match! Cancel this local notification.
         theApp.cancelLocalNotification(notification)
+        
+        // Send a notification indicating that a reminder has been removed.
+        BNLocalNotification.postTestReminderRemovedNotification(testName)
         break
       }
     }
+  }
+  
+  /*
+  @brief post an NSNotification indicating that a test reminder has been scheduled.
+  @discussion The test name is sent in the notification's userInfo.
+  @param (in) testName - The name of the test for which the reminder has been scheduled. A Test.TestNamesPresentable value. (cannot be nil)
+  */
+  func postTestReminderScheduledNotification(testName: String) {
+    var dataDict = [String : String] ()
+    dataDict["testName"] = testName
+    NSNotificationCenter.defaultCenter().postNotificationName(testReminderScheduledNotificationKey, object: self, userInfo: dataDict)
+  }
+  
+  /*
+  @brief post an NSNotification indicating that a test reminder has been removed.
+  @discussion The test name is sent in the notification's userInfo.
+  @param (in) testName - The name of the test for which the reminder has been removed. A Test.TestNamesPresentable value. (cannot be nil)
+  */
+  static func postTestReminderRemovedNotification(testName: String) {
+    var dataDict = [String : String] ()
+    dataDict["testName"] = testName
+    NSNotificationCenter.defaultCenter().postNotificationName(testReminderRemovedNotificationKey, object: self, userInfo: dataDict)
   }
 }
