@@ -10,11 +10,19 @@ import UIKit
 
 class PlasticJarGoodOutcomeViewController: UIViewController {
 
+    var testOutcome : TestHistory?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // If a reminder notification had previously been scheduled, remove it now that the test has been passed.
         BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.plasticJar)
+        
+        if testOutcome!.countOfSuccessfulTests > 0 {
+            var storyboard = UIStoryboard (name: "Feedback", bundle: nil)
+            var controller: FeedbackViewController = storyboard.instantiateViewControllerWithIdentifier("FeedbackStoryboardID") as! FeedbackViewController
+            presentViewController(controller, animated: true, completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {

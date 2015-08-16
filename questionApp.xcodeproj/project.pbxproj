@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205067531B80139100157C23 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205067521B80139100157C23 /* FeedbackViewController.swift */; };
+		205067571B8048C600157C23 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205067551B8048C600157C23 /* Feedback.storyboard */; };
 		205787071B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205787051B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard */; };
 		205787091B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205787081B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift */; };
 		2057870B1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057870A1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift */; };
@@ -288,6 +290,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		205067521B80139100157C23 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		205067561B8048C600157C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feedback.storyboard; sourceTree = "<group>"; };
 		205787061B75CD0C002A61B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CompletelyCoveredToy.storyboard; sourceTree = "<group>"; };
 		205787081B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsCompletelyCoveredToyViewController.swift; sourceTree = "<group>"; };
 		2057870A1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyActivityReminderViewController.swift; sourceTree = "<group>"; };
@@ -713,6 +717,8 @@
 				829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */,
 				829F54E71B26995800ABE77C /* Supporting Files */,
 				829F54E91B26995800ABE77C /* AppDelegate.swift */,
+				205067551B8048C600157C23 /* Feedback.storyboard */,
+				205067521B80139100157C23 /* FeedbackViewController.swift */,
 			);
 			path = questionApp;
 			sourceTree = "<group>";
@@ -1171,6 +1177,7 @@
 				9ED51BB71B580A1F0000C5E6 /* Symmetry.storyboard in Resources */,
 				8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */,
 				9EE7EB3D1B56A88A00C73CA3 /* Hearing.storyboard in Resources */,
+				205067571B8048C600157C23 /* Feedback.storyboard in Resources */,
 				9EF313761B5066470094DAC7 /* LetsCrawl.mp4 in Resources */,
 				205787071B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard in Resources */,
 				829F55101B26BB1B00ABE77C /* FacialMimic.mp4 in Resources */,
@@ -1219,6 +1226,7 @@
 				205787131B75D48A002A61B6 /* CompletelyCoveredToyMoreInfoViewController.swift in Sources */,
 				9E66A8461B7EAAAA00855180 /* BNFacebook.swift in Sources */,
 				82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */,
+				205067531B80139100157C23 /* FeedbackViewController.swift in Sources */,
 				9E923CC01B6951A600F2B0A7 /* FacialMimicIsBabyReadyViewController.swift in Sources */,
 				20E3563B1B77DED7002F38C7 /* WhyIsSittingAndReachingViewController.swift in Sources */,
 				20E3564D1B77E09F002F38C7 /* SittingAndReachingActivityReminderViewController.swift in Sources */,
@@ -1430,6 +1438,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		205067551B8048C600157C23 /* Feedback.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				205067561B8048C600157C23 /* Base */,
+			);
+			name = Feedback.storyboard;
+			sourceTree = "<group>";
+		};
 		205787051B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
