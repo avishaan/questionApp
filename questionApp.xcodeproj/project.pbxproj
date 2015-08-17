@@ -87,6 +87,7 @@
 		824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */; };
 		824565251B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565241B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift */; };
 		8245652A1B420294003320A9 /* PupilResponse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 824565291B420294003320A9 /* PupilResponse.mp4 */; };
+		8270B2281B81DEE900DFFB52 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270B2271B81DEE900DFFB52 /* Config.swift */; };
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
 		8278694B1B54141B0001F932 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; };
 		8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -368,6 +369,7 @@
 		824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseGoodOutcomeViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		824565241B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = PupilResponseBadOutcomeViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
 		824565291B420294003320A9 /* PupilResponse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PupilResponse.mp4; sourceTree = "<group>"; };
+		8270B2271B81DEE900DFFB52 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		827869451B5413E60001F932 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "resources/libs/ios-charts/Charts/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8296BFAB1B5B3E31007E842B /* IntroVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideo.m4v; sourceTree = "<group>"; };
@@ -772,6 +774,7 @@
 				82D641EF1B49F9D50013D5FB /* Parent.swift */,
 				9ED51BCC1B583B020000C5E6 /* TestHistory.swift */,
 				9ED51C091B5C22C70000C5E6 /* TestHistories.swift */,
+				8270B2271B81DEE900DFFB52 /* Config.swift */,
 				9E923CAE1B68257D00F2B0A7 /* Test.swift */,
 				9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */,
 				9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */,
@@ -1289,6 +1292,7 @@
 				82E574721B707538006FA7B1 /* PincerGoodOutcomeViewController.swift in Sources */,
 				9E934A631B6BBD790043F365 /* PartiallyCoveredToyIsBabyReadyViewController.swift in Sources */,
 				829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */,
+				8270B2281B81DEE900DFFB52 /* Config.swift in Sources */,
 				9EE7EB291B56A78700C73CA3 /* WhyIsHearingViewController.swift in Sources */,
 				20DA0E841B731BB400B17C28 /* UnassistedSittingWhatWillYouNeedViewController.swift in Sources */,
 				82D641F01B49F9D50013D5FB /* Parent.swift in Sources */,
