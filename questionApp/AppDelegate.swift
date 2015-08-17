@@ -27,9 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
-//		Mixpanel.sharedInstanceWithToken(config().mixpanel.token)
-//		let mixpanel:Mixpanel = Mixpanel.sharedInstance()
-//		mixpanel.track("App Launch")
+		Mixpanel.sharedInstanceWithToken(config().mixpanel.token)
+		let mixpanel:Mixpanel = Mixpanel.sharedInstance()
+		mixpanel.track("App Launch")
 		
 //		if let options = launchOptions {
 //			println("invoke BNLocalNotification from didFinishLaunchingWithOptions: launchOptions = \(launchOptions)")
