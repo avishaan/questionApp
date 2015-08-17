@@ -234,6 +234,15 @@ class Test: NSObject, NSCoding {
     func failedTestsCount() -> Int {
         return history.countOfFailedTests
     }
+  
+  /*
+@brief Number of passed tests
+*/
+  var passedTests:Int {
+    get {
+      return history.countOfSuccessfulTests
+    }
+  }
     
     
     // MARK: NSCoding
