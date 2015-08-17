@@ -9,5 +9,6 @@
 #ifndef questionApp_Mixpanel_Bridging_Header_h
 #define questionApp_Mixpanel_Bridging_Header_h
 
+#import "Mixpanel/Mixpanel.h"
 
 #endif
