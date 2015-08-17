@@ -10,15 +10,26 @@ import UIKit
 
 class PlasticJarGoodOutcomeViewController: UIViewController {
 
-    var testOutcome : TestHistory?
+    var parent = Parent()
+    var profiles = TestProfiles()
+    var test = Test()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Ensure current information for parent by reloading.
+        parent = Parent()
         
+        // Ensure current information for test profiles by reloading.
+        profiles.initProfilesFromPersistentStore()
+        
+        // Get the test information.
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.plasticJar)
         // If a reminder notification had previously been scheduled, remove it now that the test has been passed.
         BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.plasticJar)
-        
-        if testOutcome!.countOfSuccessfulTests > 0 {
+      println("user has passed this test \(test.passedTests)")
+      
+        if test.passedTests > 0 {
             var storyboard = UIStoryboard (name: "Feedback", bundle: nil)
             var controller: FeedbackViewController = storyboard.instantiateViewControllerWithIdentifier("FeedbackStoryboardID") as! FeedbackViewController
             presentViewController(controller, animated: true, completion: nil)
