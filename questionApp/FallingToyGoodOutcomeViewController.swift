@@ -25,4 +25,9 @@ class FallingToyGoodOutcomeViewController: UIViewController {
     @IBAction func onBackButtonTap(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func onFacebookButtonTap(sender: AnyObject) {
+        // Present post to facebook screen.
+        BNFacebook.postToFacebook(self, testName: Test.TestNamesPresentable.fallingToy)
+    }
 }

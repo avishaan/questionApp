@@ -134,6 +134,8 @@
 		9E5C765B1B72C04F00915E74 /* BNLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */; };
 		9E66A8351B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8341B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift */; };
 		9E66A8371B7BA8F100855180 /* FallingToyMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8361B7BA8F100855180 /* FallingToyMoreInformationViewController.swift */; };
+		9E66A8461B7EAAAA00855180 /* BNFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8451B7EAAAA00855180 /* BNFacebook.swift */; };
+		9E66A8481B7EEBE500855180 /* BNFacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8471B7EEBE500855180 /* BNFacebookButton.swift */; };
 		9E923CAF1B68257D00F2B0A7 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CAE1B68257D00F2B0A7 /* Test.swift */; };
 		9E923CB11B683E8600F2B0A7 /* TestProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */; };
 		9E923CB81B69513E00F2B0A7 /* FacialMimic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E923CB71B69513E00F2B0A7 /* FacialMimic.storyboard */; };
@@ -416,6 +418,8 @@
 		9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = BNLocalNotification.swift; sourceTree = "<group>"; tabWidth = 2; };
 		9E66A8341B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlMoreInformationViewController.swift; sourceTree = "<group>"; };
 		9E66A8361B7BA8F100855180 /* FallingToyMoreInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyMoreInformationViewController.swift; sourceTree = "<group>"; };
+		9E66A8451B7EAAAA00855180 /* BNFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNFacebook.swift; sourceTree = "<group>"; };
+		9E66A8471B7EEBE500855180 /* BNFacebookButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNFacebookButton.swift; sourceTree = "<group>"; };
 		9E923CAE1B68257D00F2B0A7 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Test.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProfiles.swift; sourceTree = "<group>"; };
 		9E923CB71B69513E00F2B0A7 /* FacialMimic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FacialMimic.storyboard; sourceTree = "<group>"; };
@@ -853,6 +857,8 @@
 				82D641E71B4908590013D5FB /* BNBackButton.swift */,
 				82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */,
 				82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */,
+				9E66A8451B7EAAAA00855180 /* BNFacebook.swift */,
+				9E66A8471B7EEBE500855180 /* BNFacebookButton.swift */,
 				82401C2C1B2843C8008202EA /* BNSectionLabel.swift */,
 				82DD954A1B5776600017D93C /* BNTestRangeChartView.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
@@ -1211,6 +1217,7 @@
 				82D641EC1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift in Sources */,
 				82D1415B1B41289F0048434F /* PupilResponseTimeToTestViewController.swift in Sources */,
 				205787131B75D48A002A61B6 /* CompletelyCoveredToyMoreInfoViewController.swift in Sources */,
+				9E66A8461B7EAAAA00855180 /* BNFacebook.swift in Sources */,
 				82E42ABC1B4118F500BAE21B /* PupilResponseIsBabyReadyViewController.swift in Sources */,
 				9E923CC01B6951A600F2B0A7 /* FacialMimicIsBabyReadyViewController.swift in Sources */,
 				20E3563B1B77DED7002F38C7 /* WhyIsSittingAndReachingViewController.swift in Sources */,
@@ -1273,6 +1280,7 @@
 				2057870D1B75D422002A61B6 /* CompletelyCoveredToyBadOutcomeViewController.swift in Sources */,
 				205787171B75D4C4002A61B6 /* CompletelyCoveredToyTimeToTestViewController.swift in Sources */,
 				9EF3137C1B5097250094DAC7 /* LetsCrawlTimeToTestViewController.swift in Sources */,
+				9E66A8481B7EEBE500855180 /* BNFacebookButton.swift in Sources */,
 				9ED51BC31B58139F0000C5E6 /* SymmetryWhatDidYouSeeViewController.swift in Sources */,
 				9EABF2A41B4DF40F002FDA2C /* ActivityReminderViewController.swift in Sources */,
 				9EABF28C1B4CE2DF002FDA2C /* WhyIsObjectPermanenceViewController.swift in Sources */,

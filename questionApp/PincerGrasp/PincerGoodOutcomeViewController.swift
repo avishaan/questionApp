@@ -31,4 +31,9 @@ class PincerGoodOutcomeViewController: UIViewController {
         var controller: MilestonesViewController = storyboard.instantiateViewControllerWithIdentifier("MilestonesVCStoryboardID") as! MilestonesViewController
         self.presentViewController(controller, animated: true, completion: nil);
     }
+    
+    @IBAction func onFacebookButtonTap(sender: AnyObject) {
+        // Present post to facebook screen.
+        BNFacebook.postToFacebook(self, testName: Test.TestNamesPresentable.pincer)
+    }
 }
