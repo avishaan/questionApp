@@ -10,6 +10,9 @@ import UIKit
 import CoreData
 //import Mixpanel
 
+// analytics global
+let mixpanel:Mixpanel = Mixpanel.sharedInstance()
+
 let omnesFontBold = UIFont(name: "Omnes-Semibold", size: 20)
 let omnesFontMed = UIFont(name: "Omnes-Medium", size: 17)
 let kOmnesFontSemiBold = "Omnes-Semibold"
@@ -24,11 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+	
+	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		Mixpanel.sharedInstanceWithToken(config().mixpanel.token)
-		let mixpanel:Mixpanel = Mixpanel.sharedInstance()
+		// Override point for customization after application launch.
 		mixpanel.track("App Launch")
 		
 //		if let options = launchOptions {
