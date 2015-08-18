@@ -12,6 +12,8 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.LanguageCognitiveMilestone, .Load)
 
         // Do any additional setup after loading the view.
     }

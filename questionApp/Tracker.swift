@@ -35,6 +35,9 @@ struct Tracker {
     case PartiallyCovered = "Partially Covered"
     case AttentionAtDistance = "Attention At Distance"
     case FallingToy = "Falling Toy"
+    case SensoryMotorMilestone = "Sensory Motor Milestone"
+    case SocialEmotionalMilestone = "Social Emotional Milestone"
+    case LanguageCognitiveMilestone = "Language Cognitive Milestone"
   }
   
   /**
