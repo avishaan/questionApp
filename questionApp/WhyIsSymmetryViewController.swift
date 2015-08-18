@@ -14,6 +14,8 @@ class WhyIsSymmetryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Symmetry, .Load, .Why)
         //applyTextAttributesToLabel()
     }
     

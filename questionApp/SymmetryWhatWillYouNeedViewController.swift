@@ -14,6 +14,8 @@ class SymmetryWhatWillYouNeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Symmetry, .Load, .WhatIsNeeded)
         applyTextAttributesToLabel()
     }
     
