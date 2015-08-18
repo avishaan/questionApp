@@ -14,6 +14,8 @@ class LetsCrawlWhatWillYouNeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Crawl, .Load, .WhatIsNeeded)
 
         applyTextAttributesToLabel()
     }

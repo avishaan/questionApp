@@ -18,6 +18,8 @@ class LetsCrawlTestOverviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Crawl, .Load, .Overview)
     }
     
     override func viewWillAppear(animated: Bool) {

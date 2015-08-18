@@ -18,6 +18,8 @@ class LetsCrawlBadOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Crawl, .Load, .Bad)
 
         // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()

@@ -12,6 +12,8 @@ class LetsCrawlMoreInformationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Crawl, .Load, .MoreInfo)
         
         // Do any additional setup after loading the view.
     }
