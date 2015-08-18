@@ -14,6 +14,8 @@ class SocialSmilingWhatWillYouNeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SocialSmiling, .Load, .WhatIsNeeded)
         applyTextAttributesToLabel()
     }
 
