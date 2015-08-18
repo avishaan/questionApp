@@ -14,6 +14,8 @@ class WhyIsAttentionAtDistanceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .Why)
         applyTextAttributesToLabel()
     }
     

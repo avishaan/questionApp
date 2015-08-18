@@ -17,6 +17,8 @@ class AttentionAtDistanceTestOverviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .Overview)
     }
     
     override func viewWillAppear(animated: Bool) {
