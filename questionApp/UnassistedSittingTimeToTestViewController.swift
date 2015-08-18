@@ -23,6 +23,9 @@ class UnassistedSittingTimeToTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // analytics
+      Tracker.createEvent(.UnassistedSitting, .Load, .TimeToTest)
         // setup rounded corners on label
         labelBackground.layer.cornerRadius = 7
         labelBackground.layer.masksToBounds = true

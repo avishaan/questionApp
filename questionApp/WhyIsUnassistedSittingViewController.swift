@@ -14,6 +14,8 @@ class WhyIsUnassistedSittingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.UnassistedSitting, .Load, .Why)
         applyTextAttributesToLabel()
     }
 
