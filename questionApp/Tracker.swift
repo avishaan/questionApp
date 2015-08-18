@@ -19,6 +19,7 @@ struct Tracker {
     case ProfileSaved = "Saved Profile"
     case ProfileImage = "Profile Image"
     case Milestone = "Milestone"
+    case PupilResponse = "Pupil Response"
   }
   
   /**
@@ -28,7 +29,8 @@ struct Tracker {
   enum Action:String {
     case Load = "Load"
     case Dismiss = "Dismiss"
-    case Play = "Play Video"
+    case Play = "Played Video"
+    case Replay = "Replayed Video"
     case Setup = "Setup"
     case Tapped = "Tapped"
     case Changed = "Changed"
@@ -39,6 +41,15 @@ struct Tracker {
   */
   enum Progress:String {
     case NA = "" // not applicable when not progressing in a test
+    case Why = "Why is?"
+    case WhatIsNeeded = "What will you need?"
+    case Bad = "Bad outcome"
+    case MoreInfo = "More information"
+    case TimeToTest = "Time to test"
+    case Good = "Good outcome"
+    case WhatDidSee = "What did you see?"
+    case IsReady = "Is baby ready?"
+    case Overview = "Test overview"
     
   }
   
