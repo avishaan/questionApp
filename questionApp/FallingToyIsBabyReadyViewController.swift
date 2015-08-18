@@ -17,6 +17,8 @@ class FallingToyIsBabyReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .IsReady)
         applyTextAttributesToLabels()
     }
 

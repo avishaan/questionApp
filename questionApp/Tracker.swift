@@ -34,6 +34,7 @@ struct Tracker {
     case CompletelyCovered = "Completely Covered"
     case PartiallyCovered = "Partially Covered"
     case AttentionAtDistance = "Attention At Distance"
+    case FallingToy = "Falling Toy"
   }
   
   /**

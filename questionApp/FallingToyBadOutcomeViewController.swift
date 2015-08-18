@@ -18,6 +18,8 @@ class FallingToyBadOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .Bad)
 
         // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()
