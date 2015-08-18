@@ -23,6 +23,9 @@ class PupilResponseBadOutcomeViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+		
+		// analytics
+		Tracker.createEvent(.PupilResponse, .Load, .Bad)
     
     // Do any additional setup after loading the view.
     rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 0.2, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)

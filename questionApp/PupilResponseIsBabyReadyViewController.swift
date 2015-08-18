@@ -16,6 +16,8 @@ class PupilResponseIsBabyReadyViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		// analytics
+		Tracker.createEvent(.PupilResponse, .Load, .IsReady)
 		applyTextAttributesToLabels()
 	}
 

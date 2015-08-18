@@ -15,6 +15,7 @@ class WhyIsPupilResponseViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+	Tracker.createEvent(.PupilResponse, .Load, .Why)
     
     // Do any additional setup after loading the view.
     
