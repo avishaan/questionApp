@@ -21,6 +21,10 @@ class MilestonesViewController: UIViewController {
   @IBOutlet weak var languageAndCognitiveLabel: UILabel!
   @IBOutlet weak var socialAndEmotionalLabel: UILabel!
   
+  @IBOutlet weak var sensoryMotorBackground: UIButton!
+  @IBOutlet weak var socialEmotionalBackground: UIButton!
+  @IBOutlet weak var languageCognitiveBackground: UIButton!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -58,6 +62,14 @@ class MilestonesViewController: UIViewController {
     languageAndCognitivePieChartView.config(["test","test",""], values: [0.33,0.33,0.33])
     socialAndEmotionalPieChartView.config(["test","test","test",""], values: [0.25,0.25,0.25,0.25])
     applyTextAttributesToLabels()
+    
+    // adjust corner radius
+    sensoryMotorBackground.clipsToBounds = true
+    sensoryMotorBackground.layer.cornerRadius = 10
+    socialEmotionalBackground.clipsToBounds = true
+    socialEmotionalBackground.layer.cornerRadius = 10
+    languageCognitiveBackground.clipsToBounds = true
+    languageCognitiveBackground.layer.cornerRadius = 10
     
   }
   
