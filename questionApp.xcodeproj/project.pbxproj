@@ -246,7 +246,6 @@
 		9EF313801B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */; };
 		9EF313821B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF313811B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift */; };
 		A5384A6C1B800AB100FAF159 /* BookPresentation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5384A6E1B800AB100FAF159 /* BookPresentation.storyboard */; };
-		A563B42E1B83F8DA00307223 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A563B42D1B83F8DA00307223 /* .gitignore */; };
 		A5ABF6C11B81F31100CE0EDE /* BookPresentationWhatYouWillNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6C01B81F31100CE0EDE /* BookPresentationWhatYouWillNeedViewController.swift */; };
 		A5ABF6C31B81F63200CE0EDE /* BookPresentationTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6C21B81F63200CE0EDE /* BookPresentationTimeToTestViewController.swift */; };
 		A5ABF6C51B826E3400CE0EDE /* BookPresentationTestOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6C41B826E3400CE0EDE /* BookPresentationTestOverviewViewController.swift */; };
@@ -540,7 +539,6 @@
 		9EF3137F1B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlGoodOutcomeViewController.swift; sourceTree = "<group>"; };
 		9EF313811B50E7700094DAC7 /* LetsCrawlBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsCrawlBadOutcomeViewController.swift; sourceTree = "<group>"; };
 		A5384A6D1B800AB100FAF159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BookPresentation.storyboard; sourceTree = "<group>"; };
-		A563B42D1B83F8DA00307223 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A5ABF6C01B81F31100CE0EDE /* BookPresentationWhatYouWillNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationWhatYouWillNeedViewController.swift; sourceTree = "<group>"; };
 		A5ABF6C21B81F63200CE0EDE /* BookPresentationTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationTimeToTestViewController.swift; sourceTree = "<group>"; };
 		A5ABF6C41B826E3400CE0EDE /* BookPresentationTestOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationTestOverviewViewController.swift; sourceTree = "<group>"; };
@@ -701,7 +699,6 @@
 		829F54DB1B26995800ABE77C = {
 			isa = PBXGroup;
 			children = (
-				A563B42D1B83F8DA00307223 /* .gitignore */,
 				82338C841B26E6830067898E /* AVKit.framework */,
 				829F55111B26C2EF00ABE77C /* MediaPlayer.framework */,
 				829F54E61B26995800ABE77C /* questionApp */,
@@ -1193,7 +1190,6 @@
 				209965861B63101C00B93C5D /* SelfRecognition.storyboard in Resources */,
 				A5384A6C1B800AB100FAF159 /* BookPresentation.storyboard in Resources */,
 				82E5747D1B70959E006FA7B1 /* Pincer.mp4 in Resources */,
-				A563B42E1B83F8DA00307223 /* .gitignore in Resources */,
 				20E356391B77DE5B002F38C7 /* SittingAndReaching.storyboard in Resources */,
 				9EABF2921B4D8A35002FDA2C /* Swift.gitignore in Resources */,
 				9EE7EB411B56C86A00C73CA3 /* PointFollowing.mp4 in Resources */,
