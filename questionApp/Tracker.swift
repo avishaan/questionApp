@@ -19,9 +19,9 @@ struct Tracker {
     case Play = "Play Video"
   }
   
-  static func createEvent(name:Name, _ action:Action) -> [[String:String]] {
+  static func createEvent(name:Name, _ action:Action) -> [String:String] {
     
-    return [["name": name.rawValue, "action": action.rawValue]]
+    return ["name": name.rawValue, "action": action.rawValue]
     
   }
 }
