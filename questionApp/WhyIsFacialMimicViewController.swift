@@ -14,6 +14,8 @@ class WhyIsFacialMimicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.FacialMimic, .Load, .Why)
         //applyTextAttributesToLabel()
     }
     

@@ -14,6 +14,8 @@ class FacialMimicWhatWillYouNeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.FacialMimic, .Load, .WhatIsNeeded)
         //applyTextAttributesToLabel()
     }
     

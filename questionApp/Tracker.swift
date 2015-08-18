@@ -28,6 +28,7 @@ struct Tracker {
     case Hearing = "Hearing"
     case CrossingEyes = "Crossing Eyes"
     case Crawl = "Let's Crawl"
+    case FacialMimic = "Facial Mimic"
   }
   
   /**

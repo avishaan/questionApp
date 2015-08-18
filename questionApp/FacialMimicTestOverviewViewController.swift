@@ -17,6 +17,8 @@ class FacialMimicTestOverviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.FacialMimic, .Load, .Overview)
     }
     
     override func viewWillAppear(animated: Bool) {
