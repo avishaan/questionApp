@@ -31,6 +31,7 @@ struct Tracker {
     case FacialMimic = "Facial Mimic"
     case SocialSmiling = "Social Smiling"
     case PointFollowing = "Point Following"
+    case CompletelyCovered = "Completely Covered"
   }
   
   /**

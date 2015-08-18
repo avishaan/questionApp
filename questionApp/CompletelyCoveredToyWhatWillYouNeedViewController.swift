@@ -14,6 +14,8 @@ class CompletelyCoveredToyWhatWillYouNeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.CompletelyCovered, .Load, .WhatIsNeeded)
         applyTextAttributesToLabel()
     }
 
