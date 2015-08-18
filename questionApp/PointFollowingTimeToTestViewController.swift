@@ -26,6 +26,8 @@ class PointFollowingTimeToTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PointFollowing, .Load, .TimeToTest)
         // setup rounded corners on label
         labelBackground.layer.cornerRadius = 7
         labelBackground.layer.masksToBounds = true

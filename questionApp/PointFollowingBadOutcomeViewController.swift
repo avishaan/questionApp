@@ -18,6 +18,8 @@ class PointFollowingBadOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PointFollowing, .Load, .Bad)
 
         // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()

@@ -12,6 +12,8 @@ class PointFollowingMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PointFollowing, .Load, .MoreInfo)
 
         // Do any additional setup after loading the view.
     }
