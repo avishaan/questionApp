@@ -30,6 +30,7 @@ struct Tracker {
     case Play = "Play Video"
     case Setup = "Setup"
     case Tapped = "Tapped"
+    case Changed = "Changed"
   }
   
   /**
