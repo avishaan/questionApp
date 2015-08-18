@@ -10,17 +10,26 @@ import Foundation
 
 struct Tracker {
   
+  /**
+    name(object) subject the action is taking place on
+  */
   enum Name: String {
     case Intro = "Introduction"
     case Profile = "Profile"
     case ProfileSaved = "Saved Profile"
+    case ProfileImage = "Profile Image"
   }
   
+  /**
+    action(verb) describing what sort of action is taking place for the event
+  
+  */
   enum Action:String {
     case Load = "Load"
     case Dismiss = "Dismiss"
     case Play = "Play Video"
     case Setup = "Setup"
+    case Tapped = "Tapped"
   }
   
   /**
