@@ -14,6 +14,8 @@ class CrossingEyesWhatWillYouNeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.CrossingEyes, .Load, .WhatIsNeeded)
         applyTextAttributesToLabel()
     }
 

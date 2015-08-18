@@ -16,6 +16,8 @@ class CrossingEyesIsBabyReadyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.CrossingEyes, .Load, .IsReady)
         applyTextAttributesToLabels()
     }
 
