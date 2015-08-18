@@ -28,6 +28,7 @@ class ProfileSetupViewController: UIViewController {
     // TODO: change color based on which gender is picked
     
     // hide keyboard when typing return
+    Tracker.createEvent(.Profile, .Setup)
     
     
   }
@@ -60,6 +61,8 @@ class ProfileSetupViewController: UIViewController {
     
     // persist the Parent instance.
     person.storeInfo()
+    
+    // save user information to analytics platform
   }
   
   
