@@ -16,6 +16,8 @@ class SymmetryWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Symmetry, .Load, .WhatDidSee)
     }
     
     override func viewWillAppear(animated: Bool) {

@@ -16,6 +16,8 @@ class CrossingEyesWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.CrossingEyes, .Load, .WhatDidSee)
 
         // Ensure current information for parent by reloading.
         parent = Parent()

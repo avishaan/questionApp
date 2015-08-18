@@ -15,6 +15,8 @@ class WhyIsCrawlingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Crawl, .Load, .Why)
         applyTextAttributesToLabel()
     }
 

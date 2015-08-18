@@ -16,6 +16,8 @@ class PartiallyCoveredToyWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PartiallyCovered, .Load, .WhatDidSee)
 
         // Ensure current information for parent by reloading.
         parent = Parent()

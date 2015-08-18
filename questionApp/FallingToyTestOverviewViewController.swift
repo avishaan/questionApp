@@ -18,6 +18,8 @@ class FallingToyTestOverviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .Overview)
 
         // Do any additional setup after loading the view.
     }

@@ -16,6 +16,8 @@ class SocialSmilingIsBabyReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SocialSmiling, .Load, .IsReady)
         applyTextAttributesToLabels()
     }
 

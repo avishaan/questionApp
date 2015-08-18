@@ -14,6 +14,8 @@ class AttentionAtDistanceWhatWillYouNeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .WhatIsNeeded)
         applyTextAttributesToLabel()
     }
     

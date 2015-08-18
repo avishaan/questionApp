@@ -16,6 +16,9 @@ class UnassistedSittingWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // analytics
+      Tracker.createEvent(.UnassistedSitting, .Load, .WhatDidSee)
 
         // Ensure current information for parent by reloading.
         parent = Parent()

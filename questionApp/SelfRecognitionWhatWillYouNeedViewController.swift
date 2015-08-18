@@ -14,6 +14,8 @@ class SelfRecognitionWhatWillYouNeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SelfRecognition, .Load, .WhatIsNeeded)
         applyTextAttributesToLabel()
     }
     

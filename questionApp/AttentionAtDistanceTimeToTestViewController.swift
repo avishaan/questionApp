@@ -25,6 +25,8 @@ class AttentionAtDistanceTimeToTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .TimeToTest)
         
         // setup rounded corners on label
         labelBackground.layer.cornerRadius = 7

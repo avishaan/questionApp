@@ -12,6 +12,8 @@ class SocialEmotionalMilestoneTestsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SocialEmotionalMilestone, .Load)
     
     // Do any additional setup after loading the view.
   }

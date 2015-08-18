@@ -18,6 +18,8 @@ class SymmetryBadOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Symmetry, .Load, .Bad)
         
         // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()

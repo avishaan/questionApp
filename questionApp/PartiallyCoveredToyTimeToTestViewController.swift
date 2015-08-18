@@ -23,6 +23,8 @@ class PartiallyCoveredToyTimeToTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PartiallyCovered, .Load, .TimeToTest)
         // setup rounded corners on label
         labelBackground.layer.cornerRadius = 7
         labelBackground.layer.masksToBounds = true

@@ -21,6 +21,8 @@ class CompletelyCoveredToyBadOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.CompletelyCovered, .Load, .Bad)
         
         // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()

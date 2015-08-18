@@ -16,6 +16,8 @@ class UnassistedSittingIsBabyReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.UnassistedSitting, .Load, .IsReady)
         applyTextAttributesToLabels()
     }
 

@@ -12,6 +12,8 @@ class SocialSmilingMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SocialSmiling, .Load, .MoreInfo)
 
         // Do any additional setup after loading the view.
     }

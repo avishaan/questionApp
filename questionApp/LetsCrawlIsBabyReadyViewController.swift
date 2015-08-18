@@ -17,6 +17,8 @@ class LetsCrawlIsBabyReadyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Crawl, .Load, .IsReady)
         applyTextAttributesToLabels()
     }
 

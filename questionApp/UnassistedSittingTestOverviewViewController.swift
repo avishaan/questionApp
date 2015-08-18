@@ -17,6 +17,8 @@ class UnassistedSittingTestOverviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.UnassistedSitting, .Load, .Overview)
 
         // Do any additional setup after loading the view.
     }

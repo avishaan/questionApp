@@ -16,6 +16,8 @@ class FallingToyWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .WhatDidSee)
 
         // Ensure current information for parent by reloading.
         parent = Parent()

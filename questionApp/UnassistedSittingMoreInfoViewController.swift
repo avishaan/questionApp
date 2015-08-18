@@ -12,6 +12,9 @@ class UnassistedSittingMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // analytics
+      Tracker.createEvent(.UnassistedSitting, .Load, .MoreInfo)
 
         // Do any additional setup after loading the view.
     }

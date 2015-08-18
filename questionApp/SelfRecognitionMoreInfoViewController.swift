@@ -12,7 +12,8 @@ class SelfRecognitionMoreInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      // analytics
+      Tracker.createEvent(.SelfRecognition, .Load, .MoreInfo)
         // Do any additional setup after loading the view.
     }
     

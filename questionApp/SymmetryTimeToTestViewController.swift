@@ -21,6 +21,8 @@ class SymmetryTimeToTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Symmetry, .Load, .TimeToTest)
         
         // setup rounded corners on label
         labelBackground.layer.cornerRadius = 7

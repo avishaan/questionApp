@@ -16,6 +16,8 @@ class WhyIsObjectPermanenceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .Why)
 
         // set up attributes for both part of object permanence description label
         let string = "Your baby's grasp of Object Permanence can be tested with a falling toy. Object Permanence allows baby to form mental pictures and is crucial to self-recognition."

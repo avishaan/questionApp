@@ -12,6 +12,8 @@ class HearingMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Hearing, .Load, .MoreInfo)
         
         // Do any additional setup after loading the view.
     }

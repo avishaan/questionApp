@@ -14,6 +14,8 @@ class WhyIsPointFollowingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PointFollowing, .Load, .Why)
         applyTextAttributesToLabel()
     }
 

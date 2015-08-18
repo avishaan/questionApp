@@ -12,6 +12,8 @@ class SensoryMotorMilestoneViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SensoryMotorMilestone, .Load)
     
     // Do any additional setup after loading the view.
   }

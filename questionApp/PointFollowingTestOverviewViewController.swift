@@ -17,6 +17,8 @@ class PointFollowingTestOverviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PointFollowing, .Load, .Overview)
 
         // Do any additional setup after loading the view.
     }

@@ -14,6 +14,8 @@ class PincerWhatWillYouNeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PincerGrasp, .Load, .WhatIsNeeded)
         applyTextAttributesToLabel()
     }
     

@@ -21,6 +21,23 @@ struct Tracker {
     case Milestone = "Milestone"
     case PupilResponse = "Pupil Response"
     case SittingReaching = "Sitting and Reaching"
+    case UnassistedSitting = "Unassisted Sitting"
+    case PincerGrasp = "Pincer Grasp"
+    case SelfRecognition = "Self Recognition"
+    case Symmetry = "Symmetry"
+    case Hearing = "Hearing"
+    case CrossingEyes = "Crossing Eyes"
+    case Crawl = "Let's Crawl"
+    case FacialMimic = "Facial Mimic"
+    case SocialSmiling = "Social Smiling"
+    case PointFollowing = "Point Following"
+    case CompletelyCovered = "Completely Covered"
+    case PartiallyCovered = "Partially Covered"
+    case AttentionAtDistance = "Attention At Distance"
+    case FallingToy = "Falling Toy"
+    case SensoryMotorMilestone = "Sensory Motor Milestone"
+    case SocialEmotionalMilestone = "Social Emotional Milestone"
+    case LanguageCognitiveMilestone = "Language Cognitive Milestone"
   }
   
   /**

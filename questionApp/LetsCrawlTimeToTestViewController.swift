@@ -24,6 +24,8 @@ class LetsCrawlTimeToTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Crawl, .Load, .TimeToTest)
 
         // setup rounded corners on label
         labelBackground.layer.cornerRadius = 7

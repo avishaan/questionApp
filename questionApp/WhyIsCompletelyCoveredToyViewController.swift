@@ -14,6 +14,8 @@ class WhyIsCompletelyCoveredToyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.CompletelyCovered, .Load, .Why)
         applyTextAttributesToLabel()
     }
 

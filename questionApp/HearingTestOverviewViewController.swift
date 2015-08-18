@@ -17,6 +17,8 @@ class HearingTestOverviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Hearing, .Load, .Overview)
     }
     
     override func viewWillAppear(animated: Bool) {

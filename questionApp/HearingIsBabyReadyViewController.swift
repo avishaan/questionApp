@@ -16,6 +16,8 @@ class HearingIsBabyReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Hearing, .Load, .IsReady)
         applyTextAttributesToLabels()
     }
     

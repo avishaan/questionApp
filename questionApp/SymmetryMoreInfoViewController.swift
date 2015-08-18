@@ -12,6 +12,8 @@ class SymmetryMoreInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Symmetry, .Load, .MoreInfo)
         
         // Do any additional setup after loading the view.
     }

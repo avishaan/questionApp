@@ -17,6 +17,9 @@ class CrossingEyesTestOverviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // analytics
+      Tracker.createEvent(.CrossingEyes, .Load, .Overview)
     }
     
     override func viewWillAppear(animated: Bool) {

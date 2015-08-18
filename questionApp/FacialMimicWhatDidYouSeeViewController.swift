@@ -16,6 +16,8 @@ class FacialMimicWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.FacialMimic, .Load, .WhatDidSee)
     }
     
     override func viewWillAppear(animated: Bool) {

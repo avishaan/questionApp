@@ -14,6 +14,8 @@ class WhyIsSocialSmilingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SocialSmiling, .Load, .Why)
         applyTextAttributesToLabel()
     }
 

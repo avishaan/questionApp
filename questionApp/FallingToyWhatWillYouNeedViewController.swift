@@ -18,6 +18,8 @@ class FallingToyWhatWillYouNeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.AttentionAtDistance, .Load, .WhatIsNeeded)
         
         // set up attributes for both part of pupil response description label
         let string = "You'll need a small, soft, colorful toy. No hard toys - they make a sound on impact and may influence your results."
