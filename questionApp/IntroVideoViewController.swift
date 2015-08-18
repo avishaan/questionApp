@@ -20,7 +20,7 @@ class IntroVideoViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    mixpanel.track("Enter Intro Video", properties: (name: "hello", evnet: "hello"))
+    mixpanel.track("Enter Intro Video", properties: Tracker.createEvent(.Intro, .Load))
     
   }
   
@@ -58,6 +58,7 @@ class IntroVideoViewController: UIViewController {
     playerVC.player.play()
     
     mixpanel.track("Intro Video Played")
+    
     
     
   }
