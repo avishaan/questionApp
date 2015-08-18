@@ -63,6 +63,7 @@ class ProfileSetupViewController: UIViewController {
     person.storeInfo()
     
     // save user information to analytics platform
+    Tracker.registerUser(parentName: nameField.text, parentEmail: emailField.text, babyName:babyNameField.text, babyDOB: babyBirthdayDate.date)
   }
   
   

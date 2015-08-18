@@ -13,6 +13,7 @@ struct Tracker {
   enum Name: String {
     case Intro = "Introduction"
     case Profile = "Profile"
+    case ProfileSaved = "Saved Profile"
   }
   
   enum Action:String {
@@ -31,5 +32,17 @@ struct Tracker {
     let sentence = "\(event.name) \(event.action)"
     
     mixpanel.track(sentence, properties: ["name": event.name, "action": event.action])
+  }
+  
+  static func registerUser(#parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate) {
+    var dateFormatter = NSDateFormatter()
+    dateFormatter.dateStyle = .ShortStyle
+    
+    mixpanel.registerSuperProperties([
+      "parentName": parentName,
+      "parentEmail": parentEmail,
+      "babyName": babyName,
+      "babyDOB": dateFormatter.stringFromDate(babyDOB)
+      ]);
   }
 }
