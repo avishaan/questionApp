@@ -14,6 +14,8 @@ class WhyIsPincerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PincerGrasp, .Load, .Why)
         //applyTextAttributesToLabel()
     }
     

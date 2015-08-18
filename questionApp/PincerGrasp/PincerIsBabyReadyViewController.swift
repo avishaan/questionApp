@@ -16,6 +16,9 @@ class PincerIsBabyReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // analytics
+      Tracker.createEvent(.PincerGrasp, .Load, .IsReady)
         applyTextAttributesToLabels()
     }
     

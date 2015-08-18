@@ -19,6 +19,9 @@ class PincerBadOutcomeViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+		
+      // analytics
+      Tracker.createEvent(.PincerGrasp, .Load, .Why)
     
 		// Initialize text in the view based on the test history.
 		initializeViewFromTestHistory()

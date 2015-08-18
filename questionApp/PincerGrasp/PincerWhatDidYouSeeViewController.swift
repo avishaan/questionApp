@@ -16,6 +16,9 @@ class PincerWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // analytics
+      Tracker.createEvent(.PincerGrasp, .Load, .WhatDidSee)
     }
     
     override func viewWillAppear(animated: Bool) {
