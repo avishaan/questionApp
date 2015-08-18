@@ -20,6 +20,7 @@ struct Tracker {
     case ProfileImage = "Profile Image"
     case Milestone = "Milestone"
     case PupilResponse = "Pupil Response"
+    case SittingReaching = "Sitting and Reaching"
   }
   
   /**
@@ -41,15 +42,15 @@ struct Tracker {
   */
   enum Progress:String {
     case NA = "" // not applicable when not progressing in a test
-    case Why = "Why is?"
-    case WhatIsNeeded = "What will you need?"
-    case Bad = "Bad outcome"
-    case MoreInfo = "More information"
-    case TimeToTest = "Time to test"
-    case Good = "Good outcome"
-    case WhatDidSee = "What did you see?"
-    case IsReady = "Is baby ready?"
-    case Overview = "Test overview"
+    case Why = "why is?"
+    case WhatIsNeeded = "what will you need?"
+    case Bad = "bad outcome"
+    case MoreInfo = "more information"
+    case TimeToTest = "time to test"
+    case Good = "good outcome"
+    case WhatDidSee = "what did you see?"
+    case IsReady = "is baby ready?"
+    case Overview = "test overview"
     
   }
   
