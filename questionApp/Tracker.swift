@@ -23,6 +23,7 @@ struct Tracker {
     case SittingReaching = "Sitting and Reaching"
     case UnassistedSitting = "Unassisted Sitting"
     case PincerGrasp = "Pincer Grasp"
+    case SelfRecognition = "Self Recognition"
   }
   
   /**
