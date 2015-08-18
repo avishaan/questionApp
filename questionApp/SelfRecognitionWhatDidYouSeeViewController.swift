@@ -17,6 +17,9 @@ class SelfRecognitionWhatDidYouSeeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+      // analytics
+      Tracker.createEvent(.SelfRecognition, .Load, .WhatDidSee)
+      
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

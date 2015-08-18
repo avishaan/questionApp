@@ -14,6 +14,8 @@ class WhyIsSelfRecognitionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SelfRecognition, .Load, .Why)
         //applyTextAttributesToLabel()
     }
     
