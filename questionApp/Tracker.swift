@@ -13,15 +13,15 @@ struct Tracker {
     case Intro = "Introduction"
   }
   
-  enum Event:String {
+  enum Action:String {
     case Load = "Load"
     case Dismiss = "Dismiss"
     case Play = "Play Video"
   }
   
-  static func createEvent(name:Name, _ event:Event) -> (name:String, event:String) {
+  static func createEvent(name:Name, _ action:Action) -> [[String:String]] {
     
-    return (name.rawValue, event.rawValue)
+    return [["name": name.rawValue, "action": action.rawValue]]
     
   }
 }
