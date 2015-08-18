@@ -32,6 +32,7 @@ struct Tracker {
     case SocialSmiling = "Social Smiling"
     case PointFollowing = "Point Following"
     case CompletelyCovered = "Completely Covered"
+    case PartiallyCovered = "Partially Covered"
   }
   
   /**

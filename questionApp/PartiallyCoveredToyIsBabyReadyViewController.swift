@@ -16,6 +16,8 @@ class PartiallyCoveredToyIsBabyReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PartiallyCovered, .Load, .IsReady)
         applyTextAttributesToLabels()
     }
 

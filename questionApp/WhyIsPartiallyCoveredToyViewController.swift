@@ -14,6 +14,8 @@ class WhyIsPartiallyCoveredToyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PartiallyCovered, .Load, .Why)
         applyTextAttributesToLabel()
     }
 

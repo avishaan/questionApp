@@ -17,6 +17,8 @@ class PartiallyCoveredToyTestOverviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.PartiallyCovered, .Load, .Overview)
 
         // Do any additional setup after loading the view.
     }
