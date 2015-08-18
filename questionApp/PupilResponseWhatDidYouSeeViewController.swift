@@ -16,6 +16,9 @@ class PupilResponseWhatDidYouSeeViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+		
+		// analytics
+		Tracker.createEvent(.PupilResponse, .Load, .WhatDidSee)
     
 		// Ensure current information for parent by reloading.
 		parent = Parent()

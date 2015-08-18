@@ -14,6 +14,9 @@ class PupilResponseWhatWillYouNeedViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+	
+	// analytics
+	Tracker.createEvent(.PupilResponse, .Load, .WhatIsNeeded)
     
     // Do any additional setup after loading the view.
     

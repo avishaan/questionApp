@@ -19,6 +19,9 @@ class PupilResponseTestOverviewViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+	
+	// analytics
+	Tracker.createEvent(.PupilResponse, .Load, .Overview)
     
     // Do any additional setup after loading the view.
   }
@@ -69,6 +72,7 @@ class PupilResponseTestOverviewViewController: UIViewController {
     
   func enableVideoReplay() {
     playerVC.player.seekToTime(kCMTimeZero)
+	Tracker.createEvent(.PupilResponse, .Replay, .Overview)
     // show button
     previewButton.hidden = false
   }
@@ -80,6 +84,7 @@ class PupilResponseTestOverviewViewController: UIViewController {
     button.hidden = true
     // play the video
     playerVC.player.play()
+	Tracker.createEvent(.PupilResponse, .Play, .Overview)
   }
     
   @IBAction func onBackButtonTap(sender: AnyObject) {

@@ -25,6 +25,7 @@ class PupilResponseTimeToTestViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+	Tracker.createEvent(.PupilResponse, .Load, .TimeToTest)
     
     // Do any additional setup after loading the view.
     labelBackground.layer.cornerRadius = 7
