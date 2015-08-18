@@ -28,8 +28,6 @@ class ProfileSetupViewController: UIViewController {
     // TODO: change color based on which gender is picked
     
     // hide keyboard when typing return
-    mixpanel.track("ViewLoad: Profile Setup")
-    
     
     
   }

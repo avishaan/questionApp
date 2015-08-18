@@ -19,9 +19,10 @@ struct Tracker {
     case Play = "Play Video"
   }
   
-  static func createEvent(name:Name, _ action:Action) -> [String:String] {
+  static func createEvent(name:Name, _ action:Action) {
+    var event = (name: name.rawValue, action: action.rawValue)
+    let sentence = "\(event.name) \(event.action)"
     
-    return ["name": name.rawValue, "action": action.rawValue]
-    
+    mixpanel.track(sentence, properties: ["name": event.name, "action": event.action])
   }
 }
