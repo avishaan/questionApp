@@ -167,6 +167,7 @@
 		8270B2FC1B81E6FE00DFFB52 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8270B2FB1B81E6FE00DFFB52 /* CFNetwork.framework */; };
 		8270B2FE1B81E70800DFFB52 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8270B2FD1B81E70800DFFB52 /* Security.framework */; };
 		8270B3001B81E7C000DFFB52 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8270B2FF1B81E7C000DFFB52 /* libicucore.A.dylib */; };
+		8270B3051B82A71900DFFB52 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270B3041B82A71900DFFB52 /* Tracker.swift */; };
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
 		8278694B1B54141B0001F932 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; };
 		8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -583,6 +584,7 @@
 		8270B2FB1B81E6FE00DFFB52 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8270B2FD1B81E70800DFFB52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8270B2FF1B81E7C000DFFB52 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
+		8270B3041B82A71900DFFB52 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		827869451B5413E60001F932 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "resources/libs/ios-charts/Charts/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8296BFAB1B5B3E31007E842B /* IntroVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideo.m4v; sourceTree = "<group>"; };
@@ -1151,6 +1153,7 @@
 				9E923CAE1B68257D00F2B0A7 /* Test.swift */,
 				9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */,
 				9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */,
+				8270B3041B82A71900DFFB52 /* Tracker.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1762,6 +1765,7 @@
 				8270B2BE1B81DFF100DFFB52 /* MPDesignerEventBindingRequestMesssage.m in Sources */,
 				9ED51BBF1B5813720000C5E6 /* SymmetryIsBabyReadyViewController.swift in Sources */,
 				209965A91B6859EE00B93C5D /* SocialSmilingIsBabyReadyViewController.swift in Sources */,
+				8270B3051B82A71900DFFB52 /* Tracker.swift in Sources */,
 				9E923CBA1B69515C00F2B0A7 /* WhyIsFacialMimicViewController.swift in Sources */,
 				9EE7EB1E1B55A67B00C73CA3 /* CrossingEyesGoodOutcomeViewController.swift in Sources */,
 				8270B2B31B81DFF100DFFB52 /* MPABTestDesignerTweakRequestMessage.m in Sources */,

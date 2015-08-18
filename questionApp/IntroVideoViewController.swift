@@ -20,6 +20,9 @@ class IntroVideoViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    mixpanel.track("")
+    mixpanel.track("", properties: (Test: "Test"))
+    
   }
   
   override func didReceiveMemoryWarning() {
@@ -54,6 +57,9 @@ class IntroVideoViewController: UIViewController {
     button.hidden = true
     // play the video
     playerVC.player.play()
+    
+    mixpanel.track("Intro Video Played")
+    
     
   }
   
