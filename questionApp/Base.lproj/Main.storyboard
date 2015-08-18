@@ -489,6 +489,16 @@
                                     <segue destination="DF5-Zg-qbg" kind="presentation" id="b14-b1-AiE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-PC-Ne4">
+                                <rect key="frame" x="120" y="372" width="82" height="116"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="220" y="372" width="82" height="116"/>
+                                </variation>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="my milestones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnf-a8-LKa" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -612,6 +622,16 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="u6C-PC-Ne4"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="u6C-PC-Ne4"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -626,6 +646,7 @@
                         <outlet property="sensoryMotorBackground" destination="rZQ-eR-dxA" id="J8L-QE-n27"/>
                         <outlet property="socialAndEmotionalLabel" destination="Z3n-Me-PPj" id="3gP-cA-UXn"/>
                         <outlet property="socialAndEmotionalPieChartView" destination="1d0-L2-lnb" id="ido-4L-dGE"/>
+                        <outlet property="socialEmotionalBackground" destination="u6C-PC-Ne4" id="NSz-af-aO8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwr-71-9iG" userLabel="First Responder" sceneMemberID="firstResponder"/>
