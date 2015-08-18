@@ -9,5 +9,8 @@
 import Foundation
 
 struct config {
-  var mixpanel = (token: "1446f2fe2273c86febd26066953e49f1", apiKey: "1446f2fe2273c86febd26066953e49f1", apiSecret: "1446f2fe2273c86febd26066953e49f1")
+  var mixpanel = (
+    token: "c19d0cf5752c2739942ed6d05972dfeb",
+    apiKey: "33887490d9b6b4422e75f73558270cd8",
+    apiSecret: "8566f57b47cc571a1f46e9c356bcac1b")
 }

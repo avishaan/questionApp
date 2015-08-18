@@ -20,6 +20,7 @@ class IntroVideoViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    Tracker.createEvent(.Intro, .Load)
   }
   
   override func didReceiveMemoryWarning() {
@@ -54,6 +55,8 @@ class IntroVideoViewController: UIViewController {
     button.hidden = true
     // play the video
     playerVC.player.play()
+    
+    Tracker.createEvent(.Intro, .Play)
     
   }
   

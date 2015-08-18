@@ -51,6 +51,9 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
     
     // replace image in baby view from NSUserDefaults
     babyImageView.image = parent.image
+    
+    // analytics
+    Tracker.createEvent(.ProfileSaved, .Load)
   }
   
   override func didReceiveMemoryWarning() {
@@ -87,6 +90,8 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
       imagePicker.mediaTypes = [kUTTypeImage]
       imagePicker.allowsEditing = false
       
+      Tracker.createEvent(.ProfileImage, .Tapped)
+      
       self.presentViewController(imagePicker, animated: true, completion: { () -> Void in
         return
       })
@@ -109,6 +114,8 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
       babyImageView.image = origImage
       // save the image
       parent.storeImage(origImage)
+      
+      Tracker.createEvent(.ProfileImage, .Changed)
       
     }
     self.dismissViewControllerAnimated(true, completion: nil)
