@@ -16,6 +16,9 @@ class SittingAndReachingWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // analytics
+      Tracker.createEvent(.SittingReaching, .Load, .WhatDidSee)
 
         // Ensure current information for parent by reloading.
         parent = Parent()

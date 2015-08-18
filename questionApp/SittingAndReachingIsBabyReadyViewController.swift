@@ -16,6 +16,10 @@ class SittingAndReachingIsBabyReadyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      // analytics
+      Tracker.createEvent(.SittingReaching, .Load, .IsReady)
+      
         applyTextAttributesToLabels()
     }
 

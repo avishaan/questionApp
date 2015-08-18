@@ -14,6 +14,8 @@ class WhyIsSittingAndReachingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.SittingReaching, .Load, .Why)
         applyTextAttributesToLabel()
     }
 

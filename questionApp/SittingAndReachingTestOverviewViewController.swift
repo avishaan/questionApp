@@ -18,6 +18,8 @@ class SittingAndReachingTestOverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+      // analytics
+      Tracker.createEvent(.SittingReaching, .Load, .Overview)
         // Do any additional setup after loading the view.
     }
     
