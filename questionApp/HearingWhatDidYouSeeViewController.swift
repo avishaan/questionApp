@@ -18,6 +18,8 @@ class HearingWhatDidYouSeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Hearing, .Load, .WhatDidSee)
         
         // TODO: center align text not working with BNButton class. Tried to move to drawText in BNButton but it didn't work.
         goodOutcomeButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Center

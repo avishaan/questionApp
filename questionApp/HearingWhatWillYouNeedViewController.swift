@@ -14,6 +14,8 @@ class HearingWhatWillYouNeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      // analytics
+      Tracker.createEvent(.Hearing, .Load, .WhatIsNeeded)
         //applyTextAttributesToLabel()
     }
     
