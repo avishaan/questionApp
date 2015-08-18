@@ -21,6 +21,7 @@ struct Tracker {
     case Milestone = "Milestone"
     case PupilResponse = "Pupil Response"
     case SittingReaching = "Sitting and Reaching"
+    case UnassistedSitting = "Unassisted Sitting"
   }
   
   /**
