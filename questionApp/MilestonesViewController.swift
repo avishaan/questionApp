@@ -24,6 +24,8 @@ class MilestonesViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    Tracker.createEvent(.Milestone, .Load)
+    
     // Do any additional setup after loading the view.
     // setup image as a circle
     babyImageView.layer.cornerRadius = babyImageView.frame.size.width/2
