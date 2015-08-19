@@ -2045,7 +2045,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/avi/Documents/CodeHatcher/Code/questionApp/questionApp/Mixpanel-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "questionApp/Mixpanel-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2063,7 +2063,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/avi/Documents/CodeHatcher/Code/questionApp/questionApp/Mixpanel-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "questionApp/Mixpanel-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
