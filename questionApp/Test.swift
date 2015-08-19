@@ -39,6 +39,7 @@ class Test: NSObject, NSCoding {
         static var unassistedSitting: String = "unassisted sitting"
         static var sittingAndReaching: String = "sitting and reaching"
         static var plasticJar: String = "ask and respond"
+        static var bookPresentation: String = "book presentation"
         // TODO: add additional var as new tests are added to the app
     }
     
@@ -61,6 +62,7 @@ class Test: NSObject, NSCoding {
         static var unassistedSitting = "unassisted sitting"
         static var sittingAndReaching = "sitting and reaching"
         static var plasticJar = "ask and respond"
+        static var bookPresentation: String = "book presentation"
         // TODO: if new tests are added to the app, add them here.
     }
     

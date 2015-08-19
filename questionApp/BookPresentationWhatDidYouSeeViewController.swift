@@ -24,7 +24,7 @@ class BookPresentationWhatDidYouSeeViewController: UIViewController {
         profiles.initProfilesFromPersistentStore()
         
         // Get the test information.
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.plasticJar)
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.bookPresentation)
     }
     
     override func didReceiveMemoryWarning() {
