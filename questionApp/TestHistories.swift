@@ -236,6 +236,23 @@ class TestHistories : NSObject, NSCoding {
     }
     
     /*
+    @brief Get the names of all the tests that have not yet been passed.
+    @discussion A test will be included in the list only if it has never passed.
+    @return An array of Strings, where each String is the name of a test. The names are Test.TestNamesPresentable values. The array may be empty.
+    */
+    func neverPassed() -> [String] {
+        var neverPassed = [String]()
+        
+        for (testName, testHistory) in histories {
+            if testHistory.countOfSuccessfulTests == 0 {
+                neverPassed.append(testName)
+            }
+        }
+        
+        return neverPassed
+    }
+    
+    /*
         @brief Print out the contents of the histories dictionary to the console
         @discussion This method is intended for use in development releases only. It is not intended for use in production releases.
     */
@@ -276,5 +293,20 @@ class TestHistories : NSObject, NSCoding {
     
     func encodeWithCoder(encoder: NSCoder) {
         encoder.encodeObject(self.histories, forKey: "testHistories")
+    }
+    
+    // TODO: This is a test function added 8/18/2015 to exercise the NeverPassed function and demonstrate its usage. Remove it.
+    // For the current profile it dumps a list of tests that have never been passed to the console.
+    static func testTheNeverPassedFunction() {
+        var parent = Parent()
+        var profiles = TestProfiles()
+        profiles.initProfilesFromPersistentStore()
+        
+        if let testHistories = profiles.getTestHistories(profileName: parent.getCurrentProfileName()) {
+            var neverPassedList = testHistories.neverPassed()
+            for name in neverPassedList {
+                println("\(name)")
+            }
+        }
     }
 }
