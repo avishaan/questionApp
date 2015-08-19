@@ -12,6 +12,8 @@
 	<dict>
 		<key>B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A</key>
 		<string>https://github.com/codeHatcher/questionApp.git</string>
+		<key>E037564209F4271640D11215AB04FFA8916AF6F2</key>
+		<string>github.com:codeHatcher/iOSPirateGame.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>questionApp.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A</key>
 		<string>../..</string>
+		<key>E037564209F4271640D11215AB04FFA8916AF6F2</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/codeHatcher/questionApp.git</string>
@@ -28,6 +32,14 @@
 	<string>B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E037564209F4271640D11215AB04FFA8916AF6F2</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

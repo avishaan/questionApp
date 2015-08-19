@@ -181,6 +181,7 @@
 		829F550D1B269C2E00ABE77C /* IntroVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */; };
 		829F55101B26BB1B00ABE77C /* FacialMimic.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 829F550F1B26BB1B00ABE77C /* FacialMimic.mp4 */; };
 		829F55121B26C2EF00ABE77C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829F55111B26C2EF00ABE77C /* MediaPlayer.framework */; };
+		82B627471B8406C30048DE0E /* WhyIsBookPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B627461B8406C30048DE0E /* WhyIsBookPresentationViewController.swift */; };
 		82BA147D1B54167B00B18A21 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BA147C1B54167B00B18A21 /* ChartViewController.swift */; };
 		82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C49BF91B424934002998C2 /* LaunchScreen.xcassets */; };
 		82D1415B1B41289F0048434F /* PupilResponseTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1415A1B41289F0048434F /* PupilResponseTimeToTestViewController.swift */; };
@@ -335,7 +336,6 @@
 		A5ABF6C71B82810D00CE0EDE /* BookPresentationIsBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6C61B82810C00CE0EDE /* BookPresentationIsBabyReadyViewController.swift */; };
 		A5ABF6C91B8289D600CE0EDE /* BookPresentationWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6C81B8289D600CE0EDE /* BookPresentationWhatDidYouSeeViewController.swift */; };
 		A5ABF6CB1B828D1F00CE0EDE /* BookPresentationGoodOutComeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6CA1B828D1F00CE0EDE /* BookPresentationGoodOutComeViewController.swift */; };
-		A5ABF6CF1B82A86400CE0EDE /* WhyIsJointAttentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6CE1B82A86400CE0EDE /* WhyIsJointAttentionViewController.swift */; };
 		A5ABF6D11B82AB6F00CE0EDE /* BookPresentationBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6D01B82AB6F00CE0EDE /* BookPresentationBadOutcomeViewController.swift */; };
 		A5ABF6D31B82B03F00CE0EDE /* BookPresentationMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6D21B82B03F00CE0EDE /* BookPresentationMoreInfoViewController.swift */; };
 		A5ABF6D51B82B1CC00CE0EDE /* BookPresentationActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABF6D41B82B1CC00CE0EDE /* BookPresentationActivityReminderViewController.swift */; };
@@ -612,6 +612,7 @@
 		829F550C1B269C2E00ABE77C /* IntroVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVideoViewController.swift; sourceTree = "<group>"; };
 		829F550F1B26BB1B00ABE77C /* FacialMimic.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FacialMimic.mp4; sourceTree = "<group>"; };
 		829F55111B26C2EF00ABE77C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		82B627461B8406C30048DE0E /* WhyIsBookPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsBookPresentationViewController.swift; sourceTree = "<group>"; };
 		82BA147C1B54167B00B18A21 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		82C49BF91B424934002998C2 /* LaunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchScreen.xcassets; sourceTree = "<group>"; };
 		82D1415A1B41289F0048434F /* PupilResponseTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseTimeToTestViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
@@ -766,7 +767,6 @@
 		A5ABF6C61B82810C00CE0EDE /* BookPresentationIsBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationIsBabyReadyViewController.swift; sourceTree = "<group>"; };
 		A5ABF6C81B8289D600CE0EDE /* BookPresentationWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
 		A5ABF6CA1B828D1F00CE0EDE /* BookPresentationGoodOutComeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationGoodOutComeViewController.swift; sourceTree = "<group>"; };
-		A5ABF6CE1B82A86400CE0EDE /* WhyIsJointAttentionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsJointAttentionViewController.swift; sourceTree = "<group>"; };
 		A5ABF6D01B82AB6F00CE0EDE /* BookPresentationBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationBadOutcomeViewController.swift; sourceTree = "<group>"; };
 		A5ABF6D21B82B03F00CE0EDE /* BookPresentationMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationMoreInfoViewController.swift; sourceTree = "<group>"; };
 		A5ABF6D41B82B1CC00CE0EDE /* BookPresentationActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPresentationActivityReminderViewController.swift; sourceTree = "<group>"; };
@@ -1458,8 +1458,8 @@
 			isa = PBXGroup;
 			children = (
 				A5384A6E1B800AB100FAF159 /* BookPresentation.storyboard */,
-				A5ABF6CE1B82A86400CE0EDE /* WhyIsJointAttentionViewController.swift */,
 				A5ABF6C41B826E3400CE0EDE /* BookPresentationTestOverviewViewController.swift */,
+				82B627461B8406C30048DE0E /* WhyIsBookPresentationViewController.swift */,
 				A5ABF6C01B81F31100CE0EDE /* BookPresentationWhatYouWillNeedViewController.swift */,
 				A5ABF6C61B82810C00CE0EDE /* BookPresentationIsBabyReadyViewController.swift */,
 				A5ABF6C21B81F63200CE0EDE /* BookPresentationTimeToTestViewController.swift */,
@@ -1682,6 +1682,7 @@
 				9EE7EB371B56A81600C73CA3 /* HearingBadOutcomeViewController.swift in Sources */,
 				9EE7EB551B56DE2700C73CA3 /* AttentionAtDistanceWhatDidYouSeeViewController.swift in Sources */,
 				205787091B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift in Sources */,
+				82B627471B8406C30048DE0E /* WhyIsBookPresentationViewController.swift in Sources */,
 				A5ABF6D11B82AB6F00CE0EDE /* BookPresentationBadOutcomeViewController.swift in Sources */,
 				20E356431B77DFE8002F38C7 /* SittingAndReachingTimeToTestViewController.swift in Sources */,
 				209965B51B685AEC00B93C5D /* SocialSmilingActivityReminderViewController.swift in Sources */,
@@ -1793,7 +1794,6 @@
 				9ED51BC91B5813CC0000C5E6 /* SymmetryMoreInfoViewController.swift in Sources */,
 				82BA147D1B54167B00B18A21 /* ChartViewController.swift in Sources */,
 				20E356601B797BAE002F38C7 /* PlasticJarTimeToTestViewController.swift in Sources */,
-				A5ABF6CF1B82A86400CE0EDE /* WhyIsJointAttentionViewController.swift in Sources */,
 				82E574731B707538006FA7B1 /* PincerActivityReminderViewController.swift in Sources */,
 				82401C291B28399F008202EA /* ProfileSetupViewController.swift in Sources */,
 				9EE7EB571B56DE3600C73CA3 /* AttentionAtDistanceGoodOutcomeViewController.swift in Sources */,
