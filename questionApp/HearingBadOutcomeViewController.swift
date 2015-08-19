@@ -131,9 +131,9 @@ class HearingBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.hearing {
+        if failed >= Test.LocalNotificationTrigger.hearing {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.hearing, secondsBeforeDisplayingReminder: Test.NotificationInterval.hearing)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

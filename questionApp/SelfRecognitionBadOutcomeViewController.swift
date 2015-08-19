@@ -123,9 +123,9 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.selfRecognition {
+        if failed >= Test.LocalNotificationTrigger.selfRecognition {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.selfRecognition, secondsBeforeDisplayingReminder: Test.NotificationInterval.selfRecognition)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

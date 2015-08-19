@@ -106,9 +106,9 @@ class FallingToyBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.fallingToy {
+        if failed >= Test.LocalNotificationTrigger.fallingToy {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.fallingToy, secondsBeforeDisplayingReminder: Test.NotificationInterval.fallingToy)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

@@ -130,9 +130,9 @@ class UnassistedSittingBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.unassistedSitting {
+        if failed >= Test.LocalNotificationTrigger.unassistedSitting {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.unassistedSitting, secondsBeforeDisplayingReminder: Test.NotificationInterval.unassistedSitting)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

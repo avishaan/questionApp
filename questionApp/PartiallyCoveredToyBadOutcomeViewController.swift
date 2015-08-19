@@ -128,9 +128,9 @@ class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.partiallyCoveredToy {
+        if failed >= Test.LocalNotificationTrigger.partiallyCoveredToy {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.partiallyCoveredToy, secondsBeforeDisplayingReminder: Test.NotificationInterval.partiallyCoveredToy)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

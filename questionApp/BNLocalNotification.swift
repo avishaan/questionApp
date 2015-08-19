@@ -48,7 +48,11 @@ class BNLocalNotification {
     elapsedSecondsBeforePresentingReminder = secondsBeforeDisplayingReminder
   }
   
-  @IBAction func scheduleNotification(sender: AnyObject) {
+  /*
+  @brief Create the local notification on this device.
+  @discussion Uses the fire date identified in self.elapsedSecondsBeforePresentingReminder.
+  */
+  @IBAction func scheduleNotification() {
     
     var localNotification = UILocalNotification()
     
@@ -78,8 +82,6 @@ class BNLocalNotification {
     // schedule the notification
     localNotification.fireDate = NSDate(timeIntervalSinceNow: 20 /*TODO-RELEASE: switch to this --> elapsedSecondsBeforePresentingReminder*/)
     UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-    
-    //presentConfirmationAlert()
   }
   
   /*
@@ -268,4 +270,33 @@ class BNLocalNotification {
       }
     }
   }
+  
+  /*!
+  @brief Determine if a local notification exists that contains testName in userInfo.
+  @param (in) testName - The name of the test to be found in the userInfo of a local notification. Use a Test.TestNamesPresentable value. (cannot be nil)
+  @return Returns true if testName is found in the userInfo of a local notification, else returns false.
+  */
+  static func doesLocalNotificationExist(testName: String) -> Bool {
+    
+    // Iterate through all local notifications to find one containing testName in the userInfo.
+    var theApp:UIApplication = UIApplication.sharedApplication()
+    for locNotif in theApp.scheduledLocalNotifications {
+      
+      var notification = locNotif as! UILocalNotification
+      let notificationUserInfo = notification.userInfo! as! [String:AnyObject]
+      let notificationTestName = notificationUserInfo[BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey]! as! String
+      
+      if notificationTestName == testName {
+        // TODO: add profile name to the userInfo and only delete if same profile name
+        //        in other words, the first child fails repeatedly, while the 2nd fails then passes. Only delete the notification belonging to the second child.
+        
+        // Match! Found a local notification containing testName in userInfo.
+        return true
+      }
+    }
+    
+    // No local notification was found containing testName in userInfo.
+    return false
+  }
+  
 }

@@ -128,9 +128,9 @@ class CompletelyCoveredToyBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.completelyCoveredToy {
+        if failed >= Test.LocalNotificationTrigger.completelyCoveredToy {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.completelyCoveredToy, secondsBeforeDisplayingReminder: Test.NotificationInterval.completelyCoveredToy)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

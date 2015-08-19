@@ -122,9 +122,9 @@ class SymmetryBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.symmetry {
+        if failed >= Test.LocalNotificationTrigger.symmetry {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.symmetry, secondsBeforeDisplayingReminder: Test.NotificationInterval.symmetry)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

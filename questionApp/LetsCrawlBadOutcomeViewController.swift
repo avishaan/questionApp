@@ -106,9 +106,9 @@ class LetsCrawlBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.letsCrawl {
+        if failed >= Test.LocalNotificationTrigger.letsCrawl {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.letsCrawl, secondsBeforeDisplayingReminder: Test.NotificationInterval.letsCrawl)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

@@ -130,9 +130,9 @@ class SittingAndReachingBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.sittingAndReaching {
+        if failed >= Test.LocalNotificationTrigger.sittingAndReaching {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.sittingAndReaching, secondsBeforeDisplayingReminder: Test.NotificationInterval.sittingAndReaching)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

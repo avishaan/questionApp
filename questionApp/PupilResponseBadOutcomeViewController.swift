@@ -128,9 +128,9 @@ class PupilResponseBadOutcomeViewController: UIViewController {
 			failed = failedCount
 		}
 		
-		if failed == Test.LocalNotificationTrigger.pupilResponse {
+		if failed >= Test.LocalNotificationTrigger.pupilResponse {
 			let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.pupilResponse, secondsBeforeDisplayingReminder: Test.NotificationInterval.pupilResponse)
-			localNotification.scheduleNotification(self)
+			localNotification.scheduleNotification()
 		}
 	}
 }

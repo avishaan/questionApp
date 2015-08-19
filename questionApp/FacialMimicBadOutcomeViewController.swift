@@ -117,9 +117,9 @@ class FacialMimicBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.facialMimic {
+        if failed >= Test.LocalNotificationTrigger.facialMimic {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.facialMimic, secondsBeforeDisplayingReminder: Test.NotificationInterval.facialMimic)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

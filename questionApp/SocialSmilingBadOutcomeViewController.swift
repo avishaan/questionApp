@@ -115,9 +115,9 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.socialSmiling {
+        if failed >= Test.LocalNotificationTrigger.socialSmiling {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.socialSmiling, secondsBeforeDisplayingReminder: Test.NotificationInterval.socialSmiling)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

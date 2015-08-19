@@ -120,9 +120,9 @@ class PointFollowingBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.pointFollowing {
+        if failed >= Test.LocalNotificationTrigger.pointFollowing {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.pointFollowing, secondsBeforeDisplayingReminder: Test.NotificationInterval.pointFollowing)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

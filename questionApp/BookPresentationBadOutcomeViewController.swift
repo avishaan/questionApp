@@ -125,9 +125,9 @@ class BookPresentationBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.plasticJar {
+        if failed >= Test.LocalNotificationTrigger.plasticJar {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.plasticJar, secondsBeforeDisplayingReminder: Test.NotificationInterval.plasticJar)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 

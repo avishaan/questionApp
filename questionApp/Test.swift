@@ -98,26 +98,27 @@ class Test: NSObject, NSCoding {
         //static var rollingOverFrontToBack:   Double = 30 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
     }
-    
-    // Local Notification trigger identifies the number of failed tests that trigger the scheduling of a local notification to reminder the user to run the test again.
+  
+// DEPRECATED behavior, JB 8/19/2015. TODO: remove
+//    // Local Notification trigger identifies the number of failed tests that trigger the scheduling of a local notification to reminder the user to run the test again.
     struct LocalNotificationTrigger {
-        static var pupilResponse:       Int = 2
-        static var fallingToy:          Int = 2
-        static var letsCrawl:           Int = 2
-        static var pointFollowing:      Int = 2
-        static var hearing:             Int = 2
-        static var crossingEyes:        Int = 2
-        static var attentionAtDistance: Int = 2
-        static var symmetry:            Int = 2
-        static var pincer:              Int = 2
-        static var completelyCoveredToy: Int = 2
-        static var partiallyCoveredToy: Int = 2
-        static var selfRecognition:     Int = 2
-        static var socialSmiling:       Int = 2
-        static var facialMimic:         Int = 2
-        static var unassistedSitting:   Int = 2
-        static var sittingAndReaching:  Int = 2
-        static var plasticJar:          Int = 2
+        static var pupilResponse:       Int = 1
+        static var fallingToy:          Int = 1
+        static var letsCrawl:           Int = 1
+        static var pointFollowing:      Int = 1
+        static var hearing:             Int = 1
+        static var crossingEyes:        Int = 1
+        static var attentionAtDistance: Int = 1
+        static var symmetry:            Int = 1
+        static var pincer:              Int = 1
+        static var completelyCoveredToy: Int = 1
+        static var partiallyCoveredToy: Int = 1
+        static var selfRecognition:     Int = 1
+        static var socialSmiling:       Int = 1
+        static var facialMimic:         Int = 1
+        static var unassistedSitting:   Int = 1
+        static var sittingAndReaching:  Int = 1
+        static var plasticJar:          Int = 1
         // TODO: add additional var as new tests are added to the app
     }
     

@@ -115,9 +115,9 @@ class CrossingEyesBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed == Test.LocalNotificationTrigger.crossingEyes {
+        if failed >= Test.LocalNotificationTrigger.crossingEyes {
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.crossingEyes, secondsBeforeDisplayingReminder: Test.NotificationInterval.crossingEyes)
-            localNotification.scheduleNotification(self)
+            localNotification.scheduleNotification()
         }
     }
 }

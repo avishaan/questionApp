@@ -116,9 +116,9 @@ class PincerBadOutcomeViewController: UIViewController {
 			failed = failedCount
 		}
 		
-		if failed == Test.LocalNotificationTrigger.pincer {
+		if failed >= Test.LocalNotificationTrigger.pincer {
 			let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.pincer, secondsBeforeDisplayingReminder: Test.NotificationInterval.pincer)
-			localNotification.scheduleNotification(self)
+			localNotification.scheduleNotification()
 		}
 	}
 
