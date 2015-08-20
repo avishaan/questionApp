@@ -89,8 +89,8 @@ class Test: NSObject, NSCoding {
         static var unassistedSitting:   Double = 30 * Test.SecondsInADay
         static var sittingAndReaching:  Double = 30 * Test.SecondsInADay
         static var plasticJar:          Double = 30 * Test.SecondsInADay
+        static var bookPresentation:    Double = 30 * Test.SecondsInADay
         //static var commandWithGesture:  Double = 30 * Test.SecondsInADay
-        //static var bookPresentation:    Double = 30 * Test.SecondsInADay
         //static var lateralTracking:          Double =  7 * Test.SecondsInADay
         //static var stranger:                 Double = 21 * Test.SecondsInADay
         //static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
@@ -101,26 +101,26 @@ class Test: NSObject, NSCoding {
   
 // DEPRECATED behavior, JB 8/19/2015. TODO: remove
 //    // Local Notification trigger identifies the number of failed tests that trigger the scheduling of a local notification to reminder the user to run the test again.
-    struct LocalNotificationTrigger {
-        static var pupilResponse:       Int = 1
-        static var fallingToy:          Int = 1
-        static var letsCrawl:           Int = 1
-        static var pointFollowing:      Int = 1
-        static var hearing:             Int = 1
-        static var crossingEyes:        Int = 1
-        static var attentionAtDistance: Int = 1
-        static var symmetry:            Int = 1
-        static var pincer:              Int = 1
-        static var completelyCoveredToy: Int = 1
-        static var partiallyCoveredToy: Int = 1
-        static var selfRecognition:     Int = 1
-        static var socialSmiling:       Int = 1
-        static var facialMimic:         Int = 1
-        static var unassistedSitting:   Int = 1
-        static var sittingAndReaching:  Int = 1
-        static var plasticJar:          Int = 1
-        // TODO: add additional var as new tests are added to the app
-    }
+//    struct LocalNotificationTrigger {
+//        static var pupilResponse:       Int = 1
+//        static var fallingToy:          Int = 1
+//        static var letsCrawl:           Int = 1
+//        static var pointFollowing:      Int = 1
+//        static var hearing:             Int = 1
+//        static var crossingEyes:        Int = 1
+//        static var attentionAtDistance: Int = 1
+//        static var symmetry:            Int = 1
+//        static var pincer:              Int = 1
+//        static var completelyCoveredToy: Int = 1
+//        static var partiallyCoveredToy: Int = 1
+//        static var selfRecognition:     Int = 1
+//        static var socialSmiling:       Int = 1
+//        static var facialMimic:         Int = 1
+//        static var unassistedSitting:   Int = 1
+//        static var sittingAndReaching:  Int = 1
+//        static var plasticJar:          Int = 1
+//        // TODO: add additional var as new tests are added to the app
+//    }
     
     /* Designated initializer: initialize the Test instance with default values. */
     override init() {

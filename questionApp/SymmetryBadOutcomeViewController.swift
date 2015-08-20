@@ -24,8 +24,8 @@ class SymmetryBadOutcomeViewController: UIViewController {
         // Initialize text in the view based on the test history.
         initializeViewFromTestHistory()
         
-        // Schedule a local notification, once, to remind the user to rerun this test.
-        scheduleReminderOnce()
+        // Schedule a local notification to remind the user to rerun this test.
+        scheduleReminder()
     }
     
     override func didReceiveMemoryWarning() {
@@ -114,16 +114,16 @@ class SymmetryBadOutcomeViewController: UIViewController {
     
     /*!
     @brief Schedule a local notification to remind the user to run the test again.
-    @discussion The local notification is scheduled once, based on the number of failed tests. The number of previous failed tests that triggers the notification for each specific test is stored in the Test.LocalNotificationTrigger struct.
+    @discussion The local notification is scheduled if it does not currently exist.
     */
-    func scheduleReminderOnce() {
-        var failed = 0
-        if let failedCount = test?.failedTestsCount() {
-            failed = failedCount
-        }
+    func scheduleReminder() {
         
-        if failed >= Test.LocalNotificationTrigger.symmetry {
+        if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.symmetry) == false {
+            
+            // configure the local notification
             let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.symmetry, secondsBeforeDisplayingReminder: Test.NotificationInterval.symmetry)
+            
+            // schedule the local notification
             localNotification.scheduleNotification()
         }
     }

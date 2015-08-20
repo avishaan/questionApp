@@ -38,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //			BNLocalNotification.parseLocalNotification(launchOptions)
 //		}
 		
+		// TODO - add all test reminders to the milestones app reminders screen then
+		// remove all local notifications containing test reminders.
+		BNLocalNotification.clearAllLocalNotifications()
+		
     return true
   }
 
@@ -66,10 +70,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 	
 	func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-		println("invoke BNLocalNotification from didReceiveLocalNotification: notification = \(notification)")
-		BNLocalNotification.handleLocalNotification(notification)
+		if (application.applicationState == .Active) {
+			// The application was active when the notification was fired. Prompt the user if they would like to run the test now.
+			BNLocalNotification.showAlertForLocalNotification(notification)
+		} else {
+			// Handle the local notification.
+			BNLocalNotification.handleLocalNotification(notification)
+		}
 	}
-
+	
   // MARK: - Core Data stack
 
   lazy var applicationDocumentsDirectory: NSURL = {

@@ -67,8 +67,10 @@ class BNLocalNotification {
       localNotification.alertBody = NotificationConstants.body
     }
     
-    // add a badge
-    localNotification.applicationIconBadgeNumber = 1
+    // increment the badge number
+    let currentBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber
+    localNotification.applicationIconBadgeNumber = currentBadgeNumber + 1
+    println("localNotification.applicationIconBadgeNumber = \(localNotification.applicationIconBadgeNumber)") //TODO
     
     // ask user for permission to display notifications
     acquireNotificationPermission()
@@ -297,6 +299,50 @@ class BNLocalNotification {
     
     // No local notification was found containing testName in userInfo.
     return false
+  }
+  
+  /*
+  @brief Helper function to prompt user if they would like to run the test now.
+  @param The notification.
+  */
+  static func showAlertForLocalNotification(notification: UILocalNotification) {
+    
+    let messageString = String(format:"%@ Select Ok to run the test now.", notification.alertBody!)
+    let alert = UIAlertController(title: notification.alertTitle, message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
+    
+    alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
+      BNLocalNotification.handleLocalNotification(notification)
+    }))
+    
+    alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
+      // Cancelled alert. do nothing.
+    }))
+    
+    let controller = getTopmostViewController()
+    controller.presentViewController(alert, animated: true, completion: nil)
+  }
+  
+  /*
+  @brief Walk the view controller stack to find the topmost controller.
+  @return the topmost view controller.
+  */
+  static func getTopmostViewController() -> UIViewController {
+    
+    var topmostViewController: UIViewController! = UIApplication.sharedApplication().keyWindow!.rootViewController
+      
+    while let presentedViewController = topmostViewController.presentedViewController {
+      topmostViewController = presentedViewController
+    }
+    
+    return topmostViewController
+  }
+  
+  /*
+  @brief Remove all local notifications from notification center, and remove the badge from the app.
+  */
+  static func clearAllLocalNotifications() {
+    UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+    UIApplication.sharedApplication().cancelAllLocalNotifications()
   }
   
 }
