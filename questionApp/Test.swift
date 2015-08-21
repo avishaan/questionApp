@@ -122,27 +122,27 @@ class Test: NSObject, NSCoding {
         // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
     ]
     
-    static let initialStoryboardIDs = [
-        TestNamesPresentable.pupilResponse : "WhyIsPupilResponseStoryboardID",
-        TestNamesPresentable.crossingEyes : "WhyIsCrossingEyesStoryboardID",
-        TestNamesPresentable.hearing : "WhyIsHearingStoryboardID",
-        TestNamesPresentable.letsCrawl : "WhyIsCrawlingViewControllerStoryboardID",
-        TestNamesPresentable.symmetry : "WhyIsSymmetryStoryboardID",
-        TestNamesPresentable.pincer : "WhyIsPincerStoryboardID",
-        TestNamesPresentable.unassistedSitting : "WhyIsUnassistedSittingStoryboardID",
-        TestNamesPresentable.sittingAndReaching : "WhyIsSittingAndReachingStoryboardID",
-        TestNamesPresentable.fallingToy : "WhyIsObjectPermanenceViewController",
-        TestNamesPresentable.attentionAtDistance : "WhyIsAttentionAtDistanceStoryboardID",
-        TestNamesPresentable.partiallyCoveredToy : "WhyIsPartiallyCoveredToyStoryboardID",
-        TestNamesPresentable.completelyCoveredToy : "WhyIsCompletelyCoveredToyStoryboardID",
-        TestNamesPresentable.plasticJar : "WhyIsPlasticJarStoryboardID", // ask and respond
-        TestNamesPresentable.pointFollowing : "WhyIsPointFollowingStoryboardID",
-        TestNamesPresentable.selfRecognition : "WhyIsSelfRecognitionStoryboardID",
-        TestNamesPresentable.socialSmiling : "WhyIsSocialSmilingStoryboardID",
-        TestNamesPresentable.facialMimic : "WhyIsFacialMimicStoryboardID",
-        TestNamesPresentable.bookPresentation : "WhyIsBookPresentationStoryboardID"
-        // TODO: if new tests are added to the app, add them here
-    ]
+//    static let initialStoryboardIDs = [
+//        TestNamesPresentable.pupilResponse : "WhyIsPupilResponseStoryboardID",
+//        TestNamesPresentable.crossingEyes : "WhyIsCrossingEyesStoryboardID",
+//        TestNamesPresentable.hearing : "WhyIsHearingStoryboardID",
+//        TestNamesPresentable.letsCrawl : "WhyIsCrawlingViewControllerStoryboardID",
+//        TestNamesPresentable.symmetry : "WhyIsSymmetryStoryboardID",
+//        TestNamesPresentable.pincer : "WhyIsPincerStoryboardID",
+//        TestNamesPresentable.unassistedSitting : "WhyIsUnassistedSittingStoryboardID",
+//        TestNamesPresentable.sittingAndReaching : "WhyIsSittingAndReachingStoryboardID",
+//        TestNamesPresentable.fallingToy : "WhyIsObjectPermanenceViewController",
+//        TestNamesPresentable.attentionAtDistance : "WhyIsAttentionAtDistanceStoryboardID",
+//        TestNamesPresentable.partiallyCoveredToy : "WhyIsPartiallyCoveredToyStoryboardID",
+//        TestNamesPresentable.completelyCoveredToy : "WhyIsCompletelyCoveredToyStoryboardID",
+//        TestNamesPresentable.plasticJar : "WhyIsPlasticJarStoryboardID", // ask and respond
+//        TestNamesPresentable.pointFollowing : "WhyIsPointFollowingStoryboardID",
+//        TestNamesPresentable.selfRecognition : "WhyIsSelfRecognitionStoryboardID",
+//        TestNamesPresentable.socialSmiling : "WhyIsSocialSmilingStoryboardID",
+//        TestNamesPresentable.facialMimic : "WhyIsFacialMimicStoryboardID",
+//        TestNamesPresentable.bookPresentation : "WhyIsBookPresentationStoryboardID"
+//        // TODO: if new tests are added to the app, add them here
+//    ]
     
     /* Designated initializer: initialize the Test instance with default values. */
     override init() {
@@ -355,11 +355,11 @@ class Test: NSObject, NSCoding {
     @param (in) testName - The name of the test. Must be a Test.TestNamesPresentable value. (cannot be nil)
     @return A String representing the storyboard ID. If testName is not a valid test name the function returns nil.
     */
-    static func getInitialStoryboardID(testName: String) -> String? {
-        if let storyboardID = Test.initialStoryboardIDs[testName] {
-            return storyboardID
-        } else {
-            return nil
-        }
-    }
+//    static func getInitialStoryboardID(testName: String) -> String? {
+//        if let storyboardID = Test.initialStoryboardIDs[testName] {
+//            return storyboardID
+//        } else {
+//            return nil
+//        }
+//    }
 }

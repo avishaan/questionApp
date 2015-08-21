@@ -648,6 +648,7 @@
                         <outlet property="languageAndCognitiveLabel" destination="aGy-VG-0et" id="MhZ-Zo-BYg"/>
                         <outlet property="languageAndCognitivePieChartView" destination="Pvv-kj-n40" id="WqA-Bf-gae"/>
                         <outlet property="languageCognitiveBackground" destination="jtN-mQ-a74" id="23C-Dh-d40"/>
+                        <outlet property="nextTestImageView" destination="OGf-nh-dEj" id="AVq-RZ-ZvJ"/>
                         <outlet property="nextTestLabel" destination="Pao-WT-k6v" id="FX9-Ov-Mnu"/>
                         <outlet property="sensoryAndMotorLabel" destination="ziX-B6-Wtk" id="B7l-dd-C4z"/>
                         <outlet property="sensoryAndMotorPieChartView" destination="AKw-Dx-EB4" id="UpT-5u-s2n"/>

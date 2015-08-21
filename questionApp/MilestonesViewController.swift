@@ -27,8 +27,10 @@ class MilestonesViewController: UIViewController {
   @IBOutlet weak var languageCognitiveBackground: UIButton!
 	
 	@IBOutlet weak var nextTestLabel: UILabel!
-	var nextTestStoryboardID: String? = Test.getInitialStoryboardID(Test.TestNamesPresentable.pupilResponse)
-    
+	//var nextTestStoryboardID: String? = Test.getInitialStoryboardID(Test.TestNamesPresentable.pupilResponse)
+	let tapRecognizer = UITapGestureRecognizer()
+	@IBOutlet weak var nextTestImageView: UIImageView!
+	
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -73,6 +75,11 @@ class MilestonesViewController: UIViewController {
     socialEmotionalBackground.layer.cornerRadius = 10
     languageCognitiveBackground.clipsToBounds = true
     languageCognitiveBackground.layer.cornerRadius = 10
+    
+    // setup tap recognizer for the NextTest UIImageView control
+		tapRecognizer.addTarget(self, action: "handleSingleTapOnNextTest")
+		nextTestImageView.addGestureRecognizer(tapRecognizer)
+		nextTestImageView.userInteractionEnabled = true
   }
 	
 	override func viewWillAppear(animated: Bool) {
@@ -121,7 +128,7 @@ class MilestonesViewController: UIViewController {
 
 	/* 
 	@brief Get the Next test to run for the current profile.
-	@dicsussion Configures the nextTestLabel and nextTestStoryboardID properties.
+	@dicsussion Configures the nextTestLabel property.
 	*/
 	func configureNextTest() {
 		
@@ -135,12 +142,18 @@ class MilestonesViewController: UIViewController {
 		if let histories = histories {
 			if let test = histories.getNextTest() {
 				nextTestLabel.text = test.history.testName
-				nextTestStoryboardID = Test.getInitialStoryboardID(test.history.testName)
+				//nextTestStoryboardID = Test.getInitialStoryboardID(test.history.testName)
 			} else {
 				nextTestLabel.text = "All tests passed!"
-				nextTestStoryboardID = nil
+				//nextTestStoryboardID = nil
 			}
 		}
 	}
 	
+	/* Handle taps on the NextTest control. */
+	func handleSingleTapOnNextTest() {
+		if let nextTestName = nextTestLabel.text {
+			BNLocalNotification.presentTestViewController(nextTestName)
+		}
+	}
 }
