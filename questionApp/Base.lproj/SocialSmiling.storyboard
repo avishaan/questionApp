@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -668,9 +668,6 @@ aXNlIHJlYWN0Lg
                                     <action selector="onHomeButtonTap:" destination="Ffs-lR-bUX" eventType="touchUpInside" id="exF-17-dMu"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SocialSmilingBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="xDj-bm-9Sx">
-                                <rect key="frame" x="0.0" y="133" width="320" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-LE-NYr">
                                 <rect key="frame" x="32" y="255" width="257" height="165"/>
                                 <string key="text">Not to worry. Baby is a bit 
@@ -699,13 +696,39 @@ Try again in 2 weeks.</string>
                                     <segue destination="mOS-fZ-XdF" kind="presentation" id="lb8-xY-4C4"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kkb-qU-gsK" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="162" width="271" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Es-dV-kXK">
+                                <rect key="frame" x="32" y="138" width="253" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pupil Response Age Range: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="2-4 months">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="chartRange" destination="kkb-qU-gsK" id="cSw-hV-F3d"/>
                         <outlet property="infoLabel" destination="f6l-LE-NYr" id="ZFx-9O-r4g"/>
                         <outlet property="questionLabel" destination="AlZ-2a-xSe" id="knx-Ol-ewj"/>
+                        <outlet property="rangeChartLabel" destination="4Es-dV-kXK" id="pJ4-WN-FE4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjV-t1-drw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -880,7 +903,6 @@ b3IgYSBsYWcgaW4gc29jaWFsIGRldmVsb3BtZW50LiA
     </scenes>
     <resources>
         <image name="PointFollowingTestVideoPreview" width="319" height="203"/>
-        <image name="SocialSmilingBadOutcome" width="273" height="108"/>
         <image name="SocialSmilingWhatNeed" width="273" height="108"/>
         <image name="WhyIsSocialSmiling" width="273" height="108"/>
         <image name="background" width="640" height="1136"/>

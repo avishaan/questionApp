@@ -15,7 +15,11 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
   
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
-    
+  @IBOutlet weak var chartRange: BNTestRangeChartView!
+  @IBOutlet weak var rangeChartLabel: UILabel!
+  
+  var parent = Parent()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
       // analytics
@@ -26,6 +30,19 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
         
         // Schedule a local notification to remind the user to rerun this test.
         scheduleReminder()
+      
+      // configure chart
+    // Do any additional setup after loading the view.
+      chartRange.config(startMonth: 0, endMonth: 12, successAgeInMonths: 4, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+      
+      // font can't be set directly in storyboard for attributed string, set the label font here
+      // make label's set attr string to a mutable so we can add attributes on
+      var attrString:NSMutableAttributedString = NSMutableAttributedString(attributedString: rangeChartLabel.attributedText)
+      
+      // add font attribute
+      attrString.addAttribute(NSFontAttributeName, value: UIFont(name: kOmnesFontMedium, size: 15)!, range: NSMakeRange(0, attrString.length))
+      rangeChartLabel.attributedText = attrString
+      
     }
     
     override func didReceiveMemoryWarning() {
