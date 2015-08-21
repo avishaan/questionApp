@@ -27,14 +27,14 @@ class TestHistory: NSObject, NSCoding {
     }
     
     // MARK: Properties
-    var mostRecentTestDate = NSDate()
-    var mostRecentTestResult = false
-    var countOfFailedTests: Int = 0
-    var countOfSuccessfulTests = 0
-    var countOfCompletedTests = 0
-    var succeededTestDate: NSDate? = nil
-    var reminderDate: NSDate? = nil
-    var testName: String = ""
+    var mostRecentTestDate = NSDate()       // The most recent date the test was run.
+    var mostRecentTestResult = false        // true if the most recent test was passed, else false if it was failed.
+    var countOfFailedTests: Int = 0         // The number of times the test outcome was a failure.
+    var countOfSuccessfulTests = 0          // The number of times the test was completed successfully.
+    var countOfCompletedTests = 0           // The number of times the test was completed.
+    var succeededTestDate: NSDate? = nil    // The most recent date the test was passed.
+    var reminderDate: NSDate? = nil         // The date the local notification was scheduled.
+    var testName: String = ""               // The name of the test. A Test.TestNamesPresentable value.
     
     // Initializes object with default values
     override init() {

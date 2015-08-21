@@ -122,6 +122,28 @@ class Test: NSObject, NSCoding {
         // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
     ]
     
+    static let initialStoryboardIDs = [
+        TestNamesPresentable.pupilResponse : "WhyIsPupilResponseStoryboardID",
+        TestNamesPresentable.crossingEyes : "WhyIsCrossingEyesStoryboardID",
+        TestNamesPresentable.hearing : "WhyIsHearingStoryboardID",
+        TestNamesPresentable.letsCrawl : "WhyIsCrawlingViewControllerStoryboardID",
+        TestNamesPresentable.symmetry : "WhyIsSymmetryStoryboardID",
+        TestNamesPresentable.pincer : "WhyIsPincerStoryboardID",
+        TestNamesPresentable.unassistedSitting : "WhyIsUnassistedSittingStoryboardID",
+        TestNamesPresentable.sittingAndReaching : "WhyIsSittingAndReachingStoryboardID",
+        TestNamesPresentable.fallingToy : "WhyIsObjectPermanenceViewController",
+        TestNamesPresentable.attentionAtDistance : "WhyIsAttentionAtDistanceStoryboardID",
+        TestNamesPresentable.partiallyCoveredToy : "WhyIsPartiallyCoveredToyStoryboardID",
+        TestNamesPresentable.completelyCoveredToy : "WhyIsCompletelyCoveredToyStoryboardID",
+        TestNamesPresentable.plasticJar : "WhyIsPlasticJarStoryboardID", // ask and respond
+        TestNamesPresentable.pointFollowing : "WhyIsPointFollowingStoryboardID",
+        TestNamesPresentable.selfRecognition : "WhyIsSelfRecognitionStoryboardID",
+        TestNamesPresentable.socialSmiling : "WhyIsSocialSmilingStoryboardID",
+        TestNamesPresentable.facialMimic : "WhyIsFacialMimicStoryboardID",
+        TestNamesPresentable.bookPresentation : "WhyIsBookPresentationStoryboardID"
+        // TODO: if new tests are added to the app, add them here
+    ]
+    
     /* Designated initializer: initialize the Test instance with default values. */
     override init() {
         super.init()
@@ -168,7 +190,7 @@ class Test: NSObject, NSCoding {
     
     /*!
     @brief Update the most recent test result in the test history.
-    @dicsussion This function automatically updates the test date to the current date & time, and updates the test counters.
+    @discussion This function automatically updates the test date to the current date & time, and updates the test counters.
     @param testResult (in) is the result of the test that the caller wishes to apply to the test hsitory.
     @return true if the test result was successfully updated, else false if an error occurred.
     */
@@ -269,7 +291,7 @@ class Test: NSObject, NSCoding {
     
     /*!
     @brief Set instance properties to values read from the persistent store.
-    @dicsussion Will set an instance property to it's default value if the corresponding NSUnarchiver key does not exist.
+    @discussion Will set an instance property to it's default value if the corresponding NSUnarchiver key does not exist.
     @param coder (in) The NSUnarchiver object identifying the persistent store from which to read the property values.
     */
     func decodeWithCoder(coder decoder: NSCoder) {
@@ -306,7 +328,7 @@ class Test: NSObject, NSCoding {
     
     /*!
     @brief Initialize the Test instance from the test history data in the persistent store at filePath.
-    @dicsussion Returns a valid object initialized to default values if no previous persisted instance exists.
+    @discussion Returns a valid object initialized to default values if no previous persisted instance exists.
     @return true if successfully initialized from a previously persisted instance, else false if no previous instance existed.
     */
     func initFromPersistentStore() -> Bool {
@@ -326,5 +348,18 @@ class Test: NSObject, NSCoding {
     */
     func save() -> Bool {
         return NSKeyedArchiver.archiveRootObject(self.history, toFile: self.filePath)
+    }
+    
+    /*!
+    @brief Return the storyboard ID of the initial view controller in the test sequence identified by testName.
+    @param (in) testName - The name of the test. Must be a Test.TestNamesPresentable value. (cannot be nil)
+    @return A String representing the storyboard ID. If testName is not a valid test name the function returns nil.
+    */
+    static func getInitialStoryboardID(testName: String) -> String? {
+        if let storyboardID = Test.initialStoryboardIDs[testName] {
+            return storyboardID
+        } else {
+            return nil
+        }
     }
 }

@@ -25,7 +25,10 @@ class MilestonesViewController: UIViewController {
   @IBOutlet weak var sensoryMotorBackground: UIButton!
   @IBOutlet weak var socialEmotionalBackground: UIButton!
   @IBOutlet weak var languageCognitiveBackground: UIButton!
-  
+	
+	@IBOutlet weak var nextTestLabel: UILabel!
+	var nextTestStoryboardID: String? = Test.getInitialStoryboardID(Test.TestNamesPresentable.pupilResponse)
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -52,7 +55,6 @@ class MilestonesViewController: UIViewController {
       let ageAsString = weeksFormattedString! + " weeks"
       
       ageLabel.text = ageAsString
-    
     }
     
     // update baby name
@@ -71,9 +73,15 @@ class MilestonesViewController: UIViewController {
     socialEmotionalBackground.layer.cornerRadius = 10
     languageCognitiveBackground.clipsToBounds = true
     languageCognitiveBackground.layer.cornerRadius = 10
-    
   }
-  
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		// Configure the Next Test elements
+		configureNextTest()
+	}
+	
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
@@ -111,17 +119,26 @@ class MilestonesViewController: UIViewController {
 		socialAndEmotionalLabel.attributedText = attributedString3
 	}
 
-	/* Get the Next test to run */
-	func nextTest() {
+	/* 
+	@brief Get the Next test to run for the current profile.
+	@dicsussion Configures the nextTestLabel and nextTestStoryboardID properties.
+	*/
+	func configureNextTest() {
+		
+		// get histories for the current profile
 		var parent = Parent()
 		var profiles = TestProfiles()
 		profiles.initProfilesFromPersistentStore()
 		var histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
+		
+		// configure the next test properties
 		if let histories = histories {
 			if let test = histories.getNextTest() {
-				println("next test: \(test.history.testName)")
+				nextTestLabel.text = test.history.testName
+				nextTestStoryboardID = Test.getInitialStoryboardID(test.history.testName)
 			} else {
-				println("next test: nil - all tests have been run and passed.")
+				nextTestLabel.text = "All tests passed!"
+				nextTestStoryboardID = nil
 			}
 		}
 	}

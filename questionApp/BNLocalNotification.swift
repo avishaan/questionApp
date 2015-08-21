@@ -20,6 +20,10 @@ let testReminderScheduledNotificationKey =  "com.qidza.testReminderScheduledNoti
 /* A custom NSNotification that indicates that a test reminder has been removed. */
 let testReminderRemovedNotificationKey =  "com.qidza.testReminderRemovedNotificationKey"
 
+/* Name of key used in the userInfo dictionary in the testReminder notifications.*/
+let testNameUserInfoKey = "testName"
+
+
 class BNLocalNotification {
 
   struct NotificationConstants {
@@ -76,7 +80,6 @@ class BNLocalNotification {
     // increment the badge number
     let currentBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber
     localNotification.applicationIconBadgeNumber = currentBadgeNumber + 1
-    println("localNotification.applicationIconBadgeNumber = \(localNotification.applicationIconBadgeNumber)") //TODO
     
     // ask user for permission to display notifications
     acquireNotificationPermission()
@@ -369,7 +372,7 @@ class BNLocalNotification {
   */
   func postTestReminderScheduledNotification(testName: String) {
     var dataDict = [String : String] ()
-    dataDict["testName"] = testName
+    dataDict[testNameUserInfoKey] = testName
     NSNotificationCenter.defaultCenter().postNotificationName(testReminderScheduledNotificationKey, object: self, userInfo: dataDict)
   }
   
@@ -380,7 +383,7 @@ class BNLocalNotification {
   */
   static func postTestReminderRemovedNotification(testName: String) {
     var dataDict = [String : String] ()
-    dataDict["testName"] = testName
+    dataDict[testNameUserInfoKey] = testName
     NSNotificationCenter.defaultCenter().postNotificationName(testReminderRemovedNotificationKey, object: self, userInfo: dataDict)
   }
 }

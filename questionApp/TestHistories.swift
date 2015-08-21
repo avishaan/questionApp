@@ -101,7 +101,7 @@ class TestHistories : NSObject, NSCoding {
     
     /*!
         @brief Initialize the TestHistories instance from the persistent store at filePath.
-        @dicsussion Returns a valid object initialized to default values if no previous persisted instance exists.
+        @discussion Returns a valid object initialized to default values if no previous persisted instance exists.
         @return true if successfully initialized from a previously persisted instance, else false if no previous instance existed.
     */
     func initHistoriesFromPersistentStore() -> Bool {
@@ -129,7 +129,7 @@ class TestHistories : NSObject, NSCoding {
     
     /*!
     @brief Get the next test that the user should run.
-    @dicsussion The next test is a test that has not been successfully completed, (countOfSuccessfulTests = 0). More specifically it has not been run (countOfCompletedTests = 0). Or, if all tests have been run it has only failed (countOfCompletedTests > 0 AND countOfFailedTests > 0 AND countOfSuccessfulTests = 0).     
+    @discussion The next test is a test that has not been successfully completed, (countOfSuccessfulTests = 0). More specifically it has not been run (countOfCompletedTests = 0). Or, if all tests have been run it has only failed (countOfCompletedTests > 0 AND countOfFailedTests > 0 AND countOfSuccessfulTests = 0).
     @return A Test object. If all tests have been completed successfully then return nil.
     */
     func getNextTest() -> Test? {
@@ -182,21 +182,6 @@ class TestHistories : NSObject, NSCoding {
         return nextTest
     }
     
-    /* TODO: remove this test function. */
-    static func testTheGetNextTestFunction() {
-        var parent = Parent()
-        var profiles = TestProfiles()
-        profiles.initProfilesFromPersistentStore()
-        var histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
-        if let histories = histories {
-            if let test = histories.getNextTest() {
-                println("next test: \(test.history.testName)")
-            } else {
-                println("next test: nil - all tests have been run and passed.")
-            }
-        }
-    }
-    
     /* 
     @brief Get an ordered collection of TestHistory objects in the order that tests appear in the UI. 
     @return An array of TestHistory objects in the order that the tests appear in the UI.
@@ -212,7 +197,7 @@ class TestHistories : NSObject, NSCoding {
     
     /*!
         @brief Update the most recent test result of a particular test in the test history.
-        @dicsussion This function automatically updates the test date to the current date & time, and updates the test counters.
+        @discussion This function automatically updates the test date to the current date & time, and updates the test counters.
         @param testName (in) is the name of the test. Must be one of Test.TestNames.
         @param testResult (in) is the result of the test that the caller wishes to apply to the test hsitory.
         @return true if the test result was successfully updated, else false if an error occurred.
@@ -365,7 +350,7 @@ class TestHistories : NSObject, NSCoding {
     
     /*!
         @brief Set instance properties to values read from persistent store.
-        @dicsussion Will set an instance property to it's default value if the corresponding NSUnarchiver key does not exist.
+        @discussion Will set an instance property to it's default value if the corresponding NSUnarchiver key does not exist.
         @param dictionary (in) The NSUnarchiver object identifying the persistent store from which to read the property values.
     */
     func decodeWithCoder(coder decoder: NSCoder) {
@@ -384,20 +369,22 @@ class TestHistories : NSObject, NSCoding {
     
     // TODO: This is a test function added 8/18/2015 to exercise the NeverPassed function and demonstrate its usage. Remove it.
     // For the current profile it dumps a list of tests that have never been passed to the console.
-    static func testTheNeverPassedFunction() {
-        var parent = Parent()
-        var profiles = TestProfiles()
-        profiles.initProfilesFromPersistentStore()
-        
-        if let testHistories = profiles.getTestHistories(profileName: parent.getCurrentProfileName()) {
-            var neverPassedList = testHistories.neverPassed()
-            for name in neverPassedList {
-                println("\(name)")
-            }
-        }
-    }
+//    static func testTheNeverPassedFunction() {
+//        var parent = Parent()
+//        var profiles = TestProfiles()
+//        profiles.initProfilesFromPersistentStore()
+//        
+//        if let testHistories = profiles.getTestHistories(profileName: parent.getCurrentProfileName()) {
+//            var neverPassedList = testHistories.neverPassed()
+//            for name in neverPassedList {
+//                println("\(name)")
+//            }
+//        }
+//    }
 
     // MARK: Reminders
+    
+    // TODO: The functions in this section are to support tracking of reminders. When reminders are scheduled the testReminderScheduledNotificationKey is fired. When reminders are removed the testReminderRemovedNotificationKey notification is fired. An object in the app can listen for these events and update the list of reminders displayed in the MilestonesViewController. The object needs to be instantiated early in the lifecycle of the app so that it is around when the above reminder notifcations are fired.
     
     func addObservers() {
         // Add a notification observer for scheduled reminders.
@@ -414,19 +401,18 @@ class TestHistories : NSObject, NSCoding {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: testReminderRemovedNotificationKey, object: nil)
     }
 
-    // TODO - start with these functions. where to put them? Look at notes and decide if need TestHistoriesMonitor
-    // TODO: define constant for the "testName" key and replace in 3 files.
-    // TODO: test these functions...
+    // Listen for the testReminderScheduledNotificationKey notification, extract the test name from the notification's userInfo, and set the testHistory reminderDate property to the current date.
     func onTestReminderScheduled(notification: NSNotification) {
-        if let testName = notification.userInfo!["testName"] as? String {
+        if let testName = notification.userInfo![testNameUserInfoKey] as? String {
             if let testHistory = self.histories[testName]{
                 testHistory.reminderDate = NSDate()
             }
         }
     }
     
+    // Listen for the testReminderRemovedNotificationKey notification, extract the test name from the notification's userInfo, and set the testHistory reminderDate property to nil.
     func onTestReminderRemoved(notification: NSNotification) {
-        if let testName = notification.userInfo!["testName"] as? String {
+        if let testName = notification.userInfo![testNameUserInfoKey] as? String {
             if let testHistory = self.histories[testName]{
                 testHistory.reminderDate = nil
             }
