@@ -218,6 +218,7 @@
 		9E66A8371B7BA8F100855180 /* FallingToyMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8361B7BA8F100855180 /* FallingToyMoreInformationViewController.swift */; };
 		9E66A8461B7EAAAA00855180 /* BNFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8451B7EAAAA00855180 /* BNFacebook.swift */; };
 		9E66A8481B7EEBE500855180 /* BNFacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8471B7EEBE500855180 /* BNFacebookButton.swift */; };
+		9E696D711B879DB200B6F032 /* TestMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E696D701B879DB200B6F032 /* TestMonitor.swift */; };
 		9E923CAF1B68257D00F2B0A7 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CAE1B68257D00F2B0A7 /* Test.swift */; };
 		9E923CB11B683E8600F2B0A7 /* TestProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */; };
 		9E923CB81B69513E00F2B0A7 /* FacialMimic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E923CB71B69513E00F2B0A7 /* FacialMimic.storyboard */; };
@@ -649,6 +650,7 @@
 		9E66A8361B7BA8F100855180 /* FallingToyMoreInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingToyMoreInformationViewController.swift; sourceTree = "<group>"; };
 		9E66A8451B7EAAAA00855180 /* BNFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNFacebook.swift; sourceTree = "<group>"; };
 		9E66A8471B7EEBE500855180 /* BNFacebookButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNFacebookButton.swift; sourceTree = "<group>"; };
+		9E696D701B879DB200B6F032 /* TestMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMonitor.swift; sourceTree = "<group>"; };
 		9E923CAE1B68257D00F2B0A7 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Test.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProfiles.swift; sourceTree = "<group>"; };
 		9E923CB71B69513E00F2B0A7 /* FacialMimic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FacialMimic.storyboard; sourceTree = "<group>"; };
@@ -1176,6 +1178,7 @@
 				9E923CB01B683E8600F2B0A7 /* TestProfiles.swift */,
 				9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */,
 				8270B3041B82A71900DFFB52 /* Tracker.swift */,
+				9E696D701B879DB200B6F032 /* TestMonitor.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1862,6 +1865,7 @@
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
 				209965A71B6859D300B93C5D /* SocialSmilingWhatWillYouNeedViewControllerswift.swift in Sources */,
 				9EE7EB351B56A80900C73CA3 /* HearingGoodOutcomeViewController.swift in Sources */,
+				9E696D711B879DB200B6F032 /* TestMonitor.swift in Sources */,
 				9EABF2941B4D8CD4002FDA2C /* FallingToyTestOverviewViewController.swift in Sources */,
 				20DA0E781B72E7AD00B17C28 /* UnassistedSittingGoodOutcomeViewController.swift in Sources */,
 				82D641E81B4908590013D5FB /* BNBackButton.swift in Sources */,
