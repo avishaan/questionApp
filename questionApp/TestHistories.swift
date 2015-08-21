@@ -386,36 +386,42 @@ class TestHistories : NSObject, NSCoding {
     
     // TODO: The functions in this section are to support tracking of reminders. When reminders are scheduled the testReminderScheduledNotificationKey is fired. When reminders are removed the testReminderRemovedNotificationKey notification is fired. An object in the app can listen for these events and update the list of reminders displayed in the MilestonesViewController. The object needs to be instantiated early in the lifecycle of the app so that it is around when the above reminder notifcations are fired.
     
-    func addObservers() {
-        // Add a notification observer for scheduled reminders.
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onTestReminderScheduled:", name: testReminderScheduledNotificationKey, object: nil)
-        
-        //Add a notification observer for removed reminders.
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onTestReminderRemoved:", name: testReminderRemovedNotificationKey, object: nil)
-    }
-    
-    func removeObservers() {
-        // Remove observer for the scheduled reminder notification.
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: testReminderScheduledNotificationKey, object: nil)
-        // Remove observer for the removed reminder notification.
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: testReminderRemovedNotificationKey, object: nil)
-    }
-
-    // Listen for the testReminderScheduledNotificationKey notification, extract the test name from the notification's userInfo, and set the testHistory reminderDate property to the current date.
-    func onTestReminderScheduled(notification: NSNotification) {
-        if let testName = notification.userInfo![testNameUserInfoKey] as? String {
-            if let testHistory = self.histories[testName]{
-                testHistory.reminderDate = NSDate()
+    /* 
+    @brief Get a list of Test objects for which reminders are currently scheduled.
+    @discussion Reminders are local notifications.
+    @return An array of Test objects. The returned array may be empty if no reminders are currently scheduled.
+    */
+    func getTestsWithReminders() -> [Test] {
+        var testsWithReminders = [Test]()
+        for (testName, history) in histories {
+            if history.reminderDate != nil {
+                let test = Test(testHistory: history)
+                testsWithReminders.append(test)
             }
         }
+        return testsWithReminders
     }
     
-    // Listen for the testReminderRemovedNotificationKey notification, extract the test name from the notification's userInfo, and set the testHistory reminderDate property to nil.
-    func onTestReminderRemoved(notification: NSNotification) {
-        if let testName = notification.userInfo![testNameUserInfoKey] as? String {
-            if let testHistory = self.histories[testName]{
-                testHistory.reminderDate = nil
+    func countTestsWithReminders() -> Int {
+        var count = 0
+        for (testName, history) in histories {
+            if history.reminderDate != nil {
+                count += 1
             }
+        }
+        return count
+    }
+    
+    func testgetTestsWithReminders() {
+        // get histories for the current profile
+        var parent = Parent()
+        var profiles = TestProfiles()
+        profiles.initProfilesFromPersistentStore()
+        var histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
+        let reminderedTests = getTestsWithReminders()
+        println("tests with reminders:")
+        for test in reminderedTests {
+            println("\(test.history.testName)")
         }
     }
 }

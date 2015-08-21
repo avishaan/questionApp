@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vqP-SJ-U0l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vqP-SJ-U0l">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -647,6 +647,8 @@
                         <outlet property="languageCognitiveBackground" destination="jtN-mQ-a74" id="23C-Dh-d40"/>
                         <outlet property="nextTestImageView" destination="OGf-nh-dEj" id="AVq-RZ-ZvJ"/>
                         <outlet property="nextTestLabel" destination="Pao-WT-k6v" id="FX9-Ov-Mnu"/>
+                        <outlet property="remindersCountLabel" destination="SzP-jX-VUQ" id="NH7-VJ-92v"/>
+                        <outlet property="retestsImageView" destination="MyB-mh-ivs" id="5G7-pj-dbt"/>
                         <outlet property="sensoryAndMotorLabel" destination="ziX-B6-Wtk" id="B7l-dd-C4z"/>
                         <outlet property="sensoryAndMotorPieChartView" destination="AKw-Dx-EB4" id="UpT-5u-s2n"/>
                         <outlet property="sensoryMotorBackground" destination="rZQ-eR-dxA" id="J8L-QE-n27"/>
@@ -3973,7 +3975,6 @@ Try again in 6-8 weeks.</string>
         <!--Social Emotional Milestone Tests View Controller-->
         <scene sceneID="LuH-1d-C1B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fjr-jU-SjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="A7O-R8-k8U" customClass="SocialEmotionalMilestoneTestsViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3s5-M9-1Y4"/>
@@ -4079,6 +4080,7 @@ Try again in 6-8 weeks.</string>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjr-jU-SjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4023" y="4630"/>
         </scene>

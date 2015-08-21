@@ -25,11 +25,15 @@ class MilestonesViewController: UIViewController {
   @IBOutlet weak var sensoryMotorBackground: UIButton!
   @IBOutlet weak var socialEmotionalBackground: UIButton!
   @IBOutlet weak var languageCognitiveBackground: UIButton!
-	
+
 	@IBOutlet weak var nextTestLabel: UILabel!
 	let tapRecognizer = UITapGestureRecognizer()
 	@IBOutlet weak var nextTestImageView: UIImageView!
-	
+	var reminderCount = 0
+	@IBOutlet weak var retestsImageView: UIImageView!
+	@IBOutlet weak var remindersCountLabel: UILabel!
+	let tapRecognizerRetests = UITapGestureRecognizer()
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -79,6 +83,11 @@ class MilestonesViewController: UIViewController {
 		tapRecognizer.addTarget(self, action: "handleSingleTapOnNextTest")
 		nextTestImageView.addGestureRecognizer(tapRecognizer)
 		nextTestImageView.userInteractionEnabled = true
+		
+		// setup tap recognizer for the Retests UIImageView control
+		tapRecognizerRetests.addTarget(self, action: "handleSingleTapOnRetests")
+		retestsImageView.addGestureRecognizer(tapRecognizerRetests)
+		retestsImageView.userInteractionEnabled = true
   }
 	
 	override func viewWillAppear(animated: Bool) {
@@ -86,6 +95,9 @@ class MilestonesViewController: UIViewController {
 		
 		// Configure the Next Test elements
 		configureNextTest()
+		
+		// Configure the Re-tests elements
+		configureReminders()
 	}
 	
   override func didReceiveMemoryWarning() {
@@ -151,6 +163,44 @@ class MilestonesViewController: UIViewController {
 	func handleSingleTapOnNextTest() {
 		if let nextTestName = nextTestLabel.text {
 			BNLocalNotification.presentTestViewController(nextTestName)
+		}
+	}
+	
+	/*
+	@brief Determines how many tests have reminders scheduled.
+	@dicsussion Configures the remindersCountLabel property.
+	*/
+	func configureReminders() {
+		
+		// get histories for the current profile
+		var parent = Parent()
+		var profiles = TestProfiles()
+		profiles.initProfilesFromPersistentStore()
+		var histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
+
+		// count the number of tests that have reminders
+		if let histories = histories {
+			reminderCount = histories.countTestsWithReminders()
+			remindersCountLabel.text = String(format:"%d reminders", reminderCount)
+			
+			histories.testgetTestsWithReminders()
+		}
+	}
+	
+	/* Handle taps on the Retests control. */
+	func handleSingleTapOnRetests() {
+
+		// get histories for the current profile
+		var parent = Parent()
+		var profiles = TestProfiles()
+		profiles.initProfilesFromPersistentStore()
+		var histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
+
+		// get a list of tests with reminders currently scheduled.
+		if let histories = histories {
+			let tests = histories.getTestsWithReminders()
+			
+			// TODO: display a view containing tests.
 		}
 	}
 }

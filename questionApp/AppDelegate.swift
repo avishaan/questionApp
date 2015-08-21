@@ -22,6 +22,9 @@ let kOrange = UIColor(red: 243/255, green: 108/255, blue: 43/255, alpha: 1.0)
 let kBlue = UIColor(red: 2/255, green: 126/255, blue: 188/255, alpha: 1.0)
 let kGrey = UIColor(red: 99/255, green: 89/255, blue: 91/255, alpha: 1.0)
 
+// Test Monitor
+var testMonitor: TestMonitor?
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -41,6 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// TODO - add all test reminders to the milestones app reminders screen then
 		// remove all local notifications containing test reminders.
 		BNLocalNotification.clearAllLocalNotifications()
+		
+		// Setup the test monitor.
+		testMonitor = TestMonitor()
 		
     return true
   }
