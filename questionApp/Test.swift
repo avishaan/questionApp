@@ -24,7 +24,7 @@ class Test: NSObject, NSCoding {
     struct TestNames {
         static var pupilResponse: String = "pupil response"
         static var fallingToy: String = "falling toy"
-        static var letsCrawl: String = "lets crawl"
+        static var letsCrawl: String = "let's crawl"
         static var pointFollowing: String = "point following"
         static var hearing: String = "hearing"
         static var crossingEyes: String = "crossing eyes"
@@ -61,8 +61,9 @@ class Test: NSObject, NSCoding {
         static var facialMimic = "facial mimic"
         static var unassistedSitting = "unassisted sitting"
         static var sittingAndReaching = "sitting and reaching"
-        static var plasticJar = "ask and respond"
+        static var plasticJar = "ask and respond"                  // ask and respond
         static var bookPresentation: String = "book presentation"
+
         // TODO: if new tests are added to the app, add them here.
     }
     
@@ -88,7 +89,7 @@ class Test: NSObject, NSCoding {
         static var facialMimic:         Double = 30 * Test.SecondsInADay
         static var unassistedSitting:   Double = 30 * Test.SecondsInADay
         static var sittingAndReaching:  Double = 30 * Test.SecondsInADay
-        static var plasticJar:          Double = 30 * Test.SecondsInADay
+        static var plasticJar:          Double = 30 * Test.SecondsInADay  // ask and respond
         static var bookPresentation:    Double = 30 * Test.SecondsInADay
         //static var commandWithGesture:  Double = 30 * Test.SecondsInADay
         //static var lateralTracking:          Double =  7 * Test.SecondsInADay
@@ -98,29 +99,28 @@ class Test: NSObject, NSCoding {
         //static var rollingOverFrontToBack:   Double = 30 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
     }
-  
-// DEPRECATED behavior, JB 8/19/2015. TODO: remove
-//    // Local Notification trigger identifies the number of failed tests that trigger the scheduling of a local notification to reminder the user to run the test again.
-//    struct LocalNotificationTrigger {
-//        static var pupilResponse:       Int = 1
-//        static var fallingToy:          Int = 1
-//        static var letsCrawl:           Int = 1
-//        static var pointFollowing:      Int = 1
-//        static var hearing:             Int = 1
-//        static var crossingEyes:        Int = 1
-//        static var attentionAtDistance: Int = 1
-//        static var symmetry:            Int = 1
-//        static var pincer:              Int = 1
-//        static var completelyCoveredToy: Int = 1
-//        static var partiallyCoveredToy: Int = 1
-//        static var selfRecognition:     Int = 1
-//        static var socialSmiling:       Int = 1
-//        static var facialMimic:         Int = 1
-//        static var unassistedSitting:   Int = 1
-//        static var sittingAndReaching:  Int = 1
-//        static var plasticJar:          Int = 1
-//        // TODO: add additional var as new tests are added to the app
-//    }
+    
+    // Represents the order in which tests are presented in the UI using Test.TestNamesPresentable values.
+    static let testsInPresentedOrder = [
+        TestNamesPresentable.pupilResponse,
+        TestNamesPresentable.crossingEyes,
+        TestNamesPresentable.hearing,
+        TestNamesPresentable.letsCrawl,
+        TestNamesPresentable.symmetry,
+        TestNamesPresentable.pincer,
+        TestNamesPresentable.unassistedSitting,
+        TestNamesPresentable.sittingAndReaching,
+        TestNamesPresentable.fallingToy,
+        TestNamesPresentable.attentionAtDistance,
+        TestNamesPresentable.partiallyCoveredToy,
+        TestNamesPresentable.completelyCoveredToy,
+        TestNamesPresentable.plasticJar,            // ask and respond
+        TestNamesPresentable.pointFollowing,
+        TestNamesPresentable.selfRecognition,
+        TestNamesPresentable.socialSmiling,
+        TestNamesPresentable.facialMimic
+        // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
+    ]
     
     /* Designated initializer: initialize the Test instance with default values. */
     override init() {
@@ -179,12 +179,14 @@ class Test: NSObject, NSCoding {
             history.mostRecentTestResult = result
             
             // update test date to current date/time
-            history.mostRecentTestDate = NSDate()
+            let testDate = NSDate()
+            history.mostRecentTestDate = testDate
             
             // update test counts
             history.countOfCompletedTests += 1
             if result == true {
                 history.countOfSuccessfulTests += 1
+                history.succeededTestDate = testDate
             } else {
                 history.countOfFailedTests += 1
             }
@@ -220,6 +222,15 @@ class Test: NSObject, NSCoding {
         } else {
             return false
         }
+    }
+    
+    /*
+    @brief Returns the most recent date when the test succeeded.
+    @discussion Call everSucceeded() to determine if the test has been successfully completed.
+    @return Date test succeeded, else returns nil if the test has never succeeded.
+    */
+    func getTestSucceededDate() -> NSDate? {
+        return history.succeededTestDate
     }
     
     /*
@@ -316,5 +327,4 @@ class Test: NSObject, NSCoding {
     func save() -> Bool {
         return NSKeyedArchiver.archiveRootObject(self.history, toFile: self.filePath)
     }
-    
 }

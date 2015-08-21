@@ -34,6 +34,8 @@ class TestHistories : NSObject, NSCoding {
                 "countOfFailedTests" : 0
                 "countOfSuccessfulTests" : 0
                 "countOfCompletedTests" : 0
+                "succeededTestDate" : NSDate()
+                "reminderDate:" : NSDate()
             ]
          "hearing":
             [
@@ -42,6 +44,8 @@ class TestHistories : NSObject, NSCoding {
                 "countOfFailedTests" : 0
                 "countOfSuccessfulTests" : 1
                 "countOfCompletedTests" : 1
+                "succeededTestDate" : NSDate()
+                "reminderDate:" : NSDate()
             ]
          ...
         ]
@@ -90,7 +94,7 @@ class TestHistories : NSObject, NSCoding {
         ]
         
         for (key, testName) in dictionary {
-            var testHist = TestHistory()
+            var testHist = TestHistory(nameOfTest: testName)
             histories[testName] = testHist
         }
     }
@@ -113,8 +117,8 @@ class TestHistories : NSObject, NSCoding {
     }
     
     /*!
-        @brief Get the Test object for the specified test from this TiestHistories instance.
-        @dicsussion Returns a Test object initialized from the current in-memory test data.
+        @brief Get the Test object for the specified test from this TestHistories instance.
+        @discussion Returns a Test object initialized from the current in-memory test data.
         @param testName (in) is the name of the test. Must be one of Test.TestNames.
         @return Test instance.
     */
@@ -123,7 +127,90 @@ class TestHistories : NSObject, NSCoding {
         return test
     }
     
-    /*! 
+    /*!
+    @brief Get the next test that the user should run.
+    @dicsussion The next test is a test that has not been successfully completed, (countOfSuccessfulTests = 0). More specifically it has not been run (countOfCompletedTests = 0). Or, if all tests have been run it has only failed (countOfCompletedTests > 0 AND countOfFailedTests > 0 AND countOfSuccessfulTests = 0).     
+    @return A Test object. If all tests have been completed successfully then return nil.
+    */
+    func getNextTest() -> Test? {
+        var nextTest : Test?
+        var totalNumberOfTests = histories.count
+        
+        /* The count of all tests that the user has run. */
+        var countOfTestsRun = 0
+        
+        /* The count of all tests where countOfSuccessfulTests > 0 for an individual test. */
+        var countOfTestsPassed = 0
+        
+        // count the number of tests that have been run and passed.
+        for (testName, testHistory) in histories {
+            // count the tests that have been run
+            if testHistory.countOfCompletedTests > 0 {
+                countOfTestsRun += 1
+            }
+            // count the tests that have passed
+            if testHistory.countOfSuccessfulTests > 0 {
+                countOfTestsPassed += 1
+            }
+        }
+        
+        // Order the histories key,value tuples into an array that is ordered to reflect the order an end user sees the tests in the UI.
+        let orderedHistories = getOrderedHistories()
+        
+        // Find the next test.
+        if countOfTestsRun < totalNumberOfTests {
+            // Not all tests have been run. Find the first test not yet run.
+            for history in orderedHistories {
+                if history.countOfCompletedTests == 0 {
+                    nextTest = Test(testHistory: history)
+                    break
+                }
+            }
+        } else if countOfTestsPassed < totalNumberOfTests {
+            // Not all test have been passed (although all have been run). Find the first test not yet passed.
+            for history in orderedHistories {
+                if history.countOfSuccessfulTests == 0 {
+                    nextTest = Test(testHistory: history)
+                    break
+                }
+            }
+        } else {
+            // All tests have been run, and all have been passed.
+            nextTest = nil
+        }
+        
+        return nextTest
+    }
+    
+    /* TODO: remove this test function. */
+    static func testTheGetNextTestFunction() {
+        var parent = Parent()
+        var profiles = TestProfiles()
+        profiles.initProfilesFromPersistentStore()
+        var histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
+        if let histories = histories {
+            if let test = histories.getNextTest() {
+                println("next test: \(test.history.testName)")
+            } else {
+                println("next test: nil - all tests have been run and passed.")
+            }
+        }
+    }
+    
+    /* 
+    @brief Get an ordered collection of TestHistory objects in the order that tests appear in the UI. 
+    @return An array of TestHistory objects in the order that the tests appear in the UI.
+    */
+    func getOrderedHistories() -> [TestHistory] {
+        var orderedHistories = [TestHistory]()
+        for testName in Test.testsInPresentedOrder {
+            let history = self.getTestHistory(testName: testName)
+            orderedHistories.append(history)
+        }
+        return orderedHistories
+    }
+    
+    /*!
         @brief Update the most recent test result of a particular test in the test history.
         @dicsussion This function automatically updates the test date to the current date & time, and updates the test counters.
         @param testName (in) is the name of the test. Must be one of Test.TestNames.
@@ -165,7 +252,7 @@ class TestHistories : NSObject, NSCoding {
         if let history = histories[name] {
             return history
         } else {
-            return TestHistory()
+            return TestHistory(nameOfTest: name)
         }
     }
     
@@ -306,6 +393,42 @@ class TestHistories : NSObject, NSCoding {
             var neverPassedList = testHistories.neverPassed()
             for name in neverPassedList {
                 println("\(name)")
+            }
+        }
+    }
+
+    // MARK: Reminders
+    
+    func addObservers() {
+        // Add a notification observer for scheduled reminders.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onTestReminderScheduled:", name: testReminderScheduledNotificationKey, object: nil)
+        
+        //Add a notification observer for removed reminders.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onTestReminderRemoved:", name: testReminderRemovedNotificationKey, object: nil)
+    }
+    
+    func removeObservers() {
+        // Remove observer for the scheduled reminder notification.
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: testReminderScheduledNotificationKey, object: nil)
+        // Remove observer for the removed reminder notification.
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: testReminderRemovedNotificationKey, object: nil)
+    }
+
+    // TODO - start with these functions. where to put them? Look at notes and decide if need TestHistoriesMonitor
+    // TODO: define constant for the "testName" key and replace in 3 files.
+    // TODO: test these functions...
+    func onTestReminderScheduled(notification: NSNotification) {
+        if let testName = notification.userInfo!["testName"] as? String {
+            if let testHistory = self.histories[testName]{
+                testHistory.reminderDate = NSDate()
+            }
+        }
+    }
+    
+    func onTestReminderRemoved(notification: NSNotification) {
+        if let testName = notification.userInfo!["testName"] as? String {
+            if let testHistory = self.histories[testName]{
+                testHistory.reminderDate = nil
             }
         }
     }

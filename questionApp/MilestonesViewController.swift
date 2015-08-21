@@ -20,6 +20,7 @@ class MilestonesViewController: UIViewController {
   var parent = Parent()
   @IBOutlet weak var languageAndCognitiveLabel: UILabel!
   @IBOutlet weak var socialAndEmotionalLabel: UILabel!
+	
   
   @IBOutlet weak var sensoryMotorBackground: UIButton!
   @IBOutlet weak var socialEmotionalBackground: UIButton!
@@ -89,26 +90,40 @@ class MilestonesViewController: UIViewController {
   }
   */
   
-    // Helper function formats text attributes for substrings in labels.
-    func applyTextAttributesToLabels() {
-        
-        let blueAtrributes = [NSForegroundColorAttributeName: kBlue, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 13)!]
-        
-        // label 1
-        var attributedString1 = NSMutableAttributedString(string: sensoryAndMotorLabel.text!)
-        attributedString1.addAttributes(blueAtrributes, range: NSMakeRange(0, 15))
-        sensoryAndMotorLabel.attributedText = attributedString1
-        
-        // label 2
-        var attributedString2 = NSMutableAttributedString(string: languageAndCognitiveLabel.text!)
-        attributedString2.addAttributes(blueAtrributes, range: NSMakeRange(0, 22))
-        languageAndCognitiveLabel.attributedText = attributedString2
-        
-        // label 3
-        var attributedString3 = NSMutableAttributedString(string: socialAndEmotionalLabel.text!)
-        attributedString3.addAttributes(blueAtrributes, range: NSMakeRange(0, 35))
-        socialAndEmotionalLabel.attributedText = attributedString3
-    }
+	// Helper function formats text attributes for substrings in labels.
+	func applyTextAttributesToLabels() {
+			
+		let blueAtrributes = [NSForegroundColorAttributeName: kBlue, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 13)!]
+		
+		// label 1
+		var attributedString1 = NSMutableAttributedString(string: sensoryAndMotorLabel.text!)
+		attributedString1.addAttributes(blueAtrributes, range: NSMakeRange(0, 15))
+		sensoryAndMotorLabel.attributedText = attributedString1
+		
+		// label 2
+		var attributedString2 = NSMutableAttributedString(string: languageAndCognitiveLabel.text!)
+		attributedString2.addAttributes(blueAtrributes, range: NSMakeRange(0, 22))
+		languageAndCognitiveLabel.attributedText = attributedString2
+		
+		// label 3
+		var attributedString3 = NSMutableAttributedString(string: socialAndEmotionalLabel.text!)
+		attributedString3.addAttributes(blueAtrributes, range: NSMakeRange(0, 35))
+		socialAndEmotionalLabel.attributedText = attributedString3
+	}
 
-  
+	/* Get the Next test to run */
+	func nextTest() {
+		var parent = Parent()
+		var profiles = TestProfiles()
+		profiles.initProfilesFromPersistentStore()
+		var histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
+		if let histories = histories {
+			if let test = histories.getNextTest() {
+				println("next test: \(test.history.testName)")
+			} else {
+				println("next test: nil - all tests have been run and passed.")
+			}
+		}
+	}
+	
 }
