@@ -27,7 +27,6 @@ class MilestonesViewController: UIViewController {
   @IBOutlet weak var languageCognitiveBackground: UIButton!
 	
 	@IBOutlet weak var nextTestLabel: UILabel!
-	//var nextTestStoryboardID: String? = Test.getInitialStoryboardID(Test.TestNamesPresentable.pupilResponse)
 	let tapRecognizer = UITapGestureRecognizer()
 	@IBOutlet weak var nextTestImageView: UIImageView!
 	
@@ -142,10 +141,8 @@ class MilestonesViewController: UIViewController {
 		if let histories = histories {
 			if let test = histories.getNextTest() {
 				nextTestLabel.text = test.history.testName
-				//nextTestStoryboardID = Test.getInitialStoryboardID(test.history.testName)
 			} else {
 				nextTestLabel.text = "All tests passed!"
-				//nextTestStoryboardID = nil
 			}
 		}
 	}

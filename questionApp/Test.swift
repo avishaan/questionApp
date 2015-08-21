@@ -349,17 +349,4 @@ class Test: NSObject, NSCoding {
     func save() -> Bool {
         return NSKeyedArchiver.archiveRootObject(self.history, toFile: self.filePath)
     }
-    
-    /*!
-    @brief Return the storyboard ID of the initial view controller in the test sequence identified by testName.
-    @param (in) testName - The name of the test. Must be a Test.TestNamesPresentable value. (cannot be nil)
-    @return A String representing the storyboard ID. If testName is not a valid test name the function returns nil.
-    */
-//    static func getInitialStoryboardID(testName: String) -> String? {
-//        if let storyboardID = Test.initialStoryboardIDs[testName] {
-//            return storyboardID
-//        } else {
-//            return nil
-//        }
-//    }
 }
