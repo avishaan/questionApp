@@ -23,6 +23,7 @@ class TestHistory: NSObject, NSCoding {
         static let countOfCompletedTests: String = "countOfCompletedTests"
         static let succeededTestDate: String = "succeededTestDate"
         static let reminderDate: String = "reminderDate"
+        static let testName: String = "testName"
     }
     
     // MARK: Properties
@@ -33,6 +34,7 @@ class TestHistory: NSObject, NSCoding {
     var countOfCompletedTests = 0
     var succeededTestDate: NSDate? = nil
     var reminderDate: NSDate? = nil
+    var testName: String = ""
     
     // Initializes object with default values
     override init() {
@@ -40,8 +42,18 @@ class TestHistory: NSObject, NSCoding {
     }
     
     /*!
+    @brief Initialize the instance with nameOfTest and all other properties initialized to default values.
+    @discussion All properties are initialized to their default values if not specified in the dictionary.
+    @param nameOfTest (in) The name of the test. Must be a Test.TestNamesPresentable value. (cannot be nil)
+    */
+    convenience init(nameOfTest: String) {
+        self.init()
+        testName = nameOfTest
+    }
+    
+    /*!
     @brief Initialize the instance with a dictionary of properties.
-    @dicsussion All properties are initialized to their default values if not specified in the dictionary.
+    @discussion All properties are initialized to their default values if not specified in the dictionary.
     @param dictionary (in) A dictionary where key is a Keys struct value (example. Keys.mostRecentTestDate), and where value is the desired initial value for the associated property.
     */
     convenience init(dictionary: [String : AnyObject]) {
@@ -68,10 +80,13 @@ class TestHistory: NSObject, NSCoding {
         if let reminder = dictionary[Keys.reminderDate] as? NSDate {
             reminderDate = reminder
         }
+        if let name = dictionary[Keys.testName] as? String {
+            testName = name
+        }
     }
     
     func print() {
-        println("date: \(mostRecentTestDate),  result: \(mostRecentTestResult), failed: \(countOfFailedTests), successful: \(countOfSuccessfulTests), completed: \(countOfCompletedTests), succeeded date: \(succeededTestDate), reminder date: \(reminderDate)")
+        println("name: \(testName), date: \(mostRecentTestDate),  result: \(mostRecentTestResult), failed: \(countOfFailedTests), successful: \(countOfSuccessfulTests), completed: \(countOfCompletedTests), succeeded date: \(succeededTestDate), reminder date: \(reminderDate)")
     }
     
     
@@ -84,7 +99,7 @@ class TestHistory: NSObject, NSCoding {
     
     /*!
     @brief Set instance properties to values read from persistent store.
-    @dicsussion Will set an instance property to it's default value if the corresponding NSUnarchiver key does not exist.
+    @discussion Will set an instance property to it's default value if the corresponding NSUnarchiver key does not exist.
     @param dictionary (in) The NSUnarchiver object identifying the persistent store from which to read the property values.
     */
     func decodeWithCoder(coder decoder: NSCoder) {
@@ -117,6 +132,13 @@ class TestHistory: NSObject, NSCoding {
         } else {
             reminderDate = nil
         }
+        
+        // returns nil if key does not exist, or if value is nil
+        if let name = decoder.decodeObjectForKey(Keys.testName) as? String {
+            testName = name
+        } else {
+            testName = ""
+        }
     }
     
     /*!
@@ -130,6 +152,7 @@ class TestHistory: NSObject, NSCoding {
         encoder.encodeInteger(countOfSuccessfulTests, forKey: Keys.countOfSuccessfulTests)
         encoder.encodeInteger(countOfCompletedTests, forKey: Keys.countOfCompletedTests)
         encoder.encodeObject(succeededTestDate, forKey: Keys.succeededTestDate)
-        encoder.encodeObject(reminderDate, forKey: Keys.succeededTestDate)
+        encoder.encodeObject(reminderDate, forKey: Keys.reminderDate)
+        encoder.encodeObject(testName, forKey: Keys.testName)
     }
 }

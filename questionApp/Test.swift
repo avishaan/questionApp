@@ -60,7 +60,7 @@ class Test: NSObject, NSCoding {
         static var facialMimic = "facial mimic"
         static var unassistedSitting = "unassisted sitting"
         static var sittingAndReaching = "sitting and reaching"
-        static var plasticJar = "ask and respond"
+        static var plasticJar = "ask and respond"                  // ask and respond
         // TODO: if new tests are added to the app, add them here.
     }
     
@@ -86,7 +86,7 @@ class Test: NSObject, NSCoding {
         static var facialMimic:         Double = 30 * Test.SecondsInADay
         static var unassistedSitting:   Double = 30 * Test.SecondsInADay
         static var sittingAndReaching:  Double = 30 * Test.SecondsInADay
-        static var plasticJar:          Double = 30 * Test.SecondsInADay
+        static var plasticJar:          Double = 30 * Test.SecondsInADay  // ask and respond
         //static var commandWithGesture:  Double = 30 * Test.SecondsInADay
         //static var bookPresentation:    Double = 30 * Test.SecondsInADay
         //static var lateralTracking:          Double =  7 * Test.SecondsInADay
@@ -115,9 +115,31 @@ class Test: NSObject, NSCoding {
         static var facialMimic:         Int = 2
         static var unassistedSitting:   Int = 2
         static var sittingAndReaching:  Int = 2
-        static var plasticJar:          Int = 2
+        static var plasticJar:          Int = 2  // ask and respond
         // TODO: add additional var as new tests are added to the app
     }
+    
+    // Represents the order in which tests are presented in the UI using Test.TestNamesPresentable values.
+    static let testsInPresentedOrder = [
+        TestNamesPresentable.pupilResponse,
+        TestNamesPresentable.crossingEyes,
+        TestNamesPresentable.hearing,
+        TestNamesPresentable.letsCrawl,
+        TestNamesPresentable.symmetry,
+        TestNamesPresentable.pincer,
+        TestNamesPresentable.unassistedSitting,
+        TestNamesPresentable.sittingAndReaching,
+        TestNamesPresentable.fallingToy,
+        TestNamesPresentable.attentionAtDistance,
+        TestNamesPresentable.partiallyCoveredToy,
+        TestNamesPresentable.completelyCoveredToy,
+        TestNamesPresentable.plasticJar,            // ask and respond
+        TestNamesPresentable.pointFollowing,
+        TestNamesPresentable.selfRecognition,
+        TestNamesPresentable.socialSmiling,
+        TestNamesPresentable.facialMimic
+        // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
+    ]
     
     /* Designated initializer: initialize the Test instance with default values. */
     override init() {
