@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ci1-e4-WVg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -691,9 +691,6 @@ That's it!</string>
                                     <action selector="onHomeButtonTap:" destination="ci1-e4-WVg" eventType="touchUpInside" id="sbh-ge-aBO"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacialMimicBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="bXb-xb-22F">
-                                <rect key="frame" x="0.0" y="132" width="320" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not to worry! Your baby is a bit too young for this skill. Try again in 2 weeks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLB-fg-LjC">
                                 <rect key="frame" x="16" y="255" width="288" height="206"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
@@ -719,6 +716,30 @@ That's it!</string>
                                     <segue destination="TwI-ju-e0i" kind="presentation" id="cnm-JJ-boW"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P97-Xk-iwX" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="167" width="273" height="110"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctr-MC-smg">
+                                <rect key="frame" x="31" y="138" width="258" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Facial Mimic Age Range: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="7-11 mo.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -726,6 +747,8 @@ That's it!</string>
                     <connections>
                         <outlet property="infoLabel" destination="NLB-fg-LjC" id="094-Vq-HHj"/>
                         <outlet property="questionLabel" destination="kWd-zb-Ojo" id="P0L-Qc-Y1M"/>
+                        <outlet property="rangeChartLabel" destination="ctr-MC-smg" id="gkn-zk-vpL"/>
+                        <outlet property="rangeChartView" destination="P97-Xk-iwX" id="o7o-CS-AlI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K3H-1b-n64" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -895,7 +918,6 @@ That's it!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="FacialMimicBadOutcome" width="273" height="108"/>
         <image name="FacialMimicIsBabyReady" width="320" height="120"/>
         <image name="FacialMimicWhatWillYouNeed" width="320" height="120"/>
         <image name="SymmetryTestOverview" width="320" height="203"/>

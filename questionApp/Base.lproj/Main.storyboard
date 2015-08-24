@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9CL-vI-WhP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VjN-jI-kwu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -789,7 +789,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWY-aj-5mq">
                                 <rect key="frame" x="0.0" y="142" width="320" height="614"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWO-V7-sjq">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dWO-V7-sjq">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="732"/>
                                         <subviews>
                                             <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxj-gJ-KPZ" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
@@ -885,7 +885,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UnassistedSitting" translatesAutoresizingMaskIntoConstraints="NO" id="fJt-no-Sd0">
                                                 <rect key="frame" x="52" y="322" width="24" height="24"/>
                                             </imageView>
-                                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x8-ky-Erk" userLabel="unassisted sitting" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x8-ky-Erk" userLabel="unassisted sitting" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="-142" width="174" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -901,7 +901,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PincerGrasp" translatesAutoresizingMaskIntoConstraints="NO" id="s4J-q5-Lga">
                                                 <rect key="frame" x="52" y="322" width="24" height="24"/>
                                             </imageView>
-                                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-yr-sjq" userLabel="unassisted sitting" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-yr-sjq" userLabel="unassisted sitting" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="-142" width="174" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -981,7 +981,11 @@
                                                 <exclude reference="ggQ-6z-7WZ"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <exclude reference="qMC-4q-Ilu"/>
+                                                <exclude reference="rmR-Z4-FlS"/>
+                                                <exclude reference="ssf-WC-KAV"/>
+                                                <exclude reference="vKF-dE-dmO"/>
+                                                <exclude reference="w1E-ZK-UZ5"/>
+                                                <exclude reference="7bK-aj-oGI"/>
                                                 <exclude reference="D01-2l-1hk"/>
                                                 <exclude reference="Nxj-i9-4Qg"/>
                                                 <exclude reference="Oth-Is-mSB"/>
@@ -992,15 +996,11 @@
                                                 <exclude reference="llY-bn-TpJ"/>
                                                 <exclude reference="mor-4C-9xR"/>
                                                 <exclude reference="sOw-x6-rgy"/>
-                                                <exclude reference="rmR-Z4-FlS"/>
-                                                <exclude reference="ssf-WC-KAV"/>
-                                                <exclude reference="vKF-dE-dmO"/>
-                                                <exclude reference="w1E-ZK-UZ5"/>
-                                                <exclude reference="9dA-il-HJY"/>
-                                                <exclude reference="gpA-vD-bym"/>
-                                                <exclude reference="7bK-aj-oGI"/>
+                                                <exclude reference="qMC-4q-Ilu"/>
                                                 <exclude reference="Bdw-jT-6Xi"/>
                                                 <exclude reference="mpC-3e-Edv"/>
+                                                <exclude reference="9dA-il-HJY"/>
+                                                <exclude reference="gpA-vD-bym"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -1012,7 +1012,11 @@
                                                 <include reference="ggQ-6z-7WZ"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <include reference="qMC-4q-Ilu"/>
+                                                <include reference="rmR-Z4-FlS"/>
+                                                <include reference="ssf-WC-KAV"/>
+                                                <include reference="vKF-dE-dmO"/>
+                                                <include reference="w1E-ZK-UZ5"/>
+                                                <include reference="7bK-aj-oGI"/>
                                                 <include reference="D01-2l-1hk"/>
                                                 <include reference="Nxj-i9-4Qg"/>
                                                 <include reference="Oth-Is-mSB"/>
@@ -1023,15 +1027,11 @@
                                                 <include reference="llY-bn-TpJ"/>
                                                 <include reference="mor-4C-9xR"/>
                                                 <include reference="sOw-x6-rgy"/>
-                                                <include reference="rmR-Z4-FlS"/>
-                                                <include reference="ssf-WC-KAV"/>
-                                                <include reference="vKF-dE-dmO"/>
-                                                <include reference="w1E-ZK-UZ5"/>
-                                                <include reference="9dA-il-HJY"/>
-                                                <include reference="gpA-vD-bym"/>
-                                                <include reference="7bK-aj-oGI"/>
+                                                <include reference="qMC-4q-Ilu"/>
                                                 <include reference="Bdw-jT-6Xi"/>
                                                 <include reference="mpC-3e-Edv"/>
+                                                <include reference="9dA-il-HJY"/>
+                                                <include reference="gpA-vD-bym"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -1467,25 +1467,25 @@
                                 <exclude reference="7Ar-cs-oMa"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="MCR-t7-754"/>
-                                <exclude reference="awn-tL-Qp9"/>
-                                <exclude reference="NE8-A8-tgl"/>
-                                <exclude reference="bcD-sV-Tic"/>
-                                <exclude reference="k1X-zd-Jaj"/>
-                                <exclude reference="azq-Ud-hJh"/>
-                                <exclude reference="9nw-dl-Jd9"/>
-                                <exclude reference="Ajp-ZA-jia"/>
-                                <exclude reference="Nb2-r9-fR0"/>
                                 <exclude reference="RG4-1M-EEZ"/>
                                 <exclude reference="eBk-yG-S7M"/>
                                 <exclude reference="fYs-oS-FVK"/>
                                 <exclude reference="MC3-Nf-UgW"/>
+                                <exclude reference="MCR-t7-754"/>
+                                <exclude reference="awn-tL-Qp9"/>
                                 <exclude reference="c2O-SK-gJH"/>
+                                <exclude reference="NE8-A8-tgl"/>
+                                <exclude reference="bcD-sV-Tic"/>
+                                <exclude reference="k1X-zd-Jaj"/>
                                 <exclude reference="AdR-pR-2gj"/>
                                 <exclude reference="JUi-il-BJq"/>
+                                <exclude reference="azq-Ud-hJh"/>
+                                <exclude reference="9nw-dl-Jd9"/>
                                 <exclude reference="Dbd-t5-zAR"/>
                                 <exclude reference="LOr-Q6-k7N"/>
                                 <exclude reference="gk4-kz-dJr"/>
+                                <exclude reference="Ajp-ZA-jia"/>
+                                <exclude reference="Nb2-r9-fR0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1493,25 +1493,25 @@
                                 <include reference="7Ar-cs-oMa"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="MCR-t7-754"/>
-                                <include reference="awn-tL-Qp9"/>
-                                <include reference="NE8-A8-tgl"/>
-                                <include reference="bcD-sV-Tic"/>
-                                <include reference="k1X-zd-Jaj"/>
-                                <include reference="azq-Ud-hJh"/>
-                                <include reference="9nw-dl-Jd9"/>
-                                <include reference="Ajp-ZA-jia"/>
-                                <include reference="Nb2-r9-fR0"/>
                                 <include reference="RG4-1M-EEZ"/>
                                 <include reference="eBk-yG-S7M"/>
                                 <include reference="fYs-oS-FVK"/>
                                 <exclude reference="MC3-Nf-UgW"/>
+                                <include reference="MCR-t7-754"/>
+                                <include reference="awn-tL-Qp9"/>
                                 <include reference="c2O-SK-gJH"/>
+                                <include reference="NE8-A8-tgl"/>
+                                <include reference="bcD-sV-Tic"/>
+                                <include reference="k1X-zd-Jaj"/>
                                 <include reference="AdR-pR-2gj"/>
                                 <include reference="JUi-il-BJq"/>
+                                <include reference="azq-Ud-hJh"/>
+                                <include reference="9nw-dl-Jd9"/>
                                 <include reference="Dbd-t5-zAR"/>
                                 <include reference="LOr-Q6-k7N"/>
                                 <include reference="gk4-kz-dJr"/>
+                                <include reference="Ajp-ZA-jia"/>
+                                <include reference="Nb2-r9-fR0"/>
                             </mask>
                         </variation>
                     </view>
@@ -2189,6 +2189,16 @@
                                 <rect key="frame" x="24" y="158" width="273" height="94"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-dE-6QL" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="468" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="more info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FSS-5L-5fO" kind="presentation" id="0ek-bS-oeE"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-5I-fbt">
                                 <rect key="frame" x="48" y="129" width="225" height="21"/>
                                 <attributedString key="attributedText">
@@ -2209,16 +2219,6 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-dE-6QL" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="468" width="122" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="more info">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="FSS-5L-5fO" kind="presentation" id="0ek-bS-oeE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -3037,9 +3037,6 @@
                                     <segue destination="vqP-SJ-U0l" kind="presentation" id="4eJ-BT-Iur"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fallingToyBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="xDj-bm-9Sx">
-                                <rect key="frame" x="0.0" y="133" width="320" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-LE-NYr">
                                 <rect key="frame" x="32" y="255" width="257" height="165"/>
                                 <string key="text">Not to worry. Your baby is a 
@@ -3068,18 +3065,62 @@ Try again in 2-4 weeks.</string>
                                     <segue destination="aM6-Cb-hLF" kind="presentation" id="hph-af-Dyp"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eib-Qr-DTs" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="158" width="273" height="94"/>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-S4-Rty">
+                                <rect key="frame" x="48" y="129" width="225" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Falling Toy Age Range: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="4-7 mo.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="129" width="249" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eib-Qr-DTs"/>
+                                <exclude reference="Zv8-S4-Rty"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="eib-Qr-DTs"/>
+                                <include reference="Zv8-S4-Rty"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="infoLabel" destination="f6l-LE-NYr" id="hWh-ye-ViY"/>
                         <outlet property="questionLabel" destination="AlZ-2a-xSe" id="PGL-0j-Aiu"/>
+                        <outlet property="rangeChartLabel" destination="Zv8-S4-Rty" id="KYA-Xf-yVk"/>
+                        <outlet property="rangeChartView" destination="eib-Qr-DTs" id="3Lj-Uq-ITt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjV-t1-drw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8730" y="3363.9999999999995"/>
+            <point key="canvasLocation" x="8730" y="3363"/>
         </scene>
         <!--Activity Reminder View Controller-->
         <scene sceneID="JvQ-AO-3dC">
@@ -3870,7 +3911,7 @@ Try again in 2-4 weeks.</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Didn't look?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKa-QI-SrH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Didn't crawl?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKa-QI-SrH">
                                 <rect key="frame" x="35" y="84" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -3886,9 +3927,6 @@ Try again in 2-4 weeks.</string>
                                     <segue destination="vqP-SJ-U0l" kind="presentation" id="V9O-1I-FKI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="letsCrawlBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="RML-V9-uNV">
-                                <rect key="frame" x="0.0" y="133" width="320" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7N-kb-abc">
                                 <rect key="frame" x="32" y="255" width="257" height="165"/>
                                 <string key="text">Not to worry. Your baby is a bit too young for this skill.
@@ -3916,13 +3954,57 @@ Try again in 6-8 weeks.</string>
                                     <segue destination="pWG-VM-d4w" kind="presentation" id="gjW-oB-4MB"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-IK-dr1" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="147" width="272" height="107"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="158" width="273" height="94"/>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bV-vi-85W">
+                                <rect key="frame" x="32" y="129" width="257" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Let's Crawl Age Range: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="9-11 mo.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="129" width="257" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NVg-IK-dr1"/>
+                                <exclude reference="1bV-vi-85W"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NVg-IK-dr1"/>
+                                <include reference="1bV-vi-85W"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="infoLabel" destination="T7N-kb-abc" id="B48-wO-eMN"/>
                         <outlet property="questionLabel" destination="iKa-QI-SrH" id="nRM-Gs-Gfv"/>
+                        <outlet property="rangeChartLabel" destination="1bV-vi-85W" id="Rh6-JV-eCi"/>
+                        <outlet property="rangeChartView" destination="NVg-IK-dr1" id="k79-ia-c9I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4L-hI-0PW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4252,7 +4334,7 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pf0-vg-Vuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9182" y="3363"/>
+            <point key="canvasLocation" x="9298.5" y="3363"/>
         </scene>
     </scenes>
     <resources>
@@ -4281,11 +4363,9 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
         <image name="backgroundThickBottom" width="320" height="568"/>
         <image name="eggIcon" width="32" height="38"/>
         <image name="facebook" width="29" height="29"/>
-        <image name="fallingToyBadOutcome" width="273" height="108"/>
         <image name="fallingToyWhatWillYouNeed" width="320" height="120"/>
         <image name="fallingToyWhyObjectPermanence" width="320" height="120"/>
         <image name="gearIcon" width="22" height="22"/>
-        <image name="letsCrawlBadOutcome" width="273" height="108"/>
         <image name="letsCrawlTestVideoPreview" width="319" height="203"/>
         <image name="letsCrawlWhatNeed" width="320" height="120"/>
         <image name="logo" width="567" height="164"/>
@@ -4304,11 +4384,11 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="j7l-Po-XYD"/>
-        <segue reference="b14-b1-AiE"/>
-        <segue reference="hJN-An-zuc"/>
         <segue reference="l69-DX-nDO"/>
+        <segue reference="V9O-1I-FKI"/>
         <segue reference="rnh-PO-BrS"/>
+        <segue reference="b14-b1-AiE"/>
+        <segue reference="j7l-Po-XYD"/>
         <segue reference="bXU-UG-Zw5"/>
     </inferredMetricsTieBreakers>
 </document>

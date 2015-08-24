@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -678,9 +678,6 @@ in a mirror.</string>
                                     <action selector="onBackButtonTap:" destination="r46-hF-ajK" eventType="touchUpInside" id="Lfq-qY-sxq"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SelfRecognitionBadOutcome" translatesAutoresizingMaskIntoConstraints="NO" id="baK-nM-Vlw">
-                                <rect key="frame" x="19" y="128" width="282" height="113"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed1-Ol-Z5j">
                                 <rect key="frame" x="16" y="245" width="288" height="210"/>
                                 <string key="text">Not to worry. Lucas is a bit 
@@ -700,6 +697,30 @@ Try again in a month.</string>
                                     <segue destination="6zV-sh-MqW" kind="presentation" id="AcV-2K-mCc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdj-XU-SF3">
+                                <rect key="frame" x="24" y="129" width="272" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Self Recognition Age Range: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="2-4 mo.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Omnes-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6V0-OG-YR8" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="158" width="273" height="94"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -707,6 +728,8 @@ Try again in a month.</string>
                     <connections>
                         <outlet property="infoLabel" destination="Ed1-Ol-Z5j" id="HGC-iZ-XdQ"/>
                         <outlet property="questionLabel" destination="ayg-TB-c2G" id="cS0-TT-Llr"/>
+                        <outlet property="rangeChartLabel" destination="Mdj-XU-SF3" id="ymG-6Y-oC6"/>
+                        <outlet property="rangeChartView" destination="6V0-OG-YR8" id="XdJ-4C-GzY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHg-XI-WMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -882,7 +905,6 @@ ZCBlbmpveSADdGhlaXIgcmVmbGVjdGlvbnMuA
         </scene>
     </scenes>
     <resources>
-        <image name="SelfRecognitionBadOutcome" width="546" height="217"/>
         <image name="SelfRecognitionWhatNeed" width="320" height="120"/>
         <image name="SymmetryIsBabyReady" width="320" height="120"/>
         <image name="SymmetryTestOverview" width="320" height="203"/>

@@ -35,7 +35,7 @@ class PupilResponseBadOutcomeViewController: UIViewController {
     var attrString:NSMutableAttributedString = NSMutableAttributedString(attributedString: rangeChartLabel.attributedText)
     
     // add font attribute
-    attrString.addAttribute(NSFontAttributeName, value: UIFont(name: kOmnesFontSemiBold, size: 15)!, range: NSMakeRange(0, attrString.length))
+    attrString.addAttribute(NSFontAttributeName, value: UIFont(name: kOmnesFontMedium, size: 15)!, range: NSMakeRange(0, attrString.length))
     rangeChartLabel.attributedText = attrString
     
 		// Initialize text in the view based on the test history.
