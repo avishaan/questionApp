@@ -36,9 +36,10 @@ class WhyIsBookPresentationViewController: UIViewController {
     let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
-    attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 41))
-    attributedString.addAttributes(boldAttributes, range: NSMakeRange(41, 19))
-    attributedString.addAttributes(standardAttributes, range: NSMakeRange(60, 116))
+    attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 25))
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(25, 15))
+    attributedString.addAttributes(standardAttributes, range: NSMakeRange(40, 136))
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(176, 34))
     
     descriptionLabel.attributedText = attributedString
   }
