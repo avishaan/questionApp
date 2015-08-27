@@ -9,6 +9,7 @@
 import UIKit
 
 class PlasticJarBadOutcomeViewController: UIViewController {
+    
   
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test : Test?
@@ -28,7 +29,7 @@ class PlasticJarBadOutcomeViewController: UIViewController {
         // Schedule a local notification to remind the user to rerun this test.
         scheduleReminder()
         
-        rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 6, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+        rangeChartView.config(startMonth: 0, endMonth: 40, successAgeInMonths: 30, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
         
         // font can't be set directly in storyboard for attributed string, set the label font here
         // make label's set attr string to a mutable so we can add attributes on

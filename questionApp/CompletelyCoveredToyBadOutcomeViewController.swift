@@ -30,7 +30,7 @@ class CompletelyCoveredToyBadOutcomeViewController: UIViewController {
         // Schedule a local notification to remind the user to rerun this test.
         scheduleReminder()
         
-        rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 6, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+        rangeChartView.config(startMonth: 0, endMonth: 20, successAgeInMonths: 15, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
         
         // font can't be set directly in storyboard for attributed string, set the label font here
         // make label's set attr string to a mutable so we can add attributes on
