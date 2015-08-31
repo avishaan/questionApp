@@ -80,9 +80,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="AttentionAtDistanceIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="SDQ-vh-Cnl">
-                                <rect key="frame" x="0.0" y="154" width="320" height="120"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dge-PR-5mA">
                                 <rect key="frame" x="16" y="282" width="288" height="194"/>
                                 <string key="text">This is a test of baby’s Joint Attention abilities. Joint Attention refers to baby’s understanding of pointing, following your gaze, and verbal prompts. All are important steps toward skills needed for reading.</string>
@@ -90,6 +87,9 @@
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="WhyIsImportant" translatesAutoresizingMaskIntoConstraints="NO" id="Id0-j0-6ae">
+                                <rect key="frame" x="0.0" y="154" width="320" height="120"/>
+                            </imageView>
                         </subviews>
                         <accessibility key="accessibilityConfiguration">
                             <accessibilityTraits key="traits" none="YES" image="YES"/>
@@ -219,9 +219,6 @@
                                     <segue destination="XBQ-1i-utx" kind="presentation" identifier="BookPresentationIsBabyReadySegueID" id="ehU-cJ-mTe"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="AttentionAtDistanceIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="nNV-wH-H5g">
-                                <rect key="frame" x="0.0" y="151" width="320" height="120"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reC-Jy-k5N">
                                 <rect key="frame" x="35" y="279" width="251" height="121"/>
                                 <string key="text">You’ll need a picture book and  comfy spot to sit 
@@ -236,6 +233,9 @@ with baby.</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="WhatWillYouNeed" translatesAutoresizingMaskIntoConstraints="NO" id="LyA-dz-GHU">
+                                <rect key="frame" x="0.0" y="151" width="320" height="120"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -343,9 +343,6 @@ with baby.</string>
                                     <action selector="onDontShowAgainButtonTap:" destination="XBQ-1i-utx" eventType="touchUpInside" id="Dp5-9j-Jmb"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="AttentionAtDistanceIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="20t-qR-jgb">
-                                <rect key="frame" x="0.0" y="148" width="320" height="120"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1y-gp-Kd5">
                                 <rect key="frame" x="72" y="355" width="177" height="36"/>
                                 <attributedString key="attributedText">
@@ -375,6 +372,9 @@ with baby.</string>
                                     <action selector="onBackButtonTap:" destination="XBQ-1i-utx" eventType="touchUpInside" id="lpo-kV-CEa"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="IsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="awM-nV-p1c">
+                                <rect key="frame" x="0.0" y="151" width="320" height="120"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -874,8 +874,10 @@ your pediatrician.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="AttentionAtDistanceIsBabyReady" width="320" height="120"/>
+        <image name="IsBabyReady" width="320" height="120"/>
         <image name="PointFollowingTestVideoPreview" width="319" height="203"/>
+        <image name="WhatWillYouNeed" width="320" height="120"/>
+        <image name="WhyIsImportant" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>

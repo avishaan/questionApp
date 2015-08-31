@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ffs-lR-bUX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -70,9 +70,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsPlasticJar" translatesAutoresizingMaskIntoConstraints="NO" id="gKT-UU-fGZ">
-                                <rect key="frame" x="0.0" y="154" width="320" height="120"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyb-jD-KTj">
                                 <rect key="frame" x="14" y="274" width="293" height="183"/>
                                 <string key="text">This activity tests your baby’s ability to ask for things and respond to requests from others. This is another form 
@@ -90,6 +87,9 @@ of Joint Attention.</string>
                                     <action selector="onBackButtonTap:" destination="JXR-iK-Laf" eventType="touchUpInside" id="whu-ZJ-nWX"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Why" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-4h-AcN">
+                                <rect key="frame" x="0.0" y="151" width="320" height="120"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -222,9 +222,6 @@ of Joint Attention.</string>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlasticJarWhatNeed" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Bw-44X">
-                                <rect key="frame" x="-5" y="113" width="329" height="201"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For this test, you’ll need a large plastic jar with a lid and two wind-up toys that will fit inside. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zg-1V-sJx">
                                 <rect key="frame" x="37" y="281" width="245" height="112"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
@@ -240,6 +237,9 @@ of Joint Attention.</string>
                                     <action selector="onBackButtonTap:" destination="f3o-wh-ptW" eventType="touchUpInside" id="EIS-2a-4fl"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="WhatNeeded" translatesAutoresizingMaskIntoConstraints="NO" id="61H-n7-dtM">
+                                <rect key="frame" x="0.0" y="153" width="320" height="120"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -292,9 +292,6 @@ of Joint Attention.</string>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PartiallyCoveredToyIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="vRw-fx-9zO">
-                                <rect key="frame" x="0.0" y="143" width="320" height="140"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-g7-YqV">
                                 <rect key="frame" x="20" y="279" width="281" height="91"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
@@ -381,6 +378,9 @@ of Joint Attention.</string>
                                     <action selector="onDontShowAgainButtonTap:" destination="1lK-te-V33" eventType="touchUpInside" id="NSv-LY-KY6"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Ready" translatesAutoresizingMaskIntoConstraints="NO" id="scc-Me-k3y">
+                                <rect key="frame" x="0.0" y="148" width="320" height="120"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -914,16 +914,16 @@ of Joint Attention.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="PartiallyCoveredToyIsBabyReady" width="273" height="108"/>
-        <image name="PlasticJarWhatNeed" width="320" height="120"/>
         <image name="PointFollowingTestVideoPreview" width="319" height="203"/>
-        <image name="WhyIsPlasticJar" width="320" height="120"/>
+        <image name="Ready" width="320" height="120"/>
+        <image name="WhatNeeded" width="320" height="120"/>
+        <image name="Why" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="facebook" width="29" height="29"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="j7l-Po-XYD"/>
+        <segue reference="OZR-PC-mDf"/>
     </inferredMetricsTieBreakers>
 </document>
