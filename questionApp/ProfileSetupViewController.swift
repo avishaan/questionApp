@@ -38,42 +38,9 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-	
-	
-	/* Helper function to configure text field delegates */
-	func initTextFieldDelegates() {
-		nameField.delegate = self
-		emailField.delegate = self
-		babyNameField.delegate = self
-	}
-	
-	// MARK: Text View Delegate Methods
-
-	func textFieldShouldReturn(textField: UITextField) -> Bool {
-			// hide keyboard when Return is selected while editing a text field
-			nameField.resignFirstResponder()
-			emailField.resignFirstResponder()
-			babyNameField.resignFirstResponder()
-			
-			return true;
-	}
-    
-  override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-    // use this to hide keyboard when tapping outside thetext field
-    view.endEditing(true)
-    super.touchesBegan(touches, withEvent: event)
-  }
   
-  
-  /*
-  // MARK: - Navigation
-  
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-  // Get the new view controller using segue.destinationViewController.
-  // Pass the selected object to the new view controller.
-  }
-  */
+	
+  // MARK: IBActions
   
   @IBAction func onSaveProfileButtonTap(sender: AnyObject) {
     // Init a Parent object with data entered by the user
@@ -86,5 +53,44 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
     Tracker.registerUser(parentName: nameField.text, parentEmail: emailField.text, babyName:babyNameField.text, babyDOB: babyBirthdayDate.date)
   }
   
-  
+	@IBAction func onDatePickerTap(sender: AnyObject) {
+		hideKeyboard()
+	}
+	
+	@IBAction func onGenderTap(sender: AnyObject) {
+		hideKeyboard()
+	}
+	
+	
+	// MARK: Text View Delegate Methods
+	
+	func textFieldShouldReturn(textField: UITextField) -> Bool {
+		// hide keyboard when Return is selected while editing a text field
+		hideKeyboard()
+		return true;
+	}
+	
+	override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+		// use this to hide keyboard when tapping outside thetext field
+		view.endEditing(true)
+		super.touchesBegan(touches, withEvent: event)
+	}
+	
+	
+	// MARK: helper functions
+	
+	/* Configure text field delegates */
+	func initTextFieldDelegates() {
+		nameField.delegate = self
+		emailField.delegate = self
+		babyNameField.delegate = self
+	}
+	
+	/* Ends editting by resigning first responder for all text fields */
+	func hideKeyboard() {
+		nameField.resignFirstResponder()
+		emailField.resignFirstResponder()
+		babyNameField.resignFirstResponder()
+	}
+	
 }
