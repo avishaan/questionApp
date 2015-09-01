@@ -35,6 +35,9 @@ class FeedbackViewController: UIViewController {
   
   @IBAction func onSubmitTap(sender: UIButton) {
     self.dismissViewControllerAnimated(false, completion: nil)
+    
+    // save into user defaults that we showed the feedback view controller
+    NSUserDefaults.standardUserDefaults().setBool(true, forKey: kHasFeedbackDialogShown)
   }
  
     
