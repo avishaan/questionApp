@@ -59,8 +59,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onBackButtonTap:" destination="JXR-iK-Laf" eventType="touchUpInside" id="Due-LI-o1z"/>
-                                    <action selector="submitFeedback:" destination="JXR-iK-Laf" eventType="touchUpInside" id="33C-8p-Szc"/>
+                                    <action selector="onSubmitTap:" destination="JXR-iK-Laf" eventType="touchUpInside" id="pDY-au-714"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IAl-jc-DWX">
@@ -79,7 +78,6 @@
                         <outlet property="feedbackText" destination="IAl-jc-DWX" id="eZf-8U-m6y"/>
                         <outlet property="ratingNumber" destination="RbB-6u-lEt" id="jf2-oH-Q9g"/>
                         <outlet property="ratingSlider" destination="m0I-eI-BFS" id="Ksh-Oa-NYs"/>
-                        <outlet property="submit" destination="nXF-ik-clL" id="3fu-DY-9WE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYu-43-NLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
