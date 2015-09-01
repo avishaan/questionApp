@@ -65,7 +65,6 @@ class MilestonesViewController: UIViewController {
       
       ageLabel.text = ageAsString
       
-      // present feedback controller if appropriate
       
       // check if there has been enough passed tests
       if let successful = testHistories?.numSuccessful {
@@ -114,7 +113,13 @@ class MilestonesViewController: UIViewController {
 		
 		// Configure the Re-tests elements
 		configureReminders()
-	}
+    
+    // present feedback controller if appropriate
+    let feedBackStoryboard:UIStoryboard = UIStoryboard(name: "Feedback", bundle: nil)
+    let feedBackDialogVC = feedBackStoryboard.instantiateViewControllerWithIdentifier("FeedbackDialogID") as! FeedbackViewController
+    self.presentViewController(feedBackDialogVC, animated: true, completion: nil)
+    
+  }
 	
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
