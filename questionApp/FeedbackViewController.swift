@@ -27,13 +27,6 @@ class FeedbackViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "milestonesSegueID" {
-            // Dismiss this view controller before modally presenting the milestones VC.
-            self.dismissViewControllerAnimated(true, completion: nil)
-        }
-    }
-    
     @IBAction func sliderValueChanged(sender: AnyObject) {
       // convert to int
       var currentValue = Int(ratingSlider!.value)
