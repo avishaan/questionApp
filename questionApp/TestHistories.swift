@@ -340,6 +340,25 @@ class TestHistories : NSObject, NSCoding {
             println("")
         }
     }
+  
+    /*
+        :brief Return the number of total tests passed so far
+        :discussion this method allows use to answer the question "how many tests app wide have passed at some point?"
+    */
+  
+  var numSuccessful:Int {
+    
+    get {
+      
+      var successful = 0
+      
+      for (testName, testDictionary) in histories {
+        successful += testDictionary.countOfSuccessfulTests
+      }
+      return successful
+    }
+  }
+  
     
     // MARK: NSCoding
     
