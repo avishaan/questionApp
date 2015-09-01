@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileSetupViewController: UIViewController {
+class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
   
   @IBOutlet weak var genderControl: UISegmentedControl!
   @IBOutlet weak var nameField: BNTextField!
@@ -29,15 +29,35 @@ class ProfileSetupViewController: UIViewController {
     
     // hide keyboard when typing return
     Tracker.createEvent(.Profile, .Setup)
-    
-    
+		
+		// initialize text field delegates
+		initTextFieldDelegates()
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  
+	
+	
+	/* Helper function to configure text field delegates */
+	func initTextFieldDelegates() {
+		nameField.delegate = self
+		emailField.delegate = self
+		babyNameField.delegate = self
+	}
+	
+	// MARK: Text View Delegate Methods
+
+	func textFieldShouldReturn(textField: UITextField) -> Bool {
+			// hide keyboard when Return is selected while editing a text field
+			nameField.resignFirstResponder()
+			emailField.resignFirstResponder()
+			babyNameField.resignFirstResponder()
+			
+			return true;
+	}
+    
   override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
     // use this to hide keyboard when tapping outside thetext field
     view.endEditing(true)
