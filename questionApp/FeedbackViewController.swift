@@ -35,7 +35,8 @@ class FeedbackViewController: UIViewController {
     }
     
     @IBAction func sliderValueChanged(sender: AnyObject) {
-        var currentValue = Int(sender as! NSNumber)
+      // convert to int
+      var currentValue = Int(ratingSlider!.value)
         ratingNumber.text = "\(currentValue)"
     }
     @IBAction func submitFeedback(sender: AnyObject) {
