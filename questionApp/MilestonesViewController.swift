@@ -37,6 +37,10 @@ class MilestonesViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    var profiles = TestProfiles()
+    profiles.initProfilesFromPersistentStore()
+    var testHistories = profiles.getTestHistories(profileName: Parent().getCurrentProfileName())
+    
     Tracker.createEvent(.Milestone, .Load)
     
     // Do any additional setup after loading the view.
@@ -62,8 +66,14 @@ class MilestonesViewController: UIViewController {
       ageLabel.text = ageAsString
       
       // present feedback controller if appropriate
+      
       // check if there has been enough passed tests
-      // if there are enough passed test, show the feedback controller
+      if let successful = testHistories?.numSuccessful {
+        // if there are enough passed test, show the feedback controller
+        if successful == 3 {
+          println("show feedbackdialog")
+        }
+      }
       // else there aren't enough, just proceed normally
       
     }
