@@ -60,6 +60,12 @@ class MilestonesViewController: UIViewController {
       let ageAsString = weeksFormattedString! + " weeks"
       
       ageLabel.text = ageAsString
+      
+      // present feedback controller if appropriate
+      // check if there has been enough passed tests
+      // if there are enough passed test, show the feedback controller
+      // else there aren't enough, just proceed normally
+      
     }
     
     // update baby name
