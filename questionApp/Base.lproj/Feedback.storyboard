@@ -31,12 +31,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thanks for using this app!How would you rate it?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cw-uu-qnA">
-                                <rect key="frame" x="38" y="81" width="244" height="85"/>
-                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
-                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbB-6u-lEt">
                                 <rect key="frame" x="130" y="212" width="61" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="47"/>
@@ -51,6 +45,12 @@
                                     <action selector="sliderValueChanged:" destination="JXR-iK-Laf" eventType="valueChanged" id="WD3-7l-CT8"/>
                                 </connections>
                             </slider>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IAl-jc-DWX">
+                                <rect key="frame" x="40" y="265" width="240" height="149"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXF-ik-clL">
                                 <rect key="frame" x="75" y="452" width="171" height="30"/>
                                 <color key="backgroundColor" red="0.01410602616" green="0.51467367559999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,16 +59,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onBackButtonTap:" destination="JXR-iK-Laf" eventType="touchUpInside" id="Due-LI-o1z"/>
-                                    <action selector="submitFeedback:" destination="JXR-iK-Laf" eventType="touchUpInside" id="33C-8p-Szc"/>
+                                    <action selector="onSubmitTap:" destination="JXR-iK-Laf" eventType="touchUpInside" id="pDY-au-714"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IAl-jc-DWX">
-                                <rect key="frame" x="40" y="265" width="240" height="149"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thanks for using this app! How would you rate it?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cw-uu-qnA">
+                                <rect key="frame" x="21" y="81" width="278" height="85"/>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -79,7 +78,6 @@
                         <outlet property="feedbackText" destination="IAl-jc-DWX" id="eZf-8U-m6y"/>
                         <outlet property="ratingNumber" destination="RbB-6u-lEt" id="jf2-oH-Q9g"/>
                         <outlet property="ratingSlider" destination="m0I-eI-BFS" id="Ksh-Oa-NYs"/>
-                        <outlet property="submit" destination="nXF-ik-clL" id="3fu-DY-9WE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYu-43-NLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
