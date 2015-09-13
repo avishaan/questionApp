@@ -41,7 +41,7 @@ class AttentionAtDistanceTestOverviewViewController: UIViewController {
         if segue.identifier == "AADEmbeddedVideoSegue" {
             // set the playerVC as the destination
             playerVC = segue.destinationViewController as! AVPlayerViewController
-            let path = NSBundle.mainBundle().pathForResource("AttentionAtDistance", ofType: "mp4")
+            let path = NSBundle.mainBundle().pathForResource("3mbVid", ofType: "mp4")
             let url = NSURL.fileURLWithPath(path!)
             // let url = NSURL(string: "crawl.mp4") // for remote locations
             

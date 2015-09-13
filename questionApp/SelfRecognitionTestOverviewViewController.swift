@@ -41,7 +41,7 @@ class SelfRecognitionTestOverviewViewController: UIViewController {
         if segue.identifier == "symmetryEmbeddedVideoSegue" {
             // set the playerVC as the destination
             playerVC = segue.destinationViewController as! AVPlayerViewController
-            let path = NSBundle.mainBundle().pathForResource("Symmetry", ofType: "mp4")
+            let path = NSBundle.mainBundle().pathForResource("3mbVid", ofType: "mp4")
             let url = NSURL.fileURLWithPath(path!)
             // let url = NSURL(string: "crawl.mp4") // for remote locations
             

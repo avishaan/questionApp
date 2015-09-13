@@ -33,7 +33,7 @@ class IntroVideoViewController: UIViewController {
       // set the playerVC as out destination
       playerVC = segue.destinationViewController as!
       AVPlayerViewController
-      let path = NSBundle.mainBundle().pathForResource("IntroVideo", ofType: "m4v")
+      let path = NSBundle.mainBundle().pathForResource("3mbVid", ofType: "mp4")
       let url = NSURL.fileURLWithPath(path!)
       // let url = NSURL(string: "crawl.mp4") // for remote locations
       
