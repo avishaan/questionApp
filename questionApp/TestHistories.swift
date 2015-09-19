@@ -279,7 +279,7 @@ class TestHistories : NSObject, NSCoding {
         return false
     }
   
-  func statusByCategory() -> [String:(Int, Int)] {
+  func statusByCategory() -> [String:(success:Int, everSuccess:Int)] {
     var sensoryAndMotor:(success:Int, everSuccess:Int) = (0,0)
     var socialAndEmotional:(success:Int, everSuccess:Int) = (0,0)
     var languageAndCognitive:(success:Int, everSuccess:Int) = (0,0)
