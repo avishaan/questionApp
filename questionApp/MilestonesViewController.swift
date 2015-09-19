@@ -69,6 +69,15 @@ class MilestonesViewController: UIViewController {
     // update baby name
     babyNameLabel.text = parent.babyName
     
+    // get the test status by category
+    var profiles = TestProfiles()
+    profiles.initProfilesFromPersistentStore()
+    var testHistories = profiles.getTestHistories(profileName: Parent().getCurrentProfileName())
+    let statusByCategory = testHistories?.statusByCategory()
+    let sensoryAndMotor = statusByCategory?[Test.CategoryNames.sensoryAndMotor]
+    let socialAndEmotional = statusByCategory?[Test.CategoryNames.socialAndEmotional]
+    let languageAndCognitive = statusByCategory?[Test.CategoryNames.languageAndCognitive]
+    
     // update pie charts for each category
     sensoryAndMotorPieChartView.config(["test","test","test","",""], values: [0.2,0.2,0.2,0.2,0.2])
     languageAndCognitivePieChartView.config(["test","test",""], values: [0.33,0.33,0.33])

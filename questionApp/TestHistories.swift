@@ -310,6 +310,7 @@ class TestHistories : NSObject, NSCoding {
       }
     }
     
+    // return a dictionary of tuples where the dictionary is a Test.CategoryName
     return [
       Test.CategoryNames.sensoryAndMotor:sensoryAndMotor,
       Test.CategoryNames.socialAndEmotional:socialAndEmotional,
