@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JXR-iK-Laf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="OmnesSem.ttf">
@@ -51,9 +52,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXF-ik-clL">
-                                <rect key="frame" x="75" y="473" width="171" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXF-ik-clL">
+                                <rect key="frame" x="75" y="286" width="171" height="30"/>
                                 <color key="backgroundColor" red="0.01410602616" green="0.51467367559999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="xcV-Bw-Fm2"/>
+                                    <constraint firstAttribute="height" constant="30" id="zfr-Jw-MsD"/>
+                                </constraints>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -82,6 +87,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nXF-ik-clL" firstAttribute="top" secondItem="KF9-fb-PL4" secondAttribute="bottom" constant="266" id="JUN-YB-PXq"/>
+                            <constraint firstItem="nXF-ik-clL" firstAttribute="leading" secondItem="owo-Cg-VUI" secondAttribute="leadingMargin" constant="59" id="St3-OF-25N"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -91,6 +100,7 @@
                         <outlet property="feedbackText" destination="IAl-jc-DWX" id="eZf-8U-m6y"/>
                         <outlet property="ratingNumber" destination="RbB-6u-lEt" id="jf2-oH-Q9g"/>
                         <outlet property="ratingSlider" destination="m0I-eI-BFS" id="Ksh-Oa-NYs"/>
+                        <outlet property="topDistanceConstraint" destination="JUN-YB-PXq" id="GZj-i5-M6e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYu-43-NLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
