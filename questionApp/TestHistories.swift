@@ -60,6 +60,8 @@ class TestHistories : NSObject, NSCoding {
         let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first as! NSURL
         return url.URLByAppendingPathComponent(self.archiveFilename).path!
     }
+  
+  let
     
     override init() {
         super.init()
@@ -278,6 +280,44 @@ class TestHistories : NSObject, NSCoding {
         }
         return false
     }
+  
+  func successByCategory() -> [String:(Int, Int)] {
+    var sensoryAndMotor:(success:Int, everSuccess:Int) = (0,0)
+    var socialAndEmotional:(success:Int, everSuccess:Int) = (0,0)
+    var languageAndCognitive:(success:Int, everSuccess:Int) = (0,0)
+    
+    // aggregate the results by category
+    for testName in Test.TestNamesByCategory.sensoryAndMotor {
+      if self.succeeded(testName: testName) {
+        sensoryAndMotor.success += 1
+      }
+      if self.everSucceeded(testName: testName) {
+        sensoryAndMotor.success += 1
+      }
+    }
+    for testName in Test.TestNamesByCategory.socialAndEmotional {
+      if self.succeeded(testName: testName) {
+        socialAndEmotional.success += 1
+      }
+      if self.everSucceeded(testName: testName) {
+        socialAndEmotional.success += 1
+      }
+    }
+    for testName in Test.TestNamesByCategory.languageAndCognitive {
+      if self.succeeded(testName: testName) {
+        languageAndCognitive.success += 1
+      }
+      if self.everSucceeded(testName: testName) {
+        languageAndCognitive.success += 1
+      }
+    }
+    
+    return [
+      Test.CategoryNames.sensoryAndMotor:sensoryAndMotor,
+      Test.CategoryNames.socialAndEmotional:socialAndEmotional,
+      Test.CategoryNames.languageAndCognitive:languageAndCognitive,
+    ]
+  }
 
     /*
         @brief Get the number of tests that have been run for the specified testName.
