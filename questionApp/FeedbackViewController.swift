@@ -15,6 +15,7 @@ class FeedbackViewController: UIViewController {
   @IBOutlet weak var feedbackText: UITextView!
   @IBOutlet weak var submit: UIButton!
   @IBOutlet weak var cancel: UIButton!
+  @IBOutlet weak var topDistanceConstraint: NSLayoutConstraint!
   
   
   override func viewDidLoad() {
@@ -38,10 +39,12 @@ class FeedbackViewController: UIViewController {
       // if number is too low show the text field and cancel button
       feedbackText.hidden = false
       cancel.hidden = false
+      topDistanceConstraint.constant = 453
     } else {
       // else if the number is high, remove those fields
       feedbackText.hidden = true
       cancel.hidden = true
+      topDistanceConstraint.constant = 453 - 187
     }
     
   }
