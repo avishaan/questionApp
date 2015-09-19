@@ -37,9 +37,11 @@ class FeedbackViewController: UIViewController {
     if (currentValue < 8) {
       // if number is too low show the text field and cancel button
       feedbackText.hidden = false
+      cancel.hidden = false
     } else {
       // else if the number is high, remove those fields
       feedbackText.hidden = true
+      cancel.hidden = true
     }
     
   }
