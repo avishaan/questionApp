@@ -22,6 +22,7 @@ class FeedbackViewController: UIViewController {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
+    Tracker.createEvent(.FeedbackDialog, .Load, .NA)
   }
   
   override func didReceiveMemoryWarning() {
@@ -53,12 +54,16 @@ class FeedbackViewController: UIViewController {
     self.dismissViewControllerAnimated(false, completion: nil)
     // save into user defaults that we showed the feedback view controller
     NSUserDefaults.standardUserDefaults().setBool(true, forKey: kHasFeedbackDialogShown)
+    
+    // submit analytics data
+    mixpanel.track("Feedback Dialog Submitted", properties: ["rating": Int(ratingSlider!.value), "feedBackText": feedbackText.text, "submitted": true])
   }
   
   @IBAction func onCancelTap(sender: UIButton) {
     self.dismissViewControllerAnimated(false, completion: nil)
     // save into user defaults that we showed the feedback view controller
     NSUserDefaults.standardUserDefaults().setBool(true, forKey: kHasFeedbackDialogShown)
+    mixpanel.track("Feedback Dialog Cancelled", properties: ["rating": Int(ratingSlider!.value), "feedBackText": feedbackText.text, "submitted": false])
   }
   
 }
