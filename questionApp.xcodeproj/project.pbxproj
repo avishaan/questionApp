@@ -173,6 +173,7 @@
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
 		8278694B1B54141B0001F932 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; };
 		8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8283015D1BACE3CD00B015D7 /* BNTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8283015C1BACE3CD00B015D7 /* BNTextView.swift */; };
 		8296BFAC1B5B3E31007E842B /* IntroVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8296BFAB1B5B3E31007E842B /* IntroVideo.m4v */; };
 		829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54E91B26995800ABE77C /* AppDelegate.swift */; };
 		829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */; };
@@ -603,6 +604,7 @@
 		8270B3041B82A71900DFFB52 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		827869451B5413E60001F932 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "resources/libs/ios-charts/Charts/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		8283015C1BACE3CD00B015D7 /* BNTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNTextView.swift; sourceTree = "<group>"; };
 		8296BFAB1B5B3E31007E842B /* IntroVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideo.m4v; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1280,6 +1282,7 @@
 				82401C2C1B2843C8008202EA /* BNSectionLabel.swift */,
 				82DD954A1B5776600017D93C /* BNTestRangeChartView.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
+				8283015C1BACE3CD00B015D7 /* BNTextView.swift */,
 				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C2E1B285CF1008202EA /* UILabelTest.swift */,
@@ -1877,6 +1880,7 @@
 				8270B2C71B81DFF100DFFB52 /* MPNSNumberToCGFloatValueTransformer.m in Sources */,
 				20E356641B798234002F38C7 /* PlasticJarGoodOutcomeViewController.swift in Sources */,
 				20E3563D1B77DF3A002F38C7 /* SittingAndReachingTestOverviewViewController.swift in Sources */,
+				8283015D1BACE3CD00B015D7 /* BNTextView.swift in Sources */,
 				20E356661B798256002F38C7 /* PlasticJarBadOutcomeViewController.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
 				209965A71B6859D300B93C5D /* SocialSmilingWhatWillYouNeedViewControllerswift.swift in Sources */,

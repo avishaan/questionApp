@@ -12,9 +12,9 @@ class FeedbackViewController: UIViewController {
   
   @IBOutlet weak var ratingSlider: UISlider!
   @IBOutlet weak var ratingNumber: UILabel!
-  @IBOutlet weak var feedbackText: UITextView!
-  @IBOutlet weak var submit: UIButton!
-  @IBOutlet weak var cancel: UIButton!
+  @IBOutlet weak var feedbackText: BNTextView!
+  @IBOutlet weak var submit: UIButtonNext!
+  @IBOutlet weak var cancel: UIButtonNext!
   @IBOutlet weak var topDistanceConstraint: NSLayoutConstraint!
   
   
