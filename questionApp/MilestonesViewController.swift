@@ -78,11 +78,12 @@ class MilestonesViewController: UIViewController {
     let socialAndEmotional = statusByCategory?[Test.CategoryNames.socialAndEmotional]
     let languageAndCognitive = statusByCategory?[Test.CategoryNames.languageAndCognitive]
     
-    // update pie charts for each category
-    sensoryAndMotorPieChartView.config(["test","test","test","",""], values: [0.2,0.2,0.2,0.2,0.2])
-    languageAndCognitivePieChartView.config(["test","test",""], values: [0.33,0.33,0.33])
-    socialAndEmotionalPieChartView.config(["test","test","test",""], values: [0.25,0.25,0.25,0.25])
-    applyTextAttributesToLabels()
+    // update the labels which show the tests completed so far
+    sensoryMotorTestLabel.text = "\(sensoryAndMotor!.success) tests"
+    languageCognitiveTestLabel.text = "\(languageAndCognitive!.success) tests"
+    socialEmotionalTestLabel.text = "\(socialAndEmotional!.success) tests"
+    
+//    applyTextAttributesToLabels()
     
     // adjust corner radius
     sensoryMotorBackground.clipsToBounds = true
