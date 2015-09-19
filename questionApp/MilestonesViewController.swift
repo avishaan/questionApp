@@ -78,7 +78,12 @@ class MilestonesViewController: UIViewController {
     let socialAndEmotional = statusByCategory?[Test.CategoryNames.socialAndEmotional]
     let languageAndCognitive = statusByCategory?[Test.CategoryNames.languageAndCognitive]
     
-    applyTextAttributesToLabels()
+    // update the labels which show the tests completed so far
+    sensoryMotorTestLabel.text = "\(sensoryAndMotor!.success) tests"
+    languageCognitiveTestLabel.text = "\(languageAndCognitive!.success) tests"
+    socialEmotionalTestLabel.text = "\(socialAndEmotional!.success) tests"
+    
+//    applyTextAttributesToLabels()
     
     // adjust corner radius
     sensoryMotorBackground.clipsToBounds = true
