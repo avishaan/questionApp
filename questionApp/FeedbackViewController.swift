@@ -14,6 +14,7 @@ class FeedbackViewController: UIViewController {
     @IBOutlet weak var ratingNumber: UILabel!
     @IBOutlet weak var feedbackText: UITextView!
     @IBOutlet weak var submit: UIButton!
+  @IBOutlet weak var cancel: UIButton!
     
     
     override func viewDidLoad() {
@@ -31,6 +32,16 @@ class FeedbackViewController: UIViewController {
       // convert to int
       var currentValue = Int(ratingSlider!.value)
         ratingNumber.text = "\(currentValue)"
+      
+      // check the current slider value
+      if (currentValue < 8) {
+        // if number is too low show the text field and cancel button
+        feedbackText.hidden = false
+      } else {
+        // else if the number is high, remove those fields
+        feedbackText.hidden = true
+      }
+      
     }
   
   @IBAction func onSubmitTap(sender: UIButton) {
@@ -40,5 +51,8 @@ class FeedbackViewController: UIViewController {
     NSUserDefaults.standardUserDefaults().setBool(true, forKey: kHasFeedbackDialogShown)
   }
  
+  @IBAction func onCancelTap(sender: UIButton) {
+    
+  }
     
 }
