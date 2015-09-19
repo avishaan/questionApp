@@ -42,7 +42,41 @@ class Test: NSObject, NSCoding {
         static var bookPresentation: String = "book presentation"
         // TODO: add additional var as new tests are added to the app
     }
-    
+  
+  // Test names in their respective category
+  struct CategoryNames {
+    static var sensoryAndMotor = "sensoryMotor"
+    static var socialAndEmotional = "socialAndEmotional"
+    static var languageAndCognitive = "languageAndCognitive"
+  }
+  
+  struct TestNamesByCategory {
+    static var sensoryAndMotor = [
+      TestNames.sittingAndReaching,
+      TestNames.unassistedSitting,
+      TestNames.pincer,
+      TestNames.selfRecognition,
+      TestNames.symmetry,
+      TestNames.hearing,
+      TestNames.crossingEyes,
+      TestNames.pupilResponse,
+      TestNames.letsCrawl
+    ]
+    static var socialAndEmotional = [
+      TestNames.facialMimic,
+      TestNames.socialSmiling,
+      TestNames.pointFollowing
+    ]
+    static var languageAndCognitive = [
+      TestNames.bookPresentation,
+      TestNames.plasticJar,
+      TestNames.completelyCoveredToy,
+      TestNames.partiallyCoveredToy,
+      TestNames.attentionAtDistance,
+      TestNames.fallingToy
+    ]
+  }
+  
     // Test names displayed to user in GUI.
     struct TestNamesPresentable {
         static var pupilResponse = "pupil response"
