@@ -38,6 +38,7 @@ struct Tracker {
     case SensoryMotorMilestone = "Sensory Motor Milestone"
     case SocialEmotionalMilestone = "Social Emotional Milestone"
     case LanguageCognitiveMilestone = "Language Cognitive Milestone"
+    case FeedbackDialog = "Feedback Dialog"
   }
   
   /**
@@ -52,6 +53,7 @@ struct Tracker {
     case Setup = "Setup"
     case Tapped = "Tapped"
     case Changed = "Changed"
+    case Submit = "Submit"
   }
   
   /**
