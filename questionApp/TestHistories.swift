@@ -61,8 +61,6 @@ class TestHistories : NSObject, NSCoding {
         return url.URLByAppendingPathComponent(self.archiveFilename).path!
     }
   
-  let
-    
     override init() {
         super.init()
         initHistories()
