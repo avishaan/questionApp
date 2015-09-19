@@ -13,13 +13,13 @@ class MilestonesViewController: UIViewController {
   @IBOutlet weak var babyImageView: UIImageView!
   @IBOutlet weak var ageLabel: UILabel!
   @IBOutlet weak var babyNameLabel: UILabel!
-  @IBOutlet weak var sensoryAndMotorPieChartView: BNMilestonePieChartView!
-  @IBOutlet weak var languageAndCognitivePieChartView: BNMilestonePieChartView!
-  @IBOutlet weak var socialAndEmotionalPieChartView: BNMilestonePieChartView!
   @IBOutlet weak var sensoryAndMotorLabel: UILabel!
   var parent = Parent()
   @IBOutlet weak var languageAndCognitiveLabel: UILabel!
   @IBOutlet weak var socialAndEmotionalLabel: UILabel!
+  @IBOutlet weak var sensoryMotorTestLabel: UILabel!
+  @IBOutlet weak var languageCognitiveTestLabel: UILabel!
+  @IBOutlet weak var socialEmotionalTestLabel: UILabel!
 	
   
   @IBOutlet weak var sensoryMotorBackground: UIButton!
@@ -78,10 +78,6 @@ class MilestonesViewController: UIViewController {
     let socialAndEmotional = statusByCategory?[Test.CategoryNames.socialAndEmotional]
     let languageAndCognitive = statusByCategory?[Test.CategoryNames.languageAndCognitive]
     
-    // update pie charts for each category
-    sensoryAndMotorPieChartView.config(["test","test","test","",""], values: [0.2,0.2,0.2,0.2,0.2])
-    languageAndCognitivePieChartView.config(["test","test",""], values: [0.33,0.33,0.33])
-    socialAndEmotionalPieChartView.config(["test","test","test",""], values: [0.25,0.25,0.25,0.25])
     applyTextAttributesToLabels()
     
     // adjust corner radius
