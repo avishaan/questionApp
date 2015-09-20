@@ -86,6 +86,28 @@
 		824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */; };
 		824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */; };
 		824565251B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565241B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift */; };
+		826A90351BAE385900230667 /* attention at distance.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A901F1BAE385900230667 /* attention at distance.mp4 */; };
+		826A90361BAE385900230667 /* covered toy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90201BAE385900230667 /* covered toy.mp4 */; };
+		826A90371BAE385900230667 /* crossing eyes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90211BAE385900230667 /* crossing eyes.mp4 */; };
+		826A90381BAE385900230667 /* emotional attachment.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90221BAE385900230667 /* emotional attachment.mp4 */; };
+		826A90391BAE385900230667 /* emotional security.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90231BAE385900230667 /* emotional security.mp4 */; };
+		826A903A1BAE385900230667 /* facial mimicry.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90241BAE385900230667 /* facial mimicry.mp4 */; };
+		826A903B1BAE385900230667 /* falling toy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90251BAE385900230667 /* falling toy.mp4 */; };
+		826A903C1BAE385900230667 /* hearing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90261BAE385900230667 /* hearing.mp4 */; };
+		826A903D1BAE385900230667 /* joint attention.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90271BAE385900230667 /* joint attention.mp4 */; };
+		826A903E1BAE385900230667 /* let's crawl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90281BAE385900230667 /* let's crawl.mp4 */; };
+		826A903F1BAE385900230667 /* maintaining symmetry.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90291BAE385900230667 /* maintaining symmetry.mp4 */; };
+		826A90401BAE385900230667 /* partially covered toy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A902A1BAE385900230667 /* partially covered toy.mp4 */; };
+		826A90411BAE385900230667 /* pincer grasp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A902B1BAE385900230667 /* pincer grasp.mp4 */; };
+		826A90421BAE385900230667 /* point follow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A902C1BAE385900230667 /* point follow.mp4 */; };
+		826A90431BAE385900230667 /* pupil response.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A902D1BAE385900230667 /* pupil response.mp4 */; };
+		826A90441BAE385900230667 /* receptive language.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A902E1BAE385900230667 /* receptive language.mp4 */; };
+		826A90451BAE385900230667 /* rolling back to front.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A902F1BAE385900230667 /* rolling back to front.mp4 */; };
+		826A90461BAE385900230667 /* self recognition.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90301BAE385900230667 /* self recognition.mp4 */; };
+		826A90471BAE385900230667 /* sitting unassisted.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90311BAE385900230667 /* sitting unassisted.mp4 */; };
+		826A90481BAE385900230667 /* sitting while reaching.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90321BAE385900230667 /* sitting while reaching.mp4 */; };
+		826A90491BAE385900230667 /* social smiling.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90331BAE385900230667 /* social smiling.mp4 */; };
+		826A904A1BAE385900230667 /* visual tracking.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90341BAE385900230667 /* visual tracking.mp4 */; };
 		826DDAD91B94D28C0098508B /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826DDAD81B94D28C0098508B /* FeedbackViewController.swift */; };
 		826DDADC1B94D35A0098508B /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826DDADA1B94D35A0098508B /* Feedback.storyboard */; };
 		8270B2281B81DEE900DFFB52 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270B2271B81DEE900DFFB52 /* Config.swift */; };
@@ -452,6 +474,28 @@
 		824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = PupilResponseWhatDidYouSeeViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
 		824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseGoodOutcomeViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		824565241B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = PupilResponseBadOutcomeViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		826A901F1BAE385900230667 /* attention at distance.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "attention at distance.mp4"; sourceTree = "<group>"; };
+		826A90201BAE385900230667 /* covered toy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "covered toy.mp4"; sourceTree = "<group>"; };
+		826A90211BAE385900230667 /* crossing eyes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crossing eyes.mp4"; sourceTree = "<group>"; };
+		826A90221BAE385900230667 /* emotional attachment.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emotional attachment.mp4"; sourceTree = "<group>"; };
+		826A90231BAE385900230667 /* emotional security.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emotional security.mp4"; sourceTree = "<group>"; };
+		826A90241BAE385900230667 /* facial mimicry.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "facial mimicry.mp4"; sourceTree = "<group>"; };
+		826A90251BAE385900230667 /* falling toy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "falling toy.mp4"; sourceTree = "<group>"; };
+		826A90261BAE385900230667 /* hearing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hearing.mp4; sourceTree = "<group>"; };
+		826A90271BAE385900230667 /* joint attention.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joint attention.mp4"; sourceTree = "<group>"; };
+		826A90281BAE385900230667 /* let's crawl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "let's crawl.mp4"; sourceTree = "<group>"; };
+		826A90291BAE385900230667 /* maintaining symmetry.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "maintaining symmetry.mp4"; sourceTree = "<group>"; };
+		826A902A1BAE385900230667 /* partially covered toy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "partially covered toy.mp4"; sourceTree = "<group>"; };
+		826A902B1BAE385900230667 /* pincer grasp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pincer grasp.mp4"; sourceTree = "<group>"; };
+		826A902C1BAE385900230667 /* point follow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "point follow.mp4"; sourceTree = "<group>"; };
+		826A902D1BAE385900230667 /* pupil response.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pupil response.mp4"; sourceTree = "<group>"; };
+		826A902E1BAE385900230667 /* receptive language.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "receptive language.mp4"; sourceTree = "<group>"; };
+		826A902F1BAE385900230667 /* rolling back to front.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rolling back to front.mp4"; sourceTree = "<group>"; };
+		826A90301BAE385900230667 /* self recognition.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "self recognition.mp4"; sourceTree = "<group>"; };
+		826A90311BAE385900230667 /* sitting unassisted.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sitting unassisted.mp4"; sourceTree = "<group>"; };
+		826A90321BAE385900230667 /* sitting while reaching.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sitting while reaching.mp4"; sourceTree = "<group>"; };
+		826A90331BAE385900230667 /* social smiling.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "social smiling.mp4"; sourceTree = "<group>"; };
+		826A90341BAE385900230667 /* visual tracking.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "visual tracking.mp4"; sourceTree = "<group>"; };
 		826DDAD81B94D28C0098508B /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		826DDADB1B94D35A0098508B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feedback.storyboard; sourceTree = "<group>"; };
 		8270B2271B81DEE900DFFB52 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -1146,6 +1190,28 @@
 		829F550E1B26BAF600ABE77C /* videos */ = {
 			isa = PBXGroup;
 			children = (
+				826A901F1BAE385900230667 /* attention at distance.mp4 */,
+				826A90201BAE385900230667 /* covered toy.mp4 */,
+				826A90211BAE385900230667 /* crossing eyes.mp4 */,
+				826A90221BAE385900230667 /* emotional attachment.mp4 */,
+				826A90231BAE385900230667 /* emotional security.mp4 */,
+				826A90241BAE385900230667 /* facial mimicry.mp4 */,
+				826A90251BAE385900230667 /* falling toy.mp4 */,
+				826A90261BAE385900230667 /* hearing.mp4 */,
+				826A90271BAE385900230667 /* joint attention.mp4 */,
+				826A90281BAE385900230667 /* let's crawl.mp4 */,
+				826A90291BAE385900230667 /* maintaining symmetry.mp4 */,
+				826A902A1BAE385900230667 /* partially covered toy.mp4 */,
+				826A902B1BAE385900230667 /* pincer grasp.mp4 */,
+				826A902C1BAE385900230667 /* point follow.mp4 */,
+				826A902D1BAE385900230667 /* pupil response.mp4 */,
+				826A902E1BAE385900230667 /* receptive language.mp4 */,
+				826A902F1BAE385900230667 /* rolling back to front.mp4 */,
+				826A90301BAE385900230667 /* self recognition.mp4 */,
+				826A90311BAE385900230667 /* sitting unassisted.mp4 */,
+				826A90321BAE385900230667 /* sitting while reaching.mp4 */,
+				826A90331BAE385900230667 /* social smiling.mp4 */,
+				826A90341BAE385900230667 /* visual tracking.mp4 */,
 			);
 			name = videos;
 			sourceTree = "<group>";
@@ -1558,24 +1624,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826A903C1BAE385900230667 /* hearing.mp4 in Resources */,
+				826A90471BAE385900230667 /* sitting unassisted.mp4 in Resources */,
+				826A90351BAE385900230667 /* attention at distance.mp4 in Resources */,
 				209965861B63101C00B93C5D /* SelfRecognition.storyboard in Resources */,
 				A5384A6C1B800AB100FAF159 /* BookPresentation.storyboard in Resources */,
+				826A90481BAE385900230667 /* sitting while reaching.mp4 in Resources */,
+				826A903A1BAE385900230667 /* facial mimicry.mp4 in Resources */,
 				20E356391B77DE5B002F38C7 /* SittingAndReaching.storyboard in Resources */,
 				8270B2D11B81DFF100DFFB52 /* MPSurvey.storyboard in Resources */,
+				826A90431BAE385900230667 /* pupil response.mp4 in Resources */,
 				9EABF2921B4D8A35002FDA2C /* Swift.gitignore in Resources */,
 				82E5746D1B707538006FA7B1 /* Pincer.storyboard in Resources */,
+				826A903B1BAE385900230667 /* falling toy.mp4 in Resources */,
+				826A903D1BAE385900230667 /* joint attention.mp4 in Resources */,
 				9EC4240D1B5469C30037C0E9 /* PointFollowing.storyboard in Resources */,
+				826A90381BAE385900230667 /* emotional attachment.mp4 in Resources */,
 				209965A11B68597600B93C5D /* SocialSmiling.storyboard in Resources */,
+				826A90401BAE385900230667 /* partially covered toy.mp4 in Resources */,
+				826A90461BAE385900230667 /* self recognition.mp4 in Resources */,
 				82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */,
+				826A90421BAE385900230667 /* point follow.mp4 in Resources */,
+				826A90361BAE385900230667 /* covered toy.mp4 in Resources */,
 				829F54F21B26995800ABE77C /* Main.storyboard in Resources */,
 				8270B2C41B81DFF100DFFB52 /* MPNotification.storyboard in Resources */,
+				826A90411BAE385900230667 /* pincer grasp.mp4 in Resources */,
 				9E934A561B6BBD4B0043F365 /* PartiallyCoveredToy.storyboard in Resources */,
+				826A90371BAE385900230667 /* crossing eyes.mp4 in Resources */,
+				826A90441BAE385900230667 /* receptive language.mp4 in Resources */,
+				826A903F1BAE385900230667 /* maintaining symmetry.mp4 in Resources */,
+				826A904A1BAE385900230667 /* visual tracking.mp4 in Resources */,
+				826A90391BAE385900230667 /* emotional security.mp4 in Resources */,
 				82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */,
+				826A903E1BAE385900230667 /* let's crawl.mp4 in Resources */,
 				20DA0E701B72E70D00B17C28 /* UnassistedSitting.storyboard in Resources */,
 				8270B2A61B81DFF100DFFB52 /* Media.xcassets in Resources */,
 				8270B2E51B81DFF100DFFB52 /* test_variant.json in Resources */,
 				9E923CB81B69513E00F2B0A7 /* FacialMimic.storyboard in Resources */,
 				9ED51BB71B580A1F0000C5E6 /* Symmetry.storyboard in Resources */,
+				826A90491BAE385900230667 /* social smiling.mp4 in Resources */,
 				9EE7EB3D1B56A88A00C73CA3 /* Hearing.storyboard in Resources */,
 				205787071B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard in Resources */,
 				8270B2E41B81DFF100DFFB52 /* snapshot_config.json in Resources */,
@@ -1585,6 +1672,7 @@
 				9EE7EB491B56DA2900C73CA3 /* AttentionAtDistance.storyboard in Resources */,
 				82401C271B283590008202EA /* OmnesMed.ttf in Resources */,
 				9EE7EB101B55A1CB00C73CA3 /* CrossingEyes.storyboard in Resources */,
+				826A90451BAE385900230667 /* rolling back to front.mp4 in Resources */,
 				82401C231B28219A008202EA /* OmnesSem.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
