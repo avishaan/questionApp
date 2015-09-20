@@ -73,7 +73,7 @@ class Parent {
 	@param (in) childsName - name of the baby (Cannot be nil.)
 	@param (in) babyBirthdate - birth date of the child (Cannot be nil.)
 	*/
-	convenience init(parentsFullName: String, parentsEmail: String, childsName: String, babyBirthdate: NSDate) {
+	convenience init(parentsFullName: String, parentsEmail: String, childsName: String, babyBirthdate: NSDate, childsGender: String) {
 		
 		// initialize instance from persistent stores
 		self.init()
@@ -83,6 +83,7 @@ class Parent {
 		email = parentsEmail
 		babyName = childsName
 		babyBirthday = babyBirthdate
+		babyGender = childsGender
 		
 		// Create a new test profile for the current baby if one does not already exist.
 		addProfile(babyName)
