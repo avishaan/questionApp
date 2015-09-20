@@ -41,7 +41,7 @@ class HearingTestOverviewViewController: UIViewController {
         if segue.identifier == "hearingEmbeddedVideoSegue" {
             // set the playerVC as the destination
             playerVC = segue.destinationViewController as! AVPlayerViewController
-            let path = NSBundle.mainBundle().pathForResource("Hearing", ofType: "mp4")
+            let path = NSBundle.mainBundle().pathForResource("hearing", ofType: "mp4")
             let url = NSURL.fileURLWithPath(path!)
             // let url = NSURL(string: "crawl.mp4") // for remote locations
             
