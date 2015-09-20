@@ -42,7 +42,7 @@ class PartiallyCoveredToyTestOverviewViewController: UIViewController {
         if segue.identifier == "pointFollowingEmbeddedVideoSegue" {
             // set the playerVC as the destination
             playerVC = segue.destinationViewController as! AVPlayerViewController
-            let path = NSBundle.mainBundle().pathForResource("PointFollowing", ofType: "mp4")
+            let path = NSBundle.mainBundle().pathForResource("partially covered toy", ofType: "mp4")
             let url = NSURL.fileURLWithPath(path!)
             // let url = NSURL(string: "crawl.mp4") // for remote locations
             
