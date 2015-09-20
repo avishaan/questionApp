@@ -44,13 +44,14 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
 	
   @IBAction func onSaveProfileButtonTap(sender: AnyObject) {
     // Init a Parent object with data entered by the user
-    let person:Parent = Parent(parentsFullName: nameField.text, parentsEmail: emailField.text, childsName: babyNameField.text, babyBirthdate: babyBirthdayDate.date)
+    let childGender = (genderControl.selectedSegmentIndex == 0) ? "Boy" : "Girl"
+    let person:Parent = Parent(parentsFullName: nameField.text, parentsEmail: emailField.text, childsName: babyNameField.text, babyBirthdate: babyBirthdayDate.date, childsGender: childGender)
     
     // persist the Parent instance.
     person.storeInfo()
     
     // save user information to analytics platform
-    Tracker.registerUser(parentName: nameField.text, parentEmail: emailField.text, babyName:babyNameField.text, babyDOB: babyBirthdayDate.date)
+    Tracker.registerUser(parentName: nameField.text, parentEmail: emailField.text, babyName:babyNameField.text, babyDOB: babyBirthdayDate.date, babyGender: childGender)
   }
 	
 	@IBAction func onDatePickerTap(sender: AnyObject) {
