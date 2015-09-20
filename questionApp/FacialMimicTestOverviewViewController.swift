@@ -41,7 +41,7 @@ class FacialMimicTestOverviewViewController: UIViewController {
         if segue.identifier == "FacialMimicEmbeddedVideoSegue" {
             // set the playerVC as the destination
             playerVC = segue.destinationViewController as! AVPlayerViewController
-            let path = NSBundle.mainBundle().pathForResource("FacialMimic", ofType: "mp4")
+            let path = NSBundle.mainBundle().pathForResource("facial mimicry", ofType: "mp4")
             let url = NSURL.fileURLWithPath(path!)
             // let url = NSURL(string: "crawl.mp4") // for remote locations
             
