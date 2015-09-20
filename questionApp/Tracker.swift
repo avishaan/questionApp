@@ -84,7 +84,7 @@ struct Tracker {
     mixpanel.track(sentence, properties: ["name": event.name, "action": event.action, "progress": event.progress])
   }
   
-  static func registerUser(#parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate, babyGender:String) {
+  static func registerUser(#parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate, babyGender: String) {
     var dateFormatter = NSDateFormatter()
     dateFormatter.dateStyle = .ShortStyle
     
@@ -93,7 +93,7 @@ struct Tracker {
       "parentEmail": parentEmail,
       "babyName": babyName,
       "babyDOB": dateFormatter.stringFromDate(babyDOB),
-      "gender": babyGender
+      "babyGender": babyGender
       ]);
   }
 }
