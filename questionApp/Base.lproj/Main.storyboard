@@ -299,23 +299,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S2E-Sh-ToX">
-                                <rect key="frame" x="219" y="181" width="77" height="29"/>
-                                <color key="backgroundColor" white="1" alpha="0.82999999999999996" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="k2O-cX-UhP"/>
-                                    <constraint firstAttribute="height" constant="28" id="sVi-ra-hII"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Boy"/>
-                                    <segment title=""/>
-                                    <segment title="Girl"/>
-                                </segments>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="onGenderTap:" destination="FYu-vj-N2f" eventType="valueChanged" id="wwg-PS-M8J"/>
-                                </connections>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="profile setup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFg-PT-Vor" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="53" y="20" width="215" height="38"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="29"/>
@@ -353,6 +336,22 @@
                                     <action selector="onDatePickerTap:" destination="FYu-vj-N2f" eventType="valueChanged" id="UNy-AO-uoE"/>
                                 </connections>
                             </datePicker>
+                            <segmentedControl opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="S2E-Sh-ToX">
+                                <rect key="frame" x="219" y="182" width="77" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="0.82999999999999996" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="k2O-cX-UhP"/>
+                                    <constraint firstAttribute="height" constant="28" id="sVi-ra-hII"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Boy"/>
+                                    <segment title="Girl"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onGenderTap:" destination="FYu-vj-N2f" eventType="valueChanged" id="wwg-PS-M8J"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1590,24 +1589,24 @@
                                 <exclude reference="7Ar-cs-oMa"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="RG4-1M-EEZ"/>
                                 <exclude reference="eBk-yG-S7M"/>
                                 <exclude reference="fYs-oS-FVK"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="MCR-t7-754"/>
                                 <exclude reference="awn-tL-Qp9"/>
+                                <exclude reference="c2O-SK-gJH"/>
                                 <exclude reference="NE8-A8-tgl"/>
                                 <exclude reference="bcD-sV-Tic"/>
                                 <exclude reference="k1X-zd-Jaj"/>
-                                <exclude reference="gk4-kz-dJr"/>
-                                <exclude reference="Ajp-ZA-jia"/>
-                                <exclude reference="RG4-1M-EEZ"/>
-                                <exclude reference="MC3-Nf-UgW"/>
-                                <exclude reference="c2O-SK-gJH"/>
                                 <exclude reference="AdR-pR-2gj"/>
                                 <exclude reference="JUi-il-BJq"/>
                                 <exclude reference="azq-Ud-hJh"/>
                                 <exclude reference="9nw-dl-Jd9"/>
                                 <exclude reference="Dbd-t5-zAR"/>
                                 <exclude reference="LOr-Q6-k7N"/>
+                                <exclude reference="gk4-kz-dJr"/>
+                                <exclude reference="Ajp-ZA-jia"/>
                                 <exclude reference="Nb2-r9-fR0"/>
                             </mask>
                         </variation>
@@ -1616,24 +1615,24 @@
                                 <include reference="7Ar-cs-oMa"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="RG4-1M-EEZ"/>
                                 <include reference="eBk-yG-S7M"/>
                                 <include reference="fYs-oS-FVK"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="MCR-t7-754"/>
                                 <include reference="awn-tL-Qp9"/>
+                                <include reference="c2O-SK-gJH"/>
                                 <include reference="NE8-A8-tgl"/>
                                 <include reference="bcD-sV-Tic"/>
                                 <include reference="k1X-zd-Jaj"/>
-                                <include reference="gk4-kz-dJr"/>
-                                <include reference="Ajp-ZA-jia"/>
-                                <include reference="RG4-1M-EEZ"/>
-                                <exclude reference="MC3-Nf-UgW"/>
-                                <include reference="c2O-SK-gJH"/>
                                 <include reference="AdR-pR-2gj"/>
                                 <include reference="JUi-il-BJq"/>
                                 <include reference="azq-Ud-hJh"/>
                                 <include reference="9nw-dl-Jd9"/>
                                 <include reference="Dbd-t5-zAR"/>
                                 <include reference="LOr-Q6-k7N"/>
+                                <include reference="gk4-kz-dJr"/>
+                                <include reference="Ajp-ZA-jia"/>
                                 <include reference="Nb2-r9-fR0"/>
                             </mask>
                         </variation>
