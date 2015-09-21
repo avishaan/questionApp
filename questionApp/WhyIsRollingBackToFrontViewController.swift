@@ -15,7 +15,7 @@ class WhyIsRollingBackToFrontViewController: UIViewController{
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.SittingReaching, .Load, .Why)
+    Tracker.createEvent(.RollingBackToFront, .Load, .Why)
     applyTextAttributesToLabel()
   }
   
@@ -31,15 +31,15 @@ class WhyIsRollingBackToFrontViewController: UIViewController{
   // Helper function formats text attributes for multiple substrings in label.
   func applyTextAttributesToLabel() {
     
-    let string = "Rolling is indication of gross motor development. If there's developmental dealys, therapy early on can help baby get back on track."
+    let string = "Rolling is indication of gross motor development. If there's developmental delays, therapy early on can help baby get back on track."
     
     var attributedString = NSMutableAttributedString(string: string)
     
     let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
-    attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 25))
-    attributedString.addAttributes(boldAttributes, range: NSMakeRange(26, 35))
+    attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 60))
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(61, 20))
 //    attributedString.addAttributes(standardAttributes, range: NSMakeRange(71, 75))
     
     descriptionLabel.attributedText = attributedString
