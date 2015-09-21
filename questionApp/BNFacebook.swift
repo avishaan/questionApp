@@ -13,7 +13,7 @@ class BNFacebook {
     
     static private let facebookKeys: String = "facebookKeys"
   // key name to track if user has shared to facebook
-  static private let hasSharedFacebook= "hasSharedFacebookKey"
+  static private let hasSharedFacebook = "hasSharedFacebookKey"
     
     static private func sha256(value : String) -> String {
         let data = value.dataUsingEncoding(NSUTF8StringEncoding)!
@@ -47,6 +47,14 @@ class BNFacebook {
   static private func userSharedTest() {
     NSUserDefaults.standardUserDefaults().setBool(true, forKey: hasSharedFacebook)
     NSUserDefaults.standardUserDefaults().synchronize()
+  }
+  
+  // see if user has shared any test
+  static private func hasUserSharedTest() -> Bool {
+    if let hasShared:Bool = NSUserDefaults.standardUserDefaults().boolForKey(hasSharedFacebook) {
+      return hasShared
+    }
+    return false
   }
     
     /*
@@ -95,6 +103,7 @@ class BNFacebook {
             composeController.completionHandler = { result in
               if (result == SLComposeViewControllerResult.Done) {
                 self.userSharedTestWithName(testName)
+                self.userSharedTest()
               }
             }
             
