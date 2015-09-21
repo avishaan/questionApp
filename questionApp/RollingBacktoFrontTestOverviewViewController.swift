@@ -19,7 +19,7 @@ class RollingBacktoFrontTestOverviewViewController: UIViewController {
     super.viewDidLoad()
     
     // analytics
-    Tracker.createEvent(.SittingReaching, .Load, .Overview)
+    Tracker.createEvent(.RollingBackToFront, .Load, .Overview)
     // Do any additional setup after loading the view.
   }
   

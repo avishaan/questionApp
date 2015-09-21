@@ -364,6 +364,7 @@
 		C029B71E1BAF857900849179 /* RollingBacktoFrontTestGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C029B71D1BAF857900849179 /* RollingBacktoFrontTestGoodOutcomeViewController.swift */; };
 		C029B7201BAF858A00849179 /* RollingBacktoFrontTestBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C029B71F1BAF858A00849179 /* RollingBacktoFrontTestBadOutcomeViewController.swift */; };
 		C029B7221BAF859C00849179 /* RollingBacktoFrontTestMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C029B7211BAF859C00849179 /* RollingBacktoFrontTestMoreInfoViewController.swift */; };
+		C07233A11BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07233A01BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -820,6 +821,7 @@
 		C029B71D1BAF857900849179 /* RollingBacktoFrontTestGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollingBacktoFrontTestGoodOutcomeViewController.swift; sourceTree = "<group>"; };
 		C029B71F1BAF858A00849179 /* RollingBacktoFrontTestBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollingBacktoFrontTestBadOutcomeViewController.swift; sourceTree = "<group>"; };
 		C029B7211BAF859C00849179 /* RollingBacktoFrontTestMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollingBacktoFrontTestMoreInfoViewController.swift; sourceTree = "<group>"; };
+		C07233A01BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollingBackToFrontActivityReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1559,6 +1561,7 @@
 				C029B71D1BAF857900849179 /* RollingBacktoFrontTestGoodOutcomeViewController.swift */,
 				C029B71F1BAF858A00849179 /* RollingBacktoFrontTestBadOutcomeViewController.swift */,
 				C029B7211BAF859C00849179 /* RollingBacktoFrontTestMoreInfoViewController.swift */,
+				C07233A01BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift */,
 			);
 			name = RollingBackToFront;
 			sourceTree = "<group>";
@@ -1765,6 +1768,7 @@
 				9EE7EB531B56DE1900C73CA3 /* AttentionAtDistanceTimeToTestViewController.swift in Sources */,
 				8270B2DA1B81DFF100DFFB52 /* MPUIColorToNSStringValueTransformer.m in Sources */,
 				8270B2AB1B81DFF100DFFB52 /* MPABTestDesignerClearRequestMessage.m in Sources */,
+				C07233A11BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift in Sources */,
 				9E934A661B6BBD790043F365 /* PartiallyCoveredToyTimeToTestViewController.swift in Sources */,
 				20E356681B7982A2002F38C7 /* PlasticJarMoreInfoViewController.swift in Sources */,
 				8270B2CD1B81DFF100DFFB52 /* MPPassThroughValueTransformer.m in Sources */,

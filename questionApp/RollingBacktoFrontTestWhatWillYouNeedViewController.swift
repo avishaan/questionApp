@@ -16,7 +16,7 @@ class RollingBacktoFrontTestWhatWillYouNeedViewController: UIViewController {
     super.viewDidLoad()
     
     // analytics
-    Tracker.createEvent(.SittingReaching, .Load, .WhatIsNeeded)
+    Tracker.createEvent(.RollingBackToFront, .Load, .WhatIsNeeded)
     applyTextAttributesToLabel()
   }
   
@@ -41,7 +41,7 @@ class RollingBacktoFrontTestWhatWillYouNeedViewController: UIViewController {
   // Helper function formats text attributes for multiple substrings in label.
   func applyTextAttributesToLabel() {
     
-    let string = "You’ll need a small toy and a firm surface baby can sit on comfortably. Make sure it’s soft enough in case baby topples over!"
+    let string = "All you’ll need is a firm surface on which baby can comfortably lie."
     
     var attributedString = NSMutableAttributedString(string: string)
     
@@ -49,9 +49,7 @@ class RollingBacktoFrontTestWhatWillYouNeedViewController: UIViewController {
     let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
-    attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 13))
-    attributedString.addAttributes(firstAttributes, range: NSMakeRange(13, 29))
-    attributedString.addAttributes(secondAttributes, range: NSMakeRange(42, 83))
+    attributedString.addAttributes(firstAttributes, range: NSMakeRange(20, 14))
     
     testPreparationLabel.attributedText = attributedString
   }

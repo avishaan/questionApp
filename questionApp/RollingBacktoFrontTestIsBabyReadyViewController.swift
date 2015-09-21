@@ -18,7 +18,7 @@ class RollingBacktoFrontTestIsBabyReadyViewController: UIViewController {
     super.viewDidLoad()
     
     // analytics
-    Tracker.createEvent(.SittingReaching, .Load, .IsReady)
+    Tracker.createEvent(.RollingBackToFront, .Load, .IsReady)
     
     applyTextAttributesToLabel()
   }
@@ -34,12 +34,12 @@ class RollingBacktoFrontTestIsBabyReadyViewController: UIViewController {
   }
   
   @IBAction func onNextStepButtonTap(sender: AnyObject) {
-    performSegueWithIdentifier("rollingBackto FrontIsBabyReadyToTimeToTestSegueID", sender: self)
+    performSegueWithIdentifier("rollingBacktoFrontIsBabyReadyToTimeToTestSegueID", sender: self)
   }
   
   @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
     NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-    performSegueWithIdentifier("rollingBackto FrontIsBabyReadyToTimeToTestSegueID", sender: self)
+    performSegueWithIdentifier("rollingBacktoFrontIsBabyReadyToTimeToTestSegueID", sender: self)
   }
   
   // Helper function formats text attributes for substrings in labels.

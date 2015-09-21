@@ -14,6 +14,7 @@ class RollingBacktoFrontTestBadOutcomeViewController: UIViewController {
   var test : Test?
   var parent = Parent()
   
+  @IBOutlet weak var boldInfoLabel: UILabel!
   @IBOutlet weak var infoLabel: UILabel!
   @IBOutlet weak var questionLabel: UILabel!
   @IBOutlet weak var rangeChartView: BNTestRangeChartView!
@@ -23,7 +24,7 @@ class RollingBacktoFrontTestBadOutcomeViewController: UIViewController {
     super.viewDidLoad()
     
     // analytics
-    Tracker.createEvent(.SittingReaching, .Load, .Bad)
+    Tracker.createEvent(.RollingBackToFront, .Load, .Bad)
     
     // Initialize text in the view based on the test history.
     initializeViewFromTestHistory()
@@ -31,7 +32,7 @@ class RollingBacktoFrontTestBadOutcomeViewController: UIViewController {
     // Schedule a local notification to remind the user to rerun this test.
     scheduleReminder()
     
-    rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 10, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+    rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 9, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
     
     // font can't be set directly in storyboard for attributed string, set the label font here
     // make label's set attr string to a mutable so we can add attributes on
@@ -92,31 +93,33 @@ class RollingBacktoFrontTestBadOutcomeViewController: UIViewController {
     }
     
     if failed <= 1 {
+      
+      // update questionLabel
+      questionLabel.text = "No corkscrew motion?"
       // update infoLabel
-      let string = "Not to worry. All babies develop at different rates. Try again in two weeks."
-      applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
+      infoLabel.text = "Not to worry. Not all babies develop at the same rate."
     } else if failed == 2 {
       // update questionLabel
-      questionLabel.text = "Not sitting & reaching?"
+      questionLabel.text = "No corkscrew motion?"
       
       // update infoLabel
-      let string = "Try a smaller toy, and try placing it closer to baby to make it easier to reach. Try the test again in a month."
-      applyTextAttributesToLabel(string, indexAtStartOfBold:80, countOfBoldCharacters:31)
+      infoLabel.text = "Babies are natual imitators. Show your baby the right way to roll over so that baby can start praticing it."
+      boldInfoLabel.text = "Try this test again in a month"
       
     } else if failed >= 3 {
       // update questionLabel
-      questionLabel.text = "Not sitting & reaching?"
+      questionLabel.text = "No corkscrew motion?"
       
       // update infoLabel
-      let string = "If your baby goes past 20 months without being able to sit & reach, this may indicate neuromuscular problems. Talk to your pediatrician at your next appointment."
-      applyTextAttributesToLabel(string, indexAtStartOfBold:109, countOfBoldCharacters:52)
+      infoLabel.text = "By 9 months, baby should be able to roll over onto baby's stomach in a corscrew fashion."
+      boldInfoLabel.text = "If you’re concerned, please mention it to your pediatrician at your next well-child visit."
     } else {
       // update questionLabel
-      questionLabel.text = "Not sitting & reaching?"
+      questionLabel.text = "No corkscrew motion?"
       
       // update infoLabel
-      let string = "Not to worry. All babies develop at different rates. Try again in two weeks."
-      applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
+      infoLabel.text = "By 9 months, baby should be able to roll over onto baby's stomach in a corscrew fashion."
+      boldInfoLabel.text = "If you’re concerned, please mention it to your pediatrician at your next well-child visit."
     }
   }
   

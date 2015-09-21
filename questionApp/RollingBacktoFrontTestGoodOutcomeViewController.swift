@@ -13,7 +13,7 @@ class RollingBacktoFrontTestGoodOutcomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.SittingReaching, .Load, .Good)
+    Tracker.createEvent(.RollingBackToFront, .Load, .Good)
     
     // If a reminder notification had previously been scheduled, remove it now that the test has been passed.
     BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.sittingAndReaching)

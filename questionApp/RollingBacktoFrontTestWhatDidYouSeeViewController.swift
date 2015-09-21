@@ -18,7 +18,7 @@ class RollingBacktoFrontTestWhatDidYouSeeViewController: UIViewController {
     super.viewDidLoad()
     
     // analytics
-    Tracker.createEvent(.SittingReaching, .Load, .WhatDidSee)
+    Tracker.createEvent(.RollingBackToFront, .Load, .WhatDidSee)
     
     // Ensure current information for parent by reloading.
     parent = Parent()
@@ -43,14 +43,14 @@ class RollingBacktoFrontTestWhatDidYouSeeViewController: UIViewController {
       test.addTestResult(testResult: true)
       profiles.save()
       
-    } else if segue.identifier == "rollingBacktoFrontBadOutcomeSegueID" || segue.identifier == "rollingBacktoFrontBadOutcomeSegueID2" {
+    } else if segue.identifier == "rollingBacktoFrontBadOutcomeSegueID" || segue.identifier == "rollingBacktoFrontBadOutcomeSegueID2" || segue.identifier == "rollingBacktoFrontBadOutcomeSegueID3" {
       
       // Record the failed symmetry test result and save it to the persistent store on disk.
       test.addTestResult(testResult: false)
       profiles.save()
       
       // Pass the test results history to the destination VC.
-      let controller = segue.destinationViewController as! SittingAndReachingBadOutcomeViewController
+      let controller = segue.destinationViewController as! RollingBacktoFrontTestBadOutcomeViewController
       controller.test = self.test
     }
   }

@@ -29,7 +29,7 @@
 		<string>FontAwesome.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
-	<string>RollingBackToFrontStoryboard</string>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

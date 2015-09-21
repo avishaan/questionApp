@@ -25,7 +25,7 @@ class RollingBacktoFrontTestTimeToTestViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.SittingReaching, .Load, .TimeToTest)
+    Tracker.createEvent(.RollingBackToFront, .Load, .TimeToTest)
     // setup rounded corners on label
     labelBackground.layer.cornerRadius = 7
     labelBackground.layer.masksToBounds = true
