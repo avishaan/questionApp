@@ -192,6 +192,7 @@
 		8270B3001B81E7C000DFFB52 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8270B2FF1B81E7C000DFFB52 /* libicucore.A.dylib */; };
 		8270B3051B82A71900DFFB52 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270B3041B82A71900DFFB52 /* Tracker.swift */; };
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
+		8275FC3A1BB0B95F00C32106 /* IntroVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8275FC391BB0B95F00C32106 /* IntroVideo.m4v */; };
 		8278694B1B54141B0001F932 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; };
 		8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8283015D1BACE3CD00B015D7 /* BNTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8283015C1BACE3CD00B015D7 /* BNTextView.swift */; };
@@ -656,6 +657,7 @@
 		8270B2FF1B81E7C000DFFB52 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
 		8270B3041B82A71900DFFB52 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
+		8275FC391BB0B95F00C32106 /* IntroVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideo.m4v; sourceTree = "<group>"; };
 		827869451B5413E60001F932 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "resources/libs/ios-charts/Charts/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8283015C1BACE3CD00B015D7 /* BNTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNTextView.swift; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1233,6 +1235,7 @@
 			isa = PBXGroup;
 			children = (
 				826A901F1BAE385900230667 /* attention at distance.mp4 */,
+				8275FC391BB0B95F00C32106 /* IntroVideo.m4v */,
 				826A90201BAE385900230667 /* covered toy.mp4 */,
 				826A90211BAE385900230667 /* crossing eyes.mp4 */,
 				826A90221BAE385900230667 /* emotional attachment.mp4 */,
@@ -1721,6 +1724,7 @@
 				9EC4240D1B5469C30037C0E9 /* PointFollowing.storyboard in Resources */,
 				826A90381BAE385900230667 /* emotional attachment.mp4 in Resources */,
 				209965A11B68597600B93C5D /* SocialSmiling.storyboard in Resources */,
+				8275FC3A1BB0B95F00C32106 /* IntroVideo.m4v in Resources */,
 				826A90401BAE385900230667 /* partially covered toy.mp4 in Resources */,
 				826A90461BAE385900230667 /* self recognition.mp4 in Resources */,
 				82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */,
