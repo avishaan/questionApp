@@ -16,7 +16,7 @@ class RollingBacktoFrontTestGoodOutcomeViewController: UIViewController {
     Tracker.createEvent(.RollingBackToFront, .Load, .Good)
     
     // If a reminder notification had previously been scheduled, remove it now that the test has been passed.
-    BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.sittingAndReaching)
+    BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.rollingBackToFront)
   }
   
   override func didReceiveMemoryWarning() {
@@ -36,7 +36,7 @@ class RollingBacktoFrontTestGoodOutcomeViewController: UIViewController {
   
   @IBAction func onFacebookButtonTap(sender: AnyObject) {
     // Present post to facebook screen.
-    BNFacebook.postToFacebook(self, testName: Test.TestNamesPresentable.sittingAndReaching)
+    BNFacebook.postToFacebook(self, testName: Test.TestNamesPresentable.rollingBackToFront)
   }
 
 }

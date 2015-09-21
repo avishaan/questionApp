@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kVt-xc-mQ4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="OmnesMed.ttf">
+            <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
             <string>Omnes-Medium</string>
@@ -29,13 +30,14 @@
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
+            <string>Omnes-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
         <!--Why Is Rolling Back To Front Imp View Controller-->
         <scene sceneID="Jog-ov-Tu6">
             <objects>
-                <viewController storyboardIdentifier="WhyIsSittingAndReachingStoryboardID" id="kVt-xc-mQ4" userLabel="Why Is Rolling Back To Front Imp View Controller" customClass="WhyIsRollingBackToFrontViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RollingBackToFrontStoryboardID" id="kVt-xc-mQ4" userLabel="Why Is Rolling Back To Front Imp View Controller" customClass="WhyIsRollingBackToFrontViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KwU-gJ-QkB"/>
                         <viewControllerLayoutGuide type="bottom" id="6ES-wE-fnN"/>
@@ -536,6 +538,17 @@ body over. </string>
                                     <segue destination="5lC-63-LE3" kind="presentation" identifier="rollingBacktoFrontBadOutcomeSegueID" id="kP4-9t-PnK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-Gt-3rA" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="28" y="402" width="265" height="88"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Baby cannot turn over.">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5lC-63-LE3" kind="presentation" identifier="rollingBacktoFrontBadOutcomeSegueID3" id="vYo-sL-226"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="s98-dt-ZzY" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="28" y="127" width="265" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -550,21 +563,14 @@ QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
                                     <segue destination="MNn-yS-UTV" kind="presentation" identifier="rollingBacktoFrontGoodOutcomeSegueID" id="A2Q-bT-eEj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-Gt-3rA" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="402" width="265" height="88"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Baby cannot turn over.">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="5lC-63-LE3" kind="presentation" identifier="rollingBacktoFrontBadOutcomeSegueID3" id="vYo-sL-226"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="whatDidYouSeeBtn1" destination="s98-dt-ZzY" id="UET-W5-iXU"/>
+                        <outlet property="whatDidYouSeeBtn2" destination="r0f-Kj-Tkw" id="q2k-fP-UbK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trc-AK-3O4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -649,7 +655,7 @@ QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eC8-4E-TeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7515" y="1645"/>
+            <point key="canvasLocation" x="7444" y="1636"/>
         </scene>
         <!--Rolling Back To Front Bad Outcome View Controller-->
         <scene sceneID="p64-dR-pEm">
@@ -763,7 +769,7 @@ QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cB-aU-Wth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7495" y="2288"/>
+            <point key="canvasLocation" x="7444" y="2288"/>
         </scene>
         <!--Rolling Back To Front Activity Reminder View Controller-->
         <scene sceneID="s5W-Pc-5ea">
@@ -856,7 +862,7 @@ QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WlK-qc-hjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8242" y="1867"/>
+            <point key="canvasLocation" x="7858" y="1867"/>
         </scene>
         <!--Rolling Back To Front More Info View Controller-->
         <scene sceneID="Z9h-MY-xXy">
@@ -904,29 +910,20 @@ QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
                                     <action selector="onBackButtonTap:" destination="ZGs-4a-PWU" eventType="touchUpInside" id="ZhF-iA-4bZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dg-Lg-Iah">
-                                <rect key="frame" x="9" y="130" width="300" height="259"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">By 9 months, baby will be able to roll over onto baby's stomach in a corscrew fashion.
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dg-Lg-Iah">
+                                <rect key="frame" x="9" y="130" width="300" height="86"/>
+                                <string key="text">By 9 months, baby will be able to roll over onto baby's stomach in a corscrew fashion.
 </string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="21" name="Omnes-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">If baby still moves in a non-corkscrew fashion after 9 months, it maybe an early indicator of autism. Please record the test and talk to 
-your pediatrician at your next well-child visit.
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="21" name="Omnes-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-FA-BM2">
+                                <rect key="frame" x="9" y="207" width="288" height="190"/>
+                                <string key="text">If baby still moves in a non-corkscrew fashion after 9 months, it maybe an early indicator of autism. Please record the test and talk to 
+your pediatrician at your next well-child visit.</string>
+                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="22"/>
+                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

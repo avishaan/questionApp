@@ -57,8 +57,8 @@ class RollingBacktoFrontTestBadOutcomeViewController: UIViewController {
   //        if segue.identifier == "unassistedSittingToActivityReminderSegue" {
   //            let controller = segue.destinationViewController as! ActivityReminderViewController
   //
-  //            // set the test name on the ActivityReminder VC
-  //            controller.testName = Test.TestNamesPresentable.sittingAndReaching
+  //            set the test name on the ActivityReminder VC
+  //            controller.testName = Test.TestNamesPresentable.rollingBackToFront
   //        }
   //    }
   
@@ -129,10 +129,10 @@ class RollingBacktoFrontTestBadOutcomeViewController: UIViewController {
   */
   func scheduleReminder() {
     
-    if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.sittingAndReaching) == false {
+    if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.rollingBackToFront) == false {
       
       // configure the local notification
-      let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.sittingAndReaching, secondsBeforeDisplayingReminder: Test.NotificationInterval.sittingAndReaching)
+      let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.rollingBackToFront, secondsBeforeDisplayingReminder: Test.NotificationInterval.rollingOverBackToFront)
       
       // schedule the local notification
       localNotification.scheduleNotification()

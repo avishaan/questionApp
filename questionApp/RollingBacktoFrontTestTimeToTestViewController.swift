@@ -13,8 +13,7 @@ class RollingBacktoFrontTestTimeToTestViewController: UIViewController {
 
   @IBOutlet weak var step1Label: UILabel!
   @IBOutlet weak var step2Label: UILabel!
-  @IBOutlet weak var step3Label: UILabel!
-  @IBOutlet weak var step4Label: UILabel!
+ 
   
   @IBOutlet weak var labelBackground: UILabel!
   
