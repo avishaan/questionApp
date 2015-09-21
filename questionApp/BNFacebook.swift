@@ -12,6 +12,8 @@ import Social
 class BNFacebook {
     
     static private let facebookKeys: String = "facebookKeys"
+  // key name to track if user has shared to facebook
+  static private let hasSharedFacebook= "hasSharedFacebookKey"
     
     static private func sha256(value : String) -> String {
         let data = value.dataUsingEncoding(NSUTF8StringEncoding)!
@@ -40,6 +42,12 @@ class BNFacebook {
         NSUserDefaults.standardUserDefaults().setObject(keys, forKey: facebookKeys)
         NSUserDefaults.standardUserDefaults().synchronize()
     }
+  
+  // if user shared any test, save
+  static private func userSharedTest() {
+    NSUserDefaults.standardUserDefaults().setBool(true, forKey: hasSharedFacebook)
+    NSUserDefaults.standardUserDefaults().synchronize()
+  }
     
     /*
     Test to see if a user has shared the supplied test via Facebook.
