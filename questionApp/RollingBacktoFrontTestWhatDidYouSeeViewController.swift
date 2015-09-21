@@ -10,9 +10,6 @@ import UIKit
 
 class RollingBacktoFrontTestWhatDidYouSeeViewController: UIViewController {
 
-  @IBOutlet weak var whatDidYouSeeBtn1: BNButton!
-  @IBOutlet weak var whatDidYouSeeBtn2: BNButton!
-  
   var parent = Parent()
   var profiles = TestProfiles()
   var test = Test()

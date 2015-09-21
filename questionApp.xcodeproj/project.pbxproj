@@ -375,6 +375,7 @@
 		C02EBD2B1BB0940D00A7A096 /* EmotionalAttachmentBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EBD2A1BB0940D00A7A096 /* EmotionalAttachmentBadOutcomeViewController.swift */; };
 		C02EBD2D1BB0942000A7A096 /* EmotionalAttachmentMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EBD2C1BB0942000A7A096 /* EmotionalAttachmentMoreInfoViewController.swift */; };
 		C02EBD2F1BB0944100A7A096 /* EmotionalAttachmentActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EBD2E1BB0944100A7A096 /* EmotionalAttachmentActivityReminderViewController.swift */; };
+		C02EBD331BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EBD321BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift */; };
 		C07233A11BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07233A01BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -843,6 +844,7 @@
 		C02EBD2A1BB0940D00A7A096 /* EmotionalAttachmentBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalAttachmentBadOutcomeViewController.swift; sourceTree = "<group>"; };
 		C02EBD2C1BB0942000A7A096 /* EmotionalAttachmentMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalAttachmentMoreInfoViewController.swift; sourceTree = "<group>"; };
 		C02EBD2E1BB0944100A7A096 /* EmotionalAttachmentActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalAttachmentActivityReminderViewController.swift; sourceTree = "<group>"; };
+		C02EBD321BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalAttachmentTimeToTestViewController.swift; sourceTree = "<group>"; };
 		C07233A01BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollingBackToFrontActivityReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1597,6 +1599,7 @@
 				C02EBD1E1BB0939A00A7A096 /* WhyIsEmotionalAttachmentViewController.swift */,
 				C02EBD201BB093AC00A7A096 /* EmotionalAttachmentTestOverviewViewController.swift */,
 				C02EBD221BB093BF00A7A096 /* EmotionalAttachmentWhatWillYouNeedViewController.swift */,
+				C02EBD321BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift */,
 				C02EBD241BB093D100A7A096 /* EmotionalAttachmentBabyReadyViewController.swift */,
 				C02EBD261BB093E800A7A096 /* EmotionalAttachmentWhatDidYouSeeViewController.swift */,
 				C02EBD281BB093FD00A7A096 /* EmotionalAttachmentGoodOutcomeViewController.swift */,
@@ -2074,6 +2077,7 @@
 				209965961B6311DC00B93C5D /* SelfRecognitionBadOutcomeViewController.swift in Sources */,
 				8270B2C31B81DFF100DFFB52 /* MPNotification.m in Sources */,
 				20E356471B77E036002F38C7 /* SittingAndReachingGoodOutcomeViewController.swift in Sources */,
+				C02EBD331BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift in Sources */,
 				209965AD1B685A4F00B93C5D /* SocialSmilingWhatDidYouSeeViewController.swift in Sources */,
 				9EE7EB331B56A7F900C73CA3 /* HearingWhatDidYouSeeViewController.swift in Sources */,
 				9E923CB11B683E8600F2B0A7 /* TestProfiles.swift in Sources */,

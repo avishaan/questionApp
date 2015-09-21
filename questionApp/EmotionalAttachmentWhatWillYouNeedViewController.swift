@@ -9,27 +9,46 @@
 import UIKit
 
 class EmotionalAttachmentWhatWillYouNeedViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  @IBOutlet weak var testPreparationLabel: UILabel!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // analytics
+    Tracker.createEvent(.EmotionalAttachment, .Load, .WhatIsNeeded)
+    //applyTextAttributesToLabel()
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  @IBAction func onNextStepButtonTap(sender: AnyObject) {
+    let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
+    if dontShowIsBabyReadyVC == true {
+      performSegueWithIdentifier("EmotionalAttachmentTimeToTestSegueID", sender: self)
+    } else {
+      performSegueWithIdentifier("EmotionalAttachmentIsBabyReadySegueID", sender: self)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  }
+  
+  @IBAction func onBackButtonTap(sender: AnyObject) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  // Helper function formats text attributes for multiple substrings in label.
+  func applyTextAttributesToLabel() {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    let string = "You’ll need another adult your baby won’t recognize."
+    
+    var attributedString = NSMutableAttributedString(string: string)
+    
+    let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
+    let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
+    let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
+    
+    attributedString.addAttributes(firstAttributes, range: NSMakeRange(20, 14))
+    
+    testPreparationLabel.attributedText = attributedString
+  }
 }
