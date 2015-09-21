@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VjN-jI-kwu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VjN-jI-kwu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -299,7 +299,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="S2E-Sh-ToX">
+                            <segmentedControl opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S2E-Sh-ToX">
                                 <rect key="frame" x="219" y="181" width="77" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="0.82999999999999996" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -308,6 +308,7 @@
                                 </constraints>
                                 <segments>
                                     <segment title="Boy"/>
+                                    <segment title=""/>
                                     <segment title="Girl"/>
                                 </segments>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -479,19 +480,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="UdP-Gq-ZVg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZQ-eR-dxA">
-                                <rect key="frame" x="16" y="372" width="82" height="115"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="349" width="82" height="138"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="9CL-vI-WhP" kind="presentation" id="l69-DX-nDO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtN-mQ-a74">
                                 <rect key="frame" x="120" y="372" width="82" height="116"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -728,6 +716,19 @@
                                     <rect key="frame" x="120" y="383" width="82" height="65"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZQ-eR-dxA">
+                                <rect key="frame" x="16" y="372" width="82" height="115"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="349" width="82" height="138"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="9CL-vI-WhP" kind="presentation" id="l69-DX-nDO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -1590,7 +1591,17 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="eBk-yG-S7M"/>
+                                <exclude reference="fYs-oS-FVK"/>
+                                <exclude reference="MCR-t7-754"/>
+                                <exclude reference="awn-tL-Qp9"/>
+                                <exclude reference="NE8-A8-tgl"/>
                                 <exclude reference="bcD-sV-Tic"/>
+                                <exclude reference="k1X-zd-Jaj"/>
+                                <exclude reference="gk4-kz-dJr"/>
+                                <exclude reference="Ajp-ZA-jia"/>
+                                <exclude reference="RG4-1M-EEZ"/>
+                                <exclude reference="MC3-Nf-UgW"/>
+                                <exclude reference="c2O-SK-gJH"/>
                                 <exclude reference="AdR-pR-2gj"/>
                                 <exclude reference="JUi-il-BJq"/>
                                 <exclude reference="azq-Ud-hJh"/>
@@ -1598,16 +1609,6 @@
                                 <exclude reference="Dbd-t5-zAR"/>
                                 <exclude reference="LOr-Q6-k7N"/>
                                 <exclude reference="Nb2-r9-fR0"/>
-                                <exclude reference="RG4-1M-EEZ"/>
-                                <exclude reference="fYs-oS-FVK"/>
-                                <exclude reference="MC3-Nf-UgW"/>
-                                <exclude reference="MCR-t7-754"/>
-                                <exclude reference="awn-tL-Qp9"/>
-                                <exclude reference="c2O-SK-gJH"/>
-                                <exclude reference="NE8-A8-tgl"/>
-                                <exclude reference="k1X-zd-Jaj"/>
-                                <exclude reference="gk4-kz-dJr"/>
-                                <exclude reference="Ajp-ZA-jia"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1616,7 +1617,17 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="eBk-yG-S7M"/>
+                                <include reference="fYs-oS-FVK"/>
+                                <include reference="MCR-t7-754"/>
+                                <include reference="awn-tL-Qp9"/>
+                                <include reference="NE8-A8-tgl"/>
                                 <include reference="bcD-sV-Tic"/>
+                                <include reference="k1X-zd-Jaj"/>
+                                <include reference="gk4-kz-dJr"/>
+                                <include reference="Ajp-ZA-jia"/>
+                                <include reference="RG4-1M-EEZ"/>
+                                <exclude reference="MC3-Nf-UgW"/>
+                                <include reference="c2O-SK-gJH"/>
                                 <include reference="AdR-pR-2gj"/>
                                 <include reference="JUi-il-BJq"/>
                                 <include reference="azq-Ud-hJh"/>
@@ -1624,16 +1635,6 @@
                                 <include reference="Dbd-t5-zAR"/>
                                 <include reference="LOr-Q6-k7N"/>
                                 <include reference="Nb2-r9-fR0"/>
-                                <include reference="RG4-1M-EEZ"/>
-                                <include reference="fYs-oS-FVK"/>
-                                <exclude reference="MC3-Nf-UgW"/>
-                                <include reference="MCR-t7-754"/>
-                                <include reference="awn-tL-Qp9"/>
-                                <include reference="c2O-SK-gJH"/>
-                                <include reference="NE8-A8-tgl"/>
-                                <include reference="k1X-zd-Jaj"/>
-                                <include reference="gk4-kz-dJr"/>
-                                <include reference="Ajp-ZA-jia"/>
                             </mask>
                         </variation>
                     </view>
@@ -4510,10 +4511,10 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="l69-DX-nDO"/>
-        <segue reference="V9O-1I-FKI"/>
-        <segue reference="rnh-PO-BrS"/>
+        <segue reference="hJN-An-zuc"/>
         <segue reference="b14-b1-AiE"/>
         <segue reference="j7l-Po-XYD"/>
         <segue reference="bXU-UG-Zw5"/>
+        <segue reference="rnh-PO-BrS"/>
     </inferredMetricsTieBreakers>
 </document>
