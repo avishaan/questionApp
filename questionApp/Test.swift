@@ -42,6 +42,7 @@ class Test: NSObject, NSCoding {
         static var bookPresentation: String = "book presentation"
         static var rollingBackToFront: String = "rolling back to front"
         // TODO: add additional var as new tests are added to the app
+        static var emotionalAttachment: String = "emotional attachment"
     }
   
   // Test names in their respective category
@@ -67,7 +68,8 @@ class Test: NSObject, NSCoding {
     static var socialAndEmotional = [
       TestNames.facialMimic,
       TestNames.socialSmiling,
-      TestNames.pointFollowing
+      TestNames.pointFollowing,
+      TestNames.emotionalAttachment
     ]
     static var languageAndCognitive = [
       TestNames.bookPresentation,
@@ -101,6 +103,7 @@ class Test: NSObject, NSCoding {
         static var bookPresentation: String = "book presentation"
       // TODO: if new tests are added to the app, add them here.
       static var rollingBackToFront = "rolling back to front"
+      static var emotionalAttachment: String = "emotional attachment"
     }
     
     static let SecondsInADay : Double = 24 * 60 * 60
@@ -130,7 +133,7 @@ class Test: NSObject, NSCoding {
         //static var commandWithGesture:  Double = 30 * Test.SecondsInADay
         //static var lateralTracking:          Double =  7 * Test.SecondsInADay
         //static var stranger:                 Double = 21 * Test.SecondsInADay
-        //static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
+        static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
         static var rollingOverBackToFront:   Double = 30 * Test.SecondsInADay
         //static var rollingOverFrontToBack:   Double = 30 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
@@ -156,7 +159,8 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.socialSmiling,
         TestNamesPresentable.facialMimic,
         // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
-        TestNamesPresentable.rollingBackToFront
+        TestNamesPresentable.rollingBackToFront,
+        TestNamesPresentable.emotionalAttachment
     ]
     
 //    static let initialStoryboardIDs = [

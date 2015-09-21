@@ -98,6 +98,7 @@ class RollingBacktoFrontTestBadOutcomeViewController: UIViewController {
       questionLabel.text = "No corkscrew motion?"
       // update infoLabel
       infoLabel.text = "Not to worry. Not all babies develop at the same rate."
+        boldInfoLabel.text = "Try again and be sure baby is rested, fed, and alert."
     } else if failed == 2 {
       // update questionLabel
       questionLabel.text = "No corkscrew motion?"
@@ -118,8 +119,9 @@ class RollingBacktoFrontTestBadOutcomeViewController: UIViewController {
       questionLabel.text = "No corkscrew motion?"
       
       // update infoLabel
-      infoLabel.text = "By 9 months, baby should be able to roll over onto baby's stomach in a corscrew fashion."
-      boldInfoLabel.text = "If you’re concerned, please mention it to your pediatrician at your next well-child visit."
+      infoLabel.text = "Not to worry. Not all babies develop at the same rate."
+      
+      boldInfoLabel.text = "Try again and be sure baby is rested, fed, and alert."
     }
   }
   
