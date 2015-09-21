@@ -11,6 +11,56 @@ import Social
 
 class BNFacebook {
     
+    static private let facebookKeys: String = "facebookKeys"
+    
+    static private func sha256(value : String) -> String {
+        let data = value.dataUsingEncoding(NSUTF8StringEncoding)!
+        var hash = [UInt8](count: Int(CC_SHA256_DIGEST_LENGTH), repeatedValue: 0)
+        CC_SHA256(data.bytes, CC_LONG(data.length), &hash)
+        let hexBytes = map(hash) { String(format: "%02hhx", $0) }
+        return "".join(hexBytes)
+    }
+    
+    static private func trueShaForName(name : String) -> String {
+        let truthValue = name + "true"
+        let sha = sha256(truthValue)
+        return sha
+    }
+
+    static private func userSharedTestWithName(name: String) {
+        // since NSUserDefaults is accessible by the user,
+        // let's just apply a simple SHA-based safeguard to prevent users
+        // modifying the value directly
+        var keys = NSUserDefaults.standardUserDefaults().dictionaryForKey(facebookKeys) as? [String:String]
+        if (keys == nil) {
+            keys = [:]
+        }
+        let sha = trueShaForName(name)
+        keys?[name] = sha
+        NSUserDefaults.standardUserDefaults().setObject(keys, forKey: facebookKeys)
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
+    /*
+    Test to see if a user has shared the supplied test via Facebook.
+    */
+    static func hasUserSharedTestWithName(name: String) -> Bool {
+        var keys = NSUserDefaults.standardUserDefaults().dictionaryForKey(facebookKeys) as? [String:String]
+        if let value: String = keys?[name] {
+            let sha = trueShaForName(name)
+            if value == sha {
+                return true
+            }
+        }
+        return false
+    }
+  
+    static func showShareErrorMessage() {
+      let messageString = "Please share your results on Facebook in order to unlock this test!"
+      let alert = UIAlertView(title: nil, message: messageString, delegate: nil, cancelButtonTitle: "Ok")
+      alert.show()
+    }
+    
     /*
     @brief Show prepopulated UI that allows a user to enter edit and post it to facebook.
     @discussion Presents the social VC modally on top of the parentViewController.
@@ -33,6 +83,12 @@ class BNFacebook {
             // set url
             let nogginURL = NSURL(string: "http://www.babynoggin.com")
             composeController.addURL(nogginURL)
+          
+            composeController.completionHandler = { result in
+              if (result == SLComposeViewControllerResult.Done) {
+                self.userSharedTestWithName(testName)
+              }
+            }
             
             // display the social view controller
             parentViewController.presentViewController(composeController, animated:true, completion:nil)
