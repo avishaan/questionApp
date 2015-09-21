@@ -50,9 +50,9 @@ class BNFacebook {
   }
   
   // see if user has shared any test
-  static private func hasUserSharedTest() -> Bool {
-    if let hasShared:Bool = NSUserDefaults.standardUserDefaults().boolForKey(hasSharedFacebook) {
-      return hasShared
+  static func hasUserSharedTest() -> Bool {
+    if NSUserDefaults.standardUserDefaults().boolForKey(hasSharedFacebook) {
+      return true
     }
     return false
   }
