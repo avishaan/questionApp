@@ -44,7 +44,16 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
 	
   @IBAction func onSaveProfileButtonTap(sender: AnyObject) {
     // Init a Parent object with data entered by the user
-    let childGender = (genderControl.selectedSegmentIndex == 0) ? "Boy" : "Girl"
+    var childGender: String
+    switch genderControl.selectedSegmentIndex {
+    case 0:
+      childGender = "Boy"
+    case 1:
+      childGender = "Girl"
+    default:
+      childGender = ""
+    }
+    
     let person:Parent = Parent(parentsFullName: nameField.text, parentsEmail: emailField.text, childsName: babyNameField.text, babyBirthdate: babyBirthdayDate.date, childsGender: childGender)
     
     // persist the Parent instance.
