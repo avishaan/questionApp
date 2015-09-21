@@ -53,7 +53,13 @@ class MilestonesViewController: UIViewController {
     
     if (parent.babyBirthday != nil){
       let secondsDifference = parent.babyBirthday?.timeIntervalSinceNow
-      let weekDifference = abs(secondsDifference!/60/60/24/7)
+        var weekDifference = secondsDifference!/60/60/24/7
+        if(weekDifference < 0){
+            weekDifference = abs(secondsDifference!/60/60/24/7)
+        }
+        else{
+            weekDifference = 0
+        }
       
       var weekFormatter = NSNumberFormatter()
       weekFormatter.maximumFractionDigits = 0
