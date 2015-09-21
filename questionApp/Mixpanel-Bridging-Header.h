@@ -10,5 +10,6 @@
 #define questionApp_Mixpanel_Bridging_Header_h
 
 #import "Mixpanel/Mixpanel.h"
+#import <CommonCrypto/CommonCrypto.h>
 
 #endif
