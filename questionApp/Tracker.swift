@@ -39,6 +39,7 @@ struct Tracker {
     case SocialEmotionalMilestone = "Social Emotional Milestone"
     case LanguageCognitiveMilestone = "Language Cognitive Milestone"
     case FeedbackDialog = "Feedback Dialog"
+    case RollingBackToFront = "RollingBackToFront"
   }
   
   /**

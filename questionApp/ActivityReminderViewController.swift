@@ -31,6 +31,7 @@ struct TestNamesPresentable {
     static var sittingAndReaching = "sitting and reaching"
     static var plasticJar = "ask and respond"
     // TODO: if new tests are added to the app, add them here.
+    static var rollingBacktoFront = "rolling back to front"
 }
 
 struct TestReminderInterval { // TODO: review

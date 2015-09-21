@@ -40,6 +40,7 @@ class Test: NSObject, NSCoding {
         static var sittingAndReaching: String = "sitting and reaching"
         static var plasticJar: String = "ask and respond"
         static var bookPresentation: String = "book presentation"
+        static var rollingBackToFront: String = "rolling back to front"
         // TODO: add additional var as new tests are added to the app
     }
   
@@ -60,7 +61,8 @@ class Test: NSObject, NSCoding {
       TestNames.hearing,
       TestNames.crossingEyes,
       TestNames.pupilResponse,
-      TestNames.letsCrawl
+      TestNames.letsCrawl,
+      TestNames.rollingBackToFront
     ]
     static var socialAndEmotional = [
       TestNames.facialMimic,
@@ -97,8 +99,8 @@ class Test: NSObject, NSCoding {
         static var sittingAndReaching = "sitting and reaching"
         static var plasticJar = "ask and respond"                  // ask and respond
         static var bookPresentation: String = "book presentation"
-
-        // TODO: if new tests are added to the app, add them here.
+      // TODO: if new tests are added to the app, add them here.
+      static var rollingBackToFront = "rolling back to front"
     }
     
     static let SecondsInADay : Double = 24 * 60 * 60
@@ -129,7 +131,7 @@ class Test: NSObject, NSCoding {
         //static var lateralTracking:          Double =  7 * Test.SecondsInADay
         //static var stranger:                 Double = 21 * Test.SecondsInADay
         //static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
-        //static var rollingOverBackToFront:   Double = 30 * Test.SecondsInADay
+        static var rollingOverBackToFront:   Double = 30 * Test.SecondsInADay
         //static var rollingOverFrontToBack:   Double = 30 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
     }
@@ -152,8 +154,9 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.pointFollowing,
         TestNamesPresentable.selfRecognition,
         TestNamesPresentable.socialSmiling,
-        TestNamesPresentable.facialMimic
+        TestNamesPresentable.facialMimic,
         // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
+        TestNamesPresentable.rollingBackToFront
     ]
     
 //    static let initialStoryboardIDs = [
