@@ -89,7 +89,8 @@ class TestHistories : NSObject, NSCoding {
             Test.TestNames.unassistedSitting : Test.TestNames.unassistedSitting,
             Test.TestNames.sittingAndReaching : Test.TestNames.sittingAndReaching,
 //            Test.TestNames.plasticJar : Test.TestNames.plasticJar,
-            Test.TestNames.bookPresentation : Test.TestNames.bookPresentation,
+//            Test.TestNames.bookPresentation : Test.TestNames.bookPresentation,
+          Test.TestNames.jointAttention : Test.TestNames.jointAttention,
             // TODO: if new tests are added to the app, add them here.
             Test.TestNames.rollingBackToFront : Test.TestNames.rollingBackToFront
         ]

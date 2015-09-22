@@ -1,5 +1,5 @@
 //
-//  BookPresentationActivityReminderViewController.swift
+//  JointAttentionActivityReminderViewController.swift
 //  questionApp
 //
 //  Created by Michael Leung on 8/17/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookPresentationActivityReminderViewController: ActivityReminderViewController {
+class JointAttentionActivityReminderViewController: ActivityReminderViewController {
     
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)

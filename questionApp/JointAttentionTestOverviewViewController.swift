@@ -1,5 +1,5 @@
 //
-//  BookPresentationTestOverviewViewController.swift
+//  JointAttentionTestOverviewViewController.swift
 //  questionApp
 //
 //  Created by Michael Leung on 8/17/15.
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class BookPresentationTestOverviewViewController: UIViewController {
+class JointAttentionTestOverviewViewController: UIViewController {
     
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -59,7 +59,7 @@ class BookPresentationTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "BookPresentationWhatWillYouNeedSegueID" {
+        else if segue.identifier == "JointAttentionWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }
