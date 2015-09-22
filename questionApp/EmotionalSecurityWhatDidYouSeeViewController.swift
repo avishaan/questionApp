@@ -27,7 +27,7 @@ class EmotionalSecurityWhatDidYouSeeViewController: UIViewController {
     profiles.initProfilesFromPersistentStore()
     
     // Get the test information.
-     //test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.emotionalAttachment)
+     test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.emotionalSecurity)
   }
   
   override func didReceiveMemoryWarning() {

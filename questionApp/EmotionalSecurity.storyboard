@@ -60,9 +60,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bY1-4d-zE0">
-                                <rect key="frame" x="0.0" y="154" width="320" height="120"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby will recognize familiar faces of caregivers and may show negative reactions to strangers by the end of first year. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tb-1F-FQf">
                                 <rect key="frame" x="14" y="274" width="293" height="183"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
@@ -78,12 +75,15 @@
                                     <action selector="onBackButtonTap:" destination="CHg-nZ-xgX" eventType="touchUpInside" id="mYr-Au-UUH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilb-uE-Vwh" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilb-uE-Vwh" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="242" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyEmotionalSecurity" translatesAutoresizingMaskIntoConstraints="NO" id="bY1-4d-zE0">
+                                <rect key="frame" x="0.0" y="151" width="320" height="120"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -116,7 +116,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="arm-YQ-t2K">
                                 <rect key="frame" x="0.0" y="142" width="320" height="203"/>
                                 <connections>
-                                    <segue destination="RJU-3B-qbz" kind="embed" identifier="EmotionalAttachmentEmbeddedVideoSegue" id="090-U4-xs3"/>
+                                    <segue destination="RJU-3B-qbz" kind="embed" identifier="EmotionalSecurityEmbeddedVideoSegue" id="090-U4-xs3"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdw-Z8-kdW" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
@@ -135,7 +135,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV6-gK-o8p" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV6-gK-o8p" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="234" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -151,8 +151,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzv-Hp-Kr4">
-                                <rect key="frame" x="0.0" y="142" width="398" height="203"/>
-                                <state key="normal" title="previewButton">
+                                <rect key="frame" x="0.0" y="142" width="363" height="167"/>
+                                <state key="normal" title="previewButton" image="EmotionalSecurityOverview">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -210,7 +210,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-uf-Oxb">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EmotionalSecurityWhatYouNeed" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-uf-Oxb">
                                 <rect key="frame" x="-5" y="125" width="329" height="201"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81P-DF-6o2" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
@@ -222,7 +222,7 @@
                                     <action selector="onBackButtonTap:" destination="rzb-tn-QJN" eventType="touchUpInside" id="YfX-71-Qur"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AV-Mj-M6l" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AV-Mj-M6l" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -263,7 +263,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6fr-4G-jOX">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional attachment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTR-20-xx4" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTR-20-xx4" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="234" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -286,7 +286,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EmotionalAttachmentBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="td8-NU-rQT">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EmotionalSecurityIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="td8-NU-rQT">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BA-Hn-DLg">
@@ -419,7 +419,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fZN-4F-YZr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyc-zs-dCy" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyc-zs-dCy" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="47" y="20" width="230" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -508,12 +508,6 @@ Mi4gSGF2ZSBhbiB1bmZhbWlsaWFyIHBlcnNvbgMgdHJ5IHRvIGhvbGQgeW91ciBiYWJ5Lg
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="KbJ-4o-euO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzG-RK-rnD" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="52" y="20" width="234" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What did you see?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M54-W6-N7t">
                                 <rect key="frame" x="35" y="79" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
@@ -572,6 +566,12 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                                     <segue destination="4Ts-hk-4iU" kind="presentation" identifier="EmotionalSecurityBadOutcomeSegueID1" id="76p-H2-30q"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzG-RK-rnD" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="52" y="20" width="234" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -596,7 +596,7 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dPH-qt-L5c">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erp-24-e1p" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erp-24-e1p" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="242" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -671,7 +671,7 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="u9u-oc-0KB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZI-HP-ogd" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZI-HP-ogd" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="237" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -709,14 +709,14 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53b-W5-J7e">
                                 <rect key="frame" x="31" y="138" width="258" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Emotional Attachment Range: ">
+                                    <fragment content="Emotional Security Range: ">
                                         <attributes>
                                             <color key="NSColor" red="0.34509803921568627" green="0.34901960784313724" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="Omnes-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="9-13 mo.">
+                                    <fragment content="7-11 mo.">
                                         <attributes>
                                             <color key="NSColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="Omnes-Medium"/>
@@ -733,23 +733,13 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itv-VH-x0l" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="93" y="427" width="122" height="30"/>
+                                <rect key="frame" x="24" y="474" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="further info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="Gmo-aM-92N" kind="presentation" id="s0J-ec-Uch"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6j-Xr-Wrx" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="474" width="122" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="remind me!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="z4I-2A-o0J" kind="presentation" id="s8x-Ud-5Li"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -782,7 +772,7 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Oc3-Tg-VNv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyz-jX-09W" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyz-jX-09W" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="234" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -875,7 +865,7 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZFD-gI-TGT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOW-ml-OBt" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reaction to strangers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOW-ml-OBt" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -925,7 +915,10 @@ You can find out your baby's security level with the Emotional Attachment test.<
         </scene>
     </scenes>
     <resources>
-        <image name="EmotionalAttachmentBabyReady" width="320" height="120"/>
+        <image name="EmotionalSecurityIsBabyReady" width="320" height="120"/>
+        <image name="EmotionalSecurityOverview" width="246" height="167"/>
+        <image name="EmotionalSecurityWhatYouNeed" width="320" height="120"/>
+        <image name="WhyEmotionalSecurity" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="facebook" width="29" height="29"/>
         <image name="selectedRadioButton" width="20" height="20"/>

@@ -37,7 +37,8 @@ class EmotionalSecurityOverviewViewController: UIViewController {
   
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "EmotionalAttachmentEmbeddedVideoSegue" {
+    if segue.identifier == "EmotionalSecurityEmbeddedVideoSegue"
+    {
       // set the playerVC as the destination
       playerVC = segue.destinationViewController as! AVPlayerViewController
       let path = NSBundle.mainBundle().pathForResource("emotional security", ofType: "mp4")

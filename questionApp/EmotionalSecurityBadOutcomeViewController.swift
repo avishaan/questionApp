@@ -24,7 +24,7 @@ class EmotionalSecurityBadOutcomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.EmotionalAttachment, .Load, .Bad)
+    Tracker.createEvent(.EmotionalSecurity, .Load, .Bad)
     
     // Do any additional setup after loading the view.
     rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 11, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)

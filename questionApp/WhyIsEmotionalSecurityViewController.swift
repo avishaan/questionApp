@@ -32,17 +32,15 @@ class WhyIsEmotionalSecurityViewController: UIViewController {
   func applyTextAttributesToLabel() {
     
     let string = "Baby will recognize familiar faces of caregivers and may show negative reactions to strangers by the end of first year."
-//    
-//    var attributedString = NSMutableAttributedString(string: string)
-//    
-//    let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
-//    let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
-//    
-//    // attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 73))
-//    attributedString.addAttributes(boldAttributes, range: NSMakeRange(25, 18))
-//    attributedString.addAttributes(boldAttributes, range: NSMakeRange(165, 18))
-//    
-//    descriptionLabel.attributedText = attributedString
+    
+    var attributedString = NSMutableAttributedString(string: string)
+    
+    let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
+  
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(20, 28))
+   // attributedString.addAttributes(boldAttributes, range: NSMakeRange(70, 18))
+    
+    descriptionLabel.attributedText = attributedString
   }
   
 

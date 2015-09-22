@@ -21,7 +21,7 @@ class EmotionalSecurityTimeToTestViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.EmotionalAttachment, .Load, .TimeToTest)
+    Tracker.createEvent(.EmotionalSecurity, .Load, .TimeToTest)
     
     // setup rounded corners on label
     labelBackground.layer.cornerRadius = 7
