@@ -20,7 +20,7 @@ class VisualTrackingOverviewViewController: UIViewController {
     super.viewDidLoad()
     
     // analytics
-    Tracker.createEvent(.RollingBackToFront, .Load, .Overview)
+    Tracker.createEvent(.VisualTracking, .Load, .Overview)
     // Do any additional setup after loading the view.
   }
   

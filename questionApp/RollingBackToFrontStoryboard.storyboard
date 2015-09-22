@@ -564,10 +564,6 @@ QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="whatDidYouSeeBtn1" destination="s98-dt-ZzY" id="UET-W5-iXU"/>
-                        <outlet property="whatDidYouSeeBtn2" destination="r0f-Kj-Tkw" id="q2k-fP-UbK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trc-AK-3O4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

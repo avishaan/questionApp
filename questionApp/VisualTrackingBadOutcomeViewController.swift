@@ -57,7 +57,7 @@ class VisualTrackingBadOutcomeViewController: UIViewController {
   //            let controller = segue.destinationViewController as! ActivityReminderViewController
   //
   //            set the test name on the ActivityReminder VC
-  //            controller.testName = Test.TestNamesPresentable.rollingBackToFront
+  //            controller.testName = Test.TestNamesPresentable.visualTracking
   //        }
   //    }
   
