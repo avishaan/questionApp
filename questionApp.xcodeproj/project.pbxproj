@@ -376,6 +376,17 @@
 		C02EBD2D1BB0942000A7A096 /* EmotionalAttachmentMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EBD2C1BB0942000A7A096 /* EmotionalAttachmentMoreInfoViewController.swift */; };
 		C02EBD2F1BB0944100A7A096 /* EmotionalAttachmentActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EBD2E1BB0944100A7A096 /* EmotionalAttachmentActivityReminderViewController.swift */; };
 		C02EBD331BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EBD321BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift */; };
+		C047DDF51BB0D391005F58F7 /* EmotionalSecurity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C047DDF41BB0D391005F58F7 /* EmotionalSecurity.storyboard */; };
+		C047DDF71BB0DA9D005F58F7 /* WhyIsEmotionalSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DDF61BB0DA9D005F58F7 /* WhyIsEmotionalSecurityViewController.swift */; };
+		C047DDF91BB0DADF005F58F7 /* EmotionalSecurityOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DDF81BB0DADF005F58F7 /* EmotionalSecurityOverviewViewController.swift */; };
+		C047DDFB1BB0DAFD005F58F7 /* EmotionalSecurityWhatYouWillNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DDFA1BB0DAFD005F58F7 /* EmotionalSecurityWhatYouWillNeedViewController.swift */; };
+		C047DDFD1BB0DB19005F58F7 /* EmotionalSecurityBabyReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DDFC1BB0DB19005F58F7 /* EmotionalSecurityBabyReadyViewController.swift */; };
+		C047DDFF1BB0DB4A005F58F7 /* EmotionalSecurityWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DDFE1BB0DB4A005F58F7 /* EmotionalSecurityWhatDidYouSeeViewController.swift */; };
+		C047DE011BB0DB6F005F58F7 /* EmotionalSecurityGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DE001BB0DB6F005F58F7 /* EmotionalSecurityGoodOutcomeViewController.swift */; };
+		C047DE031BB0DB7E005F58F7 /* EmotionalSecurityBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DE021BB0DB7E005F58F7 /* EmotionalSecurityBadOutcomeViewController.swift */; };
+		C047DE051BB0DBAC005F58F7 /* EmotionalSecurityMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DE041BB0DBAC005F58F7 /* EmotionalSecurityMoreInfoViewController.swift */; };
+		C047DE071BB0DBD4005F58F7 /* EmotionalSecurityTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DE061BB0DBD4005F58F7 /* EmotionalSecurityTimeToTestViewController.swift */; };
+		C047DE091BB0DBE6005F58F7 /* EmotionalSecurityActivityReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047DE081BB0DBE6005F58F7 /* EmotionalSecurityActivityReminder.swift */; };
 		C07233A11BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07233A01BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -845,6 +856,17 @@
 		C02EBD2C1BB0942000A7A096 /* EmotionalAttachmentMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalAttachmentMoreInfoViewController.swift; sourceTree = "<group>"; };
 		C02EBD2E1BB0944100A7A096 /* EmotionalAttachmentActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalAttachmentActivityReminderViewController.swift; sourceTree = "<group>"; };
 		C02EBD321BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalAttachmentTimeToTestViewController.swift; sourceTree = "<group>"; };
+		C047DDF41BB0D391005F58F7 /* EmotionalSecurity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EmotionalSecurity.storyboard; sourceTree = "<group>"; };
+		C047DDF61BB0DA9D005F58F7 /* WhyIsEmotionalSecurityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsEmotionalSecurityViewController.swift; sourceTree = "<group>"; };
+		C047DDF81BB0DADF005F58F7 /* EmotionalSecurityOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityOverviewViewController.swift; sourceTree = "<group>"; };
+		C047DDFA1BB0DAFD005F58F7 /* EmotionalSecurityWhatYouWillNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityWhatYouWillNeedViewController.swift; sourceTree = "<group>"; };
+		C047DDFC1BB0DB19005F58F7 /* EmotionalSecurityBabyReadyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityBabyReadyViewController.swift; sourceTree = "<group>"; };
+		C047DDFE1BB0DB4A005F58F7 /* EmotionalSecurityWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
+		C047DE001BB0DB6F005F58F7 /* EmotionalSecurityGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityGoodOutcomeViewController.swift; sourceTree = "<group>"; };
+		C047DE021BB0DB7E005F58F7 /* EmotionalSecurityBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityBadOutcomeViewController.swift; sourceTree = "<group>"; };
+		C047DE041BB0DBAC005F58F7 /* EmotionalSecurityMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityMoreInfoViewController.swift; sourceTree = "<group>"; };
+		C047DE061BB0DBD4005F58F7 /* EmotionalSecurityTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityTimeToTestViewController.swift; sourceTree = "<group>"; };
+		C047DE081BB0DBE6005F58F7 /* EmotionalSecurityActivityReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionalSecurityActivityReminder.swift; sourceTree = "<group>"; };
 		C07233A01BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollingBackToFrontActivityReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1424,6 +1446,7 @@
 		9EC424051B5466B90037C0E9 /* SocialAndEmotional */ = {
 			isa = PBXGroup;
 			children = (
+				C047DDF31BB0D30F005F58F7 /* EmotionalSecurity */,
 				C02EBD1B1BB08CBA00A7A096 /* EmotionalAttachment */,
 				9E923CB61B69511000F2B0A7 /* FacialMimic */,
 				2099659E1B68591800B93C5D /* SocialSmiling */,
@@ -1610,6 +1633,24 @@
 			name = EmotionalAttachment;
 			sourceTree = "<group>";
 		};
+		C047DDF31BB0D30F005F58F7 /* EmotionalSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				C047DDF41BB0D391005F58F7 /* EmotionalSecurity.storyboard */,
+				C047DDF61BB0DA9D005F58F7 /* WhyIsEmotionalSecurityViewController.swift */,
+				C047DDF81BB0DADF005F58F7 /* EmotionalSecurityOverviewViewController.swift */,
+				C047DDFA1BB0DAFD005F58F7 /* EmotionalSecurityWhatYouWillNeedViewController.swift */,
+				C047DDFC1BB0DB19005F58F7 /* EmotionalSecurityBabyReadyViewController.swift */,
+				C047DDFE1BB0DB4A005F58F7 /* EmotionalSecurityWhatDidYouSeeViewController.swift */,
+				C047DE001BB0DB6F005F58F7 /* EmotionalSecurityGoodOutcomeViewController.swift */,
+				C047DE021BB0DB7E005F58F7 /* EmotionalSecurityBadOutcomeViewController.swift */,
+				C047DE041BB0DBAC005F58F7 /* EmotionalSecurityMoreInfoViewController.swift */,
+				C047DE061BB0DBD4005F58F7 /* EmotionalSecurityTimeToTestViewController.swift */,
+				C047DE081BB0DBE6005F58F7 /* EmotionalSecurityActivityReminder.swift */,
+			);
+			name = EmotionalSecurity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1762,6 +1803,7 @@
 				9EE7EB101B55A1CB00C73CA3 /* CrossingEyes.storyboard in Resources */,
 				826A90451BAE385900230667 /* rolling back to front.mp4 in Resources */,
 				82401C231B28219A008202EA /* OmnesSem.ttf in Resources */,
+				C047DDF51BB0D391005F58F7 /* EmotionalSecurity.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1786,6 +1828,7 @@
 				9ED51C0A1B5C22C70000C5E6 /* TestHistories.swift in Sources */,
 				9E923CCA1B69521800F2B0A7 /* FacialMimicMoreInfoViewController.swift in Sources */,
 				A5ABF6C31B81F63200CE0EDE /* BookPresentationTimeToTestViewController.swift in Sources */,
+				C047DE031BB0DB7E005F58F7 /* EmotionalSecurityBadOutcomeViewController.swift in Sources */,
 				9EF313721B50554F0094DAC7 /* WhyIsCrawlingViewController.swift in Sources */,
 				824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */,
 				8270B2DC1B81DFF100DFFB52 /* MPUIEdgeInsetsToNSDictionaryValueTransformer.m in Sources */,
@@ -1815,6 +1858,7 @@
 				9EABF2A01B4DD44D002FDA2C /* FallingToyBadOutcomeViewController.swift in Sources */,
 				9EE7EB531B56DE1900C73CA3 /* AttentionAtDistanceTimeToTestViewController.swift in Sources */,
 				8270B2DA1B81DFF100DFFB52 /* MPUIColorToNSStringValueTransformer.m in Sources */,
+				C047DDFF1BB0DB4A005F58F7 /* EmotionalSecurityWhatDidYouSeeViewController.swift in Sources */,
 				8270B2AB1B81DFF100DFFB52 /* MPABTestDesignerClearRequestMessage.m in Sources */,
 				C07233A11BAFCA6B00956AE2 /* RollingBackToFrontActivityReminderViewController.swift in Sources */,
 				9E934A661B6BBD790043F365 /* PartiallyCoveredToyTimeToTestViewController.swift in Sources */,
@@ -1826,6 +1870,7 @@
 				82E574761B707538006FA7B1 /* PincerWhatWillYouNeedViewController.swift in Sources */,
 				9EE7EB161B55A61800C73CA3 /* CrossingEyesWhatWillYouNeedViewController.swift in Sources */,
 				8270B2D81B81DFF100DFFB52 /* MPTweakStore.m in Sources */,
+				C047DE071BB0DBD4005F58F7 /* EmotionalSecurityTimeToTestViewController.swift in Sources */,
 				20E356491B77E053002F38C7 /* SittingAndReachingBadOutcomeViewController.swift in Sources */,
 				8270B2AF1B81DFF100DFFB52 /* MPABTestDesignerDeviceInfoResponseMessage.m in Sources */,
 				8270B2A81B81DFF100DFFB52 /* MPAbstractABTestDesignerMessage.m in Sources */,
@@ -1858,6 +1903,7 @@
 				209965941B63113A00B93C5D /* SelfRecognitionGoodOutcomeViewController.swift in Sources */,
 				82E5746F1B707538006FA7B1 /* PincerIsBabyReadyViewController.swift in Sources */,
 				82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */,
+				C047DDF71BB0DA9D005F58F7 /* WhyIsEmotionalSecurityViewController.swift in Sources */,
 				8270B2D71B81DFF100DFFB52 /* MPTweakInline.m in Sources */,
 				9EABF2961B4DB09C002FDA2C /* FallingToyWhatWillYouNeedViewController.swift in Sources */,
 				C029B7221BAF859C00849179 /* RollingBacktoFrontTestMoreInfoViewController.swift in Sources */,
@@ -1924,6 +1970,7 @@
 				20DA0E801B73191500B17C28 /* UnassistedSittingTimeToTestViewController.swift in Sources */,
 				9EABF29A1B4DCA08002FDA2C /* FallingToyTimeToTestViewController.swift in Sources */,
 				8270B2AD1B81DFF100DFFB52 /* MPABTestDesignerConnection.m in Sources */,
+				C047DE011BB0DB6F005F58F7 /* EmotionalSecurityGoodOutcomeViewController.swift in Sources */,
 				9EE7EB201B55A68B00C73CA3 /* CrossingEyesBadOutcomeViewController.swift in Sources */,
 				A5ABF6D51B82B1CC00CE0EDE /* BookPresentationActivityReminderViewController.swift in Sources */,
 				9EAEB5DC1B4CA74000159730 /* LanguageCognitiveMilestoneViewController.swift in Sources */,
@@ -1939,6 +1986,7 @@
 				9EE7EB5B1B56DE5200C73CA3 /* AttentionAtDistanceMoreInfoViewController.swift in Sources */,
 				20E3565A1B797B2E002F38C7 /* PlasticJarTestOverviewViewController.swift in Sources */,
 				8270B2DB1B81DFF100DFFB52 /* MPUIControlBinding.m in Sources */,
+				C047DE091BB0DBE6005F58F7 /* EmotionalSecurityActivityReminder.swift in Sources */,
 				9ED51BCD1B583B020000C5E6 /* TestHistory.swift in Sources */,
 				9EC424101B5481450037C0E9 /* WhyIsPointFollowingViewController.swift in Sources */,
 				2099658E1B6310D300B93C5D /* SelfRecognitionIsBabyReadyViewController.swift in Sources */,
@@ -2009,6 +2057,7 @@
 				209965B11B685A8D00B93C5D /* SocialSmilingBadOutcomeViewController.swift in Sources */,
 				20E356581B797B17002F38C7 /* WhyIsPlasticJarViewController.swift in Sources */,
 				9EF313801B50C3920094DAC7 /* LetsCrawlGoodOutcomeViewController.swift in Sources */,
+				C047DE051BB0DBAC005F58F7 /* EmotionalSecurityMoreInfoViewController.swift in Sources */,
 				8270B2BA1B81DFF100DFFB52 /* MPCGPointToNSDictionaryValueTransformer.m in Sources */,
 				209965901B6310F400B93C5D /* SelfRecognitionTimeToTestViewController.swift in Sources */,
 				9EC424241B548CE90037C0E9 /* SocialEmotionalIntroViewController.swift in Sources */,
@@ -2029,6 +2078,7 @@
 				8270B2C71B81DFF100DFFB52 /* MPNSNumberToCGFloatValueTransformer.m in Sources */,
 				20E356641B798234002F38C7 /* PlasticJarGoodOutcomeViewController.swift in Sources */,
 				20E3563D1B77DF3A002F38C7 /* SittingAndReachingTestOverviewViewController.swift in Sources */,
+				C047DDFD1BB0DB19005F58F7 /* EmotionalSecurityBabyReadyViewController.swift in Sources */,
 				8283015D1BACE3CD00B015D7 /* BNTextView.swift in Sources */,
 				20E356661B798256002F38C7 /* PlasticJarBadOutcomeViewController.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
@@ -2067,6 +2117,7 @@
 				82401C2F1B285CF1008202EA /* UILabelTest.swift in Sources */,
 				8270B2E21B81DFF100DFFB52 /* NSData+MPBase64.m in Sources */,
 				9ED51BB91B58132A0000C5E6 /* WhyIsSymmetryViewController.swift in Sources */,
+				C047DDFB1BB0DAFD005F58F7 /* EmotionalSecurityWhatYouWillNeedViewController.swift in Sources */,
 				9EC424141B5481990037C0E9 /* PointFollowingWhatWillYouNeedViewController.swift in Sources */,
 				2057870B1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift in Sources */,
 				9E66A8371B7BA8F100855180 /* FallingToyMoreInformationViewController.swift in Sources */,
@@ -2080,6 +2131,7 @@
 				C02EBD331BB09F5E00A7A096 /* EmotionalAttachmentTimeToTestViewController.swift in Sources */,
 				209965AD1B685A4F00B93C5D /* SocialSmilingWhatDidYouSeeViewController.swift in Sources */,
 				9EE7EB331B56A7F900C73CA3 /* HearingWhatDidYouSeeViewController.swift in Sources */,
+				C047DDF91BB0DADF005F58F7 /* EmotionalSecurityOverviewViewController.swift in Sources */,
 				9E923CB11B683E8600F2B0A7 /* TestProfiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
