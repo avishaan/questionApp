@@ -71,7 +71,7 @@ class Test: NSObject, NSCoding {
     ]
     static var languageAndCognitive = [
       TestNames.bookPresentation,
-      TestNames.plasticJar,
+//      TestNames.plasticJar,
       TestNames.completelyCoveredToy,
       TestNames.partiallyCoveredToy,
       TestNames.attentionAtDistance,
@@ -150,7 +150,7 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.attentionAtDistance,
         TestNamesPresentable.partiallyCoveredToy,
         TestNamesPresentable.completelyCoveredToy,
-        TestNamesPresentable.plasticJar,            // ask and respond
+//        TestNamesPresentable.plasticJar,            // ask and respond
         TestNamesPresentable.pointFollowing,
         TestNamesPresentable.selfRecognition,
         TestNamesPresentable.socialSmiling,
