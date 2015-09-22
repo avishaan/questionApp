@@ -21,6 +21,11 @@ class FeedbackViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    // allow the user to dismiss the keyboard if they tap the main view
+    let tap = UITapGestureRecognizer(target: self, action: "userTappedMainView")
+    tap.numberOfTapsRequired = 1
+    self.view.addGestureRecognizer(tap)
+    
     // Do any additional setup after loading the view.
     Tracker.createEvent(.FeedbackDialog, .Load, .NA)
   }
@@ -28,6 +33,10 @@ class FeedbackViewController: UIViewController {
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  func userTappedMainView () {
+    self.feedbackText.resignFirstResponder()
   }
   
   @IBAction func sliderValueChanged(sender: AnyObject) {
@@ -51,14 +60,33 @@ class FeedbackViewController: UIViewController {
   }
   
   @IBAction func onSubmitTap(sender: UIButton) {
-    self.dismissViewControllerAnimated(false, completion: nil)
     // save into user defaults that we showed the feedback view controller
     NSUserDefaults.standardUserDefaults().setBool(true, forKey: kHasFeedbackDialogShown)
     
     // submit analytics data
     mixpanel.track("Feedback Dialog Submitted", properties: ["rating": Int(ratingSlider!.value), "feedBackText": feedbackText.text, "submitted": true])
+
+    let messageString = "We'd appreciate it if you would take a moment to leave a review for us on the App Store!"
+    let alert: UIAlertController = UIAlertController(title: "Thank you!", message: messageString, preferredStyle: UIAlertControllerStyle.Alert);
+    let cancelAction = UIAlertAction(title: "No thanks", style: UIAlertActionStyle.Destructive) { (action) -> Void in
+      self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    let confirmAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (action) -> Void in
+      self.dismissViewControllerAnimated(false, completion: nil)
+      self.openInAppStore();
+    }
+    alert.addAction(cancelAction);
+    alert.addAction(confirmAction);
+    self.presentViewController(alert, animated: true, completion: nil)
   }
   
+  func openInAppStore() {
+    let appId = "1017013541"
+    let urlString = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&id=\(appId)"
+    let url = NSURL(string: urlString)!
+    UIApplication.sharedApplication().openURL(url)
+  }
+
   @IBAction func onCancelTap(sender: UIButton) {
     self.dismissViewControllerAnimated(false, completion: nil)
     // save into user defaults that we showed the feedback view controller
