@@ -42,6 +42,7 @@ struct Tracker {
     case RollingBackToFront = "RollingBackToFront"
     case EmotionalAttachment = "EmotionalAttachment"
     case EmotionalSecurity = "EmotionalSecurity"
+    case ReceptiveLanguage = "ReceptiveLanguage"
   }
   
   /**

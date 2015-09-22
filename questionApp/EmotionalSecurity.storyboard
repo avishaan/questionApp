@@ -850,10 +850,10 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
             </objects>
             <point key="canvasLocation" x="2414" y="501"/>
         </scene>
-        <!--Facial Mimic More Info View Controller-->
+        <!--Emotional Security More Info View Controller-->
         <scene sceneID="Y0R-V3-P5F">
             <objects>
-                <viewController id="Gmo-aM-92N" customClass="FacialMimicMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gmo-aM-92N" customClass="EmotionalSecurityMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UDn-6M-Ld9"/>
                         <viewControllerLayoutGuide type="bottom" id="QoJ-ge-4bP"/>

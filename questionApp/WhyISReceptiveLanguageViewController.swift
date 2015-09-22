@@ -37,10 +37,7 @@ class WhyISReceptiveLanguageViewController: UIViewController {
     let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
     attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 5))
-    attributedString.addAttributes(boldAttributes, range: NSMakeRange(25, 15))
-    attributedString.addAttributes(standardAttributes, range: NSMakeRange(40, 6))
-    attributedString.addAttributes(boldAttributes, range: NSMakeRange(46, 4))
-    
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(11, 33))
     descriptionLabel.attributedText = attributedString
   }
 }
