@@ -41,6 +41,7 @@ struct Tracker {
     case FeedbackDialog = "Feedback Dialog"
     case RollingBackToFront = "RollingBackToFront"
     case EmotionalAttachment = "EmotionalAttachment"
+    case EmotionalSecurity = "EmotionalSecurity"
   }
   
   /**

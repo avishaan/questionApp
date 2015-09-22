@@ -44,6 +44,7 @@ class Test: NSObject, NSCoding {
         static var rollingBackToFront: String = "rolling back to front"
         // TODO: add additional var as new tests are added to the app
         static var emotionalAttachment: String = "emotional attachment"
+        static var emotionalSecurity: String = "emotional security"
     }
   
   // Test names in their respective category
@@ -70,7 +71,8 @@ class Test: NSObject, NSCoding {
       TestNames.facialMimic,
       TestNames.socialSmiling,
       TestNames.pointFollowing,
-      TestNames.emotionalAttachment
+      TestNames.emotionalAttachment,
+      TestNames.emotionalSecurity
     ]
     static var languageAndCognitive = [
 //      TestNames.bookPresentation,
@@ -107,6 +109,7 @@ class Test: NSObject, NSCoding {
       // TODO: if new tests are added to the app, add them here.
       static var rollingBackToFront = "rolling back to front"
       static var emotionalAttachment: String = "emotional attachment"
+      static var emotionalSecurity: String = "emotional security"
     }
     
     static let SecondsInADay : Double = 24 * 60 * 60
@@ -138,6 +141,7 @@ class Test: NSObject, NSCoding {
         //static var lateralTracking:          Double =  7 * Test.SecondsInADay
         //static var stranger:                 Double = 21 * Test.SecondsInADay
         static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
+        static var emotionalSecurity:      Double = 30 * Test.SecondsInADay
         static var rollingOverBackToFront:   Double = 30 * Test.SecondsInADay
         //static var rollingOverFrontToBack:   Double = 30 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
@@ -165,7 +169,8 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.facialMimic,
         // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
         TestNamesPresentable.rollingBackToFront,
-        TestNamesPresentable.emotionalAttachment
+        TestNamesPresentable.emotionalAttachment,
+        TestNamesPresentable.emotionalSecurity
     ]
     
 //    static let initialStoryboardIDs = [
