@@ -1,5 +1,5 @@
 //
-//  BookPresentationIsBabyReadyViewController.swift
+//  JointAttentionIsBabyReadyViewController.swift
 //  questionApp
 //
 //  Created by Michael Leung on 8/17/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookPresentationIsBabyReadyViewController: UIViewController {
+class JointAttentionIsBabyReadyViewController: UIViewController {
     
     @IBOutlet weak var bulletedLabel1: UILabel!
     @IBOutlet weak var bulletedLabel2: UILabel!
@@ -30,12 +30,12 @@ class BookPresentationIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("BookPresentationIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("JointAttentionIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("BookPresentationIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("JointAttentionIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     // Helper function formats text attributes for substrings in labels.

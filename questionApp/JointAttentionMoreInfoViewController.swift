@@ -1,5 +1,5 @@
 //
-//  BookPresentationMoreInfoViewController.swift
+//  JointAttentionMoreInfoViewController.swift
 //  questionApp
 //
 //  Created by Michael Leung on 8/17/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookPresentationMoreInfoViewController: UIViewController {
+class JointAttentionMoreInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

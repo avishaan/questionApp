@@ -1,5 +1,5 @@
 //
-//  BookPresentationBadOutcomeViewController.swift
+//  JointAttentionBadOutcomeViewController.swift
 //  questionApp
 //
 //  Created by Michael Leung on 8/17/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookPresentationBadOutcomeViewController: UIViewController {
+class JointAttentionBadOutcomeViewController: UIViewController {
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test : Test?
     var parent = Parent()
@@ -48,7 +48,7 @@ class BookPresentationBadOutcomeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "BookPresentationToActivityReminderSegueID" {
+        if segue.identifier == "JointAttentionToActivityReminderSegueID" {
             let controller = segue.destinationViewController as! ActivityReminderViewController
             
             // set the test name on the ActivityReminder VC
@@ -121,10 +121,10 @@ class BookPresentationBadOutcomeViewController: UIViewController {
     */
     func scheduleReminder() {
         
-        if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.bookPresentation) == false {
+        if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.jointAttention) == false {
             
             // configure the local notification
-            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.bookPresentation, secondsBeforeDisplayingReminder: Test.NotificationInterval.bookPresentation)
+            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.jointAttention, secondsBeforeDisplayingReminder: Test.NotificationInterval.jointAttention)
             
             // schedule the local notification
             localNotification.scheduleNotification()

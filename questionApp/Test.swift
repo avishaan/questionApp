@@ -186,7 +186,7 @@ class Test: NSObject, NSCoding {
 //        TestNamesPresentable.selfRecognition : "WhyIsSelfRecognitionStoryboardID",
 //        TestNamesPresentable.socialSmiling : "WhyIsSocialSmilingStoryboardID",
 //        TestNamesPresentable.facialMimic : "WhyIsFacialMimicStoryboardID",
-//        TestNamesPresentable.bookPresentation : "WhyIsBookPresentationStoryboardID"
+//        TestNamesPresentable.bookPresentation : "WhyIsJointAttentionStoryboardID"
 //        // TODO: if new tests are added to the app, add them here
 //    ]
     
