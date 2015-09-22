@@ -15,7 +15,7 @@ class WhyIsVisualTrackingViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.RollingBackToFront, .Load, .Why)
+    Tracker.createEvent(.VisualTracking, .Load, .Why)
     applyTextAttributesToLabel()
   }
   
@@ -31,15 +31,15 @@ class WhyIsVisualTrackingViewController: UIViewController {
   // Helper function formats text attributes for multiple substrings in label.
   func applyTextAttributesToLabel() {
     
-    let string = "Rolling is indication of gross motor development. If there's developmental delays, therapy early on can help baby get back on track."
+    let string = "Between birth and 4 months, baby should develop the ability to track a moving object by moving just eyes rather than entire head. This is known as lateral tracking."
     
     var attributedString = NSMutableAttributedString(string: string)
     
     let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
-    attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 60))
-    attributedString.addAttributes(boldAttributes, range: NSMakeRange(61, 20))
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(7, 20))
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(147, 16))
     //    attributedString.addAttributes(standardAttributes, range: NSMakeRange(71, 75))
     
     descriptionLabel.attributedText = attributedString

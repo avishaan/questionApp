@@ -43,6 +43,7 @@ struct Tracker {
     case EmotionalAttachment = "EmotionalAttachment"
     case EmotionalSecurity = "EmotionalSecurity"
     case ReceptiveLanguage = "ReceptiveLanguage"
+    case VisualTracking = "VisualTracking"
   }
   
   /**
