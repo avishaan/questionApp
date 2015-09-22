@@ -39,7 +39,8 @@ class Test: NSObject, NSCoding {
         static var unassistedSitting: String = "unassisted sitting"
         static var sittingAndReaching: String = "sitting and reaching"
         static var plasticJar: String = "ask and respond"
-        static var bookPresentation: String = "book presentation"
+//        static var bookPresentation: String = "book presentation"
+        static var jointAttention: String = "joint attention"
         static var rollingBackToFront: String = "rolling back to front"
         // TODO: add additional var as new tests are added to the app
         static var emotionalAttachment: String = "emotional attachment"
@@ -72,7 +73,8 @@ class Test: NSObject, NSCoding {
       TestNames.emotionalAttachment
     ]
     static var languageAndCognitive = [
-      TestNames.bookPresentation,
+//      TestNames.bookPresentation,
+      TestNames.jointAttention,
 //      TestNames.plasticJar,
       TestNames.completelyCoveredToy,
       TestNames.partiallyCoveredToy,
@@ -100,7 +102,8 @@ class Test: NSObject, NSCoding {
         static var unassistedSitting = "unassisted sitting"
         static var sittingAndReaching = "sitting and reaching"
         static var plasticJar = "ask and respond"                  // ask and respond
-        static var bookPresentation: String = "book presentation"
+//        static var bookPresentation: String = "book presentation"
+      static var jointAttention = "joint attention"
       // TODO: if new tests are added to the app, add them here.
       static var rollingBackToFront = "rolling back to front"
       static var emotionalAttachment: String = "emotional attachment"
@@ -129,7 +132,8 @@ class Test: NSObject, NSCoding {
         static var unassistedSitting:   Double = 30 * Test.SecondsInADay
         static var sittingAndReaching:  Double = 30 * Test.SecondsInADay
         static var plasticJar:          Double = 30 * Test.SecondsInADay  // ask and respond
-        static var bookPresentation:    Double = 30 * Test.SecondsInADay
+//        static var bookPresentation:    Double = 30 * Test.SecondsInADay
+        static var jointAttention:    Double = 30 * Test.SecondsInADay
         //static var commandWithGesture:  Double = 30 * Test.SecondsInADay
         //static var lateralTracking:          Double =  7 * Test.SecondsInADay
         //static var stranger:                 Double = 21 * Test.SecondsInADay
@@ -157,6 +161,7 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.pointFollowing,
         TestNamesPresentable.selfRecognition,
         TestNamesPresentable.socialSmiling,
+      TestNamesPresentable.jointAttention,
         TestNamesPresentable.facialMimic,
         // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
         TestNamesPresentable.rollingBackToFront,
