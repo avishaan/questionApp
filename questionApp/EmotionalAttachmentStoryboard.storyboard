@@ -872,10 +872,10 @@ to be comforted.  </string>
             </objects>
             <point key="canvasLocation" x="2414" y="501"/>
         </scene>
-        <!--Facial Mimic More Info View Controller-->
+        <!--Emotional Attachment More Info View Controller-->
         <scene sceneID="TEc-Qa-ONY">
             <objects>
-                <viewController id="bH8-zY-5i3" customClass="FacialMimicMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bH8-zY-5i3" customClass="EmotionalAttachmentMoreInfoViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cUb-yk-IDS"/>
                         <viewControllerLayoutGuide type="bottom" id="rnw-hA-eyG"/>

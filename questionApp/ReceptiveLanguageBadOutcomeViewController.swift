@@ -87,24 +87,24 @@ class ReceptiveLanguageBadOutcomeViewController: UIViewController {
       boldLabel.text = "Try again and be sure baby is rested, fed, and alert."
     } else if failed == 2 {
       // update questionLabel
-      questionLabel.text = "Did baby resist comforting?"
+      questionLabel.text = "Doesn't acknowledge command?"
       
       // update infoLabel
-      infoLabel.text = "Being responsive to baby's needs can increase emtional security. For example, soothe your crying baby."
-      
-      boldLabel.text = "Practice responsive care to baby’s emotions while not overwhelming your baby."
+      infoLabel.text = "Try practicing: show baby how verbal & gestural commands work by demonstrating what “Come here!” means with another adult."
+
+      boldLabel.text = "Try the test again in a month."
     } else if failed >= 3 {
       // update questionLabel
-      questionLabel.text = "Did baby resist comforting?"
+      questionLabel.text = "Doesn't acknowledge command?"
       
       // update infoLabel
-      infoLabel.text = "Practicing responsive care to your baby's emotional needs is the best way to help baby develop a healthy sense of security."
-      boldLabel.text = "Your baby’s temperament may also change with age."
+      infoLabel.text = "Being raised in a bilingual household can result in baby being slightly slower to understand verbal & gestural cues."
+      boldLabel.text = "If your baby is over 18 month and still doesn't respond, please record this test to show your pediatrician."
+
       
     } else {
       // update questionLabel
-      questionLabel.text = "Did baby resist comforting?"
-      
+      questionLabel.text = "Doesn't acknowledge command?"
       // update infoLabel
       infoLabel.text = "Not to worry! Not all babies develop at the same rate."
       boldLabel.text = "Try again and be sure baby is rested, fed, and alert."
@@ -118,10 +118,10 @@ class ReceptiveLanguageBadOutcomeViewController: UIViewController {
   */
   func scheduleReminder() {
     
-    if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.emotionalAttachment) == false {
+    if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.receptiveLanguage) == false {
       
       // configure the local notification
-      let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.emotionalAttachment, secondsBeforeDisplayingReminder: Test.NotificationInterval.emotionalAttachment)
+      let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.receptiveLanguage, secondsBeforeDisplayingReminder: Test.NotificationInterval.receptiveLanguage)
       
       // schedule the local notification
       localNotification.scheduleNotification()

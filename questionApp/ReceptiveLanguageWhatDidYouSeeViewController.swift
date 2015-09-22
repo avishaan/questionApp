@@ -27,7 +27,7 @@ class ReceptiveLanguageWhatDidYouSeeViewController: UIViewController {
     profiles.initProfilesFromPersistentStore()
     
     // Get the test information.
-     test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.receptiveLanguage)
+    // test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.receptiveLanguage)
   }
   
   override func didReceiveMemoryWarning() {
