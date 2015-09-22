@@ -26,14 +26,13 @@
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
             <string>Omnes-Semibold</string>
-            <string>Omnes-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Why Is Emotional Attachment View Controller-->
+        <!--Why Is Emotional Security View Controller-->
         <scene sceneID="DOH-Yh-XLP">
             <objects>
-                <viewController storyboardIdentifier="WhyIsEmotionalAttachmentStoryboardID" id="CHg-nZ-xgX" customClass="WhyIsEmotionalAttachmentViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyIsEmotionalSecurityStoryboardID" id="CHg-nZ-xgX" customClass="WhyIsEmotionalSecurityViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lPZ-eX-ees"/>
                         <viewControllerLayoutGuide type="bottom" id="YoA-zf-wZP"/>
@@ -61,7 +60,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhyIsEmotionalAttachment" translatesAutoresizingMaskIntoConstraints="NO" id="bY1-4d-zE0">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bY1-4d-zE0">
                                 <rect key="frame" x="0.0" y="154" width="320" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby will recognize familiar faces of caregivers and may show negative reactions to strangers by the end of first year. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tb-1F-FQf">
@@ -99,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="-368" y="844"/>
         </scene>
-        <!--Emotional Attachment Test Overview View Controller-->
+        <!--Emotional Security Overview View Controller-->
         <scene sceneID="Nhg-xm-Ppa">
             <objects>
-                <viewController id="tVu-FL-lwC" customClass="EmotionalAttachmentTestOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tVu-FL-lwC" customClass="EmotionalSecurityOverviewViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1mk-q3-aP3"/>
                         <viewControllerLayoutGuide type="bottom" id="Zap-fp-Kk9"/>
@@ -127,7 +126,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rzb-tn-QJN" kind="presentation" identifier="EmotionalAttachmentWhatWillYouNeedSegueID" id="a1s-pD-ujf"/>
+                                    <segue destination="rzb-tn-QJN" kind="presentation" identifier="EmotionalSecurityWhatWillYouNeedSegueID" id="a1s-pD-ujf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-BA-eeD">
@@ -180,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="110" y="1382.5"/>
         </scene>
-        <!--Emotional Attachment What Will You Need View Controller-->
+        <!--Emotional Security What You Will Need View Controller-->
         <scene sceneID="z4c-F6-FjR">
             <objects>
-                <viewController id="rzb-tn-QJN" customClass="EmotionalAttachmentWhatWillYouNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rzb-tn-QJN" customClass="EmotionalSecurityWhatYouWillNeedViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0wU-ov-tgp"/>
                         <viewControllerLayoutGuide type="bottom" id="7ZJ-JM-FV7"/>
@@ -241,18 +240,18 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="testPreparationLabel" destination="fSc-6F-3Ci" id="CC7-Qu-wWH"/>
-                        <segue destination="1Oq-pZ-azb" kind="presentation" identifier="EmotionalAttachmentIsBabyReadySegueID" id="Rjb-oA-aNy"/>
-                        <segue destination="9f8-Wm-4qh" kind="presentation" identifier="EmotionalAttachmentTimeToTestSegueID" id="gP9-S1-yx2"/>
+                        <segue destination="1Oq-pZ-azb" kind="presentation" identifier="EmotionalSecuritysBabyReadySegueID" id="Rjb-oA-aNy"/>
+                        <segue destination="9f8-Wm-4qh" kind="presentation" identifier="EmotionalSecurityTimeToTestSegueID" id="gP9-S1-yx2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZfJ-0y-xQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="548" y="844"/>
         </scene>
-        <!--Emotional Attachment Baby Ready View Controller-->
+        <!--Emotional Security Baby Ready View Controller-->
         <scene sceneID="KsB-S7-q4I">
             <objects>
-                <viewController id="1Oq-pZ-azb" customClass="EmotionalAttachmentBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Oq-pZ-azb" customClass="EmotionalSecurityBabyReadyViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eER-xe-m1H"/>
                         <viewControllerLayoutGuide type="bottom" id="Zn8-uE-5Yg"/>
@@ -398,17 +397,17 @@
                         <outlet property="bulletedLabel1" destination="gUp-JZ-cua" id="iHV-JQ-YNt"/>
                         <outlet property="bulletedLabel2" destination="Tx0-Ko-xF3" id="F6I-Wy-7HJ"/>
                         <outlet property="bulletedLabel3" destination="NF3-Ov-LTc" id="gPq-sT-WaN"/>
-                        <segue destination="9f8-Wm-4qh" kind="presentation" identifier="EmotionalAttachmentBabyReadyToTimeToTestSegueID" id="1MG-GZ-aba"/>
+                        <segue destination="9f8-Wm-4qh" kind="presentation" identifier="EmotionalSecurityBabyReadyToTimeToTestSegueID" id="1MG-GZ-aba"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ulf-MD-Tdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976" y="1338"/>
         </scene>
-        <!--Emotional Attachment Time To Test View Controller-->
+        <!--Emotional Security Time To Test View Controller-->
         <scene sceneID="aul-bT-yb2">
             <objects>
-                <viewController id="9f8-Wm-4qh" customClass="EmotionalAttachmentTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9f8-Wm-4qh" customClass="EmotionalSecurityTimeToTestViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a8Q-7e-Lbh"/>
                         <viewControllerLayoutGuide type="bottom" id="R18-zz-QZn"/>
@@ -494,10 +493,10 @@ Mi4gSGF2ZSBhbiB1bmZhbWlsaWFyIHBlcnNvbgMgdHJ5IHRvIGhvbGQgeW91ciBiYWJ5Lg
             </objects>
             <point key="canvasLocation" x="970" y="639"/>
         </scene>
-        <!--Emotional Attachment What Did You See View Controller-->
+        <!--Emotional Security What Did You See View Controller-->
         <scene sceneID="mXx-7g-Ogq">
             <objects>
-                <viewController id="LTG-fe-aCN" customClass="EmotionalAttachmentWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LTG-fe-aCN" customClass="EmotionalSecurityWhatDidYouSeeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LFS-3u-vMP"/>
                         <viewControllerLayoutGuide type="bottom" id="gea-n9-ADL"/>
@@ -532,7 +531,7 @@ QmFieSBjcmllcyB3aGVuIGFuIHVuZmFtaWxpYXIgcGVyc29uIANob2xkcyB0aGVtLiA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Nby-7h-fw1" kind="presentation" identifier="FacialMimicGoodOutcomeSegueID" id="40a-sr-fws"/>
+                                    <segue destination="Nby-7h-fw1" kind="presentation" identifier="EmotionalSecurityGoodOutcomeSegueID" id="40a-sr-fws"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Eh-aR-N7z" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
@@ -556,7 +555,7 @@ aGVtLiA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4Ts-hk-4iU" kind="presentation" identifier="EmotionalAttachmentBadOutcomeSegueID" id="7Pc-mp-hyZ"/>
+                                    <segue destination="4Ts-hk-4iU" kind="presentation" identifier="EmotionalSecurityBadOutcomeSegueID" id="7Pc-mp-hyZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="N4z-Wt-xFO" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
@@ -569,6 +568,9 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
 </string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4Ts-hk-4iU" kind="presentation" identifier="EmotionalSecurityBadOutcomeSegueID1" id="76p-H2-30q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -579,10 +581,10 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
             </objects>
             <point key="canvasLocation" x="1428" y="639"/>
         </scene>
-        <!--Emotional Attachment Good Outcome View Controller-->
+        <!--Emotional Security Good Outcome View Controller-->
         <scene sceneID="jHa-ds-lSM">
             <objects>
-                <viewController id="Nby-7h-fw1" customClass="EmotionalAttachmentGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nby-7h-fw1" customClass="EmotionalSecurityGoodOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VaA-NW-zq3"/>
                         <viewControllerLayoutGuide type="bottom" id="yTo-fb-XeF"/>
@@ -594,7 +596,7 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dPH-qt-L5c">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional attachment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erp-24-e1p" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erp-24-e1p" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="242" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -654,10 +656,10 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
             </objects>
             <point key="canvasLocation" x="1897" y="335"/>
         </scene>
-        <!--Emotional Attachment Bad Outcome View Controller-->
+        <!--Emotional Security Bad Outcome View Controller-->
         <scene sceneID="TF7-8y-JIK">
             <objects>
-                <viewController id="4Ts-hk-4iU" customClass="EmotionalAttachmentBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Ts-hk-4iU" customClass="EmotionalSecurityBadOutcomeViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Sn-EL-Tmr"/>
                         <viewControllerLayoutGuide type="bottom" id="fHx-Op-80Q"/>
@@ -669,14 +671,14 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="u9u-oc-0KB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional attachment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZI-HP-ogd" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZI-HP-ogd" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="237" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHm-bW-9Zi" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="182" y="480" width="122" height="30"/>
+                                <rect key="frame" x="182" y="474" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -686,7 +688,7 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not to worry! Not all babies develop at the same rate." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTC-PR-03m">
-                                <rect key="frame" x="16" y="259" width="288" height="141"/>
+                                <rect key="frame" x="16" y="285" width="288" height="141"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -698,16 +700,6 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                                 </state>
                                 <connections>
                                     <action selector="onBackButtonTap:" destination="4Ts-hk-4iU" eventType="touchUpInside" id="kDr-3a-Rnf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6j-Xr-Wrx" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="487" width="122" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="remind me!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="z4I-2A-o0J" kind="presentation" id="s8x-Ud-5Li"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJV-7E-cTe" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
@@ -740,14 +732,8 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try again and be sure baby is rested, fed, and alert." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3z-3y-yQt">
-                                <rect key="frame" x="16" y="363" width="288" height="88"/>
-                                <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="21"/>
-                                <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itv-VH-x0l" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="93" y="449" width="122" height="30"/>
+                                <rect key="frame" x="93" y="427" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="further info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -756,12 +742,21 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                                     <segue destination="Gmo-aM-92N" kind="presentation" id="s0J-ec-Uch"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6j-Xr-Wrx" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="474" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="remind me!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="z4I-2A-o0J" kind="presentation" id="s8x-Ud-5Li"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="boldLabel" destination="Q3z-3y-yQt" id="fLt-gi-d5X"/>
                         <outlet property="infoLabel" destination="iTC-PR-03m" id="KPK-ba-k6b"/>
                         <outlet property="questionLabel" destination="IL5-Tb-Pma" id="9UU-sY-xzN"/>
                         <outlet property="rangeChartLabel" destination="53b-W5-J7e" id="z12-vE-mtm"/>
@@ -772,10 +767,10 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
             </objects>
             <point key="canvasLocation" x="1897" y="980"/>
         </scene>
-        <!--Emotional Attachment Activity Reminder View Controller-->
+        <!--Emotional Security Activity Reminder-->
         <scene sceneID="KNz-XE-7hD">
             <objects>
-                <viewController id="z4I-2A-o0J" customClass="EmotionalAttachmentActivityReminderViewController" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z4I-2A-o0J" customClass="EmotionalSecurityActivityReminder" customModule="questionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jTy-xw-sfo"/>
                         <viewControllerLayoutGuide type="bottom" id="Rb1-aO-cWS"/>
@@ -880,7 +875,7 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ZFD-gI-TGT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional attachment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOW-ml-OBt" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emotional security" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOW-ml-OBt" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -931,13 +926,13 @@ You can find out your baby's security level with the Emotional Attachment test.<
     </scenes>
     <resources>
         <image name="EmotionalAttachmentBabyReady" width="320" height="120"/>
-        <image name="WhyIsEmotionalAttachment" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="facebook" width="29" height="29"/>
         <image name="selectedRadioButton" width="20" height="20"/>
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gP9-S1-yx2"/>
+        <segue reference="1MG-GZ-aba"/>
+        <segue reference="7Pc-mp-hyZ"/>
     </inferredMetricsTieBreakers>
 </document>

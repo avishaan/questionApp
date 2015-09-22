@@ -7,29 +7,79 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class EmotionalSecurityOverviewViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  @IBOutlet weak var previewButton: UIButton!
+  var playerVC:AVPlayerViewController!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // analytics
+    Tracker.createEvent(.EmotionalSecurity, .Load, .Overview)
+  }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    enableVideoReplay()
+  }
+  
+  override func viewWillDisappear(animated: Bool) {
+    NSNotificationCenter.defaultCenter().removeObserver(self)
+    super.viewWillDisappear(animated)
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "EmotionalAttachmentEmbeddedVideoSegue" {
+      // set the playerVC as the destination
+      playerVC = segue.destinationViewController as! AVPlayerViewController
+      let path = NSBundle.mainBundle().pathForResource("emotional security", ofType: "mp4")
+      let url = NSURL.fileURLWithPath(path!)
+      // let url = NSURL(string: "crawl.mp4") // for remote locations
+      
+      // hide player controls
+      playerVC.showsPlaybackControls = false
+      playerVC.hidesBottomBarWhenPushed = true
+      playerVC.videoGravity = AVLayerVideoGravityResizeAspectFill
+      
+      playerVC.player = AVPlayer(URL: url)
+      // we start off paused, then we will play once the button is hit
+      playerVC.player.pause()
+      
+      // listen for video end notification
+      NSNotificationCenter.defaultCenter().addObserver(self,
+        selector: "enableVideoReplay",
+        name: AVPlayerItemDidPlayToEndTimeNotification,
+        object: playerVC.player.currentItem)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    else if segue.identifier == "EmotionalSecurityWhatWillYouNeedSegueID" {
+      playerVC.player.pause()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  }
+  
+  func enableVideoReplay() {
+    playerVC.player.seekToTime(kCMTimeZero)
+    // show button
+    previewButton.hidden = false
+  }
+  
+  @IBAction func onPreviewButtonTap(button: UIButton) {
+    // hide button
+    button.hidden = true
+    // play the video
+    playerVC.player.play()
+  }
+  
+  @IBAction func onBackTap(sender: BNBackButton) {
+    playerVC.player.pause()
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
 
 }

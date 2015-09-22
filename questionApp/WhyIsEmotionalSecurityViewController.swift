@@ -15,7 +15,7 @@ class WhyIsEmotionalSecurityViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.EmotionalAttachment, .Load, .Why)
+    Tracker.createEvent(.EmotionalSecurity, .Load, .Why)
     applyTextAttributesToLabel()
   }
   

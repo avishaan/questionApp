@@ -27,7 +27,7 @@ class EmotionalAttachmentWhatDidYouSeeViewController: UIViewController {
     profiles.initProfilesFromPersistentStore()
     
     // Get the test information.
-  //  test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.emotionalAttachment)
+    test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.emotionalAttachment)
   }
   
   override func didReceiveMemoryWarning() {
