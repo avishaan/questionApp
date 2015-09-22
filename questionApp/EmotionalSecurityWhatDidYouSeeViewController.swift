@@ -1,5 +1,5 @@
 //
-//  EmotionalAttachmentWhatDidYouSeeViewController.swift
+//  EmotionalSecurityWhatDidYouSeeViewController.swift
 //  questionApp
 //
 //  Created by Lekshmi on 9/21/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmotionalAttachmentWhatDidYouSeeViewController: UIViewController {
+class EmotionalSecurityWhatDidYouSeeViewController: UIViewController {
 
   var parent = Parent()
   var profiles = TestProfiles()
@@ -18,7 +18,7 @@ class EmotionalAttachmentWhatDidYouSeeViewController: UIViewController {
     super.viewDidLoad()
     
     // analytics
-    Tracker.createEvent(.EmotionalAttachment, .Load, .WhatDidSee)
+    Tracker.createEvent(.EmotionalSecurity, .Load, .WhatDidSee)
     
     // Ensure current information for parent by reloading.
     parent = Parent()
@@ -27,7 +27,7 @@ class EmotionalAttachmentWhatDidYouSeeViewController: UIViewController {
     profiles.initProfilesFromPersistentStore()
     
     // Get the test information.
-    test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.emotionalAttachment)
+     //test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.emotionalAttachment)
   }
   
   override func didReceiveMemoryWarning() {
@@ -37,20 +37,20 @@ class EmotionalAttachmentWhatDidYouSeeViewController: UIViewController {
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
-    if segue.identifier == "EmotionalAttachmentGoodOutcomeSegueID" {
+    if segue.identifier == "EmotionalSecurityGoodOutcomeSegueID" {
       
       // Record the successful symmetry test result and save it to the persistent store on disk.
       test.addTestResult(testResult: true)
       profiles.save()
       
-    } else if segue.identifier == "EmotionalAttachmentBadOutcomeSegueID" {
+    } else if segue.identifier == "EmotionalSecurityBadOutcomeSegueID" || segue.identifier == "EmotionalSecurityBadOutcomeSegueID1" {
       
       // Record the failed symmetry test result and save it to the persistent store on disk.
       test.addTestResult(testResult: false)
       profiles.save()
       
       // Pass the test results history to the destination VC.
-      let controller = segue.destinationViewController as! EmotionalAttachmentBadOutcomeViewController
+      let controller = segue.destinationViewController as! EmotionalSecurityBadOutcomeViewController
       controller.test = self.test
     }
   }
@@ -58,5 +58,4 @@ class EmotionalAttachmentWhatDidYouSeeViewController: UIViewController {
   @IBAction func onBackButtonTap(sender: AnyObject) {
     self.dismissViewControllerAnimated(true, completion: nil)
   }
-
 }
