@@ -1,5 +1,5 @@
 //
-//  WhyIsBookPresentationViewController.swift
+//  WhyIsJointAttentionViewController.swift
 //  questionApp
 //
 //  Created by Brown Magic on 8/18/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WhyIsBookPresentationViewController: UIViewController {
+class WhyIsJointAttentionViewController: UIViewController {
 
   @IBOutlet weak var descriptionLabel: UILabel!
   

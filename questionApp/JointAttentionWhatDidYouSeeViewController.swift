@@ -1,5 +1,5 @@
 //
-//  BookPresentationWhatDidYouSeeViewController.swift
+//  JointAttentionWhatDidYouSeeViewController.swift
 //  questionApp
 //
 //  Created by Michael Leung on 8/17/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookPresentationWhatDidYouSeeViewController: UIViewController {
+class JointAttentionWhatDidYouSeeViewController: UIViewController {
     
     var parent = Parent()
     var profiles = TestProfiles()
@@ -24,7 +24,7 @@ class BookPresentationWhatDidYouSeeViewController: UIViewController {
         profiles.initProfilesFromPersistentStore()
         
         // Get the test information.
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.bookPresentation)
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.jointAttention)
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,20 +34,20 @@ class BookPresentationWhatDidYouSeeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "BookPresentationGoodOutcomeSegueID" {
+        if segue.identifier == "JointAttentionGoodOutcomeSegueID" {
             
             // Record the successful symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "BookPresentationBadOutcomeSegueID" {
+        } else if segue.identifier == "JointAttentionBadOutcomeSegueID" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)
             profiles.save()
             
             // Pass the test results history to the destination VC.
-            let controller = segue.destinationViewController as! BookPresentationBadOutcomeViewController
+            let controller = segue.destinationViewController as! JointAttentionBadOutcomeViewController
             controller.test = self.test
         }
     }

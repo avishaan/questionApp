@@ -1,5 +1,5 @@
 //
-//  BookPresentationWhatYouWillNeedViewController.swift
+//  JointAttentionWhatYouWillNeedViewController.swift
 //  questionApp
 //
 //  Created by Michael Leung on 8/17/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookPresentationWhatWillYouNeedViewController: UIViewController {
+class JointAttentionWhatWillYouNeedViewController: UIViewController {
     
     @IBOutlet weak var testPreparationLabel: UILabel!
     
@@ -27,10 +27,10 @@ class BookPresentationWhatWillYouNeedViewController: UIViewController {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
             
-            performSegueWithIdentifier("BookPresentationTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("JointAttentionTimeToTestSegueID", sender: self)
         } else {
             
-            performSegueWithIdentifier("BookPresentationIsBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("JointAttentionIsBabyReadySegueID", sender: self)
         }
     }
     

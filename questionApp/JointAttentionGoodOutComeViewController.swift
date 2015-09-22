@@ -1,5 +1,5 @@
 //
-//  BookPresentationGoodOutComeViewController.swift
+//  JointAttentionGoodOutComeViewController.swift
 //  questionApp
 //
 //  Created by Michael Leung on 8/17/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookPresentationGoodOutcomeViewController: UIViewController {
+class JointAttentionGoodOutcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
