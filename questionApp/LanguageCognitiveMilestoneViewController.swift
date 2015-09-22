@@ -51,9 +51,10 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
         self.presentViewController(controller, animated: true, completion: nil);
     }
     @IBAction func plasticJarButtonTap(sender: AnyObject) {
-        var storyboard = UIStoryboard (name: "PlasticJar", bundle: nil)
-        var controller: WhyIsPlasticJarViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPlasticJarStoryboardID") as! WhyIsPlasticJarViewController
-        self.presentViewController(controller, animated: true, completion: nil);
+      // removed this test, replace with new test
+//        var storyboard = UIStoryboard (name: "PlasticJar", bundle: nil)
+//        var controller: WhyIsPlasticJarViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPlasticJarStoryboardID") as! WhyIsPlasticJarViewController
+//        self.presentViewController(controller, animated: true, completion: nil);
     }
     @IBAction func bookPresentationButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "BookPresentation", bundle: nil)
