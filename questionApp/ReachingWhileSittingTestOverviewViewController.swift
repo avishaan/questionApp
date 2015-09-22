@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingTestOverviewViewController.swift
+//  ReachingWhileSittingTestOverviewViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/9/15.
@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class SittingAndReachingTestOverviewViewController: UIViewController {
+class ReachingWhileSittingTestOverviewViewController: UIViewController {
 
     @IBOutlet weak var previewButton: UIButton!
     var playerVC:AVPlayerViewController!
@@ -61,7 +61,7 @@ class SittingAndReachingTestOverviewViewController: UIViewController {
                 name: AVPlayerItemDidPlayToEndTimeNotification,
                 object: playerVC.player.currentItem)
         }
-        else if segue.identifier == "sittingAndReachingWhatWillYouNeedSegueID" {
+        else if segue.identifier == "reachingWhileSittingWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
     }

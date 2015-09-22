@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingWhatDidYouSeeViewController.swift
+//  ReachingWhileSittingWhatDidYouSeeViewController.swift
 //  questionApp
 //
 //  Created by daniel hsu on 8/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SittingAndReachingWhatDidYouSeeViewController: UIViewController {
+class ReachingWhileSittingWhatDidYouSeeViewController: UIViewController {
 
     var parent = Parent()
     var profiles = TestProfiles()
@@ -27,7 +27,7 @@ class SittingAndReachingWhatDidYouSeeViewController: UIViewController {
         profiles.initProfilesFromPersistentStore()
         
         // Get the test information.
-        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.sittingAndReaching)
+        test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.reachingWhileSitting)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,20 +37,20 @@ class SittingAndReachingWhatDidYouSeeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "SittingAndReachingGoodOutcomeSegueID" {
+        if segue.identifier == "ReachingWhileSittingGoodOutcomeSegueID" {
             
             // Record the successful symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: true)
             profiles.save()
             
-        } else if segue.identifier == "SittingAndReachingBadOutcomeSegueID" || segue.identifier == "SittingAndReachingBadOutcomeSegueID2" {
+        } else if segue.identifier == "ReachingWhileSittingBadOutcomeSegueID" || segue.identifier == "ReachingWhileSittingBadOutcomeSegueID2" {
             
             // Record the failed symmetry test result and save it to the persistent store on disk.
             test.addTestResult(testResult: false)
             profiles.save()
             
             // Pass the test results history to the destination VC.
-            let controller = segue.destinationViewController as! SittingAndReachingBadOutcomeViewController
+            let controller = segue.destinationViewController as! ReachingWhileSittingBadOutcomeViewController
             controller.test = self.test
         }
     }

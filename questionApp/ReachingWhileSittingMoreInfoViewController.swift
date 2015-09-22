@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingMoreInfoViewController.swift
+//  ReachingWhileSittingMoreInfoViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SittingAndReachingMoreInfoViewController: UIViewController {
+class ReachingWhileSittingMoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

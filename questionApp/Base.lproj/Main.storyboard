@@ -1032,7 +1032,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onSittingAndReachingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="6WN-4z-ZW0"/>
+                                                    <action selector="onReachingWhileSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="6WN-4z-ZW0"/>
                                                     <action selector="onUnassistedSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="FGb-MK-gHH"/>
                                                 </connections>
                                             </button>

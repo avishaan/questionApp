@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingGoodOutcomeViewController.swift
+//  ReachingWhileSittingGoodOutcomeViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SittingAndReachingGoodOutcomeViewController: UIViewController {
+class ReachingWhileSittingGoodOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ class SittingAndReachingGoodOutcomeViewController: UIViewController {
       Tracker.createEvent(.SittingReaching, .Load, .Good)
       
         // If a reminder notification had previously been scheduled, remove it now that the test has been passed.
-        BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.sittingAndReaching)
+        BNLocalNotification.removeLocalNotification(Test.TestNamesPresentable.reachingWhileSitting)
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +36,7 @@ class SittingAndReachingGoodOutcomeViewController: UIViewController {
     
     @IBAction func onFacebookButtonTap(sender: AnyObject) {
         // Present post to facebook screen.
-        BNFacebook.postToFacebook(self, testName: Test.TestNamesPresentable.sittingAndReaching)
+        BNFacebook.postToFacebook(self, testName: Test.TestNamesPresentable.reachingWhileSitting)
     }
 
 }

@@ -1,5 +1,5 @@
 //
-//  WhyIsSittingAndReachingViewController.swift
+//  WhyIsReachingWhileSittingViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WhyIsSittingAndReachingViewController: UIViewController {
+class WhyIsReachingWhileSittingViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     

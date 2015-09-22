@@ -37,7 +37,7 @@ class Test: NSObject, NSCoding {
         static var socialSmiling: String = "social smiling"
         static var facialMimic: String = "facial mimic"
         static var unassistedSitting: String = "unassisted sitting"
-        static var sittingAndReaching: String = "sitting and reaching"
+        static var reachingWhileSitting: String = "reaching while sitting"
         static var plasticJar: String = "ask and respond"
 //        static var bookPresentation: String = "book presentation"
         static var jointAttention: String = "joint attention"
@@ -55,7 +55,7 @@ class Test: NSObject, NSCoding {
   
   struct TestNamesByCategory {
     static var sensoryAndMotor = [
-      TestNames.sittingAndReaching,
+      TestNames.reachingWhileSitting,
       TestNames.unassistedSitting,
       TestNames.pincer,
       TestNames.selfRecognition,
@@ -100,7 +100,7 @@ class Test: NSObject, NSCoding {
         static var socialSmiling = "social smiling"
         static var facialMimic = "facial mimic"
         static var unassistedSitting = "unassisted sitting"
-        static var sittingAndReaching = "sitting and reaching"
+        static var reachingWhileSitting = "reaching while sitting"
         static var plasticJar = "ask and respond"                  // ask and respond
 //        static var bookPresentation: String = "book presentation"
       static var jointAttention = "joint attention"
@@ -130,7 +130,7 @@ class Test: NSObject, NSCoding {
         static var socialSmiling:       Double =  7 * Test.SecondsInADay
         static var facialMimic:         Double = 30 * Test.SecondsInADay
         static var unassistedSitting:   Double = 30 * Test.SecondsInADay
-        static var sittingAndReaching:  Double = 30 * Test.SecondsInADay
+        static var reachingWhileSitting:  Double = 30 * Test.SecondsInADay
         static var plasticJar:          Double = 30 * Test.SecondsInADay  // ask and respond
 //        static var bookPresentation:    Double = 30 * Test.SecondsInADay
         static var jointAttention:    Double = 30 * Test.SecondsInADay
@@ -152,7 +152,7 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.symmetry,
         TestNamesPresentable.pincer,
         TestNamesPresentable.unassistedSitting,
-        TestNamesPresentable.sittingAndReaching,
+        TestNamesPresentable.reachingWhileSitting,
         TestNamesPresentable.fallingToy,
         TestNamesPresentable.attentionAtDistance,
         TestNamesPresentable.partiallyCoveredToy,
@@ -176,7 +176,7 @@ class Test: NSObject, NSCoding {
 //        TestNamesPresentable.symmetry : "WhyIsSymmetryStoryboardID",
 //        TestNamesPresentable.pincer : "WhyIsPincerStoryboardID",
 //        TestNamesPresentable.unassistedSitting : "WhyIsUnassistedSittingStoryboardID",
-//        TestNamesPresentable.sittingAndReaching : "WhyIsSittingAndReachingStoryboardID",
+//        TestNamesPresentable.reachingWhileSitting : "WhyIsReachingWhileSittingStoryboardID",
 //        TestNamesPresentable.fallingToy : "WhyIsObjectPermanenceViewController",
 //        TestNamesPresentable.attentionAtDistance : "WhyIsAttentionAtDistanceStoryboardID",
 //        TestNamesPresentable.partiallyCoveredToy : "WhyIsPartiallyCoveredToyStoryboardID",
