@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingIsBabyReadyViewController.swift
+//  ReachingWhileSittingIsBabyReadyViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SittingAndReachingIsBabyReadyViewController: UIViewController {
+class ReachingWhileSittingIsBabyReadyViewController: UIViewController {
 
     @IBOutlet weak var bulletedLabel1: UILabel!
     @IBOutlet weak var bulletedLabel2: UILabel!
@@ -34,12 +34,12 @@ class SittingAndReachingIsBabyReadyViewController: UIViewController {
     }
     
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
-        performSegueWithIdentifier("sittingAndReachingIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("reachingWhileSittingIsBabyReadyToTimeToTestSegueID", sender: self)
     }
     
     @IBAction func onDontShowAgainButtonTap(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "dontShowIsBabyReady")
-        performSegueWithIdentifier("sittingAndReachingIsBabyReadyToTimeToTestSegueID", sender: self)
+        performSegueWithIdentifier("reachingWhileSittingIsBabyReadyToTimeToTestSegueID", sender: self)
     }
 
     // Helper function formats text attributes for substrings in labels.

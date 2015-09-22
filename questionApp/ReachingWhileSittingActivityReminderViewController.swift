@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingActivityReminderViewController.swift
+//  ReachingWhileSittingActivityReminderViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SittingAndReachingActivityReminderViewController: ActivityReminderViewController {
+class ReachingWhileSittingActivityReminderViewController: ActivityReminderViewController {
    
     @IBAction func onHomeButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "Main", bundle: nil)

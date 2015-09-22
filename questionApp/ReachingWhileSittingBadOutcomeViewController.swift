@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingBadOutcomeViewController.swift
+//  ReachingWhileSittingBadOutcomeViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SittingAndReachingBadOutcomeViewController: UIViewController {
+class ReachingWhileSittingBadOutcomeViewController: UIViewController {
   
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test : Test?
@@ -57,7 +57,7 @@ class SittingAndReachingBadOutcomeViewController: UIViewController {
 //            let controller = segue.destinationViewController as! ActivityReminderViewController
 //            
 //            // set the test name on the ActivityReminder VC
-//            controller.testName = Test.TestNamesPresentable.sittingAndReaching
+//            controller.testName = Test.TestNamesPresentable.reachingWhileSitting
 //        }
 //    }
     
@@ -126,10 +126,10 @@ class SittingAndReachingBadOutcomeViewController: UIViewController {
     */
     func scheduleReminder() {
         
-        if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.sittingAndReaching) == false {
+        if BNLocalNotification.doesLocalNotificationExist(Test.TestNamesPresentable.reachingWhileSitting) == false {
             
             // configure the local notification
-            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.sittingAndReaching, secondsBeforeDisplayingReminder: Test.NotificationInterval.sittingAndReaching)
+            let localNotification = BNLocalNotification(nameOfTest: Test.TestNamesPresentable.reachingWhileSitting, secondsBeforeDisplayingReminder: Test.NotificationInterval.reachingWhileSitting)
             
             // schedule the local notification
             localNotification.scheduleNotification()

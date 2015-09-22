@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingWhatWillYouNeedViewController.swift
+//  ReachingWhileSittingWhatWillYouNeedViewController.swift
 //  questionApp
 //
 //  Created by Daniel Hsu on 8/9/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SittingAndReachingWhatWillYouNeedViewController: UIViewController {
+class ReachingWhileSittingWhatWillYouNeedViewController: UIViewController {
 
     @IBOutlet weak var testPreparationLabel: UILabel!
     
@@ -28,9 +28,9 @@ class SittingAndReachingWhatWillYouNeedViewController: UIViewController {
     @IBAction func onNextStepButtonTap(sender: AnyObject) {
         let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
         if dontShowIsBabyReadyVC == true {
-            performSegueWithIdentifier("sittingAndReachingTimeToTestSegueID", sender: self)
+            performSegueWithIdentifier("reachingWhileSittingTimeToTestSegueID", sender: self)
         } else {
-            performSegueWithIdentifier("sittingAndReachingIsBabyReadySegueID", sender: self)
+            performSegueWithIdentifier("reachingWhileSittingIsBabyReadySegueID", sender: self)
         }
     }
     

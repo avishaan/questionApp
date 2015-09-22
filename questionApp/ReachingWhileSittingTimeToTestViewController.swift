@@ -1,5 +1,5 @@
 //
-//  SittingAndReachingTimeToTestViewController.swift
+//  ReachingWhileSittingTimeToTestViewController.swift
 //  questionApp
 //
 //  Created by daniel hsu on 8/9/15.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SittingAndReachingTimeToTestViewController: UIViewController {
+class ReachingWhileSittingTimeToTestViewController: UIViewController {
 
     @IBOutlet weak var step1Label: UILabel!
     @IBOutlet weak var step2Label: UILabel!

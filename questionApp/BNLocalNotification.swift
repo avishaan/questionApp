@@ -220,10 +220,10 @@ class BNLocalNotification {
 //      var storyboard = UIStoryboard (name: "UnassistedSitting", bundle: nil)
 //      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsUnassistedSittingViewController
 //      
-//    case Test.TestNamesPresentable.sittingAndReaching: // Sitting And Reaching
-//      storyboardID = "WhyIsSittingAndReachingStoryboardID"
-//      var storyboard = UIStoryboard (name: "SittingAndReaching", bundle: nil)
-//      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSittingAndReachingViewController
+//    case Test.TestNamesPresentable.reachingWhileSitting: // Sitting And Reaching
+//      storyboardID = "WhyIsReachingWhileSittingStoryboardID"
+//      var storyboard = UIStoryboard (name: "ReachingWhileSitting", bundle: nil)
+//      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsReachingWhileSittingViewController
 //
 //    case Test.TestNamesPresentable.plasticJar: // Plastic Jar
 //      storyboardID = "WhyIsPlasticJarStoryboardID"
@@ -348,10 +348,10 @@ class BNLocalNotification {
       var storyboard = UIStoryboard (name: "UnassistedSitting", bundle: nil)
       controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsUnassistedSittingViewController
       
-    case Test.TestNamesPresentable.sittingAndReaching: // Sitting And Reaching
-      storyboardID = "WhyIsSittingAndReachingStoryboardID"
-      var storyboard = UIStoryboard (name: "SittingAndReaching", bundle: nil)
-      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsSittingAndReachingViewController
+    case Test.TestNamesPresentable.reachingWhileSitting: // Sitting And Reaching
+      storyboardID = "WhyIsReachingWhileSittingStoryboardID"
+      var storyboard = UIStoryboard (name: "ReachingWhileSitting", bundle: nil)
+      controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID!) as! WhyIsReachingWhileSittingViewController
       
     case Test.TestNamesPresentable.plasticJar: // Plastic Jar
       storyboardID = "WhyIsPlasticJarStoryboardID"

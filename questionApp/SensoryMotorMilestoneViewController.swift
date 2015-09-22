@@ -78,12 +78,10 @@ class SensoryMotorMilestoneViewController: UIViewController {
     }
   }
   
-  @IBAction func onSittingAndReachingButtonTap(sender: AnyObject) {
-    if (hasSharedFacebook) {
-      var storyboard = UIStoryboard (name: "SittingAndReaching", bundle: nil)
-      var controller: WhyIsSittingAndReachingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSittingAndReachingStoryboardID") as! WhyIsSittingAndReachingViewController
-      self.presentViewController(controller, animated: true, completion: nil);
-    }
+  @IBAction func onReachingWhileSittingButtonTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "ReachingWhileSitting", bundle: nil)
+    var controller: WhyIsReachingWhileSittingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsReachingWhileSittingStoryboardID") as! WhyIsReachingWhileSittingViewController
+    self.presentViewController(controller, animated: true, completion: nil);
   }
   
   @IBAction func onRollingBackToFrontButtonTap(sender: AnyObject) {
