@@ -16,7 +16,7 @@ class EmotionalSecurityWhatYouWillNeedViewController: UIViewController {
     super.viewDidLoad()
     // analytics
     Tracker.createEvent(.EmotionalSecurity, .Load, .WhatIsNeeded)
-    //applyTextAttributesToLabel()
+    applyTextAttributesToLabel()
   }
   
   override func didReceiveMemoryWarning() {
@@ -37,6 +37,7 @@ class EmotionalSecurityWhatYouWillNeedViewController: UIViewController {
     self.dismissViewControllerAnimated(true, completion: nil)
   }
   
+
   // Helper function formats text attributes for multiple substrings in label.
   func applyTextAttributesToLabel() {
     
@@ -48,10 +49,9 @@ class EmotionalSecurityWhatYouWillNeedViewController: UIViewController {
     let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
-    attributedString.addAttributes(firstAttributes, range: NSMakeRange(20, 14))
+    attributedString.addAttributes(firstAttributes, range: NSMakeRange(30, 21))
     
     testPreparationLabel.attributedText = attributedString
   }
-
 
 }

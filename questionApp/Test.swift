@@ -46,6 +46,7 @@ class Test: NSObject, NSCoding {
         static var emotionalAttachment: String = "emotional attachment"
         static var emotionalSecurity: String = "emotional security"
         static var receptiveLanguage:String = "receptive language"
+        static var visualTracking:String = "visual tracking"
     }
   
   // Test names in their respective category
@@ -66,7 +67,8 @@ class Test: NSObject, NSCoding {
       TestNames.crossingEyes,
       TestNames.pupilResponse,
       TestNames.letsCrawl,
-      TestNames.rollingBackToFront
+      TestNames.rollingBackToFront,
+      TestNames.visualTracking
     ]
     static var socialAndEmotional = [
       TestNames.facialMimic,
@@ -113,6 +115,8 @@ class Test: NSObject, NSCoding {
       static var emotionalAttachment: String = "emotional attachment"
       static var emotionalSecurity: String = "emotional security"
       static var receptiveLanguage:String = "receptive language"
+      static var visualTracking:String = "visual tracking"
+      
     }
     
     static let SecondsInADay : Double = 24 * 60 * 60
@@ -141,7 +145,7 @@ class Test: NSObject, NSCoding {
 //        static var bookPresentation:    Double = 30 * Test.SecondsInADay
         static var jointAttention:    Double = 30 * Test.SecondsInADay
         static var receptiveLanguage:  Double = 30 * Test.SecondsInADay
-        //static var lateralTracking:          Double =  7 * Test.SecondsInADay
+        static var  visualTracking:    Double =  7 * Test.SecondsInADay
         //static var stranger:                 Double = 21 * Test.SecondsInADay
         static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
         static var emotionalSecurity:      Double = 30 * Test.SecondsInADay
@@ -168,13 +172,14 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.pointFollowing,
         TestNamesPresentable.selfRecognition,
         TestNamesPresentable.socialSmiling,
-      TestNamesPresentable.jointAttention,
+        TestNamesPresentable.jointAttention,
         TestNamesPresentable.facialMimic,
         // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
         TestNamesPresentable.rollingBackToFront,
         TestNamesPresentable.emotionalAttachment,
         TestNamesPresentable.emotionalSecurity,
-      TestNamesPresentable.receptiveLanguage
+        TestNamesPresentable.receptiveLanguage,
+        TestNamesPresentable.visualTracking
     ]
     
 //    static let initialStoryboardIDs = [
