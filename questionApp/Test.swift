@@ -47,6 +47,8 @@ class Test: NSObject, NSCoding {
         static var emotionalSecurity: String = "emotional security"
         static var receptiveLanguage:String = "receptive language"
         static var visualTracking:String = "visual tracking"
+        static var reachingForToy:String = "reaching for toy"
+      
     }
   
   // Test names in their respective category
@@ -68,7 +70,8 @@ class Test: NSObject, NSCoding {
       TestNames.pupilResponse,
       TestNames.letsCrawl,
       TestNames.rollingBackToFront,
-      TestNames.visualTracking
+      TestNames.visualTracking,
+      TestNames.reachingForToy
     ]
     static var socialAndEmotional = [
       TestNames.facialMimic,
@@ -116,6 +119,7 @@ class Test: NSObject, NSCoding {
       static var emotionalSecurity: String = "emotional security"
       static var receptiveLanguage:String = "receptive language"
       static var visualTracking:String = "visual tracking"
+      static var reachingForToy:String = "reaching for toy"
       
     }
     
@@ -150,6 +154,7 @@ class Test: NSObject, NSCoding {
         static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
         static var emotionalSecurity:      Double = 30 * Test.SecondsInADay
         static var rollingOverBackToFront:   Double = 30 * Test.SecondsInADay
+        static var reachingForToy:   Double = 30 * Test.SecondsInADay
         //static var rollingOverFrontToBack:   Double = 30 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
     }
@@ -179,7 +184,8 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.emotionalAttachment,
         TestNamesPresentable.emotionalSecurity,
         TestNamesPresentable.receptiveLanguage,
-        TestNamesPresentable.visualTracking
+        TestNamesPresentable.visualTracking,
+        TestNamesPresentable.reachingForToy
     ]
     
 //    static let initialStoryboardIDs = [

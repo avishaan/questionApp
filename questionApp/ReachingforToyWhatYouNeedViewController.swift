@@ -28,7 +28,7 @@ class ReachingforToyWhatYouNeedViewController: UIViewController {
     let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
     if dontShowIsBabyReadyVC == true {
       
-      performSegueWithIdentifier("ReachingForToyimeToTestSegueID", sender: self)
+      performSegueWithIdentifier("ReachingForToyTimeToTestSegueID", sender: self)
     } else {
       
       performSegueWithIdentifier("ReachingForToyIsBabyReadySegueID", sender: self)
