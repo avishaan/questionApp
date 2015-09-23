@@ -83,13 +83,16 @@ class BNFacebook {
     @param (in) parentViewController - The parent view controller. (cannot be nil)
     @param (in) testName - A Test.TestNamesPresentable value identifying the test. This string is presented to the end user. (cannot be nil)
     */
-    static func postToFacebook(parentViewController: UIViewController, testName: String) {
+    static func postToFacebook(parentViewController: UIViewController, testName: String?) {
 
          if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
             var composeController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             
             // set initial text
-            var text = String(format:"My baby just passed the %@ test!", testName)
+            var text = String(format:"I'm using the BabyNoggin app!")
+            if let testName = testName {
+              text = String(format:"My baby just passed the %@ test!", testName)
+            }
             composeController.setInitialText(text)
             
             // set image
@@ -102,7 +105,9 @@ class BNFacebook {
           
             composeController.completionHandler = { result in
               if (result == SLComposeViewControllerResult.Done) {
-                self.userSharedTestWithName(testName)
+                if let testName = testName {
+                  self.userSharedTestWithName(testName)
+                }
                 self.userSharedTest()
               }
             }

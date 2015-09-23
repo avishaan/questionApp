@@ -25,6 +25,8 @@ class MilestonesViewController: UIViewController {
   @IBOutlet weak var sensoryMotorBackground: UIButton!
   @IBOutlet weak var socialEmotionalBackground: UIButton!
   @IBOutlet weak var languageCognitiveBackground: UIButton!
+  
+  @IBOutlet weak var shareButton: UIButton!
 
 	@IBOutlet weak var nextTestLabel: UILabel!
 	let tapRecognizer = UITapGestureRecognizer()
@@ -92,6 +94,9 @@ class MilestonesViewController: UIViewController {
     socialEmotionalBackground.layer.cornerRadius = 10
     languageCognitiveBackground.clipsToBounds = true
     languageCognitiveBackground.layer.cornerRadius = 10
+    shareButton.clipsToBounds = true
+    shareButton.layer.cornerRadius = 10
+    shareButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 12)
     
     // setup tap recognizer for the NextTest UIImageView control
 		tapRecognizer.addTarget(self, action: "handleSingleTapOnNextTest")
@@ -135,6 +140,12 @@ class MilestonesViewController: UIViewController {
       // else there aren't enough, just proceed normally
     }
     
+  }
+  
+  // MARK: -
+  
+  @IBAction func clickedFacebook() {
+    BNFacebook.postToFacebook(self, testName: nil)
   }
 	
   override func didReceiveMemoryWarning() {
