@@ -44,6 +44,7 @@ struct Tracker {
     case EmotionalSecurity = "EmotionalSecurity"
     case ReceptiveLanguage = "ReceptiveLanguage"
     case VisualTracking = "VisualTracking"
+    case ReachingForToy = "ReachingForToy"
   }
   
   /**

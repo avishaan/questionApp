@@ -9,27 +9,46 @@
 import UIKit
 
 class ReachingforToyWhatYouNeedViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  @IBOutlet weak var testPreparationLabel: UILabel!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // analytics
+    Tracker.createEvent(.ReachingForToy, .Load, .WhatIsNeeded)
+    applyTextAttributesToLabel()
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  @IBAction func onNextStepButtonTap(sender: BNButtonNext) {
+    let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
+    if dontShowIsBabyReadyVC == true {
+      
+      performSegueWithIdentifier("ReachingForToyimeToTestSegueID", sender: self)
+    } else {
+      
+      performSegueWithIdentifier("ReachingForToyIsBabyReadySegueID", sender: self)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  }
+  
+  @IBAction func onBackButtonTap(sender: AnyObject) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  func applyTextAttributesToLabel() {
     
+    let string = "All you’ll need is a comfortable spot for baby to sit, plus a favorite small toy. Hang it on a string to be sure baby isn’t just reaching for your hand."
+    var attributedString = NSMutableAttributedString(string: string)
+    
+    let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(80, 21))
+    
+    testPreparationLabel.attributedText = attributedString
+  }
 
 }
