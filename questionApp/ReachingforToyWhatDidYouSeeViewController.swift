@@ -26,7 +26,7 @@ class ReachingforToyWhatDidYouSeeViewController: UIViewController {
     profiles.initProfilesFromPersistentStore()
     
     // Get the test information.
-    //test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.reachingForToy)
+    test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.reachingForToy)
   }
   
   override func didReceiveMemoryWarning() {
