@@ -1,20 +1,20 @@
 //
-//  ReceptiveLanguageWhatWillYouNeedViewController.swift
+//  ReachingforToyWhatYouNeedViewController.swift
 //  questionApp
 //
-//  Created by Lekshmi on 9/22/15.
+//  Created by Lekshmi on 9/23/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
 //
 
 import UIKit
 
-class ReceptiveLanguageWhatWillYouNeedViewController: UIViewController {
+class ReachingforToyWhatYouNeedViewController: UIViewController {
   @IBOutlet weak var testPreparationLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.ReceptiveLanguage, .Load, .WhatIsNeeded)
+    Tracker.createEvent(.ReachingForToy, .Load, .WhatIsNeeded)
     applyTextAttributesToLabel()
   }
   
@@ -28,10 +28,10 @@ class ReceptiveLanguageWhatWillYouNeedViewController: UIViewController {
     let dontShowIsBabyReadyVC = NSUserDefaults.standardUserDefaults().boolForKey("dontShowIsBabyReady")
     if dontShowIsBabyReadyVC == true {
       
-      performSegueWithIdentifier("ReceptiveLanguageTimeToTestSegueID", sender: self)
+      performSegueWithIdentifier("ReachingForToyimeToTestSegueID", sender: self)
     } else {
       
-      performSegueWithIdentifier("ReceptiveLanguageIsBabyReadySegueID", sender: self)
+      performSegueWithIdentifier("ReachingForToyIsBabyReadySegueID", sender: self)
     }
   }
   
@@ -41,15 +41,12 @@ class ReceptiveLanguageWhatWillYouNeedViewController: UIViewController {
   
   func applyTextAttributesToLabel() {
     
-    let string = "You’ll need your baby, a comfortable crawling surface. You can also have snacks as a lure."
+    let string = "All you’ll need is a comfortable spot for baby to sit, plus a favorite small toy. Hang it on a string to be sure baby isn’t just reaching for your hand."
     var attributedString = NSMutableAttributedString(string: string)
     
     let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
-    let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
-    
-    attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 14))
-    attributedString.addAttributes(boldAttributes, range: NSMakeRange(13, 12))
-    //attributedString.addAttributes(standardAttributes, range: NSMakeRange(26, 24))
+
+    attributedString.addAttributes(boldAttributes, range: NSMakeRange(80, 21))
     
     testPreparationLabel.attributedText = attributedString
   }
