@@ -15,7 +15,7 @@ class ReceptiveLanguageWhatWillYouNeedViewController: UIViewController {
     super.viewDidLoad()
     // analytics
     Tracker.createEvent(.ReceptiveLanguage, .Load, .WhatIsNeeded)
-    applyTextAttributesToLabel()
+    //applyTextAttributesToLabel()
   }
   
   override func didReceiveMemoryWarning() {
