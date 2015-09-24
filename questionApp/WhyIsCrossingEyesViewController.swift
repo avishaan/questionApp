@@ -31,7 +31,7 @@ class WhyIsCrossingEyesViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Your baby needs to cross his eyes to be able to focus on and track close objects."
+        let string = "Baby's eyes need to cross to allow baby to focus on and track close objects."
         
         var attributedString = NSMutableAttributedString(string: string)
         
@@ -39,7 +39,7 @@ class WhyIsCrossingEyesViewController: UIViewController {
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
         attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 48))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(49, 32))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(43, 18))
         
         descriptionLabel.attributedText = attributedString
     }
