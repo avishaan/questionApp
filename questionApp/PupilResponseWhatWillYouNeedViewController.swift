@@ -21,16 +21,15 @@ class PupilResponseWhatWillYouNeedViewController: UIViewController {
     // Do any additional setup after loading the view.
     
     // set up attributes for both part of pupil response description label
-    let string = "You can use the light on your phone (if the baby will keep his hands off it!) or a pen light. Not too bright though."
+    let string = "You can use the flashlight on your phone or a pen light. Not too bright though."
+  
     var attributedString = NSMutableAttributedString(string: string)
     
     let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
-    
-    attributedString.addAttributes(baseAttributes, range: NSMakeRange(1, 16))
-    attributedString.addAttributes(firstAttributes, range: NSMakeRange(16, 19))
-    attributedString.addAttributes(secondAttributes, range: NSMakeRange(36, 80))
+	
+    attributedString.addAttributes(firstAttributes, range: NSMakeRange(16, 24))
     
     testPreparationLabel.attributedText = attributedString
   }

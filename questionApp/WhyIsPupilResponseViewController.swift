@@ -20,14 +20,14 @@ class WhyIsPupilResponseViewController: UIViewController {
     // Do any additional setup after loading the view.
     
     // set up attributes for both part of pupil response description label
-    let string = "Your baby's pupils should expand and contract in varying light levels. Lack of pupil response can indicate issues with the eyes or nerves connecting eyes to brain."
+    let string = "Baby's pupils should expand and contract in varying light levels. It's a quick indication of how the eyes, or nerves connecting the eyes to the brain, are doing."
     var attributedString = NSMutableAttributedString(string: string)
     
     let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
-    attributedString.addAttributes(firstAttributes, range: NSMakeRange(0, 70))
-    attributedString.addAttributes(secondAttributes, range: NSMakeRange(70, 93))
+    attributedString.addAttributes(firstAttributes, range: NSMakeRange(12, 28))
+    attributedString.addAttributes(secondAttributes, range: NSMakeRange(40, 13))
     
     pupilResponseDescriptionLabel.attributedText = attributedString
     
