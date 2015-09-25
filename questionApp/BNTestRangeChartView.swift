@@ -11,49 +11,59 @@ import Charts
 
 class BNTestRangeChartView: HorizontalBarChartView {
   
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
   required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
   
   func config(#startMonth: Double, endMonth: Double, successAgeInMonths: Double, babyAgeInMonths: Double, babyName: String) {
-    println("test")
-    
     // customize chart before setting data
     self.noDataText = "No data to show you"
     self.drawGridBackgroundEnabled = false
-    self.drawBordersEnabled = false
+    self.drawBordersEnabled = true
     self.descriptionText = ""
     self.legend.enabled = false
     self.xAxis.enabled = false
     
     self.autoScaleMinMaxEnabled = false
+    self.borderColor = UIColor.darkGrayColor()
     
     var leftYAxis = self.leftAxis
     leftYAxis.enabled = false
     var rightYAxis = self.rightAxis
-    rightYAxis.drawAxisLineEnabled = false
-//    rightYAxis.axisMaximum = 40
+    rightYAxis.drawAxisLineEnabled = true
+    //    rightYAxis.axisMaximum = 40
     rightYAxis.customAxisMin = startMonth
     rightYAxis.customAxisMax = endMonth
-    rightYAxis.labelCount = 2
-    rightYAxis.spaceBottom = 0.2
-    rightYAxis.spaceTop = 0.2
+    rightYAxis.labelCount = Int(endMonth)
+    rightYAxis.spaceBottom = 0.8
+    rightYAxis.spaceTop = 0.8
+    rightYAxis.gridLineWidth = 1.5
+    
+    // these are percentage-based relative to height of the view
+    let h = self.frame.size.height
+    let dashBot = h * (7 / 107)
+    let dashMid = h * (55 / 107)
+    rightYAxis.gridLineDashLengths = [0, dashMid, dashBot]
+    
+    var babyAgeLimitLine = ChartLimitLine(limit: babyAgeInMonths, label: babyName)
+    rightYAxis.addLimitLine(babyAgeLimitLine)
+    
+    self.rightYAxisRenderer = BNYAxisRendererHorizontalWithSmileLimit(viewPortHandler: self.viewPortHandler, yAxis: self.rightAxis, transformer: _rightAxisTransformer)
     
     // make sure the left axis matches the right
     leftYAxis.customAxisMin = rightYAxis.customAxisMin
     leftYAxis.customAxisMax = rightYAxis.customAxisMax
     leftYAxis.spaceBottom = rightYAxis.spaceBottom
     leftYAxis.spaceTop = rightYAxis.spaceTop
-//    rightYAxis.axisMinimum = 10
+    //    rightYAxis.axisMinimum = 10
+    
     // formatter
-    var formatter:NSNumberFormatter = NSNumberFormatter()
+    var e = endMonth
+    if (e % 2) != 0 {
+      e++;
+    }
+    let modu = Int(ceil(e / 2))
+    var formatter:NSNumberFormatter = BNCustomAlternatingFormatter(mod: modu)
     formatter.maximumFractionDigits = 1
     formatter.positiveSuffix = " mo."
     rightYAxis.valueFormatter = formatter
@@ -61,15 +71,6 @@ class BNTestRangeChartView: HorizontalBarChartView {
     // fonts
     rightYAxis.labelFont = UIFont(name: kOmnesFontMedium, size: 17)!
     rightYAxis.labelTextColor = kGrey
-    
-    // set limit lines
-    var babyAgeLimitLine = ChartLimitLine(limit: babyAgeInMonths, label: babyName)
-    babyAgeLimitLine.valueFont = UIFont(name: kOmnesFontSemiBold, size: 16)!
-    babyAgeLimitLine.valueTextColor = kOrange
-    babyAgeLimitLine.lineColor = kOrange
-    babyAgeLimitLine.lineWidth = 5.0
-    babyAgeLimitLine.lineDashLengths = [12]
-    rightYAxis.addLimitLine(babyAgeLimitLine)
     
     // data should be set after customizing chart
     var dataEntries: [BarChartDataEntry] = []
@@ -82,8 +83,9 @@ class BNTestRangeChartView: HorizontalBarChartView {
       dataEntries.append(dataEntry)
     }
     
-    let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "Units Sold")
+    let chartDataSet = BarChartDataSet(yVals: dataEntries, label: nil)
     chartDataSet.drawValuesEnabled = false
+    chartDataSet.barSpace = 0.35
     let chartData = BarChartData(xVals: dataPoints, dataSet: chartDataSet)
     self.data = chartData
     
@@ -92,5 +94,58 @@ class BNTestRangeChartView: HorizontalBarChartView {
     self.notifyDataSetChanged()
     
   }
+}
 
+class BNCustomAlternatingFormatter: NSNumberFormatter {
+  
+  private var mod = 1
+  
+  convenience init (mod: Int) {
+    self.init()
+    self.mod = mod
+  }
+  
+  override func stringFromNumber(number: NSNumber) -> String? {
+    let diff = number.integerValue % mod
+    if (diff == 0) {
+      return super.stringFromNumber(number)
+    }
+    return ""
+  }
+}
+
+public class BNYAxisRendererHorizontalWithSmileLimit: ChartYAxisRendererHorizontalBarChart
+{
+  public override func renderLimitLines(#context: CGContext)
+  {
+    var limitLines = _yAxis.limitLines
+    
+    if (limitLines.count <= 0)
+    {
+      return
+    }
+    
+    CGContextSaveGState(context)
+    
+    var trans = transformer.valueToPixelMatrix
+    
+    var position = CGPoint(x: 0.0, y: 0.0)
+    
+    for (var i = 0; i < limitLines.count; i++)
+    {
+      var l = limitLines[i]
+      
+      position.x = CGFloat(l.limit)
+      position.y = 0.0
+      position = CGPointApplyAffineTransform(position, trans)
+      
+      var image = UIImage(named: "smile")
+      if let image = image {
+        image.drawAtPoint(CGPointMake(position.x - image.size.width/2, viewPortHandler.chartHeight/3))
+      }
+      
+    }
+    
+    CGContextRestoreGState(context)
+  }
 }

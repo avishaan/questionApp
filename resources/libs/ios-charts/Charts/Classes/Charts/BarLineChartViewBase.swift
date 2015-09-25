@@ -47,8 +47,8 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
     
     /// the object representing the labels on the y-axis, this object is prepared
     /// in the pepareYLabels() method
-    internal var _leftAxis: ChartYAxis!
-    internal var _rightAxis: ChartYAxis!
+    public var _leftAxis: ChartYAxis!
+    public var _rightAxis: ChartYAxis!
     
     /// the object representing the labels on the x-axis
     internal var _xAxis: ChartXAxis!
@@ -56,8 +56,8 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
     internal var _leftYAxisRenderer: ChartYAxisRenderer!
     internal var _rightYAxisRenderer: ChartYAxisRenderer!
     
-    internal var _leftAxisTransformer: ChartTransformer!
-    internal var _rightAxisTransformer: ChartTransformer!
+    public var _leftAxisTransformer: ChartTransformer!
+    public var _rightAxisTransformer: ChartTransformer!
     
     internal var _xAxisRenderer: ChartXAxisRenderer!
     
