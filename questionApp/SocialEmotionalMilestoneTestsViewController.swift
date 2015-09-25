@@ -9,15 +9,36 @@
 import UIKit
 
 class SocialEmotionalMilestoneTestsViewController: UIViewController {
-  
+	
+	@IBOutlet weak var facialMimicButton: BNButton!
+	@IBOutlet weak var pointFollowButton: BNButton!
+	var facebookShares = 0
   override func viewDidLoad() {
     super.viewDidLoad()
       // analytics
       Tracker.createEvent(.SocialEmotionalMilestone, .Load)
-    
+		// see how many times we shared from front page
+		var facebookShares = BNFacebook.userShareCountFromFront()
+
+		
     // Do any additional setup after loading the view.
   }
-  
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		// hide tests based on current facebook share acount
+		if facebookShares < 1 {
+			pointFollowButton.facebookDisabled()
+		}
+		if facebookShares < 2 {
+			facialMimicButton.facebookDisabled()
+		}
+		if facebookShares <= 3 {
+		}
+		if facebookShares <= 4 {
+		}
+	}
+	
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
