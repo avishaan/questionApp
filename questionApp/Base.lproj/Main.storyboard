@@ -4382,6 +4382,10 @@ Try again in 6-8 weeks.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="facialMimicButton" destination="nBe-ix-s7m" id="oDp-TC-9s2"/>
+                        <outlet property="pointFollowButton" destination="FPJ-LY-g23" id="289-cq-jBb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjr-jU-SjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
