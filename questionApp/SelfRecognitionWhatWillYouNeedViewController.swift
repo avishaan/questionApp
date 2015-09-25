@@ -40,14 +40,14 @@ class SelfRecognitionWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "You’ll need a mirror — one mounted on the wall should be easier and less distracting than a hand-held one."
+        let string = "You’ll need a pencil or pen and a table top in front of which baby can sit."
         
         var attributedString = NSMutableAttributedString(string: string)
         
         let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 33))
-        
+//        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 33))
+      
         testPreparationLabel.attributedText = attributedString
     }
 }

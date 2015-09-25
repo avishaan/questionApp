@@ -26,7 +26,7 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
       Tracker.createEvent(.SelfRecognition, .Load, .Bad)
         
         // Do any additional setup after loading the view.
-        rangeChartView.config(startMonth: 0, endMonth: 30, successAgeInMonths: 24, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+        rangeChartView.config(startMonth: 0, endMonth: 16, successAgeInMonths: 12, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
         
         // font can't be set directly in storyboard for attributed string, set the label font here
         // make label's set attr string to a mutable so we can add attributes on
@@ -97,22 +97,22 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
 //            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:21)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "No self recognition?"
+            questionLabel.text = "No grasp?"
             
             // update infoLabel
-            let string = "Maybe you are more interesting than the toy. Practice with a different toy and if needed, a toy with a sound as well to help your baby look down.\n Try again in 2 weeks."
+          let string = "Sometimes practicing using a noisy toy, cereal, or ice cubes will help baby develop the pincer grasp.\nTry this, then perform the test again in 2 weeks."
 //            applyTextAttributesToLabel(string, indexAtStartOfBold:134, countOfBoldCharacters:99)
           
         } else if failed >= 3 {
             // update questionLabel
-            questionLabel.text = "No self recognition?"
+            questionLabel.text = "No grasp?"
             
             // update infoLabel
-            let string = "The response can be quick! Watch for them carefully. Perform this test a few more times to be sure the outcome is consistent.\nIf baby consistently shows no reaction beyond age 2, record the test and talk to your pediatrician at your next well-child visit."
+          let string = "Perform this test a few more times to be sure the outcome is consistent. Remember to use small objects.\nIf problem persists and your baby is older than 12 months, record this test to show your pediatrician at your next visit."
 //            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:50)
         } else {
             // update questionLabel
-            questionLabel.text = "No self recognition?"
+            questionLabel.text = "No grasp?"
             
             // update infoLabel
             let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in a month."
