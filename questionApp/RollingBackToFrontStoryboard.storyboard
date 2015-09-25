@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -454,7 +454,7 @@
                                     <segue destination="S8s-5l-98h" kind="presentation" id="2xJ-qL-PJS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. See if baby rolls over onto stomach. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmC-wx-qp1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Encourage and see if baby rolls over onto stomach. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmC-wx-qp1">
                                 <rect key="frame" x="52" y="248" width="222" height="94"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -905,7 +905,7 @@ QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dg-Lg-Iah">
                                 <rect key="frame" x="9" y="130" width="300" height="86"/>
-                                <string key="text">By 9 months, baby will be able to roll over onto baby's stomach in a corscrew fashion.
+                                <string key="text">By 9 months, baby will be able to roll over onto baby's stomach in a corkscrew fashion.
 </string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
