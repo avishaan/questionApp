@@ -17,7 +17,7 @@ class EmotionalAttachmentBabyReadyViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // analytics
-    Tracker.createEvent(.FacialMimic, .Load, .IsReady)
+    Tracker.createEvent(.EmotionalAttachment, .Load, .IsReady)
     applyTextAttributesToLabels()
   }
   

@@ -15,7 +15,7 @@ class EmotionalAttachmentWhatWillYouNeedViewController: UIViewController {
     super.viewDidLoad()
     // analytics
     Tracker.createEvent(.EmotionalAttachment, .Load, .WhatIsNeeded)
-    //applyTextAttributesToLabel()
+    applyTextAttributesToLabel()
   }
   
   override func didReceiveMemoryWarning() {
@@ -47,7 +47,7 @@ class EmotionalAttachmentWhatWillYouNeedViewController: UIViewController {
     let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
-    attributedString.addAttributes(firstAttributes, range: NSMakeRange(20, 14))
+    attributedString.addAttributes(firstAttributes, range: NSMakeRange(30, 21))
     
     testPreparationLabel.attributedText = attributedString
   }

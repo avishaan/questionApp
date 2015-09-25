@@ -12,6 +12,7 @@ import Social
 class BNFacebook {
     
     static private let facebookKeys: String = "facebookKeys"
+  static private let FacebookShareCountMain: String = "FacebookShareCountMain"
   // key name to track if user has shared to facebook
   static private let hasSharedFacebook = "hasSharedFacebookKey"
     
@@ -44,9 +45,18 @@ class BNFacebook {
     }
   
   // if user shared any test, save
-  static private func userSharedTest() {
-    NSUserDefaults.standardUserDefaults().setBool(true, forKey: hasSharedFacebook)
+  static private func userSharedTest(testName: String?) {
+    // only increment if we came from the front page
+    if testName == nil {
+      let count = NSUserDefaults.standardUserDefaults().integerForKey(FacebookShareCountMain)
+      NSUserDefaults.standardUserDefaults().setInteger(count+1, forKey: FacebookShareCountMain)
+    }
     NSUserDefaults.standardUserDefaults().synchronize()
+  }
+  
+  static func userShareCountFromFront() -> Int {
+    let count = NSUserDefaults.standardUserDefaults().integerForKey(FacebookShareCountMain)
+    return count
   }
   
   // see if user has shared any test
@@ -83,13 +93,16 @@ class BNFacebook {
     @param (in) parentViewController - The parent view controller. (cannot be nil)
     @param (in) testName - A Test.TestNamesPresentable value identifying the test. This string is presented to the end user. (cannot be nil)
     */
-    static func postToFacebook(parentViewController: UIViewController, testName: String) {
+    static func postToFacebook(parentViewController: UIViewController, testName: String?) {
 
          if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
             var composeController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             
             // set initial text
-            var text = String(format:"My baby just passed the %@ test!", testName)
+            var text = String(format:"I'm using the BabyNoggin app!")
+            if let testName = testName {
+              text = String(format:"My baby just passed the %@ test!", testName)
+            }
             composeController.setInitialText(text)
             
             // set image
@@ -102,8 +115,10 @@ class BNFacebook {
           
             composeController.completionHandler = { result in
               if (result == SLComposeViewControllerResult.Done) {
-                self.userSharedTestWithName(testName)
-                self.userSharedTest()
+                if let testName = testName {
+                  self.userSharedTestWithName(testName)
+                }
+                self.userSharedTest(testName)
               }
             }
             

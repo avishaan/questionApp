@@ -44,6 +44,11 @@ class Test: NSObject, NSCoding {
         static var rollingBackToFront: String = "rolling back to front"
         // TODO: add additional var as new tests are added to the app
         static var emotionalAttachment: String = "emotional attachment"
+        static var emotionalSecurity: String = "emotional security"
+        static var receptiveLanguage:String = "receptive language"
+        static var visualTracking:String = "visual tracking"
+        static var reachingForToy:String = "reaching for toy"
+      
     }
   
   // Test names in their respective category
@@ -64,13 +69,16 @@ class Test: NSObject, NSCoding {
       TestNames.crossingEyes,
       TestNames.pupilResponse,
       TestNames.letsCrawl,
-      TestNames.rollingBackToFront
+      TestNames.rollingBackToFront,
+      TestNames.visualTracking,
+      TestNames.reachingForToy
     ]
     static var socialAndEmotional = [
       TestNames.facialMimic,
       TestNames.socialSmiling,
       TestNames.pointFollowing,
-      TestNames.emotionalAttachment
+      TestNames.emotionalAttachment,
+      TestNames.emotionalSecurity
     ]
     static var languageAndCognitive = [
 //      TestNames.bookPresentation,
@@ -79,7 +87,8 @@ class Test: NSObject, NSCoding {
       TestNames.completelyCoveredToy,
       TestNames.partiallyCoveredToy,
       TestNames.attentionAtDistance,
-      TestNames.fallingToy
+      TestNames.fallingToy,
+      TestNames.receptiveLanguage
     ]
   }
   
@@ -107,6 +116,11 @@ class Test: NSObject, NSCoding {
       // TODO: if new tests are added to the app, add them here.
       static var rollingBackToFront = "rolling back to front"
       static var emotionalAttachment: String = "emotional attachment"
+      static var emotionalSecurity: String = "emotional security"
+      static var receptiveLanguage:String = "receptive language"
+      static var visualTracking:String = "visual tracking"
+      static var reachingForToy:String = "reaching for toy"
+      
     }
     
     static let SecondsInADay : Double = 24 * 60 * 60
@@ -134,11 +148,13 @@ class Test: NSObject, NSCoding {
         static var plasticJar:          Double = 30 * Test.SecondsInADay  // ask and respond
 //        static var bookPresentation:    Double = 30 * Test.SecondsInADay
         static var jointAttention:    Double = 30 * Test.SecondsInADay
-        //static var commandWithGesture:  Double = 30 * Test.SecondsInADay
-        //static var lateralTracking:          Double =  7 * Test.SecondsInADay
+        static var receptiveLanguage:  Double = 30 * Test.SecondsInADay
+        static var  visualTracking:    Double =  7 * Test.SecondsInADay
         //static var stranger:                 Double = 21 * Test.SecondsInADay
         static var emotionalAttachment:      Double = 30 * Test.SecondsInADay
+        static var emotionalSecurity:      Double = 30 * Test.SecondsInADay
         static var rollingOverBackToFront:   Double = 30 * Test.SecondsInADay
+        static var reachingForToy:   Double = 30 * Test.SecondsInADay
         //static var rollingOverFrontToBack:   Double = 30 * Test.SecondsInADay
         // TODO: add additional var as new tests are added to the app
     }
@@ -161,11 +177,15 @@ class Test: NSObject, NSCoding {
         TestNamesPresentable.pointFollowing,
         TestNamesPresentable.selfRecognition,
         TestNamesPresentable.socialSmiling,
-      TestNamesPresentable.jointAttention,
+        TestNamesPresentable.jointAttention,
         TestNamesPresentable.facialMimic,
         // TODO: if new tests are added to the app, add them here in the order that they appear in the app.
         TestNamesPresentable.rollingBackToFront,
-        TestNamesPresentable.emotionalAttachment
+        TestNamesPresentable.emotionalAttachment,
+        TestNamesPresentable.emotionalSecurity,
+        TestNamesPresentable.receptiveLanguage,
+        TestNamesPresentable.visualTracking,
+        TestNamesPresentable.reachingForToy
     ]
     
 //    static let initialStoryboardIDs = [
