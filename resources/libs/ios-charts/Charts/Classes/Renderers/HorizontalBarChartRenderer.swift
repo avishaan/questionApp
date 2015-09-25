@@ -77,7 +77,7 @@ public class HorizontalBarChartRenderer: BarChartRenderer
                     left *= phaseY
                 }
                 
-                barRect.origin.x = left
+                barRect.origin.x = left + barWidth
                 barRect.size.width = right - left
                 barRect.origin.y = top
                 barRect.size.height = bottom - top
@@ -108,7 +108,23 @@ public class HorizontalBarChartRenderer: BarChartRenderer
                 
                 // Set the color for the currently drawn value. If the index is out of bounds, reuse colors.
                 CGContextSetFillColorWithColor(context, dataSet.colorAt(j).CGColor)
-                CGContextFillRect(context, barRect)
+//                CGContextFillRect(context, barRect)
+              let startColor = UIColor.whiteColor().CGColor
+              let endColor = UIColor(red: 3/255.0, green: 148/255.0, blue: 222/255.0, alpha: 1.0).CGColor
+              let gradient = CGGradientCreateWithColors(
+                CGColorSpaceCreateDeviceRGB(),
+                [startColor,
+                  endColor],
+                [0, 1])
+              CGContextSaveGState(context);
+              CGContextAddRect(context, barRect);
+              CGContextClip(context);
+              CGContextDrawLinearGradient(context,
+                gradient,
+                CGPointMake(CGRectGetMinX(barRect), CGRectGetMinY(barRect)),
+                CGPointMake(CGRectGetMaxX(barRect), CGRectGetMinY(barRect)),
+                0)
+              CGContextRestoreGState(context);
             }
             else
             {

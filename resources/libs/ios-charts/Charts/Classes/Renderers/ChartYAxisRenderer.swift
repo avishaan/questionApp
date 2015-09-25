@@ -17,7 +17,7 @@ import UIKit
 
 public class ChartYAxisRenderer: ChartAxisRendererBase
 {
-    internal var _yAxis: ChartYAxis!
+    public var _yAxis: ChartYAxis!
     
     public init(viewPortHandler: ChartViewPortHandler, yAxis: ChartYAxis, transformer: ChartTransformer!)
     {
