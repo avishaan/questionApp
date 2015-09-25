@@ -27,7 +27,7 @@ class VisualTrackingWhatDidYouSeeViewController: UIViewController {
     profiles.initProfilesFromPersistentStore()
     
     // Get the test information.
-    //test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.visualTracking)
+    test = profiles.getTest(parent.getCurrentProfileName(), testName: Test.TestNames.visualTracking)
   }
   
   override func didReceiveMemoryWarning() {

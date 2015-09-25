@@ -93,7 +93,12 @@ class TestHistories : NSObject, NSCoding {
 //            Test.TestNames.bookPresentation : Test.TestNames.bookPresentation,
           Test.TestNames.jointAttention : Test.TestNames.jointAttention,
             // TODO: if new tests are added to the app, add them here.
-            Test.TestNames.rollingBackToFront : Test.TestNames.rollingBackToFront
+            Test.TestNames.rollingBackToFront : Test.TestNames.rollingBackToFront,
+            Test.TestNames.emotionalSecurity:Test.TestNames.emotionalSecurity,
+          Test.TestNames.visualTracking:Test.TestNames.visualTracking,
+          Test.TestNames.reachingForToy:Test.TestNames.reachingForToy,
+          Test.TestNames.receptiveLanguage:Test.TestNames.receptiveLanguage
+      
         ]
         
         for (key, testName) in dictionary {
