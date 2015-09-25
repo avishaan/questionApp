@@ -40,9 +40,9 @@ class BNTestRangeChartView: HorizontalBarChartView {
     rightYAxis.gridLineWidth = 1.5
     
     // these are percentage-based relative to height of the view
-    let h = self.frame.size.height
-    let dashBot = h * (7 / 107)
-    let dashMid = h * (55 / 107)
+    let h = self.viewPortHandler.chartHeight
+    var dashBot = h * (7 / 94)
+    var dashMid = h * (57 / 94)
     rightYAxis.gridLineDashLengths = [0, dashMid, dashBot]
     
     var babyAgeLimitLine = ChartLimitLine(limit: babyAgeInMonths, label: babyName)
@@ -141,7 +141,8 @@ public class BNYAxisRendererHorizontalWithSmileLimit: ChartYAxisRendererHorizont
       
       var image = UIImage(named: "smile")
       if let image = image {
-        image.drawAtPoint(CGPointMake(position.x - image.size.width/2, viewPortHandler.chartHeight/3))
+        let offset = (position.x <= (image.size.width*1.5)) ? 0 : image.size.width/2
+        image.drawAtPoint(CGPointMake(position.x - offset, viewPortHandler.chartHeight/3))
       }
       
     }
