@@ -85,23 +85,23 @@ class FallingToyBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in 2-4 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:23)
+            let string = "Not to worry. Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:23)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Didn't look?"
             
             // update infoLabel
-            let string = "Not to worry. Babies develop at different rates.\nTry again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:49, countOfBoldCharacters:21)
-            
+            let string = "Maybe you are more interesting than the toy. Practice with a different toy and if needed, a toy with a sound.\nTry again in 2 weeks."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:49, countOfBoldCharacters:21)
+          
         } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Didn't look?"
             
             // update infoLabel
-            let string = "Not to worry. Babies develop at different rates. Try dropping a hard toy that will make a sound on impact and see if baby looks down!"
-            applyTextAttributesToLabel(string, indexAtStartOfBold:49, countOfBoldCharacters:84)
+            let string = "Let's try a new toy to better get baby's attention.\nIf you baby is over one year old and is consistently not looking down, please record the test and mention it to your pedictrican in your next well-child visit."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:49, countOfBoldCharacters:84)
         } else {
             // update questionLabel
             questionLabel.text = "Didn't look?"

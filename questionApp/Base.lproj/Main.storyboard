@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="v8E-c3-o18">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FYu-vj-N2f">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1638,7 +1638,6 @@
                                 <exclude reference="RG4-1M-EEZ"/>
                                 <exclude reference="eBk-yG-S7M"/>
                                 <exclude reference="fYs-oS-FVK"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="MCR-t7-754"/>
                                 <exclude reference="awn-tL-Qp9"/>
                                 <exclude reference="c2O-SK-gJH"/>
@@ -1654,6 +1653,7 @@
                                 <exclude reference="gk4-kz-dJr"/>
                                 <exclude reference="Ajp-ZA-jia"/>
                                 <exclude reference="Nb2-r9-fR0"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1664,7 +1664,6 @@
                                 <include reference="RG4-1M-EEZ"/>
                                 <include reference="eBk-yG-S7M"/>
                                 <include reference="fYs-oS-FVK"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="MCR-t7-754"/>
                                 <include reference="awn-tL-Qp9"/>
                                 <include reference="c2O-SK-gJH"/>
@@ -1680,6 +1679,7 @@
                                 <include reference="gk4-kz-dJr"/>
                                 <include reference="Ajp-ZA-jia"/>
                                 <include reference="Nb2-r9-fR0"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                             </mask>
                         </variation>
                     </view>
@@ -2619,7 +2619,7 @@ IG9yIHdpdGggdGhlIG5lcnZlcyBjb25uZWN0aW5nIHRoZSBleWVzIHRvIAN0aGUgYnJhaW4uA
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyb-jD-KTj">
                                 <rect key="frame" x="14" y="274" width="293" height="183"/>
-                                <string key="text">Your baby's grasp of Object Permanence can be tested with a falling toy. Object Permanence allows baby to form mental pictures and is crucial to self-recognition.</string>
+                                <string key="text">Your baby’s grasp of Object Permanence can be tested with a falling toy. Object Permanence allows baby to form mental pictures and is critical in forming individual mental theories.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2993,7 +2993,7 @@ IG9yIHdpdGggdGhlIG5lcnZlcyBjb25uZWN0aW5nIHRoZSBleWVzIHRvIAN0aGUgYnJhaW4uA
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.  Did he look down?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJF-iH-tI7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.  Did baby look down?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJF-iH-tI7">
                                 <rect key="frame" x="52" y="381" width="222" height="46"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -3129,7 +3129,7 @@ IG9yIHdpdGggdGhlIG5lcnZlcyBjb25uZWN0aW5nIHRoZSBleWVzIHRvIAN0aGUgYnJhaW4uA
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby followed the falling toy! He understands Object Permanence." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-4L-Xv0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your baby followed the falling toy and understands Object Permanence." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-4L-Xv0">
                                 <rect key="frame" x="27" y="135" width="267" height="78"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -4570,11 +4570,11 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rnh-PO-BrS"/>
         <segue reference="l69-DX-nDO"/>
-        <segue reference="Csn-V1-Agc"/>
-        <segue reference="bXU-UG-Zw5"/>
-        <segue reference="b14-b1-AiE"/>
+        <segue reference="5kc-Dh-C8o"/>
         <segue reference="j7l-Po-XYD"/>
+        <segue reference="b14-b1-AiE"/>
+        <segue reference="bXU-UG-Zw5"/>
+        <segue reference="rnh-PO-BrS"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -22,17 +22,17 @@ class FallingToyWhatWillYouNeedViewController: UIViewController {
       Tracker.createEvent(.AttentionAtDistance, .Load, .WhatIsNeeded)
         
         // set up attributes for both part of pupil response description label
-        let string = "You'll need a small, soft, colorful toy. No hard toys - they make a sound on impact and may influence your results."
+        let string = "You’ll need a small, soft, colorful toy that is silent. Noisey toys will influence your results."
         var attributedString = NSMutableAttributedString(string: string)
         
         let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 41))
-        attributedString.addAttributes(firstAttributes, range: NSMakeRange(41, 12))
-        attributedString.addAttributes(secondAttributes, range: NSMakeRange(53, 62))
-        
+//        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 41))
+//        attributedString.addAttributes(firstAttributes, range: NSMakeRange(41, 12))
+//        attributedString.addAttributes(secondAttributes, range: NSMakeRange(53, 62))
+      
         testPreparationLabel.attributedText = attributedString
     }
 
