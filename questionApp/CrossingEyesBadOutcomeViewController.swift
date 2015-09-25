@@ -13,6 +13,7 @@ class CrossingEyesBadOutcomeViewController: UIViewController {
     @IBOutlet weak var rangeChartView: BNTestRangeChartView!
     @IBOutlet weak var rangeChartLabel: UILabel!
 
+  @IBOutlet weak var boldLabel: UILabel!
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test: Test?
     
@@ -94,30 +95,31 @@ class CrossingEyesBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry! Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
+           infoLabel.text = "Not to worry! Not all babies develop at the same rate."
+            boldLabel.text = "Try again and be sure baby is rested, fed, and alert."
+
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "Didn't cross his eyes?"
+            questionLabel.text = "Didn't cross eyes?"
             
             // update infoLabel
-            let string = "Not to worry! Sometimes practicing using a squeaky toy will help. Try this, then perform the test again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:66, countOfBoldCharacters:49)
+           infoLabel.text = "Sometimes practicing using a squeaky toy will help."
+           boldLabel.text = "Try this, then perform the test again in a week."
             
         } else if failed >= 3 {
             // update questionLabel
-            questionLabel.text = "Didn't cross his eyes?"
+            questionLabel.text = "Didn't cross eyes?"
             
             // update infoLabel
-            let string = "Do the test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:67, countOfBoldCharacters:50)
+            infoLabel.text = "Did baby focus on toy? If baby shifted focus to you, try test again."
+            boldLabel.text = " If baby fails, repeat and record test to show your pediatrician."
         } else {
             // update questionLabel
-            questionLabel.text = "Didn't cross his eyes?"
+            questionLabel.text = "Didn't cross eyes?"
             
             // update infoLabel
-            let string = "Not to worry! Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
+            infoLabel.text = "Not to worry! Not all babies develop at the same rate."
+            boldLabel.text = "Try again and be sure baby is rested, fed, and alert."
         }
     }
     
