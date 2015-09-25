@@ -48,11 +48,11 @@ class SensoryMotorMilestoneViewController: UIViewController {
       //sitting while reaching
       self.sittingWhileReachingButton.facebookDisabled()
     }
-    if facebookShares <= 3 {
+    if facebookShares < 3 {
       // sitting unassited
       self.sittingUnassistedButton.facebookDisabled()
     }
-    if facebookShares <= 4 {
+    if facebookShares < 4 {
       //crawl
       self.crawlButton.facebookDisabled()
     }

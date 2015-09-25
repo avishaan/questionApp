@@ -10,18 +10,40 @@ import UIKit
 
 class LanguageCognitiveMilestoneViewController: UIViewController {
 
+  var facebookShares = 0
+
+  @IBOutlet weak var jointAttentionButton: BNButton!
+  @IBOutlet weak var completelyCoveredButton: BNButton!
+  @IBOutlet weak var partiallyCoveredButton: BNButton!
     override func viewDidLoad() {
         super.viewDidLoad()
       // analytics
       Tracker.createEvent(.LanguageCognitiveMilestone, .Load)
 
         // Do any additional setup after loading the view.
+      facebookShares = BNFacebook.userShareCountFromFront()
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    // hide tests based on current facebook share acount
+    if facebookShares < 1 {
+      partiallyCoveredButton.facebookDisabled()
+    }
+    if facebookShares < 2 {
+    }
+    if facebookShares < 3 {
+    }
+    if facebookShares < 4 {
+      completelyCoveredButton.facebookDisabled()
+    }
+  }
+
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "milestonesSegueID" {

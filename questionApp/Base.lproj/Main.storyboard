@@ -1406,7 +1406,7 @@
                                                 <rect key="frame" x="32" y="386" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="book presentation">
+                                                <state key="normal" title="joint attention">
                                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1643,22 +1643,22 @@
                             <mask key="constraints">
                                 <exclude reference="RG4-1M-EEZ"/>
                                 <exclude reference="eBk-yG-S7M"/>
+                                <exclude reference="c2O-SK-gJH"/>
+                                <exclude reference="NE8-A8-tgl"/>
+                                <exclude reference="bcD-sV-Tic"/>
+                                <exclude reference="JUi-il-BJq"/>
+                                <exclude reference="9nw-dl-Jd9"/>
+                                <exclude reference="Dbd-t5-zAR"/>
+                                <exclude reference="Ajp-ZA-jia"/>
                                 <exclude reference="fYs-oS-FVK"/>
                                 <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="MCR-t7-754"/>
                                 <exclude reference="awn-tL-Qp9"/>
-                                <exclude reference="c2O-SK-gJH"/>
-                                <exclude reference="NE8-A8-tgl"/>
-                                <exclude reference="bcD-sV-Tic"/>
                                 <exclude reference="k1X-zd-Jaj"/>
                                 <exclude reference="AdR-pR-2gj"/>
-                                <exclude reference="JUi-il-BJq"/>
                                 <exclude reference="azq-Ud-hJh"/>
-                                <exclude reference="9nw-dl-Jd9"/>
-                                <exclude reference="Dbd-t5-zAR"/>
                                 <exclude reference="LOr-Q6-k7N"/>
                                 <exclude reference="gk4-kz-dJr"/>
-                                <exclude reference="Ajp-ZA-jia"/>
                                 <exclude reference="Nb2-r9-fR0"/>
                             </mask>
                         </variation>
@@ -1669,28 +1669,33 @@
                             <mask key="constraints">
                                 <include reference="RG4-1M-EEZ"/>
                                 <include reference="eBk-yG-S7M"/>
+                                <include reference="c2O-SK-gJH"/>
+                                <include reference="NE8-A8-tgl"/>
+                                <include reference="bcD-sV-Tic"/>
+                                <include reference="JUi-il-BJq"/>
+                                <include reference="9nw-dl-Jd9"/>
+                                <include reference="Dbd-t5-zAR"/>
+                                <include reference="Ajp-ZA-jia"/>
                                 <include reference="fYs-oS-FVK"/>
                                 <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="MCR-t7-754"/>
                                 <include reference="awn-tL-Qp9"/>
-                                <include reference="c2O-SK-gJH"/>
-                                <include reference="NE8-A8-tgl"/>
-                                <include reference="bcD-sV-Tic"/>
                                 <include reference="k1X-zd-Jaj"/>
                                 <include reference="AdR-pR-2gj"/>
-                                <include reference="JUi-il-BJq"/>
                                 <include reference="azq-Ud-hJh"/>
-                                <include reference="9nw-dl-Jd9"/>
-                                <include reference="Dbd-t5-zAR"/>
                                 <include reference="LOr-Q6-k7N"/>
                                 <include reference="gk4-kz-dJr"/>
-                                <include reference="Ajp-ZA-jia"/>
                                 <include reference="Nb2-r9-fR0"/>
                             </mask>
                         </variation>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="800"/>
+                    <connections>
+                        <outlet property="completelyCoveredButton" destination="Oqb-dl-5DX" id="One-sw-hdP"/>
+                        <outlet property="jointAttentionButton" destination="Sab-3h-kiJ" id="P9q-jM-CFT"/>
+                        <outlet property="partiallyCoveredButton" destination="xhS-aM-YF2" id="8vk-wk-73y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1C-xx-tfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
