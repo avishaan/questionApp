@@ -96,30 +96,30 @@ class FacialMimicBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry! Your baby is a bit too young for this skill. Try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:59, countOfBoldCharacters:21)
+          let string = "Not to worry. Not all babies develop at the same rate.Try again and be sure baby is rested, fed, and alert."
+          applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:52)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Try this: with a neutral facial expression, make eye contact with baby. Now change to an emmotional expression (happy, afraid, etc.). Does baby look at you? Does she mimic your expression?\nIf not, try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:189, countOfBoldCharacters:29)
+          let string = "Try this: with a neutral facial expression, make eye contact with baby. Now change to an emotional expression (happy, afraid, etc.). Does baby look at you? Does baby mimic your expression?Try again in a month."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:188, countOfBoldCharacters:20)
             
         } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Do the test a few more times to be sure the outcome is consistent. If so, record this test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:67, countOfBoldCharacters:50)
+          let string = "Do the test a few more times to be sure the outcome is consistent.If so and your baby is over 18 months,please record this test to show your pediatrician."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:66, countOfBoldCharacters:87)
         } else {
             // update questionLabel
             questionLabel.text = "Not mimicking expression?"
             
             // update infoLabel
-            let string = "Not to worry! Your  baby is a bit too young for this skill. Try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:59, countOfBoldCharacters:21)
+          let string = "Not to worry. Not all babies develop at the same rate.Try again and be sure baby is rested, fed, and alert."
+          applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
         }
     }
     
