@@ -91,23 +91,23 @@ class CompletelyCoveredToyBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Not to worry. Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Didn't react?"
             
             // update infoLabel
-            let string = "Try the test again using baby’s favorite toy and with a little bit of the toy showing. If he still doesn’t react, try the test again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:86, countOfBoldCharacters:58)
-            
+          let string = "Try the test again using baby’s favorite toy and with more of the toy showing.\nIf baby still doesn’t react, try the test again in 2 weeks"
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:86, countOfBoldCharacters:58)
+          
         } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Didn't react?"
             
             // update infoLabel
-            let string = "Consistent failure of this test after 15 months may indicate visual and/or cognitive issues. If baby consistently shows no reaction beyond 15 months, talk to your pediatrician at your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:92, countOfBoldCharacters:114)
+          let string = "Inability to recognize Object Permanence after 12 months may indicate visual and/or cognitive issues. \nIf baby consistently shows no reaction beyond 12 months, record the video and talk to your pediatrician at your next well-child visit."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:92, countOfBoldCharacters:114)
         } else {
             // update questionLabel
             questionLabel.text = "Didn't react?"
