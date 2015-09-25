@@ -31,7 +31,7 @@ class WhyIsSymmetryViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Your baby should lie symmetrically on her stomach. Inability to do so may be an early indicator of spinal issues or increased risk for autism."
+        let string = "Your baby should lie symmetrically on back. It's a good indicatior of spinal abillity."
         
         var attributedString = NSMutableAttributedString(string: string)
         

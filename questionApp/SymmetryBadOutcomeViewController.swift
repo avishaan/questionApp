@@ -93,39 +93,33 @@ class SymmetryBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed <= 1 {
+      if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry! All babies develop at the different rates. Try again tomorrow."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:57, countOfBoldCharacters:19)
+        let string = "Not to worry. Babies develop at different rates.Try again and be sure baby is rested, fed, and alert."
+        applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Still not symmetrical?"
             
             // update infoLabel
-            let string = "Your baby may not have the motor skills to extend her arms or legs yet. Try again next month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:72, countOfBoldCharacters:21)
+            let string = "Baby's mood can affect performance. Try to catpture baby's attention by dangling a toy on top."
+        applyTextAttributesToLabel(string, indexAtStartOfBold:36, countOfBoldCharacters:56)
+
             
-        } else if failed == 3 {
+        } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Still not symmetrical?"
             
             // update infoLabel
-            let string = "Since your baby is under 12 months, she still has time to develop those muscles. If you're concerned, check with your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:50)
-        } else if failed >= 4 {
-            // update questionLabel
-            questionLabel.text = "Still not symmetrical?"
-            
-            // update infoLabel
-            let string = "Are baby's limbs consistently weaker on one side? If yes, please check with your pediatrician during your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:50, countOfBoldCharacters:78)
+          let string = "If your baby is active, spinal symmetry can be quick!If baby is older than age 1 and you’re concerned, please record the test and review it with your pediatrician."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:53, countOfBoldCharacters:110)
         } else {
             // update questionLabel
             questionLabel.text = "Not symmetrical?"
             
             // update infoLabel
-            let string = "Not to worry! All babies develop at the different rates. Try again tomorrow."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:57, countOfBoldCharacters:19)
+            let string = "Not to worry. Babies develop at different rates.Try again and be sure baby is rested, fed, and alert."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
         }
     }
     
