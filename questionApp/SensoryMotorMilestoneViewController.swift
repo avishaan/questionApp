@@ -13,6 +13,7 @@ class SensoryMotorMilestoneViewController: UIViewController {
   @IBOutlet weak var sittingUnassistedButton: BNButton!
   @IBOutlet weak var crawlButton: BNButton!
   @IBOutlet weak var symmetryButton: BNButton!
+@IBOutlet weak var rollingBackFrontButton: BNButton!
   @IBOutlet weak var sittingWhileReachingButton: BNButton!
   @IBOutlet var requirementCollection: [BNButton]!
   var testsAreEnabled = false
@@ -55,6 +56,8 @@ class SensoryMotorMilestoneViewController: UIViewController {
     if facebookShares < 4 {
       //crawl
       self.crawlButton.facebookDisabled()
+      rollingBackFrontButton.facebookDisabled()
+
     }
   }
   
