@@ -104,28 +104,29 @@ class AttentionAtDistanceBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed <= 1 {
+      if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry! Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+        let string = "Not to worry! Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+      
             applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
-        } else if failed == 2 {
+      } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Didn't hold attention?"
             
             // update infoLabel
-            let string = "Not to worry! Sometimes practicing using a squeaky toy will help. Try this, then perform the test again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:66, countOfBoldCharacters:49)
+          let string = "Practice by using a flighlight or a squeeky toy to better capture baby's attention.Try this, then perform the test again in a week."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:82, countOfBoldCharacters:48)
             
         } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Didn't hold attention?"
             
             // update infoLabel
-            let string = "Try again using a penlight instead of a toy. If baby still  loses attention repeat and record test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:45, countOfBoldCharacters:80)
+          let string = "Getting baby's attention from the start is the key. If baby looked at you as you back away, it still counts!If you are still concerned, please record the test to show your pediatrician at your next well-child visit. Try again in a week."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:108, countOfBoldCharacters:127)
         } else {
             // update questionLabel
-            questionLabel.text = "Didn't hold attention?"
+            questionLabel.text = "Didn't 7old attention?"
             
             // update infoLabel
             let string = "Not to worry! Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."

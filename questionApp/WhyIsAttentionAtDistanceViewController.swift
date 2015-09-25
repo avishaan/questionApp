@@ -31,7 +31,7 @@ class WhyIsAttentionAtDistanceViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Your baby should be able to remain focused on an object 3-4 feet away by six months of age. Inability can indicate attentional deficit problems, or vision/neurological issues."
+        let string = "Your baby should be able to remain focused on an object 3-4' away by 6 months of age. Its an indicator of attention, vision, and cogintitive abilities."
         
         var attributedString = NSMutableAttributedString(string: string)
         
@@ -40,7 +40,7 @@ class WhyIsAttentionAtDistanceViewController: UIViewController {
         
         attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 54))
         attributedString.addAttributes(boldAttributes, range: NSMakeRange(55, 14))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(70, 105))
+  
         
         descriptionLabel.attributedText = attributedString
     }
