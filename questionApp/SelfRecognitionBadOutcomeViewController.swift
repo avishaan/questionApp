@@ -26,7 +26,7 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
       Tracker.createEvent(.SelfRecognition, .Load, .Bad)
         
         // Do any additional setup after loading the view.
-        rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 4, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+        rangeChartView.config(startMonth: 0, endMonth: 30, successAgeInMonths: 24, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
         
         // font can't be set directly in storyboard for attributed string, set the label font here
         // make label's set attr string to a mutable so we can add attributes on
@@ -93,30 +93,23 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
       
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:21)
+            let string = "Not to worry. Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:21)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "No self recognition?"
             
             // update infoLabel
-            let string = "Did baby make noises, smile at her reflection, or suddenly become unhappy? This means she’s on her way to recognizing her reflection. Practice by playing peekaboo or showing baby photos of herself, then try the test again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:134, countOfBoldCharacters:99)
-            
-        } else if failed == 3 {
+            let string = "Maybe you are more interesting than the toy. Practice with a different toy and if needed, a toy with a sound as well to help your baby look down.\n Try again in 2 weeks."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:134, countOfBoldCharacters:99)
+          
+        } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "No self recognition?"
             
             // update infoLabel
-            let string = "Since your baby is under 12 months, she still has time to develop those muscles. If you're concerned, check with your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:50)
-        } else if failed >= 4 {
-            // update questionLabel
-            questionLabel.text = "No self recognition?"
-            
-            // update infoLabel
-            let string = "Most babies develop self recognition by age two or three. If your baby consistenty shows no reaction beyond age two, talk to your pediatrician at your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:58, countOfBoldCharacters:115)
+            let string = "The response can be quick! Watch for them carefully. Perform this test a few more times to be sure the outcome is consistent.\nIf baby consistently shows no reaction beyond age 2, record the test and talk to your pediatrician at your next well-child visit."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:50)
         } else {
             // update questionLabel
             questionLabel.text = "No self recognition?"
