@@ -78,7 +78,7 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
     }
   @IBAction func onReceptiveLanguageTap(sender: AnyObject) {
     var storyboard = UIStoryboard (name: "ReceptiveLanguage", bundle: nil)
-    var controller: WhyIsReceptiveLanguageViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsReceptiveLanguageStoryboardID") as! WhyIsReceptiveLanguageViewController
+    var controller: WhyISReceptiveLanguageViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsReceptiveLanguageStoryboardID") as! WhyISReceptiveLanguageViewController
     self.presentViewController(controller, animated: true, completion: nil);
   }
   @IBAction func onPointFollowTap(sender: AnyObject) {
