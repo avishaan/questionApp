@@ -20,16 +20,16 @@ class WhyIsObjectPermanenceViewController: UIViewController {
       Tracker.createEvent(.AttentionAtDistance, .Load, .Why)
 
         // set up attributes for both part of object permanence description label
-        let string = "Your baby's grasp of Object Permanence can be tested with a falling toy. Object Permanence allows baby to form mental pictures and is crucial to self-recognition."
+        let string = "Your baby’s grasp of Object Permanence can be tested with a falling toy. Object Permanence allows baby to form mental pictures and is critical in forming individual mental theories."
         var attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 20))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(20, 18))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(38, 124))
-        
+//        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 20))
+//        attributedString.addAttributes(boldAttributes, range: NSMakeRange(20, 18))
+//        attributedString.addAttributes(standardAttributes, range: NSMakeRange(38, 124))
+      
         objectPermanenceDescriptionLabel.attributedText = attributedString
     }
 
