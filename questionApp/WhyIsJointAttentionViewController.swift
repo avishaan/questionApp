@@ -29,18 +29,18 @@ class WhyIsJointAttentionViewController: UIViewController {
   // Helper function formats text attributes for multiple substrings in label.
   func applyTextAttributesToLabel() {
     
-    let string = "This is a test of baby’s Joint Attention abilities. Joint Attention refers to baby’s understanding of pointing, following your gaze, and verbal prompts. All are important steps toward skills needed for reading."
+    let string = "Joint Attention refers to baby’s understanding of pointing, following your gaze, and verbal prompts. All are important steps toward language development and social interaction."
     
     var attributedString = NSMutableAttributedString(string: string)
     
     let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
     let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
     
-    attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 25))
-    attributedString.addAttributes(boldAttributes, range: NSMakeRange(25, 15))
-    attributedString.addAttributes(standardAttributes, range: NSMakeRange(40, 136))
-    attributedString.addAttributes(boldAttributes, range: NSMakeRange(176, 34))
-    
+//    attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 25))
+//    attributedString.addAttributes(boldAttributes, range: NSMakeRange(25, 15))
+//    attributedString.addAttributes(standardAttributes, range: NSMakeRange(40, 136))
+//    attributedString.addAttributes(boldAttributes, range: NSMakeRange(176, 34))
+//    
     descriptionLabel.attributedText = attributedString
   }
 

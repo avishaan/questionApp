@@ -88,8 +88,8 @@ class JointAttentionBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. All babies develop at different rates. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:53, countOfBoldCharacters:21)
+            let string = "Facial recognition requires activation of a special part of the brain. Try a picture of baby's favorite animal or toy. If baby doesn't respond, repeat test in a month"
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:53, countOfBoldCharacters:21)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Not Paying Attention?"
@@ -103,8 +103,8 @@ class JointAttentionBadOutcomeViewController: UIViewController {
             questionLabel.text = "Not Paying Attention?"
             
             // update infoLabel
-            let string = "A lack of joint attention skills past 30 months can be an early indicator for autism.Talk to your pediatrician at your next appointment."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:85, countOfBoldCharacters:51)
+          let string = "If baby looked at the picture and smiled or looked at you- this still counts. Wheather baby recognizes the photo requires good sight and object/ facial recognition. If your baby is over 30 months and still doesn't respond, please record this test to show your pediatrician"
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:85, countOfBoldCharacters:51)
         } else {
             // update questionLabel
             questionLabel.text = "Not Paying Attention?"

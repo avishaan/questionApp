@@ -40,16 +40,16 @@ class JointAttentionWhatWillYouNeedViewController: UIViewController {
     
     func applyTextAttributesToLabel() {
         
-        let string = "You'll ned a picture book and comfy spot to sit with baby."
+        let string = "Get your phone and sit comfortably with baby."
         var attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 14))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(13, 12))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(26, 24))
-        
+//        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 14))
+//        attributedString.addAttributes(boldAttributes, range: NSMakeRange(13, 12))
+//        attributedString.addAttributes(standardAttributes, range: NSMakeRange(26, 24))
+      
         testPreparationLabel.attributedText = attributedString
     }
     
