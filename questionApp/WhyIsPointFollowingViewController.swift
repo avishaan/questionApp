@@ -31,7 +31,7 @@ class WhyIsPointFollowingViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Your baby's ability to follow a pointing finger depends on his understanding of social cues. Joint Attention is crucial for language development and social interaction."
+        let string = "Your baby’s ability to follow a pointing finger is dependant on an understanding of social cues. Joint Attention is crucial for language development and social interaction."
         
         var attributedString = NSMutableAttributedString(string: string)
         
