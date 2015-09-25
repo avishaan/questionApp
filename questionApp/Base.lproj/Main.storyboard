@@ -4527,12 +4527,15 @@ Try again in 6-8 weeks.</string>
                                 <rect key="frame" x="32" y="162" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="point following">
+                                <state key="normal" title="emotional security">
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="151" width="250" height="60"/>
+                                </variation>
                                 <connections>
-                                    <action selector="onPointFollowingButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="7xH-Jf-jHE"/>
+                                    <action selector="onEmotionalSecurityTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="iAw-cf-pVD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW5-Af-Oh6" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
@@ -4543,6 +4546,9 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="227" width="250" height="60"/>
+                                </variation>
                                 <connections>
                                     <action selector="onSelfRecognitionButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="ViR-G6-eKL"/>
                                 </connections>
@@ -4555,6 +4561,9 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="301" width="250" height="60"/>
+                                </variation>
                                 <connections>
                                     <action selector="onSocialSmilingButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="2X7-c9-8s9"/>
                                 </connections>
@@ -4567,32 +4576,85 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="374" width="250" height="60"/>
+                                </variation>
                                 <connections>
                                     <action selector="onFacialMimicButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="K6S-ho-p8Z"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PointFollowing" translatesAutoresizingMaskIntoConstraints="NO" id="52N-tp-x1S">
                                 <rect key="frame" x="49" y="180" width="24" height="24"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="169" width="24" height="24"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SelfRecognition" translatesAutoresizingMaskIntoConstraints="NO" id="jza-zF-796">
                                 <rect key="frame" x="49" y="256" width="24" height="24"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="245" width="24" height="24"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SocialSmiling" translatesAutoresizingMaskIntoConstraints="NO" id="y3v-LW-Khi">
                                 <rect key="frame" x="49" y="332" width="24" height="24"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="321" width="24" height="24"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExpressionMimic" translatesAutoresizingMaskIntoConstraints="NO" id="ge5-Uh-g25">
                                 <rect key="frame" x="49" y="405" width="24" height="24"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="394" width="24" height="24"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="403" width="24" height="24"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRW-NB-QYU" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="33" y="385" width="250" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="emotional attachment">
+                                    <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="448" width="250" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onEmotionalAttachmentTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="uJI-Wd-hei"/>
+                                    <action selector="onFacialMimicButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="JeX-QJ-xvp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExpressionMimic" translatesAutoresizingMaskIntoConstraints="NO" id="odO-t1-xsC">
+                                <rect key="frame" x="49" y="405" width="24" height="24"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="466" width="24" height="24"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="49" y="403" width="24" height="24"/>
                                 </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="uRW-NB-QYU"/>
+                                <exclude reference="odO-t1-xsC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="uRW-NB-QYU"/>
+                                <include reference="odO-t1-xsC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="emotionalAttachmentButton" destination="uRW-NB-QYU" id="Vta-VZ-yV6"/>
+                        <outlet property="emotionalSecurityButton" destination="FPJ-LY-g23" id="ndZ-Tn-aOD"/>
                         <outlet property="facialMimicButton" destination="nBe-ix-s7m" id="oDp-TC-9s2"/>
-                        <outlet property="pointFollowButton" destination="FPJ-LY-g23" id="289-cq-jBb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjr-jU-SjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
