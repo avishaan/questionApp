@@ -93,23 +93,23 @@ class UnassistedSittingBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. All babies develop at different rates. Try again in two weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
+          let string = "Not to worry. Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Not sitting up?"
             
             // update infoLabel
-            let string = "Help your baby get used to sitting by propping her up with a pillow on the couch. Try the test again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:31)
-            
+          let string = "Help your baby get used to sitting by propping baby up with a pillow on the couch.\nTry the test again in 2 weeks."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:31)
+          
         } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Not sitting up?"
             
             // update infoLabel
-            let string = "If your baby goes past 18 months without being able to sit unassisted, this may indicate neuromuscular problems. Talk to your pediatrician at your next appointment. "
-            applyTextAttributesToLabel(string, indexAtStartOfBold:112, countOfBoldCharacters:52)
+          let string = "Perform this test a few more times to be sure the outcome is consistent. Remember practice and enouragement can go a long way!\nIf problem persists and your baby is older than 18 months, record this test to show your pediatrician."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:112, countOfBoldCharacters:52)
         } else {
             // update questionLabel
             questionLabel.text = "Not sitting up?"

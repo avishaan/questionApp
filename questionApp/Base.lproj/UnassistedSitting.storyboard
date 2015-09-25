@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -420,7 +420,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhh-eV-ew9">
-                                <rect key="frame" x="30" y="144" width="260" height="305"/>
+                                <rect key="frame" x="30" y="144" width="260" height="326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -438,8 +438,8 @@
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.  Is baby able to maintain a sitting posture on her own?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-fT-sq6">
-                                <rect key="frame" x="52" y="359" width="222" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.  Is baby able to maintain a sitting posture without your support?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-fT-sq6">
+                                <rect key="frame" x="52" y="359" width="222" height="103"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -454,7 +454,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uN-06-TUx" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="94" y="468" width="122" height="30"/>
+                                <rect key="frame" x="94" y="478" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -854,7 +854,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwz-Tu-xyB" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="99" y="388" width="122" height="30"/>
+                                <rect key="frame" x="99" y="438" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="close">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -873,13 +873,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssk-2q-3Ek">
-                                <rect key="frame" x="24" y="130" width="272" height="245"/>
+                                <rect key="frame" x="24" y="130" width="272" height="300"/>
                                 <string key="text" base64-UTF8="YES">
 U2l0dGluZyB1bmFzc2lzdGVkIGRlcGVuZHMgb24gbXVzY3VsYXIgZGV2ZWxvcG1lbnQgA2luIHRoZSBi
 YWNrLCB1cHBlciB0cnVuaywgA2FuZCBuZWNrLiBJdOKAmXMgYWxzbyBhIHNraWxsIHRoYXTigJlzIGNy
-dWNpYWwgdG8gY3Jhd2xpbmcsIHN0YW5kaW5nLCBhbmQgd2Fsa2luZy4gICAgICAgICAgICAgICAgICAg
-ICAgICAgICANSWYgYmFieSBjYW5ub3Qgc2l0IHVuYXNzaXN0ZWQgYWZ0ZXIgMTggbW9udGhzLCBwbGVh
-c2UgY2hlY2sgd2l0aCB5b3VyIHBlZGlhdHJpY2lhbiBhdCB5b3VyIG5leHQgYXBwb2ludG1lbnQuA
+dWNpYWwgdG8gY3Jhd2xpbmcsIHN0YW5kaW5nLCBhbmQgd2Fsa2luZy4KCklmIGJhYnkgY2Fubm90IHNp
+dCB1bmFzc2lzdGVkIGFmdGVyIDE4IG1vbnRocywgaXQgbWF5IGluZGljYXRlIG5ldXJvbXVzY3VsYXIg
+cHJvYmxlbXMuICBQbGVhc2UgY2hlY2sgd2l0aCB5b3VyIHBlZGlhdHJpY2lhbiBhdCB5b3VyIG5leHQg
+YXBwb2ludG1lbnQuA
 </string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
