@@ -13,6 +13,7 @@ class PointFollowingBadOutcomeViewController: UIViewController {
     @IBOutlet weak var rangeChartView: BNTestRangeChartView!
     @IBOutlet weak var rangeChartLabel: UILabel!
     
+  @IBOutlet weak var boldLabel: UILabel!
     /** A Test containing the updated test history. This property should be set by the source view controller. */
     var test: Test?
     
@@ -92,37 +93,30 @@ class PointFollowingBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in 4-6 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:23)
+            infoLabel.text = "Not to worry. Not all babies develop at the same rate."
+            boldLabel.text = "Try again and be sure baby is rested, fed, and alert."
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Didn't look?"
             
             // update infoLabel
-            let string = "Not to worry. Babies develop at different rates.\nTry again in 4-6 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:49, countOfBoldCharacters:23)
-            
-        } else if failed == 3 {
+            infoLabel.text = "Try a noisy object or have another person make some noise to attract baby's attention."
+            boldLabel.text = "Try this, if baby still doesn't react, try the test again in 3 weeks."
+        } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Didn't look?"
             
             // update infoLabel
-            let string = "Not to worry. Babies develop at different rates.\nYou can help by having your partner make noise to attract baby's attention."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:49, countOfBoldCharacters:75)
-        } else if failed >= 4 {
-            // update questionLabel
-            questionLabel.text = "Didn't look?"
-            
-            // update infoLabel
-            let string = "This is a complicated task! Baby needs to understand language and gestures to succeed. For evaluation, please record this test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:87, countOfBoldCharacters:66)
+          infoLabel.text = "This is a complicated task! Baby needs to understand both language and gestures to succeed."
+          boldLabel.text = "If baby continues to fail the test and is over age 1, please record the test and check with your pediatrician."
         } else {
             // update questionLabel
             questionLabel.text = "Didn't look?"
             
             // update infoLabel
-            let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in 4-6 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:23)
+          infoLabel.text = "Not to worry. Not all babies develop at the same rate."
+            boldLabel.text = "Try again and be sure baby is rested, fed, and alert."
+
         }
     }
 
