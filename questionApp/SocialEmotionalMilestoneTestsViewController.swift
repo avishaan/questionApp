@@ -33,9 +33,9 @@ class SocialEmotionalMilestoneTestsViewController: UIViewController {
 		if facebookShares < 2 {
 			facialMimicButton.facebookDisabled()
 		}
-		if facebookShares <= 3 {
+		if facebookShares < 3 {
 		}
-		if facebookShares <= 4 {
+		if facebookShares < 4 {
 		}
 	}
 	
