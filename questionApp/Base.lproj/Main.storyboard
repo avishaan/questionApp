@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DF5-Zg-qbg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vqP-SJ-U0l">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1079,7 +1079,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="onReachingWhileSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="6WN-4z-ZW0"/>
-                                                    <action selector="onUnassistedSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="FGb-MK-gHH"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SittingReaching" translatesAutoresizingMaskIntoConstraints="NO" id="ggQ-6z-7WZ">
@@ -1110,8 +1109,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="onReachingWhileSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="CA5-Fo-qnx"/>
-                                                    <action selector="onUnassistedSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="E06-Nl-mAi"/>
+                                                    <action selector="onVisualTrackingTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="MKB-Dm-nF3"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SittingReaching" translatesAutoresizingMaskIntoConstraints="NO" id="WD4-i3-5Hy">
@@ -1148,8 +1146,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="onReachingWhileSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="EEG-Zx-lzW"/>
-                                                    <action selector="onUnassistedSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="V4a-gx-NXi"/>
+                                                    <action selector="onReachingForToyTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="eGA-Qx-2dU"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SittingReaching" translatesAutoresizingMaskIntoConstraints="NO" id="rY1-RP-3Mi">
@@ -1180,8 +1177,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="onReachingWhileSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="QwY-C9-qrk"/>
-                                                    <action selector="onUnassistedSittingButtonTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="4ud-dQ-17G"/>
+                                                    <action selector="onRollBackToFrontTap:" destination="9CL-vI-WhP" eventType="touchUpInside" id="cUA-He-Vg9"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SittingReaching" translatesAutoresizingMaskIntoConstraints="NO" id="BLx-m6-zOM">
@@ -1564,7 +1560,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="jointAttentionButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="60F-LQ-vxm"/>
-                                                    <action selector="partiallyCoveredToyButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="nhr-dx-M1b"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AttentionAtDistance" translatesAutoresizingMaskIntoConstraints="NO" id="qVP-ET-Qna">
@@ -1607,9 +1602,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="jointAttentionButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="sQR-A2-2wa"/>
                                                     <action selector="onPointFollowTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="PxO-9z-t9G"/>
-                                                    <action selector="partiallyCoveredToyButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="gQi-LN-Eaq"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookPresentation" translatesAutoresizingMaskIntoConstraints="NO" id="ReR-1c-8w8">
@@ -4503,12 +4496,28 @@ Try again in 6-8 weeks.</string>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="social &amp; emotional" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG9-8B-XWN" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="go1-le-V1C"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="go1-le-V1C"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="go1-le-V1C"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fS9-Yt-sjy" customClass="BNToolbar" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qka-4E-rI3"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dKE-05-63v"/>
                                     <barButtonItem image="eggIcon" id="cZD-oy-yI1">
@@ -4522,6 +4531,16 @@ Try again in 6-8 weeks.</string>
                                     <barButtonItem image="gearIcon" id="1ni-ta-ZvE"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="qaY-4M-fB7"/>
                                 </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qka-4E-rI3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="qka-4E-rI3"/>
+                                    </mask>
+                                </variation>
                             </toolbar>
                             <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPJ-LY-g23" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="32" y="162" width="250" height="60"/>
@@ -4531,9 +4550,6 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="32" y="151" width="250" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="onEmotionalSecurityTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="iAw-cf-pVD"/>
                                 </connections>
@@ -4546,9 +4562,6 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="32" y="227" width="250" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="onSelfRecognitionButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="ViR-G6-eKL"/>
                                 </connections>
@@ -4561,9 +4574,6 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="301" width="250" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="onSocialSmilingButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="2X7-c9-8s9"/>
                                 </connections>
@@ -4576,51 +4586,27 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="374" width="250" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="onFacialMimicButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="K6S-ho-p8Z"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PointFollowing" translatesAutoresizingMaskIntoConstraints="NO" id="52N-tp-x1S">
                                 <rect key="frame" x="49" y="180" width="24" height="24"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="169" width="24" height="24"/>
-                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SelfRecognition" translatesAutoresizingMaskIntoConstraints="NO" id="jza-zF-796">
                                 <rect key="frame" x="49" y="256" width="24" height="24"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="245" width="24" height="24"/>
-                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SocialSmiling" translatesAutoresizingMaskIntoConstraints="NO" id="y3v-LW-Khi">
                                 <rect key="frame" x="49" y="332" width="24" height="24"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="321" width="24" height="24"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExpressionMimic" translatesAutoresizingMaskIntoConstraints="NO" id="ge5-Uh-g25">
-                                <rect key="frame" x="49" y="405" width="24" height="24"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="394" width="24" height="24"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="403" width="24" height="24"/>
-                                </variation>
                             </imageView>
                             <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRW-NB-QYU" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="33" y="385" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="emotional attachment">
+                                <state key="normal" title="emotional attach">
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="448" width="250" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="onEmotionalAttachmentTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="uJI-Wd-hei"/>
                                     <action selector="onFacialMimicButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="JeX-QJ-xvp"/>
@@ -4628,25 +4614,166 @@ Try again in 6-8 weeks.</string>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExpressionMimic" translatesAutoresizingMaskIntoConstraints="NO" id="odO-t1-xsC">
                                 <rect key="frame" x="49" y="405" width="24" height="24"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="466" width="24" height="24"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="403" width="24" height="24"/>
                                 </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExpressionMimic" translatesAutoresizingMaskIntoConstraints="NO" id="ge5-Uh-g25">
+                                <rect key="frame" x="49" y="405" width="24" height="24"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="49" y="403" width="24" height="24"/>
                                 </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="52N-tp-x1S" firstAttribute="centerY" secondItem="FPJ-LY-g23" secondAttribute="centerY" id="0et-Jl-Sjp"/>
+                            <constraint firstItem="hnA-IJ-fxv" firstAttribute="top" secondItem="KG9-8B-XWN" secondAttribute="bottom" constant="31" id="1bd-jm-8C1"/>
+                            <constraint firstItem="fS9-Yt-sjy" firstAttribute="leading" secondItem="3uM-DY-upm" secondAttribute="leading" id="2HO-Ow-a8S"/>
+                            <constraint firstItem="nBe-ix-s7m" firstAttribute="top" secondItem="7Mb-wv-cdl" secondAttribute="bottom" constant="13" id="3Bt-lZ-lon"/>
+                            <constraint firstItem="FPJ-LY-g23" firstAttribute="leading" secondItem="ZW5-Af-Oh6" secondAttribute="leading" id="8tJ-v3-oLn"/>
+                            <constraint firstItem="ZW5-Af-Oh6" firstAttribute="top" secondItem="52N-tp-x1S" secondAttribute="bottom" constant="34" id="Bpy-s0-h1p"/>
+                            <constraint firstItem="7Mb-wv-cdl" firstAttribute="trailing" secondItem="uRW-NB-QYU" secondAttribute="trailing" id="CC1-RY-bEE"/>
+                            <constraint firstItem="3uM-DY-upm" firstAttribute="leading" secondItem="ZTz-Y5-pd1" secondAttribute="leading" id="G0n-6F-kNS"/>
+                            <constraint firstItem="uRW-NB-QYU" firstAttribute="top" secondItem="nBe-ix-s7m" secondAttribute="bottom" constant="14" id="GLx-Jv-qrU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FPJ-LY-g23" secondAttribute="trailing" constant="22" id="HdZ-Ck-aY2"/>
+                            <constraint firstItem="FPJ-LY-g23" firstAttribute="leading" secondItem="ZTz-Y5-pd1" secondAttribute="leadingMargin" constant="16" id="J78-qp-r0q"/>
+                            <constraint firstItem="FPJ-LY-g23" firstAttribute="top" secondItem="hnA-IJ-fxv" secondAttribute="bottom" constant="9" id="JWW-OL-c1B"/>
+                            <constraint firstItem="uRW-NB-QYU" firstAttribute="centerY" secondItem="odO-t1-xsC" secondAttribute="centerY" id="MBO-hA-dFZ"/>
+                            <constraint firstItem="KG9-8B-XWN" firstAttribute="leading" secondItem="ZTz-Y5-pd1" secondAttribute="leadingMargin" constant="36" id="MGT-tj-w5Z"/>
+                            <constraint firstItem="odO-t1-xsC" firstAttribute="leading" secondItem="ge5-Uh-g25" secondAttribute="leading" id="MLN-I9-WB6"/>
+                            <constraint firstAttribute="trailing" secondItem="3uM-DY-upm" secondAttribute="trailing" id="OUI-eQ-JE4"/>
+                            <constraint firstItem="nBe-ix-s7m" firstAttribute="top" secondItem="y3v-LW-Khi" secondAttribute="bottom" constant="31" id="OrY-ju-r4N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Mb-wv-cdl" secondAttribute="trailing" constant="21" id="PWR-5v-PC7"/>
+                            <constraint firstItem="7Mb-wv-cdl" firstAttribute="leading" secondItem="ZTz-Y5-pd1" secondAttribute="leadingMargin" constant="17" id="TjM-Pw-Pcm"/>
+                            <constraint firstItem="7Mb-wv-cdl" firstAttribute="top" secondItem="ZW5-Af-Oh6" secondAttribute="bottom" constant="14" id="WEN-Be-UDU"/>
+                            <constraint firstItem="fS9-Yt-sjy" firstAttribute="centerX" secondItem="hnA-IJ-fxv" secondAttribute="centerX" id="WTC-tb-XXC"/>
+                            <constraint firstItem="jza-zF-796" firstAttribute="leading" secondItem="y3v-LW-Khi" secondAttribute="leading" id="XrE-f3-Www"/>
+                            <constraint firstItem="7Mb-wv-cdl" firstAttribute="leading" secondItem="uRW-NB-QYU" secondAttribute="leading" id="Y81-P6-5OX"/>
+                            <constraint firstItem="fS9-Yt-sjy" firstAttribute="bottom" secondItem="bYk-ob-irH" secondAttribute="top" id="YhY-Bm-Y4A"/>
+                            <constraint firstItem="ge5-Uh-g25" firstAttribute="leading" secondItem="y3v-LW-Khi" secondAttribute="leading" id="do5-oc-5Yc"/>
+                            <constraint firstItem="ZW5-Af-Oh6" firstAttribute="centerY" secondItem="jza-zF-796" secondAttribute="centerY" id="fJv-J5-ezy"/>
+                            <constraint firstItem="ZW5-Af-Oh6" firstAttribute="trailing" secondItem="nBe-ix-s7m" secondAttribute="trailing" id="fcA-7s-opP"/>
+                            <constraint firstItem="3uM-DY-upm" firstAttribute="top" secondItem="ZTz-Y5-pd1" secondAttribute="top" id="fgb-p2-dxt"/>
+                            <constraint firstItem="52N-tp-x1S" firstAttribute="leading" secondItem="ZTz-Y5-pd1" secondAttribute="leadingMargin" constant="33" id="fvp-i2-yys"/>
+                            <constraint firstItem="hnA-IJ-fxv" firstAttribute="leading" secondItem="ZTz-Y5-pd1" secondAttribute="leadingMargin" constant="57" id="hTb-Oi-EDg"/>
+                            <constraint firstItem="FPJ-LY-g23" firstAttribute="trailing" secondItem="ZW5-Af-Oh6" secondAttribute="trailing" id="icH-nR-J8h"/>
+                            <constraint firstItem="7Mb-wv-cdl" firstAttribute="centerY" secondItem="y3v-LW-Khi" secondAttribute="centerY" id="kNY-PU-bUv"/>
+                            <constraint firstItem="ge5-Uh-g25" firstAttribute="top" secondItem="7Mb-wv-cdl" secondAttribute="bottom" constant="31" id="lZX-oZ-hc3"/>
+                            <constraint firstItem="odO-t1-xsC" firstAttribute="top" secondItem="nBe-ix-s7m" secondAttribute="bottom" constant="32" id="lbt-20-h4r"/>
+                            <constraint firstItem="fS9-Yt-sjy" firstAttribute="top" secondItem="uRW-NB-QYU" secondAttribute="bottom" constant="16" id="lfY-YM-7WF"/>
+                            <constraint firstItem="KG9-8B-XWN" firstAttribute="centerX" secondItem="hnA-IJ-fxv" secondAttribute="centerX" id="mcC-KD-XY6"/>
+                            <constraint firstItem="3uM-DY-upm" firstAttribute="bottom" secondItem="bYk-ob-irH" secondAttribute="top" id="ooN-E9-8SH"/>
+                            <constraint firstItem="jza-zF-796" firstAttribute="leading" secondItem="52N-tp-x1S" secondAttribute="leading" id="oyt-8E-tPw"/>
+                            <constraint firstItem="KG9-8B-XWN" firstAttribute="top" secondItem="3s5-M9-1Y4" secondAttribute="bottom" id="qZK-Wl-evW"/>
+                            <constraint firstItem="3uM-DY-upm" firstAttribute="trailing" secondItem="fS9-Yt-sjy" secondAttribute="trailing" id="rWL-JM-ezg"/>
+                            <constraint firstItem="7Mb-wv-cdl" firstAttribute="top" secondItem="jza-zF-796" secondAttribute="bottom" constant="32" id="rov-zn-lMZ"/>
+                            <constraint firstItem="nBe-ix-s7m" firstAttribute="centerY" secondItem="ge5-Uh-g25" secondAttribute="centerY" id="uRm-lW-Fpk"/>
+                            <constraint firstItem="ZW5-Af-Oh6" firstAttribute="top" secondItem="FPJ-LY-g23" secondAttribute="bottom" constant="16" id="uSG-SO-SSV"/>
+                            <constraint firstItem="nBe-ix-s7m" firstAttribute="leading" secondItem="ZW5-Af-Oh6" secondAttribute="leading" id="uaw-Ww-okY"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="uRW-NB-QYU"/>
                                 <exclude reference="odO-t1-xsC"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="G0n-6F-kNS"/>
+                                <exclude reference="OUI-eQ-JE4"/>
+                                <exclude reference="fgb-p2-dxt"/>
+                                <exclude reference="ooN-E9-8SH"/>
+                                <exclude reference="rWL-JM-ezg"/>
+                                <exclude reference="MGT-tj-w5Z"/>
+                                <exclude reference="mcC-KD-XY6"/>
+                                <exclude reference="qZK-Wl-evW"/>
+                                <exclude reference="1bd-jm-8C1"/>
+                                <exclude reference="hTb-Oi-EDg"/>
+                                <exclude reference="8tJ-v3-oLn"/>
+                                <exclude reference="HdZ-Ck-aY2"/>
+                                <exclude reference="J78-qp-r0q"/>
+                                <exclude reference="JWW-OL-c1B"/>
+                                <exclude reference="icH-nR-J8h"/>
+                                <exclude reference="0et-Jl-Sjp"/>
+                                <exclude reference="fvp-i2-yys"/>
+                                <exclude reference="Bpy-s0-h1p"/>
+                                <exclude reference="fJv-J5-ezy"/>
+                                <exclude reference="fcA-7s-opP"/>
+                                <exclude reference="uSG-SO-SSV"/>
+                                <exclude reference="XrE-f3-Www"/>
+                                <exclude reference="oyt-8E-tPw"/>
+                                <exclude reference="CC1-RY-bEE"/>
+                                <exclude reference="PWR-5v-PC7"/>
+                                <exclude reference="TjM-Pw-Pcm"/>
+                                <exclude reference="WEN-Be-UDU"/>
+                                <exclude reference="Y81-P6-5OX"/>
+                                <exclude reference="kNY-PU-bUv"/>
+                                <exclude reference="rov-zn-lMZ"/>
+                                <exclude reference="3Bt-lZ-lon"/>
+                                <exclude reference="OrY-ju-r4N"/>
+                                <exclude reference="uRm-lW-Fpk"/>
+                                <exclude reference="uaw-Ww-okY"/>
+                                <exclude reference="do5-oc-5Yc"/>
+                                <exclude reference="lZX-oZ-hc3"/>
+                                <exclude reference="GLx-Jv-qrU"/>
+                                <exclude reference="MBO-hA-dFZ"/>
+                                <exclude reference="MLN-I9-WB6"/>
+                                <exclude reference="lbt-20-h4r"/>
+                                <exclude reference="2HO-Ow-a8S"/>
+                                <exclude reference="WTC-tb-XXC"/>
+                                <exclude reference="YhY-Bm-Y4A"/>
+                                <exclude reference="lfY-YM-7WF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="uRW-NB-QYU"/>
                                 <include reference="odO-t1-xsC"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="G0n-6F-kNS"/>
+                                <include reference="OUI-eQ-JE4"/>
+                                <include reference="fgb-p2-dxt"/>
+                                <include reference="ooN-E9-8SH"/>
+                                <include reference="rWL-JM-ezg"/>
+                                <include reference="MGT-tj-w5Z"/>
+                                <include reference="mcC-KD-XY6"/>
+                                <include reference="qZK-Wl-evW"/>
+                                <include reference="1bd-jm-8C1"/>
+                                <include reference="hTb-Oi-EDg"/>
+                                <include reference="8tJ-v3-oLn"/>
+                                <include reference="HdZ-Ck-aY2"/>
+                                <include reference="J78-qp-r0q"/>
+                                <include reference="JWW-OL-c1B"/>
+                                <include reference="icH-nR-J8h"/>
+                                <include reference="0et-Jl-Sjp"/>
+                                <include reference="fvp-i2-yys"/>
+                                <include reference="Bpy-s0-h1p"/>
+                                <include reference="fJv-J5-ezy"/>
+                                <include reference="fcA-7s-opP"/>
+                                <include reference="uSG-SO-SSV"/>
+                                <include reference="XrE-f3-Www"/>
+                                <include reference="oyt-8E-tPw"/>
+                                <include reference="CC1-RY-bEE"/>
+                                <include reference="PWR-5v-PC7"/>
+                                <include reference="TjM-Pw-Pcm"/>
+                                <include reference="WEN-Be-UDU"/>
+                                <include reference="Y81-P6-5OX"/>
+                                <include reference="kNY-PU-bUv"/>
+                                <include reference="rov-zn-lMZ"/>
+                                <include reference="3Bt-lZ-lon"/>
+                                <include reference="OrY-ju-r4N"/>
+                                <include reference="uRm-lW-Fpk"/>
+                                <include reference="uaw-Ww-okY"/>
+                                <include reference="do5-oc-5Yc"/>
+                                <include reference="lZX-oZ-hc3"/>
+                                <include reference="GLx-Jv-qrU"/>
+                                <include reference="MBO-hA-dFZ"/>
+                                <include reference="MLN-I9-WB6"/>
+                                <include reference="lbt-20-h4r"/>
+                                <include reference="2HO-Ow-a8S"/>
+                                <include reference="WTC-tb-XXC"/>
+                                <include reference="YhY-Bm-Y4A"/>
+                                <include reference="lfY-YM-7WF"/>
                             </mask>
                         </variation>
                     </view>

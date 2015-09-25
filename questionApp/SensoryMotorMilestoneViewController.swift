@@ -101,7 +101,25 @@ class SensoryMotorMilestoneViewController: UIViewController {
       var controller: WhyIsUnassistedSittingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsUnassistedSittingStoryboardID") as! WhyIsUnassistedSittingViewController
       self.presentViewController(controller, animated: true, completion: nil);
   }
+  @IBAction func onRollBackToFrontTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "RollingBackToFrontStoryboard", bundle: nil)
+    var controller: WhyIsRollingBackToFrontViewController = storyboard.instantiateViewControllerWithIdentifier("RollingBackToFrontStoryboardID") as! WhyIsRollingBackToFrontViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+
+  }
   
+  @IBAction func onReachingForToyTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "ReachingforToy", bundle: nil)
+    var controller: WhyIsReachingforToyViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsReachingforToyStoryboardID") as! WhyIsReachingforToyViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+
+  }
+  @IBAction func onVisualTrackingTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "VisualTracking", bundle: nil)
+    var controller: WhyIsVisualTrackingViewController = storyboard.instantiateViewControllerWithIdentifier("VisualTrackingStoryboardID") as! WhyIsVisualTrackingViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+    
+  }
   @IBAction func onReachingWhileSittingButtonTap(sender: AnyObject) {
     var storyboard = UIStoryboard (name: "ReachingWhileSitting", bundle: nil)
     var controller: WhyIsReachingWhileSittingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsReachingWhileSittingStoryboardID") as! WhyIsReachingWhileSittingViewController

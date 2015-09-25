@@ -56,7 +56,7 @@ class SocialEmotionalMilestoneTestsViewController: UIViewController {
 
 	}
 	@IBAction func onEmotionalAttachmentTap(sender: AnyObject) {
-		var storyboard = UIStoryboard (name: "EmotionalAttachment", bundle: nil)
+		var storyboard = UIStoryboard (name: "EmotionalAttachmentStoryboard", bundle: nil)
 		var controller: WhyIsEmotionalAttachmentViewController  = storyboard.instantiateViewControllerWithIdentifier("WhyIsEmotionalAttachmentStoryboardID") as! WhyIsEmotionalAttachmentViewController
 		self.presentViewController(controller, animated: true, completion: nil);
 	}
