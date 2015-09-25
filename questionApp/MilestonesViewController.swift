@@ -92,15 +92,22 @@ class MilestonesViewController: UIViewController {
     var profiles = TestProfiles()
     profiles.initProfilesFromPersistentStore()
     var testHistories = profiles.getTestHistories(profileName: Parent().getCurrentProfileName())
-    let statusByCategory = testHistories?.statusByCategory()
-    let sensoryAndMotor = statusByCategory?[Test.CategoryNames.sensoryAndMotor]
-    let socialAndEmotional = statusByCategory?[Test.CategoryNames.socialAndEmotional]
-    let languageAndCognitive = statusByCategory?[Test.CategoryNames.languageAndCognitive]
-    
+    var sensoryTests = 0;
+    var languageTests = 0;
+    var socialTests = 0;
+    if let testHistories = testHistories {
+      let statusByCategory = testHistories.statusByCategory()
+      let sensoryAndMotor = statusByCategory[Test.CategoryNames.sensoryAndMotor]
+      let socialAndEmotional = statusByCategory[Test.CategoryNames.socialAndEmotional]
+      let languageAndCognitive = statusByCategory[Test.CategoryNames.languageAndCognitive]
+      sensoryTests = sensoryAndMotor!.success
+      languageTests = languageAndCognitive!.success
+      socialTests = socialAndEmotional!.success
+    }
     // update the labels which show the tests completed so far
-    sensoryMotorTestLabel.text = "\(sensoryAndMotor!.success) tests"
-    languageCognitiveTestLabel.text = "\(languageAndCognitive!.success) tests"
-    socialEmotionalTestLabel.text = "\(socialAndEmotional!.success) tests"
+    sensoryMotorTestLabel.text = "\(sensoryTests) tests"
+    languageCognitiveTestLabel.text = "\(languageTests) tests"
+    socialEmotionalTestLabel.text = "\(socialTests) tests"
     
 //    applyTextAttributesToLabels()
     

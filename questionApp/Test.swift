@@ -103,7 +103,7 @@ class Test: NSObject, NSCoding {
         static var attentionAtDistance = "attention at distance"
         static var symmetry = "symmetry"
         static var pincer = "pincer"
-        static var completelyCoveredToy = "completely covered toy"
+        static var completelyCoveredToy = "covered toy"
         static var partiallyCoveredToy = "partially covered toy"
         static var selfRecognition = "self recognition"
         static var socialSmiling = "social smiling"

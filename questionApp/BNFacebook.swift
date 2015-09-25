@@ -11,11 +11,11 @@ import Social
 
 class BNFacebook {
     
-    static private let facebookKeys: String = "facebookKeys"
+  static private let facebookKeys: String = "facebookKeys"
   static private let FacebookShareCountMain: String = "FacebookShareCountMain"
   // key name to track if user has shared to facebook
   static private let hasSharedFacebook = "hasSharedFacebookKey"
-    
+  
     static private func sha256(value : String) -> String {
         let data = value.dataUsingEncoding(NSUTF8StringEncoding)!
         var hash = [UInt8](count: Int(CC_SHA256_DIGEST_LENGTH), repeatedValue: 0)
@@ -86,7 +86,36 @@ class BNFacebook {
       let alert = UIAlertView(title: nil, message: messageString, delegate: nil, cancelButtonTitle: "Ok")
       alert.show()
     }
-    
+  
+    /**
+    TODO: We should define this mapping in one place for ease
+    */
+    static func getListOfUnlockedTests() -> [String] {
+      let facebookShares = BNFacebook.userShareCountFromFront()
+      let tests = NSMutableArray()
+      if facebookShares == 1 {
+        tests.addObject(Test.TestNamesPresentable.partiallyCoveredToy)
+        tests.addObject(Test.TestNamesPresentable.pointFollowing)
+      }
+      else if facebookShares == 2 {
+        tests.addObject(Test.TestNamesPresentable.symmetry)
+        tests.addObject(Test.TestNamesPresentable.reachingWhileSitting)
+        tests.addObject(Test.TestNamesPresentable.facialMimic)
+      }
+      else if facebookShares == 3 {
+        tests.addObject(Test.TestNamesPresentable.receptiveLanguage)
+        tests.addObject(Test.TestNamesPresentable.unassistedSitting)
+        tests.addObject(Test.TestNamesPresentable.emotionalSecurity)
+      }
+      else if facebookShares == 4 {
+        tests.addObject(Test.TestNamesPresentable.letsCrawl)
+        tests.addObject(Test.TestNamesPresentable.rollingBackToFront)
+        tests.addObject(Test.TestNamesPresentable.completelyCoveredToy)
+      }
+
+      return tests as NSArray as! [String]
+    }
+  
     /*
     @brief Show prepopulated UI that allows a user to enter edit and post it to facebook.
     @discussion Presents the social VC modally on top of the parentViewController.
@@ -99,9 +128,11 @@ class BNFacebook {
             var composeController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             
             // set initial text
-            var text = String(format:"I'm using the BabyNoggin app!")
+            var text = "My baby reached a new milestone today! More on"
             if let testName = testName {
-              text = String(format:"My baby just passed the %@ test!", testName)
+              let parent = Parent()
+              let babyName = parent.babyName
+              text = "My baby \(babyName) passed \(testName) test today! More on"
             }
             composeController.setInitialText(text)
             
@@ -110,15 +141,36 @@ class BNFacebook {
             composeController.addImage(logoImage!)
             
             // set url
-            let nogginURL = NSURL(string: "http://www.babynoggin.com")
+            let nogginURL = NSURL(string: "http://appstore.com/BabyNoggin")
             composeController.addURL(nogginURL)
           
             composeController.completionHandler = { result in
               if (result == SLComposeViewControllerResult.Done) {
+                self.userSharedTest(testName)
                 if let testName = testName {
                   self.userSharedTestWithName(testName)
                 }
-                self.userSharedTest(testName)
+                else {
+                  // show the alert, if the user shared from the front page
+                  var messageString = "Thank you for sharing!"
+                  let tests = self.getListOfUnlockedTests()
+                  if tests.count > 0 {
+                    var testString = ""
+                    var counter = 0;
+                    for test in tests {
+                      if (counter == (tests.count - 1)) {
+                        testString += "and \(test)"
+                      }
+                      else {
+                        testString += "\(test), "
+                      }
+                      counter++
+                    }
+                    messageString += " \(tests.count) new tests have been unlocked: \(testString)!"
+                  }
+                  let alert = UIAlertView(title: nil, message: messageString, delegate: parentViewController, cancelButtonTitle: "Ok")
+                  alert.show()
+                }
               }
             }
             
