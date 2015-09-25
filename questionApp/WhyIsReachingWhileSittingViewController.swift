@@ -31,17 +31,15 @@ class WhyIsReachingWhileSittingViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Between 5 and 10 months, your baby should be able to sit without propping herself up with her arms and reach for a toy or other object. This is an important milestone on the way to standing and walking."
-        
+      let string = "Between 5 and 10 months,your baby should be able to sit, without using arms for support, and reach for a toy or other object. This is a milestone on the way to standing and walking."
         var attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 7))
         attributedString.addAttributes(boldAttributes, range: NSMakeRange(7, 16))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(23, 158))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(180, 22))
+       // attributedString.addAttributes(standardAttributes, range: NSMakeRange(23, 158))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(124, 56))
 
         
         descriptionLabel.attributedText = attributedString

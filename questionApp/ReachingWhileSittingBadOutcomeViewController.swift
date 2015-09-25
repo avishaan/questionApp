@@ -19,6 +19,7 @@ class ReachingWhileSittingBadOutcomeViewController: UIViewController {
     @IBOutlet weak var rangeChartView: BNTestRangeChartView!
     @IBOutlet weak var rangeChartLabel: UILabel!
     
+  @IBOutlet weak var boldLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -31,7 +32,7 @@ class ReachingWhileSittingBadOutcomeViewController: UIViewController {
         // Schedule a local notification to remind the user to rerun this test.
         scheduleReminder()
         
-        rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 10, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+        rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 9, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
         
         // font can't be set directly in storyboard for attributed string, set the label font here
         // make label's set attr string to a mutable so we can add attributes on
@@ -93,30 +94,30 @@ class ReachingWhileSittingBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. All babies develop at different rates. Try again in two weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
+          infoLabel.text = "Not to worry. Not all babies develop at the same rate."
+            boldLabel.text = " Try again and be sure baby is rested, fed, and alert."
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Not sitting & reaching?"
             
             // update infoLabel
-            let string = "Try a smaller toy, and try placing it closer to baby to make it easier to reach. Try the test again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:80, countOfBoldCharacters:31)
+          infoLabel.text = "Try a smaller toy and try placing it closer to baby to make it easier to reach."
+            boldLabel.text = "Try the test again in a month."
             
         } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Not sitting & reaching?"
             
             // update infoLabel
-            let string = "If your baby goes past 20 months without being able to sit & reach, this may indicate neuromuscular problems. Talk to your pediatrician at your next appointment."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:109, countOfBoldCharacters:52)
+          infoLabel.text = "Perform this test a few more times to be sure the outcome is consistent. Remember practice and encouragement can go a long way!"
+            boldLabel.text = "If problem persists and your baby is older than 20 months,record this test to show your pediatrician at your next visit."
         } else {
             // update questionLabel
             questionLabel.text = "Not sitting & reaching?"
             
             // update infoLabel
-            let string = "Not to worry. All babies develop at different rates. Try again in two weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:24)
+          infoLabel.text = "Not to worry. Not all babies develop at the same rate."
+          boldLabel.text = " Try again and be sure baby is rested, fed, and alert."
         }
     }
     
