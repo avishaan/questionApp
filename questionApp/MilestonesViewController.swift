@@ -35,7 +35,23 @@ class MilestonesViewController: UIViewController {
 	@IBOutlet weak var retestsImageView: UIImageView!
 	@IBOutlet weak var remindersCountLabel: UILabel!
 	let tapRecognizerRetests = UITapGestureRecognizer()
-    
+  
+  
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+  // track first startup
+  let defaults = NSUserDefaults.standardUserDefaults()
+  
+    if !defaults.boolForKey("kPreviousAppStart") {
+      // if it's first boot, take user to intro video controller
+      let vc = self.storyboard?.instantiateViewControllerWithIdentifier("IntroVideoStoryboardID") as! IntroVideoViewController
+      self.presentViewController(vc, animated: true, completion: nil)
+      // set variable so we know we have already started this app before
+      defaults.setBool(true, forKey: "kPreviousAppStart")
+      //    self.showViewController(vc, sender: vc)
+      //    self.performSegueWithIdentifier("showIntroVideoSegue", sender: self)
+    }
+  }
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -50,6 +66,7 @@ class MilestonesViewController: UIViewController {
     babyImageView.layer.borderColor = kBlue.CGColor
     
     babyImageView.image = parent.image
+    
     
     // calculations for getting age in weeks
     
