@@ -93,16 +93,16 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed <= 1 {
+      if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+            let string = "Not to worry. Not all babies develop at the same rate.Try again and be sure baby is rested, fed, and alert."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:52)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Not social smiling?"
             
             // update infoLabel
-            let string = "Try this: get baby's attention by making a sound. You may also show baby a toy while talking and smiling. Does baby smile? If not, try again in 2 weeks."
+            let string = "Try this: get baby's attention by making a sound. You may also show baby a toy while talking and smiling. Does baby smile? If not, try again in 3 days."
             applyTextAttributesToLabel(string, indexAtStartOfBold:122, countOfBoldCharacters:29)
             
         } else if failed >= 3 {
@@ -117,8 +117,8 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
             questionLabel.text = "Not social smiling?"
             
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+          let string = "Not to worry. Not all babies develop at the same rate.Try again and be sure baby is rested, fed, and alert."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:53)
         }
     }
     

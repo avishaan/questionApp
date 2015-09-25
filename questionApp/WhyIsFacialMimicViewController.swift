@@ -31,7 +31,7 @@ class WhyIsFacialMimicViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Facial mimicry, or empathetic response, is normal in infants. Babies who do not mimic facial expressions are more likely to be autistic or even psychopathic."
+      let string = "Baby can innately mimic facial expressions. As baby gets older, baby can mimic more complex expressions."
         
         var attributedString = NSMutableAttributedString(string: string)
         

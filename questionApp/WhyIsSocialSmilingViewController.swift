@@ -31,7 +31,7 @@ class WhyIsSocialSmilingViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "This test assesses your baby’s responses to social cues, and expression of pleasure. Lack of social smiling can indicate attachment issues or just poor eyesight."
+      let string = "This test assesses your baby’s responses to social cues and expressions of pleasure. It's an indicator of emotional attachment, attention, and vision."
         
         var attributedString = NSMutableAttributedString(string: string)
         
@@ -40,7 +40,7 @@ class WhyIsSocialSmilingViewController: UIViewController {
         
         attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 30))
         attributedString.addAttributes(boldAttributes, range: NSMakeRange(30, 25))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(55, 106))
+     
         
         descriptionLabel.attributedText = attributedString
     }
