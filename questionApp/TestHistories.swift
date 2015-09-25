@@ -88,6 +88,7 @@ class TestHistories : NSObject, NSCoding {
             Test.TestNames.facialMimic : Test.TestNames.facialMimic,
             Test.TestNames.unassistedSitting : Test.TestNames.unassistedSitting,
             Test.TestNames.reachingWhileSitting : Test.TestNames.reachingWhileSitting,
+          Test.TestNames.emotionalAttachment : Test.TestNames.emotionalAttachment,
 //            Test.TestNames.plasticJar : Test.TestNames.plasticJar,
 //            Test.TestNames.bookPresentation : Test.TestNames.bookPresentation,
           Test.TestNames.jointAttention : Test.TestNames.jointAttention,

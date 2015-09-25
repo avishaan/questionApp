@@ -31,7 +31,7 @@ class WhyIsEmotionalAttachmentViewController: UIViewController {
   // Helper function formats text attributes for multiple substrings in label.
   func applyTextAttributesToLabel() {
     
-    let string = "Baby's temperament at the parent's absence can be an indication of their level of emotional attachment.Time spent strengthening that attachment can reinforce baby’s emotional security."
+    let string = "Baby's temperament at the parent's absence can be an indication of their level of emotional attachment. Time spent strengthening that attachment can reinforce baby’s emotional security."
     
     var attributedString = NSMutableAttributedString(string: string)
     

@@ -28,7 +28,7 @@ class EmotionalAttachmentBadOutcomeViewController: UIViewController {
     Tracker.createEvent(.EmotionalAttachment, .Load, .Bad)
     
     // Do any additional setup after loading the view.
-    rangeChartView.config(startMonth: 0, endMonth: 12, successAgeInMonths: 13, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
+    rangeChartView.config(startMonth: 0, endMonth: 20, successAgeInMonths: 13, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
     
     // font can't be set directly in storyboard for attributed string, set the label font here
     // make label's set attr string to a mutable so we can add attributes on
@@ -90,7 +90,7 @@ class EmotionalAttachmentBadOutcomeViewController: UIViewController {
       questionLabel.text = "Did baby resist comforting?"
       
       // update infoLabel
-      infoLabel.text = "Being responsive to baby's needs can increase emtional security. For example, soothe your crying baby."
+      infoLabel.text = "Being responsive to baby's needs can increase emotional security. For example, soothe your crying baby."
 
       boldLabel.text = "Practice responsive care to baby’s emotions while not overwhelming your baby."
     } else if failed >= 3 {
