@@ -40,7 +40,7 @@ class CrossingEyesWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "You'll need a small toy or other object that will attract and hold baby's attention."
+        let string = "You’ll need a small toy that will attract and hold baby’s attention."
         
         var attributedString = NSMutableAttributedString(string: string)
         
@@ -48,9 +48,8 @@ class CrossingEyesWhatWillYouNeedViewController: UIViewController {
         let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 13))
-        attributedString.addAttributes(firstAttributes, range: NSMakeRange(14, 25))
-        attributedString.addAttributes(secondAttributes, range: NSMakeRange(40, 44))
+        attributedString.addAttributes(firstAttributes, range: NSMakeRange(14, 10))
+
         
         testPreparationLabel.attributedText = attributedString
     }

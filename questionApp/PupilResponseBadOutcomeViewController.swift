@@ -16,6 +16,7 @@ class PupilResponseBadOutcomeViewController: UIViewController {
 	/** A Test containing the updated test history. This property should be set by the source view controller. */
 	var test: Test?
 	
+  @IBOutlet weak var boldLabel: UILabel!
 	@IBOutlet weak var infoLabel: UILabel!
 	@IBOutlet weak var questionLabel: UILabel!
     
@@ -91,30 +92,31 @@ class PupilResponseBadOutcomeViewController: UIViewController {
 		
 		if failed <= 1 {
 			// update infoLabel
-			let string = "Not to worry! This can be a challenging test. If your baby has dark eyes, it may take a few tests to see the pupils constrict."
-			applyTextAttributesToLabel(string, indexAtStartOfBold:46, countOfBoldCharacters:80)
+			infoLabel.text = "Not to worry! If your baby has dark eyes, it may take a few tests to see the pupils constrict."
+      boldLabel.text = "Try again and be sure baby is rested, fed, and alert."
+
 		} else if failed == 2 {
 			// update questionLabel
 			questionLabel.text = "Pupils didn't constrict?"
 			
 			// update infoLabel
-			let string = "Not to worry! This can be a challenging test. Try again tomorrow in a darkened room to make the pupil contraction more obvious."
-			applyTextAttributesToLabel(string, indexAtStartOfBold:46, countOfBoldCharacters:81)
-			
+			infoLabel.text = "This can be a challenging test. Try again tomorrow in a darkened room to make the pupil contraction more obvious."
+      boldLabel.text = "Try again in 2 days."
 		} else if failed >= 3 {
 			// update questionLabel
 			questionLabel.text = "Pupils didn't constrict?"
 			
 			// update infoLabel
-			let string = "Was baby looking at the light and sitting in a dark room? If still no pupil response, repeat and record this test to show your pediatrician."
-			applyTextAttributesToLabel(string, indexAtStartOfBold:58, countOfBoldCharacters:82)
+			infoLabel.text = "Was baby looking at the light and sitting in a dark room?"
+      boldLabel.text = "If baby's pupil still didn't respond, repeat and record this test to show your pediatrician."
 		} else {
 			// update questionLabel
 			questionLabel.text = "Pupils didn't constrict?"
 			
 			// update infoLabel
-			let string = "Not to worry! This can be a challenging test. If your baby has dark eyes, it may take a few tests to see the pupils constrict."
-			applyTextAttributesToLabel(string, indexAtStartOfBold:46, countOfBoldCharacters:80)
+			infoLabel.text = "Not to worry!.If your baby has dark eyes, it may take a few tests to see the pupils constrict."
+      boldLabel.text = "Try again and be sure baby is rested, fed, and alert."
+			
 		}
 	}
 	
