@@ -33,17 +33,17 @@ class WhyIsCrawlingViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Crawling is one indicator of baby's Gross Motor Development level. Results from this test can reveal areas in his growth that can be improved."
+        let string = "Crawling is an important gross motor milestone that leads to walking and even running later."
         
         var attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 35))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(35, 30))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(65, 77))
-        
+//        attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 35))
+//        attributedString.addAttributes(boldAttributes, range: NSMakeRange(35, 30))
+//        attributedString.addAttributes(standardAttributes, range: NSMakeRange(65, 77))
+      
         descriptionLabel.attributedText = attributedString
     }
 

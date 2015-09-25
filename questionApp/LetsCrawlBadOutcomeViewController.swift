@@ -85,16 +85,16 @@ class LetsCrawlBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in 6-8 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:23)
+            let string = "Not to worry. Not all babies develop at the same rate. Try again and be sure baby is rested, fed, and alert."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:23)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Not crawling?"
             
             // update infoLabel
-            let string = "Not to worry. Babies develop at different rates.\nTry again in 2 weeks."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:49, countOfBoldCharacters:21)
-            
+            let string = "Babies are great at copying you. Get down on all fours and show your baby how it's done!\nTry this and if baby still didn't crawl, try again in 3 weeks."
+//            applyTextAttributesToLabel(string, indexAtStartOfBold:49, countOfBoldCharacters:21)
+          
         } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Not crawling?"

@@ -41,17 +41,17 @@ class LetsCrawlWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "All you'll need is a soft floor both you and your baby can sit and crawl on."
+        let string = "All you’ll need is a soft floor on which both you and your baby can sit and crawl."
         var attributedString = NSMutableAttributedString(string: string)
         
         let baseAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         let firstAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
-        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 21))
-        attributedString.addAttributes(firstAttributes, range: NSMakeRange(21, 10))
-        attributedString.addAttributes(secondAttributes, range: NSMakeRange(31, 45))
-        
+//        attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 21))
+//        attributedString.addAttributes(firstAttributes, range: NSMakeRange(21, 10))
+//        attributedString.addAttributes(secondAttributes, range: NSMakeRange(31, 45))
+      
         testPreparationLabel.attributedText = attributedString
     }
 
