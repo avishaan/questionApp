@@ -12,7 +12,8 @@ class BNButton: UIButton {
   
   // Only override drawRect: if you perform custom drawing.
   // An empty implementation adversely affects performance during animation.
-  override func drawRect(rect: CGRect) {
+  required init(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
     // Drawing code
     self.layer.cornerRadius = 7
     self.clipsToBounds = true
@@ -20,10 +21,13 @@ class BNButton: UIButton {
     self.backgroundColor = UIColor.whiteColor()
     self.setTitleColor(kGrey, forState: .Normal)
     
-    // TODO: set icon alignment inline with label instead of a separate UIImage
-    
-    super.drawRect(rect)
-    
+  }
+  
+  // following func used for locked tests that haven't been unlocked via facebook
+  func facebookDisabled() {
+    self.enabled = false
+    self.setTitle("share to unlock test", forState: .Normal)
+    self.alpha = 0.5
   }
   
 }
