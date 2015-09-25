@@ -12,6 +12,8 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
 
   var facebookShares = 0
 
+  @IBOutlet weak var receptiveLanguage: BNButton!
+  @IBOutlet weak var pointFollowButton: BNButton!
   @IBOutlet weak var jointAttentionButton: BNButton!
   @IBOutlet weak var completelyCoveredButton: BNButton!
   @IBOutlet weak var partiallyCoveredButton: BNButton!
@@ -34,10 +36,12 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
     // hide tests based on current facebook share acount
     if facebookShares < 1 {
       partiallyCoveredButton.facebookDisabled()
+      pointFollowButton.facebookDisabled()
     }
     if facebookShares < 2 {
     }
     if facebookShares < 3 {
+      receptiveLanguage.facebookDisabled()
     }
     if facebookShares < 4 {
       completelyCoveredButton.facebookDisabled()
@@ -72,12 +76,17 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
         var controller: WhyIsCompletelyCoveredToyViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsCompletelyCoveredToyStoryboardID") as! WhyIsCompletelyCoveredToyViewController
         self.presentViewController(controller, animated: true, completion: nil);
     }
-    @IBAction func plasticJarButtonTap(sender: AnyObject) {
-      // removed this test, replace with new test
-//        var storyboard = UIStoryboard (name: "PlasticJar", bundle: nil)
-//        var controller: WhyIsPlasticJarViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPlasticJarStoryboardID") as! WhyIsPlasticJarViewController
-//        self.presentViewController(controller, animated: true, completion: nil);
-    }
+  @IBAction func onReceptiveLanguageTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "ReceptiveLanguage", bundle: nil)
+    var controller: WhyIsReceptiveLanguageViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsReceptiveLanguageStoryboardID") as! WhyIsReceptiveLanguageViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+  }
+  @IBAction func onPointFollowTap(sender: AnyObject) {
+    var storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
+    var controller: WhyIsPointFollowingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPointFollowingStoryboardID") as! WhyIsPointFollowingViewController
+    self.presentViewController(controller, animated: true, completion: nil);
+
+  }
     @IBAction func jointAttentionButtonTap(sender: AnyObject) {
         var storyboard = UIStoryboard (name: "JointAttention", bundle: nil)
         var controller: WhyIsJointAttentionViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsJointAttentionStoryboardID") as! WhyIsJointAttentionViewController
