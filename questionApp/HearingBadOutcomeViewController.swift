@@ -108,33 +108,34 @@ class HearingBadOutcomeViewController: UIViewController {
             failed = failedCount
         }
         
-        if failed <= 1 {
+      if failed <= 1 {
             // update infoLabel
-            let string = "Don't worry! Not all babies develop at the same rate.\nTry a louder sound this time, or a high-pitched  squeaky toy."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:61)
+        let string = "Don't worry! Baby maybe too sleepy to respond.Try again and be sure baby is rested, fed, and alert."
+
+            applyTextAttributesToLabel(string, indexAtStartOfBold:45, countOfBoldCharacters:53)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Didn't react to sounds?"
             
             // update infoLabel
-            let string = "Don't worry! Sometimes baby will find your face more interesting than the sound.\nTry a different sound next to his ear."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:38)
+          let string = "Sometimes baby will find your face more interesting than the sound.Try a louder sound this time, or a high-pitched squeaky toy. Try again in 2 days."
+              applyTextAttributesToLabel(string, indexAtStartOfBold:67, countOfBoldCharacters:80)
             
         } else if failed >= 3 {
             // update questionLabel
             questionLabel.text = "Didn't react to sounds?"
             
             // update infoLabel
-            let string = "Don't worry! If baby smiled, turned, or looked toward the sound, it counts! If not, repeat and record test to show your pediatrician."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:76, countOfBoldCharacters:57)
+          let string = "If baby smiled, turned, or looked toward the sound, it counts!.If not, repeat and record test to show your to pediatrician."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:62, countOfBoldCharacters:60)
         } else {
             // update questionLabel
             questionLabel.text = "Didn't react to sounds?"
             
             // update infoLabel
-            let string = "Don't worry! Not all babies develop at the same rate.\nTry a louder sound this time, or a high-pitched  squeaky toy."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:61)
-        }
+            let string = "Don't worry! Baby maybe too sleepy to respond.Try again and be sure baby is rested, fed, and alert."
+           applyTextAttributesToLabel(string, indexAtStartOfBold:45, countOfBoldCharacters:53)
+       }
     }
 
     /*!
