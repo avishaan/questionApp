@@ -16,10 +16,15 @@ import AVFoundation
   
   var view: UIView!
   var player: MPMoviePlayerController?
-  
+  var time: Int!
   @IBOutlet weak var previewThumbnail: UIImageView!
   @IBOutlet weak var playButton: UIButton!
   
+  @IBInspectable var videoTime: Int32 = 0 {
+    didSet {
+      thumbnailOfVideo(videoTime)
+    }
+  }
   override init(frame: CGRect) {
     // 1. setup any properties here
     
@@ -52,7 +57,7 @@ import AVFoundation
     view.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
     addSubview(view)
     // setup thumbnail
-    thumbnailOfVideo()
+//    thumbnailOfVideo(time)
     previewThumbnail.userInteractionEnabled = true
     // add gesture recog since the button overlay trick isn't working for some reason
     let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap"))
@@ -68,7 +73,8 @@ import AVFoundation
     return view
   }
   
-  func thumbnailOfVideo(time: Int64 = 10){
+  func thumbnailOfVideo(time: Int32){
+    let time = Int64(time)
     let videoURL = NSBundle.mainBundle().URLForResource(videoFileInfo.path, withExtension: videoFileInfo.ext)
     var err: NSError?
     let asset = AVURLAsset(URL: videoURL!, options: nil)

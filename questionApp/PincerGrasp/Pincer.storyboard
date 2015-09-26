@@ -889,7 +889,6 @@ and pencils!</string>
         <!--View Controller-->
         <scene sceneID="9dG-rZ-mWV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DHn-Wv-JdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Es2-fn-TxR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ul3-ax-iak"/>
@@ -916,6 +915,7 @@ and pencils!</string>
                     </view>
                     <toolbarItems/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHn-Wv-JdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
         <!--View Controller-->
@@ -930,6 +930,11 @@ and pencils!</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="videoTime">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <toolbarItems/>
                 </viewController>
