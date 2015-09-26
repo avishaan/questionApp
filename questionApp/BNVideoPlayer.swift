@@ -52,7 +52,7 @@ import AVFoundation
     view.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
     addSubview(view)
     // setup thumbnail
-    previewThumbnail.image = thumbnailOfVideo()
+    thumbnailOfVideo()
     previewThumbnail.userInteractionEnabled = true
     // add gesture recog since the button overlay trick isn't working for some reason
     let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap"))
@@ -68,14 +68,14 @@ import AVFoundation
     return view
   }
   
-  func thumbnailOfVideo() -> UIImage? {
+  func thumbnailOfVideo(time: Int64 = 10){
     let videoURL = NSBundle.mainBundle().URLForResource(videoFileInfo.path, withExtension: videoFileInfo.ext)
     var err: NSError?
     let asset = AVURLAsset(URL: videoURL!, options: nil)
     let imgGenerator = AVAssetImageGenerator(asset: asset)
-    let thumbnail = imgGenerator.copyCGImageAtTime(CMTimeMake(10, 1), actualTime: nil, error: &err)
+    let thumbnail = imgGenerator.copyCGImageAtTime(CMTimeMake(time, 1), actualTime: nil, error: &err)
     
-    return UIImage(CGImage: thumbnail)
+    previewThumbnail.image = UIImage(CGImage: thumbnail)
     
   }
   
