@@ -11,7 +11,7 @@ import AVFoundation
 
 @IBDesignable class BNVideoPlayer: UIView {
   let nibName = "BNVideoPlayer"
-  let videoFileInfo:(path:String, ext:String) = ("pincer grasp", "mp4")
+  var videoFileInfo:(path:String, ext:String) = ("hearing", "mp4")
   
   
   var view: UIView!
@@ -20,6 +20,17 @@ import AVFoundation
   @IBOutlet weak var previewThumbnail: UIImageView!
   @IBOutlet weak var playButton: UIButton!
   
+  @IBInspectable var videoFileName: String = "pincer2 grasp" {
+    didSet {
+      #if !TARGET_INTERFACE_BUILDER
+        videoFileInfo.path = videoFileName
+        // this code will run in the app itself
+      #else
+        // this code will execute only in IB
+      #endif
+
+    }
+  }
   @IBInspectable var videoTime: Int32 = 0 {
     didSet {
       #if !TARGET_INTERFACE_BUILDER

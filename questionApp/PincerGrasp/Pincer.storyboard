@@ -934,6 +934,7 @@ and pencils!</string>
                             <userDefinedRuntimeAttribute type="number" keyPath="videoTime">
                                 <integer key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="videoFileName" value="hearing"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <toolbarItems/>
