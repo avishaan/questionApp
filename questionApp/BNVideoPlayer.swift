@@ -17,7 +17,7 @@ import AVFoundation
   var view: UIView!
   var player: MPMoviePlayerController?
   
-  @IBOutlet weak var thumbnailButton: UIButton!
+  @IBOutlet weak var previewThumbnail: UIImageView!
   
   override init(frame: CGRect) {
     // 1. setup any properties here
@@ -50,9 +50,13 @@ import AVFoundation
     view.frame = bounds
     view.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
     addSubview(view)
-    
     // setup thumbnail
-    thumbnailButton.setBackgroundImage(thumbnailOfVideo(), forState: UIControlState.Normal)
+    previewThumbnail.image = thumbnailOfVideo()
+    previewThumbnail.userInteractionEnabled = true
+    // add gesture recog since the button overlay trick isn't working for some reason
+    let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap"))
+    view.addGestureRecognizer(tap)
+    
   }
   
   func loadViewFromNib() -> UIView {
@@ -89,6 +93,13 @@ import AVFoundation
     }
   }
   
+  func handleTap() {
+   println("handle tap")
+  }
+  
+  @IBAction func onPlayTap(sender: AnyObject) {
+    println("play tap")
+  }
   
   /*
   // Only override drawRect: if you perform custom drawing.

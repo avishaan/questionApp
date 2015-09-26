@@ -147,10 +147,10 @@
                                     <action selector="onBackTap:" destination="X1F-0G-vu1" eventType="touchUpInside" id="mli-Kf-7lG"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LaV-b7-46N">
-                                <rect key="frame" x="0.0" y="142" width="320" height="179"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b6I-Mj-TDt">
+                                <rect key="frame" x="0.0" y="142" width="320" height="180"/>
                                 <connections>
-                                    <segue destination="Cyh-Ky-ahd" kind="embed" id="VzG-b3-E6K"/>
+                                    <segue destination="fVd-wW-qsx" kind="embed" id="FNn-ng-sJp"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -887,19 +887,28 @@ and pencils!</string>
             <point key="canvasLocation" x="5282" y="1535"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="6Wm-R4-K2Y">
+        <scene sceneID="9dG-rZ-mWV">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Cyh-Ky-ahd" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHn-Wv-JdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Es2-fn-TxR" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QOA-AD-zI6"/>
-                        <viewControllerLayoutGuide type="bottom" id="G0F-In-FTE"/>
+                        <viewControllerLayoutGuide type="top" id="ul3-ax-iak"/>
+                        <viewControllerLayoutGuide type="bottom" id="eux-k8-TIR"/>
                     </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AnZ-Jg-yOs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dSq-Co-ki4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJB-MI-JRU" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3C-se-kgk">
+                                <rect key="frame" x="6" y="8" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUZ-R7-ZwM">
+                                        <rect key="frame" x="88" y="40" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -907,9 +916,26 @@ and pencils!</string>
                     </view>
                     <toolbarItems/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdm-Hm-bqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="1318.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oFO-1r-BDg">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="fVd-wW-qsx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PJk-Hv-fV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3j-X5-ftX"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wuh-FJ-1sT" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDw-E8-C5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="1365.5"/>
         </scene>
     </scenes>
     <resources>

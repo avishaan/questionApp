@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
             <connections>
-                <outlet property="thumbnailButton" destination="WZ3-AG-WQV" id="oNQ-Av-SdI"/>
+                <outlet property="previewThumbnail" destination="af8-lC-6La" id="jhr-Sq-k0a"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -14,11 +14,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ3-AG-WQV">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="af8-lC-6La">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
-                    <state key="normal" title="Button">
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-ap-LOc">
+                    <rect key="frame" x="137" y="75" width="79" height="24"/>
+                    <state key="normal" image="AttentionAtDistance">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="onPlayTap:" destination="-1" eventType="touchUpInside" id="vl8-iU-B1h"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -28,4 +34,7 @@
             <point key="canvasLocation" x="435" y="433"/>
         </view>
     </objects>
+    <resources>
+        <image name="AttentionAtDistance" width="24" height="24"/>
+    </resources>
 </document>
