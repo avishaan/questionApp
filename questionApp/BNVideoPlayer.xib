@@ -20,7 +20,7 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-ap-LOc">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
-                    <state key="normal" image="AttentionAtDistance">
+                    <state key="normal" image="PlayVideo">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -36,6 +36,6 @@
         </view>
     </objects>
     <resources>
-        <image name="AttentionAtDistance" width="24" height="24"/>
+        <image name="PlayVideo" width="48" height="48"/>
     </resources>
 </document>
