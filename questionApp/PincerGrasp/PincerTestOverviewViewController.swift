@@ -24,7 +24,6 @@ class PincerTestOverviewViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        enableVideoReplay()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -64,19 +63,6 @@ class PincerTestOverviewViewController: UIViewController {
         else if segue.identifier == "pincerWhatWillYouNeedSegueID" {
             playerVC.player.pause()
         }
-    }
-    
-    func enableVideoReplay() {
-        playerVC.player.seekToTime(kCMTimeZero)
-        // show button
-        previewButton.hidden = false
-    }
-    
-    @IBAction func onPreviewButtonTap(button: UIButton) {
-        // hide button
-        button.hidden = true
-        // play the video
-        playerVC.player.play()
     }
     
     @IBAction func onBackTap(sender: BNBackButton) {

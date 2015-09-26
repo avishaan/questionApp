@@ -86,6 +86,8 @@
 		824565211B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */; };
 		824565231B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */; };
 		824565251B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824565241B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift */; };
+		824BBD561BB6420B001C9D5D /* BNVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BBD551BB6420B001C9D5D /* BNVideoPlayer.swift */; };
+		824BBD581BB64228001C9D5D /* BNVideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824BBD571BB64228001C9D5D /* BNVideoPlayer.xib */; };
 		826A90351BAE385900230667 /* attention at distance.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A901F1BAE385900230667 /* attention at distance.mp4 */; };
 		826A90361BAE385900230667 /* covered toy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90201BAE385900230667 /* covered toy.mp4 */; };
 		826A90371BAE385900230667 /* crossing eyes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826A90211BAE385900230667 /* crossing eyes.mp4 */; };
@@ -541,6 +543,8 @@
 		824565201B414225003320A9 /* PupilResponseWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = PupilResponseWhatDidYouSeeViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
 		824565221B41485C003320A9 /* PupilResponseGoodOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseGoodOutcomeViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		824565241B414A96003320A9 /* PupilResponseBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = PupilResponseBadOutcomeViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		824BBD551BB6420B001C9D5D /* BNVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNVideoPlayer.swift; sourceTree = "<group>"; };
+		824BBD571BB64228001C9D5D /* BNVideoPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNVideoPlayer.xib; sourceTree = "<group>"; };
 		826A901F1BAE385900230667 /* attention at distance.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "attention at distance.mp4"; sourceTree = "<group>"; };
 		826A90201BAE385900230667 /* covered toy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "covered toy.mp4"; sourceTree = "<group>"; };
 		826A90211BAE385900230667 /* crossing eyes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crossing eyes.mp4"; sourceTree = "<group>"; };
@@ -1454,6 +1458,8 @@
 				82DD954A1B5776600017D93C /* BNTestRangeChartView.swift */,
 				82401C241B283246008202EA /* BNTextField.swift */,
 				8283015C1BACE3CD00B015D7 /* BNTextView.swift */,
+				824BBD551BB6420B001C9D5D /* BNVideoPlayer.swift */,
+				824BBD571BB64228001C9D5D /* BNVideoPlayer.xib */,
 				82F78E861B3E3CE0006DBE9B /* BNToolbar.swift */,
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C2E1B285CF1008202EA /* UILabelTest.swift */,
@@ -1907,6 +1913,7 @@
 				826A903F1BAE385900230667 /* maintaining symmetry.mp4 in Resources */,
 				826A904A1BAE385900230667 /* visual tracking.mp4 in Resources */,
 				826A90391BAE385900230667 /* emotional security.mp4 in Resources */,
+				824BBD581BB64228001C9D5D /* BNVideoPlayer.xib in Resources */,
 				82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */,
 				826A903E1BAE385900230667 /* let's crawl.mp4 in Resources */,
 				20DA0E701B72E70D00B17C28 /* UnassistedSitting.storyboard in Resources */,
@@ -2201,6 +2208,7 @@
 				9E934A651B6BBD790043F365 /* PartiallyCoveredToyTestOverviewViewController.swift in Sources */,
 				8270B2B21B81DFF100DFFB52 /* MPABTestDesignerSnapshotResponseMessage.m in Sources */,
 				8270B2AC1B81DFF100DFFB52 /* MPABTestDesignerClearResponseMessage.m in Sources */,
+				824BBD561BB6420B001C9D5D /* BNVideoPlayer.swift in Sources */,
 				9EF3137A1B50965C0094DAC7 /* LetsCrawlIsBabyReadyViewController.swift in Sources */,
 				20E3563F1B77DF80002F38C7 /* ReachingWhileSittingWhatWillYouNeedViewController.swift in Sources */,
 				20DA0E741B72E74C00B17C28 /* UnassistedSittingActivityReminderViewController.swift in Sources */,
