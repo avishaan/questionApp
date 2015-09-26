@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Har-d7-BT7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X1F-0G-vu1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -147,10 +147,12 @@
                                     <action selector="onBackTap:" destination="X1F-0G-vu1" eventType="touchUpInside" id="mli-Kf-7lG"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGe-Bf-nta" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="142" width="320" height="177"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LaV-b7-46N">
+                                <rect key="frame" x="0.0" y="142" width="320" height="179"/>
+                                <connections>
+                                    <segue destination="Cyh-Ky-ahd" kind="embed" id="VzG-b3-E6K"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -883,6 +885,31 @@ and pencils!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYc-2T-46c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5282" y="1535"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Wm-R4-K2Y">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Cyh-Ky-ahd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QOA-AD-zI6"/>
+                        <viewControllerLayoutGuide type="bottom" id="G0F-In-FTE"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AnZ-Jg-yOs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJB-MI-JRU" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdm-Hm-bqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="1318.5"/>
         </scene>
     </scenes>
     <resources>
