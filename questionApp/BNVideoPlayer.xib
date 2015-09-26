@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
             <connections>
+                <outlet property="playButton" destination="Ned-ap-LOc" id="ZV5-zk-gzT"/>
                 <outlet property="previewThumbnail" destination="af8-lC-6La" id="jhr-Sq-k0a"/>
             </connections>
         </placeholder>
@@ -18,7 +19,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ned-ap-LOc">
-                    <rect key="frame" x="137" y="75" width="79" height="24"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                     <state key="normal" image="AttentionAtDistance">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>

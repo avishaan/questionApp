@@ -18,6 +18,7 @@ import AVFoundation
   var player: MPMoviePlayerController?
   
   @IBOutlet weak var previewThumbnail: UIImageView!
+  @IBOutlet weak var playButton: UIButton!
   
   override init(frame: CGRect) {
     // 1. setup any properties here
@@ -99,6 +100,13 @@ import AVFoundation
   
   @IBAction func onPlayTap(sender: AnyObject) {
     println("play tap")
+    // hide button
+    playButton.hidden = true
+    // hide preview
+    previewThumbnail.hidden = true
+    // play video
+    playVideo()
+    
   }
   
   /*
