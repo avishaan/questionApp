@@ -20,7 +20,7 @@ import AVFoundation
   @IBOutlet weak var previewThumbnail: UIImageView!
   @IBOutlet weak var playButton: UIButton!
   
-  @IBInspectable var videoFileName: String = "pincer2 grasp" {
+  @IBInspectable var videoFileName: String = "pincer grasp" {
     didSet {
       #if !TARGET_INTERFACE_BUILDER
         videoFileInfo.path = videoFileName
