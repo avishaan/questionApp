@@ -22,7 +22,13 @@ import AVFoundation
   
   @IBInspectable var videoTime: Int32 = 0 {
     didSet {
-      thumbnailOfVideo(videoTime)
+      #if !TARGET_INTERFACE_BUILDER
+        // this code will run in the app itself
+        thumbnailOfVideo(time: videoTime)
+      #else
+        // this code will execute only in IB
+      #endif
+
     }
   }
   override init(frame: CGRect) {
@@ -73,7 +79,7 @@ import AVFoundation
     return view
   }
   
-  func thumbnailOfVideo(time: Int32){
+  func thumbnailOfVideo(time: Int32 = 0){
     let time = Int64(time)
     let videoURL = NSBundle.mainBundle().URLForResource(videoFileInfo.path, withExtension: videoFileInfo.ext)
     var err: NSError?
