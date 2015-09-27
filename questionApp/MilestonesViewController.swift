@@ -169,7 +169,8 @@ class MilestonesViewController: UIViewController {
   // MARK: -
   
   @IBAction func clickedFacebook() {
-    BNFacebook.postToFacebook(self, testName: nil)
+    //BNFacebook.postToFacebook(self, testName: nil)
+    BNSharingManager.presentShareSheet(self, testName: nil)
   }
 	
   override func didReceiveMemoryWarning() {

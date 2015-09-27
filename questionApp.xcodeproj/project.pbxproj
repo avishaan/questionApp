@@ -412,6 +412,7 @@
 		C0C97CBD1BB1D06000507F2D /* ReceptiveLanguageWhatDidYouSeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C97CB21BB1D06000507F2D /* ReceptiveLanguageWhatDidYouSeeViewController.swift */; };
 		C0C97CBE1BB1D06000507F2D /* ReceptiveLanguageWhatWillYouNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C97CB31BB1D06000507F2D /* ReceptiveLanguageWhatWillYouNeedViewController.swift */; };
 		C0C97CBF1BB1D06000507F2D /* WhyISReceptiveLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C97CB41BB1D06000507F2D /* WhyISReceptiveLanguageViewController.swift */; };
+		C0D2B3E21BB76432005237D6 /* BNSharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D2B3E11BB76432005237D6 /* BNSharingManager.swift */; };
 		C0E5EAE41BB1EC12003C5A07 /* VisualTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E5EAE31BB1EC12003C5A07 /* VisualTracking.storyboard */; };
 		C0E5EAE61BB1EC2A003C5A07 /* VisualTrackingOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5EAE51BB1EC2A003C5A07 /* VisualTrackingOverviewViewController.swift */; };
 		C0E5EAE81BB1EC47003C5A07 /* WhyIsVisualTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5EAE71BB1EC47003C5A07 /* WhyIsVisualTrackingViewController.swift */; };
@@ -927,6 +928,7 @@
 		C0C97CB21BB1D06000507F2D /* ReceptiveLanguageWhatDidYouSeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceptiveLanguageWhatDidYouSeeViewController.swift; sourceTree = "<group>"; };
 		C0C97CB31BB1D06000507F2D /* ReceptiveLanguageWhatWillYouNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceptiveLanguageWhatWillYouNeedViewController.swift; sourceTree = "<group>"; };
 		C0C97CB41BB1D06000507F2D /* WhyISReceptiveLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyISReceptiveLanguageViewController.swift; sourceTree = "<group>"; };
+		C0D2B3E11BB76432005237D6 /* BNSharingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNSharingManager.swift; sourceTree = "<group>"; };
 		C0E5EAE31BB1EC12003C5A07 /* VisualTracking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisualTracking.storyboard; sourceTree = "<group>"; };
 		C0E5EAE51BB1EC2A003C5A07 /* VisualTrackingOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualTrackingOverviewViewController.swift; sourceTree = "<group>"; };
 		C0E5EAE71BB1EC47003C5A07 /* WhyIsVisualTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsVisualTrackingViewController.swift; sourceTree = "<group>"; };
@@ -1452,6 +1454,7 @@
 				82D641E71B4908590013D5FB /* BNBackButton.swift */,
 				82F78E8A1B3FB6FF006DBE9B /* BNButton.swift */,
 				82F78E8E1B40BA70006DBE9B /* BNButtonNext.swift */,
+				C0D2B3E11BB76432005237D6 /* BNSharingManager.swift */,
 				9E66A8451B7EAAAA00855180 /* BNFacebook.swift */,
 				9E66A8471B7EEBE500855180 /* BNFacebookButton.swift */,
 				82401C2C1B2843C8008202EA /* BNSectionLabel.swift */,
@@ -2242,6 +2245,7 @@
 				C047DDFD1BB0DB19005F58F7 /* EmotionalSecurityBabyReadyViewController.swift in Sources */,
 				20E3563D1B77DF3A002F38C7 /* ReachingWhileSittingTestOverviewViewController.swift in Sources */,
 				8283015D1BACE3CD00B015D7 /* BNTextView.swift in Sources */,
+				C0D2B3E21BB76432005237D6 /* BNSharingManager.swift in Sources */,
 				20E356661B798256002F38C7 /* PlasticJarBadOutcomeViewController.swift in Sources */,
 				82F78E8D1B40B97F006DBE9B /* SensoryMotorIntroViewController.swift in Sources */,
 				209965A71B6859D300B93C5D /* SocialSmilingWhatWillYouNeedViewControllerswift.swift in Sources */,
