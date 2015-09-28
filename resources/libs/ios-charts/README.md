@@ -1,8 +1,9 @@
-**Version 2.1.0**, synced to [MPAndroidChart #bef5b08](https://github.com/PhilJay/MPAndroidChart/commit/bef5b08)
+**Version 2.1.4**, synced to [MPAndroidChart #6ae1eef](https://github.com/PhilJay/MPAndroidChart/commit/6ae1eef)
 
 ![alt tag](https://raw.github.com/danielgindi/ios-charts/master/Assets/feature_graphic.png)
+[![CodeHunt.io](https://img.shields.io/badge/vote-codehunt.io-02AFD1.svg)](http://codehunt.io/sub/ios-charts/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)   
 
-* Xcode 6.3 / Swift 1.2 (Swift 2.0 for Xcode 7 beta is available currently on the `swift-2.0` branch)
+* Xcode 7 / Swift 2.0
 * iOS 7.0 (Drag .swift files to your project)
 * iOS 8.0 (Use as an **Embedded** Framework)
 
@@ -29,6 +30,11 @@ If you want to compile for iOS 7:
 
 1. Drag the code itself (.swift files) to your project. As sadly, Swift currently does not support compiling Frameworks for iOS 7.
 2. Make sure that the files are added to the Target membership.
+
+## CocoaPods Install
+
+Add `pod 'Charts'` to your Podfile. "Charts" is the name of the library.  
+**Note:** ~~`pod 'ios-charts'`~~ is not the correct library, and refers to a different project by someone else.
 
 ## Help
 
@@ -85,9 +91,6 @@ Features
  - **LineChart (cubic lines)**
 ![alt tag](https://raw.github.com/PhilJay/MPChart/master/screenshots/cubiclinechart.png)
 
- - **LineChart (single DataSet)**
-![alt tag](https://raw.github.com/PhilJay/MPChart/master/screenshots/linechart.png)
-
  - **Combined-Chart (bar- and linechart in this case)**
 ![alt tag](https://raw.github.com/PhilJay/MPChart/master/screenshots/combined_chart.png)
 
@@ -137,8 +140,7 @@ Special Thanks
 =======
 
 Goes to [@petester42](https://github.com/petester42) (Pierre-Marc Airoldi) for implementing a Bubble chart!  
-To [@AlBirdie](https://github.com/AlBirdie) for his contributions and his involvement in our small community!  
-And of course thanks to all of those contibuting small fixes here and there! You are all appreciated!  
+To [@AlBirdie](https://github.com/AlBirdie) and for [@liuxuan30](https://github.com/liuxuan30) for their contributions and involvement in our community!  
 
 License
 =======

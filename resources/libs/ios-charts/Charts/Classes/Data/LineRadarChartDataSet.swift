@@ -15,7 +15,7 @@ import Foundation
 import CoreGraphics
 import UIKit
 
-public class LineRadarChartDataSet: BarLineScatterCandleChartDataSet
+public class LineRadarChartDataSet: LineScatterCandleChartDataSet
 {
     public var fillColor = UIColor(red: 140.0/255.0, green: 234.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     public var fillAlpha = CGFloat(0.33)
@@ -23,7 +23,8 @@ public class LineRadarChartDataSet: BarLineScatterCandleChartDataSet
     public var drawFilledEnabled = false
     
     /// line width of the chart (min = 0.2, max = 10)
-    /// :default: 1
+    /// 
+    /// **default**: 1
     public var lineWidth: CGFloat
     {
         get
@@ -32,14 +33,17 @@ public class LineRadarChartDataSet: BarLineScatterCandleChartDataSet
         }
         set
         {
-            _lineWidth = newValue
-            if (_lineWidth < 0.2)
+            if (newValue < 0.2)
             {
-                _lineWidth = 0.5
+                _lineWidth = 0.2
             }
-            if (_lineWidth > 10.0)
+            else if (newValue > 10.0)
             {
                 _lineWidth = 10.0
+            }
+            else
+            {
+                _lineWidth = newValue
             }
         }
     }
@@ -53,7 +57,7 @@ public class LineRadarChartDataSet: BarLineScatterCandleChartDataSet
     
     public override func copyWithZone(zone: NSZone) -> AnyObject
     {
-        var copy = super.copyWithZone(zone) as! LineRadarChartDataSet
+        let copy = super.copyWithZone(zone) as! LineRadarChartDataSet
         copy.fillColor = fillColor
         copy._lineWidth = _lineWidth
         copy.drawFilledEnabled = drawFilledEnabled

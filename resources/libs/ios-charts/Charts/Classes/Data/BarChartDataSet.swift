@@ -15,7 +15,7 @@ import Foundation
 import CoreGraphics
 import UIKit
 
-public class BarChartDataSet: BarLineScatterCandleChartDataSet
+public class BarChartDataSet: BarLineScatterCandleBubbleChartDataSet
 {
     /// space indicator between the bars in percentage of the whole width of one value (0.15 == 15% of bar width)
     public var barSpace: CGFloat = 0.15
@@ -50,7 +50,7 @@ public class BarChartDataSet: BarLineScatterCandleChartDataSet
     
     public override func copyWithZone(zone: NSZone) -> AnyObject
     {
-        var copy = super.copyWithZone(zone) as! BarChartDataSet
+        let copy = super.copyWithZone(zone) as! BarChartDataSet
         copy.barSpace = barSpace
         copy._stackSize = _stackSize
         copy.barShadowColor = barShadowColor
@@ -68,7 +68,7 @@ public class BarChartDataSet: BarLineScatterCandleChartDataSet
         
         for (var i = 0; i < yVals.count; i++)
         {
-            var vals = yVals[i].values
+            let vals = yVals[i].values
             
             if (vals == nil)
             {
@@ -76,7 +76,7 @@ public class BarChartDataSet: BarLineScatterCandleChartDataSet
             }
             else
             {
-                _entryCountStacks += vals.count
+                _entryCountStacks += vals!.count
             }
         }
     }
@@ -86,28 +86,96 @@ public class BarChartDataSet: BarLineScatterCandleChartDataSet
     {
         for (var i = 0; i < yVals.count; i++)
         {
-            var vals = yVals[i].values
-            
-            if (vals != nil && vals.count > _stackSize)
+            if let vals = yVals[i].values
             {
+                if vals.count > _stackSize
+                {
                 _stackSize = vals.count
             }
         }
     }
+    }
     
-    /// Returns the maximum number of bars that can be stacked upon another in this DataSet.
+    internal override func calcMinMax(start start : Int, end: Int)
+    {
+        let yValCount = _yVals.count
+        
+        if yValCount == 0
+        {
+            return
+        }
+        
+        var endValue : Int
+        
+        if end == 0 || end >= yValCount
+        {
+            endValue = yValCount - 1
+        }
+        else
+        {
+            endValue = end
+        }
+        
+        _lastStart = start
+        _lastEnd = endValue
+        
+        _yMin = DBL_MAX
+        _yMax = -DBL_MAX
+        
+        for (var i = start; i <= endValue; i++)
+        {
+            if let e = _yVals[i] as? BarChartDataEntry
+            {
+                if !e.value.isNaN
+                {
+                    if e.values == nil
+                    {
+                        if e.value < _yMin
+                        {
+                            _yMin = e.value
+                        }
+                        
+                        if e.value > _yMax
+                        {
+                            _yMax = e.value
+                        }
+                    }
+                    else
+                    {
+                        if -e.negativeSum < _yMin
+                        {
+                            _yMin = -e.negativeSum
+                        }
+                        
+                        if e.positiveSum > _yMax
+                        {
+                            _yMax = e.positiveSum
+                        }
+                    }
+                }
+            }
+        }
+        
+        if (_yMin == DBL_MAX)
+        {
+            _yMin = 0.0
+            _yMax = 0.0
+        }
+    }
+    
+    /// - returns: the maximum number of bars that can be stacked upon another in this DataSet.
     public var stackSize: Int
     {
         return _stackSize
     }
     
-    /// Returns true if this DataSet is stacked (stacksize > 1) or not.
+    /// - returns: true if this DataSet is stacked (stacksize > 1) or not.
     public var isStacked: Bool
     {
         return _stackSize > 1 ? true : false
     }
     
-    /// returns the overall entry count, including counting each stack-value individually
+    /// - returns: the overall entry count, including counting each stack-value individually
     public var entryCountStacks: Int
     {
         return _entryCountStacks

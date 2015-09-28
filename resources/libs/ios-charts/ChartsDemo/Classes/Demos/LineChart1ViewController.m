@@ -52,7 +52,6 @@
     _chartView.descriptionText = @"";
     _chartView.noDataTextDescription = @"You need to provide data for the chart.";
     
-    _chartView.highlightEnabled = NO;
     _chartView.dragEnabled = YES;
     [_chartView setScaleEnabled:YES];
     _chartView.pinchZoomEnabled = YES;
@@ -62,21 +61,21 @@
     ChartLimitLine *llXAxis = [[ChartLimitLine alloc] initWithLimit:10.0 label:@"Index 10"];
     llXAxis.lineWidth = 4.0;
     llXAxis.lineDashLengths = @[@(10.f), @(10.f), @(0.f)];
-    llXAxis.labelPosition = ChartLimitLabelPositionRight;
+    llXAxis.labelPosition = ChartLimitLabelPositionRightBottom;
     llXAxis.valueFont = [UIFont systemFontOfSize:10.f];
     
-    [_chartView.xAxis addLimitLine:llXAxis];
+    //[_chartView.xAxis addLimitLine:llXAxis];
     
     ChartLimitLine *ll1 = [[ChartLimitLine alloc] initWithLimit:130.0 label:@"Upper Limit"];
     ll1.lineWidth = 4.0;
     ll1.lineDashLengths = @[@5.f, @5.f];
-    ll1.labelPosition = ChartLimitLabelPositionRight;
+    ll1.labelPosition = ChartLimitLabelPositionRightTop;
     ll1.valueFont = [UIFont systemFontOfSize:10.0];
     
     ChartLimitLine *ll2 = [[ChartLimitLine alloc] initWithLimit:-30.0 label:@"Lower Limit"];
     ll2.lineWidth = 4.0;
     ll2.lineDashLengths = @[@5.f, @5.f];
-    ll2.labelPosition = ChartLimitLabelPositionRight;
+    ll2.labelPosition = ChartLimitLabelPositionRightBottom;
     ll2.valueFont = [UIFont systemFontOfSize:10.0];
     
     ChartYAxis *leftAxis = _chartView.leftAxis;
@@ -90,6 +89,9 @@
     leftAxis.drawLimitLinesBehindDataEnabled = YES;
     
     _chartView.rightAxis.enabled = NO;
+    
+    [_chartView.viewPortHandler setMaximumScaleY: 2.f];
+    [_chartView.viewPortHandler setMaximumScaleY: 2.f];
     
     BalloonMarker *marker = [[BalloonMarker alloc] initWithColor:[UIColor colorWithWhite:180/255. alpha:1.0] font:[UIFont systemFontOfSize:12.0] insets: UIEdgeInsetsMake(8.0, 8.0, 20.0, 8.0)];
     marker.minimumSize = CGSizeMake(80.f, 40.f);
@@ -131,6 +133,7 @@
     LineChartDataSet *set1 = [[LineChartDataSet alloc] initWithYVals:yVals label:@"DataSet 1"];
     
     set1.lineDashLengths = @[@5.f, @2.5f];
+    set1.highlightLineDashLengths = @[@5.f, @2.5f];
     [set1 setColor:UIColor.blackColor];
     [set1 setCircleColor:UIColor.blackColor];
     set1.lineWidth = 1.0;
