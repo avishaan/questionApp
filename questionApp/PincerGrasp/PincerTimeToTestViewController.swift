@@ -38,40 +38,9 @@ class PincerTimeToTestViewController: UIViewController {
   }
   
   @IBAction func onFlashlightButtonTap(sender: BNButtonNext) {
-    // does the iPhone have a flashlight?
-    if (isFlashlightAvailable()) {
-      device.lockForConfiguration(nil)
-      // check if flashlight is on for toggle
-      if (device.torchMode == AVCaptureTorchMode.On) {
-        device.torchMode = AVCaptureTorchMode.Off
-      } else {
-        device.setTorchModeOnWithLevel(1.0, error: nil)
-      }
-      device.unlockForConfiguration()
-    }
+    tryToEnableFlashlight()
   }
-  
-  func turnOffLightWithLock() {
-    // does the iPhone have a flashlight?
-    if (isFlashlightAvailable()) {
-      //check if light is even on first
-      if (device.torchMode == AVCaptureTorchMode.On) {
-        // if on, turn off
-        device.lockForConfiguration(nil)
-        device.torchMode = AVCaptureTorchMode.Off
-        device.unlockForConfiguration()
-      }
-    }
-  }
-  
-  func isFlashlightAvailable() -> Bool {
-    if (device != nil && device.hasTorch) {
-      return true
-    } else {
-      return false
-    }
-  }
-  
+    
   @IBAction func onNextButtonTap(sender: BNButtonNext) {
     turnOffLightWithLock()
   }

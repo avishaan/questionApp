@@ -85,8 +85,8 @@ class TestHistory: NSObject, NSCoding {
         }
     }
     
-    func print() {
-        println("name: \(testName), date: \(mostRecentTestDate),  result: \(mostRecentTestResult), failed: \(countOfFailedTests), successful: \(countOfSuccessfulTests), completed: \(countOfCompletedTests), succeeded date: \(succeededTestDate), reminder date: \(reminderDate)")
+    func output() {
+        print("name: \(testName), date: \(mostRecentTestDate),  result: \(mostRecentTestResult), failed: \(countOfFailedTests), successful: \(countOfSuccessfulTests), completed: \(countOfCompletedTests), succeeded date: \(succeededTestDate), reminder date: \(reminderDate)")
     }
     
     

@@ -52,7 +52,7 @@ import AVFoundation
     setup()
   }
   
-  required init(coder aDecoder: NSCoder) {
+  required init?(coder aDecoder: NSCoder) {
     // 1. setup any properties here
     
     // 2. call super.init(coder:)
@@ -71,7 +71,7 @@ import AVFoundation
   func setup(){
     view = loadViewFromNib()
     view.frame = bounds
-    view.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+    view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
     addSubview(view)
     // setup thumbnail
 //    thumbnailOfVideo(time)
@@ -90,39 +90,38 @@ import AVFoundation
     return view
   }
   
-  func thumbnailOfVideo(time: Int32 = 0){
+  func thumbnailOfVideo(time time: Int32 = 0){
     let time = Int64(time)
     let videoURL = NSBundle.mainBundle().URLForResource(videoFileInfo.path, withExtension: videoFileInfo.ext)
-    var err: NSError?
     let asset = AVURLAsset(URL: videoURL!, options: nil)
     let imgGenerator = AVAssetImageGenerator(asset: asset)
-    let thumbnail = imgGenerator.copyCGImageAtTime(CMTimeMake(time, 1), actualTime: nil, error: &err)
-    
-    previewThumbnail.image = UIImage(CGImage: thumbnail)
-    
+    do {
+      let thumbnail = try imgGenerator.copyCGImageAtTime(CMTimeMake(time, 1), actualTime: nil)
+      previewThumbnail.image = UIImage(CGImage: thumbnail)
+    }
+    catch {
+    }
   }
   
   func playVideo() {
     let videoPath = NSBundle.mainBundle().pathForResource(videoFileInfo.path, ofType: videoFileInfo.ext)
-    if let
-      url = NSURL(fileURLWithPath: videoPath!),
-      moviePlayer = MPMoviePlayerController(contentURL: url) {
+    let url = NSURL(fileURLWithPath: videoPath!)
+    if let moviePlayer = MPMoviePlayerController(contentURL: url) {
         self.player = moviePlayer
         moviePlayer.view.frame = self.view.bounds
         moviePlayer.prepareToPlay()
         moviePlayer.scalingMode = .AspectFill
         self.view.addSubview(moviePlayer.view)
     } else {
-      debugPrintln("Ops, something wrong when playing video.m4v")
+      debugPrint("Ops, something wrong when playing video.m4v")
     }
   }
   
   func handleTap() {
-   println("handle tap")
+   print("handle tap")
   }
   
   @IBAction func onPlayTap(sender: AnyObject) {
-    println("play tap")
     // hide button
     playButton.hidden = true
     // hide preview

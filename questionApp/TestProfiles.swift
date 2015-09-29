@@ -73,7 +73,7 @@ class TestProfiles {
     /** Computed property for the path to the file where the data is persisted. */
     var filePath : String {
         let manager = NSFileManager.defaultManager()
-        let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first as! NSURL
+        let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first as NSURL!
         return url.URLByAppendingPathComponent(self.archiveFilename).path!
     }
 
@@ -123,7 +123,7 @@ class TestProfiles {
     @param babyName (in) The name of the child. (cannot be nil)
     @return The concatenated profile name as a String.
     */
-    func makeProfileName(#parentName: String, babyName: String) -> String {
+    func makeProfileName(parentName parentName: String, babyName: String) -> String {
         let profileName = "\(parentName).\(babyName)"
         return profileName
     }
@@ -132,7 +132,7 @@ class TestProfiles {
     @brief create a TestProfile and add it to the testProfiles collection
     @discussion Creates a profile for name if it doesn't already exist. If it exists this function does nothing.
     */
-    func addProfile(#name: String) {
+    func addProfile(name name: String) {
         if testProfiles[name] == nil {
             // testProfiles doesn't contain a key by that name yet so add it.
             testProfiles[name] = TestHistories()
@@ -140,7 +140,7 @@ class TestProfiles {
     }
     
     // remove the TestProfile of the given name from the testProfiles collection
-    func removeProfile(#name: String) {
+    func removeProfile(name: String) {
         testProfiles[name] = nil
     }
     
@@ -153,7 +153,7 @@ class TestProfiles {
     @brief Get the TestHistories for a specified profile name.
     @return The TestHistories object for name. nil If no match is found.
     */
-    func getTestHistories(#profileName: String) -> TestHistories? {
+    func getTestHistories(profileName profileName: String) -> TestHistories? {
         return testProfiles[profileName]
     }
     
@@ -163,11 +163,11 @@ class TestProfiles {
     */
     func printProfiles() {
         for (profileName, testHistories) in testProfiles {
-            println("{ ")
-            println("\t\(profileName) : {")
+            print("{ ")
+            print("\t\(profileName) : {")
             testHistories.printHistories()
-            println("\t}")
-            println(" }")
+            print("\t}")
+            print(" }")
         }
     }
 }

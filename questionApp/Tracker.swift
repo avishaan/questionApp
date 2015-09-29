@@ -84,14 +84,14 @@ struct Tracker {
   
   */
   static func createEvent(name:Name, _ action:Action, _ progress:Progress = .NA) {
-    var event = (name: name.rawValue, action: action.rawValue, progress: progress.rawValue)
+    let event = (name: name.rawValue, action: action.rawValue, progress: progress.rawValue)
     let sentence = "\(event.name) \(event.action) in \(event.progress)"
     
     mixpanel.track(sentence, properties: ["name": event.name, "action": event.action, "progress": event.progress])
   }
   
-  static func registerUser(#parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate, babyGender: String) {
-    var dateFormatter = NSDateFormatter()
+  static func registerUser(parentName parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate, babyGender: String) {
+    let dateFormatter = NSDateFormatter()
     dateFormatter.dateStyle = .ShortStyle
     
     mixpanel.registerSuperProperties([

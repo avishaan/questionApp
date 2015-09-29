@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150FD5821BB9B853000D5D02 /* BNTorchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150FD5811BB9B853000D5D02 /* BNTorchManager.swift */; settings = {ASSET_TAGS = (); }; };
+		150FD5831BB9B853000D5D02 /* BNTorchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150FD5811BB9B853000D5D02 /* BNTorchManager.swift */; settings = {ASSET_TAGS = (); }; };
+		15371A5E1BBA0AEA001EC5E4 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15371A5D1BBA0915001EC5E4 /* Charts.framework */; };
 		205787071B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205787051B75CD0C002A61B6 /* CompletelyCoveredToy.storyboard */; };
 		205787091B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205787081B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift */; };
 		2057870B1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057870A1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift */; };
@@ -74,6 +77,7 @@
 		20E356661B798256002F38C7 /* PlasticJarBadOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E356651B798256002F38C7 /* PlasticJarBadOutcomeViewController.swift */; };
 		20E356681B7982A2002F38C7 /* PlasticJarMoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E356671B7982A2002F38C7 /* PlasticJarMoreInfoViewController.swift */; };
 		20E3566A1B7982C4002F38C7 /* PlasticJarActivityReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E356691B7982C4002F38C7 /* PlasticJarActivityReminderViewController.swift */; };
+		6FF62BBA43BD34F69E7292AD /* libPods-questionApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4E4C6C1AD984B89AD9772F /* libPods-questionApp.a */; };
 		82169C391B535DAA00F8786F /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82169C381B535DAA00F8786F /* FontAwesome.otf */; };
 		82338C851B26E6830067898E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82338C841B26E6830067898E /* AVKit.framework */; };
 		82401C211B2818D4008202EA /* UIButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82401C201B2818D4008202EA /* UIButtonNext.swift */; };
@@ -195,8 +199,6 @@
 		8270B3051B82A71900DFFB52 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270B3041B82A71900DFFB52 /* Tracker.swift */; };
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
 		8275FC3A1BB0B95F00C32106 /* IntroVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8275FC391BB0B95F00C32106 /* IntroVideo.m4v */; };
-		8278694B1B54141B0001F932 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; };
-		8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8278694A1B5413E60001F932 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8283015D1BACE3CD00B015D7 /* BNTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8283015C1BACE3CD00B015D7 /* BNTextView.swift */; };
 		829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54E91B26995800ABE77C /* AppDelegate.swift */; };
 		829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */; };
@@ -427,18 +429,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		827869491B5413E60001F932 /* PBXContainerItemProxy */ = {
+		15371A5C1BBA0915001EC5E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 827869451B5413E60001F932 /* Charts.xcodeproj */;
+			containerPortal = 15371A581BBA0915001EC5E4 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
-			remoteInfo = Charts;
-		};
-		8278694D1B54141B0001F932 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 827869451B5413E60001F932 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
 			remoteInfo = Charts;
 		};
 		829F54FD1B26995800ABE77C /* PBXContainerItemProxy */ = {
@@ -457,7 +452,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8278694C1B54141B0001F932 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +459,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		150FD5811BB9B853000D5D02 /* BNTorchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNTorchManager.swift; sourceTree = "<group>"; };
+		15371A581BBA0915001EC5E4 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "resources/libs/ios-charts/Charts/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		205787061B75CD0C002A61B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CompletelyCoveredToy.storyboard; sourceTree = "<group>"; };
 		205787081B75D3D7002A61B6 /* WhyIsCompletelyCoveredToyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhyIsCompletelyCoveredToyViewController.swift; sourceTree = "<group>"; };
 		2057870A1B75D3FB002A61B6 /* CompletelyCoveredToyActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletelyCoveredToyActivityReminderViewController.swift; sourceTree = "<group>"; };
@@ -532,6 +528,8 @@
 		20E356651B798256002F38C7 /* PlasticJarBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlasticJarBadOutcomeViewController.swift; sourceTree = "<group>"; };
 		20E356671B7982A2002F38C7 /* PlasticJarMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlasticJarMoreInfoViewController.swift; sourceTree = "<group>"; };
 		20E356691B7982C4002F38C7 /* PlasticJarActivityReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlasticJarActivityReminderViewController.swift; sourceTree = "<group>"; };
+		5F4E4C6C1AD984B89AD9772F /* libPods-questionApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-questionApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4563120D92D60974191354 /* Pods-questionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-questionApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-questionApp/Pods-questionApp.debug.xcconfig"; sourceTree = "<group>"; };
 		82169C381B535DAA00F8786F /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		82338C841B26E6830067898E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		82401C201B2818D4008202EA /* UIButtonNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonNext.swift; sourceTree = "<group>"; };
@@ -708,7 +706,6 @@
 		8270B3041B82A71900DFFB52 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		8275FC391BB0B95F00C32106 /* IntroVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideo.m4v; sourceTree = "<group>"; };
-		827869451B5413E60001F932 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "resources/libs/ios-charts/Charts/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		8283015C1BACE3CD00B015D7 /* BNTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNTextView.swift; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -940,6 +937,7 @@
 		C0E5EAF31BB1ECB5003C5A07 /* VisualTrackingBadOutcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualTrackingBadOutcomeViewController.swift; sourceTree = "<group>"; };
 		C0E5EAF51BB1ECC7003C5A07 /* VisualTrackingMoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualTrackingMoreInfoViewController.swift; sourceTree = "<group>"; };
 		C0E5EAF91BB1ED0A003C5A07 /* VisualTrackingActivityReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualTrackingActivityReminder.swift; sourceTree = "<group>"; };
+		D5A274096A1EA0E9E22474A5 /* Pods-questionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-questionApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-questionApp/Pods-questionApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -947,6 +945,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15371A5E1BBA0AEA001EC5E4 /* Charts.framework in Frameworks */,
 				8270B3001B81E7C000DFFB52 /* libicucore.A.dylib in Frameworks */,
 				8270B2FE1B81E70800DFFB52 /* Security.framework in Frameworks */,
 				8270B2FC1B81E6FE00DFFB52 /* CFNetwork.framework in Frameworks */,
@@ -957,9 +956,9 @@
 				8270B2EF1B81E03D00DFFB52 /* Accelerate.framework in Frameworks */,
 				8270B2ED1B81E03500DFFB52 /* CoreTelephony.framework in Frameworks */,
 				8270B2EB1B81E02B00DFFB52 /* SystemConfiguration.framework in Frameworks */,
-				8278694B1B54141B0001F932 /* Charts.framework in Frameworks */,
 				82338C851B26E6830067898E /* AVKit.framework in Frameworks */,
 				829F55121B26C2EF00ABE77C /* MediaPlayer.framework in Frameworks */,
+				6FF62BBA43BD34F69E7292AD /* libPods-questionApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,6 +972,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15371A591BBA0915001EC5E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15371A5D1BBA0915001EC5E4 /* Charts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		205787041B75CCF6002A61B6 /* CompletelyCoveredToy */ = {
 			isa = PBXGroup;
 			children = (
@@ -1079,6 +1086,15 @@
 				20E356691B7982C4002F38C7 /* PlasticJarActivityReminderViewController.swift */,
 			);
 			name = PlasticJar;
+			sourceTree = "<group>";
+		};
+		80ECAEC9EF56AF1CBDE59AA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B4563120D92D60974191354 /* Pods-questionApp.debug.xcconfig */,
+				D5A274096A1EA0E9E22474A5 /* Pods-questionApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		826DDAD71B94D2600098508B /* FeedbackViewControllers */ = {
@@ -1231,17 +1247,9 @@
 		827869441B5413D20001F932 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				827869451B5413E60001F932 /* Charts.xcodeproj */,
+				15371A581BBA0915001EC5E4 /* Charts.xcodeproj */,
 			);
 			name = Libraries;
-			sourceTree = "<group>";
-		};
-		827869461B5413E60001F932 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8278694A1B5413E60001F932 /* Charts.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		829F54DB1B26995800ABE77C = {
@@ -1262,6 +1270,8 @@
 				829F54E61B26995800ABE77C /* questionApp */,
 				829F54FF1B26995800ABE77C /* questionAppTests */,
 				829F54E51B26995800ABE77C /* Products */,
+				80ECAEC9EF56AF1CBDE59AA0 /* Pods */,
+				D2EEA5935BC0721B0E683DDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1467,6 +1477,7 @@
 				82401C201B2818D4008202EA /* UIButtonNext.swift */,
 				82401C2E1B285CF1008202EA /* UILabelTest.swift */,
 				20DA0E691B7296B600B17C28 /* BNMilestonePieChartView.swift */,
+				150FD5811BB9B853000D5D02 /* BNTorchManager.swift */,
 			);
 			name = ViewClasses;
 			sourceTree = "<group>";
@@ -1783,6 +1794,14 @@
 			name = VisualTracking;
 			sourceTree = "<group>";
 		};
+		D2EEA5935BC0721B0E683DDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F4E4C6C1AD984B89AD9772F /* libPods-questionApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1790,15 +1809,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 829F55061B26995800ABE77C /* Build configuration list for PBXNativeTarget "questionApp" */;
 			buildPhases = (
+				4F1B1A4971C7D0F4AF23EA9B /* Check Pods Manifest.lock */,
 				829F54E01B26995800ABE77C /* Sources */,
 				829F54E11B26995800ABE77C /* Frameworks */,
 				829F54E21B26995800ABE77C /* Resources */,
 				8278694F1B54141C0001F932 /* Embed Frameworks */,
+				68C7B2A4E5F99AFA4F988C89 /* Embed Pods Frameworks */,
+				20FAFA966522EEC0985C4400 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8278694E1B54141B0001F932 /* PBXTargetDependency */,
 			);
 			name = questionApp;
 			productName = questionApp;
@@ -1829,6 +1850,7 @@
 		829F54DC1B26995800ABE77C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = codeHatcher;
 				TargetAttributes = {
@@ -1855,8 +1877,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 827869461B5413E60001F932 /* Products */;
-					ProjectRef = 827869451B5413E60001F932 /* Charts.xcodeproj */;
+					ProductGroup = 15371A591BBA0915001EC5E4 /* Products */;
+					ProjectRef = 15371A581BBA0915001EC5E4 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1868,11 +1890,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8278694A1B5413E60001F932 /* Charts.framework */ = {
+		15371A5D1BBA0915001EC5E4 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = 827869491B5413E60001F932 /* PBXContainerItemProxy */;
+			remoteRef = 15371A5C1BBA0915001EC5E4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1951,6 +1973,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20FAFA966522EEC0985C4400 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-questionApp/Pods-questionApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F1B1A4971C7D0F4AF23EA9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68C7B2A4E5F99AFA4F988C89 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-questionApp/Pods-questionApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		829F54E01B26995800ABE77C /* Sources */ = {
@@ -2067,6 +2137,7 @@
 				9EC4241A1B54821A0037C0E9 /* PointFollowingWhatDidYouSeeViewController.swift in Sources */,
 				8270B2C21B81DFF100DFFB52 /* MPEventBinding.m in Sources */,
 				20DA0E7C1B7318B700B17C28 /* UnassistedSittingMoreInfoViewController.swift in Sources */,
+				150FD5821BB9B853000D5D02 /* BNTorchManager.swift in Sources */,
 				205787111B75D462002A61B6 /* CompletelyCoveredToyIsBabyReadyViewController.swift in Sources */,
 				8270B2AA1B81DFF100DFFB52 /* MPABTestDesignerChangeResponseMessage.m in Sources */,
 				82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */,
@@ -2308,6 +2379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150FD5831BB9B853000D5D02 /* BNTorchManager.swift in Sources */,
 				829F55031B26995800ABE77C /* questionAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2315,11 +2387,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8278694E1B54141B0001F932 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 8278694D1B54141B0001F932 /* PBXContainerItemProxy */;
-		};
 		829F54FE1B26995800ABE77C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 829F54E31B26995800ABE77C /* questionApp */;
@@ -2498,6 +2565,7 @@
 		};
 		829F55071B26995800ABE77C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4563120D92D60974191354 /* Pods-questionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2516,6 +2584,7 @@
 		};
 		829F55081B26995800ABE77C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A274096A1EA0E9E22474A5 /* Pods-questionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

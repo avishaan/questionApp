@@ -21,7 +21,7 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
     
     // Do any additional setup after loading the view.
     // set font on segmented controller
-    var attr = NSDictionary(object: UIFont(name: "Omnes-Medium", size: 14)!, forKey: NSFontAttributeName)
+    let attr = NSDictionary(object: UIFont(name: "Omnes-Medium", size: 14)!, forKey: NSFontAttributeName)
     genderControl.setTitleTextAttributes(attr as [NSObject : AnyObject], forState: .Normal)
     // give a little bit of tint
     genderControl.tintColor = orange
@@ -60,7 +60,7 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
     person.storeInfo()
     
     // save user information to analytics platform
-    Tracker.registerUser(parentName: nameField.text, parentEmail: emailField.text, babyName:babyNameField.text, babyDOB: babyBirthdayDate.date, babyGender: childGender)
+    Tracker.registerUser(parentName: nameField.text!, parentEmail: emailField.text!, babyName:babyNameField.text!, babyDOB: babyBirthdayDate.date, babyGender: childGender)
   }
 	
 	@IBAction func onDatePickerTap(sender: AnyObject) {
@@ -80,7 +80,7 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
 		return true;
 	}
 	
-	override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
 		// use this to hide keyboard when tapping outside thetext field
 		view.endEditing(true)
 		super.touchesBegan(touches, withEvent: event)

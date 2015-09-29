@@ -142,19 +142,19 @@ class MilestonesViewController: UIViewController {
 		// Configure the Re-tests elements
 		configureReminders()
     
-    var profiles = TestProfiles()
+    let profiles = TestProfiles()
     profiles.initProfilesFromPersistentStore()
-    var testHistories = profiles.getTestHistories(profileName: Parent().getCurrentProfileName())
+    let testHistories = profiles.getTestHistories(profileName: Parent().getCurrentProfileName())
     
     // present feedback controller if it has not been shown before
     if !NSUserDefaults.standardUserDefaults().boolForKey(kHasFeedbackDialogShown) {
-      println("has not shown feedbackVC yet")
+      print("has not shown feedbackVC yet")
       // check if there has been enough passed tests
       if let successful = testHistories?.numSuccessful {
-        println("we have had \(successful) successful tests")
+        print("we have had \(successful) successful tests")
         // if there are enough passed test, show the feedback controller
         if successful >= 3 {
-          println("show feedbackdialog")
+          print("show feedbackdialog")
           let feedBackStoryboard:UIStoryboard = UIStoryboard(name: "Feedback", bundle: nil)
           let feedBackDialogVC = feedBackStoryboard.instantiateViewControllerWithIdentifier("FeedbackDialogID") as! FeedbackViewController
           self.presentViewController(feedBackDialogVC, animated: true, completion: nil)

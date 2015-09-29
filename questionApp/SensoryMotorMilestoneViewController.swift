@@ -27,10 +27,10 @@ class SensoryMotorMilestoneViewController: UIViewController {
   
     // check if any tests have been shared on Facebook
     hasSharedFacebook = BNFacebook.hasUserSharedTest()
-    println("shared with FB \(hasSharedFacebook)")
+    print("shared with FB \(hasSharedFacebook)")
     // see how many times we shared from front page
     facebookShares = BNFacebook.userShareCountFromFront()
-    println("shared with FB # times \(facebookShares)")
+    print("shared with FB # times \(facebookShares)")
     
     
   }

@@ -37,40 +37,9 @@ class SymmetryTimeToTestViewController: UIViewController {
     }
     
     @IBAction func onFlashlightButtonTap(sender: BNButtonNext) {
-        // does the iPhone have a flashlight?
-        if (isFlashlightAvailable()) {
-            device.lockForConfiguration(nil)
-            // check if flashlight is on for toggle
-            if (device.torchMode == AVCaptureTorchMode.On) {
-                device.torchMode = AVCaptureTorchMode.Off
-            } else {
-                device.setTorchModeOnWithLevel(1.0, error: nil)
-            }
-            device.unlockForConfiguration()
-        }
+        tryToEnableFlashlight()
     }
-    
-    func turnOffLightWithLock() {
-        // does the iPhone have a flashlight?
-        if (isFlashlightAvailable()) {
-            //check if light is even on first
-            if (device.torchMode == AVCaptureTorchMode.On) {
-                // if on, turn off
-                device.lockForConfiguration(nil)
-                device.torchMode = AVCaptureTorchMode.Off
-                device.unlockForConfiguration()
-            }
-        }
-    }
-    
-    func isFlashlightAvailable() -> Bool {
-        if (device != nil && device.hasTorch) {
-            return true
-        } else {
-            return false
-        }
-    }
-    
+  
     @IBAction func onNextButtonTap(sender: BNButtonNext) {
         turnOffLightWithLock()
     }
@@ -84,11 +53,11 @@ class SymmetryTimeToTestViewController: UIViewController {
     func applyTextAttributesToLabel() {
         
         // first character of each label should be orange
-        var step1AttributedString = NSMutableAttributedString(string: step1Label.text!)
+        let step1AttributedString = NSMutableAttributedString(string: step1Label.text!)
         step1AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step1Label.attributedText = step1AttributedString
         
-        var step2AttributedString = NSMutableAttributedString(string: step2Label.text!)
+        let step2AttributedString = NSMutableAttributedString(string: step2Label.text!)
         step2AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step2Label.attributedText = step2AttributedString
     }
