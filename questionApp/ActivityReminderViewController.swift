@@ -154,7 +154,7 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
                     messageComposeViewController.subject = testName + " " + MessageConstants.testReminder
                 }
                 // body
-                var bodyString = String(format: MessageConstants.messageBodyFormatted, testName)
+                let bodyString = String(format: MessageConstants.messageBodyFormatted, testName)
                 messageComposeViewController.body = bodyString
             } else {
                 // subject
@@ -230,7 +230,7 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
     }
     
     // MFMailComposeViewControllerDelegate Method. Called when the email is completed. Dismiss the mail controller.
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -238,16 +238,19 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
     // MARK: local notification
     
     @IBAction func onInAppNotificationTap(sender: AnyObject) {
-        var localNotification = UILocalNotification()
+        let localNotification = UILocalNotification()
         
         //updateButtonImage(sender)
         
         // configure the title
-        localNotification.alertTitle = NotificationConstants.subject
+        if #available(iOS 8.2, *) {
+            localNotification.alertTitle = NotificationConstants.subject
+        } else {
+        }
         
         // configure body
         if let testName = self.testName {
-            var bodyString = String(format: NotificationConstants.reminderBodyFormatted, testName)
+            let bodyString = String(format: NotificationConstants.reminderBodyFormatted, testName)
             localNotification.alertBody = bodyString
         } else {
             localNotification.alertBody = NotificationConstants.body
@@ -261,7 +264,7 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
         // ask user for permission to display notifications
         let registerUserNotificationSettings = UIApplication.instancesRespondToSelector("registerUserNotificationSettings:")
         if registerUserNotificationSettings {
-            var types: UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Sound | UIUserNotificationType.Badge
+            let types: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Sound, UIUserNotificationType.Badge]
             UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: types, categories: nil))
         }
         
@@ -305,8 +308,6 @@ class ActivityReminderViewController: UIViewController, MFMailComposeViewControl
             emailButton.setImage(deselectedImage, forState: .Normal)
             textMessageButton.setImage(deselectedImage, forState: .Normal)
             notificationButton.setImage(selectedImage, forState: .Normal)
-        } else {
-            println("unknown button")
         }
     }
 }

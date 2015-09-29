@@ -11,11 +11,11 @@ import Charts
 
 class BNTestRangeChartView: HorizontalBarChartView {
   
-  required init(coder aDecoder: NSCoder) {
+  required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
   
-  func config(#startMonth: Double, endMonth: Double, successAgeInMonths: Double, babyAgeInMonths: Double, babyName: String) {
+  func config(startMonth startMonth: Double, endMonth: Double, successAgeInMonths: Double, babyAgeInMonths: Double, babyName: String) {
     // customize chart before setting data
     self.noDataText = "No data to show you"
     self.drawGridBackgroundEnabled = false
@@ -27,9 +27,9 @@ class BNTestRangeChartView: HorizontalBarChartView {
     self.autoScaleMinMaxEnabled = false
     self.borderColor = UIColor.darkGrayColor()
     
-    var leftYAxis = self.leftAxis
+    let leftYAxis = self.leftAxis
     leftYAxis.enabled = false
-    var rightYAxis = self.rightAxis
+    let rightYAxis = self.rightAxis
     rightYAxis.drawAxisLineEnabled = true
     //    rightYAxis.axisMaximum = 40
     rightYAxis.customAxisMin = startMonth
@@ -40,15 +40,15 @@ class BNTestRangeChartView: HorizontalBarChartView {
     rightYAxis.gridLineWidth = 1.5
     
     // these are percentage-based relative to height of the view
-    let h = self.frame.size.height
-    let dashBot = h * (7 / 107)
-    let dashMid = h * (55 / 107)
+    let h = self.viewPortHandler.chartHeight
+    var dashBot = h * (7 / 94)
+    var dashMid = h * (57 / 94)
     rightYAxis.gridLineDashLengths = [0, dashMid, dashBot]
     
-    var babyAgeLimitLine = ChartLimitLine(limit: babyAgeInMonths, label: babyName)
+    let babyAgeLimitLine = ChartLimitLine(limit: babyAgeInMonths, label: babyName)
     rightYAxis.addLimitLine(babyAgeLimitLine)
     
-    self.rightYAxisRenderer = BNYAxisRendererHorizontalWithSmileLimit(viewPortHandler: self.viewPortHandler, yAxis: self.rightAxis, transformer: _rightAxisTransformer)
+    self.rightYAxisRenderer = BNYAxisRendererHorizontalWithSmileLimit(viewPortHandler: self.viewPortHandler, yAxis: self.rightAxis, transformer: self.getTransformer(.Right))
     
     // make sure the left axis matches the right
     leftYAxis.customAxisMin = rightYAxis.customAxisMin
@@ -63,7 +63,7 @@ class BNTestRangeChartView: HorizontalBarChartView {
       e++;
     }
     let modu = Int(ceil(e / 2))
-    var formatter:NSNumberFormatter = BNCustomAlternatingFormatter(mod: modu)
+    let formatter:NSNumberFormatter = BNCustomAlternatingFormatter(mod: modu)
     formatter.maximumFractionDigits = 1
     formatter.positiveSuffix = " mo."
     rightYAxis.valueFormatter = formatter
@@ -75,7 +75,7 @@ class BNTestRangeChartView: HorizontalBarChartView {
     // data should be set after customizing chart
     var dataEntries: [BarChartDataEntry] = []
     
-    var dataPoints = ["Jan"]
+    let dataPoints = ["Jan"]
     var values = [successAgeInMonths]
     
     for i in 0..<dataPoints.count {
@@ -116,7 +116,7 @@ class BNCustomAlternatingFormatter: NSNumberFormatter {
 
 public class BNYAxisRendererHorizontalWithSmileLimit: ChartYAxisRendererHorizontalBarChart
 {
-  public override func renderLimitLines(#context: CGContext)
+  public override func renderLimitLines(context context: CGContext?)
   {
     var limitLines = _yAxis.limitLines
     
@@ -127,21 +127,21 @@ public class BNYAxisRendererHorizontalWithSmileLimit: ChartYAxisRendererHorizont
     
     CGContextSaveGState(context)
     
-    var trans = transformer.valueToPixelMatrix
-    
+    let trans = transformer.valueToPixelMatrix
     var position = CGPoint(x: 0.0, y: 0.0)
     
     for (var i = 0; i < limitLines.count; i++)
     {
-      var l = limitLines[i]
+      let l = limitLines[i]
       
       position.x = CGFloat(l.limit)
       position.y = 0.0
       position = CGPointApplyAffineTransform(position, trans)
       
-      var image = UIImage(named: "smile")
+      let image = UIImage(named: "smile")
       if let image = image {
-        image.drawAtPoint(CGPointMake(position.x - image.size.width/2, viewPortHandler.chartHeight/3))
+        let offset = (position.x <= (image.size.width*1.5)) ? 0 : image.size.width/2
+        image.drawAtPoint(CGPointMake(position.x - offset, viewPortHandler.chartHeight/3))
       }
       
     }

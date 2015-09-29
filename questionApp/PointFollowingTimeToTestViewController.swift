@@ -40,40 +40,9 @@ class PointFollowingTimeToTestViewController: UIViewController {
     }
     
     @IBAction func onFlashlightButtonTap(sender: BNButtonNext) {
-        // does the iPhone have a flashlight?
-        if (isFlashlightAvailable()) {
-            device.lockForConfiguration(nil)
-            // check if flashlight is on for toggle
-            if (device.torchMode == AVCaptureTorchMode.On) {
-                device.torchMode = AVCaptureTorchMode.Off
-            } else {
-                device.setTorchModeOnWithLevel(1.0, error: nil)
-            }
-            device.unlockForConfiguration()
-        }
+        tryToEnableFlashlight()
     }
-    
-    func turnOffLightWithLock() {
-        // does the iPhone have a flashlight?
-        if (isFlashlightAvailable()) {
-            //check if light is even on first
-            if (device.torchMode == AVCaptureTorchMode.On) {
-                // if on, turn off
-                device.lockForConfiguration(nil)
-                device.torchMode = AVCaptureTorchMode.Off
-                device.unlockForConfiguration()
-            }
-        }
-    }
-    
-    func isFlashlightAvailable() -> Bool {
-        if (device != nil && device.hasTorch) {
-            return true
-        } else {
-            return false
-        }
-    }
-    
+  
     @IBAction func onNextButtonTap(sender: BNButtonNext) {
         turnOffLightWithLock()
     }
@@ -87,23 +56,23 @@ class PointFollowingTimeToTestViewController: UIViewController {
     func applyTextAttributesToLabel() {
         
         // first character of each label should be orange
-        var step1AttributedString = NSMutableAttributedString(string: step1Label.text!)
+        let step1AttributedString = NSMutableAttributedString(string: step1Label.text!)
         step1AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step1Label.attributedText = step1AttributedString
         
-        var step2AttributedString = NSMutableAttributedString(string: step2Label.text!)
+        let step2AttributedString = NSMutableAttributedString(string: step2Label.text!)
         step2AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step2Label.attributedText = step2AttributedString
         
-        var step3AttributedString = NSMutableAttributedString(string: step3Label.text!)
+        let step3AttributedString = NSMutableAttributedString(string: step3Label.text!)
         step3AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step3Label.attributedText = step3AttributedString
         
-        var step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
+        let step4AttributedString = NSMutableAttributedString(string: step4Label.text!)
         step4AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step4Label.attributedText = step4AttributedString
         
-        var step5AttributedString = NSMutableAttributedString(string: step5Label.text!)
+        let step5AttributedString = NSMutableAttributedString(string: step5Label.text!)
         step5AttributedString.addAttributes(orangeAtrributes, range: NSMakeRange(0, 2))
         step5Label.attributedText = step5AttributedString
     }

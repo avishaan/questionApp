@@ -35,6 +35,8 @@ public class CombinedChartView: BarLineChartViewBase
     {
         super.initialize()
         
+        _highlighter = CombinedHighlighter(chart: self)
+        
         _fillFormatter = BarLineChartFillFormatter(chart: self)
         
         renderer = CombinedChartRenderer(chart: self, animator: _animator, viewPortHandler: _viewPortHandler)
@@ -177,13 +179,6 @@ public class CombinedChartView: BarLineChartViewBase
         set { (renderer as! CombinedChartRenderer!).drawValueAboveBarEnabled = newValue; }
     }
     
-    /// if set to true, all values of a stack are drawn individually, and not just their sum
-    public var drawValuesForWholeStackEnabled: Bool
-    {
-        get { return (renderer as! CombinedChartRenderer!).drawValuesForWholeStackEnabled; }
-        set { (renderer as! CombinedChartRenderer!).drawValuesForWholeStackEnabled = newValue; }
-    }
-    
     /// if set to true, a grey area is darawn behind each bar that indicates the maximum value
     public var drawBarShadowEnabled: Bool
     {
@@ -191,16 +186,13 @@ public class CombinedChartView: BarLineChartViewBase
         set { (renderer as! CombinedChartRenderer!).drawBarShadowEnabled = newValue; }
     }
     
-    /// returns true if drawing the highlighting arrow is enabled, false if not
+    /// - returns: true if drawing the highlighting arrow is enabled, false if not
     public var isDrawHighlightArrowEnabled: Bool { return (renderer as! CombinedChartRenderer!).drawHighlightArrowEnabled; }
     
-    /// returns true if drawing values above bars is enabled, false if not
+    /// - returns: true if drawing values above bars is enabled, false if not
     public var isDrawValueAboveBarEnabled: Bool { return (renderer as! CombinedChartRenderer!).drawValueAboveBarEnabled; }
     
-    /// returns true if all values of a stack are drawn, and not just their sum
-    public var isDrawValuesForWholeStackEnabled: Bool { return (renderer as! CombinedChartRenderer!).drawValuesForWholeStackEnabled; }
-    
-    /// returns true if drawing shadows (maxvalue) for each bar is enabled, false if not
+    /// - returns: true if drawing shadows (maxvalue) for each bar is enabled, false if not
     public var isDrawBarShadowEnabled: Bool { return (renderer as! CombinedChartRenderer!).drawBarShadowEnabled; }
     
     /// the order in which the provided data objects should be drawn.

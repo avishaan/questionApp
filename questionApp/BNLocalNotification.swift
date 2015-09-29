@@ -64,14 +64,16 @@ class BNLocalNotification {
   */
   @IBAction func scheduleNotification() {
     
-    var localNotification = UILocalNotification()
+    let localNotification = UILocalNotification()
     
     // configure the title
-    localNotification.alertTitle = NotificationConstants.subject
+    if #available(iOS 8.2, *) {
+      localNotification.alertTitle = NotificationConstants.subject
+    }
     
     // configure body
     if let testName = self.testName {
-      var bodyString = String(format: NotificationConstants.reminderBodyFormatted, testName)
+      let bodyString = String(format: NotificationConstants.reminderBodyFormatted, testName)
       localNotification.alertBody = bodyString
     } else {
       localNotification.alertBody = NotificationConstants.body
@@ -109,7 +111,7 @@ class BNLocalNotification {
     let registerUserNotificationSettings = UIApplication.instancesRespondToSelector("registerUserNotificationSettings:")
     
     if registerUserNotificationSettings {
-      var types: UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Sound | UIUserNotificationType.Badge
+      var types: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Sound, UIUserNotificationType.Badge]
       
       UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: types, categories: nil))
     }
@@ -395,8 +397,8 @@ class BNLocalNotification {
     var theApp:UIApplication = UIApplication.sharedApplication()
     
     // Iterate through all local notifications to find one containing testName in the userInfo and delete it.
-    for locNotif in theApp.scheduledLocalNotifications {
-      var notification = locNotif as! UILocalNotification
+    for locNotif in theApp.scheduledLocalNotifications! {
+      var notification = locNotif as UILocalNotification!
       let notificationUserInfo = notification.userInfo! as! [String:AnyObject]
       let notificationTestName = notificationUserInfo[BNLocalNotification.LocalNotificationInfoDictionaryTestNameKey]! as! String
       if notificationTestName == testName {
@@ -422,7 +424,7 @@ class BNLocalNotification {
     
     // Iterate through all local notifications to find one containing testName in the userInfo.
     var theApp:UIApplication = UIApplication.sharedApplication()
-    for locNotif in theApp.scheduledLocalNotifications {
+    for locNotif in theApp.scheduledLocalNotifications! {
       
       var notification = locNotif as! UILocalNotification
       let notificationUserInfo = notification.userInfo! as! [String:AnyObject]
@@ -448,7 +450,13 @@ class BNLocalNotification {
   static func showAlertForLocalNotification(notification: UILocalNotification) {
     
     let messageString = String(format:"%@ Select Ok to run the test now.", notification.alertBody!)
-    let alert = UIAlertController(title: notification.alertTitle, message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
+    var title = ""
+    if #available(iOS 8.2, *) {
+        if let a = notification.alertTitle {
+          title = a
+        }
+    }
+    let alert = UIAlertController(title: title, message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
     
     alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
       BNLocalNotification.handleLocalNotification(notification)

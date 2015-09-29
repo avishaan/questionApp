@@ -73,7 +73,7 @@ class Parent {
 	@param (in) childsName - name of the baby (Cannot be nil.)
 	@param (in) babyBirthdate - birth date of the child (Cannot be nil.)
 	*/
-	convenience init(parentsFullName: String, parentsEmail: String, childsName: String, babyBirthdate: NSDate, childsGender: String) {
+	convenience init(parentsFullName: String?, parentsEmail: String?, childsName: String?, babyBirthdate: NSDate?, childsGender: String?) {
 		
 		// initialize instance from persistent stores
 		self.init()
@@ -104,7 +104,7 @@ class Parent {
     let imageData = UIImageJPEGRepresentation(image, 1)
     let relativePath = "image_\(NSDate.timeIntervalSinceReferenceDate()).jpg"
     let path = self.documentsPathForFilename(relativePath)
-    imageData.writeToFile(path, atomically: true)
+    imageData?.writeToFile(path, atomically: true)
     
     self.imagePathRelative = relativePath
     store.setObject(self.imagePathRelative, forKey: kImagePathRelative)
@@ -112,11 +112,10 @@ class Parent {
   }
   
   func documentsPathForFilename(name: String) -> String {
-    let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true);
-    let path = paths[0] as! String;
-    let fullPath = path.stringByAppendingPathComponent(name)
-    
-    return fullPath
+		let documents = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+		let documentsURL = documents[0]
+    let fullPath = documentsURL.URLByAppendingPathComponent(name)
+    return fullPath.absoluteString
   }
 	
 	// MARK: Test Profiles helper functions

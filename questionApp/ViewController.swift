@@ -30,12 +30,14 @@ class ViewController: BNUIViewController {
     rangeChart.config(startMonth: 0, endMonth: 12, successAgeInMonths: 1, babyAgeInMonths: 8, babyName: "BabyNameGoesHere")
     
     //check all fonts
+    /*
     for family in UIFont.familyNames() {
-      println(family)
+      print(family)
       for name in UIFont.fontNamesForFamilyName(family as! String) {
-        println(name)
+        print(name)
       }
     }
+    */
   }
 
   override func didReceiveMemoryWarning() {

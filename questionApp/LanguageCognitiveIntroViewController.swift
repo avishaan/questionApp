@@ -41,18 +41,18 @@ class LanguageCognitiveIntroViewController: UIViewController {
             
             playerVC.player = AVPlayer(URL: url)
             // we start off paused, then we will play once the button is hit
-            playerVC.player.pause()
+            playerVC.player?.pause()
             
             // listen for video end notification
             NSNotificationCenter.defaultCenter().addObserver(self,
                 selector: "enableVideoReplay",
                 name: AVPlayerItemDidPlayToEndTimeNotification,
-                object: playerVC.player.currentItem)
+                object: playerVC.player?.currentItem)
         }
     }
     
     func enableVideoReplay() {
-        playerVC.player.seekToTime(kCMTimeZero)
+        playerVC.player?.seekToTime(kCMTimeZero)
         // show button
         previewButton.hidden = false
     }
@@ -62,6 +62,6 @@ class LanguageCognitiveIntroViewController: UIViewController {
         button.hidden = true
         
         // play the video
-        playerVC.player.play()
+        playerVC.player?.play()
     }
 }

@@ -388,7 +388,7 @@ class Test: NSObject, NSCoding {
     /** Computed property for the path to the file where the data is persisted. */
     var filePath : String {
         let manager = NSFileManager.defaultManager()
-        let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first as! NSURL
+        let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first as NSURL!
         return url.URLByAppendingPathComponent(self.archiveFilename).path!
     }
     
@@ -401,7 +401,7 @@ class Test: NSObject, NSCoding {
         
         if let unarchivedHistory = NSKeyedUnarchiver.unarchiveObjectWithFile(self.filePath) as? TestHistory {
             self.history = unarchivedHistory
-            self.history.print()
+            self.history.output()
             return true
         } else {
             return false

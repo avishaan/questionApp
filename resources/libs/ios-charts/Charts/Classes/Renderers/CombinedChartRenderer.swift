@@ -29,9 +29,6 @@ public class CombinedChartRenderer: ChartDataRendererBase,
     /// if set to true, all values are drawn above their bars, instead of below their top
     public var drawValueAboveBarEnabled = true
     
-    /// if set to true, all values of a stack are drawn individually, and not just their sum
-    public var drawValuesForWholeStackEnabled = true
-    
     /// if set to true, a grey area is darawn behind each bar that indicates the maximum value
     public var drawBarShadowEnabled = true
     
@@ -96,7 +93,7 @@ public class CombinedChartRenderer: ChartDataRendererBase,
 
     }
     
-    public override func drawData(#context: CGContext)
+    public override func drawData(context context: CGContext?)
     {
         for renderer in _renderers
         {
@@ -104,7 +101,7 @@ public class CombinedChartRenderer: ChartDataRendererBase,
         }
     }
     
-    public override func drawValues(#context: CGContext)
+    public override func drawValues(context context: CGContext?)
     {
         for renderer in _renderers
         {
@@ -112,7 +109,7 @@ public class CombinedChartRenderer: ChartDataRendererBase,
         }
     }
     
-    public override func drawExtras(#context: CGContext)
+    public override func drawExtras(context context: CGContext?)
     {
         for renderer in _renderers
         {
@@ -120,7 +117,7 @@ public class CombinedChartRenderer: ChartDataRendererBase,
         }
     }
     
-    public override func drawHighlighted(#context: CGContext, indices: [ChartHighlight])
+    public override func drawHighlighted(context context: CGContext?, indices: [ChartHighlight])
     {
         for renderer in _renderers
         {
@@ -128,7 +125,7 @@ public class CombinedChartRenderer: ChartDataRendererBase,
         }
     }
     
-    public override func calcXBounds(#chart: BarLineChartViewBase, xAxisModulus: Int)
+    public override func calcXBounds(chart chart: BarLineChartViewBase, xAxisModulus: Int)
     {
         for renderer in _renderers
         {
@@ -136,8 +133,8 @@ public class CombinedChartRenderer: ChartDataRendererBase,
         }
     }
 
-    /// Returns the sub-renderer object at the specified index.
-    public func getSubRenderer(#index: Int) -> ChartDataRendererBase!
+    /// - returns: the sub-renderer object at the specified index.
+    public func getSubRenderer(index index: Int) -> ChartDataRendererBase?
     {
         if (index >= _renderers.count || index < 0)
         {
@@ -147,6 +144,13 @@ public class CombinedChartRenderer: ChartDataRendererBase,
         {
             return _renderers[index]
         }
+    }
+
+    /// Returns all sub-renderers.
+    public var subRenderers: [ChartDataRendererBase]
+    {
+        get { return _renderers }
+        set { _renderers = newValue }
     }
 
     // MARK: - LineChartRendererDelegate
@@ -246,11 +250,6 @@ public class CombinedChartRenderer: ChartDataRendererBase,
     public func barChartIsDrawValueAboveBarEnabled(renderer: BarChartRenderer) -> Bool
     {
         return drawValueAboveBarEnabled
-    }
-    
-    public func barChartIsDrawValuesForWholeStackEnabled(renderer: BarChartRenderer) -> Bool
-    {
-        return drawValuesForWholeStackEnabled
     }
     
     public func barChartIsDrawBarShadowEnabled(renderer: BarChartRenderer) -> Bool
@@ -396,16 +395,13 @@ public class CombinedChartRenderer: ChartDataRendererBase,
     
     // MARK: Accessors
     
-    /// returns true if drawing the highlighting arrow is enabled, false if not
+    /// - returns: true if drawing the highlighting arrow is enabled, false if not
     public var isDrawHighlightArrowEnabled: Bool { return drawHighlightArrowEnabled; }
     
-    /// returns true if drawing values above bars is enabled, false if not
+    /// - returns: true if drawing values above bars is enabled, false if not
     public var isDrawValueAboveBarEnabled: Bool { return drawValueAboveBarEnabled; }
     
-    /// returns true if all values of a stack are drawn, and not just their sum
-    public var isDrawValuesForWholeStackEnabled: Bool { return drawValuesForWholeStackEnabled; }
-    
-    /// returns true if drawing shadows (maxvalue) for each bar is enabled, false if not
+    /// - returns: true if drawing shadows (maxvalue) for each bar is enabled, false if not
     public var isDrawBarShadowEnabled: Bool { return drawBarShadowEnabled; }
     
     /// the order in which the provided data objects should be drawn.

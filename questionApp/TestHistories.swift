@@ -57,7 +57,7 @@ class TestHistories : NSObject, NSCoding {
     /** Computed property for the path to the file where the data is persisted. */
     var filePath : String {
         let manager = NSFileManager.defaultManager()
-        let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first as! NSURL
+        let url = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first as NSURL!
         return url.URLByAppendingPathComponent(self.archiveFilename).path!
     }
   
@@ -101,8 +101,8 @@ class TestHistories : NSObject, NSCoding {
       
         ]
         
-        for (key, testName) in dictionary {
-            var testHist = TestHistory(nameOfTest: testName)
+        for (_, testName) in dictionary {
+            let testHist = TestHistory(nameOfTest: testName)
             histories[testName] = testHist
         }
     }
@@ -131,7 +131,7 @@ class TestHistories : NSObject, NSCoding {
         @return Test instance.
     */
     func getTest(testName:String) -> Test {
-        var test = Test(testHistory: histories[testName]!)
+        let test = Test(testHistory: histories[testName]!)
         return test
     }
     
@@ -142,7 +142,7 @@ class TestHistories : NSObject, NSCoding {
     */
     func getNextTest() -> Test? {
         var nextTest : Test?
-        var totalNumberOfTests = histories.count
+        let totalNumberOfTests = histories.count
         
         /* The count of all tests that the user has run. */
         var countOfTestsRun = 0
@@ -213,7 +213,7 @@ class TestHistories : NSObject, NSCoding {
     func addTestResult(testName name:String?, testResult result: Bool?) -> Bool {
 
         if let name = name, result = result {
-            var testDict = histories[name]
+            let testDict = histories[name]
             if let history = testDict {
                 
                 // update the most recent result
@@ -378,13 +378,13 @@ class TestHistories : NSObject, NSCoding {
     func printHistories() {
         
         for (testName, testDictionary) in histories {
-            println("\t\t\(testName):")
-            println("\t\t\t mostRecentTestDate     \t \(testDictionary.mostRecentTestDate))")
-            println("\t\t\t mostRecentTestResult   \t \(testDictionary.mostRecentTestResult)")
-            println("\t\t\t countOfFailedTests     \t \(testDictionary.countOfFailedTests)")
-            println("\t\t\t countOfSuccessfulTests \t \(testDictionary.countOfSuccessfulTests)")
-            println("\t\t\t countOfCompletedTests  \t \(testDictionary.countOfCompletedTests)")
-            println("")
+            print("\t\t\(testName):")
+            print("\t\t\t mostRecentTestDate     \t \(testDictionary.mostRecentTestDate))")
+            print("\t\t\t mostRecentTestResult   \t \(testDictionary.mostRecentTestResult)")
+            print("\t\t\t countOfFailedTests     \t \(testDictionary.countOfFailedTests)")
+            print("\t\t\t countOfSuccessfulTests \t \(testDictionary.countOfSuccessfulTests)")
+            print("\t\t\t countOfCompletedTests  \t \(testDictionary.countOfCompletedTests)")
+            print("")
         }
     }
   
@@ -399,7 +399,7 @@ class TestHistories : NSObject, NSCoding {
       
       var successful = 0
       
-      for (testName, testDictionary) in histories {
+      for (_, testDictionary) in histories {
         successful += testDictionary.countOfSuccessfulTests
       }
       return successful
@@ -443,7 +443,7 @@ class TestHistories : NSObject, NSCoding {
 //        if let testHistories = profiles.getTestHistories(profileName: parent.getCurrentProfileName()) {
 //            var neverPassedList = testHistories.neverPassed()
 //            for name in neverPassedList {
-//                println("\(name)")
+//                print("\(name)")
 //            }
 //        }
 //    }
@@ -459,7 +459,7 @@ class TestHistories : NSObject, NSCoding {
     */
     func getTestsWithReminders() -> [Test] {
         var testsWithReminders = [Test]()
-        for (testName, history) in histories {
+        for (_, history) in histories {
             if history.reminderDate != nil {
                 let test = Test(testHistory: history)
                 testsWithReminders.append(test)
@@ -470,7 +470,7 @@ class TestHistories : NSObject, NSCoding {
     
     func countTestsWithReminders() -> Int {
         var count = 0
-        for (testName, history) in histories {
+        for (_, history) in histories {
             if history.reminderDate != nil {
                 count += 1
             }
@@ -480,14 +480,14 @@ class TestHistories : NSObject, NSCoding {
     
     func testgetTestsWithReminders() {
         // get histories for the current profile
-        var parent = Parent()
-        var profiles = TestProfiles()
+        let parent = Parent()
+        let profiles = TestProfiles()
         profiles.initProfilesFromPersistentStore()
-        var histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
+        let histories = profiles.getTestHistories(profileName: parent.getCurrentProfileName())
         let reminderedTests = getTestsWithReminders()
-        println("tests with reminders:")
+        print("tests with reminders:")
         for test in reminderedTests {
-            println("\(test.history.testName)")
+            print("\(test.history.testName)")
         }
     }
 }

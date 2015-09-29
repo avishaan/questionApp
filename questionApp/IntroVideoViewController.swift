@@ -44,7 +44,7 @@ class IntroVideoViewController: UIViewController {
       
       playerVC.player = AVPlayer(URL: url)
       // we start off paused, then we will play once the button is hit
-      playerVC.player.pause()
+      playerVC.player?.pause()
     }
     
   }
@@ -54,7 +54,7 @@ class IntroVideoViewController: UIViewController {
     // hide this button
     button.hidden = true
     // play the video
-    playerVC.player.play()
+    playerVC.player?.play()
     
     Tracker.createEvent(.Intro, .Play)
     

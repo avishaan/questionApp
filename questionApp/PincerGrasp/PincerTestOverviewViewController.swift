@@ -52,21 +52,21 @@ class PincerTestOverviewViewController: UIViewController {
             
             playerVC.player = AVPlayer(URL: url)
             // we start off paused, then we will play once the button is hit
-            playerVC.player.pause()
+            playerVC.player?.pause()
             
             // listen for video end notification
             NSNotificationCenter.defaultCenter().addObserver(self,
                 selector: "enableVideoReplay",
                 name: AVPlayerItemDidPlayToEndTimeNotification,
-                object: playerVC.player.currentItem)
+                object: playerVC.player?.currentItem)
         }
         else if segue.identifier == "pincerWhatWillYouNeedSegueID" {
-            playerVC.player.pause()
+            playerVC.player?.pause()
         }
     }
     
     @IBAction func onBackTap(sender: BNBackButton) {
-        playerVC.player.pause()
+        playerVC.player?.pause()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

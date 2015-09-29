@@ -63,18 +63,18 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
   
   func setLabel(label:UILabel, keyText:String, valueText:String){
     // label is the uiLabel, keyText is first part of text, valueText is second part
-    var attrKey = [
+    let attrKey = [
       NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 19)!,
       NSForegroundColorAttributeName: kGrey
     ]
-    var attrValue = [
+    let attrValue = [
       NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 19)!, NSForegroundColorAttributeName: kBlue]
     // full label text
-    var fullText = keyText + valueText
-    var fullTextMutableString = NSMutableAttributedString(string: fullText, attributes: attrKey)
+    let fullText = keyText + valueText
+    let fullTextMutableString = NSMutableAttributedString(string: fullText, attributes: attrKey)
     
     // don't use range of string incase someone repeats a string
-    fullTextMutableString.addAttributes(attrValue, range: NSMakeRange(count(keyText), count(valueText)))
+    fullTextMutableString.addAttributes(attrValue, range: NSMakeRange(keyText.characters.count, valueText.characters.count))
     //Apply to the label
     label.attributedText = fullTextMutableString
   }
@@ -87,7 +87,7 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
       
       imagePicker.delegate = self
       imagePicker.sourceType = .PhotoLibrary
-      imagePicker.mediaTypes = [kUTTypeImage]
+      imagePicker.mediaTypes = [kUTTypeImage as String!]
       imagePicker.allowsEditing = false
       
       Tracker.createEvent(.ProfileImage, .Tapped)
@@ -99,16 +99,16 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
   }
   
   // MARK: - UIImagePickerControllerDelegate Functions
-  func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+  func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
     // work with the media here
     // check the media type is an image
     let mediaType = info[UIImagePickerControllerMediaType] as! String
-    if mediaType == kUTTypeImage as! String {
+    if mediaType == kUTTypeImage as String! {
       // media is an image
       // get the unedited version, different for edited version
       let origImage = info[UIImagePickerControllerOriginalImage] as! UIImage
       // not sure if the edited image exists when no edit occured
-      let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage
+//      let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage
       
       // replace our image in the imageView
       babyImageView.image = origImage

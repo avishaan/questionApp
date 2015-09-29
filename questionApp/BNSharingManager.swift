@@ -34,7 +34,7 @@ class BNSharingManager {
   
   // MARK: - Retrieve shared tests
   static func getSharedTestNames() -> [String] {
-    var sharedTests = NSUserDefaults.standardUserDefaults().objectForKey(sharedTestsKey) as? [String]
+    let sharedTests = NSUserDefaults.standardUserDefaults().objectForKey(sharedTestsKey) as? [String]
     if let sharedTests = sharedTests {
       return sharedTests
     }
@@ -86,7 +86,7 @@ class BNSharingManager {
         self.saveSharedTestWithName(testName)
         self.presentUnlockNotification(parentViewController, testName: testName)
       } else {
-        println("Sharing failed")
+        print("Sharing failed")
         return
       }
     }

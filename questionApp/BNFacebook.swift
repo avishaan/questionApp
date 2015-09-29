@@ -20,8 +20,8 @@ class BNFacebook {
         let data = value.dataUsingEncoding(NSUTF8StringEncoding)!
         var hash = [UInt8](count: Int(CC_SHA256_DIGEST_LENGTH), repeatedValue: 0)
         CC_SHA256(data.bytes, CC_LONG(data.length), &hash)
-        let hexBytes = map(hash) { String(format: "%02hhx", $0) }
-        return "".join(hexBytes)
+        let hexBytes = hash.map { String(format: "%02hhx", $0) }
+        return hexBytes.joinWithSeparator("")
     }
     
     static private func trueShaForName(name : String) -> String {

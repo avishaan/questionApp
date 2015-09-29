@@ -36,8 +36,6 @@ class BNUIViewController: UIViewController {
   func dismissViewControllerFromBackButton(){
     // allows us to dismiss the view controller from backbutton
     self.dismissViewControllerAnimated(true, completion: nil)
-    
-    println("dismissVC")
   }
   
 }
