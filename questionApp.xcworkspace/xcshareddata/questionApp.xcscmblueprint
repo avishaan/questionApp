@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A" : 0,
+    "9025163822AAEA7A2D8AC9210D0874A56F62B462" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C43BDF9A-D8BF-4347-8767-A91985410A20",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A" : "questionApp",
+    "9025163822AAEA7A2D8AC9210D0874A56F62B462" : "questionApp\/resources\/libs\/ios-charts\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "questionApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "questionApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/danielgindi\/ios-charts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9025163822AAEA7A2D8AC9210D0874A56F62B462"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/codeHatcher\/questionApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B166BBA46FD2D1D27B49C3AAC29ED218EEB54C7A"
+    }
+  ]
+}
