@@ -108,7 +108,7 @@ class PupilResponseBadOutcomeViewController: UIViewController {
 			
 			// update infoLabel
 			infoLabel.text = "Was baby looking at the light and sitting in a dark room?"
-      boldLabel.text = "If baby's pupil still didn't respond, repeat and record this test to show your pediatrician."
+      boldLabel.text = "If baby's pupils still didn't respond, repeat and record this test to show your pediatrician."
 		} else {
 			// update questionLabel
 			questionLabel.text = "Pupils didn't constrict?"

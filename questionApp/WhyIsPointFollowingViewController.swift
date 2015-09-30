@@ -39,10 +39,10 @@ class WhyIsPointFollowingViewController: UIViewController {
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
         attributedString.addAttributes(standardAttributes, range: NSMakeRange(0, 78))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(79, 12))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(91, 31))
-        attributedString.addAttributes(boldAttributes, range: NSMakeRange(123, 21))
-        attributedString.addAttributes(standardAttributes, range: NSMakeRange(144, 24))
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(83, 14))
+
+        attributedString.addAttributes(boldAttributes, range: NSMakeRange(127, 22))
+   
         
         descriptionLabel.attributedText = attributedString
     }
