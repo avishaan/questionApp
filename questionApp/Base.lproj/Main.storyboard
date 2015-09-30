@@ -2660,7 +2660,7 @@ in baby's left eye for a half second from about 4” away.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3D-ZA-jfx">
                                 <rect key="frame" x="28" y="155" width="265" height="154"/>
                                 <string key="text" base64-UTF8="YES">
-UHVwaWwgUmVhY3Rpb24gaXMgYW4gaW5pdGlhbCBpbmRpY2F0b3Igb2Ygb3ZlcmFsbCBicmFpbiBmdW5j
+UHVwaWwgcmVhY3Rpb24gaXMgYW4gaW5pdGlhbCBpbmRpY2F0b3Igb2Ygb3ZlcmFsbCBicmFpbiBmdW5j
 dGlvbi4gTGFjayBvZiByZXNwb25zZSBjb3VsZCBiZSBkdWUgdG8gaXNzdWVzIAN3aXRoIHRoZSBleWVz
 IG9yIHdpdGggdGhlIG5lcnZlcyBjb25uZWN0aW5nIHRoZSBleWVzIHRvIAN0aGUgYnJhaW4uA
 </string>
@@ -4990,12 +4990,12 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="l69-DX-nDO"/>
-        <segue reference="hJN-An-zuc"/>
-        <segue reference="b14-b1-AiE"/>
         <segue reference="j7l-Po-XYD"/>
+        <segue reference="b14-b1-AiE"/>
+        <segue reference="dJ5-wv-Ork"/>
+        <segue reference="bXU-UG-Zw5"/>
+        <segue reference="l69-DX-nDO"/>
         <segue reference="miF-xS-pDB"/>
         <segue reference="rnh-PO-BrS"/>
-        <segue reference="bXU-UG-Zw5"/>
     </inferredMetricsTieBreakers>
 </document>
