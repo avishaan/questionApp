@@ -663,7 +663,7 @@ with reflected image?</string>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed1-Ol-Z5j">
                                 <rect key="frame" x="16" y="245" width="288" height="210"/>
-                                <string key="text">Not to worry. Lucas is a bit 
+                                <string key="text">Not to worry. Baby is a bit 
 too young for this skill.
 Try again in a month.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
