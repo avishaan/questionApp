@@ -93,26 +93,26 @@ class SelfRecognitionBadOutcomeViewController: UIViewController {
       
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
+            infoLabel.text = "Not to worry. Not all babies develop at the same rate.\nTry again and be sure baby is rested, fed, and alert."
 //            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:21)
         } else if failed == 2 {
             // update questionLabel
-            questionLabel.text = "No grasp?"
+            questionLabel.text = "No self recognition?"
             
             // update infoLabel
-          let string = "Sometimes practicing using a noisy toy, cereal, or ice cubes will help baby develop the pincer grasp.\nTry this, then perform the test again in 2 weeks."
+          infoLabel.text = "Sometimes practicing using a noisy toy, cereal, or ice cubes will help baby develop the pincer grasp.\nTry this, then perform the test again in 2 weeks."
 //            applyTextAttributesToLabel(string, indexAtStartOfBold:134, countOfBoldCharacters:99)
           
         } else if failed >= 3 {
             // update questionLabel
-            questionLabel.text = "No grasp?"
+            questionLabel.text = "No self recognition?"
             
             // update infoLabel
-          let string = "Perform this test a few more times to be sure the outcome is consistent. Remember to use small objects.\nIf problem persists and your baby is older than 12 months, record this test to show your pediatrician at your next visit."
+          infoLabel.text = "Perform this test a few more times to be sure the outcome is consistent. Remember to use small objects.\nIf problem persists and your baby is older than 12 months, record this test to show your pediatrician at your next visit."
 //            applyTextAttributesToLabel(string, indexAtStartOfBold:81, countOfBoldCharacters:50)
         } else {
             // update questionLabel
-            questionLabel.text = "No grasp?"
+            questionLabel.text = "No self recognition?"
             
             // update infoLabel
             let string = "Not to worry. Baby is a bit too young for this skill.\nTry again in a month."
