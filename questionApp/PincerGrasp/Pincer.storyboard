@@ -852,7 +852,7 @@ and encourage baby to pick object up.</string>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzc-kA-t1m">
                                 <rect key="frame" x="27" y="127" width="267" height="252"/>
-                                <string key="text">The pincer grasp allows baby to pick up and place items in a controlled manner. Prior to this development, baby is only able to rake items with all fingers. With a pincer grasp, she will be able to eat food more easily, and 
+                                <string key="text">The Pincer Grasp allows baby to pick up and place items in a controlled manner. Prior to this development, baby is only able to rake items with all fingers. With a Pincer Grasp, she will be able to eat food more easily, and 
 eventually hold crayons 
 and pencils!</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="21"/>
