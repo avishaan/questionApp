@@ -96,7 +96,7 @@ class SocialSmilingBadOutcomeViewController: UIViewController {
       if failed <= 1 {
             // update infoLabel
             let string = "Not to worry. Not all babies develop at the same rate.Try again and be sure baby is rested, fed, and alert."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:55, countOfBoldCharacters:52)
+            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:52)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Not social smiling?"
