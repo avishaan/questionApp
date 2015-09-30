@@ -56,9 +56,10 @@ class Parent {
     
     if let oldImagePath = self.imagePathRelative {
       let oldFullPath = self.documentsPathForFilename(oldImagePath)
-      let oldImageData = NSData(contentsOfFile: oldFullPath)
-      // here is your saved image:
-      self.image = UIImage(data: oldImageData!)
+			if let oldFullPath = oldFullPath,
+				oldImageData = NSData(contentsOfFile: oldFullPath) {
+				self.image = UIImage(data: oldImageData)
+			}
     }
 		
 		// Get test profiles from disk store.
@@ -103,19 +104,20 @@ class Parent {
   func storeImage(image: UIImage) {
     let imageData = UIImageJPEGRepresentation(image, 1)
     let relativePath = "image_\(NSDate.timeIntervalSinceReferenceDate()).jpg"
-    let path = self.documentsPathForFilename(relativePath)
-    imageData?.writeToFile(path, atomically: true)
-    
-    self.imagePathRelative = relativePath
-    store.setObject(self.imagePathRelative, forKey: kImagePathRelative)
-    
+		if let path = self.documentsPathForFilename(relativePath) {
+			let didWrite = imageData?.writeToFile(path, atomically: true)
+			if didWrite == true {
+				self.imagePathRelative = relativePath
+				store.setObject(self.imagePathRelative, forKey: kImagePathRelative)
+			}
+		}
   }
   
-  func documentsPathForFilename(name: String) -> String {
+  func documentsPathForFilename(name: String) -> String? {
 		let documents = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
 		let documentsURL = documents[0]
     let fullPath = documentsURL.URLByAppendingPathComponent(name)
-    return fullPath.absoluteString
+    return fullPath.path
   }
 	
 	// MARK: Test Profiles helper functions
