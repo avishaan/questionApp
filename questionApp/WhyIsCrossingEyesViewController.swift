@@ -33,7 +33,7 @@ class WhyIsCrossingEyesViewController: UIViewController {
         
         let string = "Baby's eyes need to cross to allow baby to focus on and track close objects."
         
-        var attributedString = NSMutableAttributedString(string: string)
+        let attributedString = NSMutableAttributedString(string: string)
         
         let boldAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontSemiBold, size: 22)!]
         let standardAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
