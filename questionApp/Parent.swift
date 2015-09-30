@@ -21,7 +21,20 @@ class Parent {
   
   var fullName: String?
   var email: String?
-  var babyName: String?
+	
+	var babyName_: String?
+	var babyName: String? {
+		get {
+			if let babyName_ = babyName_ {
+				return babyName_
+			}
+			return "my baby"
+		}
+		set {
+			babyName_ = newValue
+		}
+	}
+	
   var babyGender: String?
   var babyBirthday: NSDate?
   var imagePathRelative: String?
@@ -29,9 +42,12 @@ class Parent {
   
   var ageInWeeks: Double {
     get {
-      let secondsDifference = self.babyBirthday?.timeIntervalSinceNow
-      let weekDifference = abs(secondsDifference!/60/60/24/7)
-      return weekDifference
+			if let babyBirthday = babyBirthday {
+				let secondsDifference = babyBirthday.timeIntervalSinceNow
+				let weekDifference = abs(secondsDifference/60/60/24/7)
+				return weekDifference
+			}
+			return 0
     }
   }
   var ageInMonths: Double {

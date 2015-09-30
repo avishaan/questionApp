@@ -31,7 +31,7 @@ class WhyIsUnassistedSittingViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "Between 4 and 8 months, your baby should be able to sit up without your help by propping herself up with her arms."
+        let string = "Between 4 and 8 months your baby should be able to sit up without your help by propping up on arms."
         
         var attributedString = NSMutableAttributedString(string: string)
         
