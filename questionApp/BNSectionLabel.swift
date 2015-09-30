@@ -37,7 +37,7 @@ class BNSectionLabel: UILabel {
 //      
 //      //self.text = "Test"
 //      //self.font = omnesFontMed
-      self.font = UIFont(name: kOmnesFontMedium, size: 23) // needed to reduce from 26 to fit "attention at distance" & "language & cognitive"
+      self.font = UIFont(name: kOmnesFontMedium, size: 21) // needed to reduce from 26 to fit "attention at distance" & "language & cognitive & emotional attachment"
       self.textAlignment = .Center
       self.textColor = UIColor.whiteColor()
       // make the actual drawings
