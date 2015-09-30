@@ -166,14 +166,6 @@ security.</string>
             </objects>
             <point key="canvasLocation" x="110" y="838"/>
         </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="wAj-yJ-soP">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Eha-v3-5zp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UiT-IK-W48" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="110" y="1382.5"/>
-        </scene>
         <!--Emotional Attachment What Will You Need View Controller-->
         <scene sceneID="qN4-CH-2YA">
             <objects>
@@ -284,7 +276,7 @@ security.</string>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EmotionalAttachmentBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="gVJ-D9-dTi">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOT-kE-v8J">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure baby:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOT-kE-v8J">
                                 <rect key="frame" x="20" y="279" width="281" height="91"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -945,6 +937,7 @@ to be comforted.  </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Awv-qb-W46" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="1374"/>
         </scene>
     </scenes>
     <resources>
@@ -957,6 +950,6 @@ to be comforted.  </string>
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v2e-xr-AP0"/>
+        <segue reference="Are-VF-r4N"/>
     </inferredMetricsTieBreakers>
 </document>
