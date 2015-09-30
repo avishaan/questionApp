@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vqP-SJ-U0l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vqP-SJ-U0l">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -231,7 +232,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Le2-cc-0HR">
                                 <rect key="frame" x="62" y="426" width="196" height="36"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
                                 <state key="normal" image="startButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -441,7 +442,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-De-BGG">
                                 <rect key="frame" x="78" y="195" width="164" height="164"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <accessibilityTraits key="traits" button="YES"/>
                                 </accessibility>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlW-Q4-df2">
@@ -538,7 +539,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="Xcu-SO-DCO">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="27" y="482" width="20" height="20"/>
@@ -646,7 +647,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="babyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-xx-uWa">
                                 <rect key="frame" x="16" y="100" width="101" height="101"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
+                                    <accessibilityTraits key="traits" button="YES"/>
                                 </accessibility>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000000000000016" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NUi-tx-XUJ" customClass="BNToolbar" customModule="questionApp" customModuleProvider="target">
@@ -1290,6 +1291,11 @@
                                                 <exclude reference="1OZ-fB-np2"/>
                                                 <exclude reference="3e6-UJ-d5h"/>
                                                 <exclude reference="gtY-GM-1XI"/>
+                                                <exclude reference="Bdw-jT-6Xi"/>
+                                                <exclude reference="mpC-3e-Edv"/>
+                                                <exclude reference="NAa-5X-o82"/>
+                                                <exclude reference="9dA-il-HJY"/>
+                                                <exclude reference="gpA-vD-bym"/>
                                                 <exclude reference="D01-2l-1hk"/>
                                                 <exclude reference="Nxj-i9-4Qg"/>
                                                 <exclude reference="Oth-Is-mSB"/>
@@ -1301,11 +1307,6 @@
                                                 <exclude reference="mor-4C-9xR"/>
                                                 <exclude reference="sOw-x6-rgy"/>
                                                 <exclude reference="qMC-4q-Ilu"/>
-                                                <exclude reference="Bdw-jT-6Xi"/>
-                                                <exclude reference="mpC-3e-Edv"/>
-                                                <exclude reference="NAa-5X-o82"/>
-                                                <exclude reference="9dA-il-HJY"/>
-                                                <exclude reference="gpA-vD-bym"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact" misplaced="YES">
@@ -1340,6 +1341,11 @@
                                                 <include reference="1OZ-fB-np2"/>
                                                 <include reference="3e6-UJ-d5h"/>
                                                 <include reference="gtY-GM-1XI"/>
+                                                <include reference="Bdw-jT-6Xi"/>
+                                                <include reference="mpC-3e-Edv"/>
+                                                <include reference="NAa-5X-o82"/>
+                                                <include reference="9dA-il-HJY"/>
+                                                <include reference="gpA-vD-bym"/>
                                                 <include reference="D01-2l-1hk"/>
                                                 <include reference="Nxj-i9-4Qg"/>
                                                 <include reference="Oth-Is-mSB"/>
@@ -1351,11 +1357,6 @@
                                                 <include reference="mor-4C-9xR"/>
                                                 <include reference="sOw-x6-rgy"/>
                                                 <include reference="qMC-4q-Ilu"/>
-                                                <include reference="Bdw-jT-6Xi"/>
-                                                <include reference="mpC-3e-Edv"/>
-                                                <include reference="NAa-5X-o82"/>
-                                                <include reference="9dA-il-HJY"/>
-                                                <include reference="gpA-vD-bym"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -1847,6 +1848,7 @@
                                 <exclude reference="RG4-1M-EEZ"/>
                                 <exclude reference="eBk-yG-S7M"/>
                                 <exclude reference="fYs-oS-FVK"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="MCR-t7-754"/>
                                 <exclude reference="awn-tL-Qp9"/>
                                 <exclude reference="c2O-SK-gJH"/>
@@ -1862,7 +1864,6 @@
                                 <exclude reference="gk4-kz-dJr"/>
                                 <exclude reference="Ajp-ZA-jia"/>
                                 <exclude reference="Nb2-r9-fR0"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1873,6 +1874,7 @@
                                 <include reference="RG4-1M-EEZ"/>
                                 <include reference="eBk-yG-S7M"/>
                                 <include reference="fYs-oS-FVK"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="MCR-t7-754"/>
                                 <include reference="awn-tL-Qp9"/>
                                 <include reference="c2O-SK-gJH"/>
@@ -1888,7 +1890,6 @@
                                 <include reference="gk4-kz-dJr"/>
                                 <include reference="Ajp-ZA-jia"/>
                                 <include reference="Nb2-r9-fR0"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                             </mask>
                         </variation>
                     </view>
@@ -3645,8 +3646,8 @@ Try again in 2-4 weeks.</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Crawling Important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLY-ui-XM3">
-                                <rect key="frame" x="32" y="90" width="257" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Crawling important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLY-ui-XM3">
+                                <rect key="frame" x="18" y="90" width="286" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
