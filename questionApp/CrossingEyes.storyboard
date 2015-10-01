@@ -275,7 +275,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="58u-7H-ozU">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLB-QE-Ox3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure baby:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLB-QE-Ox3">
                                 <rect key="frame" x="20" y="279" width="281" height="91"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -922,6 +922,10 @@ toward baby’s face. </string>
         <scene sceneID="mbI-3t-21d">
             <objects>
                 <viewController id="llU-4C-SLg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CM9-b1-2Ls"/>
+                        <viewControllerLayoutGuide type="bottom" id="WDp-Zd-A0S"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ah8-Xj-zBR" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -949,7 +953,7 @@ toward baby’s face. </string>
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZGU-Rd-GUo"/>
+        <segue reference="EaI-Vh-4ww"/>
         <segue reference="Y7i-SD-Hk0"/>
     </inferredMetricsTieBreakers>
 </document>

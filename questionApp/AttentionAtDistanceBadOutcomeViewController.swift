@@ -122,8 +122,8 @@ class AttentionAtDistanceBadOutcomeViewController: UIViewController {
             questionLabel.text = "Didn't hold attention?"
             
             // update infoLabel
-          let string = "Getting baby's attention from the start is the key. If baby looked at you as you back away, it still counts!If you are still concerned, please record the test to show your pediatrician at your next well-child visit. Try again in a week."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:108, countOfBoldCharacters:127)
+          let string = "Getting baby's attention from the start is the key. If baby looked at you as you back away, it still counts! \nIf you are still concerned, please record the test to show your pediatrician at your next well-child visit. Try again in a week."
+            applyTextAttributesToLabel(string, indexAtStartOfBold:52, countOfBoldCharacters:14)
         } else {
             // update questionLabel
             questionLabel.text = "Didn't 7old attention?"

@@ -91,14 +91,14 @@ class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
         
         if failed <= 1 {
             // update infoLabel
-            let string = "Not to worry. Not all babies develop at the same rate.\nTry again and make sure baby is rested, fed, and alert."
+            infoLabel.text = "Not to worry. Not all babies develop at the same rate.\nTry again and make sure baby is rested, fed, and alert."
 //            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
         } else if failed == 2 {
             // update questionLabel
             questionLabel.text = "Baby doesn't reach?"
             
             // update infoLabel
-            let string = "Try the test again using baby’s favorite toy and with more of the toy showing. If he still doesn’t react, try the test again in a two weeks."
+            let string = "Try the test again using baby’s favorite toy and with more of the toy showing. If baby still doesn’t react, try the test again in a two weeks."
             applyTextAttributesToLabel(string, indexAtStartOfBold:78, countOfBoldCharacters:58)
             
         } else if failed >= 3 {
@@ -107,14 +107,14 @@ class PartiallyCoveredToyBadOutcomeViewController: UIViewController {
             
             // update infoLabel
             let string = "Inability to recognize Object Permanence after 12 months may indicate visual and/or cognitive issues. If baby consistently shows no reaction beyond 12 months, record a video and talk to your pediatrician at your next well-child visit."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:101, countOfBoldCharacters:114)
+            applyTextAttributesToLabel(string, indexAtStartOfBold:101, countOfBoldCharacters:132)
         } else {
             // update questionLabel
             questionLabel.text = "Baby doesn't reach?"
             
             // update infoLabel
-            let string = "Not to worry. Lucas is a bit too young for this skill. Try again in a month."
-            applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
+          infoLabel.text = "Not to worry. Not all babies develop at the same rate.\nTry again and make sure baby is rested, fed, and alert."
+           // applyTextAttributesToLabel(string, indexAtStartOfBold:54, countOfBoldCharacters:22)
         }
     }
     

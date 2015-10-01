@@ -465,7 +465,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwq-P3-B4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521" y="1182"/>
+            <point key="canvasLocation" x="1998" y="1870"/>
         </scene>
         <!--Milestones View Controller-->
         <scene sceneID="Tje-51-8Bh">
@@ -944,26 +944,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-MC-lmc" customClass="BNToolbar" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="1156" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jSb-0C-yhK"/>
-                                    <barButtonItem image="eggIcon" id="GTw-GP-2SN">
-                                        <connections>
-                                            <segue destination="vqP-SJ-U0l" kind="presentation" id="hJN-An-zuc"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9Zp-HV-P05"/>
-                                    <barButtonItem image="menuIcon" id="9WG-Zi-O0T"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cpq-CO-iH8"/>
-                                    <barButtonItem image="gearIcon" id="EZS-X2-IIa">
-                                        <connections>
-                                            <segue destination="FYu-vj-N2f" kind="show" id="miF-xS-pDB"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sU0-IG-gw4"/>
-                                </items>
-                            </toolbar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWY-aj-5mq">
                                 <rect key="frame" x="0.0" y="142" width="320" height="1014"/>
                                 <subviews>
@@ -1369,6 +1349,26 @@
                                     <constraint firstAttribute="bottom" secondItem="dWO-V7-sjq" secondAttribute="bottom" constant="-85" id="liU-Rz-ulN"/>
                                 </constraints>
                             </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-MC-lmc" customClass="BNToolbar" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="1156" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jSb-0C-yhK"/>
+                                    <barButtonItem image="eggIcon" id="GTw-GP-2SN">
+                                        <connections>
+                                            <segue destination="vqP-SJ-U0l" kind="presentation" id="hJN-An-zuc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9Zp-HV-P05"/>
+                                    <barButtonItem image="menuIcon" id="9WG-Zi-O0T"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cpq-CO-iH8"/>
+                                    <barButtonItem image="gearIcon" id="EZS-X2-IIa">
+                                        <connections>
+                                            <segue destination="FYu-vj-N2f" kind="show" id="miF-xS-pDB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sU0-IG-gw4"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1462,7 +1462,11 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="cH7-DY-pjo"/>
                                     <barButtonItem image="menuIcon" id="ch6-Qi-Wcz"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="b9h-HN-o5L"/>
-                                    <barButtonItem image="gearIcon" id="x9b-j9-URv"/>
+                                    <barButtonItem image="gearIcon" id="x9b-j9-URv">
+                                        <connections>
+                                            <segue destination="FYu-vj-N2f" kind="show" id="cKY-vX-Axu"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="nEP-57-Ip1"/>
                                 </items>
                             </toolbar>
@@ -1905,7 +1909,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1C-xx-tfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3360" y="3363"/>
+            <point key="canvasLocation" x="3168" y="3474"/>
         </scene>
         <!--Why Is Pupil Response View Controller-->
         <scene sceneID="6ti-Og-ohJ">
@@ -1938,8 +1942,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Pupil Response important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I38-W6-o4l">
-                                <rect key="frame" x="-16" y="90" width="353" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Pupil Response Important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I38-W6-o4l">
+                                <rect key="frame" x="35" y="90" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2159,7 +2163,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="UTR-uX-Sge">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YId-Mp-Xeg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure baby:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YId-Mp-Xeg">
                                 <rect key="frame" x="20" y="279" width="281" height="91"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -2289,7 +2293,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-ii-gv1">
                                 <rect key="frame" x="52" y="157" width="222" height="70"/>
-                                <string key="text">1. Settle baby in stable
+                                <string key="text">1.Settle baby in stable
 sitting position.</string>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -2309,10 +2313,8 @@ in baby's left eye for a half second from about 4” away.</string>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP0-1e-Hgt">
-                                <rect key="frame" x="52" y="375" width="253" height="46"/>
-                                <string key="text">4.  Did baby's pupils
-react?</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.  Did his pupils react?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP0-1e-Hgt">
+                                <rect key="frame" x="52" y="375" width="222" height="46"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2662,7 +2664,7 @@ react?</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3D-ZA-jfx">
                                 <rect key="frame" x="28" y="155" width="265" height="154"/>
                                 <string key="text" base64-UTF8="YES">
-UHVwaWwgcmVhY3Rpb24gaXMgYW4gaW5pdGlhbCBpbmRpY2F0b3Igb2Ygb3ZlcmFsbCBicmFpbiBmdW5j
+UHVwaWwgUmVhY3Rpb24gaXMgYW4gaW5pdGlhbCBpbmRpY2F0b3Igb2Ygb3ZlcmFsbCBicmFpbiBmdW5j
 dGlvbi4gTGFjayBvZiByZXNwb25zZSBjb3VsZCBiZSBkdWUgdG8gaXNzdWVzIAN3aXRoIHRoZSBleWVz
 IG9yIHdpdGggdGhlIG5lcnZlcyBjb25uZWN0aW5nIHRoZSBleWVzIHRvIAN0aGUgYnJhaW4uA
 </string>
@@ -2827,7 +2829,7 @@ IG9yIHdpdGggdGhlIG5lcnZlcyBjb25uZWN0aW5nIHRoZSBleWVzIHRvIAN0aGUgYnJhaW4uA
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Object Permanence Important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cw-uu-qnA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Object Permanence important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cw-uu-qnA">
                                 <rect key="frame" x="32" y="90" width="257" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -3058,7 +3060,7 @@ IG9yIHdpdGggdGhlIG5lcnZlcyBjb25uZWN0aW5nIHRoZSBleWVzIHRvIAN0aGUgYnJhaW4uA
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="vRw-fx-9zO">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-g7-YqV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure baby:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-g7-YqV">
                                 <rect key="frame" x="20" y="279" width="281" height="91"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -3648,8 +3650,8 @@ Try again in 2-4 weeks.</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Crawling important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLY-ui-XM3">
-                                <rect key="frame" x="18" y="90" width="286" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why is Crawling Important?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLY-ui-XM3">
+                                <rect key="frame" x="32" y="90" width="257" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -3958,7 +3960,7 @@ Try again in 2-4 weeks.</string>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pupilResponseIsBabyReady" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-pn-zHi">
                                 <rect key="frame" x="0.0" y="143" width="320" height="140"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure he:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-tn-8sh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baby's mood will influence the results. Be sure baby:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-tn-8sh">
                                 <rect key="frame" x="20" y="279" width="281" height="91"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="22"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -4543,7 +4545,11 @@ Try again in 6-8 weeks.</string>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="d8R-ih-5If"/>
                                     <barButtonItem image="menuIcon" id="0wf-9R-xhe"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="3Ri-bc-qqq"/>
-                                    <barButtonItem image="gearIcon" id="1ni-ta-ZvE"/>
+                                    <barButtonItem image="gearIcon" id="1ni-ta-ZvE">
+                                        <connections>
+                                            <segue destination="FYu-vj-N2f" kind="show" id="J40-gq-TAt"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="qaY-4M-fB7"/>
                                 </items>
                                 <variation key="default">
@@ -4801,7 +4807,7 @@ Try again in 6-8 weeks.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjr-jU-SjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4023" y="4630"/>
+            <point key="canvasLocation" x="3936" y="4088"/>
         </scene>
         <!--Lets Crawl More Information View Controller-->
         <scene sceneID="k4K-zI-ZAw">
@@ -4992,12 +4998,12 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="j7l-Po-XYD"/>
-        <segue reference="b14-b1-AiE"/>
-        <segue reference="dJ5-wv-Ork"/>
-        <segue reference="bXU-UG-Zw5"/>
+        <segue reference="tN8-4m-JPM"/>
+        <segue reference="J40-gq-TAt"/>
         <segue reference="l69-DX-nDO"/>
-        <segue reference="miF-xS-pDB"/>
+        <segue reference="b14-b1-AiE"/>
         <segue reference="rnh-PO-BrS"/>
+        <segue reference="bXU-UG-Zw5"/>
+        <segue reference="OZR-PC-mDf"/>
     </inferredMetricsTieBreakers>
 </document>
