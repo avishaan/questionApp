@@ -12,11 +12,6 @@ import AVFoundation
 
 class PupilResponseTestOverviewViewController: UIViewController {
   
-  @IBOutlet weak var previewButton: UIButton!
-  @IBOutlet weak var player: UIView!
-  
-  var playerVC:AVPlayerViewController!
-  
   override func viewDidLoad() {
     super.viewDidLoad()
 	
@@ -28,7 +23,6 @@ class PupilResponseTestOverviewViewController: UIViewController {
     
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
-    enableVideoReplay()
   }
 
   override func viewWillDisappear(animated: Bool) {
@@ -42,51 +36,9 @@ class PupilResponseTestOverviewViewController: UIViewController {
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "embeddedVideoSegue" {
-      // set the playerVC as out destination
-      playerVC = segue.destinationViewController as!
-      AVPlayerViewController
-      let path = NSBundle.mainBundle().pathForResource("pupil response", ofType: "mp4")
-      let url = NSURL.fileURLWithPath(path!)
-      // let url = NSURL(string: "crawl.mp4") // for remote locations
-      
-      // hide player controls
-      playerVC.showsPlaybackControls = false
-      playerVC.hidesBottomBarWhenPushed = true
-      playerVC.videoGravity = AVLayerVideoGravityResizeAspectFill
-      
-      playerVC.player = AVPlayer(URL: url)
-      // we start off paused, then we will play once the button is hit
-      playerVC.player?.pause()
-        // listen for video end notification
-        
-      NSNotificationCenter.defaultCenter().addObserver(self,
-        selector: "enableVideoReplay",
-        name: AVPlayerItemDidPlayToEndTimeNotification,
-        object: playerVC.player?.currentItem)
-    }
-    else if segue.identifier == "pupilResponseWhatWillYouNeedSegueID" {
-        playerVC.player?.pause()
-    }
-  }
-    
-  func enableVideoReplay() {
-    playerVC.player?.seekToTime(kCMTimeZero)
-	Tracker.createEvent(.PupilResponse, .Replay, .Overview)
-    // show button
-    previewButton.hidden = false
-  }
-    
-  @IBAction func onPreviewButtonTap(button: UIButton) {
-    // hide this button
-    button.hidden = true
-    // play the video
-    playerVC.player?.play()
-	Tracker.createEvent(.PupilResponse, .Play, .Overview)
   }
     
   @IBAction func onBackButtonTap(sender: AnyObject) {
-    playerVC.player?.pause()
     self.dismissViewControllerAnimated(true, completion: nil)
   }
   

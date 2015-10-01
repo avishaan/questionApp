@@ -1850,24 +1850,24 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="RG4-1M-EEZ"/>
-                                <exclude reference="fYs-oS-FVK"/>
                                 <exclude reference="awn-tL-Qp9"/>
-                                <exclude reference="c2O-SK-gJH"/>
+                                <exclude reference="NE8-A8-tgl"/>
                                 <exclude reference="bcD-sV-Tic"/>
+                                <exclude reference="k1X-zd-Jaj"/>
                                 <exclude reference="AdR-pR-2gj"/>
-                                <exclude reference="JUi-il-BJq"/>
                                 <exclude reference="9nw-dl-Jd9"/>
                                 <exclude reference="Ajp-ZA-jia"/>
+                                <exclude reference="Nb2-r9-fR0"/>
                                 <exclude reference="eBk-yG-S7M"/>
+                                <exclude reference="fYs-oS-FVK"/>
                                 <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="MCR-t7-754"/>
-                                <exclude reference="NE8-A8-tgl"/>
-                                <exclude reference="k1X-zd-Jaj"/>
+                                <exclude reference="c2O-SK-gJH"/>
+                                <exclude reference="JUi-il-BJq"/>
                                 <exclude reference="azq-Ud-hJh"/>
                                 <exclude reference="Dbd-t5-zAR"/>
                                 <exclude reference="LOr-Q6-k7N"/>
                                 <exclude reference="gk4-kz-dJr"/>
-                                <exclude reference="Nb2-r9-fR0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1876,24 +1876,24 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="RG4-1M-EEZ"/>
-                                <include reference="fYs-oS-FVK"/>
                                 <include reference="awn-tL-Qp9"/>
-                                <include reference="c2O-SK-gJH"/>
+                                <include reference="NE8-A8-tgl"/>
                                 <include reference="bcD-sV-Tic"/>
+                                <include reference="k1X-zd-Jaj"/>
                                 <include reference="AdR-pR-2gj"/>
-                                <include reference="JUi-il-BJq"/>
                                 <include reference="9nw-dl-Jd9"/>
                                 <include reference="Ajp-ZA-jia"/>
+                                <include reference="Nb2-r9-fR0"/>
                                 <include reference="eBk-yG-S7M"/>
+                                <include reference="fYs-oS-FVK"/>
                                 <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="MCR-t7-754"/>
-                                <include reference="NE8-A8-tgl"/>
-                                <include reference="k1X-zd-Jaj"/>
+                                <include reference="c2O-SK-gJH"/>
+                                <include reference="JUi-il-BJq"/>
                                 <include reference="azq-Ud-hJh"/>
                                 <include reference="Dbd-t5-zAR"/>
                                 <include reference="LOr-Q6-k7N"/>
                                 <include reference="gk4-kz-dJr"/>
-                                <include reference="Nb2-r9-fR0"/>
                             </mask>
                         </variation>
                     </view>
@@ -1997,12 +1997,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ws8-kW-evT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y87-V8-6US">
-                                <rect key="frame" x="0.0" y="142" width="320" height="203"/>
-                                <connections>
-                                    <segue destination="LV5-L7-QzZ" kind="embed" identifier="embeddedVideoSegue" id="lEy-fN-Ti0"/>
-                                </connections>
-                            </containerView>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-ed-dHU" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2019,15 +2013,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFe-Pz-nvW">
-                                <rect key="frame" x="-2" y="142" width="398" height="203"/>
-                                <state key="normal" title="previewButton" image="pupilResponseTestVideoPreview">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onPreviewButtonTap:" destination="WcH-nv-9II" eventType="touchUpInside" id="6f1-mN-yHH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pupil response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCv-Au-kAo" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2043,18 +2028,33 @@
                                     <action selector="onBackButtonTap:" destination="WcH-nv-9II" eventType="touchUpInside" id="Y4C-EQ-v6N"/>
                                 </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7C-yc-Hda">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="142" width="320" height="180"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="jjB-CT-Ti3" kind="embed" id="qhi-1h-k5K"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="N7C-yc-Hda"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="N7C-yc-Hda"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="player" destination="Y87-V8-6US" id="x9O-P6-Gvj"/>
-                        <outlet property="previewButton" destination="SFe-Pz-nvW" id="Byk-84-1tq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZn-DW-qAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4690.5" y="1188.9999999999995"/>
+            <point key="canvasLocation" x="4690.5" y="1188"/>
         </scene>
         <!--Pupil Response What Will You Need View Controller-->
         <scene sceneID="T1o-HE-kbY">
@@ -2705,14 +2705,6 @@ IG9yIHdpdGggdGhlIG5lcnZlcyBjb25uZWN0aW5nIHRoZSBleWVzIHRvIAN0aGUgYnJhaW4uA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARW-Tc-CvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9307" y="1205"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="b2g-lr-SBc">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="LV5-L7-QzZ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KIP-YS-KeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4690" y="1674.5"/>
         </scene>
         <!--AV Player View Controller-->
         <scene sceneID="Y5m-cX-2z6">
@@ -3707,9 +3699,6 @@ Try again in 2-4 weeks.</string>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tx-zr-h6E">
                                 <rect key="frame" x="0.0" y="142" width="320" height="203"/>
-                                <connections>
-                                    <segue destination="6wm-TX-LTb" kind="embed" identifier="embeddedVideoSegue" id="I8V-lx-MVK"/>
-                                </connections>
                             </containerView>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJz-uE-1do" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
@@ -3724,15 +3713,6 @@ Try again in 2-4 weeks.</string>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wy-gW-XEi">
-                                <rect key="frame" x="-2" y="142" width="398" height="203"/>
-                                <state key="normal" title="previewButton" image="pupilResponseTestVideoPreview">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onPreviewButtonTap:" destination="B1b-xF-Fl8" eventType="touchUpInside" id="97T-tw-i8t"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pupil response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0e-gL-Slc" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -3754,20 +3734,11 @@ Try again in 2-4 weeks.</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="player" destination="9tx-zr-h6E" id="Wtu-dq-z7N"/>
-                        <outlet property="previewButton" destination="7Wy-gW-XEi" id="8r5-og-yfq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqr-mw-lBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4690.5" y="1188.9999999999995"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="d1J-D0-3r1">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="6wm-TX-LTb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vmJ-Cz-1Ya" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4690" y="1674.5"/>
         </scene>
         <!--Lets Crawl Test Overview View Controller-->
         <scene sceneID="XDs-Vg-dit">
@@ -4946,6 +4917,25 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pf0-vg-Vuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9298.5" y="3363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gEy-cl-DhZ">
+            <objects>
+                <viewController id="jjB-CT-Ti3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CVN-Ey-mSe" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="videoFileName" value="pupil response"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="videoTime">
+                                <integer key="value" value="19"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lnh-kh-gkx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4690.5" y="1675"/>
         </scene>
     </scenes>
     <resources>
