@@ -115,12 +115,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xGy-DI-dzZ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8y-fC-DGI">
-                                <rect key="frame" x="0.0" y="142" width="320" height="203"/>
-                                <connections>
-                                    <segue destination="YGN-cR-MpC" kind="embed" identifier="symmetryEmbeddedVideoSegue" id="JdO-Vw-mj6"/>
-                                </connections>
-                            </containerView>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TV7-D2-WYu" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -137,15 +131,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ6-ly-ecR">
-                                <rect key="frame" x="-2" y="142" width="398" height="203"/>
-                                <state key="normal" title="previewButton" image="SymmetryTestOverview">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onPreviewButtonTap:" destination="X1F-0G-vu1" eventType="touchUpInside" id="CP7-l1-RNv"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="symmetry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVF-yM-CIF" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -161,25 +146,20 @@
                                     <action selector="onBackTap:" destination="X1F-0G-vu1" eventType="touchUpInside" id="mli-Kf-7lG"/>
                                 </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxH-tf-YTS">
+                                <rect key="frame" x="-2" y="142" width="322" height="169"/>
+                                <connections>
+                                    <segue destination="eO4-g6-Bl3" kind="embed" id="sHI-Dz-SHC"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="previewButton" destination="VZ6-ly-ecR" id="CK9-6r-VwL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bga-Dn-gA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="665" y="844"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="gzz-wz-QKI">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="YGN-cR-MpC" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VUJ-m2-bLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="665" y="1325.5"/>
         </scene>
         <!--Symmetry What Will You Need View Controller-->
         <scene sceneID="Vrj-S9-3Vd">
@@ -886,10 +866,29 @@ Try again and be sure baby is rested, fed, and alert.</string>
             </objects>
             <point key="canvasLocation" x="5282" y="1535"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0MJ-Jj-nnR">
+            <objects>
+                <viewController id="eO4-g6-Bl3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="95z-sh-Y9l" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="169"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="videoFileName" value="maintaining symmetry"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="videoTime">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwo-iL-yG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="1404.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SymmetryIsBabyReady" width="320" height="120"/>
-        <image name="SymmetryTestOverview" width="320" height="203"/>
         <image name="SymmetryWhatNeed" width="320" height="120"/>
         <image name="WhyIsSymmetry" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>

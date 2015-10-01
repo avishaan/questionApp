@@ -116,12 +116,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EMC-tg-WkW">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIi-XY-1J9">
-                                <rect key="frame" x="0.0" y="142" width="320" height="203"/>
-                                <connections>
-                                    <segue destination="eV0-7O-0Az" kind="embed" identifier="FacialMimicEmbeddedVideoSegue" id="CUA-Bb-mIh"/>
-                                </connections>
-                            </containerView>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwB-id-c3t" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,15 +132,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snG-F0-U0e">
-                                <rect key="frame" x="-2" y="142" width="398" height="203"/>
-                                <state key="normal" title="previewButton" image="SymmetryTestOverview">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onPreviewButtonTap:" destination="zNp-dx-Ok5" eventType="touchUpInside" id="WTC-0q-tM0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facial mimic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-CQ-qHh" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -162,25 +147,20 @@
                                     <action selector="onBackTap:" destination="zNp-dx-Ok5" eventType="touchUpInside" id="AFu-xe-DhM"/>
                                 </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3MD-Hk-cyt">
+                                <rect key="frame" x="0.0" y="142" width="320" height="179"/>
+                                <connections>
+                                    <segue destination="0ax-Tf-CZV" kind="embed" id="ifT-Nq-gOI"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="previewButton" destination="snG-F0-U0e" id="5K2-OF-2eB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhW-zk-CT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="665" y="844"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="CZ8-GH-scw">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="eV0-7O-0Az" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yhC-NL-L4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="665" y="1325.5"/>
         </scene>
         <!--Facial Mimic What Will You Need View Controller-->
         <scene sceneID="KtT-L8-Y9P">
@@ -916,11 +896,30 @@ That's it!</string>
             </objects>
             <point key="canvasLocation" x="5282" y="1535"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="dr4-D4-sg3">
+            <objects>
+                <viewController id="0ax-Tf-CZV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMh-lX-6Qa" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="videoFileName" value="facial mimicry"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="videoTime">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q02-7o-kVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="1375.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="FacialMimicIsBabyReady" width="320" height="120"/>
         <image name="FacialMimicWhatWillYouNeed" width="320" height="120"/>
-        <image name="SymmetryTestOverview" width="320" height="203"/>
         <image name="WhyIsFacialMimic" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="facebook" width="29" height="29"/>
