@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CHg-nZ-xgX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -114,12 +114,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="J16-gx-6f5">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="arm-YQ-t2K">
-                                <rect key="frame" x="0.0" y="142" width="320" height="203"/>
-                                <connections>
-                                    <segue destination="RJU-3B-qbz" kind="embed" identifier="EmotionalSecurityEmbeddedVideoSegue" id="090-U4-xs3"/>
-                                </connections>
-                            </containerView>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdw-Z8-kdW" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,34 +145,20 @@
                                     <action selector="onBackTap:" destination="tVu-FL-lwC" eventType="touchUpInside" id="qlW-2p-NT7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzv-Hp-Kr4">
-                                <rect key="frame" x="0.0" y="142" width="363" height="167"/>
-                                <state key="normal" title="previewButton" image="EmotionalSecurityOverview">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCU-cl-Stv">
+                                <rect key="frame" x="0.0" y="142" width="320" height="180"/>
                                 <connections>
-                                    <action selector="onPreviewButtonTap:" destination="tVu-FL-lwC" eventType="touchUpInside" id="8Ir-NX-tEX"/>
+                                    <segue destination="5HM-2C-Rof" kind="embed" id="wea-t8-1tk"/>
                                 </connections>
-                            </button>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="previewButton" destination="Yzv-Hp-Kr4" id="Cui-oa-sLp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Siu-R7-dQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="110" y="838"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="Bvt-7e-haT">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="RJU-3B-qbz" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OEU-rS-eyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="110" y="1382.5"/>
         </scene>
         <!--Emotional Security What You Will Need View Controller-->
         <scene sceneID="z4c-F6-FjR">
@@ -241,7 +221,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="testPreparationLabel" destination="fSc-6F-3Ci" id="CC7-Qu-wWH"/>
-                        <segue destination="1Oq-pZ-azb" kind="presentation" identifier="EmotionalSecuritysBabyReadySegueID" id="Rjb-oA-aNy"/>
+                        <segue destination="1Oq-pZ-azb" kind="presentation" identifier="EmotionalSecurityIsBabyReadySegueID" id="Rjb-oA-aNy"/>
                         <segue destination="9f8-Wm-4qh" kind="presentation" identifier="EmotionalSecurityTimeToTestSegueID" id="gP9-S1-yx2"/>
                     </connections>
                 </viewController>
@@ -914,10 +894,29 @@ You can find out your baby's security level with the Emotional Attachment test.<
             </objects>
             <point key="canvasLocation" x="2392" y="1349"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Beh-qs-VuE">
+            <objects>
+                <viewController id="5HM-2C-Rof" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZPb-BO-5Bg" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="videoFileName" value="emotional security"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="videoTime">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0k-V1-TMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="1338"/>
+        </scene>
     </scenes>
     <resources>
         <image name="EmotionalSecurityIsBabyReady" width="320" height="120"/>
-        <image name="EmotionalSecurityOverview" width="246" height="167"/>
         <image name="EmotionalSecurityWhatYouNeed" width="320" height="120"/>
         <image name="WhyEmotionalSecurity" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
@@ -926,7 +925,7 @@ You can find out your baby's security level with the Emotional Attachment test.<
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1MG-GZ-aba"/>
         <segue reference="7Pc-mp-hyZ"/>
+        <segue reference="gP9-S1-yx2"/>
     </inferredMetricsTieBreakers>
 </document>
