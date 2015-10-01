@@ -118,12 +118,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7hc-Lc-Brq">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQA-gD-cQg">
-                                <rect key="frame" x="0.0" y="142" width="320" height="203"/>
-                                <connections>
-                                    <segue destination="zxJ-Di-79y" kind="embed" identifier="AADEmbeddedVideoSegue" id="6FG-lt-7pX"/>
-                                </connections>
-                            </containerView>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUR-rx-P0b" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -140,15 +134,6 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3H0-DE-kKJ">
-                                <rect key="frame" x="-2" y="142" width="398" height="203"/>
-                                <state key="normal" title="previewButton" image="HearingTestVideoPreview">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onPreviewButtonTap:" destination="Twd-jd-is7" eventType="touchUpInside" id="qQi-L4-hnS"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="attention at distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeZ-EJ-G7l" customClass="BNSectionLabel" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="52" y="20" width="216" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -164,25 +149,20 @@
                                     <action selector="onBackTap:" destination="Twd-jd-is7" eventType="touchUpInside" id="Ig6-nh-TC7"/>
                                 </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TmL-2O-RSt">
+                                <rect key="frame" x="0.0" y="142" width="320" height="178"/>
+                                <connections>
+                                    <segue destination="ky5-hB-xl4" kind="embed" id="a1g-cv-SzG"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="previewButton" destination="3H0-DE-kKJ" id="o64-7K-z61"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5LN-Uu-9aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="665" y="844"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="0WW-4t-0ES">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="zxJ-Di-79y" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bMn-v1-5lE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="665" y="1325.5"/>
         </scene>
         <!--Attention At Distance What Will You Need View Controller-->
         <scene sceneID="NTL-sf-FAn">
@@ -907,11 +887,30 @@
             </objects>
             <point key="canvasLocation" x="5282" y="1535"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gGT-HM-rDm">
+            <objects>
+                <viewController id="ky5-hB-xl4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="84u-FO-Nn0" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="videoFileName" value="attention at distance"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="videoTime">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D24-ce-8Di" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="1330.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AttentionAtDistanceIsBabyReady" width="320" height="120"/>
         <image name="AttentionAtDistanceWhatWillYouNeed" width="320" height="120"/>
-        <image name="HearingTestVideoPreview" width="319" height="203"/>
         <image name="WhyIsAttentionAtDistance" width="320" height="120"/>
         <image name="background" width="640" height="1136"/>
         <image name="facebook" width="29" height="29"/>
