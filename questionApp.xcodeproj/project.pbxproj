@@ -239,6 +239,8 @@
 		82F78E911B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F78E901B40DDCA006DBE9B /* WhyIsPupilResponseViewController.swift */; };
 		82FA88E31BBCAD8200474063 /* reaching for toy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 82FA88E21BBCAD8200474063 /* reaching for toy.mp4 */; settings = {ASSET_TAGS = (); }; };
 		82FA88E51BBCAD9700474063 /* joint attention.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 82FA88E41BBCAD9700474063 /* joint attention.mp4 */; settings = {ASSET_TAGS = (); }; };
+		82FA88E81BBD06C100474063 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15371A5D1BBA0915001EC5E4 /* Charts.framework */; };
+		82FA88E91BBD06C100474063 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15371A5D1BBA0915001EC5E4 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9E5C765B1B72C04F00915E74 /* BNLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C765A1B72C04F00915E74 /* BNLocalNotification.swift */; };
 		9E66A8351B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8341B7BA1E000855180 /* LetsCrawlMoreInformationViewController.swift */; };
 		9E66A8371B7BA8F100855180 /* FallingToyMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66A8361B7BA8F100855180 /* FallingToyMoreInformationViewController.swift */; };
@@ -443,6 +445,13 @@
 			remoteGlobalIDString = 829F54E31B26995800ABE77C;
 			remoteInfo = questionApp;
 		};
+		82FA88EA1BBD06C100474063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15371A581BBA0915001EC5E4 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -452,6 +461,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				82FA88E91BBD06C100474063 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -946,6 +956,7 @@
 				15371A5E1BBA0AEA001EC5E4 /* Charts.framework in Frameworks */,
 				8270B3001B81E7C000DFFB52 /* libicucore.A.dylib in Frameworks */,
 				8270B2FE1B81E70800DFFB52 /* Security.framework in Frameworks */,
+				82FA88E81BBD06C100474063 /* Charts.framework in Frameworks */,
 				8270B2FC1B81E6FE00DFFB52 /* CFNetwork.framework in Frameworks */,
 				8270B2F71B81E05D00DFFB52 /* Foundation.framework in Frameworks */,
 				8270B2F51B81E05700DFFB52 /* UIKit.framework in Frameworks */,
@@ -1804,6 +1815,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				82FA88EB1BBD06C100474063 /* PBXTargetDependency */,
 			);
 			name = questionApp;
 			productName = questionApp;
@@ -2329,6 +2341,11 @@
 			target = 829F54E31B26995800ABE77C /* questionApp */;
 			targetProxy = 829F54FD1B26995800ABE77C /* PBXContainerItemProxy */;
 		};
+		82FA88EB1BBD06C100474063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 82FA88EA1BBD06C100474063 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -2507,6 +2524,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = questionApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2525,6 +2543,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = questionApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
