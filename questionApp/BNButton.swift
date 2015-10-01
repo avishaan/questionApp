@@ -30,4 +30,9 @@ class BNButton: UIButton {
     self.alpha = 0.5
   }
   
+  // Change button title to the test name
+  func changeButtonTitle(testName:String) {
+    self.alpha = 0.7
+    self.setTitle(testName, forState: .Normal)
+  }
 }

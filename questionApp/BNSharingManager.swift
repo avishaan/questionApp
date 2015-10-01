@@ -65,7 +65,7 @@ class BNSharingManager {
   // MARK: - Helper functions
   static func presentShareSheet(parentViewController: UIViewController, testName: String?) {
     // Set data to display in share sheet
-    var text = "My baby reached a new milestone today! More on "
+    let text = "My baby reached a new milestone today! More on "
     let logoImage = UIImage(named: "AppIcon40x40")
     let nogginURL = NSURL(string: "http://appstore.com/BabyNoggin")
     var objectsToShare:[AnyObject] = [text]
@@ -85,6 +85,9 @@ class BNSharingManager {
       if success {
         self.saveSharedTestWithName(testName)
         self.presentUnlockNotification(parentViewController, testName: testName)
+        if parentViewController.respondsToSelector(Selector("checkNumberOfShares")){
+          parentViewController.performSelector(Selector("checkNumberOfShares"))
+        }
       } else {
         print("Sharing failed")
         return
@@ -142,5 +145,6 @@ class BNSharingManager {
     
     return tests as NSArray as! [String]
   }
+  
   
 }
