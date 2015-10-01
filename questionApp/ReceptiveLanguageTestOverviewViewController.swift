@@ -16,6 +16,12 @@ class ReceptiveLanguageTestOverviewViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    // image is not the same resolution as other thumbnails
+    previewButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Fill
+    previewButton.contentVerticalAlignment = UIControlContentVerticalAlignment.Fill
+    previewButton.imageView?.contentMode = .ScaleToFill
+    
     // analytics
     Tracker.createEvent(.ReceptiveLanguage, .Load, .Overview)
   }

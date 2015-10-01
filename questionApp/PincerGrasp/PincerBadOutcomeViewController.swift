@@ -97,7 +97,7 @@ class PincerBadOutcomeViewController: UIViewController {
       applyTextAttributesToLabel(string, indexAtStartOfBold:0, countOfBoldCharacters:0)
     } else if failed == 2 {
       // update questionLabel
-      questionLabel.text = "Didn't pincer grasp?"
+      questionLabel.text = "Didn't Pincer Grasp?"
       // update infoLabel
       let string = "Sometimes practicing using a noisy toy or ice cubes will help baby develop the pincer grasp."
       applyTextAttributesToLabel(string, indexAtStartOfBold:0, countOfBoldCharacters:0)
@@ -105,20 +105,20 @@ class PincerBadOutcomeViewController: UIViewController {
       
     } else if failed == 3 {
       // update questionLabel
-      questionLabel.text = "Didn't pincer grasp?"
+      questionLabel.text = "Didn't Pincer Grasp?"
       
       // update infoLabel
       let string = "Practice using cereal or other appropriate food items"
       applyTextAttributesToLabel(string, indexAtStartOfBold:0, countOfBoldCharacters:0)
-      boldInfoLabel.text = "If baby is still unable to pincer grasp, repeat and record test to show your pediatrician."
+      boldInfoLabel.text = "If baby is still unable to Pincer Grasp, repeat and record test to show your pediatrician."
     } else {
       // update questionLabel
-      questionLabel.text = "Didn't pincer grasp?"
+      questionLabel.text = "Didn't Pincer Grasp?"
       
       // update infoLabel
       let string = "Not to worry! Not all babies develop at the same rate."
       applyTextAttributesToLabel(string, indexAtStartOfBold:0, countOfBoldCharacters:0)
-      boldInfoLabel.text = "If baby is still unable to pincer grasp, repeat and record test to show your pediatrician."
+      boldInfoLabel.text = "If baby is still unable to Pincer Grasp, repeat and record test to show your pediatrician."
     }
   }
 

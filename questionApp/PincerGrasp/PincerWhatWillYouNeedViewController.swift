@@ -40,7 +40,7 @@ class PincerWhatWillYouNeedViewController: UIViewController {
     // Helper function formats text attributes for multiple substrings in label.
     func applyTextAttributesToLabel() {
         
-        let string = "You'll need a pencil or pen and a table top that a baby can sit in front of."
+        let string = "You'll need a pencil, pen, or other thin object and a table top that baby can sit in front of."
         
         var attributedString = NSMutableAttributedString(string: string)
         
@@ -49,8 +49,8 @@ class PincerWhatWillYouNeedViewController: UIViewController {
         let secondAttributes = [NSForegroundColorAttributeName: kGrey, NSFontAttributeName: UIFont(name: kOmnesFontMedium, size: 22)!]
         
         attributedString.addAttributes(baseAttributes, range: NSMakeRange(0, 20))
-        attributedString.addAttributes(firstAttributes, range: NSMakeRange(21, 12))
-        attributedString.addAttributes(secondAttributes, range: NSMakeRange(33, 29))
+        attributedString.addAttributes(firstAttributes, range: NSMakeRange(14, 11))
+        attributedString.addAttributes(secondAttributes, range: NSMakeRange(25, 68))
         
         testPreparationLabel.attributedText = attributedString
     }
