@@ -26,7 +26,6 @@ class VisualTrackingOverviewViewController: UIViewController {
   
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
-    enableVideoReplay()
   }
   
   override func viewWillDisappear(animated: Bool) {
@@ -41,45 +40,14 @@ class VisualTrackingOverviewViewController: UIViewController {
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "VisualTrackingEmbeddedVideoSegue" {
-      // set the playerVC as the destination
-      playerVC = segue.destinationViewController as! AVPlayerViewController
-      let path = NSBundle.mainBundle().pathForResource("visual tracking", ofType: "mp4")
-      let url = NSURL.fileURLWithPath(path!)
-      // let url = NSURL(string: "crawl.mp4") // for remote locations
-      
-      // hide player controls
-      playerVC.showsPlaybackControls = false
-      playerVC.hidesBottomBarWhenPushed = true
-      playerVC.videoGravity = AVLayerVideoGravityResizeAspectFill
-      
-      playerVC.player = AVPlayer(URL: url)
-      
-      // listen for video end notification
-      NSNotificationCenter.defaultCenter().addObserver(self,
-        selector: "enableVideoReplay",
-        name: AVPlayerItemDidPlayToEndTimeNotification,
-        object: playerVC.player?.currentItem)
+
     }
     else if segue.identifier == "VisualTrackingWhatWillYouNeedSegueID" {
-      playerVC.player?.pause()
+
     }
   }
-  
-  func enableVideoReplay() {
-    playerVC.player?.seekToTime(kCMTimeZero)
-    // show button
-    previewButton.hidden = false
-  }
-  
-  @IBAction func onPreviewButtonTap(button: UIButton) {
-    // hide button
-    button.hidden = true
-    // play the video
-    playerVC.player?.play()
-  }
-  
+
   @IBAction func onBackTap(sender: BNBackButton) {
-    playerVC.player?.pause()
     self.dismissViewControllerAnimated(true, completion: nil)
   }
   
