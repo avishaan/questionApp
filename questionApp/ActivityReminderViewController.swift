@@ -77,7 +77,7 @@ struct NotificationConstants {
     static var reminderBodyFormatted = "It's time to retry the %@ test."
     static var composerErrorTitle = "Error"
     static var composerErrorMessage = "Unable to schedule the reminder."
-    static var interval: Double = 5 // TODO-RELEASE: Currently set to 5 seconds to support testing. Must change to the following 2 week interval for beta release: 14 * 24 * 60 * 60 = 1209600
+    static var interval: Double =  1209600 // (14 * 24 * 60 * 60) = 2 weeks
     static var confirmedTitle = "All set!"
     static var confirmedMessage = "A notification has been scheduled when it is time to try the %@ test again in 2 weeks"
     static var button = "OK"

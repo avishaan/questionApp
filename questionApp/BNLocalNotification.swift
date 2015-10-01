@@ -32,7 +32,7 @@ class BNLocalNotification {
     static var reminderBodyFormatted = "It's time to retry the %@ test if your baby has not yet passed."
     static var composerErrorTitle = "Error"
     static var composerErrorMessage = "Unable to schedule the reminder."
-    static var defaultInterval: Double = 5 // TODO-RELEASE: Currently set to 5 seconds to support testing. Must change to the following 2 week interval for beta release: 14 * 24 * 60 * 60 = 1209600
+    static var defaultInterval: Double = 1209600 // (14 * 24 * 60 * 60) = 2 weeks
     static var confirmedTitle = "All set!"
     static var confirmedMessage = "A notification has been scheduled when it is time to try the %@ test again in 2 weeks"
     static var button = "OK"
@@ -93,7 +93,7 @@ class BNLocalNotification {
     }
     
     // schedule the notification
-    localNotification.fireDate = NSDate(timeIntervalSinceNow: 20 /*TODO-RELEASE: switch to this --> elapsedSecondsBeforePresentingReminder*/)
+    localNotification.fireDate = NSDate(timeIntervalSinceNow: elapsedSecondsBeforePresentingReminder)
     UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     
     // Send a notification indicating that a reminder has been scheduled.
