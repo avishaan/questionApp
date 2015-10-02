@@ -28,9 +28,6 @@ class PincerBadOutcomeViewController: UIViewController {
       // analytics
       Tracker.createEvent(.PincerGrasp, .Load, .Why)
     
-    // Do any additional setup after loading the view.
-    rangeChartView.config(startMonth: 0, endMonth: 20, successAgeInMonths: 12, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
-    
     // font can't be set directly in storyboard for attributed string, set the label font here
     // make label's set attr string to a mutable so we can add attributes on
     let attrString:NSMutableAttributedString = NSMutableAttributedString(attributedString: rangeChartLabel.attributedText!)
@@ -38,10 +35,15 @@ class PincerBadOutcomeViewController: UIViewController {
     // add font attribute
     attrString.addAttribute(NSFontAttributeName, value: UIFont(name: kOmnesFontMedium, size: 15)!, range: NSMakeRange(0, attrString.length))
     rangeChartLabel.attributedText = attrString
-    
+		
+		
 		// Initialize text in the view based on the test history.
 		initializeViewFromTestHistory()
 		
+		// Schedule a local notification to remind the user to rerun this test.
+		scheduleReminder()
+		
+		rangeChartView.config(startMonth: 0, endMonth: 20, successAgeInMonths: 12, babyAgeInMonths: parent.ageInMonths, babyName: parent.babyName!)
 		// Schedule a local notification to remind the user to rerun this test.
 		scheduleReminder()
   }
