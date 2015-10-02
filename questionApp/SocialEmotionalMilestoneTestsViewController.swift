@@ -10,6 +10,7 @@ import UIKit
 
 class SocialEmotionalMilestoneTestsViewController: UIViewController {
 	
+	@IBOutlet weak var backgroundView: UIImageView!
 	@IBOutlet weak var emotionalSecurityButton: BNButton!
 	@IBOutlet weak var facialMimicButton: BNButton!
 	@IBOutlet weak var emotionalAttachmentButton: BNButton!
@@ -21,8 +22,9 @@ class SocialEmotionalMilestoneTestsViewController: UIViewController {
 		// see how many times we shared from front page
 		var facebookShares = BNFacebook.userShareCountFromFront()
 
-		
-    // Do any additional setup after loading the view.
+		if let cropped = getCroppedBackgroundImage(backgroundView.image) {
+			backgroundView.image = cropped
+		}
   }
 	
 	override func viewWillAppear(animated: Bool) {
@@ -50,31 +52,35 @@ class SocialEmotionalMilestoneTestsViewController: UIViewController {
   }
     
 	@IBAction func onEmotionalSecurityTap(sender: AnyObject) {
-		var storyboard = UIStoryboard (name: "EmotionalSecurity", bundle: nil)
-		var controller: WhyIsEmotionalSecurityViewController  = storyboard.instantiateViewControllerWithIdentifier("WhyIsEmotionalSecurityStoryboardID") as! WhyIsEmotionalSecurityViewController
+		let storyboard = UIStoryboard (name: "EmotionalSecurity", bundle: nil)
+		let controller: WhyIsEmotionalSecurityViewController  = storyboard.instantiateViewControllerWithIdentifier("WhyIsEmotionalSecurityStoryboardID") as! WhyIsEmotionalSecurityViewController
 		self.presentViewController(controller, animated: true, completion: nil);
 
 	}
 	@IBAction func onEmotionalAttachmentTap(sender: AnyObject) {
-		var storyboard = UIStoryboard (name: "EmotionalAttachmentStoryboard", bundle: nil)
-		var controller: WhyIsEmotionalAttachmentViewController  = storyboard.instantiateViewControllerWithIdentifier("WhyIsEmotionalAttachmentStoryboardID") as! WhyIsEmotionalAttachmentViewController
+		let storyboard = UIStoryboard (name: "EmotionalAttachmentStoryboard", bundle: nil)
+		let controller: WhyIsEmotionalAttachmentViewController  = storyboard.instantiateViewControllerWithIdentifier("WhyIsEmotionalAttachmentStoryboardID") as! WhyIsEmotionalAttachmentViewController
 		self.presentViewController(controller, animated: true, completion: nil);
 	}
   @IBAction func onSelfRecognitionButtonTap(sender: AnyObject) {
-    var storyboard = UIStoryboard (name: "SelfRecognition", bundle: nil)
-    var controller: WhyIsSelfRecognitionController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSelfRecognitionStoryboardID") as! WhyIsSelfRecognitionController
+    let storyboard = UIStoryboard (name: "SelfRecognition", bundle: nil)
+    let controller: WhyIsSelfRecognitionController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSelfRecognitionStoryboardID") as! WhyIsSelfRecognitionController
     self.presentViewController(controller, animated: true, completion: nil);
   }
     
-  @IBAction func onSocialSmilingButtonTap(sender: AnyObject) {
-    var storyboard = UIStoryboard (name: "SocialSmiling", bundle: nil)
-    var controller: WhyIsSocialSmilingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSocialSmilingStoryboardID") as! WhyIsSocialSmilingViewController
-    self.presentViewController(controller, animated: true, completion: nil);
-  }
-
-    @IBAction func onFacialMimicButtonTap(sender: AnyObject) {
-        var storyboard = UIStoryboard (name: "FacialMimic", bundle: nil)
-        var controller: WhyIsFacialMimicViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsFacialMimicStoryboardID") as! WhyIsFacialMimicViewController
-        self.presentViewController(controller, animated: true, completion: nil);
-    }
+	@IBAction func onSocialSmilingButtonTap(sender: AnyObject) {
+		let storyboard = UIStoryboard (name: "SocialSmiling", bundle: nil)
+		let controller: WhyIsSocialSmilingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsSocialSmilingStoryboardID") as! WhyIsSocialSmilingViewController
+		self.presentViewController(controller, animated: true, completion: nil);
+	}
+	
+	@IBAction func onFacialMimicButtonTap(sender: AnyObject) {
+		let storyboard = UIStoryboard (name: "FacialMimic", bundle: nil)
+		let controller: WhyIsFacialMimicViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsFacialMimicStoryboardID") as! WhyIsFacialMimicViewController
+		self.presentViewController(controller, animated: true, completion: nil);
+	}
+	
+	@IBAction func onBackTap(sender: BNBackButton) {
+		self.dismissViewControllerAnimated(true, completion: nil)
+	}
 }

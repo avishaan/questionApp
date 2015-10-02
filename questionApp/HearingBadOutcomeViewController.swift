@@ -126,7 +126,7 @@ class HearingBadOutcomeViewController: UIViewController {
             questionLabel.text = "Didn't react to sounds?"
             
             // update infoLabel
-          let string = "If baby smiled, turned, or looked toward the sound, it counts!.If not, repeat and record test to show your to pediatrician."
+          let string = "If baby smiled, turned, or looked toward the sound, it counts! If not, repeat and record test to show your to pediatrician."
             applyTextAttributesToLabel(string, indexAtStartOfBold:62, countOfBoldCharacters:60)
         } else {
             // update questionLabel

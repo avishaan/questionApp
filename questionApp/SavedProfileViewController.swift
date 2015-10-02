@@ -23,7 +23,7 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
     super.viewDidLoad()
     
     // setup date format
-    var dateFormatter = NSDateFormatter()
+    let dateFormatter = NSDateFormatter()
     dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
     
     // Do any additional setup after loading the view.
@@ -34,7 +34,7 @@ class SavedProfileViewController: UIViewController, UIImagePickerControllerDeleg
     
     
     // connect image to listen for a tap
-    var imageListener = UITapGestureRecognizer(target: self, action: "onImageTap")
+    let imageListener = UITapGestureRecognizer(target: self, action: "onImageTap")
     // define taps for the listener
     imageListener.numberOfTapsRequired = 1
     imageListener.numberOfTouchesRequired = 1
