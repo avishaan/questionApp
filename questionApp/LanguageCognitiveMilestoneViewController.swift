@@ -12,6 +12,7 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
 
   var facebookShares = 0
 
+  @IBOutlet weak var backgroundView: UIImageView!
   @IBOutlet weak var receptiveLanguage: BNButton!
   @IBOutlet weak var pointFollowButton: BNButton!
   @IBOutlet weak var jointAttentionButton: BNButton!
@@ -25,6 +26,9 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
         // Do any additional setup after loading the view.
       facebookShares = BNFacebook.userShareCountFromFront()
 
+      if let cropped = getCroppedBackgroundImage(backgroundView.image) {
+        backgroundView.image = cropped
+      }
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,35 +65,39 @@ class LanguageCognitiveMilestoneViewController: UIViewController {
     }
     
     @IBAction func attentionAtADistanceButtonTap(sender: AnyObject) {
-        var storyboard = UIStoryboard (name: "AttentionAtDistance", bundle: nil)
-        var controller: WhyIsAttentionAtDistanceViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsAttentionAtDistanceStoryboardID") as! WhyIsAttentionAtDistanceViewController
+        let storyboard = UIStoryboard (name: "AttentionAtDistance", bundle: nil)
+        let controller: WhyIsAttentionAtDistanceViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsAttentionAtDistanceStoryboardID") as! WhyIsAttentionAtDistanceViewController
         self.presentViewController(controller, animated: true, completion: nil);
 
     }
     @IBAction func partiallyCoveredToyButtonTap(sender: AnyObject) {
-        var storyboard = UIStoryboard (name: "PartiallyCoveredToy", bundle: nil)
-        var controller: WhyIsPartiallyCoveredToyViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPartiallyCoveredToyStoryboardID") as! WhyIsPartiallyCoveredToyViewController
+        let storyboard = UIStoryboard (name: "PartiallyCoveredToy", bundle: nil)
+        let controller: WhyIsPartiallyCoveredToyViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPartiallyCoveredToyStoryboardID") as! WhyIsPartiallyCoveredToyViewController
         self.presentViewController(controller, animated: true, completion: nil);
     }
     @IBAction func completelyCoveredToyButtonTap(sender: AnyObject) {
-        var storyboard = UIStoryboard (name: "CompletelyCoveredToy", bundle: nil)
-        var controller: WhyIsCompletelyCoveredToyViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsCompletelyCoveredToyStoryboardID") as! WhyIsCompletelyCoveredToyViewController
+        let storyboard = UIStoryboard (name: "CompletelyCoveredToy", bundle: nil)
+        let controller: WhyIsCompletelyCoveredToyViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsCompletelyCoveredToyStoryboardID") as! WhyIsCompletelyCoveredToyViewController
         self.presentViewController(controller, animated: true, completion: nil);
     }
   @IBAction func onReceptiveLanguageTap(sender: AnyObject) {
-    var storyboard = UIStoryboard (name: "ReceptiveLanguage", bundle: nil)
-    var controller: WhyISReceptiveLanguageViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsReceptiveLanguageStoryboardID") as! WhyISReceptiveLanguageViewController
+    let storyboard = UIStoryboard (name: "ReceptiveLanguage", bundle: nil)
+    let controller: WhyISReceptiveLanguageViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsReceptiveLanguageStoryboardID") as! WhyISReceptiveLanguageViewController
     self.presentViewController(controller, animated: true, completion: nil);
   }
   @IBAction func onPointFollowTap(sender: AnyObject) {
-    var storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
-    var controller: WhyIsPointFollowingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPointFollowingStoryboardID") as! WhyIsPointFollowingViewController
+    let storyboard = UIStoryboard (name: "PointFollowing", bundle: nil)
+    let controller: WhyIsPointFollowingViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsPointFollowingStoryboardID") as! WhyIsPointFollowingViewController
     self.presentViewController(controller, animated: true, completion: nil);
 
   }
     @IBAction func jointAttentionButtonTap(sender: AnyObject) {
-        var storyboard = UIStoryboard (name: "JointAttention", bundle: nil)
-        var controller: WhyIsJointAttentionViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsJointAttentionStoryboardID") as! WhyIsJointAttentionViewController
+        let storyboard = UIStoryboard (name: "JointAttention", bundle: nil)
+        let controller: WhyIsJointAttentionViewController = storyboard.instantiateViewControllerWithIdentifier("WhyIsJointAttentionStoryboardID") as! WhyIsJointAttentionViewController
         self.presentViewController(controller, animated: true, completion: nil);
     }
+  
+  @IBAction func onBackTap(sender: BNBackButton) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
 }
