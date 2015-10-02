@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import MediaPlayer
 //import Mixpanel
 
 // analytics global
@@ -31,7 +32,7 @@ var testMonitor: TestMonitor?
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+	var isPlayingFullScreenMovie = false
 	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		Mixpanel.sharedInstanceWithToken(config().mixpanel.token)
@@ -49,6 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		// Setup the test monitor.
 		testMonitor = TestMonitor()
+		
+		// allow landscape mode when playing videos
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: "moviePlayerPlaybackFullscreenStarted:", name: MPMoviePlayerWillEnterFullscreenNotification, object: nil)
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: "moviePlayerPlaybackFullscreenEnded:", name: MPMoviePlayerWillExitFullscreenNotification, object: nil)
 		
     return true
   }
@@ -87,12 +92,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		}
 	}
 	
+	func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
+		// not sure why presentedViewController.supportedInterfaceOrientations() isn't returning what's in the info.plist,
+		// otherwise we'd be able to do this on a per-controller basis, with a default value of portrait
+		if isPlayingFullScreenMovie {
+			return .Landscape
+		}
+		return .Portrait
+	}
+	
+	// MARK: - MPMoviePlayer Notifications
+	
+	func moviePlayerPlaybackFullscreenStarted(notification: NSNotification) {
+		isPlayingFullScreenMovie = true;
+	}
+	func moviePlayerPlaybackFullscreenEnded(notification: NSNotification) {
+		isPlayingFullScreenMovie = false;
+	}
+	
   // MARK: - Core Data stack
 
   lazy var applicationDocumentsDirectory: NSURL = {
       // The directory the application uses to store the Core Data store file. This code uses a directory named "com.codehatcher.avishaan.questionApp" in the application's documents Application Support directory.
       let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-      return urls[urls.count-1] as! NSURL
+      return urls[urls.count-1]
   }()
 
   lazy var managedObjectModel: NSManagedObjectModel = {

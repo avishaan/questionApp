@@ -112,9 +112,14 @@ import AVFoundation
         moviePlayer.prepareToPlay()
         moviePlayer.scalingMode = .AspectFill
         self.view.addSubview(moviePlayer.view)
+        moviePlayer.fullscreen = true
     } else {
       debugPrint("Ops, something wrong when playing video.m4v")
     }
+  }
+  
+  deinit {
+    self.player?.stop()
   }
   
   func handleTap() {
