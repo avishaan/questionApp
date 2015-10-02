@@ -38,7 +38,7 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
     nameField.text = parent.fullName
     emailField.text = parent.email
     babyNameField.text = parent.babyName
-    genderControl.selectedSegmentIndex = indexForGender(parent.babyGender!)
+    genderControl.selectedSegmentIndex = indexForGender(parent.babyGender)
     if let date = parent.babyBirthday {
       babyBirthdayDate.date = date
     }
@@ -49,15 +49,17 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
     // Dispose of any resources that can be recreated.
   }
 
-  func indexForGender(gender: String) -> Int {
+  func indexForGender(gender: String?) -> Int {
     var index = 0
-    switch (gender) {
-    case "Girl":
-      index = 1
-    case "Boy":
-      fallthrough
-    default:
-      index = 0
+    if let gender = gender {
+      switch (gender) {
+      case "Girl":
+        index = 1
+      case "Boy":
+        fallthrough
+      default:
+        index = 0
+      }
     }
     return index
   }
