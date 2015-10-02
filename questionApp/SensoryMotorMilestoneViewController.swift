@@ -8,8 +8,19 @@
 
 import UIKit
 
+func getCroppedBackgroundImage(image: UIImage?) -> UIImage? {
+  // original is 640x1136
+  let rect = CGRectMake(0, 0, 640, 1036)
+  if let image = image {
+    let imageRef:CGImageRef = CGImageCreateWithImageInRect(image.CGImage, rect)!
+    return UIImage(CGImage:imageRef)
+  }
+  return nil
+}
+
 class SensoryMotorMilestoneViewController: UIViewController {
   
+  @IBOutlet weak var backgroundView: UIImageView!
   @IBOutlet weak var sittingUnassistedButton: BNButton!
   @IBOutlet weak var crawlButton: BNButton!
   @IBOutlet weak var symmetryButton: BNButton!
@@ -38,6 +49,10 @@ class SensoryMotorMilestoneViewController: UIViewController {
     
     // to get number of shares made
     numberOfShares = BNSharingManager.getSharedTestCount()
+    
+    if let cropped = getCroppedBackgroundImage(backgroundView.image) {
+      backgroundView.image = cropped
+    }
     
   }
   
@@ -200,5 +215,9 @@ class SensoryMotorMilestoneViewController: UIViewController {
       showShareAlert()
       
     }
+  }
+  
+  @IBAction func onBackTap(sender: BNBackButton) {
+    self.dismissViewControllerAnimated(true, completion: nil)
   }
 }
