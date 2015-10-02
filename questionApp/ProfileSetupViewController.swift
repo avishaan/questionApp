@@ -16,6 +16,8 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var babyNameField: BNTextField!
   @IBOutlet weak var babyBirthdayDate: UIDatePicker!
   
+  var parent = Parent()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -32,6 +34,14 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
 		
 		// initialize text field delegates
 		initTextFieldDelegates()
+    
+    nameField.text = parent.fullName
+    emailField.text = parent.email
+    babyNameField.text = parent.babyName
+    genderControl.selectedSegmentIndex = indexForGender(parent.babyGender!)
+    if let date = parent.babyBirthday {
+      babyBirthdayDate.date = date
+    }
   }
   
   override func didReceiveMemoryWarning() {
@@ -39,6 +49,18 @@ class ProfileSetupViewController: UIViewController, UITextFieldDelegate {
     // Dispose of any resources that can be recreated.
   }
 
+  func indexForGender(gender: String) -> Int {
+    var index = 0
+    switch (gender) {
+    case "Girl":
+      index = 1
+    case "Boy":
+      fallthrough
+    default:
+      index = 0
+    }
+    return index
+  }
 	
 	// MARK: IBActions
 	
