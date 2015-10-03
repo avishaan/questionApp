@@ -1407,7 +1407,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QPs-Vk-0zu">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv8-eD-Lf3" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv8-eD-Lf3" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1453,7 +1453,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38y-rc-5GC" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq7-aK-iGu" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq7-aK-iGu" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="32" y="162" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -1493,7 +1493,7 @@
                                             <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FallingToy" translatesAutoresizingMaskIntoConstraints="NO" id="HGa-HV-L8J">
                                                 <rect key="frame" x="49" y="332" width="24" height="24"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkI-cT-bIA" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkI-cT-bIA" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="32" y="238" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1505,11 +1505,11 @@
                                                     <action selector="attentionAtADistanceButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="062-Pe-cc0"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-aM-YF2" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-aM-YF2" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="33" y="312" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="partially covered toy">
+                                                <state key="normal" title="share to unlock test">
                                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1517,11 +1517,11 @@
                                                     <action selector="partiallyCoveredToyButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="xgC-Nr-Imb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sz-74-Q0e" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sz-74-Q0e" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="33" y="312" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="receptive language">
+                                                <state key="normal" title="share to unlock test">
                                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1529,11 +1529,11 @@
                                                     <action selector="onReceptiveLanguageTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="Ph1-gn-99B"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqb-dl-5DX" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqb-dl-5DX" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="33" y="312" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="covered toy">
+                                                <state key="normal" title="share to unlock test">
                                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1541,7 +1541,7 @@
                                                     <action selector="completelyCoveredToyButtonTap:" destination="DF5-Zg-qbg" eventType="touchUpInside" id="ud1-Sb-oHv"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-3h-kiJ" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-3h-kiJ" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="32" y="386" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1568,7 +1568,7 @@
                                             <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlasticJar" translatesAutoresizingMaskIntoConstraints="NO" id="Ydw-kF-OEB">
                                                 <rect key="frame" x="49" y="332" width="24" height="24"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRc-qk-Vi0" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRc-qk-Vi0" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                                 <rect key="frame" x="32" y="386" width="250" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -1576,7 +1576,7 @@
                                                     <constraint firstAttribute="width" constant="255" id="2TU-fc-Bb5"/>
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="point follow">
+                                                <state key="normal" title="share to unlock test">
                                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1823,6 +1823,10 @@
                                 <exclude reference="7Ar-cs-oMa"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="RG4-1M-EEZ"/>
+                                <exclude reference="eBk-yG-S7M"/>
+                                <exclude reference="fYs-oS-FVK"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="MCR-t7-754"/>
                                 <exclude reference="awn-tL-Qp9"/>
                                 <exclude reference="c2O-SK-gJH"/>
@@ -1832,10 +1836,6 @@
                                 <exclude reference="AdR-pR-2gj"/>
                                 <exclude reference="JUi-il-BJq"/>
                                 <exclude reference="azq-Ud-hJh"/>
-                                <exclude reference="RG4-1M-EEZ"/>
-                                <exclude reference="eBk-yG-S7M"/>
-                                <exclude reference="fYs-oS-FVK"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="Ajp-ZA-jia"/>
                                 <exclude reference="QMS-tc-D6c"/>
                             </mask>
@@ -1846,6 +1846,10 @@
                                 <include reference="7Ar-cs-oMa"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="RG4-1M-EEZ"/>
+                                <include reference="eBk-yG-S7M"/>
+                                <include reference="fYs-oS-FVK"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="MCR-t7-754"/>
                                 <include reference="awn-tL-Qp9"/>
                                 <include reference="c2O-SK-gJH"/>
@@ -1855,10 +1859,6 @@
                                 <include reference="AdR-pR-2gj"/>
                                 <include reference="JUi-il-BJq"/>
                                 <include reference="azq-Ud-hJh"/>
-                                <include reference="RG4-1M-EEZ"/>
-                                <include reference="eBk-yG-S7M"/>
-                                <include reference="fYs-oS-FVK"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="Ajp-ZA-jia"/>
                                 <include reference="QMS-tc-D6c"/>
                             </mask>
@@ -4401,7 +4401,7 @@ Try again in 6-8 weeks.</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3uM-DY-upm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUN-zX-K6M" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUN-zX-K6M" customClass="BNBackButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="9" y="24" width="35" height="30"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -4441,11 +4441,11 @@ Try again in 6-8 weeks.</string>
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPJ-LY-g23" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPJ-LY-g23" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="32" y="162" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="emotional security">
+                                <state key="normal" title="share to unlock test">
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -4486,11 +4486,11 @@ Try again in 6-8 weeks.</string>
                                     <action selector="onSocialSmilingButtonTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="2X7-c9-8s9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBe-ix-s7m" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBe-ix-s7m" customClass="BNButton" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="33" y="385" width="250" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="54" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="facial mimic">
+                                <state key="normal" title="share to unlock test">
                                     <color key="titleColor" red="0.66329306359999995" green="0.66329306359999995" blue="0.66329306359999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -4999,11 +4999,11 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rnh-PO-BrS"/>
+        <segue reference="V3Q-7r-5kc"/>
+        <segue reference="bXU-UG-Zw5"/>
         <segue reference="q3F-NO-Tfs"/>
         <segue reference="tN8-4m-JPM"/>
         <segue reference="b14-b1-AiE"/>
-        <segue reference="l69-DX-nDO"/>
         <segue reference="OZR-PC-mDf"/>
-        <segue reference="bXU-UG-Zw5"/>
     </inferredMetricsTieBreakers>
 </document>

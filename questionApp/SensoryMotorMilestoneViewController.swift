@@ -88,7 +88,7 @@ class SensoryMotorMilestoneViewController: UIViewController {
     
   }
   
-  // //check and update the view based on number of shares
+  //check and update the view based on number of shares
 
   func checkNumberOfShares() {
     numberOfShares = BNSharingManager.getSharedTestCount()
