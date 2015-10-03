@@ -870,6 +870,10 @@ Try again and be sure baby is rested, fed, and alert.</string>
         <scene sceneID="0MJ-Jj-nnR">
             <objects>
                 <viewController id="eO4-g6-Bl3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KFo-WV-BhO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zsd-oi-Jlq"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="95z-sh-Y9l" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="322" height="169"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
