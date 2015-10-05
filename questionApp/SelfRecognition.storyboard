@@ -700,7 +700,7 @@ Try again in a month.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6V0-OG-YR8" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6V0-OG-YR8" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="24" y="158" width="273" height="94"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -890,6 +890,10 @@ ZCBlbmpveSADdGhlaXIgcmVmbGVjdGlvbnMuA
         <scene sceneID="4Mc-5Z-hLu">
             <objects>
                 <viewController id="O5z-AQ-mUx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nu2-ph-bhO"/>
+                        <viewControllerLayoutGuide type="bottom" id="LLO-cV-IMj"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sUT-3w-4X4" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

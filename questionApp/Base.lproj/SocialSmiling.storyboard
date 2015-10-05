@@ -678,7 +678,7 @@ Try again and be sure baby is rested, fed, and alert.
                                     <segue destination="mOS-fZ-XdF" kind="presentation" id="lb8-xY-4C4"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kkb-qU-gsK" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kkb-qU-gsK" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="24" y="162" width="271" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -886,6 +886,10 @@ IG9yIGEgbGFnIGluIHNvY2lhbCBkZXZlbG9wbWVudC4gA
         <scene sceneID="nO3-0U-66U">
             <objects>
                 <viewController id="vqN-kN-rQp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEj-ZW-gM7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Has-Gc-JwE"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V1v-lg-1yv" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

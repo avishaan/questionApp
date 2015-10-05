@@ -672,7 +672,7 @@ this test.</string>
                                     <segue destination="Ljf-UH-SVB" kind="presentation" id="kl0-6b-dqW"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fw-yI-WHC" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fw-yI-WHC" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="24" y="167" width="273" height="110"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>

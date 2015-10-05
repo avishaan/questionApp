@@ -703,7 +703,7 @@ YXkgdG8gZGV2ZWxvcGluZyBsYW5ndWFnZSBhbmQgdW5kZXJzdGFuZGluZyBvZiBzb2NpYWwgY3VlcyE
                                     <segue destination="mOS-fZ-XdF" kind="presentation" id="lb8-xY-4C4"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fuk-rS-w0e" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fuk-rS-w0e" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="24" y="158" width="273" height="94"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -916,6 +916,10 @@ If baby continues to fail the test and is over age 1, please record the test and
         <scene sceneID="kec-do-qye">
             <objects>
                 <viewController id="wYZ-Zu-blt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r3J-G0-GJv"/>
+                        <viewControllerLayoutGuide type="bottom" id="tCh-xi-k1b"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fp8-Qs-4MM" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

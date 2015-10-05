@@ -686,7 +686,7 @@ That's it!</string>
                                     <segue destination="TwI-ju-e0i" kind="presentation" id="cnm-JJ-boW"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P97-Xk-iwX" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P97-Xk-iwX" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="24" y="167" width="273" height="110"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -900,6 +900,10 @@ That's it!</string>
         <scene sceneID="dr4-D4-sg3">
             <objects>
                 <viewController id="0ax-Tf-CZV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zse-yU-FFx"/>
+                        <viewControllerLayoutGuide type="bottom" id="7JO-As-Ijc"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SMh-lX-6Qa" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
