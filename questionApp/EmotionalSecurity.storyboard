@@ -683,7 +683,7 @@ QmFieSBkb2VzIG5vdCBjcnkgb3IgA3Nob3cgZW1vdGlvbi4
                                     <action selector="onBackButtonTap:" destination="4Ts-hk-4iU" eventType="touchUpInside" id="kDr-3a-Rnf"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJV-7E-cTe" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJV-7E-cTe" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="24" y="167" width="273" height="110"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -899,8 +899,8 @@ You can find out your baby's security level with the Emotional Attachment test.<
             <objects>
                 <viewController id="5HM-2C-Rof" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bfo-dU-URe"/>
-                        <viewControllerLayoutGuide type="bottom" id="Pb8-29-fQC"/>
+                        <viewControllerLayoutGuide type="top" id="01t-0j-D1o"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cpp-4Y-5eL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZPb-BO-5Bg" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
