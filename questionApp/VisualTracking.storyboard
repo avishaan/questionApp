@@ -723,7 +723,7 @@ Baby tracked the toy with head.
                                     <segue destination="v8f-Qv-v0v" kind="presentation" id="rqb-Al-L7a"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lU5-i0-XGW" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lU5-i0-XGW" customClass="BNTestRangeChartView" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="24" y="153" width="272" height="107"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -925,6 +925,10 @@ Baby tracked the toy with head.
         <scene sceneID="aom-zz-jEU">
             <objects>
                 <viewController id="mIq-eS-mkP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HtY-v2-bjf"/>
+                        <viewControllerLayoutGuide type="bottom" id="SZu-Na-BAu"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="J7u-ei-Q5A" customClass="BNVideoPlayer" customModule="questionApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="322" height="167"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
