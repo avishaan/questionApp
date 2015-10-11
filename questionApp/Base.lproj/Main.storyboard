@@ -554,10 +554,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNTwoPartLabel" translatesAutoresizingMaskIntoConstraints="NO" id="OGf-nh-dEj">
                                 <rect key="frame" x="4" y="230" width="290" height="36"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="4" y="210" width="290" height="36"/>
+                                    <rect key="frame" x="4" y="220" width="290" height="36"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNTwoPartLabel" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-mh-ivs">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BNTwoPartLabel" translatesAutoresizingMaskIntoConstraints="NO" id="MyB-mh-ivs">
                                 <rect key="frame" x="4" y="274" width="290" height="36"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="4" y="254" width="290" height="36"/>
@@ -587,7 +587,7 @@
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="218" width="90" height="21"/>
+                                    <rect key="frame" x="41" y="228" width="90" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pupil Response" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pao-WT-k6v">
@@ -596,10 +596,10 @@
                                 <color key="textColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="142" y="218" width="148" height="21"/>
+                                    <rect key="frame" x="142" y="228" width="148" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 reminders" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzP-jX-VUQ">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 reminders" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzP-jX-VUQ">
                                 <rect key="frame" x="142" y="282" width="148" height="21"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="18"/>
                                 <color key="textColor" red="0.97254901960784312" green="0.42352941176470588" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
@@ -608,7 +608,7 @@
                                     <rect key="frame" x="142" y="262" width="148" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Re-tests" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdH-bb-ipO">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Re-tests" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdH-bb-ipO">
                                 <rect key="frame" x="43" y="282" width="90" height="21"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="18"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -617,7 +617,7 @@
                                     <rect key="frame" x="43" y="262" width="90" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Progress:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZp-cu-BJ3">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Progress:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZp-cu-BJ3">
                                 <rect key="frame" x="142" y="167" width="82" height="21"/>
                                 <fontDescription key="fontDescription" name="Omnes-Medium" family="Omnes" pointSize="19"/>
                                 <color key="textColor" red="0.34509804840000002" green="0.34901961679999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -635,7 +635,7 @@
                                     <rect key="frame" x="186" y="133" width="108" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="on track" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-I1-qi7">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="on track" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-I1-qi7">
                                 <rect key="frame" x="226" y="167" width="71" height="21"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="18"/>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -699,7 +699,7 @@
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="82" y="298" width="156" height="23"/>
+                                    <rect key="frame" x="82" y="278" width="156" height="23"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC2-rA-cI0">
@@ -1786,7 +1786,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="145" width="320" height="604"/>
+                                    <rect key="frame" x="0.0" y="153" width="320" height="647"/>
                                     <mask key="subviews">
                                         <include reference="38y-rc-5GC"/>
                                     </mask>
@@ -1826,7 +1826,6 @@
                                 <exclude reference="RG4-1M-EEZ"/>
                                 <exclude reference="eBk-yG-S7M"/>
                                 <exclude reference="fYs-oS-FVK"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="MCR-t7-754"/>
                                 <exclude reference="awn-tL-Qp9"/>
                                 <exclude reference="c2O-SK-gJH"/>
@@ -1838,6 +1837,7 @@
                                 <exclude reference="azq-Ud-hJh"/>
                                 <exclude reference="Ajp-ZA-jia"/>
                                 <exclude reference="QMS-tc-D6c"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1849,7 +1849,6 @@
                                 <include reference="RG4-1M-EEZ"/>
                                 <include reference="eBk-yG-S7M"/>
                                 <include reference="fYs-oS-FVK"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="MCR-t7-754"/>
                                 <include reference="awn-tL-Qp9"/>
                                 <include reference="c2O-SK-gJH"/>
@@ -1861,6 +1860,7 @@
                                 <include reference="azq-Ud-hJh"/>
                                 <include reference="Ajp-ZA-jia"/>
                                 <include reference="QMS-tc-D6c"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                             </mask>
                         </variation>
                     </view>
@@ -4435,7 +4435,8 @@ Try again in 6-8 weeks.</string>
                                         <exclude reference="go1-le-V1C"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="52" y="20" width="344.5" height="38"/>
                                     <mask key="constraints">
                                         <include reference="go1-le-V1C"/>
                                     </mask>
@@ -4528,7 +4529,7 @@ Try again in 6-8 weeks.</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="33" y="448" width="250" height="60"/>
+                                    <rect key="frame" x="33" y="422" width="250" height="60"/>
                                 </variation>
                                 <connections>
                                     <action selector="onEmotionalAttachmentTap:" destination="A7O-R8-k8U" eventType="touchUpInside" id="uJI-Wd-hei"/>
@@ -4538,7 +4539,7 @@ Try again in 6-8 weeks.</string>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExpressionMimic" translatesAutoresizingMaskIntoConstraints="NO" id="odO-t1-xsC">
                                 <rect key="frame" x="49" y="405" width="24" height="24"/>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="49" y="466" width="24" height="24"/>
+                                    <rect key="frame" x="49" y="440" width="24" height="24"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="49" y="403" width="24" height="24"/>
@@ -4998,12 +4999,12 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rnh-PO-BrS"/>
-        <segue reference="OZR-PC-mDf"/>
         <segue reference="b14-b1-AiE"/>
         <segue reference="4eJ-BT-Iur"/>
+        <segue reference="OZR-PC-mDf"/>
         <segue reference="q3F-NO-Tfs"/>
+        <segue reference="l69-DX-nDO"/>
         <segue reference="bXU-UG-Zw5"/>
-        <segue reference="V3Q-7r-5kc"/>
+        <segue reference="rnh-PO-BrS"/>
     </inferredMetricsTieBreakers>
 </document>
