@@ -924,9 +924,9 @@ cognitive ability.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="videoFileName" value="falling toy"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="videoFileName" value="reaching for toy"/>
                             <userDefinedRuntimeAttribute type="number" keyPath="videoTime">
-                                <integer key="value" value="12"/>
+                                <integer key="value" value="20"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
