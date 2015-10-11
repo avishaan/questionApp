@@ -529,7 +529,10 @@ body over. </string>
                                 <rect key="frame" x="28" y="210" width="265" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Baby turns head first then shoulders and hips follow (corkscrew fashion). ">
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
+</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -551,10 +554,7 @@ body over. </string>
                                 <rect key="frame" x="28" y="127" width="265" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal">
-                                    <string key="title" base64-UTF8="YES">
-QmFieSBpcyBhYmxlIHRvIHR1cm4gA3dpdGggaGlwcy4gA
-</string>
+                                <state key="normal" title="Baby turns head first then shoulders and hips follow (corkscrew fashion).">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
