@@ -615,9 +615,9 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="sFs-sz-KGl"/>
-                                    <barButtonItem image="eggIcon" id="bnd-e0-WrG"/>
+                                    <barButtonItem enabled="NO" image="eggIcon" id="bnd-e0-WrG"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="sy3-Nt-Dr8"/>
-                                    <barButtonItem image="menuIcon" id="4ka-vA-fTB"/>
+                                    <barButtonItem enabled="NO" image="menuIcon" id="4ka-vA-fTB"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="iWS-aL-kaY"/>
                                     <barButtonItem image="gearIcon" id="PbB-8z-nk8">
                                         <connections>
