@@ -9,7 +9,7 @@
 import UIKit
 
 class BNButtonNext: BNButton {
-  
+	
   // Only override drawRect: if you perform custom drawing.
   // An empty implementation adversely affects performance during animation.
   override func drawRect(rect: CGRect) {
@@ -17,7 +17,18 @@ class BNButtonNext: BNButton {
     super.drawRect(rect)
     self.setTitleColor(kOrange, forState: .Normal)
     self.titleLabel?.font = UIFont(name: kOmnesFontSemiBold, size: 20)
-    
   }
-  
+	
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		print("layout view")
+		if (UIScreen.mainScreen().bounds.size.height == 480.0){
+			self.frame.origin.y = 480-30;
+		}
+	}
+	
+	func addProperties() {
+		
+	}
+	
 }

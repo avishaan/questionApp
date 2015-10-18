@@ -35,4 +35,8 @@ class BNButton: UIButton {
     self.alpha = 0.7
     self.setTitle(testName, forState: .Normal)
   }
+	
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+	}
 }
