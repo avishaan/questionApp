@@ -313,11 +313,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzN-bf-jI0" customClass="UIButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzN-bf-jI0" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="82" y="516" width="156" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="rcF-LM-wUh"/>
+                                    <constraint firstAttribute="height" constant="34" id="udx-OC-FAM"/>
+                                </constraints>
                                 <state key="normal" title="save profile">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rcF-LM-wUh"/>
+                                        <exclude reference="udx-OC-FAM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="rcF-LM-wUh"/>
+                                        <include reference="udx-OC-FAM"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onSaveProfileButtonTap:" destination="FYu-vj-N2f" eventType="touchUpInside" id="hpa-I5-Ded"/>
                                     <segue destination="l1L-HK-LFa" kind="presentation" id="f4K-l7-wfG"/>
@@ -359,6 +375,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="86S-pI-6Ql" secondAttribute="trailing" constant="8" id="0cX-CU-bfK"/>
+                            <constraint firstItem="YzN-bf-jI0" firstAttribute="centerX" secondItem="VOq-dk-v84" secondAttribute="centerX" id="5YW-uD-X49"/>
+                            <constraint firstItem="kt3-R0-PJx" firstAttribute="top" secondItem="YzN-bf-jI0" secondAttribute="bottom" constant="18" id="PYh-Ij-fXX"/>
                             <constraint firstItem="S2E-Sh-ToX" firstAttribute="centerX" secondItem="304-aL-ian" secondAttribute="centerX" constant="97" id="R8x-6Q-bfm"/>
                             <constraint firstItem="86S-pI-6Ql" firstAttribute="height" secondItem="304-aL-ian" secondAttribute="height" id="U2D-4K-vtR"/>
                             <constraint firstItem="304-aL-ian" firstAttribute="top" secondItem="86S-pI-6Ql" secondAttribute="bottom" constant="16" id="XvF-Hc-SKN"/>
@@ -371,6 +389,18 @@
                             <constraint firstItem="86S-pI-6Ql" firstAttribute="leading" secondItem="VOq-dk-v84" secondAttribute="leadingMargin" constant="9" id="tHa-Bw-aT2"/>
                             <constraint firstItem="86S-pI-6Ql" firstAttribute="top" secondItem="TKa-wv-bRG" secondAttribute="bottom" constant="69" id="xob-sE-SS2"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5YW-uD-X49"/>
+                                <exclude reference="PYh-Ij-fXX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5YW-uD-X49"/>
+                                <include reference="PYh-Ij-fXX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -1826,6 +1856,7 @@
                                 <exclude reference="RG4-1M-EEZ"/>
                                 <exclude reference="eBk-yG-S7M"/>
                                 <exclude reference="fYs-oS-FVK"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                                 <exclude reference="MCR-t7-754"/>
                                 <exclude reference="awn-tL-Qp9"/>
                                 <exclude reference="c2O-SK-gJH"/>
@@ -1837,7 +1868,6 @@
                                 <exclude reference="azq-Ud-hJh"/>
                                 <exclude reference="Ajp-ZA-jia"/>
                                 <exclude reference="QMS-tc-D6c"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1849,6 +1879,7 @@
                                 <include reference="RG4-1M-EEZ"/>
                                 <include reference="eBk-yG-S7M"/>
                                 <include reference="fYs-oS-FVK"/>
+                                <exclude reference="MC3-Nf-UgW"/>
                                 <include reference="MCR-t7-754"/>
                                 <include reference="awn-tL-Qp9"/>
                                 <include reference="c2O-SK-gJH"/>
@@ -1860,7 +1891,6 @@
                                 <include reference="azq-Ud-hJh"/>
                                 <include reference="Ajp-ZA-jia"/>
                                 <include reference="QMS-tc-D6c"/>
-                                <exclude reference="MC3-Nf-UgW"/>
                             </mask>
                         </variation>
                     </view>
