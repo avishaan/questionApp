@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="OmnesMed.ttf">
@@ -51,9 +52,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2js-gb-7WB" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="470" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="JFH-gr-ztI"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZII-Il-ocx"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JFH-gr-ztI"/>
+                                        <exclude reference="ZII-Il-ocx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="JFH-gr-ztI"/>
+                                        <include reference="ZII-Il-ocx"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="Twd-jd-is7" kind="presentation" id="FzA-LR-qUP"/>
                                 </connections>
@@ -91,6 +108,25 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2js-gb-7WB" firstAttribute="centerX" secondItem="g1a-jn-7XY" secondAttribute="centerX" id="IR9-Le-XVd"/>
+                            <constraint firstItem="2js-gb-7WB" firstAttribute="top" secondItem="atb-Wu-MLZ" secondAttribute="bottom" priority="750" constant="450" id="ftI-uN-cTx"/>
+                            <constraint firstItem="S38-7S-LGJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2js-gb-7WB" secondAttribute="bottom" constant="1" id="lKT-r4-G9E"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IR9-Le-XVd"/>
+                                <exclude reference="ftI-uN-cTx"/>
+                                <exclude reference="lKT-r4-G9E"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="IR9-Le-XVd"/>
+                                <include reference="ftI-uN-cTx"/>
+                                <include reference="lKT-r4-G9E"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -118,16 +154,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7hc-Lc-Brq">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUR-rx-P0b" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="99" y="472" width="122" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="next step">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="jex-Mg-Ws8" kind="presentation" identifier="AADWhatWillYouNeedSegueID" id="ifX-wQ-j9i"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t88-ih-t0q">
                                 <rect key="frame" x="35" y="81" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
@@ -155,6 +181,19 @@
                                     <segue destination="ky5-hB-xl4" kind="embed" id="a1g-cv-SzG"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUR-rx-P0b" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="472" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="next step">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="99" y="446" width="122" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="jex-Mg-Ws8" kind="presentation" identifier="AADWhatWillYouNeedSegueID" id="ifX-wQ-j9i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -185,16 +224,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehW-U8-BRE" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
-                                <rect key="frame" x="99" y="472" width="122" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="next step">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onNextStepButtonTap:" destination="jex-Mg-Ws8" eventType="touchUpInside" id="kIA-YJ-3lF"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What will you need?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnA-3f-e4x">
                                 <rect key="frame" x="35" y="90" width="251" height="53"/>
                                 <fontDescription key="fontDescription" name="Omnes-Semibold" family="Omnes" pointSize="23"/>
@@ -217,6 +246,19 @@
                                 </state>
                                 <connections>
                                     <action selector="onBackButtonTap:" destination="jex-Mg-Ws8" eventType="touchUpInside" id="GBh-vo-pbb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehW-U8-BRE" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                                <rect key="frame" x="99" y="472" width="122" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="next step">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="98" y="448" width="122" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onNextStepButtonTap:" destination="jex-Mg-Ws8" eventType="touchUpInside" id="kIA-YJ-3lF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -257,10 +299,26 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAp-hV-Oq1" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="182" y="468" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KgZ-UT-aAb"/>
+                                    <constraint firstAttribute="width" constant="122" id="mhB-gV-ixx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KgZ-UT-aAb"/>
+                                        <exclude reference="mhB-gV-ixx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="KgZ-UT-aAb"/>
+                                        <include reference="mhB-gV-ixx"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onNextStepButtonTap:" destination="ZTn-rB-F3S" eventType="touchUpInside" id="92X-3g-uGr"/>
                                 </connections>
@@ -352,9 +410,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvv-cj-Q81" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="468" width="158" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="FrA-8i-bfO"/>
+                                    <constraint firstAttribute="height" constant="30" id="Hd5-xl-KKh"/>
+                                </constraints>
                                 <state key="normal" title="don't show again">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FrA-8i-bfO"/>
+                                        <exclude reference="Hd5-xl-KKh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FrA-8i-bfO"/>
+                                        <include reference="Hd5-xl-KKh"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onBackButtonTap:" destination="ZTn-rB-F3S" eventType="touchUpInside" id="IIb-oe-Zla"/>
                                     <action selector="onDontShowAgainButtonTap:" destination="ZTn-rB-F3S" eventType="touchUpInside" id="bg7-QT-fvJ"/>
@@ -362,6 +436,31 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZxG-ys-KZ0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uAp-hV-Oq1" secondAttribute="bottom" constant="1" id="4eH-1r-kM9"/>
+                            <constraint firstItem="uAp-hV-Oq1" firstAttribute="top" secondItem="Cgu-tp-lZh" secondAttribute="bottom" priority="750" constant="448" id="ZrP-Up-8A7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uAp-hV-Oq1" secondAttribute="trailing" constant="-4" id="kMC-4t-aSs"/>
+                            <constraint firstItem="uAp-hV-Oq1" firstAttribute="leading" secondItem="Gvv-cj-Q81" secondAttribute="trailing" constant="8" id="oaP-4i-4bV"/>
+                            <constraint firstItem="Gvv-cj-Q81" firstAttribute="centerY" secondItem="uAp-hV-Oq1" secondAttribute="centerY" id="pjI-1i-ZOU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pjI-1i-ZOU"/>
+                                <exclude reference="ZrP-Up-8A7"/>
+                                <exclude reference="kMC-4t-aSs"/>
+                                <exclude reference="oaP-4i-4bV"/>
+                                <exclude reference="4eH-1r-kM9"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="pjI-1i-ZOU"/>
+                                <include reference="ZrP-Up-8A7"/>
+                                <include reference="kMC-4t-aSs"/>
+                                <include reference="oaP-4i-4bV"/>
+                                <include reference="4eH-1r-kM9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -445,9 +544,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8a-Fz-wQD" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="470" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="Bhw-4c-fPe"/>
+                                    <constraint firstAttribute="height" constant="30" id="dce-cJ-5uT"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Bhw-4c-fPe"/>
+                                        <exclude reference="dce-cJ-5uT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Bhw-4c-fPe"/>
+                                        <include reference="dce-cJ-5uT"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onNextButtonTap:" destination="3xa-fY-BOQ" eventType="touchUpInside" id="Bdt-7a-9MB"/>
                                     <segue destination="g5L-EC-a4O" kind="presentation" id="8lF-qg-coZ"/>
@@ -455,6 +570,25 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z8a-Fz-wQD" firstAttribute="centerX" secondItem="92m-No-akt" secondAttribute="centerX" id="47p-aj-ahp"/>
+                            <constraint firstItem="se3-F3-HWQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="z8a-Fz-wQD" secondAttribute="bottom" constant="1" id="rDV-1f-I38"/>
+                            <constraint firstItem="z8a-Fz-wQD" firstAttribute="top" secondItem="wDA-wd-wSi" secondAttribute="bottom" priority="750" constant="446" id="wYU-wa-aQu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="47p-aj-ahp"/>
+                                <exclude reference="wYU-wa-aQu"/>
+                                <exclude reference="rDV-1f-I38"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="47p-aj-ahp"/>
+                                <include reference="wYU-wa-aQu"/>
+                                <include reference="rDV-1f-I38"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -655,9 +789,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdG-9F-j3H" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="182" y="475" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="F81-DV-2s5"/>
+                                    <constraint firstAttribute="height" constant="30" id="dhY-q7-ek5"/>
+                                </constraints>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="F81-DV-2s5"/>
+                                        <exclude reference="dhY-q7-ek5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="F81-DV-2s5"/>
+                                        <include reference="dhY-q7-ek5"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onHomeButtonTap:" destination="ZrB-CM-p8v" eventType="touchUpInside" id="w3g-Jz-lWU"/>
                                 </connections>
@@ -680,9 +830,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFK-L7-6N6" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="475" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="Ogu-MT-Jre"/>
+                                    <constraint firstAttribute="height" constant="30" id="yEX-1H-S92"/>
+                                </constraints>
                                 <state key="normal" title="more info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ogu-MT-Jre"/>
+                                        <exclude reference="yEX-1H-S92"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ogu-MT-Jre"/>
+                                        <include reference="yEX-1H-S92"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="jjE-uG-gS9" kind="presentation" id="NfT-fl-cQo"/>
                                 </connections>
@@ -713,6 +879,31 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sdG-9F-j3H" firstAttribute="top" secondItem="6qB-GA-RA7" secondAttribute="bottom" priority="750" constant="455" id="8De-1R-Wfk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sdG-9F-j3H" secondAttribute="trailing" constant="-4" id="DaZ-4z-Uk4"/>
+                            <constraint firstItem="rGk-Tm-YdO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sdG-9F-j3H" secondAttribute="bottom" constant="1" id="FfS-mk-0Tb"/>
+                            <constraint firstItem="MFK-L7-6N6" firstAttribute="centerY" secondItem="sdG-9F-j3H" secondAttribute="centerY" id="HNQ-0l-Ttq"/>
+                            <constraint firstItem="sdG-9F-j3H" firstAttribute="leading" secondItem="MFK-L7-6N6" secondAttribute="trailing" constant="44" id="f17-UC-U7m"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HNQ-0l-Ttq"/>
+                                <exclude reference="8De-1R-Wfk"/>
+                                <exclude reference="DaZ-4z-Uk4"/>
+                                <exclude reference="f17-UC-U7m"/>
+                                <exclude reference="FfS-mk-0Tb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="HNQ-0l-Ttq"/>
+                                <include reference="8De-1R-Wfk"/>
+                                <include reference="DaZ-4z-Uk4"/>
+                                <include reference="f17-UC-U7m"/>
+                                <include reference="FfS-mk-0Tb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -862,9 +1053,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99b-Aw-u2b" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="474" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eOV-Yd-FIO"/>
+                                    <constraint firstAttribute="width" constant="122" id="fkw-3K-aCI"/>
+                                </constraints>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eOV-Yd-FIO"/>
+                                        <exclude reference="fkw-3K-aCI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="eOV-Yd-FIO"/>
+                                        <include reference="fkw-3K-aCI"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onHomeButtonTap:" destination="jjE-uG-gS9" eventType="touchUpInside" id="kCN-bo-xlJ"/>
                                 </connections>
@@ -880,6 +1087,25 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="99b-Aw-u2b" firstAttribute="centerX" secondItem="i1Y-nd-TdE" secondAttribute="centerX" id="N0A-1b-KGE"/>
+                            <constraint firstItem="99b-Aw-u2b" firstAttribute="top" secondItem="oM1-KE-ZB6" secondAttribute="bottom" priority="750" constant="454" id="Y0n-G2-865"/>
+                            <constraint firstItem="iRM-bs-rQL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="99b-Aw-u2b" secondAttribute="bottom" constant="1" id="ssB-hj-S9u"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="N0A-1b-KGE"/>
+                                <exclude reference="Y0n-G2-865"/>
+                                <exclude reference="ssB-hj-S9u"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="N0A-1b-KGE"/>
+                                <include reference="Y0n-G2-865"/>
+                                <include reference="ssB-hj-S9u"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
