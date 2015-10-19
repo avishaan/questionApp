@@ -19,16 +19,16 @@ class BNButtonNext: BNButton {
     self.titleLabel?.font = UIFont(name: kOmnesFontSemiBold, size: 20)
   }
 	
-	override func layoutSubviews() {
-		super.layoutSubviews()
-		print("layout view")
-		if (UIScreen.mainScreen().bounds.size.height == 480.0){
-			self.frame.origin.y = 480-30;
-		}
-	}
-	
-	func addProperties() {
-		
-	}
+//	override func layoutSubviews() {
+//		super.layoutSubviews()
+//		print("layout view")
+//		if (UIScreen.mainScreen().bounds.size.height == 480.0){
+//			self.frame.origin.y = 480-30;
+//		}
+//	}
+//	
+//	func addProperties() {
+//		
+//	}
 	
 }
