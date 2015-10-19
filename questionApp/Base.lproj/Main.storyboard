@@ -3936,7 +3936,7 @@ Try again in 2-4 weeks.</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ff9-tC-9wW">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-5j-Wtk" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-5j-Wtk" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="470" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -4434,12 +4434,28 @@ Try again in 2-4 weeks.</string>
                                     <action selector="onBackButtonTap:" destination="M3V-pE-xSE" eventType="touchUpInside" id="3DF-bY-6f9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-Kf-15I" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-Kf-15I" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="465" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3vM-9S-2Rm"/>
+                                    <constraint firstAttribute="width" constant="122" id="bK2-De-H04"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3vM-9S-2Rm"/>
+                                        <exclude reference="bK2-De-H04"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3vM-9S-2Rm"/>
+                                        <include reference="bK2-De-H04"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onNextButtonTap:" destination="M3V-pE-xSE" eventType="touchUpInside" id="ZDk-HE-ybP"/>
                                     <segue destination="Hok-oX-aTX" kind="presentation" id="CG7-nJ-dT8"/>
@@ -4447,6 +4463,25 @@ Try again in 2-4 weeks.</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7fW-Kf-15I" firstAttribute="top" secondItem="Jfw-JY-qd2" secondAttribute="bottom" priority="750" constant="445" id="cZw-3C-1YQ"/>
+                            <constraint firstItem="7fW-Kf-15I" firstAttribute="centerX" secondItem="aGt-9u-EBc" secondAttribute="centerX" id="eUb-aQ-3qn"/>
+                            <constraint firstItem="utP-ca-k7Z" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7fW-Kf-15I" secondAttribute="bottom" constant="1" id="gpJ-Zj-91h"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cZw-3C-1YQ"/>
+                                <exclude reference="eUb-aQ-3qn"/>
+                                <exclude reference="gpJ-Zj-91h"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="cZw-3C-1YQ"/>
+                                <include reference="eUb-aQ-3qn"/>
+                                <include reference="gpJ-Zj-91h"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -4633,7 +4668,7 @@ Try again in 2-4 weeks.</string>
                                 <color key="textColor" red="0.0078431377190000002" green="0.50196081400000003" blue="0.73725491759999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STd-Ks-ZHC" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STd-Ks-ZHC" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="167" y="452" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -4676,7 +4711,7 @@ Try again in 6-8 weeks.</string>
                                     <action selector="onBackButtonTap:" destination="oeU-k8-B3I" eventType="touchUpInside" id="z8c-AV-dEy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8j-0D-vNs" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8j-0D-vNs" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="32" y="452" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -5467,7 +5502,7 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
     <inferredMetricsTieBreakers>
         <segue reference="OZR-PC-mDf"/>
         <segue reference="b14-b1-AiE"/>
-        <segue reference="V9O-1I-FKI"/>
+        <segue reference="MXX-qq-YAy"/>
         <segue reference="rnh-PO-BrS"/>
         <segue reference="l69-DX-nDO"/>
         <segue reference="q3F-NO-Tfs"/>
