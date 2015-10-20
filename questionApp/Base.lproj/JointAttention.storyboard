@@ -266,7 +266,7 @@
                                     <action selector="onBackButtonTap:" destination="qOe-eI-qj3" eventType="touchUpInside" id="YP3-nU-3HP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC4-rj-JiV" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC4-rj-JiV" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="447" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -412,7 +412,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnU-NR-SHB" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnU-NR-SHB" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="179" y="468" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -439,7 +439,7 @@
                                     <segue destination="zXw-2L-uw1" kind="presentation" identifier="JointAttentionIsBabyReadyToTimeToTestSegueID" id="djc-jd-cDd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpE-Qo-h3z" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpE-Qo-h3z" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="468" width="158" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -638,7 +638,7 @@ verbal cues.</string>
                                     <action selector="onBackButtonTap:" destination="zXw-2L-uw1" eventType="touchUpInside" id="xyy-XF-Yvd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaQ-Yp-RD0" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaQ-Yp-RD0" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="481" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -815,7 +815,7 @@ verbal cues.</string>
                                     <action selector="onBackButtonTap:" destination="IX3-E9-Cx9" eventType="touchUpInside" id="SwP-Yf-oQG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujO-DY-KS0" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujO-DY-KS0" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="182" y="475" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -883,7 +883,7 @@ verbal cues.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIw-U6-dQq" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIw-U6-dQq" customClass="BNAuxiliaryButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="475" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
