@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="OmnesMed.ttf">
@@ -50,9 +52,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fq-Pw-ZX3" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="470" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="1VI-ex-SME"/>
+                                    <constraint firstAttribute="height" constant="30" id="rMn-9k-jnl"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1VI-ex-SME"/>
+                                        <exclude reference="rMn-9k-jnl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1VI-ex-SME"/>
+                                        <include reference="rMn-9k-jnl"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="X1F-0G-vu1" kind="presentation" id="e56-we-alJ"/>
                                 </connections>
@@ -90,9 +108,27 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cjB-pD-Qnj" firstAttribute="top" secondItem="6Fq-Pw-ZX3" secondAttribute="bottom" multiplier="1.01" constant="24" id="cyd-vC-HxR">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="6Fq-Pw-ZX3" firstAttribute="centerX" secondItem="WJx-ea-9Ev" secondAttribute="centerX" id="ku4-zq-AHf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ku4-zq-AHf"/>
+                                <exclude reference="cyd-vC-HxR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ku4-zq-AHf"/>
+                                <include reference="cyd-vC-HxR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="DFS-Wv-4KR" id="vyF-qZ-oiu"/>
@@ -120,9 +156,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TV7-D2-WYu" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8hR-1b-XZW"/>
+                                    <constraint firstAttribute="width" constant="122" id="J6Y-rv-U5X"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8hR-1b-XZW"/>
+                                        <exclude reference="J6Y-rv-U5X"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8hR-1b-XZW"/>
+                                        <include reference="J6Y-rv-U5X"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="TxU-1h-gBp" kind="presentation" identifier="pincerWhatWillYouNeedSegueID" id="dgK-zK-ZMX"/>
                                 </connections>
@@ -156,6 +208,24 @@
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m2U-pO-Ova" firstAttribute="top" secondItem="TV7-D2-WYu" secondAttribute="bottom" multiplier="1.006" constant="66" id="Qa3-tb-pBX">
+                                <variation key="widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="TV7-D2-WYu" firstAttribute="centerX" secondItem="V5h-zk-iIj" secondAttribute="centerX" id="Xof-rk-gFs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xof-rk-gFs"/>
+                                <exclude reference="Qa3-tb-pBX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Xof-rk-gFs"/>
+                                <include reference="Qa3-tb-pBX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -187,9 +257,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTd-yY-LNN" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="YVm-g5-JZK"/>
+                                    <constraint firstAttribute="height" constant="30" id="dtc-Zr-bcZ"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YVm-g5-JZK"/>
+                                        <exclude reference="dtc-Zr-bcZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="YVm-g5-JZK"/>
+                                        <include reference="dtc-Zr-bcZ"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onNextStepButtonTap:" destination="TxU-1h-gBp" eventType="touchUpInside" id="0LH-v6-bOh"/>
                                 </connections>
@@ -220,6 +306,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FTd-yY-LNN" firstAttribute="centerX" secondItem="Eqn-JN-k6b" secondAttribute="centerX" id="6hj-qI-mQq"/>
+                            <constraint firstItem="juy-EF-v8N" firstAttribute="top" secondItem="FTd-yY-LNN" secondAttribute="bottom" multiplier="1.007" constant="66" id="E8v-lu-AIl">
+                                <variation key="widthClass=compact" constant="5"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6hj-qI-mQq"/>
+                                <exclude reference="E8v-lu-AIl"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6hj-qI-mQq"/>
+                                <include reference="E8v-lu-AIl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -253,13 +357,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbN-RG-Tyy" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbN-RG-Tyy" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="182" y="468" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cut-B5-S5R"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Cut-B5-S5R"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Cut-B5-S5R"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onNextStepButtonTap:" destination="tJC-9l-iVZ" eventType="touchUpInside" id="Rry-t7-S79"/>
                                 </connections>
@@ -361,6 +478,42 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NdW-Le-vwj" secondAttribute="trailing" constant="126" id="CX5-fG-4BW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cbN-RG-Tyy" secondAttribute="trailing" constant="-4" id="GCM-Pt-Rsv"/>
+                            <constraint firstItem="cbN-RG-Tyy" firstAttribute="height" secondItem="1vr-RR-mRT" secondAttribute="height" id="UrF-Cv-QDb"/>
+                            <constraint firstItem="cbN-RG-Tyy" firstAttribute="leading" secondItem="NdW-Le-vwj" secondAttribute="trailing" constant="8" id="YRb-LB-7tS"/>
+                            <constraint firstItem="NdW-Le-vwj" firstAttribute="width" secondItem="cbN-RG-Tyy" secondAttribute="width" multiplier="1.25" id="jis-JV-CV9"/>
+                            <constraint firstItem="pT0-vv-Tj4" firstAttribute="top" secondItem="cbN-RG-Tyy" secondAttribute="bottom" multiplier="1.0007" constant="70" id="mto-sn-ZaZ">
+                                <variation key="widthClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="cbN-RG-Tyy" firstAttribute="centerY" secondItem="NdW-Le-vwj" secondAttribute="centerY" id="req-cQ-TjC"/>
+                            <constraint firstItem="NdW-Le-vwj" firstAttribute="leading" secondItem="1vr-RR-mRT" secondAttribute="leadingMargin" constant="-4" id="rjK-ej-CcW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CX5-fG-4BW"/>
+                                <exclude reference="jis-JV-CV9"/>
+                                <exclude reference="rjK-ej-CcW"/>
+                                <exclude reference="GCM-Pt-Rsv"/>
+                                <exclude reference="UrF-Cv-QDb"/>
+                                <exclude reference="YRb-LB-7tS"/>
+                                <exclude reference="req-cQ-TjC"/>
+                                <exclude reference="mto-sn-ZaZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="CX5-fG-4BW"/>
+                                <include reference="jis-JV-CV9"/>
+                                <include reference="rjK-ej-CcW"/>
+                                <include reference="GCM-Pt-Rsv"/>
+                                <exclude reference="UrF-Cv-QDb"/>
+                                <include reference="YRb-LB-7tS"/>
+                                <include reference="req-cQ-TjC"/>
+                                <include reference="mto-sn-ZaZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -440,9 +593,25 @@ and encourage baby to pick object up.</string>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0r-Wh-sJK" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="465" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jaj-Ma-Rxp"/>
+                                    <constraint firstAttribute="width" constant="122" id="cgK-ny-4TB"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Jaj-Ma-Rxp"/>
+                                        <exclude reference="cgK-ny-4TB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Jaj-Ma-Rxp"/>
+                                        <include reference="cgK-ny-4TB"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onNextButtonTap:" destination="mE5-uu-8yx" eventType="touchUpInside" id="ToP-Ih-Vjg"/>
                                     <segue destination="5Jm-JB-CMH" kind="presentation" id="gyn-vX-EBL"/>
@@ -450,6 +619,24 @@ and encourage baby to pick object up.</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GtY-vO-U25" firstAttribute="top" secondItem="K0r-Wh-sJK" secondAttribute="bottom" multiplier="1.01" constant="73" id="J5o-sz-yUZ">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="K0r-Wh-sJK" firstAttribute="centerX" secondItem="pzt-cq-EYo" secondAttribute="centerX" id="RCj-r9-9n7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RCj-r9-9n7"/>
+                                <exclude reference="J5o-sz-yUZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="RCj-r9-9n7"/>
+                                <include reference="J5o-sz-yUZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -716,6 +903,42 @@ and encourage baby to pick object up.</string>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="moP-aH-M2v" firstAttribute="height" secondItem="RSs-vE-slX" secondAttribute="height" id="0pm-fo-4Fk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RSs-vE-slX" secondAttribute="trailing" constant="163" id="2mC-wV-x95"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RSs-vE-slX" secondAttribute="trailing" constant="163" id="7Cf-09-Vho"/>
+                            <constraint firstItem="moP-aH-M2v" firstAttribute="centerY" secondItem="RSs-vE-slX" secondAttribute="centerY" id="Cwv-ud-vYW"/>
+                            <constraint firstItem="moP-aH-M2v" firstAttribute="leading" secondItem="RSs-vE-slX" secondAttribute="trailing" constant="45" id="DHu-SQ-QfU"/>
+                            <constraint firstItem="moP-aH-M2v" firstAttribute="width" secondItem="RSs-vE-slX" secondAttribute="width" id="gtD-qx-rQ2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="moP-aH-M2v" secondAttribute="trailing" constant="-4" id="h0l-78-eMt"/>
+                            <constraint firstItem="715-p8-Bb3" firstAttribute="top" secondItem="moP-aH-M2v" secondAttribute="bottom" multiplier="1.007" constant="63" id="liF-m7-6vI">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2mC-wV-x95"/>
+                                <exclude reference="7Cf-09-Vho"/>
+                                <exclude reference="0pm-fo-4Fk"/>
+                                <exclude reference="Cwv-ud-vYW"/>
+                                <exclude reference="DHu-SQ-QfU"/>
+                                <exclude reference="gtD-qx-rQ2"/>
+                                <exclude reference="h0l-78-eMt"/>
+                                <exclude reference="liF-m7-6vI"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="2mC-wV-x95"/>
+                                <exclude reference="7Cf-09-Vho"/>
+                                <include reference="0pm-fo-4Fk"/>
+                                <include reference="Cwv-ud-vYW"/>
+                                <include reference="DHu-SQ-QfU"/>
+                                <include reference="gtD-qx-rQ2"/>
+                                <include reference="h0l-78-eMt"/>
+                                <include reference="liF-m7-6vI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -862,9 +1085,25 @@ and pencils!</string>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa9-dG-gDl" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="474" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jwo-l4-TKl"/>
+                                    <constraint firstAttribute="width" constant="122" id="VLH-0q-ayQ"/>
+                                </constraints>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Jwo-l4-TKl"/>
+                                        <exclude reference="VLH-0q-ayQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Jwo-l4-TKl"/>
+                                        <include reference="VLH-0q-ayQ"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onHomeButtonTap:" destination="6zV-sh-MqW" eventType="touchUpInside" id="PLU-pe-GD1"/>
                                 </connections>
@@ -880,6 +1119,24 @@ and pencils!</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LH4-HK-mWq" firstAttribute="top" secondItem="fa9-dG-gDl" secondAttribute="bottom" multiplier="1.007" constant="64" id="HSg-62-ZUE">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="fa9-dG-gDl" firstAttribute="centerX" secondItem="hSh-CE-Nus" secondAttribute="centerX" id="aQG-Wv-Iar"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aQG-Wv-Iar"/>
+                                <exclude reference="HSg-62-ZUE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="aQG-Wv-Iar"/>
+                                <include reference="HSg-62-ZUE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -955,7 +1212,7 @@ and pencils!</string>
         <image name="unselectedRadioButton" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="I2z-zt-CjM"/>
         <segue reference="hso-3l-62Y"/>
+        <segue reference="I2z-zt-CjM"/>
     </inferredMetricsTieBreakers>
 </document>
