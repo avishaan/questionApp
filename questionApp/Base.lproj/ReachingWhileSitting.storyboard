@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="OmnesMed.ttf">
@@ -51,9 +53,25 @@
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V48-a3-kyB" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="470" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oA0-05-kx9"/>
+                                    <constraint firstAttribute="width" constant="122" id="rLI-3g-iyy"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oA0-05-kx9"/>
+                                        <exclude reference="rLI-3g-iyy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="oA0-05-kx9"/>
+                                        <include reference="rLI-3g-iyy"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="AzZ-4Q-lSd" kind="presentation" id="pwg-qC-oO4"/>
                                 </connections>
@@ -96,9 +114,27 @@ bmcuA
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V48-a3-kyB" firstAttribute="centerX" secondItem="owo-Cg-VUI" secondAttribute="centerX" id="9GM-Wc-Kcm"/>
+                            <constraint firstItem="EBG-MU-1Ya" firstAttribute="top" secondItem="V48-a3-kyB" secondAttribute="bottom" multiplier="1.01" constant="68" id="BE1-2L-Tia">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9GM-Wc-Kcm"/>
+                                <exclude reference="BE1-2L-Tia"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="9GM-Wc-Kcm"/>
+                                <include reference="BE1-2L-Tia"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="Yyb-jD-KTj" id="wfo-5t-QP8"/>
@@ -126,9 +162,25 @@ bmcuA
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqI-Kh-yud" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="CkB-vL-GTb"/>
+                                    <constraint firstAttribute="height" constant="30" id="MMm-72-Z1N"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CkB-vL-GTb"/>
+                                        <exclude reference="MMm-72-Z1N"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CkB-vL-GTb"/>
+                                        <include reference="MMm-72-Z1N"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="f3o-wh-ptW" kind="presentation" identifier="reachingWhileSittingWhatWillYouNeedSegueID" id="YBa-a7-8Az"/>
                                 </connections>
@@ -162,6 +214,24 @@ bmcuA
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wqI-Kh-yud" firstAttribute="centerX" secondItem="OF3-ms-jq3" secondAttribute="centerX" id="L97-si-Zza"/>
+                            <constraint firstItem="mZ0-n9-nke" firstAttribute="top" secondItem="wqI-Kh-yud" secondAttribute="bottom" multiplier="1.01" constant="66" id="PV9-lQ-vii">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L97-si-Zza"/>
+                                <exclude reference="PV9-lQ-vii"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="L97-si-Zza"/>
+                                <include reference="PV9-lQ-vii"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -193,9 +263,25 @@ bmcuA
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmp-EU-TKc" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="99" y="472" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="lqa-0e-Q5p"/>
+                                    <constraint firstAttribute="height" constant="30" id="s0q-et-vGB"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lqa-0e-Q5p"/>
+                                        <exclude reference="s0q-et-vGB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="lqa-0e-Q5p"/>
+                                        <include reference="s0q-et-vGB"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onNextStepButtonTap:" destination="f3o-wh-ptW" eventType="touchUpInside" id="21t-wd-cmT"/>
                                 </connections>
@@ -226,6 +312,24 @@ bmcuA
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SRY-iM-Abz" firstAttribute="top" secondItem="wmp-EU-TKc" secondAttribute="bottom" multiplier="1.01" constant="66" id="AR2-9S-pAc">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="wmp-EU-TKc" firstAttribute="centerX" secondItem="Nm2-yJ-SIm" secondAttribute="centerX" id="OK2-3O-CUe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OK2-3O-CUe"/>
+                                <exclude reference="AR2-9S-pAc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="OK2-3O-CUe"/>
+                                <include reference="AR2-9S-pAc"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -262,10 +366,26 @@ bmcuA
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUn-yV-Tai" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="182" y="468" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="5jg-v5-FoL"/>
+                                    <constraint firstAttribute="height" constant="30" id="JEU-c2-aPA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5jg-v5-FoL"/>
+                                        <exclude reference="JEU-c2-aPA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="5jg-v5-FoL"/>
+                                        <include reference="JEU-c2-aPA"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onNextStepButtonTap:" destination="1lK-te-V33" eventType="touchUpInside" id="fQs-ag-jfe"/>
                                 </connections>
@@ -367,6 +487,36 @@ bmcuA
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ap1-2i-T2i" firstAttribute="top" secondItem="sUn-yV-Tai" secondAttribute="bottom" multiplier="1.01" constant="70" id="3HU-BO-WOr">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="sUn-yV-Tai" firstAttribute="leading" secondItem="Qnm-8E-9Jx" secondAttribute="trailing" constant="8" id="70b-Ga-Cwd"/>
+                            <constraint firstItem="Qnm-8E-9Jx" firstAttribute="centerY" secondItem="sUn-yV-Tai" secondAttribute="centerY" id="htx-Gw-Iwm"/>
+                            <constraint firstItem="Qnm-8E-9Jx" firstAttribute="height" secondItem="sUn-yV-Tai" secondAttribute="height" id="raa-0Q-HTa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sUn-yV-Tai" secondAttribute="trailing" constant="-4" id="tdu-cQ-KfE"/>
+                            <constraint firstItem="Qnm-8E-9Jx" firstAttribute="leading" secondItem="ksC-7h-keQ" secondAttribute="leadingMargin" constant="-4" id="zNT-Nj-r4Q"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="htx-Gw-Iwm"/>
+                                <exclude reference="raa-0Q-HTa"/>
+                                <exclude reference="zNT-Nj-r4Q"/>
+                                <exclude reference="70b-Ga-Cwd"/>
+                                <exclude reference="tdu-cQ-KfE"/>
+                                <exclude reference="3HU-BO-WOr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="htx-Gw-Iwm"/>
+                                <include reference="raa-0Q-HTa"/>
+                                <include reference="zNT-Nj-r4Q"/>
+                                <include reference="70b-Ga-Cwd"/>
+                                <include reference="tdu-cQ-KfE"/>
+                                <include reference="3HU-BO-WOr"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -413,6 +563,9 @@ bmcuA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="129" width="260" height="311"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwF-H5-fhn">
                                 <rect key="frame" x="52" y="119" width="222" height="121"/>
@@ -448,9 +601,25 @@ position.</string>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uN-06-TUx" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="94" y="468" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rly-mD-uRp"/>
+                                    <constraint firstAttribute="width" constant="122" id="cbo-b1-Sll"/>
+                                </constraints>
                                 <state key="normal" title="next step">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Rly-mD-uRp"/>
+                                        <exclude reference="cbo-b1-Sll"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Rly-mD-uRp"/>
+                                        <include reference="cbo-b1-Sll"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="j4R-It-zho" kind="presentation" id="kfk-gB-zbt"/>
                                 </connections>
@@ -463,6 +632,24 @@ position.</string>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5o7-PL-t1p" firstAttribute="top" secondItem="6uN-06-TUx" secondAttribute="bottom" multiplier="1.01" constant="70" id="2xq-Jv-QFV">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="6uN-06-TUx" firstAttribute="centerX" secondItem="gqx-LT-O8M" secondAttribute="centerX" id="Mdr-Bn-k6l"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mdr-Bn-k6l"/>
+                                <exclude reference="2xq-Jv-QFV"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Mdr-Bn-k6l"/>
+                                <include reference="2xq-Jv-QFV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -716,15 +903,71 @@ position.</string>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpH-sn-C4d" customClass="BNButtonNext" customModule="questionApp" customModuleProvider="target">
                                 <rect key="frame" x="182" y="482" width="122" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ob1-oB-1lN"/>
+                                </constraints>
                                 <state key="normal" title="home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ob1-oB-1lN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ob1-oB-1lN"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="onHomeButtonTap:" destination="Ffs-lR-bUX" eventType="touchUpInside" id="exF-17-dMu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Uo-zF-zEf" firstAttribute="leading" secondItem="u6N-zM-BAd" secondAttribute="leadingMargin" constant="-4" id="4gZ-10-nej"/>
+                            <constraint firstItem="cpH-sn-C4d" firstAttribute="width" secondItem="9Uo-zF-zEf" secondAttribute="width" id="4pz-B6-9PF"/>
+                            <constraint firstItem="V0s-nc-Xru" firstAttribute="top" secondItem="cpH-sn-C4d" secondAttribute="bottom" multiplier="1.01" constant="56" id="8ML-sM-erF">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="cpH-sn-C4d" firstAttribute="leading" secondItem="9Uo-zF-zEf" secondAttribute="trailing" constant="166" id="E0B-sn-4oV">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="cpH-sn-C4d" firstAttribute="leading" secondItem="9Uo-zF-zEf" secondAttribute="trailing" constant="44" id="VTS-hr-mHw">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="cpH-sn-C4d" firstAttribute="height" secondItem="9Uo-zF-zEf" secondAttribute="height" id="W0v-ak-9Rn"/>
+                            <constraint firstItem="9Uo-zF-zEf" firstAttribute="centerY" secondItem="cpH-sn-C4d" secondAttribute="centerY" id="cbn-hu-tXC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cpH-sn-C4d" secondAttribute="trailing" constant="-4" id="fkg-Sm-fUJ"/>
+                            <constraint firstItem="cpH-sn-C4d" firstAttribute="width" secondItem="9Uo-zF-zEf" secondAttribute="width" id="jMh-Yf-WN3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4gZ-10-nej"/>
+                                <exclude reference="cbn-hu-tXC"/>
+                                <exclude reference="4pz-B6-9PF"/>
+                                <exclude reference="E0B-sn-4oV"/>
+                                <exclude reference="VTS-hr-mHw"/>
+                                <exclude reference="W0v-ak-9Rn"/>
+                                <exclude reference="fkg-Sm-fUJ"/>
+                                <exclude reference="jMh-Yf-WN3"/>
+                                <exclude reference="8ML-sM-erF"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4gZ-10-nej"/>
+                                <include reference="cbn-hu-tXC"/>
+                                <include reference="4pz-B6-9PF"/>
+                                <include reference="E0B-sn-4oV"/>
+                                <exclude reference="VTS-hr-mHw"/>
+                                <include reference="W0v-ak-9Rn"/>
+                                <include reference="fkg-Sm-fUJ"/>
+                                <exclude reference="jMh-Yf-WN3"/>
+                                <include reference="8ML-sM-erF"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -737,7 +980,7 @@ position.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjV-t1-drw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8162" y="1900"/>
+            <point key="canvasLocation" x="8161.5" y="1900"/>
         </scene>
         <!--Reaching While Sitting Activity Reminder View Controller-->
         <scene sceneID="JvQ-AO-3dC">
