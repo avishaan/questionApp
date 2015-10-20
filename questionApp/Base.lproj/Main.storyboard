@@ -326,7 +326,7 @@
                                     <!--2015-06-10 10:01:00 +0000-->
                                 </date>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="6" y="270" width="308" height="179"/>
+                                    <rect key="frame" x="6" y="270" width="308" height="189"/>
                                 </variation>
                                 <connections>
                                     <action selector="onDatePickerTap:" destination="FYu-vj-N2f" eventType="valueChanged" id="UNy-AO-uoE"/>
@@ -378,14 +378,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="86S-pI-6Ql" secondAttribute="trailing" constant="8" id="0cX-CU-bfK"/>
-                            <constraint firstItem="YzN-bf-jI0" firstAttribute="centerX" secondItem="VOq-dk-v84" secondAttribute="centerX" id="5YW-uD-X49"/>
-                            <constraint firstItem="kt3-R0-PJx" firstAttribute="top" secondItem="YzN-bf-jI0" secondAttribute="bottom" constant="18" id="PYh-Ij-fXX"/>
+                            <constraint firstItem="YzN-bf-jI0" firstAttribute="top" secondItem="TKa-wv-bRG" secondAttribute="bottom" priority="750" constant="496" id="FBn-br-qg0"/>
+                            <constraint firstItem="kt3-R0-PJx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YzN-bf-jI0" secondAttribute="bottom" constant="1" id="PYh-Ij-fXX"/>
                             <constraint firstItem="S2E-Sh-ToX" firstAttribute="centerX" secondItem="304-aL-ian" secondAttribute="centerX" constant="97" id="R8x-6Q-bfm"/>
                             <constraint firstItem="86S-pI-6Ql" firstAttribute="height" secondItem="304-aL-ian" secondAttribute="height" id="U2D-4K-vtR"/>
                             <constraint firstItem="304-aL-ian" firstAttribute="top" secondItem="86S-pI-6Ql" secondAttribute="bottom" constant="16" id="XvF-Hc-SKN"/>
                             <constraint firstItem="4RV-76-Pw0" firstAttribute="leading" secondItem="304-aL-ian" secondAttribute="leading" id="Y53-aT-hwN"/>
                             <constraint firstItem="86S-pI-6Ql" firstAttribute="width" secondItem="304-aL-ian" secondAttribute="width" id="bCT-0l-c5z"/>
                             <constraint firstItem="S2E-Sh-ToX" firstAttribute="top" secondItem="4RV-76-Pw0" secondAttribute="top" constant="-1" id="c4q-Ni-YRp"/>
+                            <constraint firstItem="YzN-bf-jI0" firstAttribute="centerX" secondItem="VOq-dk-v84" secondAttribute="centerX" id="h61-EE-yU0"/>
                             <constraint firstItem="86S-pI-6Ql" firstAttribute="centerX" secondItem="304-aL-ian" secondAttribute="centerX" id="itg-0Y-pcf"/>
                             <constraint firstItem="4RV-76-Pw0" firstAttribute="height" secondItem="304-aL-ian" secondAttribute="height" id="k1O-gv-San"/>
                             <constraint firstItem="4RV-76-Pw0" firstAttribute="top" secondItem="304-aL-ian" secondAttribute="bottom" constant="17" id="lF0-Sd-4m0"/>
@@ -394,13 +395,15 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="5YW-uD-X49"/>
+                                <exclude reference="FBn-br-qg0"/>
+                                <exclude reference="h61-EE-yU0"/>
                                 <exclude reference="PYh-Ij-fXX"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="5YW-uD-X49"/>
+                                <include reference="FBn-br-qg0"/>
+                                <include reference="h61-EE-yU0"/>
                                 <include reference="PYh-Ij-fXX"/>
                             </mask>
                         </variation>
@@ -518,18 +521,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="I9e-uZ-I5Q" firstAttribute="top" secondItem="rkm-ga-89O" secondAttribute="bottom" constant="18" id="pK8-ig-0dD"/>
-                            <constraint firstItem="rkm-ga-89O" firstAttribute="centerX" secondItem="fe1-9j-pgg" secondAttribute="centerX" id="xXe-zW-Fy1"/>
+                            <constraint firstItem="rkm-ga-89O" firstAttribute="top" secondItem="aLD-IC-r9l" secondAttribute="bottom" priority="750" constant="496" id="GhM-Mm-2DN"/>
+                            <constraint firstItem="rkm-ga-89O" firstAttribute="centerX" secondItem="fe1-9j-pgg" secondAttribute="centerX" id="UX6-Qb-y9u"/>
+                            <constraint firstItem="I9e-uZ-I5Q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rkm-ga-89O" secondAttribute="bottom" constant="1" id="pK8-ig-0dD"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="xXe-zW-Fy1"/>
+                                <exclude reference="GhM-Mm-2DN"/>
+                                <exclude reference="UX6-Qb-y9u"/>
                                 <exclude reference="pK8-ig-0dD"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="xXe-zW-Fy1"/>
+                                <include reference="GhM-Mm-2DN"/>
+                                <include reference="UX6-Qb-y9u"/>
                                 <include reference="pK8-ig-0dD"/>
                             </mask>
                         </variation>
@@ -5827,12 +5833,12 @@ aXN0IGV2ZW4gd2hlbiB3ZSBjYW7igJl0IHNlZSwgaGVhciwgdG91Y2ggAyhvciBjaGV3KSB0aGVtLg
         <image name="whyIsCrawling" width="320" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rnh-PO-BrS"/>
-        <segue reference="bXU-UG-Zw5"/>
         <segue reference="l69-DX-nDO"/>
-        <segue reference="5kc-Dh-C8o"/>
-        <segue reference="OZR-PC-mDf"/>
-        <segue reference="b14-b1-AiE"/>
+        <segue reference="tN8-4m-JPM"/>
         <segue reference="q3F-NO-Tfs"/>
+        <segue reference="b14-b1-AiE"/>
+        <segue reference="OZR-PC-mDf"/>
+        <segue reference="bXU-UG-Zw5"/>
+        <segue reference="rnh-PO-BrS"/>
     </inferredMetricsTieBreakers>
 </document>
