@@ -16,6 +16,6 @@ class BNFacebookButton: BNButtonNext {
     override func drawRect(rect: CGRect) {
         // Drawing code
         super.drawRect(rect)
-        self.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        self.setTitleColor(UIColor(red: 59/255, green: 89/255, blue: 152/255, alpha: 1.0), forState: .Normal)
     }
 }
