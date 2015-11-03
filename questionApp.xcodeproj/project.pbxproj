@@ -210,6 +210,9 @@
 		82BA147D1B54167B00B18A21 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BA147C1B54167B00B18A21 /* ChartViewController.swift */; };
 		82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C49BF91B424934002998C2 /* LaunchScreen.xcassets */; };
 		82D1415B1B41289F0048434F /* PupilResponseTimeToTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1415A1B41289F0048434F /* PupilResponseTimeToTestViewController.swift */; };
+		82D2BED51BE8B66800489AAF /* libGoogleConversionTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D2BED31BE8B66800489AAF /* libGoogleConversionTracking.a */; settings = {ASSET_TAGS = (); }; };
+		82D2BED61BE8B66800489AAF /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82D2BED41BE8B66800489AAF /* README.txt */; settings = {ASSET_TAGS = (); }; };
+		82D2BED81BE8B69100489AAF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D2BED71BE8B69100489AAF /* AdSupport.framework */; };
 		82D641E81B4908590013D5FB /* BNBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D641E71B4908590013D5FB /* BNBackButton.swift */; };
 		82D641EA1B49DA900013D5FB /* BNUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D641E91B49DA900013D5FB /* BNUIViewController.swift */; };
 		82D641EC1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D641EB1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift */; };
@@ -730,6 +733,13 @@
 		82BA147C1B54167B00B18A21 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		82C49BF91B424934002998C2 /* LaunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchScreen.xcassets; sourceTree = "<group>"; };
 		82D1415A1B41289F0048434F /* PupilResponseTimeToTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseTimeToTestViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
+		82D2BECE1BE8B66800489AAF /* ACTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTReporter.h; sourceTree = "<group>"; };
+		82D2BED01BE8B66800489AAF /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		82D2BED21BE8B66800489AAF /* DCTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTReporter.h; sourceTree = "<group>"; };
+		82D2BED31BE8B66800489AAF /* libGoogleConversionTracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleConversionTracking.a; sourceTree = "<group>"; };
+		82D2BED41BE8B66800489AAF /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		82D2BED71BE8B69100489AAF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		82D2BED91BE8B84C00489AAF /* Adwords-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Adwords-Bridging-Header.h"; sourceTree = "<group>"; };
 		82D641E71B4908590013D5FB /* BNBackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNBackButton.swift; sourceTree = "<group>"; };
 		82D641E91B49DA900013D5FB /* BNUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNUIViewController.swift; sourceTree = "<group>"; };
 		82D641EB1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseMoreInformationViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
@@ -953,8 +963,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D2BED81BE8B69100489AAF /* AdSupport.framework in Frameworks */,
 				15371A5E1BBA0AEA001EC5E4 /* Charts.framework in Frameworks */,
 				8270B3001B81E7C000DFFB52 /* libicucore.A.dylib in Frameworks */,
+				82D2BED51BE8B66800489AAF /* libGoogleConversionTracking.a in Frameworks */,
 				8270B2FE1B81E70800DFFB52 /* Security.framework in Frameworks */,
 				82FA88E81BBD06C100474063 /* Charts.framework in Frameworks */,
 				8270B2FC1B81E6FE00DFFB52 /* CFNetwork.framework in Frameworks */,
@@ -1239,6 +1251,7 @@
 			isa = PBXGroup;
 			children = (
 				8270B2FA1B81E35800DFFB52 /* Mixpanel-Bridging-Header.h */,
+				82D2BED91BE8B84C00489AAF /* Adwords-Bridging-Header.h */,
 			);
 			name = "Bridging Headers";
 			sourceTree = "<group>";
@@ -1285,6 +1298,7 @@
 		829F54E61B26995800ABE77C /* questionApp */ = {
 			isa = PBXGroup;
 			children = (
+				82D2BECC1BE8B62100489AAF /* Adwords */,
 				826DDAD71B94D2600098508B /* FeedbackViewControllers */,
 				8270B2291B81DFF000DFFB52 /* Mixpanel */,
 				9E923CD11B6A9B5F00F2B0A7 /* ViewClasses */,
@@ -1364,6 +1378,42 @@
 				826A90341BAE385900230667 /* visual tracking.mp4 */,
 			);
 			name = videos;
+			sourceTree = "<group>";
+		};
+		82D2BECC1BE8B62100489AAF /* Adwords */ = {
+			isa = PBXGroup;
+			children = (
+				82D2BECD1BE8B66800489AAF /* GoogleConversionTrackingSDK-iOS-3.2.0 */,
+			);
+			name = Adwords;
+			sourceTree = "<group>";
+		};
+		82D2BECD1BE8B66800489AAF /* GoogleConversionTrackingSDK-iOS-3.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				82D2BECE1BE8B66800489AAF /* ACTReporter.h */,
+				82D2BECF1BE8B66800489AAF /* Deprecated */,
+				82D2BED11BE8B66800489AAF /* DoubleClick */,
+				82D2BED31BE8B66800489AAF /* libGoogleConversionTracking.a */,
+				82D2BED41BE8B66800489AAF /* README.txt */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-3.2.0";
+			sourceTree = "<group>";
+		};
+		82D2BECF1BE8B66800489AAF /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				82D2BED01BE8B66800489AAF /* GoogleConversionPing.h */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		82D2BED11BE8B66800489AAF /* DoubleClick */ = {
+			isa = PBXGroup;
+			children = (
+				82D2BED21BE8B66800489AAF /* DCTReporter.h */,
+			);
+			path = DoubleClick;
 			sourceTree = "<group>";
 		};
 		82D641F11B49F9EE0013D5FB /* Models */ = {
@@ -1796,6 +1846,7 @@
 		D2EEA5935BC0721B0E683DDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82D2BED71BE8B69100489AAF /* AdSupport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1934,6 +1985,7 @@
 				826A904A1BAE385900230667 /* visual tracking.mp4 in Resources */,
 				826A90391BAE385900230667 /* emotional security.mp4 in Resources */,
 				824BBD581BB64228001C9D5D /* BNVideoPlayer.xib in Resources */,
+				82D2BED61BE8B66800489AAF /* README.txt in Resources */,
 				82C49BFA1B424934002998C2 /* LaunchScreen.xcassets in Resources */,
 				826A903E1BAE385900230667 /* let's crawl.mp4 in Resources */,
 				20DA0E701B72E70D00B17C28 /* UnassistedSitting.storyboard in Resources */,
@@ -2528,6 +2580,10 @@
 				INFOPLIST_FILE = questionApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/questionApp/GoogleConversionTrackingSDK-iOS-3.2.0",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2547,6 +2603,10 @@
 				INFOPLIST_FILE = questionApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/questionApp/GoogleConversionTrackingSDK-iOS-3.2.0",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

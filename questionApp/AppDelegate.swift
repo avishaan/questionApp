@@ -38,6 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		Mixpanel.sharedInstanceWithToken(config().mixpanel.token)
 		// Override point for customization after application launch.
 		mixpanel.track("App Launch")
+		// Google Adwords conversion tracking
+		ACTConversionReporter.reportWithConversionID("896533751", label: "sx6UCKCl_2AQ94nAqwM", value: "0.00", isRepeatable: false)
 		
 //		if let options = launchOptions {
 //			println("invoke BNLocalNotification from didFinishLaunchingWithOptions: launchOptions = \(launchOptions)")
