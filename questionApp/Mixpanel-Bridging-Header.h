@@ -12,5 +12,6 @@
 #import "Mixpanel/Mixpanel.h"
 #import <CommonCrypto/CommonCrypto.h>
 #import "ACTReporter.h"
+#import "FBSDKCoreKit/FBSDKCoreKit.h"
 
 #endif
