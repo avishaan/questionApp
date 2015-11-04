@@ -78,7 +78,18 @@ struct Tracker {
     case Overview = "test overview"
     
   }
+	
+  /**
+	Different share methods to track
   
+  */
+	enum ShareMethod:String {
+		case Unknown = "Unknown" // incase we don't know the share type
+		case Facebook = "Facebook"
+		case SMS = "SMS"
+		case Email = "Email"
+	}
+	
   /**
     creates an event in the underlying analytics framework
   
@@ -89,10 +100,28 @@ struct Tracker {
     
     mixpanel.track(sentence, properties: ["name": event.name, "action": event.action, "progress": event.progress])
   }
+	
+	// allows us to track the number of times someone has shared as well as their share method
+	static func incrementNumShares(shareMethod:ShareMethod = .Unknown) {
+		mixpanel.people.increment("numShares", by: 1)
+	}
+	
+	// save the feedback rating, text, and whether or not they finished the submission (vs just canceling)
+	static func setFeedbackInfo(rating:Int, text:String, finishedSubmit:Bool) {
+		mixpanel.people.set([
+			"feedBackRating": rating,
+			"feedBackText": text,
+			"feedBackDidFinishSubmission": finishedSubmit
+		])
+    mixpanel.track("Feedback Dialog Data Entered", properties: ["feedBackRating": rating, "feedBackText": text, "feedBackDidFinishSubmission": finishedSubmit])
+	}
   
   static func registerUser(parentName parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate, babyGender: String) {
     let dateFormatter = NSDateFormatter()
     dateFormatter.dateStyle = .ShortStyle
+		
+		// set distinct id before saving any people properties
+		mixpanel.identify(mixpanel.distinctId)
     
     mixpanel.registerSuperProperties([
       "parentName": parentName,
@@ -100,6 +129,15 @@ struct Tracker {
       "babyName": babyName,
       "babyDOB": dateFormatter.stringFromDate(babyDOB),
       "babyGender": babyGender
-      ]);
+    ]);
+		
+		mixpanel.people.set([
+      "parentName": parentName,
+      "parentEmail": parentEmail,
+      "babyName": babyName,
+      "babyDOB": dateFormatter.stringFromDate(babyDOB),
+      "babyGender": babyGender,
+			"numShares": 0
+		])
   }
 }
