@@ -119,6 +119,9 @@ struct Tracker {
   static func registerUser(parentName parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate, babyGender: String) {
     let dateFormatter = NSDateFormatter()
     dateFormatter.dateStyle = .ShortStyle
+		
+		// set distinct id before saving any people properties
+		mixpanel.identify(mixpanel.distinctId)
     
     mixpanel.registerSuperProperties([
       "parentName": parentName,
