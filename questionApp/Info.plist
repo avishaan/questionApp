@@ -2,40 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-  <key>NSExceptionDomains</key>
-	<dict>
-		<key>facebook.com</key>
-		<dict>
-			<key>NSIncludesSubdomains</key> <true/>
-			<key>NSThirdPartyExceptionRequiresForwardSecrecy</key> <false/>
-		</dict>
-		<key>fbcdn.net</key>
-		<dict>
-			<key>NSIncludesSubdomains</key> <true/>
-			<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>  <false/>
-		</dict>
-		<key>akamaihd.net</key>
-		<dict>
-			<key>NSIncludesSubdomains</key> <true/>
-			<key>NSThirdPartyExceptionRequiresForwardSecrecy</key> <false/>
-		</dict>
-	</dict>
-	</dict>
-	<key>CFBundleURLTypes</key>
-	<array>
-  <dict>
-		<key>CFBundleURLSchemes</key>
-		<array>
-			<string>fb533004446851905</string>
-		</array>
-	</dict>
-	</array>
-	<key>FacebookAppID</key>
-	<string>533004446851905</string>
-	<key>FacebookDisplayName</key>
-	<string>BabyNoggin</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -52,10 +18,50 @@
 	<string>0.0.6</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb533004446851905</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>10</string>
+	<key>FacebookAppID</key>
+	<string>533004446851905</string>
+	<key>FacebookDisplayName</key>
+	<string>BabyNoggin</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>akamaihd.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>facebook.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>fbcdn.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OmnesSem.ttf</string>

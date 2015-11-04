@@ -710,7 +710,7 @@
 		8270B2F21B81E05100DFFB52 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8270B2F41B81E05700DFFB52 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8270B2F61B81E05D00DFFB52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8270B2FA1B81E35800DFFB52 /* Mixpanel-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Mixpanel-Bridging-Header.h"; sourceTree = "<group>"; };
+		8270B2FA1B81E35800DFFB52 /* Bridging-Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Headers.h"; sourceTree = "<group>"; };
 		8270B2FB1B81E6FE00DFFB52 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8270B2FD1B81E70800DFFB52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8270B2FF1B81E7C000DFFB52 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
@@ -741,7 +741,6 @@
 		82D2BED31BE8B66800489AAF /* libGoogleConversionTracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleConversionTracking.a; sourceTree = "<group>"; };
 		82D2BED41BE8B66800489AAF /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		82D2BED71BE8B69100489AAF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		82D2BED91BE8B84C00489AAF /* Adwords-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Adwords-Bridging-Header.h"; sourceTree = "<group>"; };
 		82D641E71B4908590013D5FB /* BNBackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNBackButton.swift; sourceTree = "<group>"; };
 		82D641E91B49DA900013D5FB /* BNUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNUIViewController.swift; sourceTree = "<group>"; };
 		82D641EB1B49F7B70013D5FB /* PupilResponseMoreInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilResponseMoreInformationViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
@@ -1253,8 +1252,7 @@
 		8270B2F91B81E33100DFFB52 /* Bridging Headers */ = {
 			isa = PBXGroup;
 			children = (
-				8270B2FA1B81E35800DFFB52 /* Mixpanel-Bridging-Header.h */,
-				82D2BED91BE8B84C00489AAF /* Adwords-Bridging-Header.h */,
+				8270B2FA1B81E35800DFFB52 /* Bridging-Headers.h */,
 			);
 			name = "Bridging Headers";
 			sourceTree = "<group>";
@@ -2595,7 +2593,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "questionApp/Mixpanel-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "questionApp/Bridging-Headers.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2622,7 +2620,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "questionApp/Mixpanel-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "questionApp/Bridging-Headers.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
