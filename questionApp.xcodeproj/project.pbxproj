@@ -198,6 +198,7 @@
 		8270F7671B2A5BC10003E683 /* MilestonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */; };
 		8275FC3A1BB0B95F00C32106 /* IntroVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8275FC391BB0B95F00C32106 /* IntroVideo.m4v */; };
 		8283015D1BACE3CD00B015D7 /* BNTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8283015C1BACE3CD00B015D7 /* BNTextView.swift */; };
+		829699041BE9BDB400CB0E43 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829699031BE9BDB400CB0E43 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
 		829F54EA1B26995800ABE77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54E91B26995800ABE77C /* AppDelegate.swift */; };
 		829F54ED1B26995800ABE77C /* questionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EB1B26995800ABE77C /* questionApp.xcdatamodeld */; };
 		829F54EF1B26995800ABE77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F54EE1B26995800ABE77C /* ViewController.swift */; };
@@ -717,6 +718,7 @@
 		8270F7661B2A5BC10003E683 /* MilestonesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesViewController.swift; sourceTree = "<group>"; };
 		8275FC391BB0B95F00C32106 /* IntroVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IntroVideo.m4v; sourceTree = "<group>"; };
 		8283015C1BACE3CD00B015D7 /* BNTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BNTextView.swift; sourceTree = "<group>"; };
+		829699031BE9BDB400CB0E43 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		829F54E41B26995800ABE77C /* questionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829F54E81B26995800ABE77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829F54E91B26995800ABE77C /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
@@ -965,6 +967,7 @@
 			files = (
 				82D2BED81BE8B69100489AAF /* AdSupport.framework in Frameworks */,
 				15371A5E1BBA0AEA001EC5E4 /* Charts.framework in Frameworks */,
+				829699041BE9BDB400CB0E43 /* FBSDKCoreKit.framework in Frameworks */,
 				8270B3001B81E7C000DFFB52 /* libicucore.A.dylib in Frameworks */,
 				82D2BED51BE8B66800489AAF /* libGoogleConversionTracking.a in Frameworks */,
 				8270B2FE1B81E70800DFFB52 /* Security.framework in Frameworks */,
@@ -1846,6 +1849,7 @@
 		D2EEA5935BC0721B0E683DDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				829699031BE9BDB400CB0E43 /* FBSDKCoreKit.framework */,
 				82D2BED71BE8B69100489AAF /* AdSupport.framework */,
 			);
 			name = Frameworks;
@@ -2577,6 +2581,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = questionApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2600,6 +2608,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = questionApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
