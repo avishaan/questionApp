@@ -78,7 +78,18 @@ struct Tracker {
     case Overview = "test overview"
     
   }
+	
+  /**
+	Different share methods to track
   
+  */
+	enum ShareMethod:String {
+		case Unknown = "Unknown" // incase we don't know the share type
+		case Facebook = "Facebook"
+		case SMS = "SMS"
+		case Email = "Email"
+	}
+	
   /**
     creates an event in the underlying analytics framework
   
@@ -89,6 +100,11 @@ struct Tracker {
     
     mixpanel.track(sentence, properties: ["name": event.name, "action": event.action, "progress": event.progress])
   }
+	
+	// allows us to track the number of times someone has shared as well as their share method
+	static func incrementNumShares(shareMethod:ShareMethod = .Unknown) {
+		mixpanel.people.increment("numShares", by: 1)
+	}
   
   static func registerUser(parentName parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate, babyGender: String) {
     let dateFormatter = NSDateFormatter()
@@ -100,6 +116,15 @@ struct Tracker {
       "babyName": babyName,
       "babyDOB": dateFormatter.stringFromDate(babyDOB),
       "babyGender": babyGender
-      ]);
+    ]);
+		
+		mixpanel.people.set([
+      "parentName": parentName,
+      "parentEmail": parentEmail,
+      "babyName": babyName,
+      "babyDOB": dateFormatter.stringFromDate(babyDOB),
+      "babyGender": babyGender,
+			"numShares": 0
+		])
   }
 }

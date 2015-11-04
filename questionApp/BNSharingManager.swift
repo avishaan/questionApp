@@ -83,6 +83,9 @@ class BNSharingManager {
     // Setup a block to execute later
     activityVC.completionWithItemsHandler = { activityType, success, returnedItems, error in
       if success {
+				// increment the number of times the user has shared
+				Tracker.incrementNumShares()
+				
         self.saveSharedTestWithName(testName)
         self.presentUnlockNotification(parentViewController, testName: testName)
         if parentViewController.respondsToSelector(Selector("checkNumberOfShares")){
