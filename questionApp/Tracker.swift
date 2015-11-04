@@ -105,6 +105,16 @@ struct Tracker {
 	static func incrementNumShares(shareMethod:ShareMethod = .Unknown) {
 		mixpanel.people.increment("numShares", by: 1)
 	}
+	
+	// save the feedback rating, text, and whether or not they finished the submission (vs just canceling)
+	static func setFeedbackInfo(rating:Int, text:String, finishedSubmit:Bool) {
+		mixpanel.people.set([
+			"feedBackRating": rating,
+			"feedBackText": text,
+			"feedBackDidFinishSubmission": finishedSubmit
+		])
+    mixpanel.track("Feedback Dialog Data Entered", properties: ["feedBackRating": rating, "feedBackText": text, "feedBackDidFinishSubmission": finishedSubmit])
+	}
   
   static func registerUser(parentName parentName:String, parentEmail:String, babyName:String, babyDOB: NSDate, babyGender: String) {
     let dateFormatter = NSDateFormatter()

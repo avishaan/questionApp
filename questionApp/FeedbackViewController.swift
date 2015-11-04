@@ -64,7 +64,9 @@ class FeedbackViewController: UIViewController {
     NSUserDefaults.standardUserDefaults().setBool(true, forKey: kHasFeedbackDialogShown)
     
     // submit analytics data
-    mixpanel.track("Feedback Dialog Submitted", properties: ["rating": Int(ratingSlider!.value), "feedBackText": feedbackText.text, "submitted": true])
+		// setFeedbackInfo in the analytics for future review
+		Tracker.setFeedbackInfo(Int(ratingSlider!.value), text: feedbackText.text, finishedSubmit: true)
+		
 
     let messageString = "We'd appreciate it if you would take a moment to leave a review for us on the App Store!"
     let alert: UIAlertController = UIAlertController(title: "Thank you!", message: messageString, preferredStyle: UIAlertControllerStyle.Alert);
@@ -91,7 +93,8 @@ class FeedbackViewController: UIViewController {
     self.dismissViewControllerAnimated(false, completion: nil)
     // save into user defaults that we showed the feedback view controller
     NSUserDefaults.standardUserDefaults().setBool(true, forKey: kHasFeedbackDialogShown)
-    mixpanel.track("Feedback Dialog Cancelled", properties: ["rating": Int(ratingSlider!.value), "feedBackText": feedbackText.text, "submitted": false])
+    // submit analytics data
+		Tracker.setFeedbackInfo(Int(ratingSlider!.value), text: feedbackText.text, finishedSubmit: false)
   }
   
 }
